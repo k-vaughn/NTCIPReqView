@@ -1,0 +1,9 @@
+{{var "comma" ""}}{{var "str" ""}}{{#eachDocumentObject}}{{#if (eval type "==" "mib") }}
+		{{#if (isSection)}}
+-- {{sectionNumber}} {{heading}}
+		{{/if}}
+{{formatString name}}  DEFINITIONS ::= BEGIN
+IMPORTS
+{{formatString text}}
+	{{/if}}
+	{{/eachDocumentObject}}

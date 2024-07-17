@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ReqView MIB Report</title>
+  <style>
+    /* Customization of standard HTML styles */
+    pre {
+      margin-top: 0em;
+      margin-bottom: 0em;
+      font-family: "Courier New", Courier, monospace;
+    }
+    .deleted {
+      color: #666;
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  {{var "comma" ""}}
+  {{#eachDocumentObject}}
+  {{!------------}}
+  {{!-- Begin --}}
+  {{!------------}}
+  {{#if (eval type "==" "begin")}}
+  <pre>-- ASN1START</pre>
+  <pre>{{{formatString class}}} DEFINITIONS ::= BEGIN</pre>
+  <pre></pre>
+  <pre>IMPORTS</pre>
+  {{/if}}
+  {{!------------}}
+  {{!-- Imports --}}
+  {{!------------}}
+  {{#if (eval type "==" "imports")}}
+  <pre>{{{formatString class}}}</pre>
+  <pre>                                                       FROM {{formatString reference}}</pre>
+  <pre>                                                         {{formatString comments}}</pre>
+  {{/if}}
+  {{!------------}}
+  {{!-- Identity --}}
+  {{!------------}}
+  {{#if (eval type "==" "identity")}}
+  <pre>;</pre>
+  <pre>{{{formatString class}}} MODULE-IDENTITY</pre>
+  <pre>  LAST-UPDATED "{{{updated}}}"</pre>
+  <pre>  ORGANIZATION "{{formatString org}}"</pre>
+  <pre>  CONTACT-INFO </pre>
+  <pre>   "{{formatString contact}}"</pre>
+  <pre>  DESCRIPTION</pre>
+  <pre>    "{{formatString text}}"</pre>
+  {{/if}}
+  {{!------------}}
+  {{!-- Revision --}}
+  {{!------------}}
+  {{#if (eval type "==" "revision")}}
+  <pre>  REVISION "{{{updated}}}"</pre>
+  <pre>  DESCRIPTION</pre>
+  <pre>    "{{formatString text}}"</pre>
+  {{/if}}
+  {{!------------}}
+  {{!-- End Rev --}}
+  {{!------------}}
+  {{#if (eval type "==" "endRev")}}
+  <pre>  {{formatString "::= {"}}{{oid}}{{formatString "}"}}</pre>
+  <pre> </pre>
+  {{/if}}
+  {{!------------}}
+  {{!-- Comment --}}
+  {{!------------}}
+  {{#if (eval type "==" "comment")}}
+  <pre>{{formatString text}}</pre>
+  {{/if}}
+  {{!------------}}
+  {{!-- Empty --}}
+  {{!------------}}
+  {{#if (eval type "==" "empty")}}
+  <pre> </pre>
+  {{/if}}
+  {{!------------}}
+  {{!-- Node --}}
+  {{!------------}}
+  {{#if (eval type "==" "node")}}
+  <pre>{{formatString class}} OBJECT-IDENTITY</pre>
+  <pre>  STATUS     {{status}}</pre>
+  <pre>  DESCRIPTION</pre>
+  <pre>    "{{formatString text}}"</pre>
+  <pre>  ::= {{formatString "{ "}}{{oid}}{{formatString " }"}}</pre>
+  <pre> </pre>
+  {{/if}}
+  {{!------------}}
+  {{!-- Object --}}
+  {{!------------}}
+  {{#if (eval type "==" "object")}}
+  <pre>{{{heading}}} OBJECT-TYPE</pre>
+  <pre>  SYNTAX     {{formatString syntax}}</pre>
+  {{#if units}}<pre>  UNITS      "{{units}}"</pre>{{/if}}
+  <pre>  MAX-ACCESS {{access}}</pre>
+  <pre>  STATUS     {{status}}</pre>
+  <pre>  DESCRIPTION</pre>
+  <pre class=“indent”>    "{{formatString text}}"</pre>
+  {{#if reference}}<pre>  REFERENCE  "{{formatString reference}}"</pre>{{/if}}
+  {{#if index}}<pre>  INDEX      {{formatString "{ "}}{{index}}{{formatString " }"}}</pre>{{/if}}
+  {{#if defval}}<pre>  DEFVAL     {{formatString "{ "}}{{defval}}{{formatString " }"}}</pre>{{/if}}
+  <pre>  {{formatString "::= {"}}{{oid}}{{formatString "}"}}</pre>
+  {{#if comments}}<pre>{{formatString comments}}</pre>{{/if}}  
+  <pre> </pre>
+  {{/if}}
+  {{!------------}}
+  {{!-- Frame --}}
+  {{!------------}}
+  {{#if (eval type "==" "frame")}}
+  <pre>{{formatString class}} ::= {{formatString syntax}}</pre>
+  <pre> </pre>
+  {{/if}}
+  {{!------------}}
+  {{!-- Conform --}}
+  {{!------------}}
+  {{#if (eval type "==" "conform")}}
+  <pre>{{{heading}}} MODULE-COMPLIANCE</pre>
+  <pre>  STATUS     {{status}}</pre>
+  <pre>  DESCRIPTION</pre>
+  <pre>    "{{formatString text}}"</pre>
+  {{#if reference}}<pre>  REFERENCE  "{{formatString reference}}"</pre>{{/if}}
+  {{#if comments}}<pre>{{formatString comments}}</pre>{{/if}}
+  {{/if}}
+  {{!------------}}
+  {{!-- Module --}}
+  {{!------------}}
+  {{#if (eval type "==" "module")}}
+  <pre>  MODULE     {{#if class}}{{formatString class}}{{else}}-- this module{{/if}}</pre>
+  <pre>    MANDATORY-GROUPS {{formatString "{ "}}{{#eachInlinkWith type="compliance"}}{{get "comma"}}
+               {{heading}}{{set "comma" ","}}{{/eachInlinkWith}}</pre>
+  {{set "comma" ""}}
+  <pre>             {{formatString " }"}}</pre>
+  {{#if oid}}<pre>  {{formatString "::= {"}}{{oid}}{{formatString "}"}}</pre>
+  <pre> </pre>{{/if}}
+  {{/if}}
+  {{!------------}}
+  {{!-- Option Group --}}
+  {{!------------}}
+  {{#if (eval type "==" "optionGroup")}}
+  <pre>    GROUP     {{#eachInlinkWith type="compliance"}}{{{heading}}}{{/eachInlinkWith}}</pre>
+  <pre>    DESCRIPTION</pre>
+  <pre>      "{{formatString text}}"</pre>
+  {{#if oid}}<pre>  {{formatString "::= {"}}{{oid}}{{formatString "}"}}</pre>
+  <pre> </pre>{{/if}}
+  {{/if}}
+  {{!------------}}
+  {{!-- Group --}}
+  {{!------------}}
+  {{#if (eval type "==" "group")}}
+  <pre>{{{heading}}} OBJECT-GROUP</pre>
+  <pre>  OBJECTS    {{formatString "{ "}}{{#eachInlinkWith type="group"}}{{get "comma"}}
+               {{heading}}{{set "comma" ","}}{{/eachInlinkWith}}</pre>
+  {{set "comma" ""}}
+  <pre>             {{formatString " }"}}</pre> 
+  <pre>  STATUS     {{status}}</pre>
+  <pre>  DESCRIPTION</pre>
+  <pre>    "{{formatString text}}"</pre>
+  <pre>  REFERENCE "{{#eachOutlinkWith type="satisfies"}}{{get "comma"}}Clause {{{sectionNumber}}}{{set "comma" ", "}}{{/eachOutlinkWith}}"</pre>
+  {{set "comma" ""}}
+  <pre>  {{formatString "::= { "}}{{oid}}{{formatString " }"}}</pre>
+  {{#if comments}}<pre>{{formatString comments}}</pre>{{/if}}  
+  <pre> </pre>
+  {{/if}}
+  {{!------------}}
+  {{!-- End --}}
+  {{!------------}}
+  {{#if (eval type "==" "end")}}
+  <pre>END</pre>
+  <pre>-- ASN1END</pre>
+  {{/if}}
+  
+{{!------------}}
+{{!-- Document --}}
+{{!------------}}
+{{#if (eval type "==" "doc")}}
+<pre>ERROR - Document not implemented.</pre>
+{{/if}}
+{{!------------}}
+{{!-- Data Exchange --}}
+{{!------------}}
+{{#if (eval type "==" "de_req")}}
+<pre>ERROR - Data Exchange not implemented.</pre>
+{{/if}}
+{{!------------}}
+{{!-- Capability --}}
+{{!------------}}
+{{#if (eval type "==" "cap_req")}}
+<pre>ERROR - Capability not implemented.</pre>
+{{/if}}
+{{!------------}}
+{{!-- Performance --}}
+{{!------------}}
+{{#if (eval type "==" "perf_req")}}
+<pre>ERROR - Performance not implemented.</pre>
+{{/if}}
+  {{/eachDocumentObject}}
+</body>

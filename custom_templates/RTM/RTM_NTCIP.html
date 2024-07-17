@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Requirements Traceability Matrix</title>
+  <style>
+    /* Customization of standard HTML styles */
+    p {
+      margin-top: 0em;
+      margin-bottom: 0em;
+    }
+    table {
+      border-spacing: 0em;
+    }
+    th {
+      text-align: left;
+      background-color: #ff0;
+      padding-left: 2px;
+      padding-right: 2px;
+    } 
+    td {
+      text-align: left;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+    #reqviewTable {
+      margin: 0em;
+      border: 3px solid #000;
+    }
+    .deleted {
+      color: #666;
+      text-decoration: line-through;
+    }
+    .newrow {
+      border-top: 2px solid #000;
+      border-bottom: 1px solid #000;
+      background-color: #ccc;
+    }
+    .req-col {
+      min-width: 5em;
+    }
+    .dia-col {
+      min-width: 5em;
+      border-left: 1px solid #000;
+    }
+    .mib-col {
+      min-width: 5em;
+      border-bottom: 1px solid #000;
+    }
+    .obj-col {
+      min-width: 5em;
+      border-bottom: 1px solid #000;      border-left: 1px solid #000;
+
+    }
+    .doc-obj-id {
+      font-weight: bold;
+    }
+  </style>
+</head>
+{{var "source" docId}}
+{{var "a" docId}}
+{{var "count" 2}}
+{{var "opt_constraint" ""}}
+{{var "cond_constraint" ""}}
+{{var "code" ""}}
+{{var "note" ""}}
+
+
+{{#*inline "reference"}}
+	{{#if (eval docId "!=" (get "source"))}}
+		{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}
+	{{else}}
+		{{{sectionNumber}}}
+	{{/if}}
+{{/inline}}
+
+{{#*inline "direct"}}
+	{{#eachInlinkWith type="satisfies"}}
+			<tr>
+				<td class="mib-col">&nbsp;</td>
+				<td class="mib-col">{{>reference}}</td>
+				<td class="obj-col" colspan="2">{{#if (eval (formatString name) "==" "")}}{{heading}}{{else}}{{name}}{{/if}}</td>
+				<td class="obj-col">&nbsp;</td>
+			</tr>
+    {{/eachInlinkWith}}
+{{/inline}}
+
+{{#*inline "indirect"}}
+	{{#eachInlinkWith type="satisfiesWithNote"}}
+		{{set "note" text}}
+		{{#eachInlinkWith type="satisfies"}}
+			<tr>
+				<td class="mib-col">&nbsp;</td>
+				<td class="mib-col">{{>reference}}</td>
+				<td class="obj-col" colspan="2">{{#if (eval (formatString name) "==" "")}}{{heading}}{{else}}{{name}}{{/if}}</td>
+				<td class="obj-col"> {{formatString (get "note")}}</td>
+			</tr>
+		{{/eachInlinkWith}}
+    {{/eachInlinkWith}}
+{{/inline}}
+
+<body>
+    <table id="reqviewTable">
+      <thead>
+        <tr>
+          <th>Requirement</th>
+          <th>Object Reference</th>
+          <th>Object</th>
+          <th>Dialogue</th>
+		  <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#eachDocumentObject}}{{#ifHasInlinks "implement"}}
+        	<tr{{#if deleted}} class="deleted"{{/if}}>
+				<td class="newrow req-col" colspan="3">
+					{{>reference}}: {{{heading}}}
+				</td>
+				<td class="newrow dia-col" colspan="2">
+					{{#eachInlinkWith type="implement"}}
+					{{>reference}}: {{{heading}}}
+					{{/eachInlinkWith}}
+				</td>
+			</tr>
+			{{set "opt_constraint" ""}}
+			{{set "cond_constraint" ""}}
+			{{> direct}}
+			{{> indirect}}
+        {{/ifHasInlinks}}
+        {{/eachDocumentObject}}
+      </tbody>
+    </table>
+</body>

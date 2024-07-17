@@ -1,0 +1,178 @@
+{{var "comma" ""}}
+{{#eachDocumentObject}}
+{{!------------}}
+{{!-- Begin --}}
+{{!------------}}
+{{#if (eval type "==" "begin")}}
+-- ASN1START
+{{{formatString class}}} DEFINITIONS ::= BEGIN
+IMPORTS
+{{/if}}
+{{!------------}}
+{{!-- Imports --}}
+{{!------------}}
+{{#if (eval type "==" "imports")}}
+{{{formatString class}}}
+                                                       FROM {{formatString reference}}
+                                                         {{formatString comments}}
+{{/if}}
+{{!------------}}
+{{!-- Identity --}}
+{{!------------}}
+{{#if (eval type "==" "identity")}}
+;
+{{{formatString class}}} MODULE-IDENTITY
+  LAST-UPDATED "{{{updated}}}"
+  ORGANIZATION "{{formatString org}}"
+  CONTACT-INFO 
+   "{{formatString contact}}"
+  DESCRIPTION
+    "{{formatString text}}"
+{{/if}}
+{{!------------}}
+{{!-- Revision --}}
+{{!------------}}
+{{#if (eval type "==" "revision")}}
+  REVISION "{{{updated}}}"
+  DESCRIPTION
+    "{{formatString text}}"
+{{/if}}
+{{!------------}}
+{{!-- End Rev --}}
+{{!------------}}
+{{#if (eval type "==" "endRev")}}
+  ::= {{formatString "{ "}}{{oid}}{{formatString " }"}}
+ 
+{{/if}}
+{{!------------}}
+{{!-- Comment --}}
+{{!------------}}
+{{#if (eval type "==" "comment")}}
+{{formatString text}}
+{{/if}}
+{{!------------}}
+{{!-- Empty --}}
+{{!------------}}
+{{#if (eval type "==" "empty")}}
+ 
+{{/if}}
+{{!------------}}
+{{!-- Node --}}
+{{!------------}}
+{{#if (eval type "==" "node")}}
+{{formatString class}} OBJECT-IDENTITY
+  STATUS     {{status}}
+  DESCRIPTION
+    "{{formatString text}}"
+  ::= {{formatString "{ "}}{{oid}}{{formatString " }"}}
+ 
+{{/if}}
+{{!------------}}
+{{!-- Object --}}
+{{!------------}}
+{{#if (eval type "==" "object")}}
+{{{heading}}} OBJECT-TYPE
+  SYNTAX     {{formatString syntax}}
+  {{#if units}}  UNITS      "{{units}}"{{/if}}
+  MAX-ACCESS {{access}}
+  STATUS     {{status}}
+  DESCRIPTION
+    "{{formatString text}}"
+{{#if reference}}  REFERENCE  "{{formatString reference}}"{{/if}}
+{{#if index}}  INDEX      {{formatString "{ "}}{{index}}{{formatString " }"}}{{/if}}
+{{#if defval}}  DEFVAL     {{formatString "{ "}}{{defval}}{{formatString " }"}}{{/if}}
+  ::= {{formatString "{ "}}{{oid}}{{formatString " }"}}
+{{#if comments}}{{formatString comments}}{{/if}}  
+ 
+{{/if}}
+{{!------------}}
+{{!-- Frame --}}
+{{!------------}}
+{{#if (eval type "==" "frame")}}
+{{formatString class}} ::= {{formatString syntax}}
+ 
+{{/if}}
+{{!------------}}
+{{!-- Conform --}}
+{{!------------}}
+{{#if (eval type "==" "conform")}}
+{{{heading}}} MODULE-COMPLIANCE
+  STATUS     {{status}}
+  DESCRIPTION
+    "{{formatString text}}"
+{{#if reference}}  REFERENCE  "{{formatString reference}}"{{/if}}
+{{#if comments}}{{formatString comments}}{{/if}}
+{{/if}}
+{{!------------}}
+{{!-- Module --}}
+{{!------------}}
+{{#if (eval type "==" "module")}}
+  MODULE     {{#if class}}{{formatString class}}{{else}}-- this module{{/if}}
+    MANDATORY-GROUPS {{formatString "{ "}}{{#eachInlinkWith type="compliance"}}{{get "comma"}}
+               {{heading}}{{set "comma" ","}}{{/eachInlinkWith}}
+{{set "comma" ""}}
+             {{formatString " }"}}
+{{#if oid}}  ::= {{formatString "{ "}}{{oid}}{{formatString " }"}}
+ {{/if}}
+{{/if}}
+{{!------------}}
+{{!-- Option Group --}}
+{{!------------}}
+{{#if (eval type "==" "optionGroup")}}
+    GROUP     {{#eachInlinkWith type="compliance"}}{{{heading}}}{{/eachInlinkWith}}
+    DESCRIPTION
+      "{{formatString text}}"
+{{#if oid}}  ::= {{formatString "{ "}}{{oid}}{{formatString " }"}}
+ {{/if}}
+{{/if}}
+{{!------------}}
+{{!-- Group --}}
+{{!------------}}
+{{#if (eval type "==" "group")}}
+{{{heading}}} OBJECT-GROUP
+  OBJECTS    {{formatString "{ "}}{{#eachInlinkWith type="group"}}{{get "comma"}}
+             {{heading}}{{set "comma" ","}}{{/eachInlinkWith}}
+{{set "comma" ""}}
+             {{formatString " }"}} 
+  STATUS     {{status}}
+  DESCRIPTION
+    "{{formatString text}}"
+  REFERENCE "{{#eachOutlinkWith type="satisfies"}}{{get "comma"}}Clause {{{sectionNumber}}}{{set "comma" ", "}}{{/eachOutlinkWith}}"
+{{set "comma" ""}}
+  ::= {{formatString "{ "}}{{oid}}{{formatString " }"}}
+{{#if comments}}{{formatString comments}}{{/if}}  
+ 
+{{/if}}
+{{!------------}}
+{{!-- End --}}
+{{!------------}}
+{{#if (eval type "==" "end")}}
+END
+-- ASN1END
+{{/if}}
+  
+{{!------------}}
+{{!-- Document --}}
+{{!------------}}
+{{#if (eval type "==" "doc")}}
+ERROR - Document not implemented.
+{{/if}}
+{{!------------}}
+{{!-- Data Exchange --}}
+{{!------------}}
+{{#if (eval type "==" "de_req")}}
+ERROR - Data Exchange not implemented.
+{{/if}}
+{{!------------}}
+{{!-- Capability --}}
+{{!------------}}
+{{#if (eval type "==" "cap_req")}}
+ERROR - Capability not implemented.
+{{/if}}
+{{!------------}}
+{{!-- Performance --}}
+{{!------------}}
+{{#if (eval type "==" "perf_req")}}
+ERROR - Performance not implemented.
+{{/if}}
+  {{/eachDocumentObject}}

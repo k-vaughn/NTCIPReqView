@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Needs to Features Traceability Matrix</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+  <style>
+    /* Customization of standard HTML styles */
+    p {
+      margin-top: 0em;
+      margin-bottom: 0em;
+    }
+    table {
+      border-spacing: 0em;
+    }
+    th {
+      text-align: left;
+      background-color: #ff0;
+      padding-left: 2px;
+      padding-right: 2px;
+    } 
+    td {
+      text-align: left;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+    #reqviewTable {
+      margin: 0em;
+      border: 3px solid #000;
+    }
+    .deleted {
+      color: #666;
+      text-decoration: line-through;
+    }
+    .newrow {
+      border-top: 2px solid #000;
+      border-bottom: 1px solid #000;
+      background-color: #ccc;
+    }
+    .default-col {
+      min-width: 5em;
+      border-bottom: 1px solid #000;
+    }
+    .con-col {
+      min-width: 5em;
+      border-bottom: 1px solid #000;
+      border-left: 1px solid #000;
+      text-align: center;
+    }
+    .highlight {
+      background-color: rgba(230, 230, 230, 0.5);
+    }
+    .doc-obj-id {
+      font-weight: bold;
+    }
+  </style>
+</head>
+{{var "source" docId}}
+{{var "a" docId}}
+{{var "count" 1}}
+{{var "opt_constraint" ""}}
+{{var "cond_constraint" ""}}
+{{var "code" ""}}
+{{var "need" ""}}
+
+{{#*inline "row"}}
+	<tr>
+		<td class="default-col">&nbsp;</td>
+		<td class="default-col">
+			{{docName}}, {{sectionNumber}}: {{heading}}
+		</td>
+		<td class="con-col">{{get "cond_constraint"}}{{get "code"}}{{get "opt_constraint"}}</td>
+	</tr>
+{{/inline}}
+
+{{#*inline "direct"}}
+  	{{#eachInlinkWith type="fulfil"}}
+  		{{set "code" "M"}}
+  		{{> row}}
+	{{/eachInlinkWith}}
+	{{#eachInlinkWith type="fulfil_opt"}}
+  		{{set "code" "O"}}
+  		{{> row}}
+	{{/eachInlinkWith}}
+{{/inline}}
+
+{{#*inline "indirect"}}
+  	{{#eachInlinkWith type="opt_group"}}
+  		{{set "opt_constraint" (eval "." "+" (get "count"))}}
+  		{{set "opt_constraint" (eval (get "opt_constraint") "+" (formatString text))}}
+  		{{> direct}}
+  		{{> indirect}}
+  		{{incr "count"}}
+	{{/eachInlinkWith}}
+	{{#eachInlinkWith type="conditional"}}
+		{{set "opt_constraint" ""}}
+  		{{set "cond_constraint" (formatString text)}}
+  		{{> direct}}
+  		{{> indirect}}
+	{{/eachInlinkWith}}
+{{/inline}}
+
+
+<body>
+    <table id="reqviewTable">
+      <thead>
+        <tr>
+          <th>Need</th>
+          <th>Feature</th>
+          <th>Conformance</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#eachDocumentObject}}{{#ifHasInlinks "fulfil"}}
+        	<tr{{#if deleted}} class="deleted"{{/if}}>
+				<td class="newrow" colspan="2">
+					{{docName}}, {{{sectionNumber}}}: {{{heading}}}
+				</td>
+				<td class="newrow con-col">{{{conformance}}}</td>
+			</tr>
+			{{set "opt_constraint" ""}}
+			{{set "cond_constraint" ""}}
+			{{> direct}}
+			{{> indirect}}
+        {{/ifHasInlinks}}
+        {{/eachDocumentObject}}
+      </tbody>
+    </table>
+</body>

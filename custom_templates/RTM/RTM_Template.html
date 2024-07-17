@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Requirements Traceability Matrix</title>
+  <style>
+    /* Customization of standard HTML styles */
+    p {
+      margin-top: 0em;
+      margin-bottom: 0em;
+    }
+    table {
+      border-spacing: 0em;
+    }
+    th {
+      text-align: left;
+      background-color: #ff0;
+      padding-left: 2px;
+      padding-right: 2px;
+    } 
+    td {
+      text-align: left;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+    #reqviewTable {
+      margin: 0em;
+      border: 3px solid #000;
+    }
+    .deleted {
+      color: #666;
+      text-decoration: line-through;
+    }
+    .newrow {
+      border-top: 2px solid #000;
+      border-bottom: 1px solid #000;
+      background-color: #ccc;
+    }
+    .req-col {
+      min-width: 5em;
+    }
+    .dia-col {
+      min-width: 5em;
+      border-left: 1px solid #000;
+    }
+    .mib-col {
+      min-width: 5em;
+      border-bottom: 1px solid #000;
+    }
+    .obj-col {
+      min-width: 5em;
+      border-bottom: 1px solid #000;      border-left: 1px solid #000;
+
+    }
+    .doc-obj-id {
+      font-weight: bold;
+    }
+  </style>
+</head>
+{{var "source" docId}}
+{{var "a" docId}}
+{{var "count" 2}}
+{{var "opt_constraint" ""}}
+{{var "cond_constraint" ""}}
+{{var "code" ""}}
+
+{{#*inline "direct"}}
+	{{#ifHasInlinks "satisfies"}}{{#eachInlinkWith type="satisfies"}}
+		<tr>
+			<td class="mib-col">&nbsp;</td>
+			<td class="mib-col">{{docName}}</td>
+			<td class="obj-col" colspan="2">{{name}}</td>
+		</tr>
+    {{/eachInlinkWith}}{{/ifHasInlinks}}
+{{/inline}}
+
+<body>
+    <table id="reqviewTable">
+      <thead>
+        <tr>
+          <th>Requirement</th>
+          <th>MIB</th>
+          <th>Object</th>
+          <th>Dialogue</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#eachDocumentObject}}{{#ifHasInlinks "implement"}}
+        	<tr{{#if deleted}} class="deleted"{{/if}}>
+				<td class="newrow req-col" colspan="3">
+					{{docName}}, {{sectionNumber}}: {{{heading}}}
+				</td>
+				<td class="newrow dia-col">
+					{{#eachInlinkWith type="implement"}}
+					{{docName}}, {{{sectionNumber}}}: {{{heading}}}
+					{{/eachInlinkWith}}
+				</td>
+			</tr>
+			{{set "opt_constraint" ""}}
+			{{set "cond_constraint" ""}}
+			{{> direct}}
+        {{/ifHasInlinks}}
+        {{/eachDocumentObject}}
+      </tbody>
+    </table>
+</body>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ReqView Needs Traceability Report</title>
+  <style>
+    /* Customization of standard HTML styles */
+    p {
+      margin-top: 0em;
+      margin-bottom: 0em;
+    }
+    table {
+      border-spacing: 0em;
+    }
+    th {
+      text-align: left;
+      background-color: #ff0;
+    } 
+    td {
+      text-align: left;
+    }
+    #reqviewTable {
+      margin: 0em;
+      border: 3px solid #000;
+    }
+    .newrow {
+      border-top: 2px solid #000;
+      border-bottom: 1px solid #000;
+      background-color: #ccc;
+    }
+    .default-col {
+      min-width: 5em;
+      border-bottom: 1px solid #000;
+    }
+    .con-col {
+      min-width: 5em;
+      border-bottom: 1px solid #000;
+      border-left: 1px solid #000;
+      text-align: center;
+    }
+    .highlight {
+      background-color: rgba(230, 230, 230, 0.5);
+    }
+    .doc-obj-id {
+      font-weight: bold;
+    }
+  </style>
+</head>
+{{var "source" docId}}
+{{var "a" docId}}
+{{var "count" 2}}
+{{var "opt_constraint" ""}}
+{{var "cond_constraint" ""}}
+{{var "code" ""}}
+{{var "conf" ""}}
+{{var "bool" false}}
+
+{{#*inline "row"}}
+	<tr>
+		<td class="default-col">&nbsp;</td>
+		<td class="default-col">
+			{{{replaceString docId "_" "-"}}}&sect;{{sectionNumber}}: {{#if (eval (formatString heading) "!=" "")}}{{heading}}{{else}}{{formatString text}}{{/if}}
+		</td>
+		<td class="con-col">{{get "cond_constraint"}}{{get "code"}}{{get "opt_constraint"}}</td>
+		<td class="con-col">Yes {{#if (searchString (get "code") "O")}}No{{/if}} {{#if (eval (get "cond_constraint") "!=" "")}}N/A{{/if}}</td>
+		<td class="con-col">{{{addl}}}</td>
+	</tr>
+{{/inline}}
+
+{{#*inline "NtfDirect"}}
+  	{{#eachInlinkWith type="fulfil"}}
+		{{set "bool" false}}
+		{{#eachInlinkWith type="refine"}}
+ 			{{#if (eval (formatString addl) "!=" "")}}
+ 				{{set "bool" true}}
+ 			{{/if}}
+ 		{{/eachInlinkWith}}
+  	  	{{#if (or (or (or (hasInlinks "refine_opt") (hasInlinks "opt_group")) (hasInlinks "conditional")) (get "bool"))}}
+  			{{set "code" "M"}}
+  			{{> row}}
+  		{{/if}}
+	{{/eachInlinkWith}}
+	{{#eachInlinkWith type="fulfil_opt"}}
+  		{{set "code" "O"}}
+  		{{> row}}
+	{{/eachInlinkWith}}
+{{/inline}}
+
+{{#*inline "NtfIndirect"}}
+  	{{#eachInlinkWith type="opt_group"}}
+  		{{set "opt_constraint" (eval "." "+" (get "count"))}}
+  		{{set "opt_constraint" (eval (get "opt_constraint") "+" (formatString text))}}
+  		{{#eachInlinkWith type="fulfil"}}
+			{{set "code" "M"}}
+  			{{> row}}
+		{{/eachInlinkWith}}
+		{{#eachInlinkWith type="fulfil_opt"}}
+  			{{set "code" "O"}}
+  			{{> row}}
+		{{/eachInlinkWith}}
+  		{{> NtfIndirect}}
+  		{{incr "count"}}
+	{{/eachInlinkWith}}
+	{{set "opt_constraint" ""}}
+	{{#eachInlinkWith type="conditional"}}
+  		{{set "cond_constraint" (formatString text)}}
+  		{{#eachInlinkWith type="fulfil"}}
+			{{set "code" "M"}}
+  			{{> row}}
+		{{/eachInlinkWith}}
+		{{#eachInlinkWith type="fulfil_opt"}}
+  			{{set "code" "O"}}
+  			{{> row}}
+		{{/eachInlinkWith}}
+  		{{> NtfIndirect}}
+	{{/eachInlinkWith}}
+	{{set "cond_constraint" ""}}
+{{/inline}}
+
+
+
+{{#*inline "FtrDirect"}}
+	{{#if (hasInlinks "refine")}}{{#eachInlinkWith type="refine"}}
+		{{#if (eval (formatString addl) "!=" "")}}
+  			{{set "code" "M"}}
+  			{{> row}}
+  		{{/if}}
+	{{/eachInlinkWith}}{{/if}}
+	{{#if (hasInlinks "refine_opt")}}
+	{{#eachInlinkWith type="refine_opt"}}
+  		{{set "code" "O"}}
+  		{{> row}}
+	{{/eachInlinkWith}}
+	{{/if}}
+{{/inline}}
+
+{{#*inline "FtrIndirect"}}
+  	{{#eachInlinkWith type="opt_group"}}
+  		{{set "opt_constraint" (eval "." "+" (get "count"))}}
+  		{{set "opt_constraint" (eval (get "opt_constraint") "+" (formatString text))}}
+ 		{{#eachInlinkWith type="refine"}}
+			{{set "code" "M"}}
+  			{{> row}}
+		{{/eachInlinkWith}}
+		{{#eachInlinkWith type="refine_opt"}}
+  			{{set "code" "O"}}
+  			{{> row}}
+		{{/eachInlinkWith}}
+  		{{> FtrIndirect}}
+  		{{incr "count"}}
+	{{/eachInlinkWith}}
+	{{set "opt_constraint" ""}}
+	{{#eachInlinkWith type="conditional"}}
+  		{{set "cond_constraint" (formatString text)}}
+ 		{{#eachInlinkWith type="refine"}}
+			{{set "code" "M"}}
+  			{{> row}}
+		{{/eachInlinkWith}}
+		{{#eachInlinkWith type="refine_opt"}}
+  			{{set "code" "O"}}
+  			{{> row}}
+		{{/eachInlinkWith}}
+  		{{> FtrIndirect}}
+	{{/eachInlinkWith}}
+	{{set "cond_constraint" ""}}
+{{/inline}}
+
+
+<body>
+	<h1>Consolidated Protocol Implementation Conformance Statement (C-PICS)</h1>
+	<p>The Consolidated Need to Feature (C-NTF) Traceability Table and Consolidated Feature to Requirement (CFTR) Traceability Table jointly define the Consolidated Protocol Implementation Conformance Statement (C-PICS) Proforma for the ISO 20684 series. This document provides a convenient way to specify what capabilities an implementation needs to provide in a relatively compact manner by removing all of the requirements that are mandatory in order to claim conformance to prior statements. This material can be useful for procuring entities to specify the capabilities that they need by making the appropriate selections in the Project Requirement and Additional Specification columns. Once the desired selections have been made, the document is called a completed C-PICS.</p>
+	<p>For an implementation to claim compliance with a completed PICS, it shall satisfy</p>
+	<ol>
+		<li>all mandatory requirements of mandatory user needs defined in the ISO 20684 series;</li>
+		<li>all requirements that have been selected in the completed C-PICS; and</li>
+		<li>all additional specifications identified in the completed C-PICS.</li>
+	</ol>	 
+	<p>Data exchange requirements are satisfied by supporting the objects traced to the requirement in the associated Requirements Traceability Matrix (RTM)). This includes support for the identified dialogues as well as all other operations allowed per normal SNMP rules. (The defined dialogues are primarily intended to provide a testable baseline for determining conformance.)</p>
+	<p>Table 1 provides the C-NTF Table that lists each need defined in the ISO 20684 series followed by its associated features that are optional or conditional or that have associated requirements that are optional or conditional. In other words, mandatory features that only consist of mandatory requirements are not shown. To  see the full Need to Feature Traceability Table, see the associated "NTF" file(s).</p>
+	<p>&nbsp;</p>
+    <table id="reqviewTable">
+	  <caption>Table 1: Consolidated Need to Feature Traceability</caption>
+      <thead>
+        <tr>
+          <th>Need</th>
+          <th>Feature</th>
+          <th>Conformance</th>
+		  <th>Project Requirement</th>
+		  <th>Additional Specification</th>
+        </tr>
+      </thead>
+      <tbody>
+		{{#eachDocument}}
+        {{#eachDocumentObject}}{{#ifHasInlinks "fulfil"}}
+        	<tr>
+				<td class="newrow" colspan="2">
+					{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}: {{{heading}}}
+				</td>
+				{{set "conf" (formatString conformance)}}
+				<td class="newrow con-col">{{get "conf"}}</td>
+				<td class="newrow con-col">Yes {{#if (searchString (get "conf") "O")}}No{{/if}} {{#if (searchString (get "conf") ":")}}N/A{{/if}}</td>
+				<td class="newrow con-col">{{{addl}}}</td>
+			</tr>
+			{{set "opt_constraint" ""}}
+			{{set "cond_constraint" ""}}
+			{{> NtfDirect}}
+			{{> NtfIndirect}}
+        {{/ifHasInlinks}}
+        {{/eachDocumentObject}}
+		{{/eachDocument}}
+      </tbody>
+    </table>
+	<p>&nbsp;</p>
+	<p>Table 2 provides the CFTR Table that lists each feature identified in the CNTF table followed by its associated requirements that are optional or conditional. </p>
+	<p>&nbsp;</p>
+	<table id="reqviewTable">
+	  <caption>Table 2: Consolidated Feature to Requirement Traceability</caption>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Requirement</th>
+          <th>Conformance</th>
+		  <th>Project Requirement</th>
+		  <th>Additional Specification</th>
+        </tr>
+      </thead>
+      <tbody>
+		{{#eachDocument}}{{#eachDocumentObject}}{{#ifHasInlinks "refine"}}
+			{{set "bool" false}}
+			{{#eachInlinkWith type="refine"}}
+ 				{{#if (eval (formatString addl) "!=" "")}}
+ 					{{set "bool" true}}
+ 				{{/if}}
+ 			{{/eachInlinkWith}}
+		
+			{{#if (or (or (or (hasInlinks "refine_opt") (hasInlinks "opt_group")) (hasInlinks "conditional")) (get "bool"))}}
+        		<tr>
+					<td class="newrow" colspan="5">
+						{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}: {{{heading}}}
+					</td>
+				</tr>
+				{{set "opt_constraint" ""}}
+				{{set "cond_constraint" ""}}
+				{{> FtrDirect}}
+				{{> FtrIndirect}}
+			{{/if}}
+		{{/ifHasInlinks}}{{/eachDocumentObject}}{{/eachDocument}}
+      </tbody>
+    </table>
+
+</body>

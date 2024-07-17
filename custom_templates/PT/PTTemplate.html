@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Predicate Traceability</title>
+  <style>
+    /* Customization of standard HTML styles */
+    p {
+      margin-top: 0em;
+      margin-bottom: 0em;
+    }
+    table {
+      border-spacing: 0em;
+    }
+    th {
+      text-align: left;
+      background-color: #ff0;
+    } 
+    td {
+      text-align: left;
+    }
+    #reqviewTable {
+      margin: 0em;
+      border: 3px solid #000;
+    }
+    .newrow {
+      border-top: 2px solid #000;
+      border-bottom: 1px solid #000;
+      background-color: #ccc;
+    }
+    .default-col {
+      min-width: 5em;
+      border-bottom: 1px solid #000;
+    }
+    .con-col {
+      min-width: 5em;
+      border-bottom: 1px solid #000;
+      border-left: 1px solid #000;
+      text-align: left;
+    }
+    .highlight {
+      background-color: rgba(230, 230, 230, 0.5);
+    }
+    .doc-obj-id {
+      font-weight: bold;
+    }
+  </style>
+</head>
+{{var "source" docId}}
+{{var "a" docId}}
+{{var "count" 2}}
+{{var "opt_constraint" ""}}
+{{var "cond_constraint" ""}}
+{{var "code" ""}}
+{{var "conf" ""}}
+{{var "bool" false}}
+{{var "keep" false}}
+{{var "pred_count" 0}}
+{{var "predicate" ""}}
+
+{{#*inline "row"}}
+	<tr>
+		<td class="default-col">{{{text}}}</td>
+		<td class="con-col">
+			{{#eachOutlinkWith type="condRef"}}{{docName}}, {{sectionNumber}}{{/eachOutlinkWith}}
+		</td>
+	</tr>
+{{/inline}}
+
+
+<body>
+	<h1>Predicate Traceability Table</h1>
+	<p>Several conformance statements contained in ISO 26048-1 use predicates to define conditional requirements. This table identifies the document and clause number associated with each predicate. If an implementation claims conformance to the referenced clause, the condition is met and the conformance statement applies; otherwise the conformance statement is not applicable for the implementation.</p>
+	<p>&nbsp;</p>
+    <table id="reqviewTable">
+	  <caption>Predicate Traceability (PT) Table</caption>
+      <thead>
+        <tr>
+          <th>Predicate</th>
+          <th>Reference</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#eachDocumentObject}}
+			{{#ifHasOutlinks "condRef"}}{{#ifHasOutlinks "conditional"}}
+				{{set "keep" false}}
+				{{set "predicate" (formatString text)}}
+				{{#eachOutlinkWith type="conditional"}}
+					{{#if (searchString docId "26048")}}
+						{{set "keep" true}}
+					{{/if}}
+				{{/eachOutlinkWith}}
+				{{#if (eval (get "keep") "==" true)}}
+	  		<tr>
+	  			<td>{{get "predicate"}}</td>
+	  			<td>
+	  				{{set "pred_count" 0}}
+					{{#eachOutlinkWith type="condRef"}}
+						{{#if (eval (get "pred_count") ">" 0)}}
+							<br />
+	  					{{/if}}
+	  					{{incr "pred_count"}}
+	  					{{docName}}, {{sectionNumber}}
+					{{/eachOutlinkWith}}
+				{{/if}}
+				</td>
+	  		</tr>
+			{{/ifHasOutlinks}}{{/ifHasOutlinks}}
+		{{/eachDocumentObject}}
+      </tbody>
+    </table>
+</body>

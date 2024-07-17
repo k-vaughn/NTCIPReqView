@@ -1,0 +1,638 @@
+{{var "source" docId}}{{var "count" 0}}
+<!DOCTYPE html><html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="26048_1.fld/filelist.xml">
+
+<title>{{docName}}</title>
+
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Kenneth Vaughn</o:Author>
+  <o:Template>Simple_template.dot.dotx</o:Template>
+  <o:LastAuthor>Kenneth Vaughn</o:LastAuthor>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:DraftDate dt:dt="string">{{formatDate}}</o:DraftDate>
+ </o:CustomDocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:HyphenationZone>21</w:HyphenationZone>
+ </w:WordDocument>
+ </xml><![endif]-->
+<link rel="stylesheet" href="26048_1.fld/main.css" />
+</head>
+
+
+<body lang=EN-GB link=blue vlink="#954F72" style='tab-interval:.5in;word-wrap: break-word;'>
+  <div class=WordSection1>
+
+<p class=MsoNormal align=right style='text-align:right'><b><span style='font-size:14.0pt;mso-no-proof:yes'>ISO 26048-1:####(NP)</span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='mso-no-proof:yes'>ISO TC 204/WG 19</span></p>
+
+<p class=MsoNormal align=right style='margin-bottom:100.0pt;text-align:right'>Date: <span style='mso-no-proof:yes'>{{formatDate}}</span></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:18.0pt'><b><span style='font-size:16.0pt'>Intelligent transport systems &mdash;
+Field device SNMP data interface &mdash; Part 1: Global objects</span></b></p>
+
+<p class=MsoNormal style='margin-top:100.0pt'>&nbsp;</p>
+
+<div style='mso-element:para-border-div;border:solid windowtext 1.0pt;
+mso-border-alt:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+margin-left:4.25pt;margin-right:4.25pt'>
+
+<p class=MsoNormal align=center style='text-align:center;border:none;
+mso-border-alt:solid windowtext .5pt;padding:0in;mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt'><span
+style='font-size:40.0pt'>CD stage</span></p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='mso-element:para-border-div;border:solid windowtext 1.0pt;
+mso-border-alt:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+margin-left:4.25pt;margin-right:4.25pt'>
+
+<p class=MsoNormal align=center style='text-align:center;border:none;
+mso-border-alt:solid windowtext .5pt;padding:0in;mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+mso-bidi-font-size:11.0pt'>Warning for WDs and CDs</span></b></p>
+
+<p class=MsoNormal style='border:none;mso-border-alt:solid windowtext .5pt;
+padding:0in;mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-bidi-font-weight:bold'>This
+document is not an ISO International Standard. It is distributed for review and
+comment. It is subject to change without notice and may not be referred to as
+an International Standard.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='border:none;mso-border-alt:solid windowtext .5pt;
+padding:0in;mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt'><span 
+style='font-size:10.0pt;'>Recipients
+of this draft are invited to submit, with their comments, notification of any
+relevant patent rights of which they are aware and to provide supporting
+documentation.</span></p>
+
+</div>
+
+<p class=MsoBodyText>&nbsp;</p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Cambria",serif";'><br
+clear=all style='page-break-before:always;mso-break-type:section-break'>
+</span>
+
+<div class=WordSection2>
+
+<div style='mso-element:para-border-div;border:solid windowtext 1.0pt;
+border-bottom:none;mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:
+solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:1.0pt 4.0pt 0in 4.0pt;
+margin-left:5.1pt;margin-right:5.1pt'>
+
+<p class=zzCopyright align=left style='margin-top:2.0pt;margin-right:0in;
+margin-bottom:6.0pt;margin-left:0in;text-align:left;page-break-before:always;
+mso-layout-grid-align:none;text-autospace:none;border:none;mso-border-top-alt:
+solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-right-alt:
+solid windowtext .5pt;padding:0in;mso-padding-alt:1.0pt 4.0pt 0in 4.0pt'><span
+lang=EN-GB style='color:windowtext'>&copy; ISO 2023<o:p></o:p></span></p>
+
+</div>
+
+<div style='mso-element:para-border-div;border-top:none;border-left:solid windowtext 1.0pt;
+border-bottom:none;border-right:solid windowtext 1.0pt;mso-border-left-alt:
+solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:0in 4.0pt 0in 4.0pt;
+margin-left:5.1pt;margin-right:5.1pt'>
+
+<p class=zzCopyright style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:0in;mso-layout-grid-align:none;text-autospace:none;border:none;
+mso-border-left-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+padding:0in;mso-padding-alt:0in 4.0pt 0in 4.0pt'><span lang=EN-GB
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;color:windowtext'>All rights
+reserved. Unless otherwise specified, or required in the context of its
+implementation, no part of this publication may be reproduced or utilized
+otherwise in any form or by any means, electronic or mechanical, including
+photocopying, or posting on the internet or an intranet, without prior written
+permission. Permission can be requested from either ISO at the address below or
+ISO’s member body in the country of the requester.<o:p></o:p></span></p>
+
+<p class=zzCopyright style='margin:0in;text-indent:20.15pt;mso-layout-grid-align:
+none;text-autospace:none;border:none;mso-border-left-alt:solid windowtext .5pt;
+mso-border-right-alt:solid windowtext .5pt;padding:0in;mso-padding-alt:0in 4.0pt 0in 4.0pt'><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:11.0pt;color:windowtext'>ISO
+copyright office<o:p></o:p></span></p>
+
+<p class=zzCopyright style='margin:0in;text-indent:20.15pt;mso-layout-grid-align:
+none;text-autospace:none;border:none;mso-border-left-alt:solid windowtext .5pt;
+mso-border-right-alt:solid windowtext .5pt;padding:0in;mso-padding-alt:0in 4.0pt 0in 4.0pt'><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:11.0pt;color:windowtext'>CP
+401 • Ch. de Blandonnet 8<o:p></o:p></span></p>
+
+<p class=zzCopyright style='margin:0in;text-indent:20.15pt;mso-layout-grid-align:
+none;text-autospace:none;border:none;mso-border-left-alt:solid windowtext .5pt;
+mso-border-right-alt:solid windowtext .5pt;padding:0in;mso-padding-alt:0in 4.0pt 0in 4.0pt'><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:11.0pt;color:windowtext'>CH-1214
+Vernier, Geneva<o:p></o:p></span></p>
+
+<p class=zzCopyright style='margin:0in;text-indent:20.15pt;mso-layout-grid-align:
+none;text-autospace:none;border:none;mso-border-left-alt:solid windowtext .5pt;
+mso-border-right-alt:solid windowtext .5pt;padding:0in;mso-padding-alt:0in 4.0pt 0in 4.0pt'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;color:windowtext;mso-ansi-language:
+EN-US'>Phone: +41 22 749 01 11<o:p></o:p></span></p>
+
+<p class=zzCopyright style='margin:0in;text-indent:20.15pt;mso-layout-grid-align:
+none;text-autospace:none;border:none;mso-border-left-alt:solid windowtext .5pt;
+mso-border-right-alt:solid windowtext .5pt;padding:0in;mso-padding-alt:0in 4.0pt 0in 4.0pt'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;color:windowtext;mso-ansi-language:
+EN-US'>Email: copyright@iso.org<o:p></o:p></span></p>
+
+</div>
+
+<div style='mso-element:para-border-div;border:solid windowtext 1.0pt;
+border-top:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:0in 4.0pt 1.0pt 4.0pt;
+margin-left:5.1pt;margin-right:5.1pt'>
+
+<p class=zzCopyright style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:0in;text-indent:20.15pt;mso-layout-grid-align:none;text-autospace:
+none;border:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;padding:0in;
+mso-padding-alt:0in 4.0pt 1.0pt 4.0pt'><span lang=EN-GB style='font-size:10.0pt;
+mso-bidi-font-size:11.0pt;color:windowtext'>Website: www.iso.org<o:p></o:p></span></p>
+
+<p class=zzCopyright style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;
+margin-left:0in;mso-layout-grid-align:none;text-autospace:none;border:none;
+mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext .5pt;
+mso-border-right-alt:solid windowtext .5pt;padding:0in;mso-padding-alt:0in 4.0pt 1.0pt 4.0pt'><span
+lang=EN-GB style='font-size:10.0pt;mso-bidi-font-size:11.0pt;color:windowtext'>Published
+in Switzerland<o:p></o:p></span></p>
+
+</div>
+
+<p class=zzContents style='margin-top:0in'><span lang=EN-GB>Contents</span></p>
+
+<p class=MsoToc1><!--[if supportFields]><span lang=EN-GB><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>TOC \o &quot;1-3&quot; \h \z <span
+style='mso-element:field-separator'></span></span><![endif]-->
+Foreword<span style='mso-tab-count:1 dotted'>.. </span>iv</p>
+
+<p class=MsoToc1><!--[if supportFields]><span lang=EN-GB><span
+style='mso-element:field-end'></span></span><![endif]--><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=ForewordTitle><a name="_Toc353342667"></a><a name="_Toc485815077"><span
+style='mso-bookmark:_Toc353342667'><span lang=EN-GB>Foreword</span></span></a></p>
+
+<p class=ForewordText><span lang=EN-GB style='mso-ansi-language:EN-GB'>ISO (the
+International Organization for Standardization) is a worldwide federation of
+national standards bodies (ISO member bodies). The work of preparing
+International Standards is normally carried out through ISO technical
+committees. Each member body interested in a subject for which a technical
+committee has been established has the right to be represented on that
+committee. International organizations, governmental and non-governmental, in
+liaison with ISO, also take part in the work. ISO collaborates closely with the
+International Electrotechnical Commission (IEC) on all matters of
+electrotechnical standardization.<o:p></o:p></span></p>
+
+<p class=ForewordText><span lang=EN-GB style='mso-ansi-language:EN-GB'>The
+procedures used to develop this document and those intended for its further
+maintenance are described in the ISO/IEC Directives, Part 1. In particular, the
+different approval criteria needed for the different types of ISO documents
+should be noted. This document was drafted in accordance with the editorial
+rules of the ISO/IEC Directives, Part 2 (see </span><span lang=FR><a
+href="https://www.iso.org/directives-and-policies.html"><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>www.iso.org/directives</span></a></span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>).<o:p></o:p></span></p>
+
+<p class=ForewordText><span lang=EN-GB style='mso-ansi-language:EN-GB'>Attention
+is drawn to the possibility that some of the elements of this document may be
+the subject of patent rights. ISO shall not be held responsible for identifying
+any or all such patent rights. Details of any patent rights identified during
+the development of the document will be in the Introduction and/or on the ISO
+list of patent declarations received (see </span><span lang=FR><a
+href="https://www.iso.org/iso-standards-and-patents.html"><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>www.iso.org/patents</span></a></span><span
+lang=EN-GB style='mso-ansi-language:EN-GB'>).<o:p></o:p></span></p>
+
+<p class=ForewordText><span lang=EN-GB style='mso-ansi-language:EN-GB'>Any
+trade name used in this document is information given for the convenience of
+users and does not constitute an endorsement.<o:p></o:p></span></p>
+
+<p class=ForewordText><span lang=EN-GB style='mso-ansi-language:EN-GB'>For an
+explanation of the voluntary nature of standards, the meaning of ISO specific
+terms and expressions related to conformity assessment, as well as information
+about ISO's adherence to the World Trade Organization (WTO) principles in the
+Technical Barriers to Trade (TBT),<span style='color:red'> </span>see </span><span
+lang=FR><a href="https://www.iso.org/foreword-supplementary-information.html"><span
+lang=EN-GB style='mso-bidi-font-size:12.0pt;mso-fareast-font-family:"Malgun Gothic";
+mso-bidi-font-family:Arial;mso-ansi-language:EN-GB'>www.iso.org/iso/foreword.html</span></a></span><span
+lang=EN-GB style='mso-fareast-font-family:"Malgun Gothic";mso-ansi-language:
+EN-GB'>.</span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+
+<p class=ForewordText><span lang=EN-GB style='mso-ansi-language:EN-GB'>This
+document was prepared by Technical Committee ISO/TC 204, <i style='mso-bidi-font-style:normal'>Intelligent transport systems</i>.<o:p></o:p></span></p>
+
+<p class=ForewordText><span lang=EN-GB style='mso-ansi-language:EN-GB'>This is the first edition of ISO 26048-1.<o:p></o:p></span></p>
+
+<p class=ForewordText>A list of all parts in the ISO 26048 series can be found on the ISO website.</p>
+
+<p class=ForewordText>Any feedback or questions on this document should
+be directed to the user’s national standards body. A complete listing of these
+bodies can be found at <a href="https://www.iso.org/members.html">www.iso.org/members.html</a>.</p>
+</div>
+
+<b><span style='font-size:16.0pt;
+font-family:"Times New Roman",serif;'><br
+clear=all style='page-break-before:right;mso-break-type:section-break'>
+</span></b>
+
+<div class=WordSection3>
+
+<p class=zzSTDTitle style='margin-top:0in;margin-right:0in;margin-bottom:.25in;
+margin-left:0in'>Intelligent transport systems &mdash;
+Field device SNMP data interface &mdash; Part 1: Global objects</p>
+
+
+{{var "bool" 0}}
+{{var "examples" ""}}
+{{var "listCtr" 0}}
+{{var "inList" 0}}
+{{var "intro" ""}}
+{{var "termNum" 0}}
+
+{{#*inline "setList"}}
+	{{#if (eval (get "inList") "==" 0)}}
+		{{set "inList" 1}}
+		{{incr "listCtr"}}
+	{{/if}}
+{{/inline}}
+
+{{#*inline "resetList"}}
+	{{#if (eval (get "inList") "==" 1)}}
+		{{set "inList" 0}}
+	{{/if}}
+{{/inline}}
+
+{{#*inline "abbreviated"}}
+	<p class="Acronym">{{heading}}<span style='mso-tab-count:1'> </span>{{formatString text}}</p>
+{{/inline}}
+
+{{#*inline "annexAndText"}}
+	{{> resetList}}
+	{{#if (isSection)}}
+		{{#if (eval level "==" 1)}}
+			<p class=ANNEX><br><br>{{heading}}</p>
+		{{else}}
+			<p class=a{{level}}>{{heading}}</p>
+		{{/if}}
+	{{/if}}
+	{{formatXHTML text paragraphClass="MsoNormal"}}
+{{/inline}}
+
+{{#*inline "discussion"}}
+    {{#eachColumn}}
+      {{#if (eval (columnId) "==" "discussion")}}
+  	    {{#each discussion}}
+  	      {{#formatPrefixedXHTML comment paragraphClass="discussion"}}** <em>Discussion {{formatDate date}}</em>: {{/formatPrefixedXHTML}}
+  	    {{/each}}
+      {{/if}}
+    {{/eachColumn}}
+{{/inline}}
+
+{{#*inline "example"}}
+	{{#if (eval (formatString number) "==" "")}}
+		{{set "intro" "EXAMPLE"}}
+	{{else}}
+		{{set "intro" (eval "EXAMPLE " "+" (number))}}
+	{{/if}}
+	{{#formatPrefixedXHTML text paragraphClass="Example"}}{{get "intro"}}<span style='mso-tab-count:1'> </span>{{/formatPrefixedXHTML}}
+{{/inline}}
+
+{{#*inline "headingAndText"}}
+	{{> resetList}}
+	{{#if (isSection)}}
+	<h{{level}} style='mso-list:l5 level{{level}} lfo6'><a name="_Sec{{id}}">{{heading}}</a></h{{level}}>
+	{{/if}}
+	{{> discussion}}
+	{{formatXHTML text paragraphClass="MsoNormal"}}
+{{/inline}}
+
+{{#*inline "image"}}
+	{{set "bool" 0}}
+	{{#eachAttachment}}{{#if (eval isImage "&&" href)}}
+		<p class='MsoCaption'><img width="460" src="{{href}}"></p>
+		{{set "bool" 1}}
+	{{/if}}{{/eachAttachment}}
+	{{#if (eval (get "bool") "==" 1)}}
+		<p class='MsoCaption'><a name="_Ref{{id}}">Figure </a><!--[if supportFields]><span style='mso-element:field-begin'></span><span style='mso-bookmark:_Ref{{id}}'><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]-->{{id}}<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->: {{name}}</p>
+	{{/if}}
+{{/inline}}
+
+{{#*inline "list1"}}
+	{{> setList}}
+	<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;mso-list:l3 level1 {{get "listCtr"}};'>{{formatString text}}</p>
+{{/inline}}
+
+{{#*inline "list2"}}
+	<p class=MsoNormal style='margin-left:0.75in;text-indent:-0.25in;mso-list:l3 level2 {{get "listCtr"}};'>{{formatString text}}</p>
+{{/inline}}
+
+{{#*inline "note"}}
+	{{#formatPrefixedXHTML text paragraphClass="Note"}}NOTE<span style='mso-tab-count:1'> </span>{{/formatPrefixedXHTML}}
+{{/inline}}
+
+{{#*inline "note-t"}}
+	{{#formatPrefixedXHTML text paragraphClass="Note"}}Note {{number}} to entry:<span style='mso-tab-count:1'> </span>{{/formatPrefixedXHTML}}
+{{/inline}}
+
+{{#*inline "table"}}
+	{{> resetList}}
+	{{#eachColumn}}{{#if (eval (columnId) "==" "addl")}}	
+		<p class="TableTitle">{{columnAttributeValue}}</p>
+	{{/if}}{{/eachColumn}}
+	{{formatXHTML text paragraphClass="MsoNormal"}}
+	<p>&nbsp;</p>
+{{/inline}}
+
+
+
+
+
+
+  {{#eachDocumentObject}}
+  {{!-- **********  BLANK  ********** --}}
+  {{#unless type}}
+    {{#if heading}}{{#section numbering=false}}{{heading}}{{/section}}{{/if}}
+    {{{formatXHTML text paragraphClass="body"}}}
+	!~Missing Type Field~!
+  {{/unless}}
+  {{!-- **********  Abbreviated  ********** --}}
+  {{#if (eval type "==" "a")}}
+  	{{> abbreviated}}
+  {{/if}}
+  {{!-- **********  Annex  ********** --}}
+  {{#if (eval type "==" "annex")}}
+    {{> annexAndText}}
+  {{/if}}
+  {{!-- **********  Bibliography  ********** --}}
+  {{#if (eval type "==" "bib")}}
+    <p class=BiblioTitle style='page-break-before:always;page-break-after:avoid'>Bibliography</p>
+  {{/if}}
+  {{!-- **********  Dialog  ********** --}}
+  {{#if (eval type "==" "dia")}}
+    {{> headingAndText}}
+  {{/if}}
+  {{!-- **********  EXAMPLE  ********** --}}
+  {{#if (eval type "==" "e")}}
+    {{> example}}
+  {{/if}}
+  {{!-- **********  FEATURE  ********** --}}
+  {{#if (eval type "==" "feature")}}
+    {{> headingAndText}}
+  {{/if}}
+  {{!-- **********  FIGURE  ********** --}}
+  {{#if (eval type "==" "f")}}
+    {{> image}}
+  {{/if}}
+  {{!-- **********  List 1  ********** --}}
+  {{#if (eval type "==" "l1")}}
+    {{> list1}}
+  {{/if}}
+  {{!-- **********  List 2  ********** --}}
+  {{#if (eval type "==" "l2")}}
+    {{> list2}}
+  {{/if}}
+  {{!-- **********  NOTE  ********** --}}
+  {{#if (eval type "==" "n")}}
+    {{> note}}
+  {{/if}}
+  {{!-- **********  TERM NOTE  ********** --}}
+  {{#if (eval type "==" "note-t")}}
+    {{> note-t}}
+  {{/if}}
+  {{!-- **********  REFERENCE  ********** --}}
+  {{#if (eval type "==" "ref")}}
+    {{{formatXHTML text paragraphClass="MsoNormal"}}}
+  {{/if}}
+  {{!-- **********  REQ'T - ARCH  ********** --}}
+  {{#if (eval type "==" "a_req")}}
+    {{> headingAndText}}
+  {{/if}}
+  {{!-- **********  REQ'T - Data Exchange  ********** --}}
+  {{#if (eval type "==" "d_req")}}
+    {{> headingAndText}}
+  {{/if}}
+  {{!-- **********  REQ'T - SUPPLEMENTAL  ********** --}}
+  {{#if (eval type "==" "s_req")}}
+    {{> headingAndText}}
+  {{/if}}
+  {{!-- **********  SOURCE  ********** --}}
+  {{#if (eval type "==" "source")}}
+    {{{formatXHTML text paragraphClass="note"}}}
+  {{/if}}
+  {{!-- **********  STATE DIAGRAM  ********** --}}
+  {{#if (eval type "==" "sd")}}
+    {{> headingAndText}}
+  {{/if}}
+  {{!-- **********  TERM  ********** --}}
+  {{#if (eval type "==" "term")}}
+  	{{incr "termNum"}}
+  	<p class="TermNum">3.{{get "termNum"}}</p>
+  	<p class="Term">{{heading}}</p>
+    {{{formatXHTML text paragraphClass="Definition"}}}
+  {{/if}}
+  {{!-- **********  TEXT  ********** --}}
+  {{#if (eval type "==" "t")}}
+    {{> headingAndText}}
+  {{/if}}
+  {{!-- **********  CENTERED  ********** --}}
+  {{#if (eval type "==" "c")}}
+    {{> headingAndText}}
+  {{/if}}
+  {{!-- **********  INDENTED  ********** --}}
+  {{#if (eval type "==" "it")}}
+    {{> headingAndText}}
+  {{/if}}
+  {{!-- **********  USER NEED  ********** --}}
+  {{#if (eval type "==" "un")}}
+    {{> headingAndText}}
+  {{/if}}
+  {{!-- **********  NTF  ********** --}}
+  {{#if (eval type "==" "NTF")}}
+  {{{formatXHTML text paragraphClass="table-title"}}}
+    <table>
+      <thead>
+        <tr>
+          <th>Need</th>
+          <th>Requirement</th>
+          <th>Conformance</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#eachDocumentObject}}{{#ifHasInlinks "use"}}
+        <tr{{#if deleted}} class="deleted"{{/if}}>
+          <td class="row-banded" colspan="2">
+            &sect;{{{sectionNumber}}}: {{{heading}}}
+          </td>
+          <td class="row-banded border-left">{{{formatString conformance}}}</td>
+        </tr>
+        {{#eachInlinkWith type="use"}}
+        <tr>
+          <td>&nbsp;</td>
+          <td>
+    		{{#if (eval docId "!=" (get "source"))}}{{replaceString docId "_" "-"}} {{/if}}&sect;{{sectionNumber}}: {{heading}}
+          </td>
+          <td class="border-left">M</td>
+        </tr>
+        {{/eachInlinkWith}}
+        {{#eachInlinkWith type="use_opt"}}
+        <tr>
+          <td>&nbsp;</td>
+          <td>
+            {{#if (eval docId "!=" (get "source"))}}{{replaceString docId "_" "-"}} {{/if}}&sect;{{sectionNumber}}: {{heading}}
+          </td>
+          <td class="border-left">O</td>
+        </tr>
+        {{#eachInlinkWith type="use_group"}}
+        <tr>
+          <td>&nbsp;</td>
+          <td>
+            {{#if (eval docId "!=" (get "source"))}}{{replaceString docId "_" "-"}} {{/if}}&sect;{{sectionNumber}}: {{heading}}
+          </td>
+          <td class="border-left highlight">TODO!!!!!!!!!!!!</td>
+        </tr>
+        {{/eachInlinkWith}}
+        {{/eachInlinkWith}}
+        {{/ifHasInlinks}}
+        {{/eachDocumentObject}}
+      </tbody>
+    </table>
+  {{/if}}
+  {{!-- **********  FTR  ********** --}}
+  {{#if (eval type "==" "FTR")}}
+    {{{formatXHTML text paragraphClass="table-title"}}}
+        <table>
+          <!-- Heading of the requirements table -->
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Requirement</th>
+              <th>Conformance</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#eachDocumentObject}}{{#ifHasInlinks "refine"}}
+            <tr{{#if deleted}} class="deleted"{{/if}}>
+              <td class="row-banded" colspan="3">
+                &sect;{{{sectionNumber}}}: {{{heading}}}
+              </td>
+            </tr>
+            {{#eachInlinkWith type="refine"}}
+            <tr{{#if deleted}} class="deleted"{{/if}}>
+              <td>&nbsp;</td>
+              <td>
+                {{#if (eval docId "!=" (get "source"))}}{{{replaceString docId "_" "-"}}} {{/if}}&sect;
+                {{#if (sectionNumber)}}{{sectionNumber}}: {{heading}}
+                {{else}}{{#withParentLink}}{{sectionNumber}}{{/withParentLink}}.{{formatString text}}
+                {{/if}}
+              </td>
+              {{set "count" 0}}
+              <td class="border-left">
+                {{#eachInlinkWith type="conformance"}}{{incr "count"}}
+                  {{#if (eval type "==" "optionGroup")}}
+                    {{#if comments}}{{{comments}}}{{else}}<span class="highlight">ERROR - Missing Conformance Clause</span>{{/if}}
+                  {{else}}
+                    {{#if (eval type "==" "module")}}M{{else}}<span class="highlight">ERROR - No Type for Compliance Statement</span>{{/if}}
+                  {{/if}}
+                {{/eachInlinkWith}}
+                {{#if (eval (get "count") ">" 1)}}<span class="highlight">WARNING - Multiple Compliance Statements</span>{{/if}}
+                {{#if (eval (get "count") "==" 0)}}
+                  {{#if conformance}}{{{conformance}}}{{else}}<span class="highlight">ERROR - Missing Conformance Value</span>{{/if}}
+                {{/if}}
+              </td>
+            </tr>
+            {{/eachInlinkWith}}
+            {{#eachInlinkWith type="opt_ref"}}
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                {{{replaceString docId "_" "-"}}} &sect;{{sectionNumber}}: {{heading}}
+              </td>
+              <td class="border-left">ERROR - Legacy Conformance; Replace opt_ref link with refine link</td>
+            </tr>
+            {{/eachInlinkWith}}
+            {{/ifHasInlinks}}
+            {{/eachDocumentObject}}
+          </tbody>
+        </table>
+  {{/if}}
+  {{!-- **********  RTM  ********** --}}
+  {{#if (eval type "==" "RTM")}}
+    {{{formatXHTML text paragraphClass="table-title"}}}
+    <table>
+          <!-- Heading of the requirements table -->
+          <thead>
+            <tr>
+              <th>Requirement</th>
+              <th>Reference</th>
+              <th>Group</th>
+              <th>Object</th>
+              <th>Dialogue</th>
+            </tr>
+          </thead>
+    
+          <tbody>
+            {{#eachDocumentObject}}{{#ifHasInlinks "implement"}}
+            <tr{{#if deleted}} class="deleted"{{/if}}>
+    		  <td class="row-banded" colspan="4">
+    	  	    {{#if (eval docId "!=" (get "source"))}}{{docId}} {{/if}}&sect;{{{sectionNumber}}}: {{{heading}}}
+    		  </td>
+              <td class="row-banded border-left">
+                {{#eachInlinkWith type="implement"}}
+                {{#if (eval docId "!=" (get "source"))}}{{docId}} {{/if}}&sect;{{{sectionNumber}}}: {{{heading}}}
+                {{/eachInlinkWith}}
+              </td>
+            </tr> 
+            {{#eachInlinkWith type="satisfies"}}
+            <tr>
+              <td>&nbsp;</td>
+              {{!-- If the group is a partial group from a group defined in an external MIB, we have to follow the link --}}
+              <td>{{set "count" 0}}{{#eachOutlinkWith type="group"}}{{#if (eval (get "count") "==" 0)}}{{docId}}{{incr "count"}}{{/if}}{{/eachOutlinkWith}}{{#if  (eval (get "count") "==" 0)}}{{docId}}{{/if}}</td>
+              <td colspan="3">{{heading}}</td>
+            </tr>
+    		{{#eachInlinkWith type="group"}}
+    		<tr>
+      		  <td colspan="3">&nbsp;</td>
+              <td colspan="2">{{heading}}</td>
+            </tr>
+            {{/eachInlinkWith}}
+            {{/eachInlinkWith}}
+            {{/ifHasInlinks}}
+            {{/eachDocumentObject}}
+          </tbody>
+        </table>
+  {{/if}}
+  {{!-- **********  MIB  ********** --}}
+  {{#if (eval type "==" "MIB")}}
+    {{{formatXHTML text paragraphClass="example"}}}
+  {{/if}}
+  {{/eachDocumentObject}}
+</div>
+
+
+</body>
+
+</html>

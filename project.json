@@ -1,0 +1,127 @@
+{
+  "id": "WG9",
+  "documents": [
+    "26048_1.json",
+    "Action-MIB.json",
+    "Cabinet-MIB.json",
+    "Clock-MIB.json",
+    "Command-MIB.json",
+    "CondTrigger-MIB.json",
+    "Controller-MIB.json",
+    "DayPlan-MIB.json",
+    "DynObj-MIB.json",
+    "FieldDevice-MIB.json",
+    "Global-MIB.json",
+    "Log-MIB.json",
+    "Notification-MIB.json",
+    "Owner-MIB.json",
+    "Recording-MIB.json",
+    "SchedTrigger-MIB.json",
+    "Srsa-MIB.json",
+    "Transaction-MIB.json",
+    "rfc3411.json",
+    "rfc3413.json",
+    "rfc3415.json",
+    "rfc3418.json",
+    "rfc4133.json",
+    "NTCIP_1203.json",
+    "NTCIP_1204.json",
+    "Conditionals.json",
+    "OptionGroups.json",
+    "15784_2.json",
+    "Syslog.json",
+    "rfc5676.json",
+    "Notes.json"
+  ],
+  "traceability": {
+    "addlDetails": {
+      "name": "Assigned Value",
+      "source": "Value assigned by",
+      "target": "Specifies value for"
+    },
+    "basedOn": {
+      "name": "Based On",
+      "source": "Initiates",
+      "target": "Used in"
+    },
+    "compliance": {
+      "name": "Compliance Statement",
+      "source": "Part of compliance statement",
+      "target": "Compliance statement includes"
+    },
+    "compliance_opt": {
+      "name": "Conformance",
+      "source": "Optional part of compliance",
+      "target": "Compliance may include"
+    },
+    "condRef": {
+      "name": "Conditional Reference",
+      "source": "Condition depends upon",
+      "target": "Selection enables"
+    },
+    "conditional": {
+      "name": "Conditional",
+      "source": "Conditionally meets",
+      "target": "Conditionally met by"
+    },
+    "fulfil": {
+      "name": "Fulfil",
+      "source": "Fulfills",
+      "target": "Fulfilled by"
+    },
+    "fulfil_opt": {
+      "name": "Optional Fulfil",
+      "source": "Optionally fulfills",
+      "target": "Optionally fulfilled by"
+    },
+    "group": {
+      "name": "Compliance Group",
+      "source": "Part of compliance group",
+      "target": "Compliance group contains"
+    },
+    "implement": {
+      "name": "Implementation",
+      "source": "Implemented by",
+      "target": "Implemented with"
+    },
+    "opt_group": {
+      "name": "Option Group",
+      "source": "Option group for",
+      "target": "Includes option groups"
+    },
+    "refine": {
+      "name": "Refine",
+      "source": "Refines",
+      "target": "Refined by"
+    },
+    "refine_opt": {
+      "name": "Optional Refine",
+      "source": "Optionally refines",
+      "target": "Optionally refined by"
+    },
+    "satisfies": {
+      "name": "Satisfies",
+      "source": "Satisfies",
+      "target": "Satisfied by"
+    },
+    "satisfiesWithNote": {
+      "name": "Satisfies with note",
+      "source": "Satisfies with note",
+      "target": "Satisfied with note by"
+    },
+    "tests": {
+      "name": "Tests",
+      "source": "Test procedure for",
+      "target": "Tested by"
+    },
+    "verifies": {
+      "name": "Verifies",
+      "source": "Verifies",
+      "target": "Verified by"
+    }
+  },
+  "metadata": {
+    "format": "2.17",
+    "saveHistory": true
+  }
+}

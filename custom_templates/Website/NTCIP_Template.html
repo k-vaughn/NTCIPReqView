@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>NTCIP ISSI Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">ISSI Documents</a>
+				<table style="width: 600px; margin: 0 25em 0 10em;">
+					<tr>
+						<td width="200px"><h1>{{docName}}</h1><p><em>Last modified on {{formatDateTime lastChangedOn}}</em></p></td>
+						<td width="400px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span></td>
+					</tr>
+				</table>
+				<div class="navbar">
+					<a href="index.html">Home</a>
+					<a href="NTCIP_1201.html" class="active">NTCIP 1201</a>
+					<a href="26048_1.html">ISO 26048-1</a>
+					<div class="dropdown">
+						<button class="dropbtn">Other<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Action-MIB.html">Action MIB</a>
+							<a href="Cabinet-MIB.html">Cabinet MIB</a>
+							<a href="Clock-MIB.html">Clock MIB</a>
+							<a href="Command-MIB.html">Command MIB</a>
+							<a href="Conditionals.html">Conditional Relationships</a>
+							<a href="CondTrigger-MIB.html">Conditional Trigger MIB</a>
+							<a href="Controller-MIB.html">Controller MIB</a>
+							<a href="DayPlan-MIB.html">Day Plan MIB</a>
+							<a href="DynObj-MIB.html">Dynamic Object MIB</a>
+							<a href="FieldDevice-MIB.html">Field Device MIB</a>
+							<a href="Global-MIB.html">Global MIB</a>
+							<a href="Log-MIB.html">Log MIB</a>
+							<a href="Notification-MIB.html">Notification MIB</a>
+							<a href="OptionGroups.html">Option Groups</a>
+							<a href="Owner-MIB.html">Owner MIB</a>
+							<a href="Recording-MIB.html">Recording MIB</a>
+							<a href="SchedTrigger-MIB.html">Scheduled Trigger MIB</a>
+							<a href="SRSA-MIB.html">SRSA MIB</a>
+							<a href="Transaction-MIB.html">Transaction MIB</a>
+							<a href="rfc3411.html">RFC 3411 MIB</a>
+							<a href="rfc3413.html">RFC 3413 MIB</a>
+							<a href="rfc3415.html">RFC 3415 MIB</a>
+							<a href="rfc3418.html">RFC 3418 MIB</a>
+							<a href="rfc4133.html">RFC 4133 MIB</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<ul>
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#header">Menu</a></li>
+						<li style="list-style: none;margin: 0.25em 0 0 0;">&nbsp;</li>
+						{{#eachDocumentObject}}{{#if (and (isSection) (eval level "<" 3))}}
+						<li style="list-style: none;margin: 0.25em 0 0 0;"><a href="#{{docObjId}}">{{sectionNumber}} {{heading}}</a></li>
+						{{/if}}
+						{{/eachDocumentObject}}
+					</ul>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<section id="one" class="wrapper spotlights">
+						<section>
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+      {{#each columns}}
+          <th class="{{#if userDefined}}custom{{else}}{{id}}{{/if}}-col" style="color: white;">{{#if icon}}<i class="fas {{icon}}"></i> {{/if}}{{columnName id}}{{#if sortAsc}} <i class="fas fa-sort-up"></i>{{/if}}{{#if sortDesc}} <i class="fas fa-sort-down"></i>{{/if}}</th>
+      {{/each}}
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        {{#eachDocumentObject}}
+		{{#if (eval display "!=" "2")}}
+        <tr{{#if deleted}} class="deleted"{{/if}}{{#if (isSection)}} id="{{docObjId}}"{{/if}}>
+          {{#eachColumn}}
+            {{#if (eval (columnId) "==" "id")}}
+              {{!-- ID --}}
+          <td class="id-col">{{docObjId}}{{#if deleted}} <i class="fas fa-trash-alt"></i>{{/if}}</td>
+            {{else if (eval (columnId) "==" "description")}}
+              {{!-- Description --}}
+          <td class="description-col" style="padding-left:{{indentation 10}}">
+            {{#section numbering=true}}{{heading}}{{/section}}
+            <div class="htmlContent">{{{text}}}</div>
+            {{#eachAttachment}}
+              <div class="attachment">
+                {{#if isImage}}
+                  <img src="{{data}}{{href}}" {{imageSize}}>
+                  <i class="fas fa-image"></i> {{#if href}}<a href="{{href}}">{{/if}}<span class="attachment-name">{{name}}</span>{{#if href}}</a>{{/if}}
+                {{else}}
+                  <i class="fas fa-file"></i> {{#if href}}<a href="{{href}}">{{/if}}<span class="attachment-name">{{name}}</span>{{#if href}}</a>{{/if}}
+                {{/if}}
+              </div>
+            {{/eachAttachment}}
+          </td>
+            {{else if (eval (columnId) "==" "discussion")}}
+              {{!-- Discussion --}}
+          <td class="discussion-col">
+            {{#each discussion}}
+              <div class="comment">
+                <div class="comment-header"><i class="fas fa-comment"></i> {{formatDate date}}: {{#with author}}{{name}}{{/with}}</div>
+                <div class="comment-text">{{{comment}}}</div>
+              </div>
+            {{/each}}
+          </td>
+            {{else if (eval (columnId) "==" "links")}}
+              {{!-- Links --}}
+          <td class="links-col">
+            {{#withParentLink}}
+              <div class="links-type-name"><i class="fas fa-arrow-up fa-sm"></i> Parent:</div>
+              <div class="link{{#if deleted}} deleted{{/if}}"> {{#hyperlink}}{{docObjId}}{{/hyperlink}} {{shortDescription maxLength=40}}</div>
+            {{/withParentLink}}
+            {{#eachInlinkType}}
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-in-alt"></i> {{linkTypeName}}:</div>
+              {{#eachLink}}
+                <div class="link{{#if deleted}} deleted{{/if}}"> {{#hyperlink}}{{docObjId}}{{/hyperlink}} {{#ifSuspect}}<span class="suspect-flag"><i class="fas fa-exclamation-circle"></i></span>{{/ifSuspect}} {{shortDescription maxLength=40}}</div>
+              {{/eachLink}}
+            {{/eachInlinkType}}
+            {{#eachOutlinkType}}
+              <div class="links-type-name" style="padding-top: 1em;color: white;"><i class="fas fa-sign-out-alt"></i> {{linkTypeName}}:</div>
+              {{#eachLink}}
+                <div class="link{{#if deleted}} deleted{{/if}}"> {{#hyperlink}}{{docObjId}}{{/hyperlink}} {{#ifSuspect}}<span class="suspect-flag"><i class="fas fa-exclamation-circle"></i></span>{{/ifSuspect}} {{shortDescription maxLength=40}}</div>
+              {{/eachLink}}
+            {{/eachOutlinkType}}
+            {{#if (hasOriginInlink)}}
+              <div class="links-type-name"><i class="fas fa-copy"></i> Copies:</div>
+              {{#eachOriginInlink}}
+              <div class="link{{#if deleted}} deleted{{/if}}"> {{#hyperlink}}{{docObjId}}{{/hyperlink}} {{shortDescription maxLength=40}}</div>
+              {{/eachOriginInlink}}
+            {{/if}}
+            {{#withOriginOutlink}}
+              <div class="links-type-name"><i class="fas fa-copy"></i> Origin:</div>
+              <div class="link{{#if deleted}} deleted{{/if}}"> {{#hyperlink}}{{docObjId}}{{/hyperlink}} {{shortDescription maxLength=40}}</div>
+              {{#eachInlinkType}}
+                <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> {{linkTypeName}} (inherited):</div>
+                {{#eachLink}}
+                  <div class="link{{#if deleted}} deleted{{/if}}"> {{#hyperlink}}{{docObjId}}{{/hyperlink}} {{shortDescription maxLength=40}}</div>
+                {{/eachLink}}
+              {{/eachInlinkType}}
+              {{#eachOutlinkType}}
+                <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> {{linkTypeName}} (inherited):</div>
+                {{#eachLink}}
+                  <div class="link{{#if deleted}} deleted{{/if}}"> {{#hyperlink}}{{docObjId}}{{/hyperlink}} {{shortDescription maxLength=40}}</div>
+                {{/eachLink}}
+              {{/eachOutlinkType}}
+            {{/withOriginOutlink}}
+          </td>
+            {{else if (eval (columnId) "==" "attributes")}}
+          <td class="attributes-col">
+            <ul>
+              {{#eachDisplayedCustomAttribute}}
+                {{#if value}}
+					{{#if (eval name "!=" "Display")}}
+              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">{{name}}:</span> <span class="attribute-value">{{{value}}}</span></li>
+			  		{{/if}}
+                {{/if}}
+              {{/eachDisplayedCustomAttribute}}
+            </ul>
+          </td>
+            {{else if (isTemplateColumn)}}
+              {{!-- Template column --}}
+          <td class="custom-col htmlContent">{{{templateColumnValue (columnProperty "id")}}}</td>
+            {{else}}
+              {{!-- User-defined attribute --}}
+          <td class="custom-col htmlContent">{{{attributeValue (columnProperty "id")}}}</td>
+            {{/if}}
+          {{/eachColumn}}
+        </tr>
+		{{/if}}
+        {{/eachDocumentObject}}
+      </tbody>
+    </table>
+						</section>
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper fade-up">
+						<span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/k-vaughn/NTCIP/issues" class="button primary">Submit Comment</a><br /></span>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

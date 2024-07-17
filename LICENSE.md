@@ -1,0 +1,1 @@
+[NTCIP ReqView Source Files](https://github.com/ite-org/NTCIPReqView) © 2024 is licensed under [Creative Commons Attribution-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1)

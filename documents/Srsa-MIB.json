@@ -1,1 +1,783 @@
-{"id":"Srsa-MIB","guid":"DDDFB287-0141-499A-80FA-6496FBD1CC59","heading":"ISO26048-1-Srsa","lastId":48,"createdOn":"2023-06-21T12:04:42","createdBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"lastChangedOn":"2024-07-13T16:02:29.382Z","lastChangedBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"data":[{"id":"1","guid":"CEF3DAF8-6461-4708-A428-8383FB0A6C71","text":"","heading":"comment","type":"comment"},{"id":"2","guid":"6F357C15-B7D0-4B2A-B002-36C142AE20B9","text":"","heading":"ISO26048-1-SRSA","type":"mib"},{"id":"3","guid":"CD88463D-5657-49E1-BABC-0982ACED5CD2","text":"","contact":"<p>name: ISO TC 204 Committee Manager email: jennifer.collins@sae.org website: https://www.iso.org/committee/54706.html</p>","heading":"fdSrsaMIB","oid":"fdGlobalMIB 6","org":"ISO TC 204 WG 9","type":"mi","updated":"202306150000Z"},{"id":"4","guid":"DE1AF396-2575-4566-8ED6-7EB783364D9D","text":"","heading":"comment","type":"comment"},{"id":"5","guid":"194BD5D8-BA71-4980-9214-A31FD5EAAF22","heading":"fdSrsaTypeTable","text":"","access":"not-accessible","type":"ot","oid":"fdSrsaMIB 1","status":"current","syntax":"SEQUENCE OF FdSrsaTypeEntry"},{"id":"6","guid":"A1D6E3D7-CCB4-46BA-B29E-16B2935406DE","text":"","access":"not-accessible","index":"fdSrsaTypeCode","heading":"fdSrsaTypeEntry","oid":"fdSrsaTypeTable 1","status":"current","syntax":"FdSrsaTypeEntry","type":"ot"},{"id":"7","guid":"E785F218-BC1C-4FAC-9E0B-E7568B064D34","heading":"FdSrsaTypeEntry","syntax":"{ fdSrsaTypeCode SnmpAdminString,<br> fdSrsaTypeCount ITSUnsigned8,<br> fdSrsaTypeStatus ITSBitmap,<br> fdSrsaTypeWarning ITSBitmap<br> }","type":"row"},{"id":"8","guid":"8238D76A-855D-4A6A-B58A-A5A2E920080E","heading":"fdSrsaTypeCode","text":"","access":"not-accessible","type":"ot","oid":"fdSrsaTypeEntry 1","status":"current","syntax":"SnmpAdminString (SIZE(3))"},{"id":"9","guid":"2BC6A0ED-5A99-4767-B6BA-2F40BA4D1525","heading":"fdSrsaTypeCount","text":"","access":"read-only","links":{"satisfies":["26048_1-329"]},"oid":"fdSrsaTypeEntry 2","status":"current","syntax":"ITSUnsigned8","type":"ot"},{"id":"10","guid":"874B956E-3199-4F48-B456-38C651AD397C","heading":"fdSrsaTypeStatus","text":"","access":"read-only","links":{"satisfies":["26048_1-337"]},"oid":"fdSrsaTypeEntry 3","status":"current","syntax":"ITSBitmap","type":"ot"},{"id":"11","guid":"E92123B6-97FF-4CEF-A246-DD1EAA83CF60","heading":"fdSrsaTypeWarning","text":"","access":"read-only","links":{"satisfies":["26048_1-337"]},"oid":"fdSrsaTypeEntry 4","status":"current","syntax":"ITSBitmap","type":"ot"},{"id":"12","guid":"F4D19B1B-C5EA-462E-91B9-A03DC81A3F80","heading":"fdSrsaPortTable","text":"","access":"not-accessible","type":"ot","oid":"fdSrsaMIB 2","status":"current","syntax":"SEQUENCE OF FdSrsaPortEntry"},{"id":"13","guid":"186F49D5-028A-45B3-B739-EE33F862B6E0","text":"","access":"not-accessible","index":"fdSrsaTypeCode, fdSrsaPortIndex","heading":"fdSrsaPortEntry","oid":"fdSrsaPortTable 1","status":"current","syntax":"FdSrsaPortEntry","type":"ot"},{"id":"14","guid":"9D385BED-8CD1-4277-B0D7-7D6EB315239F","heading":"FdSrsaPortEntry","syntax":"{ fdSrsaPortIndex ITSPositive8,<br> fdSrsaPortDescription SnmpAdminString,<br> fdSrsaPortDirection INTEGER,<br> fdSrsaPortUnits ITSUnits,<br> fdSrsaPortExponent ITSInteger8,<br> fdSrsaPortPrecision INTEGER,<br> fdSrsaPortMinValue Integer32,<br> fdSrsaPortMaxValue Integer32,<br> fdSrsaPortRequestedValue Integer32,<br> fdSrsaPortValue Integer32,<br> fdSrsaPortMinThreshold Integer32,<br> fdSrsaPortMaxThreshold Integer32,<br> fdSrsaPortStatus INTEGER<br> }","type":"row"},{"id":"15","guid":"9BC68CFA-FACC-42CB-BAA5-84D2BD4C5B36","heading":"fdSrsaPortIndex","text":"","access":"not-accessible","type":"ot","oid":"fdSrsaPortEntry 1","status":"current","syntax":"ITSPositive8"},{"id":"16","guid":"4BBF0E45-C6DD-4A31-84DB-2B595D9BF10A","heading":"fdSrsaPortDescription","text":"","access":"read-write","links":{"satisfies":["26048_1-330","26048_1-334"]},"oid":"fdSrsaPortEntry 2","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"17","guid":"5DAE332D-C23C-4442-9D88-8F633B4AB07B","heading":"fdSrsaPortDirection","text":"","access":"read-only","links":{"satisfies":["26048_1-334"]},"oid":"fdSrsaPortEntry 3","status":"current","syntax":"INTEGER {<br> output (1),<br> input (2),<br> bidirectional (3)<br> }","type":"ot"},{"id":"18","guid":"57F3406D-6E4F-486F-9B39-24DA61A7E87C","heading":"fdSrsaPortUnits","text":"","access":"read-only","links":{"satisfies":["26048_1-334"]},"oid":"fdSrsaPortEntry 4","status":"current","syntax":"ITSUnits","type":"ot"},{"id":"19","guid":"ED74B40F-5DB1-4E12-8596-F1E0784748F7","heading":"fdSrsaPortExponent","text":"","access":"read-only","links":{"satisfies":["26048_1-334"]},"oid":"fdSrsaPortEntry 5","status":"current","syntax":"ITSInteger8","type":"ot"},{"id":"20","guid":"E10D7525-85CF-4BEA-BF63-272CBB52FFDF","heading":"fdSrsaPortPrecision","text":"","access":"read-only","links":{"satisfies":["26048_1-334"]},"oid":"fdSrsaPortEntry 6","status":"current","syntax":"Integer32 (0..2147483647)","type":"ot"},{"id":"21","guid":"A0252AC8-6A4B-430F-898B-9B9E704984E7","heading":"fdSrsaPortMinValue","text":"","access":"read-only","links":{"satisfies":["26048_1-334"]},"oid":"fdSrsaPortEntry 7","status":"current","syntax":"Integer32","type":"ot"},{"id":"22","guid":"AF29F2DD-F8F7-457E-9B27-39508924D5AE","heading":"fdSrsaPortMaxValue","text":"","access":"read-only","links":{"satisfies":["26048_1-334","Notes-4"]},"oid":"fdSrsaPortEntry 8","status":"current","syntax":"Integer32","type":"ot"},{"id":"23","guid":"B7BF13FC-AE16-4681-BA24-55C99FF61E8F","heading":"fdSrsaPortRequestedValue","text":"","access":"read-write","links":{"satisfies":["26048_1-338","26048_1-339"]},"oid":"fdSrsaPortEntry 9","status":"current","syntax":"Integer32","type":"ot"},{"id":"24","guid":"ED388FFD-845E-46DD-B567-D3058DFE09D0","heading":"fdSrsaPortValue","text":"","access":"read-only","links":{"satisfies":["26048_1-335"]},"oid":"fdSrsaPortEntry 10","status":"current","syntax":"Integer32","type":"ot"},{"id":"25","guid":"4AA2E040-4FC3-482A-A15A-C5EEA212CA23","heading":"fdSrsaPortMinThreshold","text":"","access":"read-write","defval":"-2147483648","links":{"satisfies":["26048_1-330","26048_1-334"]},"oid":"fdSrsaPortEntry 11","status":"current","syntax":"Integer32","type":"ot"},{"id":"26","guid":"B3BBE89D-2838-4555-9E09-41C865BE74FC","heading":"fdSrsaPortMaxThreshold","text":"","access":"read-write","defval":"2147483647","links":{"satisfies":["26048_1-330","26048_1-334"]},"oid":"fdSrsaPortEntry 12","status":"current","syntax":"Integer32","type":"ot"},{"id":"27","guid":"6CC5BBFE-D966-4547-B936-44E6E6D7F559","heading":"fdSrsaPortStatus","text":"","access":"read-only","links":{"satisfies":["26048_1-336"]},"oid":"fdSrsaPortEntry 13","status":"current","syntax":"INTEGER {<br> other (1),<br> active (2),<br> unavailable (3),<br> nonoperational (4),<br> notInService (5)<br> }","type":"ot"},{"id":"38","guid":"a4f67a4e-9f6c-4550-b25a-e42719cd6ffa","heading":"fdSrsaPortTextStatus","access":"read-only","links":{"satisfies":["26048_1-336"]},"status":"current","type":"ot"},{"id":"43","guid":"a5bd47f5-d7a8-4161-9463-225ef12174c6","heading":"fdSrsaPortEntityID","access":"read-write","links":{"satisfies":["26048_1-330","26048_1-334"]},"status":"current","type":"ot"},{"id":"39","guid":"8f6b251a-3cc4-49fe-8e93-f663bab2ecc0","access":"not-accessible","heading":"fdSrsaTypeTestTable","status":"current","type":"ot"},{"id":"40","guid":"80c19f63-da66-40ce-9ffd-ab02b462d796","access":"not-accessible","heading":"fdSrsaTypeTestEntry","status":"current","type":"ot"},{"id":"41","guid":"68d6dba0-3535-44ad-9758-f4419e0266a3","heading":"fdSrsaTypeTestActivation","access":"read-write","links":{"satisfies":["26048_1-1316","26048_1-1317"]},"status":"current","type":"ot"},{"id":"42","guid":"c196a483-0375-4da1-b779-61d98cde1f3e","heading":"fdSrsaTypeTestAbortReason","access":"read-only","links":{"satisfies":["26048_1-1318"]},"status":"current","type":"ot"},{"id":"44","guid":"277e3ca9-9aed-4863-b097-7472e9e0b265","heading":"fdSrsaTypeValueStatsTable","access":"not-accessible","children":[{"id":"45","guid":"cb0be6f1-b989-4548-89c9-961de3df34a7","heading":"fdSrsaTypeValueStatsMin","access":"read-only","links":{"satisfies":["26048_1-1410","NTCIP_1203-1283"]},"status":"current","type":"ot"},{"id":"46","guid":"7fc71b05-256b-4b30-a812-8801f596ba4b","heading":"fdSrsaTypeValueStatsMax","access":"read-only","links":{"satisfies":["26048_1-1410","NTCIP_1203-1283"]},"status":"current","type":"ot"},{"id":"47","guid":"370557d6-8e6d-4b5a-bc24-07f258c1af04","heading":"fdSrsaTypeValueStatsMean","access":"read-only","links":{"satisfies":["26048_1-1410"]},"status":"current","type":"ot"},{"id":"48","guid":"9bcc99b8-14d8-45b6-8a59-73cb2d42066b","heading":"fdSrsaTypeValueStatsMfrValue","access":"read-only","links":{"satisfies":["26048_1-1410","Notes-3"]},"status":"current","type":"ot"}],"status":"current","type":"ot"},{"id":"28","guid":"28BCADFA-A81A-4F03-B4A0-B296FCE1F45A","text":"","heading":"comment","type":"comment"},{"id":"29","guid":"C1E884E1-7BB0-4AEA-A32A-A62C12B9FD9F","text":"","heading":"fdSrsaConformance","oid":"fdGlobalConformance 6","status":"current","type":"oi"},{"id":"30","guid":"5F1BF404-C31B-4039-A67D-4BCE9C7F813E","text":"","heading":"fdSrsaCompliances","oid":"fdSrsaConformance 1","status":"current","type":"oi"},{"id":"31","guid":"EEE35DF0-C348-4D87-ADDD-57FA6D7907A3","text":"","heading":"fdSrsaGroups","oid":"fdSrsaConformance 2","status":"current","type":"oi"},{"id":"32","guid":"81E06F2C-5F11-4F80-A8E4-03DE76E65EA3","text":"","heading":"fdSrsaCompliance","oid":"fdSrsaCompliances 1","status":"current","syntax":"{ fdSrsaBasicGroupV1<br> }","type":"mc"},{"id":"33","guid":"80FFE96B-22A7-446C-8FD9-B1223B37C317","text":"","heading":"fdSrsaBasicGroupV1","oid":"fdSrsaGroups 1","status":"current","syntax":"{ fdSrsaTypeCount,<br> fdSrsaTypeStatus,<br> fdSrsaTypeWarning,<br> fdSrsaPortDescription,<br> fdSrsaPortMinThreshold,<br> fdSrsaPortMaxThreshold,<br> fdSrsaPortDirection,<br> fdSrsaPortUnits,<br> fdSrsaPortExponent,<br> fdSrsaPortPrecision,<br> fdSrsaPortMinValue,<br> fdSrsaPortMaxValue,<br> fdSrsaPortStatus<br> }","type":"og"},{"id":"34","guid":"DD290243-4A77-4B0C-B5CA-78E24C973A30","text":"","heading":"fdSrsaOutputGroupV1","oid":"fdSrsaGroups 2","status":"current","syntax":"{ fdSrsaPortRequestedValue<br> }","type":"og"},{"id":"35","guid":"4C293060-B431-4F1E-AB58-3684E884782D","text":"","heading":"fdSrsaInputGroupV1","oid":"fdSrsaGroups 3","status":"current","syntax":"{ fdSrsaPortValue<br> }","type":"og"},{"id":"36","guid":"2737562B-DCB1-45C8-BECC-872082720EAD","heading":"end","type":"end"}],"attributes":{"access":{"heading":"Access","type":"enum","values":[{"key":"read-only"},{"key":"read-write"},{"key":"read-create"},{"key":"not-accessible"},{"key":"accessible-for-notify"}]},"augments":{"heading":"Augments","type":"string"},"comment":{"heading":"Comment","type":"xhtml"},"contact":{"heading":"Contact","type":"xhtml"},"defval":{"heading":"Default Value","type":"string"},"index":{"heading":"Index","type":"string"},"name":{"heading":"Name","type":"string"},"oid":{"heading":"OID","type":"string"},"org":{"heading":"Organization","type":"string"},"part":{"heading":"Part","type":"string"},"status":{"heading":"Status","type":"enum","values":[{"key":"current"},{"key":"deprecated"},{"key":"obsolete"}]},"syntax":{"heading":"Syntax","type":"xhtml"},"type":{"heading":"Type","type":"enum","values":[{"key":"comment"},{"key":"end"},{"key":"mc","label":"module-compliance"},{"key":"mi","label":"module-identity"},{"key":"mib"},{"key":"ng","label":"notification-group"},{"key":"nt","label":"notification-type"},{"key":"og","label":"object-group"},{"key":"oi","label":"object-identity"},{"key":"ot","label":"object-type"},{"key":"ref","label":"reference"},{"key":"rev","label":"revision"},{"key":"row"},{"key":"text_conv"}]},"units":{"heading":"Units","type":"string"},"updated":{"heading":"Updated","type":"string"}},"templateColumns":{"f6c934cd-36bd-461c-9086-07b910b7af2d":{"label":"Errors","template":"{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-only\") (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\"))) (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies link\" link</div>\n  {{/if}}\n{{/if}}"}},"views":{"Primary":{"columns":[{"columnId":"id","width":65},{"columnId":"type","width":150},{"columnId":"name","width":150},{"columnId":"description","width":500},{"columnId":"links","width":167},{"columnId":"access","width":150},{"columnId":"syntax","width":150}],"default":true}},"metadata":{"format":"2.17"}}
+{
+	"id": "Srsa-MIB",
+	"guid": "DDDFB287-0141-499A-80FA-6496FBD1CC59",
+	"heading": "ISO26048-1-Srsa",
+	"lastId": 48,
+	"createdOn": "2023-06-21T12:04:42",
+	"createdBy": {
+		"heading": "Kenneth Vaughn",
+		"email": "kvaughn@trevilon.com",
+		"company": "Trevilon"
+	},
+	"lastChangedOn": "2024-07-13T16:02:29.382Z",
+	"lastChangedBy": {
+		"heading": "Kenneth Vaughn",
+		"email": "kvaughn@trevilon.com",
+		"company": "Trevilon"
+	},
+	"data": [
+		{
+			"id": "1",
+			"guid": "CEF3DAF8-6461-4708-A428-8383FB0A6C71",
+			"text": "",
+			"heading": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "2",
+			"guid": "6F357C15-B7D0-4B2A-B002-36C142AE20B9",
+			"text": "",
+			"heading": "ISO26048-1-SRSA",
+			"type": "mib"
+		},
+		{
+			"id": "3",
+			"guid": "CD88463D-5657-49E1-BABC-0982ACED5CD2",
+			"text": "",
+			"contact": "<p>name: ISO TC 204 Committee Manager email: jennifer.collins@sae.org website: https://www.iso.org/committee/54706.html</p>",
+			"heading": "fdSrsaMIB",
+			"oid": "fdGlobalMIB 6",
+			"org": "ISO TC 204 WG 9",
+			"type": "mi",
+			"updated": "202306150000Z"
+		},
+		{
+			"id": "4",
+			"guid": "DE1AF396-2575-4566-8ED6-7EB783364D9D",
+			"text": "",
+			"heading": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "5",
+			"guid": "194BD5D8-BA71-4980-9214-A31FD5EAAF22",
+			"heading": "fdSrsaTypeTable",
+			"text": "",
+			"access": "not-accessible",
+			"type": "ot",
+			"oid": "fdSrsaMIB 1",
+			"status": "current",
+			"syntax": "SEQUENCE OF FdSrsaTypeEntry"
+		},
+		{
+			"id": "6",
+			"guid": "A1D6E3D7-CCB4-46BA-B29E-16B2935406DE",
+			"text": "",
+			"access": "not-accessible",
+			"index": "fdSrsaTypeCode",
+			"heading": "fdSrsaTypeEntry",
+			"oid": "fdSrsaTypeTable 1",
+			"status": "current",
+			"syntax": "FdSrsaTypeEntry",
+			"type": "ot"
+		},
+		{
+			"id": "7",
+			"guid": "E785F218-BC1C-4FAC-9E0B-E7568B064D34",
+			"heading": "FdSrsaTypeEntry",
+			"syntax": "{ fdSrsaTypeCode SnmpAdminString,<br> fdSrsaTypeCount ITSUnsigned8,<br> fdSrsaTypeStatus ITSBitmap,<br> fdSrsaTypeWarning ITSBitmap<br> }",
+			"type": "row"
+		},
+		{
+			"id": "8",
+			"guid": "8238D76A-855D-4A6A-B58A-A5A2E920080E",
+			"heading": "fdSrsaTypeCode",
+			"text": "",
+			"access": "not-accessible",
+			"type": "ot",
+			"oid": "fdSrsaTypeEntry 1",
+			"status": "current",
+			"syntax": "SnmpAdminString (SIZE(3))"
+		},
+		{
+			"id": "9",
+			"guid": "2BC6A0ED-5A99-4767-B6BA-2F40BA4D1525",
+			"heading": "fdSrsaTypeCount",
+			"text": "",
+			"access": "read-only",
+			"links": {
+				"satisfies": [
+					"26048_1-329"
+				]
+			},
+			"oid": "fdSrsaTypeEntry 2",
+			"status": "current",
+			"syntax": "ITSUnsigned8",
+			"type": "ot"
+		},
+		{
+			"id": "10",
+			"guid": "874B956E-3199-4F48-B456-38C651AD397C",
+			"heading": "fdSrsaTypeStatus",
+			"text": "",
+			"access": "read-only",
+			"links": {
+				"satisfies": [
+					"26048_1-337"
+				]
+			},
+			"oid": "fdSrsaTypeEntry 3",
+			"status": "current",
+			"syntax": "ITSBitmap",
+			"type": "ot"
+		},
+		{
+			"id": "11",
+			"guid": "E92123B6-97FF-4CEF-A246-DD1EAA83CF60",
+			"heading": "fdSrsaTypeWarning",
+			"text": "",
+			"access": "read-only",
+			"links": {
+				"satisfies": [
+					"26048_1-337"
+				]
+			},
+			"oid": "fdSrsaTypeEntry 4",
+			"status": "current",
+			"syntax": "ITSBitmap",
+			"type": "ot"
+		},
+		{
+			"id": "12",
+			"guid": "F4D19B1B-C5EA-462E-91B9-A03DC81A3F80",
+			"heading": "fdSrsaPortTable",
+			"text": "",
+			"access": "not-accessible",
+			"type": "ot",
+			"oid": "fdSrsaMIB 2",
+			"status": "current",
+			"syntax": "SEQUENCE OF FdSrsaPortEntry"
+		},
+		{
+			"id": "13",
+			"guid": "186F49D5-028A-45B3-B739-EE33F862B6E0",
+			"text": "",
+			"access": "not-accessible",
+			"index": "fdSrsaTypeCode, fdSrsaPortIndex",
+			"heading": "fdSrsaPortEntry",
+			"oid": "fdSrsaPortTable 1",
+			"status": "current",
+			"syntax": "FdSrsaPortEntry",
+			"type": "ot"
+		},
+		{
+			"id": "14",
+			"guid": "9D385BED-8CD1-4277-B0D7-7D6EB315239F",
+			"heading": "FdSrsaPortEntry",
+			"syntax": "{ fdSrsaPortIndex ITSPositive8,<br> fdSrsaPortDescription SnmpAdminString,<br> fdSrsaPortDirection INTEGER,<br> fdSrsaPortUnits ITSUnits,<br> fdSrsaPortExponent ITSInteger8,<br> fdSrsaPortPrecision INTEGER,<br> fdSrsaPortMinValue Integer32,<br> fdSrsaPortMaxValue Integer32,<br> fdSrsaPortRequestedValue Integer32,<br> fdSrsaPortValue Integer32,<br> fdSrsaPortMinThreshold Integer32,<br> fdSrsaPortMaxThreshold Integer32,<br> fdSrsaPortStatus INTEGER<br> }",
+			"type": "row"
+		},
+		{
+			"id": "15",
+			"guid": "9BC68CFA-FACC-42CB-BAA5-84D2BD4C5B36",
+			"heading": "fdSrsaPortIndex",
+			"text": "",
+			"access": "not-accessible",
+			"type": "ot",
+			"oid": "fdSrsaPortEntry 1",
+			"status": "current",
+			"syntax": "ITSPositive8"
+		},
+		{
+			"id": "16",
+			"guid": "4BBF0E45-C6DD-4A31-84DB-2B595D9BF10A",
+			"heading": "fdSrsaPortDescription",
+			"text": "",
+			"access": "read-write",
+			"links": {
+				"satisfies": [
+					"26048_1-330",
+					"26048_1-334"
+				]
+			},
+			"oid": "fdSrsaPortEntry 2",
+			"status": "current",
+			"syntax": "SnmpAdminString",
+			"type": "ot"
+		},
+		{
+			"id": "17",
+			"guid": "5DAE332D-C23C-4442-9D88-8F633B4AB07B",
+			"heading": "fdSrsaPortDirection",
+			"text": "",
+			"access": "read-only",
+			"links": {
+				"satisfies": [
+					"26048_1-334"
+				]
+			},
+			"oid": "fdSrsaPortEntry 3",
+			"status": "current",
+			"syntax": "INTEGER {<br> output (1),<br> input (2),<br> bidirectional (3)<br> }",
+			"type": "ot"
+		},
+		{
+			"id": "18",
+			"guid": "57F3406D-6E4F-486F-9B39-24DA61A7E87C",
+			"heading": "fdSrsaPortUnits",
+			"text": "",
+			"access": "read-only",
+			"links": {
+				"satisfies": [
+					"26048_1-334"
+				]
+			},
+			"oid": "fdSrsaPortEntry 4",
+			"status": "current",
+			"syntax": "ITSUnits",
+			"type": "ot"
+		},
+		{
+			"id": "19",
+			"guid": "ED74B40F-5DB1-4E12-8596-F1E0784748F7",
+			"heading": "fdSrsaPortExponent",
+			"text": "",
+			"access": "read-only",
+			"links": {
+				"satisfies": [
+					"26048_1-334"
+				]
+			},
+			"oid": "fdSrsaPortEntry 5",
+			"status": "current",
+			"syntax": "ITSInteger8",
+			"type": "ot"
+		},
+		{
+			"id": "20",
+			"guid": "E10D7525-85CF-4BEA-BF63-272CBB52FFDF",
+			"heading": "fdSrsaPortPrecision",
+			"text": "",
+			"access": "read-only",
+			"links": {
+				"satisfies": [
+					"26048_1-334"
+				]
+			},
+			"oid": "fdSrsaPortEntry 6",
+			"status": "current",
+			"syntax": "Integer32 (0..2147483647)",
+			"type": "ot"
+		},
+		{
+			"id": "21",
+			"guid": "A0252AC8-6A4B-430F-898B-9B9E704984E7",
+			"heading": "fdSrsaPortMinValue",
+			"text": "",
+			"access": "read-only",
+			"links": {
+				"satisfies": [
+					"26048_1-334"
+				]
+			},
+			"oid": "fdSrsaPortEntry 7",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "22",
+			"guid": "AF29F2DD-F8F7-457E-9B27-39508924D5AE",
+			"heading": "fdSrsaPortMaxValue",
+			"text": "",
+			"access": "read-only",
+			"links": {
+				"satisfies": [
+					"26048_1-334",
+					"Notes-4"
+				]
+			},
+			"oid": "fdSrsaPortEntry 8",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "23",
+			"guid": "B7BF13FC-AE16-4681-BA24-55C99FF61E8F",
+			"heading": "fdSrsaPortRequestedValue",
+			"text": "",
+			"access": "read-write",
+			"links": {
+				"satisfies": [
+					"26048_1-338",
+					"26048_1-339"
+				]
+			},
+			"oid": "fdSrsaPortEntry 9",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "24",
+			"guid": "ED388FFD-845E-46DD-B567-D3058DFE09D0",
+			"heading": "fdSrsaPortValue",
+			"text": "",
+			"access": "read-only",
+			"links": {
+				"satisfies": [
+					"26048_1-335"
+				]
+			},
+			"oid": "fdSrsaPortEntry 10",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "25",
+			"guid": "4AA2E040-4FC3-482A-A15A-C5EEA212CA23",
+			"heading": "fdSrsaPortMinThreshold",
+			"text": "",
+			"access": "read-write",
+			"defval": "-2147483648",
+			"links": {
+				"satisfies": [
+					"26048_1-330",
+					"26048_1-334"
+				]
+			},
+			"oid": "fdSrsaPortEntry 11",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "26",
+			"guid": "B3BBE89D-2838-4555-9E09-41C865BE74FC",
+			"heading": "fdSrsaPortMaxThreshold",
+			"text": "",
+			"access": "read-write",
+			"defval": "2147483647",
+			"links": {
+				"satisfies": [
+					"26048_1-330",
+					"26048_1-334"
+				]
+			},
+			"oid": "fdSrsaPortEntry 12",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "27",
+			"guid": "6CC5BBFE-D966-4547-B936-44E6E6D7F559",
+			"heading": "fdSrsaPortStatus",
+			"text": "",
+			"access": "read-only",
+			"links": {
+				"satisfies": [
+					"26048_1-336"
+				]
+			},
+			"oid": "fdSrsaPortEntry 13",
+			"status": "current",
+			"syntax": "INTEGER {<br> other (1),<br> active (2),<br> unavailable (3),<br> nonoperational (4),<br> notInService (5)<br> }",
+			"type": "ot"
+		},
+		{
+			"id": "38",
+			"guid": "a4f67a4e-9f6c-4550-b25a-e42719cd6ffa",
+			"heading": "fdSrsaPortTextStatus",
+			"access": "read-only",
+			"links": {
+				"satisfies": [
+					"26048_1-336"
+				]
+			},
+			"status": "current",
+			"type": "ot"
+		},
+		{
+			"id": "43",
+			"guid": "a5bd47f5-d7a8-4161-9463-225ef12174c6",
+			"heading": "fdSrsaPortEntityID",
+			"access": "read-write",
+			"links": {
+				"satisfies": [
+					"26048_1-330",
+					"26048_1-334"
+				]
+			},
+			"status": "current",
+			"type": "ot"
+		},
+		{
+			"id": "39",
+			"guid": "8f6b251a-3cc4-49fe-8e93-f663bab2ecc0",
+			"access": "not-accessible",
+			"heading": "fdSrsaTypeTestTable",
+			"status": "current",
+			"type": "ot"
+		},
+		{
+			"id": "40",
+			"guid": "80c19f63-da66-40ce-9ffd-ab02b462d796",
+			"access": "not-accessible",
+			"heading": "fdSrsaTypeTestEntry",
+			"status": "current",
+			"type": "ot"
+		},
+		{
+			"id": "41",
+			"guid": "68d6dba0-3535-44ad-9758-f4419e0266a3",
+			"heading": "fdSrsaTypeTestActivation",
+			"access": "read-write",
+			"links": {
+				"satisfies": [
+					"26048_1-1316",
+					"26048_1-1317"
+				]
+			},
+			"status": "current",
+			"type": "ot"
+		},
+		{
+			"id": "42",
+			"guid": "c196a483-0375-4da1-b779-61d98cde1f3e",
+			"heading": "fdSrsaTypeTestAbortReason",
+			"access": "read-only",
+			"links": {
+				"satisfies": [
+					"26048_1-1318"
+				]
+			},
+			"status": "current",
+			"type": "ot"
+		},
+		{
+			"id": "44",
+			"guid": "277e3ca9-9aed-4863-b097-7472e9e0b265",
+			"heading": "fdSrsaTypeValueStatsTable",
+			"access": "not-accessible",
+			"children": [
+				{
+					"id": "45",
+					"guid": "cb0be6f1-b989-4548-89c9-961de3df34a7",
+					"heading": "fdSrsaTypeValueStatsMin",
+					"access": "read-only",
+					"links": {
+						"satisfies": [
+							"26048_1-1410",
+							"NTCIP_1203-1283"
+						]
+					},
+					"status": "current",
+					"type": "ot"
+				},
+				{
+					"id": "46",
+					"guid": "7fc71b05-256b-4b30-a812-8801f596ba4b",
+					"heading": "fdSrsaTypeValueStatsMax",
+					"access": "read-only",
+					"links": {
+						"satisfies": [
+							"26048_1-1410",
+							"NTCIP_1203-1283"
+						]
+					},
+					"status": "current",
+					"type": "ot"
+				},
+				{
+					"id": "47",
+					"guid": "370557d6-8e6d-4b5a-bc24-07f258c1af04",
+					"heading": "fdSrsaTypeValueStatsMean",
+					"access": "read-only",
+					"links": {
+						"satisfies": [
+							"26048_1-1410"
+						]
+					},
+					"status": "current",
+					"type": "ot"
+				},
+				{
+					"id": "48",
+					"guid": "9bcc99b8-14d8-45b6-8a59-73cb2d42066b",
+					"heading": "fdSrsaTypeValueStatsMfrValue",
+					"access": "read-only",
+					"links": {
+						"satisfies": [
+							"26048_1-1410",
+							"Notes-3"
+						]
+					},
+					"status": "current",
+					"type": "ot"
+				}
+			],
+			"status": "current",
+			"type": "ot"
+		},
+		{
+			"id": "28",
+			"guid": "28BCADFA-A81A-4F03-B4A0-B296FCE1F45A",
+			"text": "",
+			"heading": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "29",
+			"guid": "C1E884E1-7BB0-4AEA-A32A-A62C12B9FD9F",
+			"text": "",
+			"heading": "fdSrsaConformance",
+			"oid": "fdGlobalConformance 6",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "30",
+			"guid": "5F1BF404-C31B-4039-A67D-4BCE9C7F813E",
+			"text": "",
+			"heading": "fdSrsaCompliances",
+			"oid": "fdSrsaConformance 1",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "31",
+			"guid": "EEE35DF0-C348-4D87-ADDD-57FA6D7907A3",
+			"text": "",
+			"heading": "fdSrsaGroups",
+			"oid": "fdSrsaConformance 2",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "32",
+			"guid": "81E06F2C-5F11-4F80-A8E4-03DE76E65EA3",
+			"text": "",
+			"heading": "fdSrsaCompliance",
+			"oid": "fdSrsaCompliances 1",
+			"status": "current",
+			"syntax": "{ fdSrsaBasicGroupV1<br> }",
+			"type": "mc"
+		},
+		{
+			"id": "33",
+			"guid": "80FFE96B-22A7-446C-8FD9-B1223B37C317",
+			"text": "",
+			"heading": "fdSrsaBasicGroupV1",
+			"oid": "fdSrsaGroups 1",
+			"status": "current",
+			"syntax": "{ fdSrsaTypeCount,<br> fdSrsaTypeStatus,<br> fdSrsaTypeWarning,<br> fdSrsaPortDescription,<br> fdSrsaPortMinThreshold,<br> fdSrsaPortMaxThreshold,<br> fdSrsaPortDirection,<br> fdSrsaPortUnits,<br> fdSrsaPortExponent,<br> fdSrsaPortPrecision,<br> fdSrsaPortMinValue,<br> fdSrsaPortMaxValue,<br> fdSrsaPortStatus<br> }",
+			"type": "og"
+		},
+		{
+			"id": "34",
+			"guid": "DD290243-4A77-4B0C-B5CA-78E24C973A30",
+			"text": "",
+			"heading": "fdSrsaOutputGroupV1",
+			"oid": "fdSrsaGroups 2",
+			"status": "current",
+			"syntax": "{ fdSrsaPortRequestedValue<br> }",
+			"type": "og"
+		},
+		{
+			"id": "35",
+			"guid": "4C293060-B431-4F1E-AB58-3684E884782D",
+			"text": "",
+			"heading": "fdSrsaInputGroupV1",
+			"oid": "fdSrsaGroups 3",
+			"status": "current",
+			"syntax": "{ fdSrsaPortValue<br> }",
+			"type": "og"
+		},
+		{
+			"id": "36",
+			"guid": "2737562B-DCB1-45C8-BECC-872082720EAD",
+			"heading": "end",
+			"type": "end"
+		}
+	],
+	"attributes": {
+		"access": {
+			"heading": "Access",
+			"type": "enum",
+			"values": [
+				{
+					"key": "read-only"
+				},
+				{
+					"key": "read-write"
+				},
+				{
+					"key": "read-create"
+				},
+				{
+					"key": "not-accessible"
+				},
+				{
+					"key": "accessible-for-notify"
+				}
+			]
+		},
+		"augments": {
+			"heading": "Augments",
+			"type": "string"
+		},
+		"comment": {
+			"heading": "Comment",
+			"type": "xhtml"
+		},
+		"contact": {
+			"heading": "Contact",
+			"type": "xhtml"
+		},
+		"defval": {
+			"heading": "Default Value",
+			"type": "string"
+		},
+		"index": {
+			"heading": "Index",
+			"type": "string"
+		},
+		"name": {
+			"heading": "Name",
+			"type": "string"
+		},
+		"oid": {
+			"heading": "OID",
+			"type": "string"
+		},
+		"org": {
+			"heading": "Organization",
+			"type": "string"
+		},
+		"part": {
+			"heading": "Part",
+			"type": "string"
+		},
+		"status": {
+			"heading": "Status",
+			"type": "enum",
+			"values": [
+				{
+					"key": "current"
+				},
+				{
+					"key": "deprecated"
+				},
+				{
+					"key": "obsolete"
+				}
+			]
+		},
+		"syntax": {
+			"heading": "Syntax",
+			"type": "xhtml"
+		},
+		"type": {
+			"heading": "Type",
+			"type": "enum",
+			"values": [
+				{
+					"key": "comment"
+				},
+				{
+					"key": "end"
+				},
+				{
+					"key": "mc",
+					"label": "module-compliance"
+				},
+				{
+					"key": "mi",
+					"label": "module-identity"
+				},
+				{
+					"key": "mib"
+				},
+				{
+					"key": "ng",
+					"label": "notification-group"
+				},
+				{
+					"key": "nt",
+					"label": "notification-type"
+				},
+				{
+					"key": "og",
+					"label": "object-group"
+				},
+				{
+					"key": "oi",
+					"label": "object-identity"
+				},
+				{
+					"key": "ot",
+					"label": "object-type"
+				},
+				{
+					"key": "ref",
+					"label": "reference"
+				},
+				{
+					"key": "rev",
+					"label": "revision"
+				},
+				{
+					"key": "row"
+				},
+				{
+					"key": "text_conv"
+				}
+			]
+		},
+		"units": {
+			"heading": "Units",
+			"type": "string"
+		},
+		"updated": {
+			"heading": "Updated",
+			"type": "string"
+		}
+	},
+	"templateColumns": {
+		"f6c934cd-36bd-461c-9086-07b910b7af2d": {
+			"label": "Errors",
+			"template": "{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-only\") (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\"))) (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies link\" link</div>\n  {{/if}}\n{{/if}}"
+		}
+	},
+	"views": {
+		"Primary": {
+			"columns": [
+				{
+					"columnId": "id",
+					"width": 65
+				},
+				{
+					"columnId": "type",
+					"width": 150
+				},
+				{
+					"columnId": "name",
+					"width": 150
+				},
+				{
+					"columnId": "description",
+					"width": 500
+				},
+				{
+					"columnId": "links",
+					"width": 167
+				},
+				{
+					"columnId": "access",
+					"width": 150
+				},
+				{
+					"columnId": "syntax",
+					"width": 150
+				}
+			],
+			"default": true
+		}
+	},
+	"metadata": {
+		"format": "2.17"
+	}
+}

@@ -83,12 +83,24 @@
           "heading": "Default Value",
           "type": "string"
         },
+        "format": {
+          "heading": "Format",
+          "type": "xhtml"
+        },
         "index": {
           "heading": "Index",
           "type": "string"
         },
+        "info": {
+          "heading": "Informative",
+          "type": "xhtml"
+        },
         "name": {
           "heading": "Name",
+          "type": "string"
+        },
+        "dotted-oid": {
+          "heading": "Dotted OID",
           "type": "string"
         },
         "oid": {
@@ -102,6 +114,10 @@
         "part": {
           "heading": "Part",
           "type": "string"
+        },
+        "reference": {
+          "heading": "Reference",
+          "type": "xhtml"
         },
         "status": {
           "heading": "Status",
@@ -124,6 +140,21 @@
         "syntax": {
           "heading": "Syntax",
           "type": "xhtml"
+        },
+        "table-type": {
+          "heading": "Table Type",
+          "type": "enum",
+          "values": [
+            {
+              "key": "static"
+            },
+            {
+              "key": "managed"
+            },
+            {
+              "key": "dynamic"
+            }
+          ]
         },
         "type": {
           "heading": "Type",
@@ -353,6 +384,25 @@
         "version": {
           "heading": "Version",
           "type": "string"
+        },
+        "x-type": {
+          "heading": "Deprecate Type",
+          "type": "enum",
+          "values": [
+            {
+              "key": "superseded"
+            },
+            {
+              "key": "supplanted"
+            },
+            {
+              "key": "withdrawn"
+            }
+          ]
+        },
+        "x-text": {
+          "heading": "Deprecated by",
+          "type": "xhtml"
         }
       },
       "templateColumns": {

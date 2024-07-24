@@ -1,450 +1,3105 @@
 {
-  "id": "IEEE802dot11",
-  "guid": "2a90d8dd-e2e2-4c51-93c7-4925efc93d8c",
-  "name": "IEEE802dot11",
-  "lastId": 1,
-  "createdOn": "2024-07-24T17:38:28.800Z",
-  "createdBy": {
-    "name": "Kenneth Vaughn",
-    "email": "kvaughn@trevilon.com",
-    "company": "Trevilon"
-  },
-  "lastChangedOn": "2024-07-24T17:38:34.687Z",
-  "lastChangedBy": {
-    "name": "Kenneth Vaughn",
-    "email": "kvaughn@trevilon.com",
-    "company": "Trevilon"
-  },
-  "data": [
-    {
-      "id": "1",
-      "guid": "428523a0-760f-4705-bf2d-6c654da8ac46",
-      "history": [
-        {
-          "affectedNodeId": "#",
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Kenneth Vaughn"
-          },
-          "changedOn": "2024-07-24T17:38:34.687Z",
-          "docId": "IEEE802dot11",
-          "structureAction": "Create"
-        }
-      ]
-    }
-  ],
-  "attributes": {
-    "access": {
-      "name": "Access",
-      "type": "enum",
-      "values": [
-        {
-          "key": "read-only"
-        },
-        {
-          "key": "read-write"
-        },
-        {
-          "key": "read-create"
-        },
-        {
-          "key": "not-accessible"
-        },
-        {
-          "key": "accessible-for-notify"
-        }
-      ]
-    },
-    "action": {
-      "name": "Action",
-      "type": "enum",
-      "values": [
-        {
-          "key": "added"
-        },
-        {
-          "key": "remainCurrent"
-        },
-        {
-          "key": "deprecated"
-        },
-        {
-          "key": "made obsolete"
-        },
-        {
-          "key": "previsouly deprecated"
-        }
-      ]
-    },
-    "additional": {
-      "name": "Additional",
-      "type": "xhtml"
-    },
-    "augments": {
-      "name": "Augments",
-      "type": "string"
-    },
-    "comment": {
-      "name": "Comment",
-      "type": "xhtml"
-    },
-    "conformance": {
-      "name": "Conformance",
-      "type": "string"
-    },
-    "contact": {
-      "name": "Contact",
-      "type": "xhtml"
-    },
-    "defval": {
-      "name": "Default Value",
-      "type": "string"
-    },
-    "dotted-oid": {
-      "name": "Dotted OID",
-      "type": "string"
-    },
-    "format": {
-      "name": "Format",
-      "type": "xhtml"
-    },
-    "index": {
-      "name": "Index",
-      "type": "string"
-    },
-    "info": {
-      "name": "Informative",
-      "type": "xhtml"
-    },
-    "name": {
-      "name": "Name",
-      "type": "string"
-    },
-    "oid": {
-      "name": "OID",
-      "type": "string"
-    },
-    "org": {
-      "name": "Organization",
-      "type": "string"
-    },
-    "part": {
-      "name": "Part",
-      "type": "string"
-    },
-    "reference": {
-      "name": "Reference",
-      "type": "xhtml"
-    },
-    "status": {
-      "name": "Status",
-      "type": "enum",
-      "values": [
-        {
-          "key": "current"
-        },
-        {
-          "key": "deprecated"
-        },
-        {
-          "key": "obsolete"
-        },
-        {
-          "key": "silent"
-        }
-      ]
-    },
-    "syntax": {
-      "name": "Syntax",
-      "type": "xhtml"
-    },
-    "table-type": {
-      "name": "Table Type",
-      "type": "enum",
-      "values": [
-        {
-          "key": "static"
-        },
-        {
-          "key": "managed"
-        },
-        {
-          "key": "dynamic"
-        }
-      ]
-    },
-    "type": {
-      "name": "Type",
-      "type": "enum",
-      "values": [
-        {
-          "key": "ot",
-          "label": "Object Type"
-        },
-        {
-          "key": "xb",
-          "label": "---- Body ----"
-        },
-        {
-          "key": "text",
-          "label": "Text"
-        },
-        {
-          "default": false,
-          "key": "c",
-          "label": "Centered Text"
-        },
-        {
-          "default": false,
-          "key": "it",
-          "label": "Indented Text"
-        },
-        {
-          "default": false,
-          "key": "f",
-          "label": "Figure"
-        },
-        {
-          "default": false,
-          "key": "table",
-          "label": "Table"
-        },
-        {
-          "default": false,
-          "key": "l1",
-          "label": "List Level 1"
-        },
-        {
-          "default": false,
-          "key": "l2",
-          "label": "List Level 2"
-        },
-        {
-          "default": false,
-          "key": "n",
-          "label": "Note"
-        },
-        {
-          "default": false,
-          "key": "e",
-          "label": "Example"
-        },
-        {
-          "key": "xi",
-          "label": "---- Items ----"
-        },
-        {
-          "key": "m",
-          "label": "Managed Item"
-        },
-        {
-          "default": false,
-          "key": "r",
-          "label": "Root Item"
-        },
-        {
-          "default": false,
-          "key": "un",
-          "label": "User Need"
-        },
-        {
-          "default": false,
-          "key": "unp",
-          "label": "User Need Parent"
-        },
-        {
-          "default": false,
-          "key": "unc",
-          "label": "User Need Characteristic"
-        },
-        {
-          "default": false,
-          "key": "unr",
-          "label": "User Need Reference"
-        },
-        {
-          "default": false,
-          "key": "feature",
-          "label": "Feature"
-        },
-        {
-          "default": false,
-          "key": "a_req",
-          "label": "Arch Req't"
-        },
-        {
-          "default": false,
-          "key": "d_req",
-          "label": "Data Exch Req't"
-        },
-        {
-          "default": false,
-          "key": "s_req",
-          "label": "Suppl Req't"
-        },
-        {
-          "default": false,
-          "key": "dia",
-          "label": "Dialog"
-        },
-        {
-          "default": false,
-          "key": "sd",
-          "label": "State Diagram"
-        },
-        {
-          "default": false,
-          "key": "i",
-          "label": "Information Flow"
-        },
-        {
-          "key": "xs",
-          "label": "--- Special ---"
-        },
-        {
-          "default": false,
-          "key": "norm_ref",
-          "label": "Normative Ref"
-        },
-        {
-          "default": false,
-          "key": "term",
-          "label": "Term"
-        },
-        {
-          "default": false,
-          "key": "note-t",
-          "label": "Term Note"
-        },
-        {
-          "default": false,
-          "key": "source",
-          "label": "Source"
-        },
-        {
-          "default": false,
-          "key": "a",
-          "label": "Acronym"
-        },
-        {
-          "default": false,
-          "key": "annex",
-          "label": "Annex"
-        },
-        {
-          "default": false,
-          "key": "bib",
-          "label": "Bibliography"
-        },
-        {
-          "key": "xm",
-          "label": "---- MIB ----"
-        },
-        {
-          "key": "mib",
-          "label": "MIB"
-        },
-        {
-          "key": "mi",
-          "label": "Module Identity"
-        },
-        {
-          "key": "rev",
-          "label": "Revision"
-        },
-        {
-          "key": "text_conv",
-          "label": "Textual Convention"
-        },
-        {
-          "key": "oi",
-          "label": "Object Identity"
-        },
-        {
-          "key": "row",
-          "label": "Row"
-        },
-        {
-          "key": "comment",
-          "label": "Comment"
-        },
-        {
-          "key": "nt",
-          "label": "Notification Type"
-        },
-        {
-          "key": "mc",
-          "label": "Module Compliance"
-        },
-        {
-          "key": "og",
-          "label": "Object Group"
-        },
-        {
-          "key": "ng",
-          "label": "Notification Group"
-        },
-        {
-          "key": "end",
-          "label": "End"
-        }
-      ]
-    },
-    "units": {
-      "name": "Units",
-      "type": "string"
-    },
-    "updated": {
-      "name": "Updated",
-      "type": "string"
-    },
-    "version": {
-      "name": "Version",
-      "type": "string"
-    },
-    "x-text": {
-      "name": "Deprecated by",
-      "type": "xhtml"
-    },
-    "x-type": {
-      "name": "Deprecated Type",
-      "type": "enum",
-      "values": [
-        {
-          "key": "superseded"
-        },
-        {
-          "key": "supplanted"
-        },
-        {
-          "key": "withdrawn"
-        }
-      ]
-    }
-  },
-  "templateColumns": {
-    "2f8866b1-6f5a-450a-ba5a-7bc674e9b676": {
-      "label": "Errors",
-      "template": "<ul>\n{{#unless type}}\n  <li>Missing \"type\"</li>\n{{/unless}}\n{{#if (eval type \"==\" \"un\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}{{#unless conformance}}\n    <li>Missing \"conformance\"</li>\n  {{/unless}}{{/if}}  \n  {{#if (or (eval status \"==\" \"current\") (eval status \"==\" \"silent\"))}}\n    {{#if (hasInlinks \"fulfil\")}}\n      {{#eachInlinkWith type=\"fulfil\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Fulfilling requirement is not current: {{docObjId}}</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      {{#unless (hasInlinks \"opt_group\")}}\n      <li>Missing \"fulfill\" link</li>\n      {{/unless}}\n    {{/if}}\n  {{else}}\n    {{#if (hasInlinks \"fulfil\")}}\n      <li>Invalid \"fulfill\" link</li>\n    {{/if}}  \n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"d_req\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}\n    {{#if (or (hasOutlinks \"fulfil\") (hasOutlinks \"fulfil_opt\"))}}\n      {{#eachOutlinkWith type=\"fulfil\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"Conditionals\")}}{{#eachOutlinkWith type=\"conditional\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n      {{#eachOutlinkWith type=\"fulfil_opt\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Fulfilled need is not current: {{docObjId}}</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"Conditionals\")}}{{#eachOutlinkWith type=\"conditional\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n    {{else}}\n      <li>Missing \"fulfill\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"satisfies\")}}\n      {{#eachInlinkWith type=\"satisfies\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Satisfying object is not current: {{docObjId}}</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      <li>Missing \"satisfies\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"implement\")}}\n      {{#eachInlinkWith type=\"implement\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Implementing dialog is not current</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      <li>Missing \"implement\" link</li>\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"fulfil\")}}\n      <li>Invalid \"fulfill\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"implement\")}}\n      <li>Invalid \"implement\" link</li>\n    {{/if}}\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"s_req\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (or (hasOutlinks \"fulfil\")(hasOutlinks \"fulfil_opt\"))}}\n      {{#eachOutlinkWith type=\"fulfil\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"OptionGroups\")}}{{#eachOutlinkWith type=\"fulfil_opt\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n      {{#eachOutlinkWith type=\"fulfil_opt\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"OptionGroups\")}}{{#eachOutlinkWith type=\"fulfil_opt\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n            <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n  {{else}}\n    <li>Missing \"fulfill\" link</li>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"dia\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (hasOutlinks \"implement\")}}\n      {{#eachOutlinkWith type=\"implement\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Implemented requirement is not current</li>\n      {{/unless}}{{/eachOutlinkWith}}\n  {{else}}\n    <li>Missing \"implement\" link</li>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}\n    {{#if (eval access \"!=\" \"not-accessible\")}}\n      {{#if (hasOutlinks \"satisfies\")}}\n        {{#unless (eval access \"==\" \"read-only\")}}{{#unless (eval (countOutlinks \"satisfies\") \">\" \"1\")}}\n          <li>Missing 2nd \"satisfies\" link</li>\n        {{/unless}}{{/unless}}\n        {{#eachOutlinkWith type=\"satisfies\"}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Satisfied requirement is not current</li>\n        {{/unless}}{{/eachOutlinkWith}}\n      {{else}}\n        <li>Missing \"satisfies\" link</li>\n      {{/if}}\n      {{#unless (hasOutlinks \"group\")}}\n        <li>Missing \"group\" link</li>\n      {{/unless}}\n    {{else}}\n      {{#if (hasOutlinks \"satisfies\")}}\n        <li>Invalid \"satisfies\" link</li>\n      {{/if}}\n      {{#if (hasOutlinks \"group\")}}\n        <li>Invalid \"group\" link</li>\n      {{/if}}\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link (deprecated)</li>\n    {{/if}}\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"og\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#unless (hasInlinks \"group\")}}\n    <li>Missing \"group\" link</li>\n  {{/unless}}\n{{/if}}\n</ul>"
-    }
-  },
-  "views": {
-    "Primary": {
-      "columns": [
-        {
-          "columnId": "id",
-          "width": 65
-        },
-        {
-          "columnId": "description",
-          "width": 500
-        }
-      ],
-      "default": true
-    }
-  },
-  "metadata": {
-    "format": "2.17"
-  }
+	"id": "IEEE802dot11",
+	"guid": "7EABB44F-2EB6-42DB-8FAD-820B103450E1",
+	"name": "IEEE802dot11-MIB",
+	"lastId": "289",
+	"createdOn": "2024-07-24T13:35:36",
+	"createdBy": {
+		"name": "Kenneth Vaughn",
+		"email": "kvaughn@trevilon.com",
+		"company": "Trevilon"
+	},
+	"data": [
+		{
+			"id": "1",
+			"guid": "F6CE68FA-3784-4624-8D85-C42F638CF5F5",
+			"text": "<p>*****************************************************************</p><p>IEEE802dot11-MIB :</p><p>IEEE 802.11 Management Information Base file</p><p></p><p>Nov 2002, Francis Pang</p><p></p><p>Copyright (c) 2002 by cisco Systems, Inc.</p><p>All rights reserved.</p><p>*****************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "2",
+			"guid": "CB2D471A-035E-4B5C-9DD2-FE5D253129CC",
+			"text": "<p>**********************************************************************</p><p>* IEEE 802.11 Management Information Base</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "3",
+			"guid": "C9CE837D-124B-4638-8BC8-862A4E86D2EF",
+			"text": "<pre>        MODULE-IDENTITY, OBJECT-TYPE, <br />        NOTIFICATION-TYPE,Integer32, Counter32,<br />        Unsigned32 \t\t\t\tFROM SNMPv2-SMI<br /><br />        DisplayString , MacAddress, RowStatus,<br />        TruthValue                              FROM SNMPv2-TC<br /><br />        MODULE-COMPLIANCE, OBJECT-GROUP, <br />        NOTIFICATION-GROUP                      FROM SNMPv2-CONF <br /><br />        ifIndex                                 FROM RFC1213-MIB;</pre>",
+			"name": "IEEE802dot11-MIB",
+			"type": "mib"
+		},
+		{
+			"id": "4",
+			"guid": "7D643292-8997-401D-92EB-B87D8BBAC658",
+			"text": "<p>**********************************************************************</p><p>*  Tree Definition</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "5",
+			"guid": "EF6936AE-6DD5-446A-8E0B-F81A45265B6C",
+			"name": "member-body",
+			"oid": "{ iso 2 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "6",
+			"guid": "DB204B05-179F-4BBA-B29E-DBC0127C11CD",
+			"name": "us",
+			"oid": "{ member-body 840 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "7",
+			"guid": "F403009D-046A-4063-83A1-65AEEBEA1B9C",
+			"text": "<p>**********************************************************************</p><p>*  MODULE IDENTITY</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "8",
+			"guid": "6C9B1BCD-82A1-4EB8-956D-6146F1A86FD5",
+			"text": "The MIB module for IEEE 802.11 entities.<br />        iso(1).member-body(2).us(840).ieee802dot11(10036)",
+			"contact": "WG E-mail: stds-802-11@ieee.org<br /><br />                Chair: Stuart J. Kerry<br />                Postal: Philips Semiconductors, Inc.<br />                       1109 McKay Drive<br />                       M/S 48 SJ<br />                       San Jose, CA 95130-1706  USA<br />                  Tel: +1 408 474 7356<br />                  Fax: +1 408 474 7247<br />               E-mail: stuart.kerry@philips.com<br /><br />               Editor: Bob O'Hara<br />               Postal: Informed Technology, Inc.<br />                       1750 Nantucket Circle, Suite 138<br />                       Santa Clara, CA 95054 USA<br />                  Tel: +1 408 986 9596<br />                  Fax: +1 408 727 2654<br />               E-mail: bob@informed-technology.com",
+			"name": "ieee802dot11",
+			"oid": "{ us 10036 }",
+			"org": "IEEE 802.11",
+			"type": "mi",
+			"updated": "0208300000Z"
+		},
+		{
+			"id": "9",
+			"guid": "CB2D2FE7-3F71-4943-8753-E68F14F16D00",
+			"text": "<p>**********************************************************************</p><p>*  Major sections</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "10",
+			"guid": "3A06C352-C9A1-48B2-8E1E-178EDA7A053A",
+			"text": "<p> Station ManagemenT (SMT) Attributes</p><p> DEFINED AS \"The SMT object class provides the necessary support</p><p> at the station to manage the processes in the station such that</p><p> the station may work cooperatively as a part of an IEEE 802.11</p><p> network.\"</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "11",
+			"guid": "D4D39697-E9C9-48FC-AF70-CFF41C6EEFB1",
+			"name": "dot11smt",
+			"oid": "{ ieee802dot11 1 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "12",
+			"guid": "5A2B04B6-E69C-4157-977F-03249D0B509B",
+			"text": "<p> dot11smt GROUPS</p><p> dot11StationConfigTable            ::= { dot11smt 1 }</p><p> dot11AuthenticationAlgorithmsTable ::= { dot11smt 2 }</p><p> dot11WEPDefaultKeysTable           ::= { dot11smt 3 }</p><p> dot11WEPKeyMappingsTable           ::= { dot11smt 4 }</p><p> dot11PrivacyTable                  ::= { dot11smt 5 }</p><p> dot11SMTnotification               ::= { dot11smt 6 }</p><p> dot11MultiDomainCapabilityTable    ::= { dot11smt 7 }</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "13",
+			"guid": "B3928AAD-8DFA-470E-A85D-00E60CF14111",
+			"text": "<p> MAC Attributes</p><p> DEFINED AS \"The MAC object class provides the necessary support</p><p> for the access control, generation, and verification of frame</p><p> check sequences (FCSs), and proper delivery of valid data to</p><p> upper layers.\"</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "14",
+			"guid": "8F3B6CB0-C334-4BAA-9072-6C14AF587776",
+			"name": "dot11mac",
+			"oid": "{ ieee802dot11 2 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "15",
+			"guid": "64EE949B-7AE6-4702-8036-B367BC41E7CC",
+			"text": "<p> MAC GROUPS</p><p> reference IEEE Std 802.1f-1993</p><p> dot11OperationTable        ::= { dot11mac 1 }</p><p> dot11CountersTable         ::= { dot11mac 2 }</p><p> dot11GroupAddressesTable      ::= { dot11mac 3 }</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "16",
+			"guid": "7C3EB767-5DAE-4F7E-8E35-46027157EBD9",
+			"heading": " Resource Type ID",
+			"name": "dot11res",
+			"oid": "{ ieee802dot11 3 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "17",
+			"guid": "5667E369-8417-4F3D-AE1B-D7B6D60EA555",
+			"name": "dot11resAttribute",
+			"oid": "{ dot11res 1 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "18",
+			"guid": "6612D7C6-33C1-4689-8334-B908A4DB0849",
+			"text": "<p> PHY Attributes</p><p> DEFINED AS \"The PHY object class provides the necessary support</p><p> for required PHY operational information that may vary from PHY</p><p> to PHY and from STA to STA to be communicated to upper layers.\"</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "19",
+			"guid": "8C20B40F-A013-41C8-B615-B489630DE6C5",
+			"name": "dot11phy",
+			"oid": "{ ieee802dot11 4 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "20",
+			"guid": "79E2D207-4543-498C-9891-4E46020D7703",
+			"text": "<p> PHY GROUPS</p><p> dot11PhyOperationTable         ::= { dot11phy 1 }</p><p> dot11PhyAntennaTable        ::= { dot11phy 2 }</p><p> dot11PhyTxPowerTable           ::= { dot11phy 3 }</p><p> dot11PhyFHSSTable              ::= { dot11phy 4 }</p><p> dot11PhyDSSSTable              ::= { dot11phy 5 }</p><p> dot11PhyIRTable                ::= { dot11phy 6 }</p><p> dot11RegDomainsSupportedTable   ::= { dot11phy 7 }</p><p> dot11AntennasListTable          ::= { dot11phy 8 }</p><p> dot11SupportedDataRatesTxTable  ::= { dot11phy 9 }</p><p> dot11SupportedDataRatesRxTable  ::= { dot11phy 10 }</p><p> dot11PhyOFDMTable               ::= { dot11phy 11 }</p><p> dot11PhyHRDSSSTable      ::= { dot11phy 12 }</p><p> dot11EHCCHoppingPatternTable    ::= { dot11phy 13 }</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "21",
+			"guid": "AA1AE082-BFA8-4589-9DD0-4363F046E189",
+			"text": "<p>**********************************************************************</p><p>*  Textual conventions from 802 definitions</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "22",
+			"guid": "389F5F6C-4C61-4CBC-AD36-A92219C2095D",
+			"text": "<p>**********************************************************************</p><p>*  MIB attribute OBJECT-TYPE definitions follow</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "23",
+			"guid": "E3D55B8B-A003-4B32-B1BD-DAB518F24A85",
+			"text": "<p>**********************************************************************</p><p>*  SMT Station Config  Table</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "24",
+			"guid": "47B72A25-780D-4642-B5E6-07A644DF0B4D",
+			"text": "Station Configuration attributes.  In tablular form to<br />            allow for multiple instances on an agent.",
+			"access": "not-accessible",
+			"name": "dot11StationConfigTable",
+			"oid": "{ dot11smt 1 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11StationConfigEntry",
+			"type": "ot"
+		},
+		{
+			"id": "25",
+			"guid": "694571BB-A83C-4F3A-894E-2E92E9034BCE",
+			"text": "An entry in the dot11StationConfigTable.  It is<br />            possible for there to be multiple IEEE 802.11 interfaces<br />            on one agent, each with its unique MAC address. The<br />            relationship between an IEEE 802.11 interface and an<br />            interface in the context of the Internet-standard MIB is<br />            one-to-one.  As such, the value of an ifIndex object<br />            instance can be directly used to identify corresponding<br />            instances of the objects defined herein.  <br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex }",
+			"name": "dot11StationConfigEntry",
+			"oid": "{ dot11StationConfigTable 1 }",
+			"status": "current",
+			"syntax": "Dot11StationConfigEntry",
+			"type": "ot"
+		},
+		{
+			"id": "26",
+			"guid": "B153DC3D-CF9C-4850-8D81-B3DC67A62910",
+			"text": "The purpose of dot11StationID is to allow a manager to <br />            identify a station for its own purposes.  This attribute<br />            provides for that eventuality while keeping the true MAC<br />            address independent.  Its syntax is MAC address, and the<br />            default value is the station's assigned, unique <br />            MAC address.",
+			"access": "read-write",
+			"name": "dot11StationID",
+			"oid": "{ dot11StationConfigEntry 1 }",
+			"status": "deprecated",
+			"syntax": "MacAddress",
+			"type": "ot"
+		},
+		{
+			"id": "27",
+			"guid": "F975387C-AD52-4F0B-B776-82812693FA96",
+			"text": "This attribute shall indicate the maximum amount of time,<br />            in TU, that a point coordinator (PC) may control the usage <br />            of the wireless medium (WM) without relinquishing control <br />            for long enough to allow at least one instance of DCF access <br />            to the medium.  The default value of this attribute shall <br />            be 100, and the maximum value shall be 1000.",
+			"access": "read-write",
+			"name": "dot11MediumOccupancyLimit",
+			"oid": "{ dot11StationConfigEntry 2 }",
+			"status": "current",
+			"syntax": "INTEGER (0..1000)",
+			"type": "ot"
+		},
+		{
+			"id": "28",
+			"guid": "77AA7786-B5A4-488F-9005-1FF0629F6700",
+			"text": "When this attribute is true, it shall indicate that <br />         the STA is able to respond to a CF-Poll with a data frame <br />         within a SIFS time. This attribute shall be false if <br />         the STA is not able to respond to a CF-Poll with a data <br />         frame within a SIFS time.",
+			"access": "read-only",
+			"name": "dot11CFPollable",
+			"oid": "{ dot11StationConfigEntry 3 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "29",
+			"guid": "485F5795-94E0-4058-849F-92CF602BBA46",
+			"text": "The attribute shall describe the number of DTIM intervals<br />            between the start of CFPs.  It is modified by<br />            MLME-START.request primitive.",
+			"access": "read-write",
+			"name": "dot11CFPPeriod",
+			"oid": "{ dot11StationConfigEntry 4 }",
+			"status": "current",
+			"syntax": "INTEGER (0..255)",
+			"type": "ot"
+		},
+		{
+			"id": "30",
+			"guid": "B6844354-E522-46F7-ABB9-74EB65ABFBF0",
+			"text": "The attribute shall describe the maximum duration of <br />         the CFP in TU that may be generated by the PCF. It is <br />         modified by MLME-START.request primitive.",
+			"access": "read-write",
+			"name": "dot11CFPMaxDuration",
+			"oid": "{ dot11StationConfigEntry 5 }",
+			"status": "current",
+			"syntax": "INTEGER (0..65535)",
+			"type": "ot"
+		},
+		{
+			"id": "31",
+			"guid": "C0E11E99-BE28-4876-9576-3052B486D59A",
+			"text": "This attribute shall specify the number of time units (TUs)<br />             that a responding STA should wait for the next frame in the<br />            authentication sequence.",
+			"access": "read-write",
+			"name": "dot11AuthenticationResponseTimeOut",
+			"oid": "{ dot11StationConfigEntry 6 }",
+			"status": "current",
+			"syntax": "Unsigned32 (1..4294967295)",
+			"type": "ot"
+		},
+		{
+			"id": "32",
+			"guid": "8DAC5C4F-EED0-4616-9DED-E20F0509DA30",
+			"text": "This attribute, when true, shall indicate that the IEEE<br />            802.11 WEP option is implemented.  The default value of<br />            this attribute shall be false.",
+			"access": "read-only",
+			"name": "dot11PrivacyOptionImplemented",
+			"oid": "{ dot11StationConfigEntry 7 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "33",
+			"guid": "DAE33433-DA6B-4D62-8CB4-F39521D5B950",
+			"text": "This attribute shall specify the power management<br /> mode of the STA. When set to active, it shall <br /> indicate that the station is not in power-save <br /> (PS) mode. When set to powersave, it shall indicate<br />  that the station is in power-save mode. The power <br /> management mode is transmitted in all frames <br /> according to the rules in  7.1.3.1.7.",
+			"access": "read-write",
+			"name": "dot11PowerManagementMode",
+			"oid": "{ dot11StationConfigEntry 8 }",
+			"status": "current",
+			"syntax": "<pre>INTEGER { active(1), powersave(2) }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "34",
+			"guid": "8F4E5C74-670A-4C90-A253-676ECE619B0A",
+			"text": "This attribute reflects the Service Set ID (SSID)<br /> used in the DesiredSSID parameter of the most recent<br /> MLME_Scan.request.  This value may be modified<br /> by an external management entity and used by the<br /> local SME to make decisions about the Scanning <br /> process.",
+			"access": "read-write",
+			"name": "dot11DesiredSSID",
+			"oid": "{ dot11StationConfigEntry 9 }",
+			"status": "current",
+			"syntax": "OCTET STRING (SIZE(0..32))",
+			"type": "ot"
+		},
+		{
+			"id": "35",
+			"guid": "E72564A6-B28A-4001-8C15-89EA85811D7C",
+			"text": "This attribute shall specify the type of BSS the<br /> station shall use when scanning for a BSS with <br /> which to synchronize. This value is used to filter <br /> Probe Response frames and Beacons. When set to <br /> infrastructure, the station shall only synchronize <br /> with a BSS whose Capability Information field has <br /> the ESS subfield set to 1. When set to independent, <br /> the station shall only synchronize with a BSS whose <br /> Capability Information field has the IBSS subfield <br /> set to 1. When set to any, the station may <br /> synchronize to either type of BSS.",
+			"access": "read-write",
+			"name": "dot11DesiredBSSType",
+			"oid": "{ dot11StationConfigEntry 10 }",
+			"status": "current",
+			"syntax": "<pre>INTEGER { infrastructure(1), independent(2), any(3) }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "36",
+			"guid": "4A723707-DF65-485F-BB5D-5501E2D44F3A",
+			"text": "This attribute shall specify the set of data <br /> rates at which the station may transmit data.  <br /> Each octet contains a value representing a rate.  <br /> Each rate shall be within the range from 2 to 127,<br /> corresponding to data rates in increments of<br /> 500 kbit/s from 1 Mbit/s to 63.5 Mbit/s, and shall <br /> be supported (as indicated in the supported rates<br /> table) for receiving data. This value is reported in<br /> transmitted Beacon, Probe Request, Probe Response,<br /> Association Request, Association Response,<br /> Reassociation Request, and Reassociation Response<br /> frames, and is used to determine whether a BSS<br /> with which the station desires to synchronize is<br /> suitable. It is also used when starting a BSS,<br /> as specified in  10.3.",
+			"access": "read-write",
+			"name": "dot11OperationalRateSet",
+			"oid": "{ dot11StationConfigEntry 11 }",
+			"status": "current",
+			"syntax": "OCTET STRING (SIZE(1..126))",
+			"type": "ot"
+		},
+		{
+			"id": "37",
+			"guid": "93FE7B62-7DE8-442B-8AE5-A4F75C1ECBBC",
+			"text": "This attribute shall specify the number of TUs that <br /> a station shall use for scheduling Beacon <br /> transmissions. This value is transmitted in Beacon <br /> and Probe Response frames.",
+			"access": "read-write",
+			"name": "dot11BeaconPeriod",
+			"oid": "{ dot11StationConfigEntry 12 }",
+			"status": "current",
+			"syntax": "INTEGER (1..65535)",
+			"type": "ot"
+		},
+		{
+			"id": "38",
+			"guid": "EFE9C8DA-E882-4C93-BCA7-BCAFC3ECA122",
+			"text": "This attribute shall specify the number of beacon<br /> intervals that shall elapse between transmission of<br /> Beacons frames containing a TIM element whose DTIM<br /> Count field is 0. This value is transmitted in<br /> the DTIM Period field of Beacon frames.",
+			"access": "read-write",
+			"name": "dot11DTIMPeriod",
+			"oid": "{ dot11StationConfigEntry 13 }",
+			"status": "current",
+			"syntax": "INTEGER(1..255)",
+			"type": "ot"
+		},
+		{
+			"id": "39",
+			"guid": "E4DF206D-9AF9-4D84-8285-19E920D53951",
+			"text": "This attribute shall specify the number of TU that a<br /> requesting STA should wait for a response to a<br /> transmitted association-request MMPDU.",
+			"access": "read-write",
+			"name": "dot11AssociationResponseTimeOut",
+			"oid": "{ dot11StationConfigEntry 14 }",
+			"status": "current",
+			"syntax": "Unsigned32 (1..4294967295)",
+			"type": "ot"
+		},
+		{
+			"id": "40",
+			"guid": "0CCD7B87-8504-414A-8C7A-2A4FE97380BB",
+			"text": "This attribute holds the most recently<br /> transmitted Reason Code in a Disassociation<br /> frame.  If no Disassociation frame has been<br /> transmitted, the value of this attribute shall<br /> be 0.",
+			"access": "read-only",
+			"name": "dot11DisassociateReason",
+			"oid": "{ dot11StationConfigEntry 15 }",
+			"reference": "IEEE Std 802.11-2002, 7.3.1.7",
+			"status": "current",
+			"syntax": "INTEGER(0..65535)",
+			"type": "ot"
+		},
+		{
+			"id": "41",
+			"guid": "DBA2A436-0525-4873-A465-49AF894E8DF1",
+			"text": "This attribute holds the MAC address from the<br /> Address 1 field of the most recently transmitted<br /> Disassociation frame.  If no Disassociation<br /> frame has been transmitted, the value of this<br /> attribute shall be 0.",
+			"access": "read-only",
+			"name": "dot11DisassociateStation",
+			"oid": "{ dot11StationConfigEntry 16 }",
+			"status": "current",
+			"syntax": "MacAddress",
+			"type": "ot"
+		},
+		{
+			"id": "42",
+			"guid": "EAA1CCAB-6E22-44F1-B19B-310B88277461",
+			"text": "This attribute holds the most recently<br /> transmitted Reason Code in a Deauthentication<br /> frame.  If no Deauthentication frame has been<br /> transmitted, the value of this attribute shall<br /> be 0.",
+			"access": "read-only",
+			"name": "dot11DeauthenticateReason",
+			"oid": "{ dot11StationConfigEntry 17 }",
+			"reference": "IEEE Std 802.11-2002, 7.3.1.7",
+			"status": "current",
+			"syntax": "INTEGER(0..65535)",
+			"type": "ot"
+		},
+		{
+			"id": "43",
+			"guid": "3B08A88B-B531-4B7C-836D-DC23D40FD65E",
+			"text": "This attribute holds the MAC address from the<br /> Address 1 field of the most recently transmitted<br /> Deauthentication frame.  If no Deauthentication<br /> frame has been transmitted, the value of this<br /> attribute shall be 0.",
+			"access": "read-only",
+			"name": "dot11DeauthenticateStation",
+			"oid": "{ dot11StationConfigEntry 18 }",
+			"status": "current",
+			"syntax": "MacAddress",
+			"type": "ot"
+		},
+		{
+			"id": "44",
+			"guid": "1A4CE680-45CF-4548-8C49-FA40F447F10A",
+			"text": "This attribute holds the most recently<br /> transmitted Status Code in a failed<br /> Authentication frame.  If no failed<br /> Authentication frame has been transmitted, the<br /> value of this attribute shall be 0.",
+			"access": "read-only",
+			"name": "dot11AuthenticateFailStatus",
+			"oid": "{ dot11StationConfigEntry 19 }",
+			"reference": "IEEE Std 802.11-2002, 7.3.1.9",
+			"status": "current",
+			"syntax": "INTEGER(0..65535)",
+			"type": "ot"
+		},
+		{
+			"id": "45",
+			"guid": "81291239-74C5-4FF5-A61F-AACA62D94B95",
+			"text": "This attribute holds the MAC address from the<br /> Address 1 field of the most recently transmitted<br /> failed Authentication frame.  If no failed<br /> Authentication frame has been transmitted, the<br /> value of this attribute shall be 0.",
+			"access": "read-only",
+			"name": "dot11AuthenticateFailStation",
+			"oid": "{ dot11StationConfigEntry 20 }",
+			"status": "current",
+			"syntax": "MacAddress",
+			"type": "ot"
+		},
+		{
+			"id": "46",
+			"guid": "AE3C8208-038E-44A8-B054-C67A4611695B",
+			"text": "This attribute, when TRUE, indicates that the <br /> station implementation is capable of supporting <br /> multiple regulatory domains.  The capability is <br /> disabled, otherwise.  The default value of this <br /> attribute is FALSE.",
+			"access": "read-write",
+			"name": "dot11MultiDomainCapabilityImplemented",
+			"oid": "{ dot11StationConfigEntry 21 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "47",
+			"guid": "5CE74CC0-C151-4F77-AEAE-42A53692E24A",
+			"text": "This attribute, when TRUE, indicates that the <br /> capability of the station to operate in multiple <br /> regulatory domains is enabled.  The capability is <br /> disabled, otherwise.  The default value of this <br /> attribute is FALSE.",
+			"access": "read-write",
+			"name": "dot11MultiDomainCapabilityEnabled",
+			"oid": "{ dot11StationConfigEntry 22 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "48",
+			"guid": "F639F6AC-EA44-4638-8DF2-8010762FDCF8",
+			"text": "This attribute identifies the country in which the <br /> station is operating. The first two octets of this <br /> string is the two character country code as described <br /> in document ISO/IEC 3166-1.  The third octet shall <br /> be one of the following:<br /><br /> 1. an ASCII space character, if the regulations under <br /> which the station is operating encompass all <br /> environments in the country,<br /><br /> 2. an ASCII 'O' character, if the regulations under <br /> which the station is operating are for an Outdoor <br /> environment only, or<br /><br /> 3. an ASCII 'I' character, if the regulations under <br /> which the station is operating are for an Indoor <br /> environment only.",
+			"access": "read-only",
+			"name": "dot11CountryString",
+			"oid": "{ dot11StationConfigEntry 23 }",
+			"status": "current",
+			"syntax": "OCTET STRING (SIZE(3))",
+			"type": "ot"
+		},
+		{
+			"id": "49",
+			"guid": "CABD1012-0339-4097-B8B9-24D766E4E3BC",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11StationConfig  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "50",
+			"guid": "9BF409A3-E0C8-443C-B6D7-2E4D2663CC35",
+			"text": "<p>**********************************************************************</p><p>*    AuthenticationAlgorithms  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "51",
+			"guid": "8EFB3FA4-06CE-4A53-897C-B4A54CE41F89",
+			"text": "This (conceptual) table of attributes shall be a set of<br />            all the authentication algorithms supported by the<br />            stations.  The following are the default values and the<br />            associated algorithm:<br />                Value = 1: Open System<br />                Value = 2: Shared Key",
+			"access": "not-accessible",
+			"name": "dot11AuthenticationAlgorithmsTable",
+			"oid": "{ dot11smt 2 }",
+			"reference": "IEEE Std 802.11-2002, 7.3.1.1",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11AuthenticationAlgorithmsEntry",
+			"type": "ot"
+		},
+		{
+			"id": "52",
+			"guid": "125D8EBE-9122-4390-939A-0B16C04EE836",
+			"text": "An Entry (conceptual row) in the Authentication<br />            Algorithms Table.  <br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex,<br />                dot11AuthenticationAlgorithmsIndex }",
+			"name": "dot11AuthenticationAlgorithmsEntry",
+			"oid": "{ dot11AuthenticationAlgorithmsTable  1 }",
+			"status": "current",
+			"syntax": "Dot11AuthenticationAlgorithmsEntry",
+			"type": "ot"
+		},
+		{
+			"id": "53",
+			"guid": "90D46641-26EB-4399-9F86-1950FA7D43B9",
+			"text": "The auxiliary variable used to identify instances<br />            of the columnar objects in the Authentication Algorithms Table.",
+			"access": "not-accessible",
+			"name": "dot11AuthenticationAlgorithmsIndex",
+			"oid": "{ dot11AuthenticationAlgorithmsEntry 1 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "54",
+			"guid": "0F3DE867-17D6-4BF7-BBBB-4E4DAB556B57",
+			"text": "This attribute shall be a set of all the authentication<br />         algorithms supported by the STAs. The following are the<br />         default values and the associated algorithm.  <br />         Value = 1: Open System <br />         Value = 2: Shared Key",
+			"access": "read-only",
+			"name": "dot11AuthenticationAlgorithm",
+			"oid": "{ dot11AuthenticationAlgorithmsEntry 2 }",
+			"status": "current",
+			"syntax": "<pre>INTEGER { openSystem(1), sharedKey(2) }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "55",
+			"guid": "A6F59896-DA3F-4230-9A47-DDC141B0B01A",
+			"text": "This attribute, when true at a station, shall enable the acceptance <br />         of the authentication algorithm described in the corresponding table <br />         entry in authentication frames received by the station that have odd <br />         authentication sequence numbers.  The default value of this attribute <br />         shall be 1 for the Open System table entry and 2 for all other table <br />         entries.",
+			"access": "read-write",
+			"name": "dot11AuthenticationAlgorithmsEnable",
+			"oid": "{ dot11AuthenticationAlgorithmsEntry 3 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "56",
+			"guid": "3A59872C-F23C-4076-8A36-6AD8C2946760",
+			"text": "<p>**********************************************************************</p><p>*    End of AuthenticationAlgorithms  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "57",
+			"guid": "C8245661-3BAE-4D06-8BCB-94B549720213",
+			"text": "<p>**********************************************************************</p><p>*    WEPDefaultKeys  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "58",
+			"guid": "7C662CD7-CC01-4CC8-B459-67CBA6886C84",
+			"text": "Conceptual table for WEP default keys.  This table shall<br />            contain the four WEP default secret key values<br />            corresponding to the four possible KeyID values.  The WEP<br />            default secret keys are logically WRITE-ONLY.  Attempts to<br />            read the entries in this table shall return unsuccessful<br />            status and values of null or zero.  The default value of<br />            each WEP default key shall be null.",
+			"access": "not-accessible",
+			"name": "dot11WEPDefaultKeysTable",
+			"oid": "{ dot11smt 3 }",
+			"reference": "IEEE Std 802.11-2002, 8.3.2",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11WEPDefaultKeysEntry",
+			"type": "ot"
+		},
+		{
+			"id": "59",
+			"guid": "9CD606CE-8413-42CA-9195-C9A854F9E0A2",
+			"text": "An Entry (conceptual row) in the WEP Default Keys Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex,<br />               dot11WEPDefaultKeyIndex}",
+			"name": "dot11WEPDefaultKeysEntry",
+			"oid": "{ dot11WEPDefaultKeysTable  1 }",
+			"status": "current",
+			"syntax": "Dot11WEPDefaultKeysEntry",
+			"type": "ot"
+		},
+		{
+			"id": "60",
+			"guid": "A375194C-6383-4109-AD18-94CF1B9A8A30",
+			"text": "The auxiliary variable used to identify instances<br />            of the columnar objects in the WEP Default Keys Table.<br />           The value of this variable is equal to the WEPDefaultKeyID + 1",
+			"access": "not-accessible",
+			"name": "dot11WEPDefaultKeyIndex",
+			"oid": "{ dot11WEPDefaultKeysEntry 1 }",
+			"status": "current",
+			"syntax": "INTEGER (1..4)",
+			"type": "ot"
+		},
+		{
+			"id": "61",
+			"guid": "B470E329-B241-4EA8-BF0B-B8E42A325F31",
+			"text": "A WEP default secret key value.",
+			"access": "read-write",
+			"name": "dot11WEPDefaultKeyValue",
+			"oid": "{ dot11WEPDefaultKeysEntry 2 }",
+			"status": "current",
+			"syntax": "WEPKeytype",
+			"type": "ot"
+		},
+		{
+			"id": "62",
+			"guid": "9892A138-3B7D-4108-A433-45A159AF4511",
+			"text": "<p>**********************************************************************</p><p>*    End of WEPDefaultKeys  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "63",
+			"guid": "C0B83691-06C5-4189-820A-B70DC247CC96",
+			"text": "<p>**********************************************************************</p><p>*    WEPKeyMappings  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "64",
+			"guid": "C08BD8E4-DF6B-4AF4-95A0-BBBF30FA86B8",
+			"text": "Conceptual table for WEP Key Mappings.  The MIB supports<br />            the ability to share a separate WEP key for each RA/TA<br />            pair.  The Key Mappings Table contains zero or one entry<br />            for each MAC address and contains two fields for each<br />            entry: WEPOn and the corresponding WEP key.  The WEP key<br />            mappings are logically WRITE-ONLY.  Attempts to read the<br />            entries in this table shall return unsuccessful status and<br />            values of null or zero.  The default value for all WEPOn<br />            fields is false.",
+			"access": "not-accessible",
+			"name": "dot11WEPKeyMappingsTable",
+			"oid": "{ dot11smt 4 }",
+			"reference": "IEEE Std 802.11-2002, 8.3.2",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11WEPKeyMappingsEntry",
+			"type": "ot"
+		},
+		{
+			"id": "65",
+			"guid": "914DCEC1-3A52-403C-9EF8-DFF82EEC0D94",
+			"text": "An Entry (conceptual row) in the WEP Key Mappings Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex,<br />                dot11WEPKeyMappingIndex }",
+			"name": "dot11WEPKeyMappingsEntry",
+			"oid": "{ dot11WEPKeyMappingsTable  1 }",
+			"status": "current",
+			"syntax": "Dot11WEPKeyMappingsEntry",
+			"type": "ot"
+		},
+		{
+			"id": "66",
+			"guid": "82304123-61BC-4A51-8E66-49864E064466",
+			"text": "The auxiliary variable used to identify instances<br />            of the columnar objects in the WEP Key Mappings Table.",
+			"access": "not-accessible",
+			"name": "dot11WEPKeyMappingIndex",
+			"oid": "{ dot11WEPKeyMappingsEntry 1 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "67",
+			"guid": "8EA4FE2A-B757-445B-9EB2-369A9E94C3EC",
+			"text": "The MAC address of the STA for which the values from this<br />            key mapping entry are to be used.",
+			"access": "read-create",
+			"name": "dot11WEPKeyMappingAddress",
+			"oid": "{ dot11WEPKeyMappingsEntry 2 }",
+			"status": "current",
+			"syntax": "MacAddress",
+			"type": "ot"
+		},
+		{
+			"id": "68",
+			"guid": "1050B435-4B6B-4FCF-B2B3-EC54BB8FEA52",
+			"text": "Boolean as to whether WEP is to be used when communicating<br />            with the dot11WEPKeyMappingAddress STA.",
+			"access": "read-create",
+			"name": "dot11WEPKeyMappingWEPOn",
+			"oid": "{ dot11WEPKeyMappingsEntry 3 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "69",
+			"guid": "9DAD2331-98A8-45ED-8048-D795EB413B65",
+			"text": "A WEP secret key value.",
+			"access": "read-create",
+			"name": "dot11WEPKeyMappingValue",
+			"oid": "{ dot11WEPKeyMappingsEntry 4 }",
+			"status": "current",
+			"syntax": "WEPKeytype",
+			"type": "ot"
+		},
+		{
+			"id": "70",
+			"guid": "AA7309E8-51B9-4D7D-8E12-0998690773C0",
+			"text": "The status column used for creating, modifying, and<br />            deleting instances of the columnar objects in the WEP key<br />            mapping Table.",
+			"access": "read-create",
+			"defval": "{ active }",
+			"name": "dot11WEPKeyMappingStatus",
+			"oid": "{ dot11WEPKeyMappingsEntry 5 }",
+			"status": "current",
+			"syntax": "RowStatus",
+			"type": "ot"
+		},
+		{
+			"id": "71",
+			"guid": "E1448925-0F6D-4305-91BF-ED42078350BA",
+			"text": "<p>**********************************************************************</p><p>*    End of WEPKeyMappings  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "72",
+			"guid": "BEE149BA-2325-431A-8E3D-00E1DA3A3A93",
+			"text": "<p>**********************************************************************</p><p>*    dot11PrivacyTable  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "73",
+			"guid": "DD4A2352-4CA0-4AE3-8959-4BFB15E24FAB",
+			"text": "Group containing attributes concerned with IEEE 802.11<br />            Privacy.  Created as a table to allow multiple<br />            instantiations on an agent.",
+			"access": "not-accessible",
+			"name": "dot11PrivacyTable",
+			"oid": "{ dot11smt 5 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11PrivacyEntry",
+			"type": "ot"
+		},
+		{
+			"id": "74",
+			"guid": "B41C00C3-9FA3-4DD1-9682-86EACF0957A7",
+			"text": "An entry in the dot11PrivacyTable Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex }",
+			"name": "dot11PrivacyEntry",
+			"oid": "{ dot11PrivacyTable 1 }",
+			"status": "current",
+			"syntax": "Dot11PrivacyEntry",
+			"type": "ot"
+		},
+		{
+			"id": "75",
+			"guid": "3723B7DB-E2A5-4DB3-8032-3A1FACA93CD2",
+			"text": "When this attribute is true, it shall indicate that the IEEE<br />         802.11 WEP mechanism is used for transmitting frames of type<br />         Data. The default value of this attribute shall be false.",
+			"access": "read-write",
+			"name": "dot11PrivacyInvoked",
+			"oid": "{ dot11PrivacyEntry 1 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "76",
+			"guid": "EA8D8A7E-7F0F-410B-BC6E-963F01F34AD7",
+			"text": "This attribute shall indicate the use of the first,<br />            second, third, or fourth element of the WEPDefaultKeys<br />            array when set to values of zero, one, two, or three.  The<br />            default value of this attribute shall be 0.",
+			"access": "read-write",
+			"name": "dot11WEPDefaultKeyID",
+			"oid": "{ dot11PrivacyEntry 2 }",
+			"reference": "IEEE Std 802.11-2002, 8.3.2",
+			"status": "current",
+			"syntax": "INTEGER (0..3)",
+			"type": "ot"
+		},
+		{
+			"id": "77",
+			"guid": "77FFB905-8968-4C5A-AF5A-0C907791CA1A",
+			"text": "The maximum number of tuples that dot11WEPKeyMappings can hold.",
+			"access": "read-write",
+			"name": "dot11WEPKeyMappingLength",
+			"oid": "{ dot11PrivacyEntry 3 }",
+			"reference": "IEEE Std 802.11-2002, 8.3.2",
+			"status": "current",
+			"syntax": "Unsigned32 (10..4294967295)",
+			"type": "ot"
+		},
+		{
+			"id": "78",
+			"guid": "91F57A98-D35E-4BBC-ACCF-1F15130B5566",
+			"text": "When this attribute is true, the STA shall not indicate at<br />         the MAC service interface received MSDUs that have the WEP<br />         subfield of the Frame Control field equal to zero. When this<br />         attribute is false, the STA may accept MSDUs that have the WEP<br />         subfield of the Frame Control field equal to zero. The default<br />         value of this attribute shall be false.",
+			"access": "read-write",
+			"name": "dot11ExcludeUnencrypted",
+			"oid": "{ dot11PrivacyEntry 4 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "79",
+			"guid": "040F8F6D-CDB8-434B-A73E-AA9B44757318",
+			"text": "This counter shall increment when a frame is received with the<br />            WEP subfield of the Frame Control field set to one and the value<br />            of the ICV as received in the frame does not match the ICV value<br />            that is calculated for the contents of the received frame.",
+			"access": "read-only",
+			"name": "dot11WEPICVErrorCount",
+			"oid": "{ dot11PrivacyEntry 5 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "80",
+			"guid": "A45AF926-6445-42B6-AA18-33809DBE7F80",
+			"text": "This counter shall increment when a frame is received with the<br />            WEP subfield of the Frame Control field set to zero and the value<br />            of dot11ExcludeUnencrypted causes that frame to be discarded.",
+			"access": "read-only",
+			"name": "dot11WEPExcludedCount",
+			"oid": "{ dot11PrivacyEntry 6 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "81",
+			"guid": "6FDEDB16-5067-42C6-A05D-509DCF762069",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11Privacy  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "82",
+			"guid": "F93179B5-530F-40A8-B91D-F56EB0465F16",
+			"text": "<p>**********************************************************************</p><p>*    SMT notification Objects</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "83",
+			"guid": "028D389C-0F79-4637-987C-0A054A595D70",
+			"name": "dot11SMTnotification",
+			"oid": "{ dot11smt 6 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "84",
+			"guid": "AA58107D-1A42-4740-8521-60EB82EFFE2F",
+			"text": "The disassociate notification shall be sent when the STA<br />         sends a Disassociation frame. The value of the notification<br />         shall include the MAC address of the MAC to which the Disassociation<br />         frame was sent and the reason for the disassociation.<br /><br />           ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"name": "dot11Disassociate",
+			"oid": "{ dot11SMTnotification 0 1 }",
+			"status": "current",
+			"type": "nt",
+			"updated": "{ ifIndex, dot11DisassociateReason, dot11DisassociateStation }"
+		},
+		{
+			"id": "85",
+			"guid": "9A064F88-3890-42BA-8A51-E097A4840ACA",
+			"text": "The deauthenticate notification shall be sent when the STA<br />         sends a Deauthentication frame. The value of the notification<br />         shall include the MAC address of the MAC to which the Deauthentication<br />         frame was sent and the reason for the deauthentication.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"name": "dot11Deauthenticate",
+			"oid": "{ dot11SMTnotification 0 2 }",
+			"status": "current",
+			"type": "nt",
+			"updated": "{ ifIndex, dot11DeauthenticateReason, dot11DeauthenticateStation }"
+		},
+		{
+			"id": "86",
+			"guid": "F8295A2E-BA9F-44BE-BEC4-279D897B0C44",
+			"text": "The authenticate failure notification shall be sent when the STA<br />         sends an Authentication frame with a status code other than <br />         'successful'. The value of the notification<br />         shall include the MAC address of the MAC to which the Authentication<br />         frame was sent and the reason for the authentication failure.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"name": "dot11AuthenticateFail",
+			"oid": "{ dot11SMTnotification 0 3 }",
+			"status": "current",
+			"type": "nt",
+			"updated": "{ ifIndex, dot11AuthenticateFailStatus, dot11AuthenticateFailStation }"
+		},
+		{
+			"id": "87",
+			"guid": "C7DA340A-8CE5-47EE-BB18-455125C69B2B",
+			"text": "<p>**********************************************************************</p><p>*    End of SMT notification Objects</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "88",
+			"guid": "762BF057-3BF6-489C-B1E8-2D94F7269B28",
+			"text": "<p>********************************************************************</p><p>* dot11MultiDomainCapability TABLE</p><p>********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "89",
+			"guid": "2A9D53A5-C03E-421D-8711-57106346A8B9",
+			"text": "This (conceptual) table of attributes for <br /> cross-domain mobility.",
+			"access": "not-accessible",
+			"name": "dot11MultiDomainCapabilityTable",
+			"oid": "{ dot11smt 7 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11MultiDomainCapabilityEntry",
+			"type": "ot"
+		},
+		{
+			"id": "90",
+			"guid": "03F7531A-6F13-43E1-B747-9809081340AB",
+			"text": "An entry (conceptual row) in the Multiple Domain <br />                        Capability Table.<br /><br /> IfIndex - Each IEEE 802.11 interface is represented <br /> by an ifEntry. Interface tables in this MIB are <br /> indexed by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex,<br />         dot11MultiDomainCapabilityIndex }",
+			"name": "dot11MultiDomainCapabilityEntry",
+			"oid": "{ dot11MultiDomainCapabilityTable 1 }",
+			"status": "current",
+			"syntax": "Dot11MultiDomainCapabilityEntry",
+			"type": "ot"
+		},
+		{
+			"id": "91",
+			"guid": "AB6215CA-BC18-4D5B-9B9B-E28A65D1E988",
+			"text": "The auxiliary variable used to identify instances of <br /> the columnar objects in the Multi Domain Capability Table.",
+			"access": "not-accessible",
+			"name": "dot11MultiDomainCapabilityIndex",
+			"oid": "{ dot11MultiDomainCapabilityEntry 1 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "92",
+			"guid": "26A30280-E136-40DD-8D99-F1E0C90C2F6F",
+			"text": "This attribute shall indicate the value of the lowest <br /> channel number in the subband for the associated domain <br /> country string. The default value of this attribute <br /> shall be zero.",
+			"access": "read-write",
+			"name": "dot11FirstChannelNumber",
+			"oid": "{ dot11MultiDomainCapabilityEntry 2 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "93",
+			"guid": "14578FCA-5129-49C6-BB9C-9C4CB02CCF38",
+			"text": "This attribute shall indicate the value of the total <br /> number of channels allowed in the subband for the <br /> associated domain country string. The default value of <br /> this attribute shall be zero.",
+			"access": "read-write",
+			"name": "dot11NumberofChannels",
+			"oid": "{ dot11MultiDomainCapabilityEntry 3 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "94",
+			"guid": "7B4A6779-2040-4FF5-ADF4-B9FF43244DF2",
+			"text": "This attribute shall indicate the maximum transmit power, <br /> in dBm, allowed in the subband for the associated domain <br /> country string. The default value of this attribute shall <br /> be zero.",
+			"access": "read-write",
+			"name": "dot11MaximumTransmitPowerLevel",
+			"oid": "{ dot11MultiDomainCapabilityEntry 4 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "95",
+			"guid": "0A28116D-362E-425F-B855-5D6EE83B4B95",
+			"text": "<p>********************************************************************</p><p>* End of dot11MultiDomainCapability TABLE</p><p>********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "96",
+			"guid": "DD88C665-7718-4F3B-8B6A-A825CFB305BA",
+			"text": "<p>**********************************************************************</p><p>*    MAC Attribute Templates</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "97",
+			"guid": "883DD8A3-1F05-49DE-AEC0-A6DE14C9D980",
+			"text": "<p>**********************************************************************</p><p>*    dot11OperationTable  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "98",
+			"guid": "8D3EDE23-BCDB-4773-AE6E-ED48B4B60FB9",
+			"text": "Group contains MAC attributes pertaining to the operation<br />            of the MAC.  This has been implemented as a table in order<br />            to allow for multiple instantiations on an agent.",
+			"access": "not-accessible",
+			"name": "dot11OperationTable",
+			"oid": "{ dot11mac 1 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11OperationEntry",
+			"type": "ot"
+		},
+		{
+			"id": "99",
+			"guid": "A1DB3F8C-3D14-4952-BE12-7104E396FB95",
+			"text": "An entry in the dot11OperationEntry Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex }",
+			"name": "dot11OperationEntry",
+			"oid": "{ dot11OperationTable 1 }",
+			"status": "current",
+			"syntax": "Dot11OperationEntry",
+			"type": "ot"
+		},
+		{
+			"id": "100",
+			"guid": "35D9B31B-33A3-469B-8A91-92AB8B4BEFC8",
+			"text": "Unique MAC Address assigned to the STA.",
+			"access": "read-only",
+			"name": "dot11MACAddress",
+			"oid": "{ dot11OperationEntry 1 }",
+			"status": "current",
+			"syntax": "MacAddress",
+			"type": "ot"
+		},
+		{
+			"id": "101",
+			"guid": "AC358800-EA49-4C5F-A009-9BC585A11799",
+			"text": "This attribute shall indicate the number of octets in an MPDU,<br />         below which an RTS/CTS handshake shall not be performed. An<br />         RTS/CTS handshake shall be performed at the beginning of any<br />         frame exchange sequence where the MPDU is of type Data or<br />         Management, the MPDU has an individual address in the Address1<br />         field, and the length of the MPDU is greater than<br />         this threshold. (For additional details, refer to Table 21 in<br />         9.7.) Setting this attribute to be larger than the maximum<br />         MSDU size shall have the effect of turning off the RTS/CTS<br />         handshake for frames of Data or Management type transmitted by<br />         this STA. Setting this attribute to zero shall have the effect<br />         of turning on the RTS/CTS handshake for all frames of Data or<br />         Management type transmitted by this STA. The default value of<br />         this attribute shall be 2347.",
+			"access": "read-write",
+			"name": "dot11RTSThreshold",
+			"oid": "{ dot11OperationEntry 2 }",
+			"status": "current",
+			"syntax": "INTEGER (0..2347)",
+			"type": "ot"
+		},
+		{
+			"id": "102",
+			"guid": "5A80780C-B2D4-4B19-85DD-EB8BB6F7268C",
+			"text": "This attribute shall indicate the maximum number of<br />         transmission attempts of a frame, the length of which is less<br />         than or equal to dot11RTSThreshold, that shall be made before a<br />         failure condition is indicated. The default value of this<br />         attribute shall be 7.",
+			"access": "read-write",
+			"name": "dot11ShortRetryLimit",
+			"oid": "{ dot11OperationEntry 3 }",
+			"status": "current",
+			"syntax": "INTEGER (1..255)",
+			"type": "ot"
+		},
+		{
+			"id": "103",
+			"guid": "49D879CB-9460-46B5-925D-3068D3D7277D",
+			"text": "This attribute shall indicate the maximum number of<br />         transmission attempts of a frame, the length of which is<br />         greater than dot11RTSThreshold, that shall be made before a<br />         failure condition is indicated. The default value of this<br />         attribute shall be 4.",
+			"access": "read-write",
+			"name": "dot11LongRetryLimit",
+			"oid": "{ dot11OperationEntry 4 }",
+			"status": "current",
+			"syntax": "INTEGER (1..255)",
+			"type": "ot"
+		},
+		{
+			"id": "104",
+			"guid": "5A3B6865-363E-4D7C-B074-F4CA1D172D12",
+			"text": "This attribute shall specify the current maximum size, in<br />         octets, of the MPDU that may be delivered to the PHY. An MSDU<br />         shall be broken into fragments if its size exceeds the value<br />         of this attribute after adding MAC headers and trailers. An MSDU<br />         or MMPDU shall be fragmented when the resulting frame has an<br />         individual address in the Address1 field, and the length of the<br />         frame is larger than this threshold. The default value for this<br />         attribute shall be the lesser of 2346 or the aMPDUMaxLength of<br />         the attached PHY and shall never exceed the lesser of 2346 or<br />         the  aMPDUMaxLength of the attached PHY. The value of this<br />         attribute shall never be less than 256. ",
+			"access": "read-write",
+			"name": "dot11FragmentationThreshold",
+			"oid": "{ dot11OperationEntry 5 }",
+			"status": "current",
+			"syntax": "INTEGER (256..2346)",
+			"type": "ot"
+		},
+		{
+			"id": "105",
+			"guid": "E4068F22-7D7A-49DC-ABA5-316811397AE3",
+			"text": "The MaxTransmitMSDULifetime shall be the elapsed time in TU,<br />         after the initial transmission of an MSDU, after which further<br />         attempts to transmit the MSDU shall be terminated. The default<br />         value of this attribute shall be 512.",
+			"access": "read-write",
+			"name": "dot11MaxTransmitMSDULifetime",
+			"oid": "{ dot11OperationEntry 6 }",
+			"status": "current",
+			"syntax": "Unsigned32 (1..4294967295)",
+			"type": "ot"
+		},
+		{
+			"id": "106",
+			"guid": "68F949CE-15FB-45B3-A869-48DF62B7D5A3",
+			"text": "The MaxReceiveLifetime shall be the elapsed time in TU,<br />            after the initial reception of a fragmented MMPDU or MSDU,<br />            after which further attempts to reassemble the MMPDU or<br />            MSDU shall be terminated. The default value shall be<br />            512.",
+			"access": "read-write",
+			"name": "dot11MaxReceiveLifetime",
+			"oid": "{ dot11OperationEntry 7 }",
+			"status": "current",
+			"syntax": "Unsigned32 (1..4294967295)",
+			"type": "ot"
+		},
+		{
+			"id": "107",
+			"guid": "FC94DF4B-8AD8-4CA8-B897-5EA39F453567",
+			"text": "The ManufacturerID shall include, at a minimum, the name<br />            of the manufacturer.  It may include additional<br />            information at the manufacturer's discretion.  The default<br />            value of this attribute shall be null.",
+			"access": "read-only",
+			"name": "dot11ManufacturerID",
+			"oid": "{ dot11OperationEntry 8 }",
+			"status": "current",
+			"syntax": "DisplayString (SIZE(0..128))",
+			"type": "ot"
+		},
+		{
+			"id": "108",
+			"guid": "D9D7AA2D-86F8-4984-977C-D6C886A35C49",
+			"text": "The ProductID shall include, at a minimum, an identifier<br />            that is unique to the manufacturer.  It may include<br />            additional information at the manufacturer's discretion.<br />            The default value of this attribute shall be null.",
+			"access": "read-only",
+			"name": "dot11ProductID",
+			"oid": "{ dot11OperationEntry 9 }",
+			"status": "current",
+			"syntax": "DisplayString (SIZE(0..128))",
+			"type": "ot"
+		},
+		{
+			"id": "109",
+			"guid": "F3E2874E-B5ED-4C1E-8FE0-BB893F887E91",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11OperationEntry  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "110",
+			"guid": "2B6BF096-FB1B-4A69-AB3E-B3492C940085",
+			"text": "<p>**********************************************************************</p><p>*    dot11Counters TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "111",
+			"guid": "A5391E7B-5A39-43F5-8469-DDF4E8ACFE22",
+			"text": "Group containing attributes that are MAC counters.<br />            Implemented as a table to allow for multiple<br />            instantiations on an agent.",
+			"access": "not-accessible",
+			"name": "dot11CountersTable",
+			"oid": "{ dot11mac 2 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11CountersEntry",
+			"type": "ot"
+		},
+		{
+			"id": "112",
+			"guid": "66555827-5789-4886-90FC-3C72AC461557",
+			"text": "An entry in the dot11CountersEntry Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex }",
+			"name": "dot11CountersEntry",
+			"oid": "{ dot11CountersTable 1 }",
+			"status": "current",
+			"syntax": "Dot11CountersEntry",
+			"type": "ot"
+		},
+		{
+			"id": "113",
+			"guid": "2B3B4D34-A0CA-4720-8460-011FE0B186E1",
+			"text": "This counter shall be incremented for an acknowledged MPDU<br />            with an individual address in the address 1 field or an MPDU<br />            with a multicast address in the address 1 field of type Data<br />            or Management.",
+			"access": "read-only",
+			"name": "dot11TransmittedFragmentCount",
+			"oid": "{ dot11CountersEntry 1 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "114",
+			"guid": "38DEDBE1-9278-4E7B-8AD7-21AC0067DB48",
+			"text": "This counter shall increment only when the multicast bit<br />            is set in the destination MAC address of a successfully<br />            transmitted MSDU.  When operating as a STA in an ESS, where<br />            these frames are directed to the AP, this implies having<br />            received an acknowledgment to all associated MPDUs.",
+			"access": "read-only",
+			"name": "dot11MulticastTransmittedFrameCount",
+			"oid": "{ dot11CountersEntry 2 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "115",
+			"guid": "7824C272-2CEA-4493-9C06-CDBC362DA1C3",
+			"text": "This counter shall increment when an MSDU is not transmitted<br />         successfully due to the number of transmit attempts exceeding<br />         either the  dot11ShortRetryLimit or dot11LongRetryLimit.",
+			"access": "read-only",
+			"name": "dot11FailedCount",
+			"oid": "{ dot11CountersEntry 3 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "116",
+			"guid": "8F675E8B-3D2C-4BB9-9E9F-7C26B16D0565",
+			"text": "This counter shall increment when an MSDU is successfully<br />            transmitted after one or more retransmissions.",
+			"access": "read-only",
+			"name": "dot11RetryCount",
+			"oid": "{ dot11CountersEntry 4 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "117",
+			"guid": "F0ADA0CC-5FE1-4453-944A-B114F7C3176F",
+			"text": "This counter shall increment when an MSDU is successfully<br />            transmitted after more than one retransmission.",
+			"access": "read-only",
+			"name": "dot11MultipleRetryCount",
+			"oid": "{ dot11CountersEntry 5 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "118",
+			"guid": "FFCE3517-DF98-495D-B351-23D6FD226E43",
+			"text": "This counter shall increment when a frame is received<br />            that the Sequence Control field indicates is a<br />            duplicate.",
+			"access": "read-only",
+			"name": "dot11FrameDuplicateCount",
+			"oid": "{ dot11CountersEntry 6 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "119",
+			"guid": "693C0FE5-8225-413C-977B-F0861D77A92F",
+			"text": "This counter shall increment when a CTS is received in<br />            response to an RTS.",
+			"access": "read-only",
+			"name": "dot11RTSSuccessCount",
+			"oid": "{  dot11CountersEntry 7 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "120",
+			"guid": "81D01637-D90F-4B14-9E46-B104997B3406",
+			"text": "This counter shall increment when a CTS is not received in<br />         response to an RTS.",
+			"access": "read-only",
+			"name": "dot11RTSFailureCount",
+			"oid": "{ dot11CountersEntry 8 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "121",
+			"guid": "BCA32EEF-57C2-485E-871D-34B7DA670268",
+			"text": "This counter shall increment when an ACK is not received<br />            when expected.",
+			"access": "read-only",
+			"name": "dot11ACKFailureCount",
+			"oid": "{  dot11CountersEntry 9 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "122",
+			"guid": "68D1AB80-8ADD-49D4-8EB9-39827BBD208C",
+			"text": "This counter shall be incremented for each successfully<br />            received MPDU of type Data or Management.",
+			"access": "read-only",
+			"name": "dot11ReceivedFragmentCount",
+			"oid": "{ dot11CountersEntry 10 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "123",
+			"guid": "97FD60D8-B0C9-41DB-862E-56EDF87E47AA",
+			"text": "This counter shall increment when a MSDU is received<br />            with the multicast bit set in the destination<br />            MAC address.",
+			"access": "read-only",
+			"name": "dot11MulticastReceivedFrameCount",
+			"oid": "{ dot11CountersEntry 11 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "124",
+			"guid": "E214CBF8-067C-41DE-A225-4DB08EB9350D",
+			"text": "This counter shall increment when an FCS error is<br />            detected in a received MPDU.",
+			"access": "read-only",
+			"name": "dot11FCSErrorCount",
+			"oid": "{ dot11CountersEntry 12 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "125",
+			"guid": "A23CE1AD-D37C-47E4-905E-CF6498CFF207",
+			"text": "This counter shall increment for each successfully transmitted MSDU.",
+			"access": "read-only",
+			"name": "dot11TransmittedFrameCount",
+			"oid": "{ dot11CountersEntry 13 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "126",
+			"guid": "9A0F622F-F7BC-4929-B916-57392E1749AC",
+			"text": "This counter shall increment when a frame is received with<br />         the WEP subfield of the Frame Control field set to one and the<br />         WEPOn value for the key mapped to the TA's MAC address<br />         indicates that the frame should not have been encrypted or<br />         that frame is discarded due to the receiving STA not<br />         implementing the privacy option.",
+			"access": "read-only",
+			"name": "dot11WEPUndecryptableCount",
+			"oid": "{ dot11CountersEntry 14 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "127",
+			"guid": "F9CB85E8-6D57-412D-B027-A3467F3197E1",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11CountersEntry  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "128",
+			"guid": "C525390A-F8FA-4B1F-B359-2564D0A000A4",
+			"text": "<p>**********************************************************************</p><p>*    GroupAddresses  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "129",
+			"guid": "6C799410-2515-4C8C-855A-64CEBE39724A",
+			"text": "A conceptual table containing a set of MAC addresses<br />            identifying the multicast addresses for which this STA<br />            will receive frames.  The default value of this attribute<br />            shall be null.",
+			"access": "not-accessible",
+			"name": "dot11GroupAddressesTable",
+			"oid": "{ dot11mac 3 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11GroupAddressesEntry",
+			"type": "ot"
+		},
+		{
+			"id": "130",
+			"guid": "DE9129D8-8587-42F1-8CBF-374262F3C665",
+			"text": "An Entry (conceptual row) in the Group Addresses Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex,<br />                dot11GroupAddressesIndex}",
+			"name": "dot11GroupAddressesEntry",
+			"oid": "{ dot11GroupAddressesTable  1 }",
+			"status": "current",
+			"syntax": "Dot11GroupAddressesEntry",
+			"type": "ot"
+		},
+		{
+			"id": "131",
+			"guid": "05323FBF-054C-44D8-9631-515ADE4711AC",
+			"text": "The auxiliary variable used to identify instances<br />            of the columnar objects in the Group Addresses Table.",
+			"access": "not-accessible",
+			"name": "dot11GroupAddressesIndex",
+			"oid": "{ dot11GroupAddressesEntry 1 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "132",
+			"guid": "9EA6B1C1-7F31-44EF-8C2D-FCE9B28A6845",
+			"text": "MAC address identifying a multicast addresses<br />            from which this STA will receive frames.",
+			"access": "read-create",
+			"name": "dot11Address",
+			"oid": "{ dot11GroupAddressesEntry 2 }",
+			"status": "current",
+			"syntax": "MacAddress",
+			"type": "ot"
+		},
+		{
+			"id": "133",
+			"guid": "82B54D83-FB4F-4C5F-8497-7BAE47519A0E",
+			"text": "The status column used for creating, modifying, and<br />            deleting instances of the columnar objects in the Group<br />            Addresses Table.",
+			"access": "read-create",
+			"defval": "{ active }",
+			"name": "dot11GroupAddressesStatus",
+			"oid": "{ dot11GroupAddressesEntry 3 }",
+			"status": "current",
+			"syntax": "RowStatus",
+			"type": "ot"
+		},
+		{
+			"id": "134",
+			"guid": "E9F4B1BD-256D-4BC2-B8FF-4135196246D0",
+			"text": "<p>**********************************************************************</p><p>*    End of GroupAddress  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "135",
+			"guid": "F1FCA538-501A-4892-8379-35C0A5F1A80A",
+			"text": "<p>**********************************************************************</p><p>*    Resource Type Attribute Templates</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "136",
+			"guid": "824EBEC6-2659-47E5-927F-0CA9EE524F14",
+			"text": "Contains the name of the Resource Type ID managed object.<br />            The attribute is read-only and always contains the value<br />            RTID.  This attribute value shall not be used as a naming<br />            attribute for any other managed object class.",
+			"access": "read-only",
+			"defval": "{ \"RTID\" }",
+			"name": "dot11ResourceTypeIDName",
+			"oid": "{ dot11resAttribute 1 }",
+			"reference": "IEEE Std 802.1F-1993,  A.7",
+			"status": "current",
+			"syntax": "DisplayString (SIZE(4))",
+			"type": "ot"
+		},
+		{
+			"id": "137",
+			"guid": "A79F3D59-9A44-47BC-AA6D-0A39ED53476C",
+			"text": "<p>**********************************************************************</p><p>*    dot11ResourceInfo  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "138",
+			"guid": "7F9213EC-5E1B-43E6-AAEE-09BC486DD30A",
+			"text": "Provides a means of indicating, in data readable from a<br />            managed object, information that identifies the source of<br />            the implementation.",
+			"access": "not-accessible",
+			"name": "dot11ResourceInfoTable",
+			"oid": "{ dot11resAttribute 2 }",
+			"reference": "IEEE Std 802.1F-1993,  A.7",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11ResourceInfoEntry",
+			"type": "ot"
+		},
+		{
+			"id": "139",
+			"guid": "6ACC9004-20E8-41D8-8E59-4ADC8F7B65AE",
+			"text": "An entry in the dot11ResourceInfo Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex }",
+			"name": "dot11ResourceInfoEntry",
+			"oid": "{ dot11ResourceInfoTable 1 }",
+			"status": "current",
+			"syntax": "Dot11ResourceInfoEntry",
+			"type": "ot"
+		},
+		{
+			"id": "140",
+			"guid": "C06C4833-46F7-492E-924E-F1B7D0ECFB44",
+			"text": "Takes the value of an organizationally unique identifier.",
+			"access": "read-only",
+			"name": "dot11manufacturerOUI",
+			"oid": "{ dot11ResourceInfoEntry 1 }",
+			"status": "current",
+			"syntax": "OCTET STRING (SIZE(3))",
+			"type": "ot"
+		},
+		{
+			"id": "141",
+			"guid": "F6C05A7F-5B0E-45FB-8EAE-ED1CB0AA5295",
+			"text": "A printable string used to identify the manufacturer of the<br />            resource.  Maximum string length is 128 octets.",
+			"access": "read-only",
+			"name": "dot11manufacturerName",
+			"oid": "{ dot11ResourceInfoEntry 2 }",
+			"status": "current",
+			"syntax": "DisplayString (SIZE(0..128))",
+			"type": "ot"
+		},
+		{
+			"id": "142",
+			"guid": "61ECD2B1-32D7-42EC-BD93-B5958331838E",
+			"text": "A printable string used to identify the manufacturer's product<br />            name of the resource.  Maximum string length is 128 octets.",
+			"access": "read-only",
+			"name": "dot11manufacturerProductName",
+			"oid": "{ dot11ResourceInfoEntry 3 }",
+			"status": "current",
+			"syntax": "DisplayString (SIZE(0..128))",
+			"type": "ot"
+		},
+		{
+			"id": "143",
+			"guid": "6C3F8088-22E2-4C76-A0A8-386F70827802",
+			"text": "Printable string used to identify the manufacturer's product<br />            version of the resource.  Maximum string length is 128 octets.",
+			"access": "read-only",
+			"name": "dot11manufacturerProductVersion",
+			"oid": "{ dot11ResourceInfoEntry 4 }",
+			"status": "current",
+			"syntax": "DisplayString (SIZE(0..128))",
+			"type": "ot"
+		},
+		{
+			"id": "144",
+			"guid": "CB83359A-5E61-4B9F-AF4A-798C8F2EDF7F",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11ResourceInfo  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "145",
+			"guid": "5A3321BB-17BE-4C70-9DC3-BBFE22AE8528",
+			"text": "<p>**********************************************************************</p><p>*   PHY Attribute Templates</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "146",
+			"guid": "2E5C372D-9D23-4062-A2F9-A441B114A94F",
+			"text": "<p>**********************************************************************</p><p>*    dot11PhyOperation  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "147",
+			"guid": "33E67860-432D-43DA-97B5-87861F1638EA",
+			"text": "PHY level attributes concerned with<br />         operation.  Implemented as a table indexed on<br /><br />         ifIndex to allow for multiple instantiations on an<br />         Agent.",
+			"access": "not-accessible",
+			"name": "dot11PhyOperationTable",
+			"oid": "{ dot11phy 1 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11PhyOperationEntry",
+			"type": "ot"
+		},
+		{
+			"id": "148",
+			"guid": "F4B74508-0345-4868-9546-A5C876ED72A3",
+			"text": "An entry in the dot11PhyOperation Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex }",
+			"name": "dot11PhyOperationEntry",
+			"oid": "{ dot11PhyOperationTable 1 }",
+			"status": "current",
+			"syntax": "Dot11PhyOperationEntry",
+			"type": "ot"
+		},
+		{
+			"id": "149",
+			"guid": "0BFDDBFF-826E-485F-802F-EE7BD8375C49",
+			"text": "This is an 8-bit integer value that identifies the PHY type<br />         supported by the attached PLCP and PMD. Currently defined<br />         values and their corresponding PHY types are:<br /> <br />         FHSS 2.4 GHz = 01 , DSSS 2.4 GHz = 02, IR Baseband = 03,<br /> OFDM 5GHz = 04, HRDSSS = 05",
+			"access": "read-only",
+			"name": "dot11PHYType",
+			"oid": "{ dot11PhyOperationEntry 1 }",
+			"status": "current",
+			"syntax": "<pre>INTEGER { fhss(1), dsss(2), irbaseband(3), ofdm(4),<br />              hrdsss(5) }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "150",
+			"guid": "B7AF26D6-F3AC-4422-94A7-FF99DF0BBA47",
+			"text": "The current regulatory domain this instance of the PMD is<br />            supporting.  This object corresponds to one of the<br />            RegDomains listed in dot11RegDomainsSupported.",
+			"access": "read-write",
+			"name": "dot11CurrentRegDomain",
+			"oid": "{ dot11PhyOperationEntry 2 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "151",
+			"guid": "36426D0F-4064-4C44-8392-212B95DF528E",
+			"text": "There are different operating temperature requirements<br />         dependent on the anticipated environmental conditions. This<br />         attribute describes the current PHY's operating temperature<br />         range capability. Currently defined values and their<br />         corresponding temperature ranges are:<br /><br />         Type 1 = X'01'-Commercial range of 0 to 40 degrees C,<br /><br />         Type 2 = X'02'-Industrial range of -30 to 70 degrees C.",
+			"access": "read-only",
+			"name": "dot11TempType",
+			"oid": "{ dot11PhyOperationEntry 3 }",
+			"status": "current",
+			"syntax": "<pre>INTEGER { tempType1(1), tempType2(2) }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "152",
+			"guid": "3EE6A713-4461-4AC5-9CCE-D24A3FAF4380",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11PhyOperation  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "153",
+			"guid": "5688E32B-0A6C-4D05-B67C-8DD0B267EEEA",
+			"text": "<p>**********************************************************************</p><p>*    dot11PhyAntenna  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "154",
+			"guid": "1AA46713-DDE3-4A17-BBD4-F08E97731D4C",
+			"text": "Group of attributes for PhyAntenna.  Implemented as a<br />            table indexed on ifIndex to allow for multiple instances on<br />            an agent.",
+			"access": "not-accessible",
+			"name": "dot11PhyAntennaTable",
+			"oid": "{ dot11phy 2}",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11PhyAntennaEntry",
+			"type": "ot"
+		},
+		{
+			"id": "155",
+			"guid": "FE4DA7A1-785A-47FD-9041-4D6FA3AD7E7E",
+			"text": "An entry in the dot11PhyAntenna Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex }",
+			"name": "dot11PhyAntennaEntry",
+			"oid": "{ dot11PhyAntennaTable 1 }",
+			"status": "current",
+			"syntax": "Dot11PhyAntennaEntry",
+			"type": "ot"
+		},
+		{
+			"id": "156",
+			"guid": "B1F3F79E-9975-4886-BEB2-C6929E3C5F75",
+			"text": "The current antenna being used to transmit.  This value<br />         is one of the values appearing in dot11SupportedTxAntenna. This <br />         may be used by a management agent to control which antenna is <br />         used for transmission. ",
+			"access": "read-write",
+			"name": "dot11CurrentTxAntenna",
+			"oid": "{ dot11PhyAntennaEntry 1 }",
+			"status": "current",
+			"syntax": "Integer32 (1..255)",
+			"type": "ot"
+		},
+		{
+			"id": "157",
+			"guid": "8304FEBD-7B3E-4A43-9718-37AEA3D3FE15",
+			"text": "This implementation's support for diversity, encoded as:<br /><br />         X'01'-diversity is available and is performed over the fixed<br />             list of antennas defined in dot11DiversitySelectionRx.<br /><br />         X'02'-diversity is not supported.<br /><br />         X'03'-diversity is supported and control of diversity is also<br />             available, in which case the attribute <br />             dot11DiversitySelectionRx can be dynamically modified by the<br />             LME.",
+			"access": "read-only",
+			"name": "dot11DiversitySupport",
+			"oid": "{ dot11PhyAntennaEntry 2 }",
+			"status": "current",
+			"syntax": "<pre>INTEGER { fixedlist(1), notsupported(2), dynamic(3) }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "158",
+			"guid": "84CFA97B-1FDE-458A-A53C-BAAB52B3C838",
+			"text": "The current antenna being used to receive, if the dot11 <br /> DiversitySupport indicates that diversity is not supported.  <br /> The selected antenna shall be one of the antennae marked <br /> for receive in the dot11AntennasListTable.",
+			"access": "read-write",
+			"name": "dot11CurrentRxAntenna",
+			"oid": "{ dot11PhyAntennaEntry 3 }",
+			"status": "current",
+			"syntax": "Integer32 (1..255)",
+			"type": "ot"
+		},
+		{
+			"id": "159",
+			"guid": "6A6DD460-4BA5-411E-800D-80F00B211CE0",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11PhyAntenna  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "160",
+			"guid": "7AD1D625-D467-4CAE-81A4-39E0266F9F94",
+			"text": "<p>**********************************************************************</p><p>*    dot11PhyTxPower  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "161",
+			"guid": "D10BA57F-AA5F-49D6-91B7-91E02546EB22",
+			"text": "Group of attributes for dot11PhyTxPowerTable.  Implemented<br />            as a table indexed on STA ID to allow for multiple<br />            instances on an Agent.",
+			"access": "not-accessible",
+			"name": "dot11PhyTxPowerTable",
+			"oid": "{ dot11phy 3}",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11PhyTxPowerEntry",
+			"type": "ot"
+		},
+		{
+			"id": "162",
+			"guid": "771EFB00-9BE2-403D-8C08-24CC9B1E5BFE",
+			"text": "An entry in the dot11PhyTxPower Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex }",
+			"name": "dot11PhyTxPowerEntry",
+			"oid": "{ dot11PhyTxPowerTable 1 }",
+			"status": "current",
+			"syntax": "Dot11PhyTxPowerEntry",
+			"type": "ot"
+		},
+		{
+			"id": "163",
+			"guid": "1A5474EA-969F-4D8B-85D3-6AEFF8AA1702",
+			"text": "The number of power levels supported by the PMD.<br />            This attribute can have a value of 1 to 8.",
+			"access": "read-only",
+			"name": "dot11NumberSupportedPowerLevels",
+			"oid": "{ dot11PhyTxPowerEntry 1 }",
+			"status": "current",
+			"syntax": "INTEGER (1..8)",
+			"type": "ot"
+		},
+		{
+			"id": "164",
+			"guid": "84048915-151B-4E09-9D32-701C9F4FDE36",
+			"text": "The transmit output power for LEVEL1 in mW.<br />            This is also the default power level.",
+			"access": "read-only",
+			"name": "dot11TxPowerLevel1",
+			"oid": "{ dot11PhyTxPowerEntry 2 }",
+			"status": "current",
+			"syntax": "INTEGER (0..10000)",
+			"type": "ot"
+		},
+		{
+			"id": "165",
+			"guid": "68551703-52FD-466B-82B4-D4ACFD42CB5A",
+			"text": "The transmit output power for LEVEL2 in mW.",
+			"access": "read-only",
+			"name": "dot11TxPowerLevel2",
+			"oid": "{ dot11PhyTxPowerEntry 3 }",
+			"status": "current",
+			"syntax": "INTEGER (0..10000)",
+			"type": "ot"
+		},
+		{
+			"id": "166",
+			"guid": "DD9149F5-4873-426E-9DC1-982E1559E05A",
+			"text": "The transmit output power for LEVEL3 in mW.",
+			"access": "read-only",
+			"name": "dot11TxPowerLevel3",
+			"oid": "{ dot11PhyTxPowerEntry 4 }",
+			"status": "current",
+			"syntax": "INTEGER (0..10000)",
+			"type": "ot"
+		},
+		{
+			"id": "167",
+			"guid": "46637E49-D2F5-4451-8768-A19E48BC2179",
+			"text": "The transmit output power for LEVEL4 in mW.",
+			"access": "read-only",
+			"name": "dot11TxPowerLevel4",
+			"oid": "{ dot11PhyTxPowerEntry 5 }",
+			"status": "current",
+			"syntax": "INTEGER (0..10000)",
+			"type": "ot"
+		},
+		{
+			"id": "168",
+			"guid": "D18D55DC-1697-4CF0-AC92-806A041F8569",
+			"text": "The transmit output power for LEVEL5 in mW.",
+			"access": "read-only",
+			"name": "dot11TxPowerLevel5",
+			"oid": "{ dot11PhyTxPowerEntry 6 }",
+			"status": "current",
+			"syntax": "INTEGER (0..10000)",
+			"type": "ot"
+		},
+		{
+			"id": "169",
+			"guid": "D2A52158-69ED-46C2-B01E-D9105D4A1C7D",
+			"text": "The transmit output power for LEVEL6 in mW.",
+			"access": "read-only",
+			"name": "dot11TxPowerLevel6",
+			"oid": "{ dot11PhyTxPowerEntry 7 }",
+			"status": "current",
+			"syntax": "INTEGER (0..10000)",
+			"type": "ot"
+		},
+		{
+			"id": "170",
+			"guid": "3A4D5369-EEC6-4371-8F50-DB48FFDEF6E9",
+			"text": "The transmit output power for LEVEL7 in mW.",
+			"access": "read-only",
+			"name": "dot11TxPowerLevel7",
+			"oid": "{ dot11PhyTxPowerEntry 8 }",
+			"status": "current",
+			"syntax": "INTEGER (0..10000)",
+			"type": "ot"
+		},
+		{
+			"id": "171",
+			"guid": "735FF4FB-4419-4DA5-ACC1-563776BB4FEA",
+			"text": "The transmit output power for LEVEL8 in mW.",
+			"access": "read-only",
+			"name": "dot11TxPowerLevel8",
+			"oid": "{ dot11PhyTxPowerEntry 9 }",
+			"status": "current",
+			"syntax": "INTEGER (0..10000)",
+			"type": "ot"
+		},
+		{
+			"id": "172",
+			"guid": "D18AAA3B-18CC-4F60-AF79-65E8EA4B085F",
+			"text": "The TxPowerLevel N currently being used to transmit data.<br />            Some PHYs also use this value to determine the receiver<br />            sensitivity requirements for CCA.",
+			"access": "read-write",
+			"name": "dot11CurrentTxPowerLevel",
+			"oid": "{ dot11PhyTxPowerEntry 10 }",
+			"status": "current",
+			"syntax": "INTEGER (1..8)",
+			"type": "ot"
+		},
+		{
+			"id": "173",
+			"guid": "8EF4B139-8D23-4B4E-B7AD-2E494303CCB5",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11PhyTxPower  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "174",
+			"guid": "04A5AB37-07E2-4A81-BDDC-7A922648E860",
+			"text": "<p>**********************************************************************</p><p>*    dot11PhyFHSS  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "175",
+			"guid": "5A3AB8E6-3B99-406B-8CBA-001E2AE186CE",
+			"text": "Group of attributes for dot11PhyFHSSTable.  Implemented as a<br />            table indexed on STA ID to allow for multiple instances on<br />            an Agent.",
+			"access": "not-accessible",
+			"name": "dot11PhyFHSSTable",
+			"oid": "{ dot11phy 4 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11PhyFHSSEntry",
+			"type": "ot"
+		},
+		{
+			"id": "176",
+			"guid": "48BF7635-AD39-4052-9ED1-0D7FC673036D",
+			"text": "An entry in the dot11PhyFHSS Table.<br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex }",
+			"name": "dot11PhyFHSSEntry",
+			"oid": "{ dot11PhyFHSSTable 1 }",
+			"status": "current",
+			"syntax": "Dot11PhyFHSSEntry",
+			"type": "ot"
+		},
+		{
+			"id": "177",
+			"guid": "D5EFF669-D34B-43A6-8E47-1426066BA92C",
+			"text": "The time in microseconds for the PMD to change from<br />            channel 2 to channel 80.",
+			"access": "read-only",
+			"name": "dot11HopTime",
+			"oid": "{ dot11PhyFHSSEntry 1 }",
+			"status": "current",
+			"syntax": "INTEGER (224)",
+			"type": "ot"
+		},
+		{
+			"id": "178",
+			"guid": "737E0D21-877F-491C-87EF-EF19DF191512",
+			"text": "The current channel number of the frequency output by the RF<br />         synthesizer.",
+			"access": "read-write",
+			"name": "dot11CurrentChannelNumber",
+			"oid": "{ dot11PhyFHSSEntry 2 }",
+			"status": "current",
+			"syntax": "INTEGER (0..200)",
+			"type": "ot"
+		},
+		{
+			"id": "179",
+			"guid": "41F8BEF4-5116-4394-B39B-6640FC50DC96",
+			"text": "The maximum time in TU that the transmitter<br />            is permitted to operate on a single channel.",
+			"access": "read-only",
+			"name": "dot11MaxDwellTime",
+			"oid": "{ dot11PhyFHSSEntry 3 }",
+			"status": "current",
+			"syntax": "INTEGER (1..65535)",
+			"type": "ot"
+		},
+		{
+			"id": "180",
+			"guid": "E31244EC-78DB-4123-9710-1788C83689D4",
+			"text": "The current time in TU that the transmitter shall operate<br />            on a single channel, as set by the MAC.  Default is 19 TU.",
+			"access": "read-write",
+			"name": "dot11CurrentDwellTime",
+			"oid": "{ dot11PhyFHSSEntry 4 }",
+			"status": "current",
+			"syntax": "INTEGER (1..65535)",
+			"type": "ot"
+		},
+		{
+			"id": "181",
+			"guid": "28CCD650-AA29-4B04-A30F-4ED456791CFA",
+			"text": "The current set of patterns the PLME <br />     is using to determine the hopping sequence. ",
+			"access": "read-write",
+			"name": "dot11CurrentSet",
+			"oid": "{ dot11PhyFHSSEntry 5 }",
+			"status": "current",
+			"syntax": "INTEGER (1..255)",
+			"type": "ot"
+		},
+		{
+			"id": "182",
+			"guid": "571EB3C3-B4EA-4330-A914-931829712613",
+			"text": "The current pattern the PLME is<br />            using to determine the hop sequence.",
+			"access": "read-write",
+			"name": "dot11CurrentPattern",
+			"oid": "{ dot11PhyFHSSEntry 6 }",
+			"status": "current",
+			"syntax": "INTEGER (0..255)",
+			"type": "ot"
+		},
+		{
+			"id": "183",
+			"guid": "AF337F69-B99E-4061-ABF1-DD71C8EB7AD1",
+			"text": "The current index value the PLME is using to determine<br />            the CurrentChannelNumber.",
+			"access": "read-write",
+			"name": "dot11CurrentIndex",
+			"oid": "{ dot11PhyFHSSEntry 7 }",
+			"status": "current",
+			"syntax": "INTEGER (1..255)",
+			"type": "ot"
+		},
+		{
+			"id": "184",
+			"guid": "057AC68B-3A75-461C-B0BD-F8B1101F1654",
+			"text": "This attribute indicates the value to be <br /> used as the prime radix (N) in the HCC and <br /> EHCC algorithms.",
+			"access": "read-write",
+			"name": "dot11EHCCPrimeRadix",
+			"oid": "{ dot11PhyFHSSEntry 8 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "185",
+			"guid": "786B51B3-E204-41E7-8983-ABE757C336E9",
+			"text": "This attribute indicates the value to be <br /> used as the maximum for the family index (a) <br /> in the HCC and EHCC algorithms. The value of <br /> this field shall not be less than the prime <br /> radix minus 3 (N - 3). The valid range of <br /> allowed values is (N - 1), (N - 2), and (N - 3).",
+			"access": "read-write",
+			"name": "dot11EHCCNumberofChannelsFamilyIndex",
+			"oid": "{ dot11PhyFHSSEntry 9 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "186",
+			"guid": "13ABB748-BBD4-4514-8A09-4B42D16D298E",
+			"text": "This attribute, when TRUE, indicates that the <br /> station implementation is capable of generating <br /> the HCC or EHCC algorithms for determining Hopping <br /> patterns.  The capability is disabled, otherwise.  <br /> The default value of this attribute is FALSE.",
+			"access": "read-write",
+			"name": "dot11EHCCCapabilityImplemented",
+			"oid": "{ dot11PhyFHSSEntry 10 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "187",
+			"guid": "ADC4FDB3-D056-4593-A238-E6B8A9F70250",
+			"text": "This attribute, when TRUE, indicates that the <br /> capability of the station to operate using the HCC <br /> or EHCC algorithms for determining Hopping Patterns <br /> is enabled.  The capability is disabled, otherwise.  <br /> The default value of this attribute is FALSE.",
+			"access": "read-write",
+			"name": "dot11EHCCCapabilityEnabled",
+			"oid": "{ dot11PhyFHSSEntry 11 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "188",
+			"guid": "92D9388E-BAB4-46C0-9E27-5DC7D7486593",
+			"text": "This attribute, indicates which of the algorithms <br /> will be used to generate the Hopping Patterns. <br /> Valid values are: <br /> <br /> 1 - hopping patterns as defined in clause 14 <br /> 2 - hop index method (with or without table)<br /> 3 - HCC/EHCC method",
+			"access": "read-write",
+			"name": "dot11HopAlgorithmAdopted",
+			"oid": "{ dot11PhyFHSSEntry 12 }",
+			"status": "current",
+			"syntax": "<pre>INTEGER { crnt(1), hopindex(2), hcc(3) }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "189",
+			"guid": "8DA2635D-533C-498B-8852-6A08E7DDBA7C",
+			"text": "This attribute, indicates that a Random Table is <br /> present when the value is True. When the value is <br /> False it indicates that a Random Table is not <br /> present and that the hop index method is to be <br /> used to determine the hopping sequence. The default <br /> value of this attribute is True.",
+			"access": "read-write",
+			"name": "dot11RandomTableFlag",
+			"oid": "{ dot11PhyFHSSEntry 13 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "190",
+			"guid": "25C198A1-141A-4F4E-98B2-1C56C9638353",
+			"text": "The Number of Sets field indicates the total <br /> number of sets within the hopping patterns.",
+			"access": "read-only",
+			"name": "dot11NumberofHoppingSets",
+			"oid": "{ dot11PhyFHSSEntry 14 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "191",
+			"guid": "0F0E41ED-7A0B-4A2B-8149-13DD86858A6D",
+			"text": "The number of allowed channels for the hopping <br /> set. This is defined by the governing regulatory <br /> agency for the country code of the country <br /> in which this device is operating.",
+			"access": "read-only",
+			"name": "dot11HopModulus",
+			"oid": "{ dot11PhyFHSSEntry 15 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "192",
+			"guid": "E7EFDC50-B99E-447A-8B5E-FFEDF4EAA156",
+			"text": "The next position in the hopping set.",
+			"access": "read-write",
+			"name": "dot11HopOffset",
+			"oid": "{ dot11PhyFHSSEntry 16 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "193",
+			"guid": "B61E7159-EA72-4E6A-9AE8-730BB329CCEF",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11PhyFHSS  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "194",
+			"guid": "C2C94CC5-8D67-46DF-89CA-252635FF972E",
+			"text": "<p>**********************************************************************</p><p>*    dot11PhyDSSSEntry  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "195",
+			"guid": "709F6614-74CC-4194-9BFD-D23770A0A2D3",
+			"text": "Entry of attributes for dot11PhyDSSSEntry.  Implemented as a<br />            table indexed on ifIndex allow for multiple instances on<br />            an Agent.",
+			"access": "not-accessible",
+			"name": "dot11PhyDSSSTable",
+			"oid": "{ dot11phy 5 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11PhyDSSSEntry",
+			"type": "ot"
+		},
+		{
+			"id": "196",
+			"guid": "8E5D3F2C-6F40-40B5-A490-C5471EDFE061",
+			"text": "An entry in the dot11PhyDSSSEntry Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex }",
+			"name": "dot11PhyDSSSEntry",
+			"oid": "{ dot11PhyDSSSTable 1 }",
+			"status": "current",
+			"syntax": "Dot11PhyDSSSEntry",
+			"type": "ot"
+		},
+		{
+			"id": "197",
+			"guid": "C5A485FA-DC7A-4B0D-AE90-E57424EBB0F3",
+			"text": "The current operating frequency channel of the DSSS<br />            PHY. Valid channel numbers are as defined in 15.4.6.2",
+			"access": "read-write",
+			"name": "dot11CurrentChannel",
+			"oid": "{ dot11PhyDSSSEntry 1 }",
+			"status": "current",
+			"syntax": "INTEGER (1..14)",
+			"type": "ot"
+		},
+		{
+			"id": "198",
+			"guid": "46B386DE-5BCA-4333-998E-5CBF58F72881",
+			"text": "dot11CCAModeSupported is a bit-significant value,<br />    representing all of the CCA modes supported by the PHY.<br /> Valid values are:<br /><br />                energy detect only (ED_ONLY) = 01,<br />    carrier sense only (CS_ONLY) = 02,<br />    carrier sense and energy detect (ED_and_CS)= 04<br />    or the logical sum of any of these values.  This<br />    attribute shall not be used to indicate the CCA modes<br />    supported by a higher rate extension PHY.  Rather, the<br />    dot11HRCCAModeSupported attribute shall be used to<br />    indicate the CCA modes of the higher rate extension PHY.",
+			"access": "read-only",
+			"name": "dot11CCAModeSupported",
+			"oid": "{ dot11PhyDSSSEntry 2 }",
+			"status": "current",
+			"syntax": "INTEGER (1..7)",
+			"type": "ot"
+		},
+		{
+			"id": "199",
+			"guid": "64B0394E-268D-40EA-B0AA-C91645F58199",
+			"text": "The current CCA method in operation.   Valid values are:<br />                energy detect only (edonly) = 01,<br />                carrier sense only (csonly) = 02,<br />                carrier sense and energy detect (edandcs)= 04<br />                carrier sense with timer (cswithtimer)= 08<br />                high rate carrier sense and energy detect (hrcsanded)=16.",
+			"access": "read-write",
+			"name": "dot11CurrentCCAMode",
+			"oid": "{ dot11PhyDSSSEntry 3 }",
+			"status": "current",
+			"syntax": "<pre>INTEGER { edonly(1), csonly(2), edandcs(4), cswithtimer(8),<br />              hrcsanded(16) }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "200",
+			"guid": "24D3565D-2ED1-448A-B9B1-538D5A1F61C0",
+			"text": "The current Energy Detect Threshold being used by the DSSS PHY.",
+			"access": "read-write",
+			"name": "dot11EDThreshold",
+			"oid": "{ dot11PhyDSSSEntry 4 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "201",
+			"guid": "BAEF6A64-C077-4ADB-A1D4-52D620402F16",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11PhyDSSSEntry  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "202",
+			"guid": "EE06DDF9-272C-43EE-BE29-14B2810E55DA",
+			"text": "<p>**********************************************************************</p><p>*    dot11PhyIR  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "203",
+			"guid": "ED736F5F-92FD-4069-A1DB-2703F24D70DE",
+			"text": "Group of attributes for dot11PhyIRTable.  Implemented as a<br />            table indexed on ifIndex to allow for multiple instances on<br />            an Agent.",
+			"access": "not-accessible",
+			"name": "dot11PhyIRTable",
+			"oid": "{ dot11phy 6 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11PhyIREntry",
+			"type": "ot"
+		},
+		{
+			"id": "204",
+			"guid": "CC0EE579-2BC0-44E6-8DB5-A3EFC3061B8A",
+			"text": "An entry in the dot11PhyIR Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex }",
+			"name": "dot11PhyIREntry",
+			"oid": "{ dot11PhyIRTable 1 }",
+			"status": "current",
+			"syntax": "Dot11PhyIREntry",
+			"type": "ot"
+		},
+		{
+			"id": "205",
+			"guid": "30AB766E-7794-4321-B428-C19822562972",
+			"text": "This parameter, together with CCAWatchdogCountMax,<br />            determines when energy detected in the channel can be<br />            ignored.",
+			"access": "read-write",
+			"name": "dot11CCAWatchdogTimerMax",
+			"oid": "{ dot11PhyIREntry 1 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "206",
+			"guid": "3E6C1D18-CE77-4C59-ABC9-3448EBB8A6B2",
+			"text": "This parameter, together with CCAWatchdogTimerMax,<br />            determines when energy detected in the channel can be<br />            ignored.",
+			"access": "read-write",
+			"name": "dot11CCAWatchdogCountMax",
+			"oid": "{ dot11PhyIREntry 2 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "207",
+			"guid": "F872ADAC-A412-46E9-AA21-9AEB6B8BCF5A",
+			"text": "The minimum value to which CCAWatchdogTimerMax can be<br />            set.",
+			"access": "read-write",
+			"name": "dot11CCAWatchdogTimerMin",
+			"oid": "{ dot11PhyIREntry 3 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "208",
+			"guid": "C5F211C4-014B-4228-A488-55D40F7627AD",
+			"text": "The minimum value to which CCAWatchdogCount can be set.",
+			"access": "read-write",
+			"name": "dot11CCAWatchdogCountMin",
+			"oid": "{ dot11PhyIREntry 4 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "209",
+			"guid": "8690D5A2-4CFC-4ECD-9C70-A51CCA42694E",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11PhyIR  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "210",
+			"guid": "9F74357B-1D14-40F0-8009-F1177C11673C",
+			"text": "<p>**********************************************************************</p><p>*    dot11RegDomainsSupported  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "211",
+			"guid": "74A0EF52-CCB2-422B-9D6F-AF278D89F2F7",
+			"text": "There are different operational requirements dependent on<br />            the regulatory domain.  This attribute list describes the<br />            regulatory domains the PLCP and PMD support in this<br />            implementation.  Currently defined values and their<br />            corresponding Regulatory Domains are:<br /><br />            FCC (USA) = X'10', DOC (Canada) = X'20', ETSI (most of<br />            Europe) = X'30', Spain = X'31', France = X'32', MKK<br />            (Japan) = X'40', Others = X'00' ",
+			"access": "not-accessible",
+			"name": "dot11RegDomainsSupportedTable",
+			"oid": "{ dot11phy 7}",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11RegDomainsSupportedEntry",
+			"type": "ot"
+		},
+		{
+			"id": "212",
+			"guid": "C54B0795-C94A-4113-A48C-3D92E4F1A55F",
+			"text": "An entry in the dot11RegDomainsSupportedTable.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex,<br />                dot11RegDomainsSupportedIndex }",
+			"name": "dot11RegDomainsSupportedEntry",
+			"oid": "{ dot11RegDomainsSupportedTable 1 }",
+			"status": "current",
+			"syntax": "Dot11RegDomainsSupportedEntry",
+			"type": "ot"
+		},
+		{
+			"id": "213",
+			"guid": "55E24AA3-02B4-4511-91C0-271F02C192D3",
+			"text": "The auxiliary variable used to identify instances<br />            of the columnar objects in the RegDomainsSupport Table.",
+			"access": "not-accessible",
+			"name": "dot11RegDomainsSupportedIndex",
+			"oid": "{ dot11RegDomainsSupportedEntry 1 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "214",
+			"guid": "0918DA5E-42CC-4EEB-9B98-7361DFE85051",
+			"text": "There are different operational requirements dependent on<br />            the regulatory domain.  This attribute list describes the<br />            regulatory domains the PLCP and PMD support in this<br />            implementation.  Currently defined values and their<br />            corresponding Regulatory Domains are:<br /><br />            FCC (USA) = X'10', DOC (Canada) = X'20', ETSI (most of<br />            Europe) = X'30', Spain = X'31', France = X'32', MKK<br />            (Japan) = X'40' ",
+			"access": "read-only",
+			"name": "dot11RegDomainsSupportedValue",
+			"oid": "{ dot11RegDomainsSupportedEntry 2 }",
+			"status": "current",
+			"syntax": "<pre>INTEGER { fcc(16), doc(32), etsi(48), spain (49), france(50),<br />                         mkk (64) }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "215",
+			"guid": "535C86ED-84A5-43B0-A054-A5114329DB65",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11RegDomainsSupported  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "216",
+			"guid": "3BCBC258-7F06-4B6A-9A90-8A44DF8D9D9C",
+			"text": "<p>**********************************************************************</p><p>*    dot11AntennasList  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "217",
+			"guid": "6D852337-43F9-49AF-A3E1-753F3F9A386A",
+			"text": "This table represents the list of antennae.  An antenna can be <br /> marked to be capable of transmitting, receiving, and/or for <br /> participation in receive diversity.  Each entry in this table <br /> represents a single antenna with its properties.  The maximum <br /> number of antennae that can be contained in this table is 255.",
+			"access": "not-accessible",
+			"name": "dot11AntennasListTable",
+			"oid": "{ dot11phy 8 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11AntennasListEntry",
+			"type": "ot"
+		},
+		{
+			"id": "218",
+			"guid": "3D106E86-CDA1-47BE-A16F-7978896B35BA",
+			"text": "An entry in the dot11AntennasListTable, representing the properties <br />            of a single antenna.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex,<br />                dot11AntennaListIndex }",
+			"name": "dot11AntennasListEntry",
+			"oid": "{ dot11AntennasListTable 1 }",
+			"status": "current",
+			"syntax": "Dot11AntennasListEntry",
+			"type": "ot"
+		},
+		{
+			"id": "219",
+			"guid": "540A4895-DDE2-4DEB-851E-2323A2B9DAC5",
+			"text": "The unique index of an antenna which is used to identify the columnar <br />            objects in the dot11AntennasList Table.",
+			"access": "not-accessible",
+			"name": "dot11AntennaListIndex",
+			"oid": "{ dot11AntennasListEntry 1 }",
+			"status": "current",
+			"syntax": "Integer32 (1..255)",
+			"type": "ot"
+		},
+		{
+			"id": "220",
+			"guid": "E1636DD8-F5B8-4952-ADB6-1605F1B2242F",
+			"text": "When true, this object indicates that the antenna represented by <br />            dot11AntennaIndex can be used as a transmit antenna.",
+			"access": "read-write",
+			"name": "dot11SupportedTxAntenna",
+			"oid": "{ dot11AntennasListEntry 2 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "221",
+			"guid": "20EE7E09-2835-4F05-B74D-E2355F756BAC",
+			"text": "When true, this object indicates that the antenna represented by the <br />            dot11AntennaIndex xan be used as a receive antenna.",
+			"access": "read-write",
+			"name": "dot11SupportedRxAntenna",
+			"oid": "{ dot11AntennasListEntry 3 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "222",
+			"guid": "377A8BA6-5029-458A-BBE4-7B9F03BD29F6",
+			"text": "When true, this object indicates that the antenna represented by <br />            dot11AntennaIndex can be used for receive diversity.  This object <br />            may only be true if the antenna can be used as a receive antenna, <br />            as indicated by dot11SupportedRxAntenna.",
+			"access": "read-write",
+			"name": "dot11DiversitySelectionRx",
+			"oid": "{ dot11AntennasListEntry 4 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "223",
+			"guid": "105E1243-587F-46CE-8FB3-7C0E7B32F885",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11AntennasList  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "224",
+			"guid": "852B429F-39AE-4758-A443-ACBE3EF68E63",
+			"text": "<p>**********************************************************************</p><p>*    SupportedDataRatesTx  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "225",
+			"guid": "7B4E6349-1CEE-43D6-A08E-A9F4AC1FB439",
+			"text": "The Transmit bit rates supported by the PLCP and PMD,<br />            represented by a count from X'02-X'7f, corresponding to data<br />            rates in increments of 500kbit/s from 1 Mbit/s to 63.5 Mbit/s subject<br />            to limitations of each individual PHY.",
+			"access": "not-accessible",
+			"name": "dot11SupportedDataRatesTxTable",
+			"oid": "{ dot11phy 9 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11SupportedDataRatesTxEntry",
+			"type": "ot"
+		},
+		{
+			"id": "226",
+			"guid": "4A4196DF-B104-4892-8627-12D5B819F9B9",
+			"text": "An Entry (conceptual row) in the dot11SupportedDataRatesTx<br />            Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex,<br />                dot11SupportedDataRatesTxIndex }",
+			"name": "dot11SupportedDataRatesTxEntry",
+			"oid": "{ dot11SupportedDataRatesTxTable  1 }",
+			"status": "current",
+			"syntax": "Dot11SupportedDataRatesTxEntry",
+			"type": "ot"
+		},
+		{
+			"id": "227",
+			"guid": "541F6026-7526-4325-BE1A-4A33F4659818",
+			"text": "Index object which identifies which data rate to access.<br />            Range is 1..8.",
+			"access": "not-accessible",
+			"name": "dot11SupportedDataRatesTxIndex",
+			"oid": "{ dot11SupportedDataRatesTxEntry 1 }",
+			"status": "current",
+			"syntax": "Integer32 (1..8)",
+			"type": "ot"
+		},
+		{
+			"id": "228",
+			"guid": "173E7D29-538D-4783-BCF6-F329BC77A548",
+			"text": "The Transmit bit rates supported by the PLCP and PMD,<br />            represented by a count from X'02-X'7f, corresponding to data<br />            rates in increments of 500kbit/s from 1 Mbit/s to 63.5 Mbit/s subject<br />            to limitations of each individual PHY.",
+			"access": "read-only",
+			"name": "dot11SupportedDataRatesTxValue",
+			"oid": "{ dot11SupportedDataRatesTxEntry 2 }",
+			"status": "current",
+			"syntax": "Integer32 (2..127)",
+			"type": "ot"
+		},
+		{
+			"id": "229",
+			"guid": "0A562C84-1BD5-44BF-930C-82F87FBBC917",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11SupportedDataRatesTx  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "230",
+			"guid": "8B79E068-A2F8-4131-B9A3-D0481BD5BB13",
+			"text": "<p>**********************************************************************</p><p>*    SupportedDataRatesRx  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "231",
+			"guid": "F0D4D810-C1E7-432D-8ADA-21B9B97D3EF2",
+			"text": "The receive bit rates supported by the PLCP and PMD,<br />            represented by a count from X'002-X'7f, corresponding to data<br />            rates in increments of 500kbit/s from 1 Mbit/s to 63.5 Mbit/s.",
+			"access": "not-accessible",
+			"name": "dot11SupportedDataRatesRxTable",
+			"oid": "{ dot11phy 10 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11SupportedDataRatesRxEntry",
+			"type": "ot"
+		},
+		{
+			"id": "232",
+			"guid": "B77A9C5B-D91C-40A1-BF20-1F1631362A86",
+			"text": "An Entry (conceptual row) in the dot11SupportedDataRatesRx Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry.  Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex,<br />                dot11SupportedDataRatesRxIndex }",
+			"name": "dot11SupportedDataRatesRxEntry",
+			"oid": "{ dot11SupportedDataRatesRxTable  1 }",
+			"status": "current",
+			"syntax": "Dot11SupportedDataRatesRxEntry",
+			"type": "ot"
+		},
+		{
+			"id": "233",
+			"guid": "066A91B6-EFA8-444F-93BE-F4363425589A",
+			"text": "Index object which identifies which data rate to access.<br />            Range is 1..8.",
+			"access": "not-accessible",
+			"name": "dot11SupportedDataRatesRxIndex",
+			"oid": "{ dot11SupportedDataRatesRxEntry 1 }",
+			"status": "current",
+			"syntax": "Integer32 (1..8)",
+			"type": "ot"
+		},
+		{
+			"id": "234",
+			"guid": "0A1ED84E-CD36-4834-A6DA-B8F7B998BA31",
+			"text": "The receive bit rates supported by the PLCP and PMD,<br />            represented by a count from X'02-X'7f, corresponding to data<br />            rates in increments of 500kbit/s from 1 Mbit/s to 63.5 Mbit/s.",
+			"access": "read-only",
+			"name": "dot11SupportedDataRatesRxValue",
+			"oid": "{ dot11SupportedDataRatesRxEntry 2 }",
+			"status": "current",
+			"syntax": "Integer32 (2..127)",
+			"type": "ot"
+		},
+		{
+			"id": "235",
+			"guid": "DF1EF031-2478-4E6C-A283-BEA8ACC69992",
+			"text": "<p>**********************************************************************</p><p>*    End of dot11SupportedDataRatesRx  TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "236",
+			"guid": "F6B780B6-3411-4560-8297-BC60EBCEA4C0",
+			"text": "<p>**********************************************************************</p><p>* dot11PhyOFDM TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "237",
+			"guid": "C5B62406-5FC3-44AB-88EB-F1B08AD1B367",
+			"text": "Group of attributes for dot11PhyOFDMTable. Implemented as a<br />            table indexed on ifindex to allow for multiple instances on<br />            an Agent.",
+			"access": "not-accessible",
+			"name": "dot11PhyOFDMTable",
+			"oid": "{ dot11phy 11 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11PhyOFDMEntry",
+			"type": "ot"
+		},
+		{
+			"id": "238",
+			"guid": "F560BC81-05D2-46CA-855E-2907C2275433",
+			"text": "An entry in the dot11PhyOFDM Table.<br /><br />            ifIndex - Each IEEE 802.11 interface is represented by an<br />            ifEntry. Interface tables in this MIB module are indexed<br />            by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex }",
+			"name": "dot11PhyOFDMEntry",
+			"oid": "{ dot11PhyOFDMTable 1 }",
+			"status": "current",
+			"syntax": "Dot11PhyOFDMEntry",
+			"type": "ot"
+		},
+		{
+			"id": "239",
+			"guid": "3C9F933F-7B41-418B-A6D2-ED0F541A426A",
+			"text": "The number of the current operating frequency channel of the OFDM PHY.",
+			"access": "read-write",
+			"name": "dot11CurrentFrequency",
+			"oid": "{ dot11PhyOFDMEntry 1 }",
+			"status": "current",
+			"syntax": "INTEGER (0..99)",
+			"type": "ot"
+		},
+		{
+			"id": "240",
+			"guid": "D0DC6EEC-0AFE-45EE-9FB6-F5CB5FEC3283",
+			"text": "The Threshold being used to detect a busy medium (frequency).<br />            CCA shall report a busy medium upon detecting the RSSI above <br />     this threshold.",
+			"access": "read-write",
+			"name": "dot11TIThreshold",
+			"oid": "{ dot11PhyOFDMEntry 2 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "241",
+			"guid": "35E295D7-3ACC-4B34-8D26-92B95BB102F1",
+			"text": "The capability of the OFDM PHY implementation to operate in <br />     the three U-NII bands. Coded as an integer value of a three <br />     bit field as follows:<br />                bit 0 .. capable of operating in the lower (5.15-5.25 GHz)<br /> U-NII band<br />                bit 1 .. capable of operating in the middle (5.25-5.35 GHz) <br /> U-NII band<br />                bit 2 .. capable of operating in the upper (5.725-5.825 GHz) <br /> U-NII band<br />            For example, for an implementation capable of operating in the <br />     lower and mid bands this attribute would take the value 3.",
+			"access": "read-only",
+			"name": "dot11FrequencyBandsSupported",
+			"oid": "{ dot11PhyOFDMEntry 3 }",
+			"status": "current",
+			"syntax": "INTEGER (1..7)",
+			"type": "ot"
+		},
+		{
+			"id": "242",
+			"guid": "0BAAF8D0-EA40-4E95-A8D7-E36D1FA9E3E3",
+			"text": "<p>**********************************************************************</p><p>* End of dot11PhyOFDM TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "243",
+			"guid": "3EF854B3-F474-427E-9B96-20F27C6EF47D",
+			"text": "<p>**********************************************************************</p><p>* dot11PhyHRDSSSEntry TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "244",
+			"guid": "620A50C2-0CA5-4051-9296-021A7036165D",
+			"text": "Entry of attributes for dot11PhyHRDSSSEntry.<br /> Implemented as a table indexed on ifIndex to allow for<br /> multiple instances on an Agent.",
+			"access": "not-accessible",
+			"name": "dot11PhyHRDSSSTable",
+			"oid": "{ dot11phy 12 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11PhyHRDSSSEntry",
+			"type": "ot"
+		},
+		{
+			"id": "245",
+			"guid": "43277A37-004B-4CCB-B44E-0C75CA02E901",
+			"text": "An entry in the dot11PhyHRDSSSEntry Table.<br /><br /> ifIndex - Each IEEE 802.11 interface is represented by an<br /> ifEntry. Interface tables in this MIB module are indexed<br /> by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex }",
+			"name": "dot11PhyHRDSSSEntry",
+			"oid": "{ dot11PhyHRDSSSTable 1 }",
+			"status": "current",
+			"syntax": "Dot11PhyHRDSSSEntry",
+			"type": "ot"
+		},
+		{
+			"id": "246",
+			"guid": "C1C9F970-4A71-421E-AEFB-FAFAEE9E7B6C",
+			"text": "This attribute, when true, shall indicate that the<br /> short preamble option as defined in subclause 18.2.2.2<br /> is implemented.  The default value of this attribute<br /> shall be false.",
+			"access": "read-only",
+			"name": "dot11ShortPreambleOptionImplemented",
+			"oid": "{dot11PhyHRDSSSEntry 1 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "247",
+			"guid": "20EDB1A2-DE4D-4141-9A74-96A4C5389F69",
+			"text": "This attribute, when true, shall indicate that the PBCC<br /> modulation option as defined in subclause 18.4.6.6 is<br /> implemented.  The default value of this attribute shall<br /> be false.",
+			"access": "read-only",
+			"name": "dot11PBCCOptionImplemented",
+			"oid": "{dot11PhyHRDSSSEntry 2 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "248",
+			"guid": "5003A1BA-FF41-4333-9790-01D048653D0F",
+			"text": "This attribute indicates that the PHY is capable of<br /> channel agility.",
+			"access": "read-only",
+			"name": "dot11ChannelAgilityPresent",
+			"oid": "{ dot11PhyHRDSSSEntry 3 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "249",
+			"guid": "5EAFF5A3-C0ED-4E21-AF6E-65E522136DD3",
+			"text": "This attribute indicates that the PHY channel agility<br /> functionality is enabled.",
+			"access": "read-only",
+			"name": "dot11ChannelAgilityEnabled",
+			"oid": "{ dot11PhyHRDSSSEntry 4 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "250",
+			"guid": "07692E80-6FBD-42BA-9FD9-8D511124A1E5",
+			"text": "dot11HRCCAModeSupported is a bit-significant value,<br /> representing all of the CCA modes supported by the PHY.<br /> Valid values are:<br />     energy detect only (ED_ONLY) = 01,<br />     carrier sense only (CS_ONLY) = 02,<br />     carrier sense and energy detect (ED_and_CS)= 04,<br />     carrier sense with timer (CS_and_Timer)= 08,<br />     high rate carrier sense and energy detect <br />     (HRCS_and_ED)= 16<br />     or the logical sum of any of these values.  In <br />     the high rate extension PHY, this attribute shall <br />     be used in preference to the dot11CCAModeSupported <br />     attribute.",
+			"access": "read-only",
+			"name": "dot11HRCCAModeSupported",
+			"oid": "{ dot11PhyHRDSSSEntry 5 }",
+			"status": "current",
+			"syntax": "INTEGER (1..31)",
+			"type": "ot"
+		},
+		{
+			"id": "251",
+			"guid": "88B5C371-9C81-40A8-BD4F-971C0689174C",
+			"text": "<p>**********************************************************************</p><p>* End of dot11PhyHRDSSSEntry TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "252",
+			"guid": "802448A1-017D-4A86-BD21-41B188C451B1",
+			"text": "<p>********************************************************************</p><p>* dot11 Hopping Pattern TABLE</p><p>********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "253",
+			"guid": "70C7651E-8414-43A2-ACC1-632254731692",
+			"text": "The (conceptual) table of attributes necessary for <br /> a frequency hopping implementation to be able to <br /> create the hopping sequences necessary to operate <br /> in the subband for the associated domain country string.",
+			"access": "not-accessible",
+			"name": "dot11HoppingPatternTable",
+			"oid": "{ dot11phy 13 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF Dot11HoppingPatternEntry",
+			"type": "ot"
+		},
+		{
+			"id": "254",
+			"guid": "D414C958-5F41-4568-89CC-071A9463B816",
+			"text": "An entry (conceptual row) in the Hopping Pattern Table <br /> that indicates the random hopping sequence to be followed. <br /><br /> IfIndex - Each IEEE 802.11 interface is represented <br /> by an ifEntry. Interface tables in this MIB are indexed <br /> by ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex,<br /> dot11HoppingPatternIndex }",
+			"name": "dot11HoppingPatternEntry",
+			"oid": "{ dot11HoppingPatternTable 1 }",
+			"status": "current",
+			"syntax": "Dot11HoppingPatternEntry",
+			"type": "ot"
+		},
+		{
+			"id": "255",
+			"guid": "69A3DCD6-2F1A-4B00-A963-E5E93F39CEF2",
+			"text": "The auxiliary variable used to identify instances of <br /> the columnar objects in the Hopping Pattern Table.",
+			"access": "not-accessible",
+			"name": "dot11HoppingPatternIndex",
+			"oid": "{ dot11HoppingPatternEntry 1}",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "256",
+			"guid": "8F0BB362-2D71-4CC6-965A-EEF2B27A7950",
+			"text": "This attribute shall indicate the value of the <br /> starting channel number in the hopping sequence of <br /> the subband for the associated domain country string. <br /> The default value of this attribute shall be zero.",
+			"access": "read-write",
+			"name": "dot11RandomTableFieldNumber",
+			"oid": "{ dot11HoppingPatternEntry 2}",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "257",
+			"guid": "AFAEBAE4-D90C-4DAB-85AC-F23DBA2AB7B9",
+			"text": "<p>**********************************************************************</p><p>* End of dot11 Hopping Pattern TABLE</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "258",
+			"guid": "0781BC3A-7E1A-444B-BE71-4EEE92039361",
+			"text": "<p>**********************************************************************</p><p>* Conformance Information</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "259",
+			"guid": "91621F37-D78B-4132-A78D-78141BE339E6",
+			"name": "dot11Conformance",
+			"oid": "{ ieee802dot11 5 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "260",
+			"guid": "DE8B2E15-16BA-49AB-82C7-A273F2B74780",
+			"name": "dot11Groups",
+			"oid": "{ dot11Conformance 1 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "261",
+			"guid": "34A62D19-6B1D-421D-87D1-C428A954B679",
+			"name": "dot11Compliances",
+			"oid": "{ dot11Conformance 2 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "262",
+			"guid": "FD1ADA19-8F85-42BC-A076-91B752BDDFE5",
+			"text": "<p>**********************************************************************</p><p>* Compliance Statements</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "263",
+			"guid": "80FC9B37-0DEE-4A41-9E29-6EBB65D3C23A",
+			"text": "Implementation of this group is required when object<br />     dot11PHYType has the value of hrdsss. This group is<br />     mutually exclusive with the groups<br />     dot11PhyDSSSComplianceGroup, dot11PhyIRComplianceGroup,<br />     dot11PhyFHSSComplianceGroup and dot11PhyOFDMComplianceGroup.",
+			"name": "dot11Compliance",
+			"oid": "{ dot11Compliances 1 }",
+			"status": "current",
+			"syntax": "{<br /> dot11SMTbase2,<br />         dot11MACbase, dot11CountersGroup,<br />         dot11SmtAuthenticationAlgorithms, <br />         dot11ResourceTypeID, dot11PhyOperationComplianceGroup }",
+			"type": "mc"
+		},
+		{
+			"id": "264",
+			"guid": "E7CC9C35-6050-4F56-B3A1-7435723D08D5",
+			"text": "<p>**********************************************************************</p><p>*   Groups - units of conformance</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "265",
+			"guid": "FF2314C1-FF0D-48E3-8B8C-90176286E4FC",
+			"text": "The SMT object class provides the necessary support at the<br />          STA to manage the processes in the STA such that the STA may<br />          work cooperatively as a part of an IEEE 802.11 network.",
+			"name": "dot11SMTbase",
+			"oid": "{ dot11Groups 1 }",
+			"status": "deprecated",
+			"syntax": "{ dot11StationID, dot11MediumOccupancyLimit,<br />              dot11CFPollable,<br />              dot11CFPPeriod,<br />              dot11CFPMaxDuration,<br />              dot11AuthenticationResponseTimeOut,<br />   dot11PrivacyOptionImplemented,<br />       dot11PowerManagementMode,<br />        dot11DesiredSSID, dot11DesiredBSSType,<br />       dot11OperationalRateSet,<br />       dot11BeaconPeriod, dot11DTIMPeriod,<br />       dot11AssociationResponseTimeOut }",
+			"type": "og"
+		},
+		{
+			"id": "266",
+			"guid": "74ED8A29-7EBD-4E37-9FF9-EC75DE893565",
+			"text": "The SMTPrivacy package is a set of attributes that shall be<br />            present if WEP is implemented in the STA.",
+			"name": "dot11SMTprivacy",
+			"oid": "{ dot11Groups 2 }",
+			"status": "current",
+			"syntax": "{  dot11PrivacyInvoked,<br /> dot11WEPKeyMappingLength, dot11ExcludeUnencrypted,<br /> dot11WEPICVErrorCount , dot11WEPExcludedCount ,<br /> dot11WEPDefaultKeyID,<br />                 dot11WEPDefaultKeyValue,<br />              dot11WEPKeyMappingWEPOn,<br />                 dot11WEPKeyMappingValue , dot11WEPKeyMappingAddress,<br />  dot11WEPKeyMappingStatus }",
+			"type": "og"
+		},
+		{
+			"id": "267",
+			"guid": "559377CF-80C1-4512-A3CA-616C2D6035F1",
+			"text": "The MAC object class provides the necessary support for the<br />          access control, generation, and verification of frame check<br />          sequences (FCSs), and proper delivery of valid data to upper<br />          layers.",
+			"name": "dot11MACbase",
+			"oid": "{ dot11Groups 3 }",
+			"status": "current",
+			"syntax": "{ dot11MACAddress, dot11Address,<br /> dot11GroupAddressesStatus,<br /> dot11RTSThreshold, dot11ShortRetryLimit,<br /> dot11LongRetryLimit, dot11FragmentationThreshold,<br /> dot11MaxTransmitMSDULifetime,<br /> dot11MaxReceiveLifetime, dot11ManufacturerID,<br /> dot11ProductID }",
+			"type": "og"
+		},
+		{
+			"id": "268",
+			"guid": "1B37F60F-26F4-4214-9A26-5824AF74E1B4",
+			"text": "The MACStatistics package provides extended statistical<br />            information on the operation of the MAC.  This <br />            package is completely optional.",
+			"name": "dot11MACStatistics",
+			"oid": "{ dot11Groups 4 }",
+			"status": "current",
+			"syntax": "{  dot11RetryCount, dot11MultipleRetryCount,<br />             dot11RTSSuccessCount, dot11RTSFailureCount,<br />             dot11ACKFailureCount, dot11FrameDuplicateCount }",
+			"type": "og"
+		},
+		{
+			"id": "269",
+			"guid": "31072AF7-46C6-4719-8FDC-91FF678E9D24",
+			"text": "Attributes used to identify a STA, its manufacturer,<br />            and various product names and versions.",
+			"name": "dot11ResourceTypeID",
+			"oid": "{ dot11Groups 5 }",
+			"status": "current",
+			"syntax": "{ dot11ResourceTypeIDName, dot11manufacturerOUI,<br />             dot11manufacturerName, dot11manufacturerProductName,<br />             dot11manufacturerProductVersion }",
+			"type": "og"
+		},
+		{
+			"id": "270",
+			"guid": "4B71741E-BE45-434C-B06C-277B527045A2",
+			"text": "Authentication Algorithm Table.",
+			"name": "dot11SmtAuthenticationAlgorithms",
+			"oid": "{ dot11Groups 6 }",
+			"status": "current",
+			"syntax": "{ dot11AuthenticationAlgorithm,<br />                  dot11AuthenticationAlgorithmsEnable }",
+			"type": "og"
+		},
+		{
+			"id": "271",
+			"guid": "32A1E4DF-ECD0-4E17-839B-498F371A8A67",
+			"text": "PHY layer operations attributes.",
+			"name": "dot11PhyOperationComplianceGroup",
+			"oid": "{ dot11Groups 7 }",
+			"status": "current",
+			"syntax": "{  dot11PHYType, dot11CurrentRegDomain, dot11TempType }",
+			"type": "og"
+		},
+		{
+			"id": "272",
+			"guid": "D1B58307-FA89-4EC9-B748-C3FC34EF7A7E",
+			"text": "Attributes for Data Rates for IEEE 802.11.",
+			"name": "dot11PhyAntennaComplianceGroup",
+			"oid": "{ dot11Groups 8 }",
+			"status": "current",
+			"syntax": "{ dot11CurrentTxAntenna, dot11DiversitySupport,<br />                dot11CurrentRxAntenna }",
+			"type": "og"
+		},
+		{
+			"id": "273",
+			"guid": "14911DC0-64CB-4BAE-97C4-CA8B766C37F8",
+			"text": "Attributes for Control and Management of transmit power.",
+			"name": "dot11PhyTxPowerComplianceGroup",
+			"oid": "{ dot11Groups 9 }",
+			"status": "current",
+			"syntax": "{ dot11NumberSupportedPowerLevels, dot11TxPowerLevel1,<br />             dot11TxPowerLevel2, dot11TxPowerLevel3, dot11TxPowerLevel4,<br />             dot11TxPowerLevel5, dot11TxPowerLevel6, dot11TxPowerLevel7,<br />             dot11TxPowerLevel8, dot11CurrentTxPowerLevel }",
+			"type": "og"
+		},
+		{
+			"id": "274",
+			"guid": "ABA76EB5-1020-46CD-B367-C777544D764F",
+			"text": "Attributes that configure the Frequency Hopping for IEEE<br />            802.11.",
+			"name": "dot11PhyFHSSComplianceGroup",
+			"oid": "{ dot11Groups 10 }",
+			"status": "current",
+			"syntax": "{ dot11HopTime, dot11CurrentChannelNumber, dot11MaxDwellTime,<br />             dot11CurrentDwellTime, dot11CurrentSet, dot11CurrentPattern,<br />             dot11CurrentIndex}",
+			"type": "og"
+		},
+		{
+			"id": "275",
+			"guid": "F44B6ED5-DFD2-4D9E-BE20-3204B6270CFD",
+			"text": "Attributes that configure the DSSS for IEEE 802.11.",
+			"name": "dot11PhyDSSSComplianceGroup",
+			"oid": "{ dot11Groups 11 }",
+			"status": "current",
+			"syntax": "{ dot11CurrentChannel, dot11CCAModeSupported,<br />             dot11CurrentCCAMode, dot11EDThreshold}",
+			"type": "og"
+		},
+		{
+			"id": "276",
+			"guid": "3DA03282-009B-4114-A5DA-3A29E3D093BC",
+			"text": "Attributes that configure the baseband IR for IEEE 802.11.",
+			"name": "dot11PhyIRComplianceGroup",
+			"oid": "{ dot11Groups 12 }",
+			"status": "current",
+			"syntax": "{ dot11CCAWatchdogTimerMax, dot11CCAWatchdogCountMax,<br />        dot11CCAWatchdogTimerMin, dot11CCAWatchdogCountMin}",
+			"type": "og"
+		},
+		{
+			"id": "277",
+			"guid": "600620A7-48D5-4289-A280-0C2841991C03",
+			"text": "Attributes that specify the supported Regulation Domains.",
+			"name": "dot11PhyRegDomainsSupportGroup",
+			"oid": "{ dot11Groups 13}",
+			"status": "current",
+			"syntax": "{ dot11RegDomainsSupportedValue}",
+			"type": "og"
+		},
+		{
+			"id": "278",
+			"guid": "D224BB09-8E6A-4290-A69B-E95D5B049FE3",
+			"text": "Attributes that specify the supported Regulation Domains.",
+			"name": "dot11PhyAntennasListGroup",
+			"oid": "{ dot11Groups 14 }",
+			"status": "current",
+			"syntax": "{  dot11SupportedTxAntenna,<br />              dot11SupportedRxAntenna, dot11DiversitySelectionRx }",
+			"type": "og"
+		},
+		{
+			"id": "279",
+			"guid": "B922BE55-487D-45D1-B8A9-D07343C2DCF4",
+			"text": "Attributes for Data Rates for IEEE 802.11.",
+			"name": "dot11PhyRateGroup",
+			"oid": "{ dot11Groups 15 }",
+			"status": "current",
+			"syntax": "{ dot11SupportedDataRatesTxValue,<br />             dot11SupportedDataRatesRxValue }",
+			"type": "og"
+		},
+		{
+			"id": "280",
+			"guid": "48B7707A-CC6B-42EB-A12E-E0355C3989CC",
+			"text": "Attributes from the dot11CountersGroup that are not described<br />            in the dot11MACStatistics group.  These objects are<br />            mandatory.",
+			"name": "dot11CountersGroup",
+			"oid": "{ dot11Groups 16 }",
+			"status": "current",
+			"syntax": "{  dot11TransmittedFragmentCount,<br /> dot11MulticastTransmittedFrameCount,<br /> dot11FailedCount, dot11ReceivedFragmentCount,<br /> dot11MulticastReceivedFrameCount,<br /> dot11FCSErrorCount,<br />      dot11WEPUndecryptableCount,<br />      dot11TransmittedFrameCount }",
+			"type": "og"
+		},
+		{
+			"id": "281",
+			"guid": "F7E3FF8D-5965-4D62-A2C9-35872B03A13E",
+			"text": "The SMTbase2 object class provides the necessary support at the<br />          STA to manage the processes in the STA such that the STA may<br />          work cooperatively as a part of an IEEE 802.11 network.",
+			"name": "dot11SMTbase2",
+			"oid": "{ dot11Groups 18 }",
+			"status": "current",
+			"syntax": "{  dot11MediumOccupancyLimit,<br />              dot11CFPollable,<br />              dot11CFPPeriod,<br />              dot11CFPMaxDuration,<br />            dot11AuthenticationResponseTimeOut,<br /> dot11PrivacyOptionImplemented,<br />       dot11PowerManagementMode,<br />       dot11DesiredSSID, dot11DesiredBSSType,<br />   dot11OperationalRateSet,<br /> dot11BeaconPeriod, dot11DTIMPeriod,<br />   dot11AssociationResponseTimeOut,<br /> dot11DisassociateReason,<br />              dot11DisassociateStation,<br />              dot11DeauthenticateReason,<br />              dot11DeauthenticateStation,<br />              dot11AuthenticateFailStatus,<br />              dot11AuthenticateFailStation }",
+			"type": "og"
+		},
+		{
+			"id": "282",
+			"guid": "B5E619D4-4E3B-483F-A9CE-58E8A213CE73",
+			"text": "Attributes that configure the OFDM for IEEE 802.11.",
+			"name": "dot11PhyOFDMComplianceGroup",
+			"oid": "{ dot11Groups 19 }",
+			"status": "current",
+			"syntax": "{ dot11CurrentFrequency,<br />                   dot11TIThreshold,<br />                   dot11FrequencyBandsSupported }",
+			"type": "og"
+		},
+		{
+			"id": "283",
+			"guid": "F5380011-4C36-4F70-85A7-71E3D56F0C93",
+			"text": "The SMTbase3 object class provides the necessary support at the<br /> STA to manage the processes in the STA such that the STA may<br /> work cooperatively as a part of an IEEE 802.11 network, when the STA<br /> is capable of multi-domain operation. This object group should be<br /> implemented when the multi-domain capability option is implemented.",
+			"name": "dot11SMTbase3",
+			"oid": "{ dot11Groups 20 }",
+			"status": "current",
+			"syntax": "{  dot11MediumOccupancyLimit,<br />              dot11CFPollable,<br />              dot11CFPPeriod,<br />              dot11CFPMaxDuration,<br />              dot11AuthenticationResponseTimeOut,<br />       dot11PrivacyOptionImplemented,<br />       dot11PowerManagementMode,<br />       dot11DesiredSSID, dot11DesiredBSSType,<br />   dot11OperationalRateSet,<br /> dot11BeaconPeriod, dot11DTIMPeriod,<br /> dot11AssociationResponseTimeOut,<br /> dot11DisassociateReason,<br />              dot11DisassociateStation,<br />              dot11DeauthenticateReason,<br />              dot11DeauthenticateStation,<br />              dot11AuthenticateFailStatus,<br />              dot11AuthenticateFailStation, <br />              dot11MultiDomainCapabilityImplemented,<br /> dot11MultiDomainCapabilityEnabled, <br /> dot11CountryString }",
+			"type": "og"
+		},
+		{
+			"id": "284",
+			"guid": "3D0076B8-81AC-4321-9DB7-CA56DA235D1C",
+			"text": "The dot11MultiDomainCapabilityGroup object class provides <br /> the objects necessary to manage the channels usable by a STA, <br /> when the multi-domain capability option is implemented.",
+			"name": "dot11MultiDomainCapabilityGroup",
+			"oid": "{ dot11Groups 21 }",
+			"status": "current",
+			"syntax": "{ dot11FirstChannelNumber,<br /> dot11NumberofChannels,<br /> dot11MaximumTransmitPowerLevel }",
+			"type": "og"
+		},
+		{
+			"id": "285",
+			"guid": "2B2311D9-EDE4-4EEF-85BE-F9AD4DD853F3",
+			"text": "Attributes that configure the Frequency Hopping for IEEE<br />            802.11 when multi-domain capability option is implemented.",
+			"name": "dot11PhyFHSSComplianceGroup2",
+			"oid": "{ dot11Groups 22 }",
+			"status": "current",
+			"syntax": "{ dot11HopTime, dot11CurrentChannelNumber, dot11MaxDwellTime,<br />             dot11CurrentDwellTime, dot11CurrentSet, dot11CurrentPattern,<br />             dot11CurrentIndex, dot11EHCCPrimeRadix, <br />             dot11EHCCNumberofChannelsFamilyIndex,<br />             dot11EHCCCapabilityImplemented, dot11EHCCCapabilityEnabled, <br />             dot11HopAlgorithmAdopted, dot11RandomTableFlag, <br />             dot11NumberofHoppingSets, dot11HopModulus, <br />             dot11HopOffset, dot11RandomTableFieldNumber }",
+			"type": "og"
+		},
+		{
+			"id": "286",
+			"guid": "A9426D79-EA51-44DD-A8D1-6C1F262C8C8D",
+			"text": "Attributes that configure the HRDSSS for IEEE 802.11.",
+			"name": "dot11PhyHRDSSSComplianceGroup",
+			"oid": "{ dot11Groups 23 }",
+			"status": "current",
+			"syntax": "{ dot11CurrentChannel, dot11CCAModeSupported,<br />                 dot11CurrentCCAMode, dot11EDThreshold,<br />                 dot11ShortPreambleOptionImplemented,<br />                 dot11PBCCOptionImplemented, dot11ChannelAgilityPresent,<br />                 dot11ChannelAgilityEnabled, dot11HRCCAModeSupported }",
+			"type": "og"
+		},
+		{
+			"id": "287",
+			"guid": "DA83AC61-7584-4BEA-BABB-94668275FA17",
+			"text": "<p>**********************************************************************</p><p>*   End of 802.11 MIB</p><p>**********************************************************************</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "288",
+			"guid": "40D9D9A2-0CD6-4875-BABC-2CAFD9133BD9",
+			"name": "end",
+			"type": "end"
+		}
+	],
+	"attributes": {
+		"access": {
+			"name": "Access",
+			"type": "enum",
+			"values": [
+				{
+					"key": "read-only"
+				},
+				{
+					"key": "read-write"
+				},
+				{
+					"key": "read-create"
+				},
+				{
+					"key": "not-accessible"
+				},
+				{
+					"key": "accessible-for-notify"
+				}
+			]
+		},
+		"action": {
+			"name": "Action",
+			"type": "enum",
+			"values": [
+				{
+					"key": "added"
+				},
+				{
+					"key": "remainCurrent"
+				},
+				{
+					"key": "deprecated"
+				},
+				{
+					"key": "madeObsolete"
+				},
+				{
+					"key": "previouslyDeprecated"
+				}
+			]
+		},
+		"additional": {
+			"name": "Additional",
+			"type": "xhtml"
+		},
+		"augments": {
+			"name": "Augments",
+			"type": "string"
+		},
+		"comment": {
+			"name": "Comment",
+			"type": "xhtml"
+		},
+		"conformance": {
+			"name": "Conformance",
+			"type": "string"
+		},
+		"contact": {
+			"name": "Contact",
+			"type": "xhtml"
+		},
+		"defval": {
+			"name": "Default Value",
+			"type": "string"
+		},
+		"dotted-oid": {
+			"name": "Dotted OID",
+			"type": "string"
+		},
+		"format": {
+			"name": "Format",
+			"type": "xhtml"
+		},
+		"index": {
+			"name": "Index",
+			"type": "string"
+		},
+		"info": {
+			"name": "Informative",
+			"type": "xhtml"
+		},
+		"name": {
+			"name": "Name",
+			"type": "string"
+		},
+		"oid": {
+			"name": "OID",
+			"type": "string"
+		},
+		"org": {
+			"name": "Organization",
+			"type": "string"
+		},
+		"part": {
+			"name": "Part",
+			"type": "string"
+		},
+		"reference": {
+			"name": "Reference",
+			"type": "xhtml"
+		},
+		"status": {
+			"name": "Status",
+			"type": "enum",
+			"values": [
+				{
+					"key": "current"
+				},
+				{
+					"key": "deprecated"
+				},
+				{
+					"key": "obsolete"
+				}
+			]
+		},
+		"syntax": {
+			"name": "Syntax",
+			"type": "xhtml"
+		},
+		"table-type": {
+			"name": "Table Type",
+			"type": "enum",
+			"values": [
+				{
+					"key": "static"
+				},
+				{
+					"key": "managed"
+				},
+				{
+					"key": "dynamic"
+				}
+			]
+		},
+		"type": {
+			"name": "Type",
+			"type": "enum",
+			"values": [
+				{
+					"key": "comment"
+				},
+				{
+					"key": "end"
+				},
+				{
+					"key": "mc",
+					"label": "module-compliance"
+				},
+				{
+					"key": "mi",
+					"label": "module-identity"
+				},
+				{
+					"key": "mib"
+				},
+				{
+					"key": "ng",
+					"label": "notification-group"
+				},
+				{
+					"key": "nt",
+					"label": "notification-type"
+				},
+				{
+					"key": "og",
+					"label": "object-group"
+				},
+				{
+					"key": "oi",
+					"label": "object-identity"
+				},
+				{
+					"key": "ot",
+					"label": "object-type"
+				},
+				{
+					"key": "ref",
+					"label": "reference"
+				},
+				{
+					"key": "rev",
+					"label": "revision"
+				},
+				{
+					"key": "row"
+				},
+				{
+					"key": "text_conv"
+				}
+			]
+		},
+		"units": {
+			"name": "Units",
+			"type": "string"
+		},
+		"updated": {
+			"name": "Updated",
+			"type": "string"
+		},
+		"version": {
+			"name": "Version",
+			"type": "string"
+		},
+		"x-text": {
+			"name": "Deprecated by",
+			"type": "xhtml"
+		},
+		"x-type": {
+			"name": "Deprecated Type",
+			"type": "enum",
+			"values": [
+				{
+					"key": "superseded"
+				},
+				{
+					"key": "supplanted"
+				},
+				{
+					"key": "withdrawn"
+				}
+			]
+		}
+	}
 }

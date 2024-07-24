@@ -1,148 +1,1317 @@
 {
-  "id": "rfc2863",
-  "guid": "e76fbe42-1415-4a02-a5e1-ce92a7267bc4",
-  "name": "rfc2863",
-  "lastId": 0,
-  "createdOn": "2024-07-24T16:40:28.471Z",
-  "createdBy": {
-    "name": "Kenneth Vaughn",
-    "email": "kvaughn@trevilon.com",
-    "company": "Trevilon"
-  },
-  "lastChangedOn": "2024-07-24T16:40:28.471Z",
-  "lastChangedBy": {
-    "name": "Kenneth Vaughn",
-    "email": "kvaughn@trevilon.com",
-    "company": "Trevilon"
-  },
-  "data": [],
-  "attributes": {
-    "access": {
-      "heading": "Access",
-      "type": "enum",
-      "values": [
-        {
-          "key": "read-only"
+	"id": "rfc2863",
+	"guid": "e76fbe42-1415-4a02-a5e1-ce92a7267bc4",
+	"name": "IF-MIB",
+	"lastId": "120",
+	"createdOn": "2024-07-24T12:18:00",
+	"createdBy": {
+		"name": "Kenneth Vaughn",
+		"email": "kvaughn@trevilon.com",
+		"company": "Trevilon"
+	},
+	"data": [
+		{
+			"id": "1",
+			"guid": "DDBEBE0B-F9E3-44BA-9D80-90267CF0A438",
+			"text": "<p>Module IF-MIB (RFC 2863:06/2000)</p><p></p><p>Copyright (C) The Internet Society (2000). This version of</p><p>this MIB module is part of RFC 2863;</p><p>see the RFC itself for full legal notices.</p><p></p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "2",
+			"guid": "B604480C-E7FF-402E-BE51-4FDF21816073",
+			"text": "<pre>    MODULE-IDENTITY, OBJECT-TYPE, Counter32, Gauge32, Counter64,<br />    Integer32, TimeTicks, mib-2,<br />    NOTIFICATION-TYPE                        FROM SNMPv2-SMI<br />    TEXTUAL-CONVENTION, DisplayString,<br />    PhysAddress, TruthValue, RowStatus,<br />    TimeStamp, AutonomousType, TestAndIncr   FROM SNMPv2-TC<br />    MODULE-COMPLIANCE, OBJECT-GROUP,<br />    NOTIFICATION-GROUP                       FROM SNMPv2-CONF<br />    snmpTraps                                FROM SNMPv2-MIB<br />    IANAifType                               FROM IANAifType-MIB;</pre>",
+			"name": "IF-MIB",
+			"type": "mib"
+		},
+		{
+			"id": "3",
+			"guid": "7AF0A371-2948-4779-9BC9-BE7B3A92C455",
+			"text": "The MIB module to describe generic objects for network<br />            interface sub-layers.  This MIB is an updated version of<br />            MIB-II's ifTable, and incorporates the extensions defined in<br />            RFC 1229.",
+			"contact": "   Keith McCloghrie<br />                Cisco Systems, Inc.<br />                170 West Tasman Drive<br />                San Jose, CA  95134-1706<br />                US<br /><br />                408-526-5260<br />                kzm@cisco.com",
+			"name": "ifMIB",
+			"oid": "{ mib-2 31 }",
+			"org": "IETF Interfaces MIB Working Group",
+			"type": "mi",
+			"updated": "200006140000Z",
+			"children": [
+				{
+					"id": "4",
+					"guid": "26F65B09-B0AC-4359-89AB-A70A2E0F3054",
+					"text": "Clarifications agreed upon by the Interfaces MIB WG, and<br />            published as RFC 2863.",
+					"type": "rev",
+					"updated": "200006140000Z"
+				},
+				{
+					"id": "5",
+					"guid": "BBEF13B6-5676-46AF-8FB3-C397FD3E7432",
+					"text": "Revisions made by the Interfaces MIB WG, and published in<br />            RFC 2233.",
+					"type": "rev",
+					"updated": "199602282155Z"
+				},
+				{
+					"id": "6",
+					"guid": "6E23DED5-77ED-431D-B6F9-BAAA3CDAD072",
+					"text": "Initial revision, published as part of RFC 1573.",
+					"type": "rev",
+					"updated": "199311082155Z"
+				}
+			]
+		},
+		{
+			"id": "7",
+			"guid": "E7070A95-E27B-4F4A-9F36-834657D6A772",
+			"name": "ifMIBObjects",
+			"oid": "{ ifMIB 1 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "8",
+			"guid": "6266AA03-F463-4DED-A14C-891221B88C5D",
+			"name": "interfaces",
+			"oid": "{ mib-2 2 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "9",
+			"guid": "20C409B1-37CC-4D8D-932F-0DCD5AEDA501",
+			"text": "<p></p><p>Textual Conventions</p><p></p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "10",
+			"guid": "E983DF52-020D-477E-B569-016C35D61188",
+			"text": "<p>OwnerString has the same semantics as used in RFC 1271</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "11",
+			"guid": "548293B7-ADD9-480F-A6E5-AB1F9481148C",
+			"text": "This data type is used to model an administratively<br />            assigned name of the owner of a resource.  This information<br />            is taken from the NVT ASCII character set.  It is suggested<br />            that this name contain one or more of the following: ASCII<br />            form of the manager station's transport address, management<br />            station name (e.g., domain name), network management<br />            personnel's name, location, or phone number.  In some cases<br />            the agent itself will be the owner of an entry.  In these<br />            cases, this string shall be set to a string starting with<br />            'agent'.",
+			"additional": "255a",
+			"name": "OwnerString",
+			"status": "deprecated",
+			"syntax": "OCTET STRING (SIZE(0..255))",
+			"type": "text_conv"
+		},
+		{
+			"id": "12",
+			"guid": "5A72E4AE-11F4-40DF-90BE-28832304E94E",
+			"text": "<p>InterfaceIndex contains the semantics of ifIndex and should be used</p><p>for any objects defined in other MIB modules that need these semantics.</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "13",
+			"guid": "870DCC19-EC91-4EC1-94AB-8A466B531476",
+			"text": "A unique value, greater than zero, for each interface or<br />            interface sub-layer in the managed system.  It is<br />            recommended that values are assigned contiguously starting<br />            from 1.  The value for each interface sub-layer must remain<br />            constant at least from one re-initialization of the entity's<br />            network management system to the next re-initialization.",
+			"additional": "d",
+			"name": "InterfaceIndex",
+			"status": "current",
+			"syntax": "Integer32 (1..2147483647)",
+			"type": "text_conv"
+		},
+		{
+			"id": "14",
+			"guid": "A8E78A2B-4E32-43F6-B9A4-98D23157E528",
+			"text": "This textual convention is an extension of the<br />            InterfaceIndex convention.  The latter defines a greater<br />            than zero value used to identify an interface or interface<br />            sub-layer in the managed system.  This extension permits the<br />            additional value of zero.  the value zero is object-specific<br />            and must therefore be defined as part of the description of<br />            any object which uses this syntax.  Examples of the usage of<br />            zero might include situations where interface was unknown,<br />            or when none or all interfaces need to be referenced.",
+			"additional": "d",
+			"name": "InterfaceIndexOrZero",
+			"status": "current",
+			"syntax": "Integer32 (0..2147483647)",
+			"type": "text_conv"
+		},
+		{
+			"id": "15",
+			"guid": "98289225-51F4-456A-B1EE-66272A4A419F",
+			"text": "The number of network interfaces (regardless of their<br />            current state) present on this system.",
+			"access": "read-only",
+			"name": "ifNumber",
+			"oid": "{ interfaces 1 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "16",
+			"guid": "D32F923E-ABEF-4CB9-ADC3-3297B681A738",
+			"text": "The value of sysUpTime at the time of the last creation or<br />            deletion of an entry in the ifTable.  If the number of<br />            entries has been unchanged since the last re-initialization<br />            of the local network management subsystem, then this object<br />            contains a zero value.",
+			"access": "read-only",
+			"name": "ifTableLastChange",
+			"oid": "{ ifMIBObjects 5 }",
+			"status": "current",
+			"syntax": "TimeTicks",
+			"type": "ot"
+		},
+		{
+			"id": "17",
+			"guid": "E511BF3E-B4DF-421A-B5E5-BCF6BBED8511",
+			"text": "<p>the Interfaces table</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "18",
+			"guid": "B36B63D9-E70E-4F59-8D3E-861E59068C24",
+			"text": "<p>The Interfaces table contains information on the entity's</p><p>interfaces.  Each sub-layer below the internetwork-layer</p><p>of a network interface is considered to be an interface.</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "19",
+			"guid": "6759D070-5F95-43D6-9B02-D0ED46EFD6EE",
+			"text": "A list of interface entries.  The number of entries is<br />            given by the value of ifNumber.",
+			"access": "not-accessible",
+			"name": "ifTable",
+			"oid": "{ interfaces 2 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF IfEntry",
+			"type": "ot"
+		},
+		{
+			"id": "20",
+			"guid": "C13C9132-3BB7-419F-93CA-8531039C3CFB",
+			"text": "An entry containing management information applicable to a<br />            particular interface.",
+			"access": "not-accessible",
+			"index": "{ ifIndex }",
+			"name": "ifEntry",
+			"oid": "{ ifTable 1 }",
+			"status": "current",
+			"syntax": "IfEntry",
+			"type": "ot"
+		},
+		{
+			"id": "21",
+			"guid": "229CD5A7-8904-4E68-ADC5-8270DE98448A",
+			"name": "IfEntry",
+			"syntax": "<pre>{<br />        ifIndex                 InterfaceIndex,<br />        ifDescr                 DisplayString,<br />        ifType                  IANAifType,<br />        ifMtu                   Integer32,<br />        ifSpeed                 Gauge32,<br />        ifPhysAddress           PhysAddress,<br />        ifAdminStatus           INTEGER,<br />        ifOperStatus            INTEGER,<br />        ifLastChange            TimeTicks,<br />        ifInOctets              Counter32,<br />        ifInUcastPkts           Counter32,<br />        ifInNUcastPkts          Counter32,  -- deprecated<br />        ifInDiscards            Counter32,<br />        ifInErrors              Counter32,<br />        ifInUnknownProtos       Counter32,<br />        ifOutOctets             Counter32,<br />        ifOutUcastPkts          Counter32,<br />        ifOutNUcastPkts         Counter32,  -- deprecated<br />        ifOutDiscards           Counter32,<br />        ifOutErrors             Counter32,<br />        ifOutQLen               Gauge32,    -- deprecated<br />        ifSpecific              OBJECT IDENTIFIER <br /> }</pre>",
+			"type": "row"
+		},
+		{
+			"id": "22",
+			"guid": "2EEDBAC4-DD58-4A07-905A-62E4AF2E6DEC",
+			"text": "A unique value, greater than zero, for each interface.  It<br />            is recommended that values are assigned contiguously<br />            starting from 1.  The value for each interface sub-layer<br />            must remain constant at least from one re-initialization of<br />            the entity's network management system to the next re-<br />            initialization.",
+			"access": "read-only",
+			"name": "ifIndex",
+			"oid": "{ ifEntry 1 }",
+			"status": "current",
+			"syntax": "InterfaceIndex",
+			"type": "ot"
+		},
+		{
+			"id": "23",
+			"guid": "96EF69F6-DFE2-49A4-966C-FC41B679408B",
+			"text": "A textual string containing information about the<br />            interface.  This string should include the name of the<br />            manufacturer, the product name and the version of the<br />            interface hardware/software.",
+			"access": "read-only",
+			"name": "ifDescr",
+			"oid": "{ ifEntry 2 }",
+			"status": "current",
+			"syntax": "DisplayString (SIZE (0..255))",
+			"type": "ot"
+		},
+		{
+			"id": "24",
+			"guid": "2943CAE7-EA36-466F-A647-EDA9BF8493E8",
+			"text": "The type of interface.  Additional values for ifType are<br />            assigned by the Internet Assigned Numbers Authority (IANA),<br />            through updating the syntax of the IANAifType textual<br />            convention.",
+			"access": "read-only",
+			"name": "ifType",
+			"oid": "{ ifEntry 3 }",
+			"status": "current",
+			"syntax": "IANAifType",
+			"type": "ot"
+		},
+		{
+			"id": "25",
+			"guid": "41E4909C-1B12-4EB3-8E20-B22E50107F0A",
+			"text": "The size of the largest packet which can be sent/received<br />            on the interface, specified in octets.  For interfaces that<br />            are used for transmitting network datagrams, this is the<br />            size of the largest network datagram that can be sent on the<br />            interface.",
+			"access": "read-only",
+			"name": "ifMtu",
+			"oid": "{ ifEntry 4 }",
+			"status": "current",
+			"syntax": "Integer32",
+			"type": "ot"
+		},
+		{
+			"id": "26",
+			"guid": "3D0F3324-697A-4272-BA49-ACFFB3B2FA93",
+			"text": "An estimate of the interface's current bandwidth in bits<br />            per second.  For interfaces which do not vary in bandwidth<br />            or for those where no accurate estimation can be made, this<br />            object should contain the nominal bandwidth.  If the<br />            bandwidth of the interface is greater than the maximum value<br />            reportable by this object then this object should report its<br />            maximum value (4,294,967,295) and ifHighSpeed must be used<br />            to report the interace's speed.  For a sub-layer which has<br />            no concept of bandwidth, this object should be zero.",
+			"access": "read-only",
+			"name": "ifSpeed",
+			"oid": "{ ifEntry 5 }",
+			"status": "current",
+			"syntax": "Gauge32",
+			"type": "ot"
+		},
+		{
+			"id": "27",
+			"guid": "A3A50750-2FB6-4426-A323-B54E6C4E442D",
+			"text": "The interface's address at its protocol sub-layer.  For<br />            example, for an 802.x interface, this object normally<br />            contains a MAC address.  The interface's media-specific MIB<br />            must define the bit and byte ordering and the format of the<br />            value of this object.  For interfaces which do not have such<br />            an address (e.g., a serial line), this object should contain<br />            an octet string of zero length.",
+			"access": "read-only",
+			"name": "ifPhysAddress",
+			"oid": "{ ifEntry 6 }",
+			"status": "current",
+			"syntax": "PhysAddress",
+			"type": "ot"
+		},
+		{
+			"id": "28",
+			"guid": "F44A0124-8BAC-49F9-92FB-E7FCF90FB368",
+			"text": "The desired state of the interface.  The testing(3) state<br />            indicates that no operational packets can be passed.  When a<br />            managed system initializes, all interfaces start with<br />            ifAdminStatus in the down(2) state.  As a result of either<br />            explicit management action or per configuration information<br />            retained by the managed system, ifAdminStatus is then<br />            changed to either the up(1) or testing(3) states (or remains<br />            in the down(2) state).",
+			"access": "read-write",
+			"name": "ifAdminStatus",
+			"oid": "{ ifEntry 7 }",
+			"status": "current",
+			"syntax": "<pre>INTEGER {<br />                up(1),       -- ready to pass packets<br />                down(2),<br />                testing(3)   -- in some test mode<br />            }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "29",
+			"guid": "97D17D33-09DE-4EA5-897B-BEA0359F06E7",
+			"text": "The current operational state of the interface.  The<br />            testing(3) state indicates that no operational packets can<br />            be passed.  If ifAdminStatus is down(2) then ifOperStatus<br />            should be down(2).  If ifAdminStatus is changed to up(1)<br />            then ifOperStatus should change to up(1) if the interface is<br />            ready to transmit and receive network traffic; it should<br />            change to dormant(5) if the interface is waiting for<br />            external actions (such as a serial line waiting for an<br />            incoming connection); it should remain in the down(2) state<br />            if and only if there is a fault that prevents it from going<br />            to the up(1) state; it should remain in the notPresent(6)<br />            state if the interface has missing (typically, hardware)<br />            components.",
+			"access": "read-only",
+			"name": "ifOperStatus",
+			"oid": "{ ifEntry 8 }",
+			"status": "current",
+			"syntax": "<pre>INTEGER {<br />                up(1),        -- ready to pass packets<br />                down(2),<br />                testing(3),   -- in some test mode<br />                unknown(4),   -- status can not be determined<br />                              -- for some reason.<br />                dormant(5),<br />                notPresent(6),    -- some component is missing<br />                lowerLayerDown(7) -- down due to state of<br />                                  -- lower-layer interface(s)<br />            }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "30",
+			"guid": "7993E844-67ED-4860-B6FD-CE575A72F9ED",
+			"text": "The value of sysUpTime at the time the interface entered<br />            its current operational state.  If the current state was<br />            entered prior to the last re-initialization of the local<br />            network management subsystem, then this object contains a<br />            zero value.",
+			"access": "read-only",
+			"name": "ifLastChange",
+			"oid": "{ ifEntry 9 }",
+			"status": "current",
+			"syntax": "TimeTicks",
+			"type": "ot"
+		},
+		{
+			"id": "31",
+			"guid": "4EE48DF6-D53C-4155-BF25-DB5BD3ACC696",
+			"text": "The total number of octets received on the interface,<br />            including framing characters.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifInOctets",
+			"oid": "{ ifEntry 10 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "32",
+			"guid": "BBB28EEA-E9D8-4951-ABDD-795F87014E57",
+			"text": "The number of packets, delivered by this sub-layer to a<br />            higher (sub-)layer, which were not addressed to a multicast<br />            or broadcast address at this sub-layer.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifInUcastPkts",
+			"oid": "{ ifEntry 11 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "33",
+			"guid": "8926AE52-C36E-4689-A67A-57A68168D251",
+			"text": "The number of packets, delivered by this sub-layer to a<br />            higher (sub-)layer, which were addressed to a multicast or<br />            broadcast address at this sub-layer.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.<br /><br />            This object is deprecated in favour of ifInMulticastPkts and<br />            ifInBroadcastPkts.",
+			"access": "read-only",
+			"name": "ifInNUcastPkts",
+			"oid": "{ ifEntry 12 }",
+			"status": "deprecated",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "34",
+			"guid": "865CE830-248E-4D39-A8F1-050789FD5AC7",
+			"text": "The number of inbound packets which were chosen to be<br />            discarded even though no errors had been detected to prevent<br />            their being deliverable to a higher-layer protocol.  One<br />            possible reason for discarding such a packet could be to<br />            free up buffer space.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifInDiscards",
+			"oid": "{ ifEntry 13 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "35",
+			"guid": "57D803A3-3FB4-4903-A2FB-0632AB2A8EBF",
+			"text": "For packet-oriented interfaces, the number of inbound<br />            packets that contained errors preventing them from being<br />            deliverable to a higher-layer protocol.  For character-<br />            oriented or fixed-length interfaces, the number of inbound<br />            transmission units that contained errors preventing them<br />            from being deliverable to a higher-layer protocol.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifInErrors",
+			"oid": "{ ifEntry 14 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "36",
+			"guid": "E77868EF-933C-4588-96E6-11DD9DE44CD8",
+			"text": "For packet-oriented interfaces, the number of packets<br />            received via the interface which were discarded because of<br />            an unknown or unsupported protocol.  For character-oriented<br />            or fixed-length interfaces that support protocol<br />            multiplexing the number of transmission units received via<br />            the interface which were discarded because of an unknown or<br />            unsupported protocol.  For any interface that does not<br />            support protocol multiplexing, this counter will always be<br />            0.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifInUnknownProtos",
+			"oid": "{ ifEntry 15 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "37",
+			"guid": "3416F47B-DBC5-44BE-8D85-98BD231A1D92",
+			"text": "The total number of octets transmitted out of the<br />            interface, including framing characters.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifOutOctets",
+			"oid": "{ ifEntry 16 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "38",
+			"guid": "F3318553-7C63-4187-BBB0-3970A70D9075",
+			"text": "The total number of packets that higher-level protocols<br />            requested be transmitted, and which were not addressed to a<br />            multicast or broadcast address at this sub-layer, including<br />            those that were discarded or not sent.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifOutUcastPkts",
+			"oid": "{ ifEntry 17 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "39",
+			"guid": "D50FD57F-3CC3-41DF-A058-51E5197050C4",
+			"text": "The total number of packets that higher-level protocols<br />            requested be transmitted, and which were addressed to a<br />            multicast or broadcast address at this sub-layer, including<br />            those that were discarded or not sent.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.<br /><br />            This object is deprecated in favour of ifOutMulticastPkts<br />            and ifOutBroadcastPkts.",
+			"access": "read-only",
+			"name": "ifOutNUcastPkts",
+			"oid": "{ ifEntry 18 }",
+			"status": "deprecated",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "40",
+			"guid": "B1DEAAE4-00E8-49DF-81A2-B2CF4B525242",
+			"text": "The number of outbound packets which were chosen to be<br />            discarded even though no errors had been detected to prevent<br />            their being transmitted.  One possible reason for discarding<br />            such a packet could be to free up buffer space.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifOutDiscards",
+			"oid": "{ ifEntry 19 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "41",
+			"guid": "4D8D9304-4911-41E0-9EFB-3BCDB6142408",
+			"text": "For packet-oriented interfaces, the number of outbound<br />            packets that could not be transmitted because of errors.<br />            For character-oriented or fixed-length interfaces, the<br />            number of outbound transmission units that could not be<br />            transmitted because of errors.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifOutErrors",
+			"oid": "{ ifEntry 20 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "42",
+			"guid": "D8B3A777-59E6-46BA-9A5A-2F9AFD7A2B93",
+			"text": "The length of the output packet queue (in packets).",
+			"access": "read-only",
+			"name": "ifOutQLen",
+			"oid": "{ ifEntry 21 }",
+			"status": "deprecated",
+			"syntax": "Gauge32",
+			"type": "ot"
+		},
+		{
+			"id": "43",
+			"guid": "5003929E-46FF-48C1-9DB8-FA6A5D50C554",
+			"text": "A reference to MIB definitions specific to the particular<br />            media being used to realize the interface.  It is<br />            recommended that this value point to an instance of a MIB<br />            object in the media-specific MIB, i.e., that this object<br />            have the semantics associated with the InstancePointer<br />            textual convention defined in RFC 2579.  In fact, it is<br />            recommended that the media-specific MIB specify what value<br />            ifSpecific should/can take for values of ifType.  If no MIB<br />            definitions specific to the particular media are available,<br />            the value should be set to the OBJECT IDENTIFIER { 0 0 }.",
+			"access": "read-only",
+			"name": "ifSpecific",
+			"oid": "{ ifEntry 22 }",
+			"status": "deprecated",
+			"syntax": "OBJECT IDENTIFIER",
+			"type": "ot"
+		},
+		{
+			"id": "44",
+			"guid": "74599A5F-8497-44BE-8704-51E4D421378B",
+			"text": "<p></p><p>  Extension to the interface table</p><p></p><p>This table replaces the ifExtnsTable table.</p><p></p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "45",
+			"guid": "25EAECEC-282E-4CAC-BA96-D8AB9C4E019B",
+			"text": "A list of interface entries.  The number of entries is<br />            given by the value of ifNumber.  This table contains<br />            additional objects for the interface table.",
+			"access": "not-accessible",
+			"name": "ifXTable",
+			"oid": "{ ifMIBObjects 1 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF IfXEntry",
+			"type": "ot"
+		},
+		{
+			"id": "46",
+			"guid": "59B3CA87-D9A9-40A9-868A-D48DE9B59B9C",
+			"text": "An entry containing additional management information<br />            applicable to a particular interface.",
+			"access": "not-accessible",
+			"augments": "{ ifEntry }",
+			"name": "ifXEntry",
+			"oid": "{ ifXTable 1 }",
+			"status": "current",
+			"syntax": "IfXEntry",
+			"type": "ot"
+		},
+		{
+			"id": "47",
+			"guid": "AF4674BC-B929-4464-B6A4-DF3CA6C54038",
+			"text": "The textual name of the interface.  The value of this<br />            object should be the name of the interface as assigned by<br />            the local device and should be suitable for use in commands<br />            entered at the device's `console'.  This might be a text<br />            name, such as `le0' or a simple port number, such as `1',<br />            depending on the interface naming syntax of the device.  If<br />            several entries in the ifTable together represent a single<br />            interface as named by the device, then each will have the<br />            same value of ifName.  Note that for an agent which responds<br />            to SNMP queries concerning an interface on some other<br />            (proxied) device, then the value of ifName for such an<br />            interface is the proxied device's local name for it.<br /><br />            If there is no local name, or this object is otherwise not<br />            applicable, then this object contains a zero-length string.",
+			"access": "read-only",
+			"name": "ifName",
+			"oid": "{ ifXEntry 1 }",
+			"status": "current",
+			"syntax": "DisplayString",
+			"type": "ot"
+		},
+		{
+			"id": "48",
+			"guid": "C0985131-9BEC-474A-AF68-47536036C552",
+			"text": "The number of packets, delivered by this sub-layer to a<br />            higher (sub-)layer, which were addressed to a multicast<br />            address at this sub-layer.  For a MAC layer protocol, this<br />            includes both Group and Functional addresses.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifInMulticastPkts",
+			"oid": "{ ifXEntry 2 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "49",
+			"guid": "C496CD57-4D89-43A5-B0DB-4B0EE8C3F900",
+			"text": "The number of packets, delivered by this sub-layer to a<br />            higher (sub-)layer, which were addressed to a broadcast<br />            address at this sub-layer.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifInBroadcastPkts",
+			"oid": "{ ifXEntry 3 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "50",
+			"guid": "1BF3F84D-468F-4B36-AFAF-FB2FF773755E",
+			"text": "The total number of packets that higher-level protocols<br />            requested be transmitted, and which were addressed to a<br />            multicast address at this sub-layer, including those that<br />            were discarded or not sent.  For a MAC layer protocol, this<br />            includes both Group and Functional addresses.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifOutMulticastPkts",
+			"oid": "{ ifXEntry 4 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "51",
+			"guid": "5FC0EC03-C45A-48F7-8F7E-DF8864A0BA9D",
+			"text": "The total number of packets that higher-level protocols<br />            requested be transmitted, and which were addressed to a<br />            broadcast address at this sub-layer, including those that<br />            were discarded or not sent.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifOutBroadcastPkts",
+			"oid": "{ ifXEntry 5 }",
+			"status": "current",
+			"syntax": "Counter32",
+			"type": "ot"
+		},
+		{
+			"id": "52",
+			"guid": "3D7F9AD5-1E88-4772-A095-4A4F47E85D5F",
+			"text": "<p></p><p>High Capacity Counter objects.  These objects are all</p><p>64 bit versions of the \"basic\" ifTable counters.  These</p><p>objects all have the same basic semantics as their 32-bit</p><p>counterparts, however, their syntax has been extended</p><p>to 64 bits.</p><p></p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "53",
+			"guid": "9AED6C5E-F2F3-45E1-8427-D739F4E7AEA7",
+			"text": "The total number of octets received on the interface,<br />            including framing characters.  This object is a 64-bit<br />            version of ifInOctets.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifHCInOctets",
+			"oid": "{ ifXEntry 6 }",
+			"status": "current",
+			"syntax": "Counter64",
+			"type": "ot"
+		},
+		{
+			"id": "54",
+			"guid": "F839A1CB-1224-43E1-BC4B-F585CBE839DF",
+			"text": "The number of packets, delivered by this sub-layer to a<br />            higher (sub-)layer, which were not addressed to a multicast<br />            or broadcast address at this sub-layer.  This object is a<br />            64-bit version of ifInUcastPkts.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifHCInUcastPkts",
+			"oid": "{ ifXEntry 7 }",
+			"status": "current",
+			"syntax": "Counter64",
+			"type": "ot"
+		},
+		{
+			"id": "55",
+			"guid": "7E91C9CE-A54F-41E4-8B3F-39B8A6E7EF84",
+			"text": "The number of packets, delivered by this sub-layer to a<br />            higher (sub-)layer, which were addressed to a multicast<br />            address at this sub-layer.  For a MAC layer protocol, this<br />            includes both Group and Functional addresses.  This object<br />            is a 64-bit version of ifInMulticastPkts.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifHCInMulticastPkts",
+			"oid": "{ ifXEntry 8 }",
+			"status": "current",
+			"syntax": "Counter64",
+			"type": "ot"
+		},
+		{
+			"id": "56",
+			"guid": "D3BD627D-2BF2-4B86-B55C-A39B83789F27",
+			"text": "The number of packets, delivered by this sub-layer to a<br />            higher (sub-)layer, which were addressed to a broadcast<br />            address at this sub-layer.  This object is a 64-bit version<br />            of ifInBroadcastPkts.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifHCInBroadcastPkts",
+			"oid": "{ ifXEntry 9 }",
+			"status": "current",
+			"syntax": "Counter64",
+			"type": "ot"
+		},
+		{
+			"id": "57",
+			"guid": "AA1960A1-BD5D-4502-8284-1576E438CC7D",
+			"text": "The total number of octets transmitted out of the<br />            interface, including framing characters.  This object is a<br />            64-bit version of ifOutOctets.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifHCOutOctets",
+			"oid": "{ ifXEntry 10 }",
+			"status": "current",
+			"syntax": "Counter64",
+			"type": "ot"
+		},
+		{
+			"id": "58",
+			"guid": "2B8A01C4-1734-4118-8359-A6FFB66C9068",
+			"text": "The total number of packets that higher-level protocols<br />            requested be transmitted, and which were not addressed to a<br />            multicast or broadcast address at this sub-layer, including<br />            those that were discarded or not sent.  This object is a<br />            64-bit version of ifOutUcastPkts.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifHCOutUcastPkts",
+			"oid": "{ ifXEntry 11 }",
+			"status": "current",
+			"syntax": "Counter64",
+			"type": "ot"
+		},
+		{
+			"id": "59",
+			"guid": "75144213-DEE9-4E4A-BB18-2E30803C4F1D",
+			"text": "The total number of packets that higher-level protocols<br />            requested be transmitted, and which were addressed to a<br />            multicast address at this sub-layer, including those that<br />            were discarded or not sent.  For a MAC layer protocol, this<br />            includes both Group and Functional addresses.  This object<br />            is a 64-bit version of ifOutMulticastPkts.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifHCOutMulticastPkts",
+			"oid": "{ ifXEntry 12 }",
+			"status": "current",
+			"syntax": "Counter64",
+			"type": "ot"
+		},
+		{
+			"id": "60",
+			"guid": "9D6DE7D7-8223-4451-8434-7BA6AAE752AD",
+			"text": "The total number of packets that higher-level protocols<br />            requested be transmitted, and which were addressed to a<br />            broadcast address at this sub-layer, including those that<br />            were discarded or not sent.  This object is a 64-bit version<br />            of ifOutBroadcastPkts.<br /><br />            Discontinuities in the value of this counter can occur at<br />            re-initialization of the management system, and at other<br />            times as indicated by the value of<br />            ifCounterDiscontinuityTime.",
+			"access": "read-only",
+			"name": "ifHCOutBroadcastPkts",
+			"oid": "{ ifXEntry 13 }",
+			"status": "current",
+			"syntax": "Counter64",
+			"type": "ot"
+		},
+		{
+			"id": "61",
+			"guid": "F2C900E4-D568-46F7-8EB2-377539663C1A",
+			"text": "Indicates whether linkUp/linkDown traps should be generated<br />            for this interface.<br /><br />            By default, this object should have the value enabled(1) for<br />            interfaces which do not operate on 'top' of any other<br />            interface (as defined in the ifStackTable), and disabled(2)<br />            otherwise.",
+			"access": "read-write",
+			"name": "ifLinkUpDownTrapEnable",
+			"oid": "{ ifXEntry 14 }",
+			"status": "current",
+			"syntax": "<pre>INTEGER { enabled(1), disabled(2) }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "62",
+			"guid": "157654D4-B183-4044-A757-DBC3B70E5B46",
+			"text": "An estimate of the interface's current bandwidth in units<br />            of 1,000,000 bits per second.  If this object reports a<br />            value of `n' then the speed of the interface is somewhere in<br />            the range of `n-500,000' to `n+499,999'.  For interfaces<br />            which do not vary in bandwidth or for those where no<br />            accurate estimation can be made, this object should contain<br />            the nominal bandwidth.  For a sub-layer which has no concept<br />            of bandwidth, this object should be zero.",
+			"access": "read-only",
+			"name": "ifHighSpeed",
+			"oid": "{ ifXEntry 15 }",
+			"status": "current",
+			"syntax": "Gauge32",
+			"type": "ot"
+		},
+		{
+			"id": "63",
+			"guid": "812DE2C8-2E03-4C10-97D7-42D244C3DFDA",
+			"text": "This object has a value of false(2) if this interface only<br />            accepts packets/frames that are addressed to this station.<br />            This object has a value of true(1) when the station accepts<br />            all packets/frames transmitted on the media.  The value<br />            true(1) is only legal on certain types of media.  If legal,<br />            setting this object to a value of true(1) may require the<br />            interface to be reset before becoming effective.<br /><br />            The value of ifPromiscuousMode does not affect the reception<br />            of broadcast and multicast packets/frames by the interface.",
+			"access": "read-write",
+			"name": "ifPromiscuousMode",
+			"oid": "{ ifXEntry 16 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "64",
+			"guid": "36A46037-E0A5-4AB3-8E55-52A8099384ED",
+			"text": "This object has the value 'true(1)' if the interface<br />            sublayer has a physical connector and the value 'false(2)'<br />            otherwise.",
+			"access": "read-only",
+			"name": "ifConnectorPresent",
+			"oid": "{ ifXEntry 17 }",
+			"status": "current",
+			"syntax": "TruthValue",
+			"type": "ot"
+		},
+		{
+			"id": "65",
+			"guid": "DFDD3D4F-D625-4AE7-B922-A3550F3A6D09",
+			"text": "This object is an 'alias' name for the interface as<br />            specified by a network manager, and provides a non-volatile<br />            'handle' for the interface.<br /><br />            On the first instantiation of an interface, the value of<br />            ifAlias associated with that interface is the zero-length<br />            string.  As and when a value is written into an instance of<br />            ifAlias through a network management set operation, then the<br />            agent must retain the supplied value in the ifAlias instance<br />            associated with the same interface for as long as that<br />            interface remains instantiated, including across all re-<br />            initializations/reboots of the network management system,<br />            including those which result in a change of the interface's<br />            ifIndex value.<br /><br />            An example of the value which a network manager might store<br />            in this object for a WAN interface is the (Telco's) circuit<br />            number/identifier of the interface.<br /><br />            Some agents may support write-access only for interfaces<br />            having particular values of ifType.  An agent which supports<br />            write access to this object is required to keep the value in<br />            non-volatile storage, but it may limit the length of new<br />            values depending on how much storage is already occupied by<br />            the current values for other interfaces.",
+			"access": "read-write",
+			"name": "ifAlias",
+			"oid": "{ ifXEntry 18 }",
+			"status": "current",
+			"syntax": "DisplayString (SIZE(0..64))",
+			"type": "ot"
+		},
+		{
+			"id": "66",
+			"guid": "8A505264-6DA8-4890-A1D0-8C32AEB7A47E",
+			"text": "The value of sysUpTime on the most recent occasion at which<br />            any one or more of this interface's counters suffered a<br />            discontinuity.  The relevant counters are the specific<br />            instances associated with this interface of any Counter32 or<br />            Counter64 object contained in the ifTable or ifXTable.  If<br />            no such discontinuities have occurred since the last re-<br />            initialization of the local management subsystem, then this<br />            object contains a zero value.",
+			"access": "read-only",
+			"name": "ifCounterDiscontinuityTime",
+			"oid": "{ ifXEntry 19 }",
+			"status": "current",
+			"syntax": "TimeStamp",
+			"type": "ot"
+		},
+		{
+			"id": "67",
+			"guid": "1012FC84-EB81-4A97-AEC9-D0FB61242B6D",
+			"text": "<p>          The Interface Stack Group</p><p></p><p>Implementation of this group is optional, but strongly recommended</p><p>for all systems</p><p></p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "68",
+			"guid": "B8811CEA-0C73-4D5B-8A4A-7997BCE06A7D",
+			"text": "The table containing information on the relationships<br />            between the multiple sub-layers of network interfaces.  In<br />            particular, it contains information on which sub-layers run<br />            'on top of' which other sub-layers, where each sub-layer<br />            corresponds to a conceptual row in the ifTable.  For<br />            example, when the sub-layer with ifIndex value x runs over<br />            the sub-layer with ifIndex value y, then this table<br />            contains:<br /><br />              ifStackStatus.x.y=active<br /><br />            For each ifIndex value, I, which identifies an active<br />            interface, there are always at least two instantiated rows<br />            in this table associated with I.  For one of these rows, I<br />            is the value of ifStackHigherLayer; for the other, I is the<br />            value of ifStackLowerLayer.  (If I is not involved in<br />            multiplexing, then these are the only two rows associated<br />            with I.)<br /><br />            For example, two rows exist even for an interface which has<br />            no others stacked on top or below it:<br /><br />              ifStackStatus.0.x=active<br />              ifStackStatus.x.0=active ",
+			"access": "not-accessible",
+			"name": "ifStackTable",
+			"oid": "{ ifMIBObjects 2 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF IfStackEntry",
+			"type": "ot"
+		},
+		{
+			"id": "69",
+			"guid": "2AFD02C1-876B-4A54-BB21-723E8E44AC66",
+			"text": "Information on a particular relationship between two sub-<br />            layers, specifying that one sub-layer runs on 'top' of the<br />            other sub-layer.  Each sub-layer corresponds to a conceptual<br />            row in the ifTable.",
+			"access": "not-accessible",
+			"index": "{ ifStackHigherLayer, ifStackLowerLayer }",
+			"name": "ifStackEntry",
+			"oid": "{ ifStackTable 1 }",
+			"status": "current",
+			"syntax": "IfStackEntry",
+			"type": "ot"
+		},
+		{
+			"id": "70",
+			"guid": "F74F8A41-8FD9-4AFB-BA96-06BA5BA28DAA",
+			"text": "The value of ifIndex corresponding to the higher sub-layer<br />            of the relationship, i.e., the sub-layer which runs on 'top'<br />            of the sub-layer identified by the corresponding instance of<br />            ifStackLowerLayer.  If there is no higher sub-layer (below<br />            the internetwork layer), then this object has the value 0.",
+			"access": "not-accessible",
+			"name": "ifStackHigherLayer",
+			"oid": "{ ifStackEntry 1 }",
+			"status": "current",
+			"syntax": "InterfaceIndexOrZero",
+			"type": "ot"
+		},
+		{
+			"id": "71",
+			"guid": "687E169E-545D-4FC3-A24E-DDDCEE31AAE4",
+			"text": "The value of ifIndex corresponding to the lower sub-layer<br />            of the relationship, i.e., the sub-layer which runs 'below'<br />            the sub-layer identified by the corresponding instance of<br />            ifStackHigherLayer.  If there is no lower sub-layer, then<br />            this object has the value 0.",
+			"access": "not-accessible",
+			"name": "ifStackLowerLayer",
+			"oid": "{ ifStackEntry 2 }",
+			"status": "current",
+			"syntax": "InterfaceIndexOrZero",
+			"type": "ot"
+		},
+		{
+			"id": "72",
+			"guid": "930ABAF8-7146-45C9-86F2-5FD623E7E047",
+			"text": "The status of the relationship between two sub-layers.<br /><br />            Changing the value of this object from 'active' to<br />            'notInService' or 'destroy' will likely have consequences up<br />            and down the interface stack.  Thus, write access to this<br />            object is likely to be inappropriate for some types of<br />            interfaces, and many implementations will choose not to<br />            support write-access for any type of interface.",
+			"access": "read-create",
+			"name": "ifStackStatus",
+			"oid": "{ ifStackEntry 3 }",
+			"status": "current",
+			"syntax": "RowStatus",
+			"type": "ot"
+		},
+		{
+			"id": "73",
+			"guid": "BD1045AB-906C-4822-A3C7-4F71E185F820",
+			"text": "The value of sysUpTime at the time of the last change of<br />            the (whole) interface stack.  A change of the interface<br />            stack is defined to be any creation, deletion, or change in<br />            value of any instance of ifStackStatus.  If the interface<br />            stack has been unchanged since the last re-initialization of<br />            the local network management subsystem, then this object<br />            contains a zero value.",
+			"access": "read-only",
+			"name": "ifStackLastChange",
+			"oid": "{ ifMIBObjects 6 }",
+			"status": "current",
+			"syntax": "TimeTicks",
+			"type": "ot"
+		},
+		{
+			"id": "74",
+			"guid": "D1E62787-E91B-4552-992C-6EA98CA87D20",
+			"text": "<p>  Generic Receive Address Table</p><p></p><p>This group of objects is mandatory for all types of</p><p>interfaces which can receive packets/frames addressed to</p><p>more than one address.</p><p></p><p>This table replaces the ifExtnsRcvAddr table.  The main</p><p>difference is that this table makes use of the RowStatus</p><p>textual convention, while ifExtnsRcvAddr did not.</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "75",
+			"guid": "0638C622-B929-4976-A4ED-1D96595D1497",
+			"text": "This table contains an entry for each address (broadcast,<br />            multicast, or uni-cast) for which the system will receive<br />            packets/frames on a particular interface, except as follows:<br /><br />            - for an interface operating in promiscuous mode, entries<br />            are only required for those addresses for which the system<br />            would receive frames were it not operating in promiscuous<br />            mode.<br /><br />            - for 802.5 functional addresses, only one entry is<br />            required, for the address which has the functional address<br />            bit ANDed with the bit mask of all functional addresses for<br />            which the interface will accept frames.<br /><br />            A system is normally able to use any unicast address which<br />            corresponds to an entry in this table as a source address.",
+			"access": "not-accessible",
+			"name": "ifRcvAddressTable",
+			"oid": "{ ifMIBObjects 4 }",
+			"status": "current",
+			"syntax": "SEQUENCE OF IfRcvAddressEntry",
+			"type": "ot"
+		},
+		{
+			"id": "76",
+			"guid": "F46F757D-6527-4352-81AC-4EC94A6FF1B2",
+			"text": "A list of objects identifying an address for which the<br />            system will accept packets/frames on the particular<br />            interface identified by the index value ifIndex.",
+			"access": "not-accessible",
+			"index": "{ ifIndex, ifRcvAddressAddress }",
+			"name": "ifRcvAddressEntry",
+			"oid": "{ ifRcvAddressTable 1 }",
+			"status": "current",
+			"syntax": "IfRcvAddressEntry",
+			"type": "ot"
+		},
+		{
+			"id": "77",
+			"guid": "7B62DDB6-1AE1-44F9-9815-E40468E8D0BA",
+			"text": "An address for which the system will accept packets/frames<br />            on this entry's interface.",
+			"access": "not-accessible",
+			"name": "ifRcvAddressAddress",
+			"oid": "{ ifRcvAddressEntry 1 }",
+			"status": "current",
+			"syntax": "PhysAddress",
+			"type": "ot"
+		},
+		{
+			"id": "78",
+			"guid": "DFA46FA5-99AB-46AF-9E30-E33675DC3A1E",
+			"text": "This object is used to create and delete rows in the<br />            ifRcvAddressTable.",
+			"access": "read-create",
+			"name": "ifRcvAddressStatus",
+			"oid": "{ ifRcvAddressEntry 2 }",
+			"status": "current",
+			"syntax": "RowStatus",
+			"type": "ot"
+		},
+		{
+			"id": "79",
+			"guid": "D7A502B8-8866-4D0D-A5CC-359B8A05FA38",
+			"text": "This object has the value nonVolatile(3) for those entries<br />            in the table which are valid and will not be deleted by the<br />            next restart of the managed system.  Entries having the<br />            value volatile(2) are valid and exist, but have not been<br />            saved, so that will not exist after the next restart of the<br />            managed system.  Entries having the value other(1) are valid<br />            and exist but are not classified as to whether they will<br />            continue to exist after the next restart.",
+			"access": "read-create",
+			"defval": "{ volatile }",
+			"name": "ifRcvAddressType",
+			"oid": "{ ifRcvAddressEntry 3 }",
+			"status": "current",
+			"syntax": "<pre>INTEGER {<br />                    other(1),<br />                    volatile(2),<br />                    nonVolatile(3)<br />                }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "80",
+			"guid": "B3B3511F-F933-4FF1-9DDD-C36B2AD9F3F1",
+			"text": "<p>definition of interface-related traps.</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "81",
+			"guid": "19F5DBFC-4BA1-411C-B706-C103E6B7F509",
+			"text": "A linkDown trap signifies that the SNMP entity, acting in<br />            an agent role, has detected that the ifOperStatus object for<br />            one of its communication links is about to enter the down<br />            state from some other state (but not from the notPresent<br />            state).  This other state is indicated by the included value<br />            of ifOperStatus.",
+			"name": "linkDown",
+			"oid": "{ snmpTraps 3 }",
+			"status": "current",
+			"type": "nt",
+			"updated": "{ ifIndex, ifAdminStatus, ifOperStatus }"
+		},
+		{
+			"id": "82",
+			"guid": "486FDBD4-E0A1-4E77-A515-E8E29F40993C",
+			"text": "A linkUp trap signifies that the SNMP entity, acting in an<br />            agent role, has detected that the ifOperStatus object for<br />            one of its communication links left the down state and<br />            transitioned into some other state (but not into the<br />            notPresent state).  This other state is indicated by the<br />            included value of ifOperStatus.",
+			"name": "linkUp",
+			"oid": "{ snmpTraps 4 }",
+			"status": "current",
+			"type": "nt",
+			"updated": "{ ifIndex, ifAdminStatus, ifOperStatus }"
+		},
+		{
+			"id": "83",
+			"guid": "0A981B93-DCBE-493B-A606-577422C41FC5",
+			"text": "<p>conformance information</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "84",
+			"guid": "ECB26063-869B-4215-A0DE-3AB85794A3A7",
+			"name": "ifConformance",
+			"oid": "{ ifMIB 2 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "85",
+			"guid": "61DC5B2F-DF67-4499-B4AC-82F19799CF17",
+			"name": "ifGroups",
+			"oid": "{ ifConformance 1 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "86",
+			"guid": "68778452-8266-4B7C-8B49-54BBE11D03EB",
+			"name": "ifCompliances",
+			"oid": "{ ifConformance 2 }",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "87",
+			"guid": "9C92A61F-4A34-4BA4-9AFA-D01A82A2ECB7",
+			"text": "<p>compliance statements</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "88",
+			"guid": "0443F414-0F8A-496A-A1C2-ABDB224B3A56",
+			"text": "Write access is not required.",
+			"name": "ifCompliance3",
+			"oid": "{ ifCompliances 3 }",
+			"status": "current",
+			"syntax": "{ ifGeneralInformationGroup,<br />                           linkUpDownNotificationsGroup }",
+			"type": "mc"
+		},
+		{
+			"id": "89",
+			"guid": "2F36FEF5-8F71-4324-996E-93EF249446B1",
+			"text": "<p>units of conformance</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "90",
+			"guid": "4A0FD15C-74B2-4750-9B47-CA3B05B42BE7",
+			"text": "A collection of objects providing information applicable to<br />            all network interfaces.",
+			"name": "ifGeneralInformationGroup",
+			"oid": "{ ifGroups 10 }",
+			"status": "current",
+			"syntax": "{ ifIndex, ifDescr, ifType, ifSpeed, ifPhysAddress,<br />              ifAdminStatus, ifOperStatus, ifLastChange,<br />              ifLinkUpDownTrapEnable, ifConnectorPresent,<br />              ifHighSpeed, ifName, ifNumber, ifAlias,<br />              ifTableLastChange }",
+			"type": "og"
+		},
+		{
+			"id": "91",
+			"guid": "996BC81B-99DC-4865-A3A9-73E3758D681F",
+			"text": "<p>the following five groups are mutually exclusive; at most</p><p>one of these groups is implemented for any interface</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "92",
+			"guid": "8FC57FBD-0540-45D0-9281-90C710100937",
+			"text": "A collection of objects providing information specific to<br />            non-high speed (non-high speed interfaces transmit and<br />            receive at speeds less than or equal to 20,000,000<br />            bits/second) character-oriented or fixed-length-transmission<br />            network interfaces.",
+			"name": "ifFixedLengthGroup",
+			"oid": "{ ifGroups 2 }",
+			"status": "current",
+			"syntax": "{ ifInOctets, ifOutOctets, ifInUnknownProtos,<br />              ifInErrors, ifOutErrors }",
+			"type": "og"
+		},
+		{
+			"id": "93",
+			"guid": "43046360-8922-493C-B5C3-7F3087760BAD",
+			"text": "A collection of objects providing information specific to<br />            high speed (greater than 20,000,000 bits/second) character-<br />            oriented or fixed-length-transmission network interfaces.",
+			"name": "ifHCFixedLengthGroup",
+			"oid": "{ ifGroups 3 }",
+			"status": "current",
+			"syntax": "{ ifHCInOctets, ifHCOutOctets,<br />              ifInOctets, ifOutOctets, ifInUnknownProtos,<br />              ifInErrors, ifOutErrors }",
+			"type": "og"
+		},
+		{
+			"id": "94",
+			"guid": "0B5C83B8-5562-4FAE-AEE4-A1FA2984B407",
+			"text": "A collection of objects providing information specific to<br />            non-high speed (non-high speed interfaces transmit and<br />            receive at speeds less than or equal to 20,000,000<br />            bits/second) packet-oriented network interfaces.",
+			"name": "ifPacketGroup",
+			"oid": "{ ifGroups 4 }",
+			"status": "current",
+			"syntax": "{ ifInOctets, ifOutOctets, ifInUnknownProtos,<br />              ifInErrors, ifOutErrors,<br />              ifMtu, ifInUcastPkts, ifInMulticastPkts,<br />              ifInBroadcastPkts, ifInDiscards,<br />              ifOutUcastPkts, ifOutMulticastPkts,<br />              ifOutBroadcastPkts, ifOutDiscards,<br />              ifPromiscuousMode }",
+			"type": "og"
+		},
+		{
+			"id": "95",
+			"guid": "E90ED6A4-49EC-49DE-8B2F-F263F4FA1362",
+			"text": "A collection of objects providing information specific to<br />            high speed (greater than 20,000,000 bits/second but less<br />            than or equal to 650,000,000 bits/second) packet-oriented<br />            network interfaces.",
+			"name": "ifHCPacketGroup",
+			"oid": "{ ifGroups 5 }",
+			"status": "current",
+			"syntax": "{ ifHCInOctets, ifHCOutOctets,<br />              ifInOctets, ifOutOctets, ifInUnknownProtos,<br />              ifInErrors, ifOutErrors,<br />              ifMtu, ifInUcastPkts, ifInMulticastPkts,<br />              ifInBroadcastPkts, ifInDiscards,<br />              ifOutUcastPkts, ifOutMulticastPkts,<br />              ifOutBroadcastPkts, ifOutDiscards,<br />              ifPromiscuousMode }",
+			"type": "og"
+		},
+		{
+			"id": "96",
+			"guid": "E665E3D2-F8BE-4A4D-8983-8A1D20C5C537",
+			"text": "A collection of objects providing information specific to<br />            higher speed (greater than 650,000,000 bits/second) packet-<br />            oriented network interfaces.",
+			"name": "ifVHCPacketGroup",
+			"oid": "{ ifGroups 6 }",
+			"status": "current",
+			"syntax": "{ ifHCInUcastPkts, ifHCInMulticastPkts,<br />              ifHCInBroadcastPkts, ifHCOutUcastPkts,<br />              ifHCOutMulticastPkts, ifHCOutBroadcastPkts,<br />              ifHCInOctets, ifHCOutOctets,<br />              ifInOctets, ifOutOctets, ifInUnknownProtos,<br />              ifInErrors, ifOutErrors,<br />              ifMtu, ifInUcastPkts, ifInMulticastPkts,<br />              ifInBroadcastPkts, ifInDiscards,<br />              ifOutUcastPkts, ifOutMulticastPkts,<br />              ifOutBroadcastPkts, ifOutDiscards,<br />              ifPromiscuousMode }",
+			"type": "og"
+		},
+		{
+			"id": "97",
+			"guid": "FB69355F-5565-4229-9A56-3E502E179205",
+			"text": "A collection of objects providing information on the<br />            multiple addresses which an interface receives.",
+			"name": "ifRcvAddressGroup",
+			"oid": "{ ifGroups 7 }",
+			"status": "current",
+			"syntax": "{ ifRcvAddressStatus, ifRcvAddressType }",
+			"type": "og"
+		},
+		{
+			"id": "98",
+			"guid": "00661B6F-5C85-4F54-B2BC-DF3862D5A533",
+			"text": "A collection of objects providing information on the<br />            layering of MIB-II interfaces.",
+			"name": "ifStackGroup2",
+			"oid": "{ ifGroups 11 }",
+			"status": "current",
+			"syntax": "{ ifStackStatus, ifStackLastChange }",
+			"type": "og"
+		},
+		{
+			"id": "99",
+			"guid": "42306E2F-5914-4788-8003-C6E62CA9E9F9",
+			"text": "A collection of objects providing information specific to<br />            interface counter discontinuities.",
+			"name": "ifCounterDiscontinuityGroup",
+			"oid": "{ ifGroups 13 }",
+			"status": "current",
+			"syntax": "{ ifCounterDiscontinuityTime }",
+			"type": "og"
+		},
+		{
+			"id": "100",
+			"guid": "5273016C-4564-42C4-B5B6-BDACAEFAC1DD",
+			"text": "<p>Deprecated Definitions - Objects</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "101",
+			"guid": "8C29E40F-EA07-4E6D-9EB5-24D38187B79E",
+			"text": "<p></p><p>   The Interface Test Table</p><p></p><p>This group of objects is optional.  However, a media-specific</p><p>MIB may make implementation of this group mandatory.</p><p></p><p>This table replaces the ifExtnsTestTable</p><p></p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "102",
+			"guid": "43FD9C7B-F662-40EA-807A-A3134B19D4F5",
+			"text": "This table contains one entry per interface.  It defines<br />            objects which allow a network manager to instruct an agent<br />            to test an interface for various faults.  Tests for an<br />            interface are defined in the media-specific MIB for that<br />            interface.  After invoking a test, the object ifTestResult<br />            can be read to determine the outcome.  If an agent can not<br />            perform the test, ifTestResult is set to so indicate.  The<br />            object ifTestCode can be used to provide further test-<br />            specific or interface-specific (or even enterprise-specific)<br />            information concerning the outcome of the test.  Only one<br />            test can be in progress on each interface at any one time.<br />            If one test is in progress when another test is invoked, the<br />            second test is rejected.  Some agents may reject a test when<br />            a prior test is active on another interface.<br /><br />            Before starting a test, a manager-station must first obtain<br />            'ownership' of the entry in the ifTestTable for the<br />            interface to be tested.  This is accomplished with the<br />            ifTestId and ifTestStatus objects as follows:<br /><br />          try_again:<br />              get (ifTestId, ifTestStatus)<br />              while (ifTestStatus != notInUse)<br />                  /*<br />                   * Loop while a test is running or some other<br />                   * manager is configuring a test.<br />                   */<br />                  short delay<br />                  get (ifTestId, ifTestStatus)<br />              }<br /><br />              /*<br />               * Is not being used right now -- let's compete<br />               * to see who gets it.<br />               */<br />              lock_value = ifTestId<br /><br />              if ( set(ifTestId = lock_value, ifTestStatus = inUse,<br />                       ifTestOwner = 'my-IP-address') == FAILURE)<br />                  /*<br />                   * Another manager got the ifTestEntry -- go<br />                   * try again<br />                   */<br />                  goto try_again;<br /><br />              /*<br />               * I have the lock<br />               */<br />              set up any test parameters.<br /><br />              /*<br />               * This starts the test<br />               */<br />              set(ifTestType = test_to_run);<br /><br />              wait for test completion by polling ifTestResult<br /><br />              when test completes, agent sets ifTestResult<br />                   agent also sets ifTestStatus = 'notInUse'<br /><br />              retrieve any additional test results, and ifTestId<br /><br />              if (ifTestId == lock_value+1) results are valid<br /><br />            A manager station first retrieves the value of the<br />            appropriate ifTestId and ifTestStatus objects, periodically<br />            repeating the retrieval if necessary, until the value of<br />            ifTestStatus is 'notInUse'.  The manager station then tries<br />            to set the same ifTestId object to the value it just<br />            retrieved, the same ifTestStatus object to 'inUse', and the<br />            corresponding ifTestOwner object to a value indicating<br />            itself.  If the set operation succeeds then the manager has<br />            obtained ownership of the ifTestEntry, and the value of the<br />            ifTestId object is incremented by the agent (per the<br />            semantics of TestAndIncr).  Failure of the set operation<br />            indicates that some other manager has obtained ownership of<br />            the ifTestEntry.<br /><br />            Once ownership is obtained, any test parameters can be<br />            setup, and then the test is initiated by setting ifTestType.<br />            On completion of the test, the agent sets ifTestStatus to<br />            'notInUse'.  Once this occurs, the manager can retrieve the<br />            results.  In the (rare) event that the invocation of tests<br />            by two network managers were to overlap, then there would be<br />            a possibility that the first test's results might be<br />            overwritten by the second test's results prior to the first<br />            results being read.  This unlikely circumstance can be<br />            detected by a network manager retrieving ifTestId at the<br />            same time as retrieving the test results, and ensuring that<br />            the results are for the desired request.<br /><br />            If ifTestType is not set within an abnormally long period of<br />            time after ownership is obtained, the agent should time-out<br />            the manager, and reset the value of the ifTestStatus object<br />            back to 'notInUse'.  It is suggested that this time-out<br />            period be 5 minutes.<br /><br />            In general, a management station must not retransmit a<br />            request to invoke a test for which it does not receive a<br />            response; instead, it properly inspects an agent's MIB to<br />            determine if the invocation was successful.  Only if the<br />            invocation was unsuccessful, is the invocation request<br />            retransmitted.<br /><br />            Some tests may require the interface to be taken off-line in<br />            order to execute them, or may even require the agent to<br />            reboot after completion of the test.  In these<br />            circumstances, communication with the management station<br />            invoking the test may be lost until after completion of the<br />            test.  An agent is not required to support such tests.<br />            However, if such tests are supported, then the agent should<br />            make every effort to transmit a response to the request<br />            which invoked the test prior to losing communication.  When<br />            the agent is restored to normal service, the results of the<br />            test are properly made available in the appropriate objects.<br />            Note that this requires that the ifIndex value assigned to<br />            an interface must be unchanged even if the test causes a<br />            reboot.  An agent must reject any test for which it cannot,<br />            perhaps due to resource constraints, make available at least<br />            the minimum amount of information after that test<br />            completes.",
+			"access": "not-accessible",
+			"name": "ifTestTable",
+			"oid": "{ ifMIBObjects 3 }",
+			"status": "deprecated",
+			"syntax": "SEQUENCE OF IfTestEntry",
+			"type": "ot"
+		},
+		{
+			"id": "103",
+			"guid": "45BE05F4-4258-46A7-8518-B15882188DEC",
+			"text": "An entry containing objects for invoking tests on an<br />            interface.",
+			"access": "not-accessible",
+			"augments": "{ ifEntry }",
+			"name": "ifTestEntry",
+			"oid": "{ ifTestTable 1 }",
+			"status": "deprecated",
+			"syntax": "IfTestEntry",
+			"type": "ot"
+		},
+		{
+			"id": "104",
+			"guid": "54C982E2-BAC1-49D7-8D25-700167A952F3",
+			"name": "ifTestCode",
+			"oid": "missing",
+			"status": "current",
+			"type": "oi"
+		},
+		{
+			"id": "105",
+			"guid": "418F8118-47F9-4D4E-B036-15C317E303BD",
+			"text": "This object identifies the current invocation of the<br />            interface's test.",
+			"access": "read-write",
+			"name": "ifTestId",
+			"oid": "{ ifTestEntry 1 }",
+			"status": "deprecated",
+			"syntax": "TestAndIncr",
+			"type": "ot"
+		},
+		{
+			"id": "106",
+			"guid": "703A338B-2FA4-426B-809A-3385D42506EC",
+			"text": "This object indicates whether or not some manager currently<br />            has the necessary 'ownership' required to invoke a test on<br />            this interface.  A write to this object is only successful<br />            when it changes its value from 'notInUse(1)' to 'inUse(2)'.<br />            After completion of a test, the agent resets the value back<br />            to 'notInUse(1)'.",
+			"access": "read-write",
+			"name": "ifTestStatus",
+			"oid": "{ ifTestEntry 2 }",
+			"status": "deprecated",
+			"syntax": "<pre>INTEGER { notInUse(1), inUse(2) }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "107",
+			"guid": "ACE5DCD5-0EB6-49B8-8F44-A41E052F9040",
+			"text": "A control variable used to start and stop operator-<br />            initiated interface tests.  Most OBJECT IDENTIFIER values<br />            assigned to tests are defined elsewhere, in association with<br />            specific types of interface.  However, this document assigns<br />            a value for a full-duplex loopback test, and defines the<br />            special meanings of the subject identifier:<br /><br />                noTest  OBJECT IDENTIFIER ::= { 0 0 }<br /><br />            When the value noTest is written to this object, no action<br />            is taken unless a test is in progress, in which case the<br />            test is aborted.  Writing any other value to this object is<br />            only valid when no test is currently in progress, in which<br />            case the indicated test is initiated.<br /><br />            When read, this object always returns the most recent value<br />            that ifTestType was set to.  If it has not been set since<br />            the last initialization of the network management subsystem<br />            on the agent, a value of noTest is returned.",
+			"access": "read-write",
+			"name": "ifTestType",
+			"oid": "{ ifTestEntry 3 }",
+			"status": "deprecated",
+			"syntax": "AutonomousType",
+			"type": "ot"
+		},
+		{
+			"id": "108",
+			"guid": "489896CB-99D1-4FA6-A9B9-A246C468308C",
+			"text": "This object contains the result of the most recently<br />            requested test, or the value none(1) if no tests have been<br />            requested since the last reset.  Note that this facility<br />            provides no provision for saving the results of one test<br />            when starting another, as could be required if used by<br />            multiple managers concurrently.",
+			"access": "read-only",
+			"name": "ifTestResult",
+			"oid": "{ ifTestEntry 4 }",
+			"status": "deprecated",
+			"syntax": "<pre>INTEGER {<br />                     none(1),          -- no test yet requested<br />                     success(2),<br />                     inProgress(3),<br />                     notSupported(4),<br />                     unAbleToRun(5),   -- due to state of system<br />                     aborted(6),<br />                     failed(7)<br />                 }</pre>",
+			"type": "ot"
+		},
+		{
+			"id": "109",
+			"guid": "0AE42D36-DE96-4758-B034-65804F67D484",
+			"text": "This object contains a code which contains more specific<br />            information on the test result, for example an error-code<br />            after a failed test.  Error codes and other values this<br />            object may take are specific to the type of interface and/or<br />            test.  The value may have the semantics of either the<br />            AutonomousType or InstancePointer textual conventions as<br />            defined in RFC 2579.  The identifier:<br /><br />                testCodeUnknown  OBJECT IDENTIFIER ::= { 0 0 }<br /><br />            is defined for use if no additional result code is<br />            available.",
+			"access": "read-only",
+			"name": "ifTestCode",
+			"oid": "{ ifTestEntry 5 }",
+			"status": "deprecated",
+			"syntax": "OBJECT IDENTIFIER",
+			"type": "ot"
+		},
+		{
+			"id": "110",
+			"guid": "CCA5CFA4-01DF-4C8D-BAC1-CD622C6E732E",
+			"text": "The entity which currently has the 'ownership' required to<br />            invoke a test on this interface.",
+			"access": "read-write",
+			"name": "ifTestOwner",
+			"oid": "{ ifTestEntry 6 }",
+			"status": "deprecated",
+			"syntax": "OwnerString",
+			"type": "ot"
+		},
+		{
+			"id": "111",
+			"guid": "52EF2B61-3911-42D5-8770-5A69FBC57781",
+			"text": "<p>Deprecated Definitions - Groups</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "112",
+			"guid": "484A743B-5F3B-4099-82FC-8E83A437916F",
+			"text": "A collection of objects deprecated in favour of<br />            ifGeneralInformationGroup.",
+			"name": "ifGeneralGroup",
+			"oid": "{ ifGroups 1 }",
+			"status": "deprecated",
+			"syntax": "{ ifDescr, ifType, ifSpeed, ifPhysAddress,<br />              ifAdminStatus, ifOperStatus, ifLastChange,<br />              ifLinkUpDownTrapEnable, ifConnectorPresent,<br />              ifHighSpeed, ifName }",
+			"type": "og"
+		},
+		{
+			"id": "113",
+			"guid": "7C6EF1A3-824A-4708-9CB5-9CEEB10A7E99",
+			"text": "A collection of objects providing the ability to invoke<br />            tests on an interface.",
+			"name": "ifTestGroup",
+			"oid": "{ ifGroups 8 }",
+			"status": "deprecated",
+			"syntax": "{ ifTestId, ifTestStatus, ifTestType,<br />              ifTestResult, ifTestCode, ifTestOwner }",
+			"type": "og"
+		},
+		{
+			"id": "114",
+			"guid": "9783206B-808B-48ED-A911-10A988D71CA5",
+			"text": "The previous collection of objects providing information on<br />            the layering of MIB-II interfaces.",
+			"name": "ifStackGroup",
+			"oid": "{ ifGroups 9 }",
+			"status": "deprecated",
+			"syntax": "{ ifStackStatus }",
+			"type": "og"
+		},
+		{
+			"id": "115",
+			"guid": "9F177655-AE8B-47AF-9F7D-293D11941FF8",
+			"text": "The collection of objects deprecated from the original MIB-<br />            II interfaces group.",
+			"name": "ifOldObjectsGroup",
+			"oid": "{ ifGroups 12 }",
+			"status": "deprecated",
+			"syntax": "{ ifInNUcastPkts, ifOutNUcastPkts,<br />              ifOutQLen, ifSpecific }",
+			"type": "og"
+		},
+		{
+			"id": "116",
+			"guid": "B5970AD8-3EDC-4B14-B98B-8F37E5FF1189",
+			"text": "<p>Deprecated Definitions - Compliance</p>",
+			"name": "comment",
+			"type": "comment"
+		},
+		{
+			"id": "117",
+			"guid": "3B743EE1-2557-4F56-9D59-B7ED3E17A329",
+			"text": "Write access is not required, nor is support for the value<br />            testing(3).",
+			"name": "ifCompliance",
+			"oid": "{ ifCompliances 1 }",
+			"status": "deprecated",
+			"syntax": "{ ifGeneralGroup, ifStackGroup }",
+			"type": "mc"
+		},
+		{
+			"id": "118",
+			"guid": "CD429F31-D852-4C5E-847E-49AD9B7E7705",
+			"text": "Write access is not required.",
+			"name": "ifCompliance2",
+			"oid": "{ ifCompliances 2 }",
+			"status": "deprecated",
+			"syntax": "{ ifGeneralInformationGroup, ifStackGroup2,<br />                           ifCounterDiscontinuityGroup }",
+			"type": "mc"
+		},
+		{
+			"id": "119",
+			"guid": "450CC6FF-44AF-465B-9E9F-558D42835FEA",
+			"name": "end",
+			"type": "end"
+		}
+	],
+	"attributes": {
+		"access": {
+			"name": "Access",
+			"type": "enum",
+			"values": [
+				{
+					"key": "read-only"
+				},
+				{
+					"key": "read-write"
+				},
+				{
+					"key": "read-create"
+				},
+				{
+					"key": "not-accessible"
+				},
+				{
+					"key": "accessible-for-notify"
+				}
+			]
+		},
+        "action": {
+          "heading": "Action",
+          "type": "enum",
+          "values": [
+            {
+              "key": "added"
+            },
+            {
+              "key": "remainCurrent"
+            },
+            {
+              "key": "deprecated"
+            },
+            {
+              "key": "madeObsolete"
+            },
+            {
+              "key": "previsoulyDeprecated"
+            }
+          ]
         },
-        {
-          "key": "read-write"
-        },
-        {
-          "key": "read-create"
-        },
-        {
-          "key": "not-accessible"
-        },
-        {
-          "key": "accessible-for-notify"
-        }
-      ]
-    },
-    "action": {
-      "heading": "Action",
-      "type": "enum",
-      "values": [
-        {
-          "key": "added"
-        },
-        {
-          "key": "remainCurrent"
-        },
-        {
-          "key": "deprecated"
-        },
-        {
-          "key": "made obsolete"
-        },
-        {
-          "key": "previsouly deprecated"
-        }
-      ]
-    },
-    "additional": {
-      "heading": "Additional",
-      "type": "xhtml"
-    },
-    "augments": {
-      "heading": "Augments",
-      "type": "string"
-    },
-    "comment": {
-      "heading": "Comment",
-      "type": "xhtml"
-    },
+		"additional": {
+			"name": "Additional",
+			"type": "xhtml"
+		},
+		"augments": {
+			"name": "Augments",
+			"type": "string"
+		},
+		"comment": {
+			"name": "Comment",
+			"type": "xhtml"
+		},
     "conformance": {
-      "heading": "Conformance",
+      "name": "Conformance",
       "type": "string"
     },
-    "contact": {
-      "heading": "Contact",
-      "type": "xhtml"
-    },
-    "defval": {
-      "heading": "Default Value",
-      "type": "string"
-    },
+		"contact": {
+			"name": "Contact",
+			"type": "xhtml"
+		},
+		"defval": {
+			"name": "Default Value",
+			"type": "string"
+		},
     "dotted-oid": {
-      "heading": "Dotted OID",
+      "name": "Dotted OID",
       "type": "string"
     },
     "format": {
-      "heading": "Format",
+      "name": "Format",
       "type": "xhtml"
     },
-    "index": {
-      "heading": "Index",
-      "type": "string"
-    },
+		"index": {
+			"name": "Index",
+			"type": "string"
+		},
     "info": {
-      "heading": "Informative",
+      "name": "Informative",
       "type": "xhtml"
     },
-    "name": {
-      "heading": "Name",
-      "type": "string"
-    },
-    "oid": {
-      "heading": "OID",
-      "type": "string"
-    },
-    "org": {
-      "heading": "Organization",
-      "type": "string"
-    },
-    "part": {
-      "heading": "Part",
-      "type": "string"
-    },
-    "reference": {
-      "heading": "Reference",
-      "type": "xhtml"
-    },
-    "status": {
-      "heading": "Status",
-      "type": "enum",
-      "values": [
-        {
-          "key": "current"
-        },
-        {
-          "key": "deprecated"
-        },
-        {
-          "key": "obsolete"
-        },
-        {
-          "key": "silent"
-        }
-      ]
-    },
-    "syntax": {
-      "heading": "Syntax",
-      "type": "xhtml"
-    },
+		"name": {
+			"name": "Name",
+			"type": "string"
+		},
+		"oid": {
+			"name": "OID",
+			"type": "string"
+		},
+		"org": {
+			"name": "Organization",
+			"type": "string"
+		},
+		"part": {
+			"name": "Part",
+			"type": "string"
+		},
+		"reference": {
+			"name": "Reference",
+			"type": "xhtml"
+		},
+		"status": {
+			"name": "Status",
+			"type": "enum",
+			"values": [
+				{
+					"key": "current"
+				},
+				{
+					"key": "deprecated"
+				},
+				{
+					"key": "obsolete"
+				}
+			]
+		},
+		"syntax": {
+			"name": "Syntax",
+			"type": "xhtml"
+		},
     "table-type": {
-      "heading": "Table Type",
+      "name": "Table Type",
       "type": "enum",
       "values": [
         {
@@ -156,231 +1325,71 @@
         }
       ]
     },
-    "type": {
-      "heading": "Type",
-      "type": "enum",
-      "values": [
-        {
-          "key": "ot",
-          "label": "Object Type"
-        },
-        {
-          "key": "xb",
-          "label": "---- Body ----"
-        },
-        {
-          "key": "text",
-          "label": "Text"
-        },
-        {
-          "default": false,
-          "key": "c",
-          "label": "Centered Text"
-        },
-        {
-          "default": false,
-          "key": "it",
-          "label": "Indented Text"
-        },
-        {
-          "default": false,
-          "key": "f",
-          "label": "Figure"
-        },
-        {
-          "default": false,
-          "key": "table",
-          "label": "Table"
-        },
-        {
-          "default": false,
-          "key": "l1",
-          "label": "List Level 1"
-        },
-        {
-          "default": false,
-          "key": "l2",
-          "label": "List Level 2"
-        },
-        {
-          "default": false,
-          "key": "n",
-          "label": "Note"
-        },
-        {
-          "default": false,
-          "key": "e",
-          "label": "Example"
-        },
-        {
-          "key": "xi",
-          "label": "---- Items ----"
-        },
-        {
-          "key": "m",
-          "label": "Managed Item"
-        },
-        {
-          "default": false,
-          "key": "r",
-          "label": "Root Item"
-        },
-        {
-          "default": false,
-          "key": "un",
-          "label": "User Need"
-        },
-        {
-          "default": false,
-          "key": "unp",
-          "label": "User Need Parent"
-        },
-        {
-          "default": false,
-          "key": "unc",
-          "label": "User Need Characteristic"
-        },
-        {
-          "default": false,
-          "key": "unr",
-          "label": "User Need Reference"
-        },
-        {
-          "default": false,
-          "key": "feature",
-          "label": "Feature"
-        },
-        {
-          "default": false,
-          "key": "a_req",
-          "label": "Arch Req't"
-        },
-        {
-          "default": false,
-          "key": "d_req",
-          "label": "Data Exch Req't"
-        },
-        {
-          "default": false,
-          "key": "s_req",
-          "label": "Suppl Req't"
-        },
-        {
-          "default": false,
-          "key": "dia",
-          "label": "Dialog"
-        },
-        {
-          "default": false,
-          "key": "sd",
-          "label": "State Diagram"
-        },
-        {
-          "default": false,
-          "key": "i",
-          "label": "Information Flow"
-        },
-        {
-          "key": "xs",
-          "label": "--- Special ---"
-        },
-        {
-          "default": false,
-          "key": "norm_ref",
-          "label": "Normative Ref"
-        },
-        {
-          "default": false,
-          "key": "term",
-          "label": "Term"
-        },
-        {
-          "default": false,
-          "key": "note-t",
-          "label": "Term Note"
-        },
-        {
-          "default": false,
-          "key": "source",
-          "label": "Source"
-        },
-        {
-          "default": false,
-          "key": "a",
-          "label": "Acronym"
-        },
-        {
-          "default": false,
-          "key": "annex",
-          "label": "Annex"
-        },
-        {
-          "default": false,
-          "key": "bib",
-          "label": "Bibliography"
-        },
-        {
-          "key": "xm",
-          "label": "---- MIB ----"
-        },
-        {
-          "key": "mib",
-          "label": "MIB"
-        },
-        {
-          "key": "mi",
-          "label": "Module Identity"
-        },
-        {
-          "key": "rev",
-          "label": "Revision"
-        },
-        {
-          "key": "text_conv",
-          "label": "Textual Convention"
-        },
-        {
-          "key": "oi",
-          "label": "Object Identity"
-        },
-        {
-          "key": "row",
-          "label": "Row"
-        },
-        {
-          "key": "comment",
-          "label": "Comment"
-        },
-        {
-          "key": "nt",
-          "label": "Notification Type"
-        },
-        {
-          "key": "mc",
-          "label": "Module Compliance"
-        },
-        {
-          "key": "og",
-          "label": "Object Group"
-        },
-        {
-          "key": "ng",
-          "label": "Notification Group"
-        },
-        {
-          "key": "end",
-          "label": "End"
-        }
-      ]
-    },
-    "units": {
-      "heading": "Units",
-      "type": "string"
-    },
-    "updated": {
-      "heading": "Updated",
-      "type": "string"
-    },
+		"type": {
+			"name": "Type",
+			"type": "enum",
+			"values": [
+				{
+					"key": "comment"
+				},
+				{
+					"key": "end"
+				},
+				{
+					"key": "mc",
+					"label": "module-compliance"
+				},
+				{
+					"key": "mi",
+					"label": "module-identity"
+				},
+				{
+					"key": "mib"
+				},
+				{
+					"key": "ng",
+					"label": "notification-group"
+				},
+				{
+					"key": "nt",
+					"label": "notification-type"
+				},
+				{
+					"key": "og",
+					"label": "object-group"
+				},
+				{
+					"key": "oi",
+					"label": "object-identity"
+				},
+				{
+					"key": "ot",
+					"label": "object-type"
+				},
+				{
+					"key": "ref",
+					"label": "reference"
+				},
+				{
+					"key": "rev",
+					"label": "revision"
+				},
+				{
+					"key": "row"
+				},
+				{
+					"key": "text_conv"
+				}
+			]
+		},
+		"units": {
+			"name": "Units",
+			"type": "string"
+		},
+		"updated": {
+			"name": "Updated",
+			"type": "string"
+		},
     "version": {
       "heading": "Version",
       "type": "string"
@@ -390,7 +1399,7 @@
       "type": "xhtml"
     },
     "x-type": {
-      "heading": "Deprecate Type",
+      "heading": "Deprecated Type",
       "type": "enum",
       "values": [
         {
@@ -404,7 +1413,7 @@
         }
       ]
     }
-  },
+	},
   "templateColumns": {
     "7770756d-aafa-41fc-bf9b-f37118c21281": {
       "label": "Errors",
@@ -425,8 +1434,5 @@
       ],
       "default": true
     }
-  },
-  "metadata": {
-    "format": "2.17"
   }
 }

@@ -18,7 +18,7 @@
       "data": [],
       "attributes": {
         "access": {
-          "heading": "Access",
+          "name": "Access",
           "type": "enum",
           "values": [
             {
@@ -39,7 +39,7 @@
           ]
         },
         "action": {
-          "heading": "Action",
+          "name": "Action",
           "type": "enum",
           "values": [
             {
@@ -60,67 +60,67 @@
           ]
         },
         "additional": {
-          "heading": "Additional",
+          "name": "Additional",
           "type": "xhtml"
         },
         "augments": {
-          "heading": "Augments",
+          "name": "Augments",
           "type": "string"
         },
         "comment": {
-          "heading": "Comment",
+          "name": "Comment",
           "type": "xhtml"
         },
         "conformance": {
-          "heading": "Conformance",
+          "name": "Conformance",
           "type": "string"
         },
         "contact": {
-          "heading": "Contact",
+          "name": "Contact",
           "type": "xhtml"
         },
         "defval": {
-          "heading": "Default Value",
+          "name": "Default Value",
           "type": "string"
         },
         "format": {
-          "heading": "Format",
+          "name": "Format",
           "type": "xhtml"
         },
         "index": {
-          "heading": "Index",
+          "name": "Index",
           "type": "string"
         },
         "info": {
-          "heading": "Informative",
+          "name": "Informative",
           "type": "xhtml"
         },
         "name": {
-          "heading": "Name",
+          "name": "Name",
           "type": "string"
         },
         "dotted-oid": {
-          "heading": "Dotted OID",
+          "name": "Dotted OID",
           "type": "string"
         },
         "oid": {
-          "heading": "OID",
+          "name": "OID",
           "type": "string"
         },
         "org": {
-          "heading": "Organization",
+          "name": "Organization",
           "type": "string"
         },
         "part": {
-          "heading": "Part",
+          "name": "Part",
           "type": "string"
         },
         "reference": {
-          "heading": "Reference",
+          "name": "Reference",
           "type": "xhtml"
         },
         "status": {
-          "heading": "Status",
+          "name": "Status",
           "type": "enum",
           "values": [
             {
@@ -138,11 +138,11 @@
           ]
         },
         "syntax": {
-          "heading": "Syntax",
+          "name": "Syntax",
           "type": "xhtml"
         },
         "table-type": {
-          "heading": "Table Type",
+          "name": "Table Type",
           "type": "enum",
           "values": [
             {
@@ -157,7 +157,7 @@
           ]
         },
         "type": {
-          "heading": "Type",
+          "name": "Type",
           "type": "enum",
           "values": [
             {
@@ -374,19 +374,19 @@
           ]
         },
         "units": {
-          "heading": "Units",
+          "name": "Units",
           "type": "string"
         },
         "updated": {
-          "heading": "Updated",
+          "name": "Updated",
           "type": "string"
         },
         "version": {
-          "heading": "Version",
+          "name": "Version",
           "type": "string"
         },
         "x-type": {
-          "heading": "Deprecate Type",
+          "name": "Deprecated Type",
           "type": "enum",
           "values": [
             {
@@ -401,7 +401,7 @@
           ]
         },
         "x-text": {
-          "heading": "Deprecated by",
+          "name": "Deprecated by",
           "type": "xhtml"
         }
       },

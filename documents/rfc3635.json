@@ -1,9 +1,9 @@
 {
 	"id": "rfc3635",
-	"guid": "D031DCEA-7296-4A92-9788-553FDE8E6BEC",
+	"guid": "9E04D8DC-5075-4C5A-BA26-D103A8108B01",
 	"name": "EtherLike-MIB",
-	"lastId": "95",
-	"createdOn": "2024-07-24T15:24:22",
+	"lastId": "98",
+	"createdOn": "2024-07-24T15:45:34",
 	"createdBy": {
 		"name": "Kenneth Vaughn",
 		"email": "kvaughn@trevilon.com",
@@ -12,14 +12,14 @@
 	"data": [
 		{
 			"id": "1",
-			"guid": "CD5C3ACC-F053-4597-BF09-DF8C166A23A8",
+			"guid": "3FB33F20-8943-4833-9C34-70D81F946397",
 			"text": "<pre>           MODULE-IDENTITY, OBJECT-TYPE, OBJECT-IDENTITY,<br />           Integer32, Counter32, Counter64, mib-2, transmission<br />               FROM SNMPv2-SMI<br />           MODULE-COMPLIANCE, OBJECT-GROUP<br />               FROM SNMPv2-CONF<br />           TruthValue<br />               FROM SNMPv2-TC<br />           ifIndex, InterfaceIndex<br />               FROM IF-MIB;</pre>",
 			"name": "EtherLike-MIB",
 			"type": "mib"
 		},
 		{
 			"id": "2",
-			"guid": "B96411E1-8B96-46F3-AF58-F10B6BE13636",
+			"guid": "290FEBAD-E028-448A-A055-5EDEED6B4F95",
 			"text": "The MIB module to describe generic objects for<br />                       ethernet-like network interfaces.<br /><br />                       The following reference is used throughout this<br />                       MIB module:<br /><br />                       [IEEE 802.3 Std] refers to:<br />                          IEEE Std 802.3, 2002 Edition: 'IEEE Standard<br />                          for Information technology -<br />                          Telecommunications and information exchange<br />                          between systems - Local and metropolitan<br />                          area networks - Specific requirements -<br />                          Part 3: Carrier sense multiple access with<br />                          collision detection (CSMA/CD) access method<br />                          and physical layer specifications', as<br />                          amended by IEEE Std 802.3ae-2002:<br />                          'Amendment: Media Access Control (MAC)<br />                          Parameters, Physical Layer, and Management<br />                          Parameters for 10 Gb/s Operation', August,<br />                          2002.<br /><br />                       Of particular interest is Clause 30, '10 Mb/s,<br />                       100 Mb/s, 1000 Mb/s, and 10 Gb/s Management'.<br /><br />                       Copyright (C) The Internet Society (2003).  This<br />                       version of this MIB module is part of RFC 3635;<br />                       see the RFC itself for full legal notices.",
 			"contact": "WG E-mail: hubmib@ietf.org<br />             To subscribe: hubmib-request@ietf.org<br /><br />                    Chair: Dan Romascanu<br />                   Postal: Avaya Inc.<br />                           Atidum Technology Park, Bldg. 3<br />                           Tel Aviv 61131<br />                           Israel<br />                      Tel: +972 3 645 8414<br />                   E-mail: dromasca@avaya.com<br /><br />                  Editor: John Flick<br />                  Postal: Hewlett-Packard Company<br />                          8000 Foothills Blvd. M/S 5557<br />                          Roseville, CA 95747-5557<br />                          USA<br />                     Tel: +1 916 785 4018<br />                     Fax: +1 916 785 1199<br />                  E-mail: johnf@rose.hp.com",
 			"name": "etherMIB",
@@ -30,28 +30,28 @@
 			"children": [
 				{
 					"id": "3",
-					"guid": "E14A7439-C5BA-4C53-8086-F23A512FDFC2",
+					"guid": "9EDD32A2-B36A-45F0-BF63-86E0008922F9",
 					"text": "Updated to include support for 10 Gb/sec<br />                        interfaces.  This resulted in the following<br />                        revisions:<br /><br />                        - Updated dot3StatsAlignmentErrors and<br />                          dot3StatsSymbolErrors DESCRIPTIONs to<br />                          reflect behaviour at 10 Gb/s<br />                        - Added dot3StatsRateControlAbility and<br />                          dot3RateControlStatus for management<br />                          of the Rate Control function in 10 Gb/s<br />                          WAN applications<br />                        - Added 64-bit versions of all counters<br />                          that are used on high-speed ethernet<br />                          interfaces<br />                        - Added object groups to contain the new<br />                          objects<br />                        - Deprecated etherStatsBaseGroup and<br />                          split into etherStatsBaseGroup2 and<br />                          etherStatsHalfDuplexGroup, so that<br />                          interfaces which can only operate at<br />                          full-duplex do not need to implement<br />                          half-duplex-only statistics<br />                        - Deprecated dot3Compliance and replaced<br />                          it with dot3Compliance2, which includes<br />                          the compliance information for the new<br />                          object groups<br /><br />                        In addition, the dot3Tests and dot3Errors<br />                        object identities have been deprecated,<br />                        since there is no longer a standard method<br />                        for using them.<br /><br />                        This version published as RFC 3635.",
 					"type": "rev",
 					"updated": "200309190000Z"
 				},
 				{
 					"id": "4",
-					"guid": "F3CFE2A5-B4FA-42F2-B4C5-E6ECA83783B5",
+					"guid": "9F67DDD3-4DE0-472C-872A-DDC9B6087A8E",
 					"text": "Updated to include support for 1000 Mb/sec<br />                        interfaces and full-duplex interfaces.<br />                        This version published as RFC 2665.",
 					"type": "rev",
 					"updated": "199908240400Z"
 				},
 				{
 					"id": "5",
-					"guid": "A0EB8AEB-1D72-4538-8BE9-97F0153DC14E",
+					"guid": "1C650F35-4115-469C-98A1-88A3EAC945F2",
 					"text": "Updated to include support for 100 Mb/sec<br />                        interfaces.<br />                        This version published as RFC 2358.",
 					"type": "rev",
 					"updated": "199806032150Z"
 				},
 				{
 					"id": "6",
-					"guid": "EF84372B-2494-41C0-B71A-EE26C9771C2A",
+					"guid": "AC8282D5-2873-4907-B296-C1CEC489ED8B",
 					"text": "Initial version, published as RFC 1650.",
 					"type": "rev",
 					"updated": "199402030400Z"
@@ -60,7 +60,7 @@
 		},
 		{
 			"id": "7",
-			"guid": "6467EB3B-E411-4936-9F26-A4BC59DBC122",
+			"guid": "970DED0E-0A81-4CDF-9A8E-540CA4CA9371",
 			"name": "etherMIBObjects",
 			"oid": "{ etherMIB 1 }",
 			"status": "current",
@@ -68,7 +68,7 @@
 		},
 		{
 			"id": "8",
-			"guid": "6B28BE7B-F486-423A-93C5-52AA4DC63BA3",
+			"guid": "0881B9A2-C38D-4E40-AA4A-DD2C3307E7C5",
 			"name": "dot3",
 			"oid": "{ transmission 7 }",
 			"status": "current",
@@ -76,14 +76,14 @@
 		},
 		{
 			"id": "9",
-			"guid": "A9614890-1504-4D10-891B-3789F58B19C8",
+			"guid": "ACB1D80E-9E59-4250-8EF4-1D93CC0E01A8",
 			"text": "<p>the Ethernet-like Statistics group</p>",
 			"name": "comment",
 			"type": "comment"
 		},
 		{
 			"id": "10",
-			"guid": "FE20AA26-8544-419C-B791-C474068EEC31",
+			"guid": "20FC2C85-61AE-42A3-82A5-9D0988B1C737",
 			"text": "Statistics for a collection of ethernet-like<br />                       interfaces attached to a particular system.<br />                       There will be one row in this table for each<br />                       ethernet-like interface in the system.",
 			"access": "not-accessible",
 			"name": "dot3StatsTable",
@@ -94,7 +94,7 @@
 		},
 		{
 			"id": "11",
-			"guid": "6DF41A76-3FBD-4558-BF07-FE6B413664D4",
+			"guid": "4766BF03-2993-4699-8E04-2644F14E1470",
 			"text": "Statistics for a particular interface to an<br />                       ethernet-like medium.",
 			"access": "not-accessible",
 			"index": "{ dot3StatsIndex }",
@@ -106,17 +106,16 @@
 		},
 		{
 			"id": "12",
-			"guid": "EF49A11B-A453-47BB-B73F-95D6716707E7",
-			"name": "dot3StatsEtherChipSet",
-			"oid": "missing",
-			"status": "current",
-			"type": "oi"
+			"guid": "54070EC5-FD8E-4897-9529-633EBBB7AF8A",
+			"name": "Dot3StatsEntry",
+			"syntax": "<pre>{<br />               dot3StatsIndex                      InterfaceIndex,<br />               dot3StatsAlignmentErrors            Counter32,<br />               dot3StatsFCSErrors                  Counter32,<br />               dot3StatsSingleCollisionFrames      Counter32,<br />               dot3StatsMultipleCollisionFrames    Counter32,<br />               dot3StatsSQETestErrors              Counter32,<br />               dot3StatsDeferredTransmissions      Counter32,<br />               dot3StatsLateCollisions             Counter32,<br />               dot3StatsExcessiveCollisions        Counter32,<br />               dot3StatsInternalMacTransmitErrors  Counter32,<br />               dot3StatsCarrierSenseErrors         Counter32,<br />               dot3StatsFrameTooLongs              Counter32,<br />               dot3StatsInternalMacReceiveErrors   Counter32,<br />               dot3StatsEtherChipSet               OBJECT IDENTIFIER,<br />               dot3StatsSymbolErrors               Counter32,<br />               dot3StatsDuplexStatus               INTEGER,<br />               dot3StatsRateControlAbility         TruthValue,<br />               dot3StatsRateControlStatus          INTEGER<br />           }</pre>",
+			"type": "row"
 		},
 		{
 			"id": "13",
-			"guid": "738C29B4-EEE2-409C-AC1C-F0F40B1ABCD1",
+			"guid": "BED54CCC-1494-42AB-B344-B7833B7603BF",
 			"text": "An index value that uniquely identifies an<br />                       interface to an ethernet-like medium.  The<br />                       interface identified by a particular value of<br />                       this index is the same interface as identified<br />                       by the same value of ifIndex.",
-			"access": "read-only  -- read-only since originally an",
+			"access": "read-only",
 			"name": "dot3StatsIndex",
 			"oid": "{ dot3StatsEntry 1 }",
 			"reference": "RFC 2863, ifIndex",
@@ -126,7 +125,7 @@
 		},
 		{
 			"id": "14",
-			"guid": "730EB04E-71DF-4DB3-9E55-A41C94E6EF73",
+			"guid": "7660CB99-46E0-4B5F-A218-15F80E749ABB",
 			"text": "A count of frames received on a particular<br />                       interface that are not an integral number of<br />                       octets in length and do not pass the FCS check.<br /><br />                       The count represented by an instance of this<br />                       object is incremented when the alignmentError<br />                       status is returned by the MAC service to the<br />                       LLC (or other MAC user). Received frames for<br />                       which multiple error conditions pertain are,<br />                       according to the conventions of IEEE 802.3<br />                       Layer Management, counted exclusively according<br />                       to the error status presented to the LLC.<br /><br />                       This counter does not increment for group<br />                       encoding schemes greater than 4 bits per group.<br /><br />                       For interfaces operating at 10 Gb/s, this<br />                       counter can roll over in less than 5 minutes if<br />                       it is incrementing at its maximum rate.  Since<br />                       that amount of time could be less than a<br />                       management station's poll cycle time, in order<br />                       to avoid a loss of information, a management<br />                       station is advised to poll the<br />                       dot3HCStatsAlignmentErrors object for 10 Gb/s<br />                       or faster interfaces.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3StatsAlignmentErrors",
@@ -138,7 +137,7 @@
 		},
 		{
 			"id": "15",
-			"guid": "42FD285A-1D4D-48F8-AED5-E2D241BEE05C",
+			"guid": "5E93D09F-502E-4413-9649-C205BF375327",
 			"text": "A count of frames received on a particular<br />                       interface that are an integral number of octets<br />                       in length but do not pass the FCS check.  This<br />                       count does not include frames received with<br />                       frame-too-long or frame-too-short error.<br /><br />                       The count represented by an instance of this<br />                       object is incremented when the frameCheckError<br />                       status is returned by the MAC service to the<br />                       LLC (or other MAC user). Received frames for<br />                       which multiple error conditions pertain are,<br />                       according to the conventions of IEEE 802.3<br />                       Layer Management, counted exclusively according<br />                       to the error status presented to the LLC.<br /><br />                       Note:  Coding errors detected by the physical<br />                       layer for speeds above 10 Mb/s will cause the<br />                       frame to fail the FCS check.<br /><br />                       For interfaces operating at 10 Gb/s, this<br />                       counter can roll over in less than 5 minutes if<br />                       it is incrementing at its maximum rate.  Since<br />                       that amount of time could be less than a<br />                       management station's poll cycle time, in order<br />                       to avoid a loss of information, a management<br />                       station is advised to poll the<br />                       dot3HCStatsFCSErrors object for 10 Gb/s or<br />                       faster interfaces.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3StatsFCSErrors",
@@ -150,7 +149,7 @@
 		},
 		{
 			"id": "16",
-			"guid": "C63E40ED-2528-4402-A653-3CE87E9CB9E3",
+			"guid": "F542A862-FD88-40E5-A1DB-5D6B3F521286",
 			"text": "A count of frames that are involved in a single<br />                       collision, and are subsequently transmitted<br />                       successfully.<br /><br />                       A frame that is counted by an instance of this<br />                       object is also counted by the corresponding<br />                       instance of either the ifOutUcastPkts,<br />                       ifOutMulticastPkts, or ifOutBroadcastPkts,<br />                       and is not counted by the corresponding<br />                       instance of the dot3StatsMultipleCollisionFrames<br />                       object.<br /><br />                       This counter does not increment when the<br />                       interface is operating in full-duplex mode.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3StatsSingleCollisionFrames",
@@ -162,7 +161,7 @@
 		},
 		{
 			"id": "17",
-			"guid": "5C179A19-7263-44D2-8AAC-A9BD6A32F9FD",
+			"guid": "252636B9-A9A2-4FF7-9CA3-3FAEDE54F430",
 			"text": "A count of frames that are involved in more<br />                       than one collision and are subsequently<br />                       transmitted successfully.<br /><br />                       A frame that is counted by an instance of this<br />                       object is also counted by the corresponding<br />                       instance of either the ifOutUcastPkts,<br />                       ifOutMulticastPkts, or ifOutBroadcastPkts,<br />                       and is not counted by the corresponding<br />                       instance of the dot3StatsSingleCollisionFrames<br />                       object.<br /><br />                       This counter does not increment when the<br />                       interface is operating in full-duplex mode.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3StatsMultipleCollisionFrames",
@@ -174,7 +173,7 @@
 		},
 		{
 			"id": "18",
-			"guid": "BBFCF1C3-0F26-4B95-8E51-34A800DB3000",
+			"guid": "F8930CE4-2E8D-4619-8C74-030A298B4943",
 			"text": "A count of times that the SQE TEST ERROR<br />                       is received on a particular interface. The<br />                       SQE TEST ERROR is set in accordance with the<br />                       rules for verification of the SQE detection<br />                       mechanism in the PLS Carrier Sense Function as<br />                       described in IEEE Std. 802.3, 2000 Edition,<br />                       section 7.2.4.6.<br /><br />                       This counter does not increment on interfaces<br />                       operating at speeds greater than 10 Mb/s, or on<br />                       interfaces operating in full-duplex mode.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3StatsSQETestErrors",
@@ -186,7 +185,7 @@
 		},
 		{
 			"id": "19",
-			"guid": "B0622BDD-DED1-4069-B401-10A4E5BF7DB3",
+			"guid": "243064CD-41A0-4FD5-B61C-C4F8215EFA45",
 			"text": "A count of frames for which the first<br />                       transmission attempt on a particular interface<br />                       is delayed because the medium is busy.<br /><br />                       The count represented by an instance of this<br />                       object does not include frames involved in<br />                       collisions.<br /><br />                       This counter does not increment when the<br />                       interface is operating in full-duplex mode.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3StatsDeferredTransmissions",
@@ -198,7 +197,7 @@
 		},
 		{
 			"id": "20",
-			"guid": "EF0D77C7-9904-49B6-A28A-C1CDFD843C50",
+			"guid": "454C80B6-B229-48F2-8221-2E1136342F6D",
 			"text": "The number of times that a collision is<br />                       detected on a particular interface later than<br />                       one slotTime into the transmission of a packet.<br /><br />                       A (late) collision included in a count<br />                       represented by an instance of this object is<br />                       also considered as a (generic) collision for<br />                       purposes of other collision-related<br />                       statistics.<br /><br />                       This counter does not increment when the<br />                       interface is operating in full-duplex mode.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3StatsLateCollisions",
@@ -210,7 +209,7 @@
 		},
 		{
 			"id": "21",
-			"guid": "ECB077F8-F67D-4DD3-9CAE-F4C8959CAAC3",
+			"guid": "14A247A5-44FB-4C04-A957-8CD974D1E45E",
 			"text": "A count of frames for which transmission on a<br />                       particular interface fails due to excessive<br />                       collisions.<br /><br />                       This counter does not increment when the<br />                       interface is operating in full-duplex mode.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3StatsExcessiveCollisions",
@@ -222,7 +221,7 @@
 		},
 		{
 			"id": "22",
-			"guid": "9714E9CF-FBDF-4296-9A51-1AB21F487198",
+			"guid": "484DE4F9-3312-465F-948C-0694E6C56C46",
 			"text": "A count of frames for which transmission on a<br />                       particular interface fails due to an internal<br />                       MAC sublayer transmit error. A frame is only<br />                       counted by an instance of this object if it is<br />                       not counted by the corresponding instance of<br />                       either the dot3StatsLateCollisions object, the<br />                       dot3StatsExcessiveCollisions object, or the<br />                       dot3StatsCarrierSenseErrors object.<br /><br />                       The precise meaning of the count represented by<br />                       an instance of this object is implementation-<br />                       specific.  In particular, an instance of this<br />                       object may represent a count of transmission<br />                       errors on a particular interface that are not<br />                       otherwise counted.<br /><br />                       For interfaces operating at 10 Gb/s, this<br />                       counter can roll over in less than 5 minutes if<br />                       it is incrementing at its maximum rate.  Since<br />                       that amount of time could be less than a<br />                       management station's poll cycle time, in order<br />                       to avoid a loss of information, a management<br />                       station is advised to poll the<br />                       dot3HCStatsInternalMacTransmitErrors object for<br />                       10 Gb/s or faster interfaces.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3StatsInternalMacTransmitErrors",
@@ -234,7 +233,7 @@
 		},
 		{
 			"id": "23",
-			"guid": "FAF91D79-1587-4EB7-BA60-C1CB2F074E16",
+			"guid": "FD251AAE-B7BC-4E18-AAD3-9CFF00A994D3",
 			"text": "The number of times that the carrier sense<br />                       condition was lost or never asserted when<br />                       attempting to transmit a frame on a particular<br />                       interface.<br /><br />                       The count represented by an instance of this<br />                       object is incremented at most once per<br />                       transmission attempt, even if the carrier sense<br />                       condition fluctuates during a transmission<br />                       attempt.<br /><br />                       This counter does not increment when the<br />                       interface is operating in full-duplex mode.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3StatsCarrierSenseErrors",
@@ -246,14 +245,14 @@
 		},
 		{
 			"id": "24",
-			"guid": "D1C3431C-BE06-4BCA-8AE7-5061EF588FC9",
+			"guid": "C1C0BAFB-C944-448F-A90E-75BDB107BA40",
 			"text": "<p>{ dot3StatsEntry 12 } is not assigned</p>",
 			"name": "comment",
 			"type": "comment"
 		},
 		{
 			"id": "25",
-			"guid": "EECD692F-48BE-4176-83FD-B9375A7AAC41",
+			"guid": "59A23F45-EDF8-4430-86D9-DC621D89A264",
 			"text": "A count of frames received on a particular<br />                       interface that exceed the maximum permitted<br />                       frame size.<br /><br />                       The count represented by an instance of this<br />                       object is incremented when the frameTooLong<br />                       status is returned by the MAC service to the<br />                       LLC (or other MAC user). Received frames for<br />                       which multiple error conditions pertain are,<br />                       according to the conventions of IEEE 802.3<br />                       Layer Management, counted exclusively according<br />                       to the error status presented to the LLC.<br /><br />                       For interfaces operating at 10 Gb/s, this<br />                       counter can roll over in less than 80 minutes if<br />                       it is incrementing at its maximum rate.  Since<br />                       that amount of time could be less than a<br />                       management station's poll cycle time, in order<br />                       to avoid a loss of information, a management<br />                       station is advised to poll the<br />                       dot3HCStatsFrameTooLongs object for 10 Gb/s<br />                       or faster interfaces.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3StatsFrameTooLongs",
@@ -265,21 +264,21 @@
 		},
 		{
 			"id": "26",
-			"guid": "24EE82D4-8D75-475C-9BB1-A6585DC6DE69",
+			"guid": "B99D7FE4-2FD7-4D9B-8BFB-8CBEF5A75BA7",
 			"text": "<p>{ dot3StatsEntry 14 } is not assigned</p>",
 			"name": "comment",
 			"type": "comment"
 		},
 		{
 			"id": "27",
-			"guid": "418C6548-4E1D-4FAD-9AB4-4B5ABBEE2CDD",
+			"guid": "E07FDECC-1FB7-43D7-84D5-9C6837C339BC",
 			"text": "<p>{ dot3StatsEntry 15 } is not assigned</p>",
 			"name": "comment",
 			"type": "comment"
 		},
 		{
 			"id": "28",
-			"guid": "5EBBD6CB-9403-4BFB-9F17-C76314CF389C",
+			"guid": "9577572A-44C5-4312-90F5-11EF891FEEDC",
 			"text": "A count of frames for which reception on a<br />                       particular interface fails due to an internal<br />                       MAC sublayer receive error. A frame is only<br />                       counted by an instance of this object if it is<br />                       not counted by the corresponding instance of<br />                       either the dot3StatsFrameTooLongs object, the<br />                       dot3StatsAlignmentErrors object, or the<br />                       dot3StatsFCSErrors object.<br /><br />                       The precise meaning of the count represented by<br />                       an instance of this object is implementation-<br />                       specific.  In particular, an instance of this<br />                       object may represent a count of receive errors<br />                       on a particular interface that are not<br />                       otherwise counted.<br /><br />                       For interfaces operating at 10 Gb/s, this<br />                       counter can roll over in less than 5 minutes if<br />                       it is incrementing at its maximum rate.  Since<br />                       that amount of time could be less than a<br />                       management station's poll cycle time, in order<br />                       to avoid a loss of information, a management<br />                       station is advised to poll the<br />                       dot3HCStatsInternalMacReceiveErrors object for<br />                       10 Gb/s or faster interfaces.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3StatsInternalMacReceiveErrors",
@@ -291,8 +290,8 @@
 		},
 		{
 			"id": "29",
-			"guid": "12D64214-A694-499D-AE40-817834E22790",
-			"text": "******** THIS OBJECT IS DEPRECATED ********<br /><br />                       This object contains an OBJECT IDENTIFIER<br />                       which identifies the chipset used to<br />                       realize the interface. Ethernet-like<br />                       interfaces are typically built out of<br />                       several different chips. The MIB implementor<br />                       is presented with a decision of which chip<br />                       to identify via this object. The implementor<br />                       should identify the chip which is usually<br />                       called the Medium Access Control chip.<br />                       If no such chip is easily identifiable,<br />                       the implementor should identify the chip<br />                       which actually gathers the transmit<br />                       and receive statistics and error<br />                       indications. This would allow a<br />                       manager station to correlate the<br />                       statistics and the chip generating<br />                       them, giving it the ability to take<br />                       into account any known anomalies<br />                       in the chip.<br /><br />                       This object has been deprecated.  Implementation<br />                       feedback indicates that it is of limited use for<br />                       debugging network problems in the field, and<br />                       the administrative overhead involved in<br />                       maintaining a registry of chipset OIDs is not<br />                       justified.",
+			"guid": "398D2A26-6B6B-4B77-B84C-4BC9C0EFCCA8",
+			"text": " THIS OBJECT IS DEPRECATED <br /><br />                       This object contains an OBJECT IDENTIFIER<br />                       which identifies the chipset used to<br />                       realize the interface. Ethernet-like<br />                       interfaces are typically built out of<br />                       several different chips. The MIB implementor<br />                       is presented with a decision of which chip<br />                       to identify via this object. The implementor<br />                       should identify the chip which is usually<br />                       called the Medium Access Control chip.<br />                       If no such chip is easily identifiable,<br />                       the implementor should identify the chip<br />                       which actually gathers the transmit<br />                       and receive statistics and error<br />                       indications. This would allow a<br />                       manager station to correlate the<br />                       statistics and the chip generating<br />                       them, giving it the ability to take<br />                       into account any known anomalies<br />                       in the chip.<br /><br />                       This object has been deprecated.  Implementation<br />                       feedback indicates that it is of limited use for<br />                       debugging network problems in the field, and<br />                       the administrative overhead involved in<br />                       maintaining a registry of chipset OIDs is not<br />                       justified.",
 			"access": "read-only",
 			"name": "dot3StatsEtherChipSet",
 			"oid": "{ dot3StatsEntry 17 }",
@@ -302,7 +301,7 @@
 		},
 		{
 			"id": "30",
-			"guid": "9EFEA8AA-694B-49B8-8C8F-7F2FE589D8FF",
+			"guid": "463BB297-F4D8-44CD-A331-4DFB4F207348",
 			"text": "For an interface operating at 100 Mb/s, the<br />                       number of times there was an invalid data symbol<br />                       when a valid carrier was present.<br /><br />                       For an interface operating in half-duplex mode<br />                       at 1000 Mb/s, the number of times the receiving<br />                       media is non-idle (a carrier event) for a period<br />                       of time equal to or greater than slotTime, and<br />                       during which there was at least one occurrence<br />                       of an event that causes the PHY to indicate<br />                       'Data reception error' or 'carrier extend error'<br />                       on the GMII.<br /><br />                       For an interface operating in full-duplex mode<br />                       at 1000 Mb/s, the number of times the receiving<br />                       media is non-idle (a carrier event) for a period<br />                       of time equal to or greater than minFrameSize,<br />                       and during which there was at least one<br />                       occurrence of an event that causes the PHY to<br />                       indicate 'Data reception error' on the GMII.<br /><br />                       For an interface operating at 10 Gb/s, the<br />                       number of times the receiving media is non-idle<br />                       (a carrier event) for a period of time equal to<br />                       or greater than minFrameSize, and during which<br />                       there was at least one occurrence of an event<br />                       that causes the PHY to indicate 'Receive Error'<br />                       on the XGMII.<br /><br />                       The count represented by an instance of this<br />                       object is incremented at most once per carrier<br />                       event, even if multiple symbol errors occur<br />                       during the carrier event.  This count does<br />                       not increment if a collision is present.<br /><br />                       This counter does not increment when the<br />                       interface is operating at 10 Mb/s.<br /><br />                       For interfaces operating at 10 Gb/s, this<br />                       counter can roll over in less than 5 minutes if<br />                       it is incrementing at its maximum rate.  Since<br />                       that amount of time could be less than a<br />                       management station's poll cycle time, in order<br />                       to avoid a loss of information, a management<br />                       station is advised to poll the<br />                       dot3HCStatsSymbolErrors object for 10 Gb/s<br />                       or faster interfaces.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3StatsSymbolErrors",
@@ -314,7 +313,7 @@
 		},
 		{
 			"id": "31",
-			"guid": "048052DE-7897-4936-92BF-925D2142B96C",
+			"guid": "8405FF55-81C0-4AB0-9640-16E547EB8257",
 			"text": "The current mode of operation of the MAC<br />                       entity.  'unknown' indicates that the current<br />                       duplex mode could not be determined.<br /><br />                       Management control of the duplex mode is<br />                       accomplished through the MAU MIB.  When<br />                       an interface does not support autonegotiation,<br />                       or when autonegotiation is not enabled, the<br />                       duplex mode is controlled using<br />                       ifMauDefaultType.  When autonegotiation is<br />                       supported and enabled, duplex mode is controlled<br />                       using ifMauAutoNegAdvertisedBits.  In either<br />                       case, the currently operating duplex mode is<br />                       reflected both in this object and in ifMauType.<br /><br />                       Note that this object provides redundant<br />                       information with ifMauType.  Normally, redundant<br />                       objects are discouraged.  However, in this<br />                       instance, it allows a management application to<br />                       determine the duplex status of an interface<br />                       without having to know every possible value of<br />                       ifMauType.  This was felt to be sufficiently<br />                       valuable to justify the redundancy.",
 			"access": "read-only",
 			"name": "dot3StatsDuplexStatus",
@@ -326,7 +325,7 @@
 		},
 		{
 			"id": "32",
-			"guid": "60FE5CB1-48FC-4857-81E6-FCFF4E77CB6B",
+			"guid": "EE59C33D-00AC-4796-8557-1533C6EF72D2",
 			"text": "The current Rate Control mode of operation of<br />                       the MAC sublayer of this interface.",
 			"access": "read-only",
 			"name": "dot3StatsRateControlStatus",
@@ -338,21 +337,21 @@
 		},
 		{
 			"id": "33",
-			"guid": "5E0D704B-477A-4445-85FE-1437C060FC10",
+			"guid": "883878F3-F56E-4610-965E-814C1ADF2534",
 			"text": "<p>the Ethernet-like Collision Statistics group</p>",
 			"name": "comment",
 			"type": "comment"
 		},
 		{
 			"id": "34",
-			"guid": "3723F558-8331-4A56-AB10-83B951F9B277",
+			"guid": "87E38866-4C2A-4979-81C3-76138095D8E7",
 			"text": "<p>Implementation of this group is optional; it is appropriate</p><p>for all systems which have the necessary metering</p>",
 			"name": "comment",
 			"type": "comment"
 		},
 		{
 			"id": "35",
-			"guid": "E151FF1A-4BBA-4DC5-9772-0D750FECF25E",
+			"guid": "05B9624B-69D2-4FBC-99A2-3AFCEC4A45B1",
 			"text": "A collection of collision histograms for a<br />                       particular set of interfaces.",
 			"access": "not-accessible",
 			"name": "dot3CollTable",
@@ -364,7 +363,7 @@
 		},
 		{
 			"id": "36",
-			"guid": "0C3D69DB-B611-430A-B634-A0C19E8B09CA",
+			"guid": "39684B86-F549-4FA3-BEAD-56BAB53845D4",
 			"text": "A cell in the histogram of per-frame<br />                       collisions for a particular interface.  An<br />                       instance of this object represents the<br />                       frequency of individual MAC frames for which<br />                       the transmission (successful or otherwise) on a<br />                       particular interface is accompanied by a<br />                       particular number of media collisions.",
 			"access": "not-accessible",
 			"index": "{ ifIndex, dot3CollCount }",
@@ -376,14 +375,21 @@
 		},
 		{
 			"id": "37",
-			"guid": "D1294603-B2B6-4D0F-A8A0-9CB2A3608B9F",
+			"guid": "3FF37263-8787-44A0-B62C-9B391A377580",
+			"name": "Dot3CollEntry",
+			"syntax": "<pre>{<br />               dot3CollCount        Integer32,<br />               dot3CollFrequencies  Counter32<br />           }</pre>",
+			"type": "row"
+		},
+		{
+			"id": "38",
+			"guid": "66C67E7C-FEAB-4708-8ACB-C9831A50979C",
 			"text": "<p>{ dot3CollEntry 1 } is no longer in use</p>",
 			"name": "comment",
 			"type": "comment"
 		},
 		{
-			"id": "38",
-			"guid": "5D44AF81-1F7B-4301-85BD-9126A52BBA50",
+			"id": "39",
+			"guid": "F1908D1A-41E6-4536-A356-04C252BF13AD",
 			"text": "The number of per-frame media collisions for<br />                       which a particular collision histogram cell<br />                       represents the frequency on a particular<br />                       interface.",
 			"access": "not-accessible",
 			"name": "dot3CollCount",
@@ -393,8 +399,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "39",
-			"guid": "C09899A6-C326-4B4F-A5E3-15E1F592E382",
+			"id": "40",
+			"guid": "2C5FF70A-931A-4457-96E6-BC09C99BBC8A",
 			"text": "A count of individual MAC frames for which the<br />                       transmission (successful or otherwise) on a<br />                       particular interface occurs after the<br />                       frame has experienced exactly the number<br />                       of collisions in the associated<br />                       dot3CollCount object.<br /><br />                       For example, a frame which is transmitted<br />                       on interface 77 after experiencing<br />                       exactly 4 collisions would be indicated<br />                       by incrementing only dot3CollFrequencies.77.4.<br />                       No other instance of dot3CollFrequencies would<br />                       be incremented in this example.<br /><br />                       This counter does not increment when the<br />                       interface is operating in full-duplex mode.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3CollFrequencies",
@@ -404,8 +410,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "40",
-			"guid": "E5521AC4-32B4-40B7-8CB5-7FAF0BB0CD98",
+			"id": "41",
+			"guid": "1E31A878-9558-4545-945D-B0F326EB1FD7",
 			"text": "A table of descriptive and status information<br />                       about the MAC Control sublayer on the<br />                       ethernet-like interfaces attached to a<br />                       particular system.  There will be one row in<br />                       this table for each ethernet-like interface in<br />                       the system which implements the MAC Control<br />                       sublayer.  If some, but not all, of the<br />                       ethernet-like interfaces in the system implement<br />                       the MAC Control sublayer, there will be fewer<br />                       rows in this table than in the dot3StatsTable.",
 			"access": "not-accessible",
 			"name": "dot3ControlTable",
@@ -415,8 +421,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "41",
-			"guid": "CC8FE36D-59D1-4C4F-95A2-1F69336B2D7F",
+			"id": "42",
+			"guid": "033FD190-BAB1-4F79-A8CD-EBC0DDB31FA0",
 			"text": "An entry in the table, containing information<br />                       about the MAC Control sublayer on a single<br />                       ethernet-like interface.",
 			"access": "not-accessible",
 			"index": "{ dot3StatsIndex }",
@@ -427,20 +433,27 @@
 			"type": "ot"
 		},
 		{
-			"id": "42",
-			"guid": "A25B0077-0E78-4F24-801F-114ACD6233E9",
+			"id": "43",
+			"guid": "7B583D9C-627E-480D-B57F-CF81C02D4224",
+			"name": "Dot3ControlEntry",
+			"syntax": "<pre>{<br />               dot3ControlFunctionsSupported       BITS,<br />               dot3ControlInUnknownOpcodes         Counter32,<br />               dot3HCControlInUnknownOpcodes       Counter64<br />           }</pre>",
+			"type": "row"
+		},
+		{
+			"id": "44",
+			"guid": "56A99DA0-DBBB-4BBA-8E34-693340A9DD92",
 			"text": "A list of the possible MAC Control functions<br />                       implemented for this interface.",
 			"access": "read-only",
 			"name": "dot3ControlFunctionsSupported",
 			"oid": "{ dot3ControlEntry 1 }",
 			"reference": "[IEEE 802.3 Std.], 30.3.3.2,<br />                       aMACControlFunctionsSupported.",
 			"status": "current",
-			"syntax": "<pre>BITS {<br />                           pause(0)   -- 802.3 flow control<br />                       }</pre>",
+			"syntax": "<pre>BITS {<br />                           pause(0)   <br />                       }</pre>",
 			"type": "ot"
 		},
 		{
-			"id": "43",
-			"guid": "EBF40A69-841D-4E08-9804-27964FE82E36",
+			"id": "45",
+			"guid": "3DC942E5-1905-4205-8C94-BFD89BF1C767",
 			"text": "A count of MAC Control frames received on this<br />                       interface that contain an opcode that is not<br />                       supported by this device.<br /><br />                       For interfaces operating at 10 Gb/s, this<br />                       counter can roll over in less than 5 minutes if<br />                       it is incrementing at its maximum rate.  Since<br />                       that amount of time could be less than a<br />                       management station's poll cycle time, in order<br />                       to avoid a loss of information, a management<br />                       station is advised to poll the<br />                       dot3HCControlInUnknownOpcodes object for 10 Gb/s<br />                       or faster interfaces.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3ControlInUnknownOpcodes",
@@ -451,8 +464,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "44",
-			"guid": "ACCC72B7-BCAB-4C0C-AE14-599FAFF00AB4",
+			"id": "46",
+			"guid": "F0FDDAE7-3C4C-4BD4-BCE3-FE946A8CF257",
 			"text": "A count of MAC Control frames received on this<br />                       interface that contain an opcode that is not<br />                       supported by this device.<br /><br />                       This counter is a 64 bit version of<br />                       dot3ControlInUnknownOpcodes.  It should be used<br />                       on interfaces operating at 10 Gb/s or faster.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3HCControlInUnknownOpcodes",
@@ -463,8 +476,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "45",
-			"guid": "E4C22E50-0D13-4321-A186-D20C3D3933CB",
+			"id": "47",
+			"guid": "12315AA9-44C3-46E3-99A5-75C9037AE12D",
 			"text": "A table of descriptive and status information<br />                       about the MAC Control PAUSE function on the<br />                       ethernet-like interfaces attached to a<br />                       particular system. There will be one row in<br />                       this table for each ethernet-like interface in<br />                       the system which supports the MAC Control PAUSE<br />                       function (i.e., the 'pause' bit in the<br />                       corresponding instance of<br />                       dot3ControlFunctionsSupported is set).  If some,<br />                       but not all, of the ethernet-like interfaces in<br />                       the system implement the MAC Control PAUSE<br />                       function (for example, if some interfaces only<br />                       support half-duplex), there will be fewer rows<br />                       in this table than in the dot3StatsTable.",
 			"access": "not-accessible",
 			"name": "dot3PauseTable",
@@ -474,8 +487,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "46",
-			"guid": "7A889072-9412-467C-A194-29EC8BD37106",
+			"id": "48",
+			"guid": "A0DC87D0-14ED-4E63-870B-F05155F6EB73",
 			"text": "An entry in the table, containing information<br />                       about the MAC Control PAUSE function on a single<br />                       ethernet-like interface.",
 			"access": "not-accessible",
 			"index": "{ dot3StatsIndex }",
@@ -486,8 +499,15 @@
 			"type": "ot"
 		},
 		{
-			"id": "47",
-			"guid": "5A17B22A-B9F0-43D0-96E7-20E0AE761A9C",
+			"id": "49",
+			"guid": "ED2F007C-CFC6-404B-833D-87DAA890587C",
+			"name": "Dot3PauseEntry",
+			"syntax": "<pre>{<br />               dot3PauseAdminMode                  INTEGER,<br />               dot3PauseOperMode                   INTEGER,<br />               dot3InPauseFrames                   Counter32,<br />               dot3OutPauseFrames                  Counter32,<br />               dot3HCInPauseFrames                 Counter64,<br />               dot3HCOutPauseFrames                Counter64<br />           }</pre>",
+			"type": "row"
+		},
+		{
+			"id": "50",
+			"guid": "97B35D09-5BBC-4841-AAFB-BC30C36D3AED",
 			"text": "This object is used to configure the default<br />                       administrative PAUSE mode for this interface.<br /><br />                       This object represents the<br />                       administratively-configured PAUSE mode for this<br />                       interface.  If auto-negotiation is not enabled<br />                       or is not implemented for the active MAU<br />                       attached to this interface, the value of this<br />                       object determines the operational PAUSE mode<br />                       of the interface whenever it is operating in<br />                       full-duplex mode.  In this case, a set to this<br />                       object will force the interface into the<br />                       specified mode.<br /><br />                       If auto-negotiation is implemented and enabled<br />                       for the MAU attached to this interface, the<br />                       PAUSE mode for this interface is determined by<br />                       auto-negotiation, and the value of this object<br />                       denotes the mode to which the interface will<br />                       automatically revert if/when auto-negotiation is<br />                       later disabled.  Note that when auto-negotiation<br />                       is running, administrative control of the PAUSE<br />                       mode may be accomplished using the<br />                       ifMauAutoNegCapAdvertisedBits object in the<br />                       MAU-MIB.<br /><br />                       Note that the value of this object is ignored<br />                       when the interface is not operating in<br />                       full-duplex mode.<br /><br />                       An attempt to set this object to<br />                       'enabledXmit(2)' or 'enabledRcv(3)' will fail<br />                       on interfaces that do not support operation<br />                       at greater than 100 Mb/s.",
 			"access": "read-write",
 			"name": "dot3PauseAdminMode",
@@ -497,8 +517,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "48",
-			"guid": "91B5DB30-15E8-4B69-8302-65328DB5817B",
+			"id": "51",
+			"guid": "EEFE9021-6EAB-4B5A-8CAE-C6E495BF053A",
 			"text": "This object reflects the PAUSE mode currently<br />                       in use on this interface, as determined by<br />                       either (1) the result of the auto-negotiation<br />                       function or (2) if auto-negotiation is not<br />                       enabled or is not implemented for the active MAU<br />                       attached to this interface, by the value of<br />                       dot3PauseAdminMode.  Interfaces operating at<br />                       100 Mb/s or less will never return<br />                       'enabledXmit(2)' or 'enabledRcv(3)'.  Interfaces<br />                       operating in half-duplex mode will always return<br />                       'disabled(1)'.  Interfaces on which<br />                       auto-negotiation is enabled but not yet<br />                       completed should return the value<br />                       'disabled(1)'.",
 			"access": "read-only",
 			"name": "dot3PauseOperMode",
@@ -508,8 +528,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "49",
-			"guid": "FBDF5F36-537A-45B0-B8FF-475846ED47CB",
+			"id": "52",
+			"guid": "1B2305A9-0B74-4A19-9B3B-8034C61773EC",
 			"text": "A count of MAC Control frames received on this<br />                       interface with an opcode indicating the PAUSE<br />                       operation.<br /><br />                       This counter does not increment when the<br />                       interface is operating in half-duplex mode.<br /><br />                       For interfaces operating at 10 Gb/s, this<br />                       counter can roll over in less than 5 minutes if<br />                       it is incrementing at its maximum rate.  Since<br />                       that amount of time could be less than a<br />                       management station's poll cycle time, in order<br />                       to avoid a loss of information, a management<br />                       station is advised to poll the<br />                       dot3HCInPauseFrames object for 10 Gb/s or<br />                       faster interfaces.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3InPauseFrames",
@@ -520,8 +540,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "50",
-			"guid": "5F9AE68A-31FE-4148-87DC-7AD5D2B21FC6",
+			"id": "53",
+			"guid": "E00A3C5A-BABF-41A2-83FB-7906B2CDDBF4",
 			"text": "A count of MAC Control frames transmitted on<br />                       this interface with an opcode indicating the<br />                       PAUSE operation.<br /><br />                       This counter does not increment when the<br />                       interface is operating in half-duplex mode.<br /><br />                       For interfaces operating at 10 Gb/s, this<br />                       counter can roll over in less than 5 minutes if<br />                       it is incrementing at its maximum rate.  Since<br />                       that amount of time could be less than a<br />                       management station's poll cycle time, in order<br />                       to avoid a loss of information, a management<br />                       station is advised to poll the<br />                       dot3HCOutPauseFrames object for 10 Gb/s or<br />                       faster interfaces.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3OutPauseFrames",
@@ -532,8 +552,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "51",
-			"guid": "7A9A977E-5898-43A9-9B74-F4DE0205B0D6",
+			"id": "54",
+			"guid": "361A77EA-E9F0-40F6-AB2D-67304A13670E",
 			"text": "A count of MAC Control frames received on this<br />                       interface with an opcode indicating the PAUSE<br />                       operation.<br /><br />                       This counter does not increment when the<br />                       interface is operating in half-duplex mode.<br /><br />                       This counter is a 64 bit version of<br />                       dot3InPauseFrames.  It should be used on<br />                       interfaces operating at 10 Gb/s or faster.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3HCInPauseFrames",
@@ -544,8 +564,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "52",
-			"guid": "D88526A0-685E-4537-AA4F-4C28C9F4367A",
+			"id": "55",
+			"guid": "6E0F574E-5B68-40ED-900D-2D3B356C750F",
 			"text": "A count of MAC Control frames transmitted on<br />                       this interface with an opcode indicating the<br />                       PAUSE operation.<br /><br />                       This counter does not increment when the<br />                       interface is operating in half-duplex mode.<br /><br />                       This counter is a 64 bit version of<br />                       dot3OutPauseFrames.  It should be used on<br />                       interfaces operating at 10 Gb/s or faster.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3HCOutPauseFrames",
@@ -556,8 +576,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "53",
-			"guid": "C7BB5855-9B8B-42C3-AB3B-012A198A9F97",
+			"id": "56",
+			"guid": "BA9481E7-78FD-4473-9946-83571D215723",
 			"text": "A table containing 64-bit versions of error<br />                       counters from the dot3StatsTable.  The 32-bit<br />                       versions of these counters may roll over quite<br />                       quickly on higher speed ethernet interfaces.<br />                       The counters that have 64-bit versions in this<br />                       table are the counters that apply to full-duplex<br />                       interfaces, since 10 Gb/s and faster<br />                       ethernet-like interfaces do not support<br />                       half-duplex, and very few 1000 Mb/s<br />                       ethernet-like interfaces support half-duplex.<br /><br />                       Entries in this table are recommended for<br />                       interfaces capable of operating at 1000 Mb/s or<br />                       faster, and are required for interfaces capable<br />                       of operating at 10 Gb/s or faster.  Lower speed<br />                       ethernet-like interfaces do not need entries in<br />                       this table, in which case there may be fewer<br />                       entries in this table than in the<br />                       dot3StatsTable. However, implementations<br />                       containing interfaces with a mix of speeds may<br />                       choose to implement entries in this table for<br />                       all ethernet-like interfaces.",
 			"access": "not-accessible",
 			"name": "dot3HCStatsTable",
@@ -567,8 +587,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "54",
-			"guid": "B31B056B-997B-4DF7-A7E1-691757E97F88",
+			"id": "57",
+			"guid": "7F912BFE-EE16-4782-9AC7-8CC6383CC7AA",
 			"text": "An entry containing 64-bit statistics for a<br />                       single ethernet-like interface.",
 			"access": "not-accessible",
 			"index": "{ dot3StatsIndex }",
@@ -579,8 +599,15 @@
 			"type": "ot"
 		},
 		{
-			"id": "55",
-			"guid": "47CE3B72-C0DC-49B2-A3DC-C5073DD9BAC7",
+			"id": "58",
+			"guid": "2F705C7E-921B-4055-B5F3-60817CFA1295",
+			"name": "Dot3HCStatsEntry",
+			"syntax": "<pre>{<br />               dot3HCStatsAlignmentErrors           Counter64,<br />               dot3HCStatsFCSErrors                 Counter64,<br />               dot3HCStatsInternalMacTransmitErrors Counter64,<br />               dot3HCStatsFrameTooLongs             Counter64,<br />               dot3HCStatsInternalMacReceiveErrors  Counter64,<br />               dot3HCStatsSymbolErrors              Counter64<br />           }</pre>",
+			"type": "row"
+		},
+		{
+			"id": "59",
+			"guid": "E26A676E-3BFF-4FAF-951E-4B1A09DCF03A",
 			"text": "A count of frames received on a particular<br />                       interface that are not an integral number of<br />                       octets in length and do not pass the FCS check.<br /><br />                       The count represented by an instance of this<br />                       object is incremented when the alignmentError<br />                       status is returned by the MAC service to the<br />                       LLC (or other MAC user). Received frames for<br />                       which multiple error conditions pertain are,<br />                       according to the conventions of IEEE 802.3<br />                       Layer Management, counted exclusively according<br />                       to the error status presented to the LLC.<br /><br />                       This counter does not increment for group<br />                       encoding schemes greater than 4 bits per group.<br /><br />                       This counter is a 64 bit version of<br />                       dot3StatsAlignmentErrors.  It should be used<br />                       on interfaces operating at 10 Gb/s or faster.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3HCStatsAlignmentErrors",
@@ -591,8 +618,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "56",
-			"guid": "5D022E9F-07A9-4DC3-B98A-01CA2D7DB19A",
+			"id": "60",
+			"guid": "099F310F-513B-47DB-8A9E-F055B4F71CAA",
 			"text": "A count of frames received on a particular<br />                       interface that are an integral number of octets<br />                       in length but do not pass the FCS check.  This<br />                       count does not include frames received with<br />                       frame-too-long or frame-too-short error.<br /><br />                       The count represented by an instance of this<br />                       object is incremented when the frameCheckError<br />                       status is returned by the MAC service to the<br />                       LLC (or other MAC user). Received frames for<br />                       which multiple error conditions pertain are,<br />                       according to the conventions of IEEE 802.3<br />                       Layer Management, counted exclusively according<br />                       to the error status presented to the LLC.<br /><br />                       Note:  Coding errors detected by the physical<br />                       layer for speeds above 10 Mb/s will cause the<br />                       frame to fail the FCS check.<br /><br />                       This counter is a 64 bit version of<br />                       dot3StatsFCSErrors.  It should be used on<br />                       interfaces operating at 10 Gb/s or faster.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3HCStatsFCSErrors",
@@ -603,8 +630,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "57",
-			"guid": "5F59E185-5746-4434-85AA-7F094708F453",
+			"id": "61",
+			"guid": "4811BB6E-143B-4508-B689-CDA4B5D81CEF",
 			"text": "A count of frames for which transmission on a<br />                       particular interface fails due to an internal<br />                       MAC sublayer transmit error. A frame is only<br />                       counted by an instance of this object if it is<br />                       not counted by the corresponding instance of<br />                       either the dot3StatsLateCollisions object, the<br />                       dot3StatsExcessiveCollisions object, or the<br />                       dot3StatsCarrierSenseErrors object.<br /><br />                       The precise meaning of the count represented by<br />                       an instance of this object is implementation-<br />                       specific.  In particular, an instance of this<br />                       object may represent a count of transmission<br />                       errors on a particular interface that are not<br />                       otherwise counted.<br /><br />                       This counter is a 64 bit version of<br />                       dot3StatsInternalMacTransmitErrors.  It should<br />                       be used on interfaces operating at 10 Gb/s or<br />                       faster.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3HCStatsInternalMacTransmitErrors",
@@ -615,8 +642,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "58",
-			"guid": "7F8620D1-70BD-4B25-98B0-B8B98013C1CA",
+			"id": "62",
+			"guid": "2446DB0B-9092-4C5B-8862-925CCB0E9F32",
 			"text": "A count of frames received on a particular<br />                       interface that exceed the maximum permitted<br />                       frame size.<br /><br />                       The count represented by an instance of this<br />                       object is incremented when the frameTooLong<br />                       status is returned by the MAC service to the<br />                       LLC (or other MAC user). Received frames for<br />                       which multiple error conditions pertain are,<br />                       according to the conventions of IEEE 802.3<br />                       Layer Management, counted exclusively according<br />                       to the error status presented to the LLC.<br /><br />                       This counter is a 64 bit version of<br />                       dot3StatsFrameTooLongs.  It should be used on<br />                       interfaces operating at 10 Gb/s or faster.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3HCStatsFrameTooLongs",
@@ -627,8 +654,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "59",
-			"guid": "B7CD40B1-4C41-41A7-A66E-A240FE059475",
+			"id": "63",
+			"guid": "451283DC-6FE6-40FE-8FC5-94B64BE3D181",
 			"text": "A count of frames for which reception on a<br />                       particular interface fails due to an internal<br />                       MAC sublayer receive error. A frame is only<br />                       counted by an instance of this object if it is<br />                       not counted by the corresponding instance of<br />                       either the dot3StatsFrameTooLongs object, the<br />                       dot3StatsAlignmentErrors object, or the<br />                       dot3StatsFCSErrors object.<br /><br />                       The precise meaning of the count represented by<br />                       an instance of this object is implementation-<br />                       specific.  In particular, an instance of this<br />                       object may represent a count of receive errors<br />                       on a particular interface that are not<br />                       otherwise counted.<br /><br />                       This counter is a 64 bit version of<br />                       dot3StatsInternalMacReceiveErrors.  It should be<br />                       used on interfaces operating at 10 Gb/s or<br />                       faster.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3HCStatsInternalMacReceiveErrors",
@@ -639,8 +666,8 @@
 			"type": "ot"
 		},
 		{
-			"id": "60",
-			"guid": "97BAA773-59C6-492D-A987-2255B59F3DF7",
+			"id": "64",
+			"guid": "534DD819-6325-46BF-8ECE-01C6CDB755F9",
 			"text": "For an interface operating at 100 Mb/s, the<br />                       number of times there was an invalid data symbol<br />                       when a valid carrier was present.<br /><br />                       For an interface operating in half-duplex mode<br />                       at 1000 Mb/s, the number of times the receiving<br />                       media is non-idle (a carrier event) for a period<br />                       of time equal to or greater than slotTime, and<br />                       during which there was at least one occurrence<br />                       of an event that causes the PHY to indicate<br />                       'Data reception error' or 'carrier extend error'<br />                       on the GMII.<br /><br />                       For an interface operating in full-duplex mode<br />                       at 1000 Mb/s, the number of times the receiving<br />                       media is non-idle (a carrier event) for a period<br />                       of time equal to or greater than minFrameSize,<br />                       and during which there was at least one<br />                       occurrence of an event that causes the PHY to<br />                       indicate 'Data reception error' on the GMII.<br /><br />                       For an interface operating at 10 Gb/s, the<br />                       number of times the receiving media is non-idle<br />                       (a carrier event) for a period of time equal to<br />                       or greater than minFrameSize, and during which<br />                       there was at least one occurrence of an event<br />                       that causes the PHY to indicate 'Receive Error'<br />                       on the XGMII.<br /><br />                       The count represented by an instance of this<br />                       object is incremented at most once per carrier<br />                       event, even if multiple symbol errors occur<br />                       during the carrier event.  This count does<br />                       not increment if a collision is present.<br /><br />                       This counter is a 64 bit version of<br />                       dot3StatsSymbolErrors.  It should be used on<br />                       interfaces operating at 10 Gb/s or faster.<br /><br />                       Discontinuities in the value of this counter can<br />                       occur at re-initialization of the management<br />                       system, and at other times as indicated by the<br />                       value of ifCounterDiscontinuityTime.",
 			"access": "read-only",
 			"name": "dot3HCStatsSymbolErrors",
@@ -651,38 +678,38 @@
 			"type": "ot"
 		},
 		{
-			"id": "61",
-			"guid": "C462B745-478B-42CD-8E97-B4BDA42C5B38",
+			"id": "65",
+			"guid": "21AAA035-7E08-4597-B975-7136DD5BC211",
 			"text": "<p> 802.3 Tests</p>",
 			"name": "comment",
 			"type": "comment"
 		},
 		{
-			"id": "62",
-			"guid": "CA563BE6-257C-4C38-B99D-0974D877FA40",
+			"id": "66",
+			"guid": "612B04F4-5CEF-4444-892D-ED5A57E5D804",
 			"name": "dot3Tests",
 			"oid": "{ dot3 6 }",
 			"status": "current",
 			"type": "oi"
 		},
 		{
-			"id": "63",
-			"guid": "4BF6AD2A-29DF-444F-A9A5-A9E510749BDE",
+			"id": "67",
+			"guid": "D433691D-CEA4-47C0-829E-332DA907491A",
 			"name": "dot3Errors",
 			"oid": "{ dot3 7 }",
 			"status": "current",
 			"type": "oi"
 		},
 		{
-			"id": "64",
-			"guid": "15090D9E-6B40-4E82-AF85-A77985D9F4D0",
+			"id": "68",
+			"guid": "CD5E0100-70A7-4B0E-9547-CA13A789F004",
 			"text": "<p> TDR Test</p>",
 			"name": "comment",
 			"type": "comment"
 		},
 		{
-			"id": "65",
-			"guid": "609AD56F-1EA0-4DA0-8B92-E4180C1E7A7A",
+			"id": "69",
+			"guid": "DE992114-5BCF-4855-90FD-CD3CC14D3911",
 			"text": "******** THIS IDENTITY IS DEPRECATED *******<br /><br />                       The Time-Domain Reflectometry (TDR) test is<br />                       specific to ethernet-like interfaces of type<br />                       10Base5 and 10Base2.  The TDR value may be<br />                       useful in determining the approximate distance<br />                       to a cable fault.  It is advisable to repeat<br />                       this test to check for a consistent resulting<br />                       TDR value, to verify that there is a fault.<br /><br />                       A TDR test returns as its result the time<br />                       interval, measured in 10 MHz ticks or 100 nsec<br />                       units, between the start of TDR test<br />                       transmission and the subsequent detection of a<br />                       collision or deassertion of carrier.  On<br />                       successful completion of a TDR test, the result<br />                       is stored as the value of an appropriate<br />                       instance of an appropriate vendor specific MIB<br />                       object, and the OBJECT IDENTIFIER of that<br />                       instance is stored in the appropriate instance<br />                       of the appropriate test result code object<br />                       (thereby indicating where the result has been<br />                       stored).<br /><br />                       This object identity has been deprecated, since<br />                       the ifTestTable in the IF-MIB was deprecated,<br />                       and there is no longer a standard mechanism for<br />                       initiating an interface test.  This left no<br />                       standard way of using this object identity.",
 			"name": "dot3TestTdr",
 			"oid": "{ dot3Tests 1 }",
@@ -690,15 +717,15 @@
 			"type": "oi"
 		},
 		{
-			"id": "66",
-			"guid": "9E03C915-F4CF-4B41-9A3C-56B64E535BDC",
+			"id": "70",
+			"guid": "BAA6B4C9-EB93-4220-BA42-3417155F87EF",
 			"text": "<p>Loopback Test</p>",
 			"name": "comment",
 			"type": "comment"
 		},
 		{
-			"id": "67",
-			"guid": "3A4C6C74-72B2-4A53-9AF1-AF0FAAE57218",
+			"id": "71",
+			"guid": "FC3414D7-37AD-498D-831A-8C52E00A5C40",
 			"text": "******** THIS IDENTITY IS DEPRECATED *******<br /><br />                       This test configures the MAC chip and executes<br />                       an internal loopback test of memory, data paths,<br />                       and the MAC chip logic.  This loopback test can<br />                       only be executed if the interface is offline.<br />                       Once the test has completed, the MAC chip should<br />                       be reinitialized for network operation, but it<br />                       should remain offline.<br /><br />                       If an error occurs during a test, the<br />                       appropriate test result object will be set<br />                       to indicate a failure.  The two OBJECT<br />                       IDENTIFIER values dot3ErrorInitError and<br />                       dot3ErrorLoopbackError may be used to provided<br />                       more information as values for an appropriate<br />                       test result code object.<br /><br />                       This object identity has been deprecated, since<br />                       the ifTestTable in the IF-MIB was deprecated,<br />                       and there is no longer a standard mechanism for<br />                       initiating an interface test.  This left no<br />                       standard way of using this object identity.",
 			"name": "dot3TestLoopBack",
 			"oid": "{ dot3Tests 2 }",
@@ -706,8 +733,8 @@
 			"type": "oi"
 		},
 		{
-			"id": "68",
-			"guid": "A263C2EB-6171-4EA1-B374-133E4AED7E53",
+			"id": "72",
+			"guid": "C2005D40-1729-4E5B-92CB-CC9CBAE19FB5",
 			"text": "******** THIS IDENTITY IS DEPRECATED *******<br /><br />                       Couldn't initialize MAC chip for test.<br /><br />                       This object identity has been deprecated, since<br />                       the ifTestTable in the IF-MIB was deprecated,<br />                       and there is no longer a standard mechanism for<br />                       initiating an interface test.  This left no<br />                       standard way of using this object identity.",
 			"name": "dot3ErrorInitError",
 			"oid": "{ dot3Errors 1 }",
@@ -715,8 +742,8 @@
 			"type": "oi"
 		},
 		{
-			"id": "69",
-			"guid": "FEFC6CAA-0D9F-4AFC-85A4-D61AC8C5DF67",
+			"id": "73",
+			"guid": "9E143729-9E28-4C67-BD8E-F00B0D81506D",
 			"text": "******** THIS IDENTITY IS DEPRECATED *******<br /><br />                       Expected data not received (or not received<br />                       correctly) in loopback test.<br /><br />                       This object identity has been deprecated, since<br />                       the ifTestTable in the IF-MIB was deprecated,<br />                       and there is no longer a standard mechanism for<br />                       initiating an interface test.  This left no<br />                       standard way of using this object identity.",
 			"name": "dot3ErrorLoopbackError",
 			"oid": "{ dot3Errors 2 }",
@@ -724,47 +751,39 @@
 			"type": "oi"
 		},
 		{
-			"id": "70",
-			"guid": "15FE3851-BD47-4B8C-A6A0-7BA2D07984EA",
+			"id": "74",
+			"guid": "53EC11E3-5923-4185-8B24-BDC9B5279622",
 			"text": "<p>{ dot3 8 }, the dot3ChipSets tree, is defined in [RFC2666]</p>",
 			"name": "comment",
 			"type": "comment"
 		},
 		{
-			"id": "71",
-			"guid": "D11A02F7-51E9-4F7F-BD2A-21F7E652F9AE",
-			"heading": "conformance information",
+			"id": "75",
+			"guid": "59745DB9-5DEF-4D1A-9874-AE74A82F3DEE",
 			"name": "etherConformance",
 			"oid": "{ etherMIB 2 }",
 			"status": "current",
 			"type": "oi"
 		},
 		{
-			"id": "72",
-			"guid": "C0A8FFAD-093C-428D-8EA4-C66BA6D168E1",
+			"id": "76",
+			"guid": "73D84ACA-E9C0-48B8-9F3E-5EEDB8D78C87",
 			"name": "etherGroups",
 			"oid": "{ etherConformance 1 }",
 			"status": "current",
 			"type": "oi"
 		},
 		{
-			"id": "73",
-			"guid": "5A8097FD-4BE5-4075-ABBC-5AEE32948469",
+			"id": "77",
+			"guid": "8A74C2A2-F9A1-4BC3-AB23-232859CA520D",
 			"name": "etherCompliances",
 			"oid": "{ etherConformance 2 }",
 			"status": "current",
 			"type": "oi"
 		},
 		{
-			"id": "74",
-			"guid": "AFD06C1B-1050-4501-9E27-FD6EFE6DD862",
-			"text": "<p>compliance statements</p>",
-			"name": "comment",
-			"type": "comment"
-		},
-		{
-			"id": "75",
-			"guid": "EF3B5AC8-B8BF-4E29-9F72-1BEC08489508",
+			"id": "78",
+			"guid": "7B676563-EAAE-4705-A50F-D380C3D83F77",
 			"text": "This group is optional. It is appropriate<br />                           for all systems which have the necessary<br />                           metering. Implementation in such systems is<br />                           highly recommended.",
 			"name": "etherCompliance",
 			"oid": "{ etherCompliances 1 }",
@@ -773,8 +792,8 @@
 			"type": "mc"
 		},
 		{
-			"id": "76",
-			"guid": "74D09A74-2748-4B6F-B0B0-7742D0E3091D",
+			"id": "79",
+			"guid": "DB337610-1FED-4A77-B148-7FEF3AD5E5E2",
 			"text": "This group is optional. It is appropriate<br />                           for all systems which have the necessary<br />                           metering. Implementation in such systems is<br />                           highly recommended.",
 			"name": "ether100MbsCompliance",
 			"oid": "{ etherCompliances 2 }",
@@ -783,8 +802,8 @@
 			"type": "mc"
 		},
 		{
-			"id": "77",
-			"guid": "75E2DB6C-3366-4EC6-8750-CDFACC450C19",
+			"id": "80",
+			"guid": "9685716A-D318-4FDB-A7EC-80F8DE845B9F",
 			"text": "This group is optional. It is appropriate<br />                           for all ethernet-like network interfaces<br />                           which are capable of operating in<br />                           half-duplex mode and have the necessary<br />                           metering. Implementation in systems with<br />                           such interfaces is highly recommended.",
 			"name": "dot3Compliance2",
 			"oid": "{ etherCompliances 4 }",
@@ -793,15 +812,15 @@
 			"type": "mc"
 		},
 		{
-			"id": "78",
-			"guid": "B8963644-E100-4A95-A46A-58D3422950F5",
+			"id": "81",
+			"guid": "D122DD31-B348-4EB4-A545-89EB19DF1377",
 			"text": "<p>units of conformance</p>",
 			"name": "comment",
 			"type": "comment"
 		},
 		{
-			"id": "79",
-			"guid": "E88988DE-C00C-4F15-9A5D-1468123AAA11",
+			"id": "82",
+			"guid": "E7B0DA30-3F74-478B-9B1D-1C35B66A691F",
 			"text": "********* THIS GROUP IS DEPRECATED **********<br /><br />                       A collection of objects providing information<br />                       applicable to all ethernet-like network<br />                       interfaces.<br /><br />                       This object group has been deprecated and<br />                       replaced by etherStatsBaseGroup and<br />                       etherStatsLowSpeedGroup.",
 			"name": "etherStatsGroup",
 			"oid": "{ etherGroups 1 }",
@@ -810,8 +829,8 @@
 			"type": "og"
 		},
 		{
-			"id": "80",
-			"guid": "E5555F6B-F462-41D2-95DF-2A69C6FAB7CE",
+			"id": "83",
+			"guid": "3BD6E502-0343-42BA-846E-1F0CFABF034E",
 			"text": "A collection of objects providing a histogram<br />                       of packets successfully transmitted after<br />                       experiencing exactly N collisions.",
 			"name": "etherCollisionTableGroup",
 			"oid": "{ etherGroups 2 }",
@@ -820,8 +839,8 @@
 			"type": "og"
 		},
 		{
-			"id": "81",
-			"guid": "8170FFE3-FD06-445E-890E-5C82631FC758",
+			"id": "84",
+			"guid": "53EB8EF3-3062-4F49-B559-8ADB38E420C0",
 			"text": "********* THIS GROUP IS DEPRECATED **********<br /><br />                       A collection of objects providing information<br />                       applicable to 100 Mb/sec ethernet-like network<br />                       interfaces.<br /><br />                       This object group has been deprecated and<br />                       replaced by etherStatsBaseGroup and<br />                       etherStatsHighSpeedGroup.",
 			"name": "etherStats100MbsGroup",
 			"oid": "{ etherGroups 3 }",
@@ -830,8 +849,8 @@
 			"type": "og"
 		},
 		{
-			"id": "82",
-			"guid": "576DD322-14C3-4769-BF52-3506564F3ABA",
+			"id": "85",
+			"guid": "8345B636-50E0-4A54-BF8A-B4D176111FAB",
 			"text": "********* THIS GROUP IS DEPRECATED **********<br /><br />                       A collection of objects providing information<br />                       applicable to all ethernet-like network<br />                       interfaces.<br /><br />                       This object group has been deprecated and<br />                       replaced by etherStatsBaseGroup2 and<br />                       etherStatsHalfDuplexGroup, to separate<br />                       objects which must be implemented by all<br />                       ethernet-like network interfaces from<br />                       objects that need only be implemented on<br />                       ethernet-like network interfaces that are<br />                       capable of half-duplex operation.",
 			"name": "etherStatsBaseGroup",
 			"oid": "{ etherGroups 4 }",
@@ -840,8 +859,8 @@
 			"type": "og"
 		},
 		{
-			"id": "83",
-			"guid": "85A31BA4-54D6-45BF-B447-5DEC41373025",
+			"id": "86",
+			"guid": "7F30B937-6205-4D87-8344-D35C72A7D447",
 			"text": "A collection of objects providing information<br />                       applicable to ethernet-like network interfaces<br />                       capable of operating at 10 Mb/s or slower in<br />                       half-duplex mode.",
 			"name": "etherStatsLowSpeedGroup",
 			"oid": "{ etherGroups 5 }",
@@ -850,8 +869,8 @@
 			"type": "og"
 		},
 		{
-			"id": "84",
-			"guid": "77FEE669-2709-44CF-AFE5-92C0BDDACBE3",
+			"id": "87",
+			"guid": "2B1E021C-B49A-4471-95BE-A07F5F2C008B",
 			"text": "A collection of objects providing information<br />                       applicable to ethernet-like network interfaces<br />                       capable of operating at 100 Mb/s or faster.",
 			"name": "etherStatsHighSpeedGroup",
 			"oid": "{ etherGroups 6 }",
@@ -860,8 +879,8 @@
 			"type": "og"
 		},
 		{
-			"id": "85",
-			"guid": "991D00B3-23F6-412C-A6F2-355A45004610",
+			"id": "88",
+			"guid": "DE58CAD2-526B-46F7-A6DE-674863B28EC5",
 			"text": "A collection of objects providing information<br />                       about the duplex mode of an ethernet-like<br />                       network interface.",
 			"name": "etherDuplexGroup",
 			"oid": "{ etherGroups 7 }",
@@ -870,8 +889,8 @@
 			"type": "og"
 		},
 		{
-			"id": "86",
-			"guid": "B93F7679-9E85-42E4-AB63-A8E8D9F69E9B",
+			"id": "89",
+			"guid": "FECB387B-B703-4FB4-AF0E-7D8176BCABC6",
 			"text": "A collection of objects providing information<br />                       about the MAC Control sublayer on ethernet-like<br />                       network interfaces.",
 			"name": "etherControlGroup",
 			"oid": "{ etherGroups 8 }",
@@ -880,8 +899,8 @@
 			"type": "og"
 		},
 		{
-			"id": "87",
-			"guid": "EEE5B848-E3E9-4144-BEFF-ECDD3709D670",
+			"id": "90",
+			"guid": "19B96F96-4E3C-480A-A7AA-CE07C2419C93",
 			"text": "A collection of objects providing information<br />                       about and control of the MAC Control PAUSE<br />                       function on ethernet-like network interfaces.",
 			"name": "etherControlPauseGroup",
 			"oid": "{ etherGroups 9 }",
@@ -890,8 +909,8 @@
 			"type": "og"
 		},
 		{
-			"id": "88",
-			"guid": "5B7D329D-98A0-4231-A323-06A58FD64929",
+			"id": "91",
+			"guid": "1AE15323-369C-4BE0-B0E5-B0E0038CEAA7",
 			"text": "A collection of objects providing information<br />                       applicable to all ethernet-like network<br />                       interfaces.",
 			"name": "etherStatsBaseGroup2",
 			"oid": "{ etherGroups 10 }",
@@ -900,8 +919,8 @@
 			"type": "og"
 		},
 		{
-			"id": "89",
-			"guid": "DB8C477D-0634-4B92-A5A6-47971664B5C0",
+			"id": "92",
+			"guid": "FAF6AFF0-EB7E-4124-956E-DC4214D9EE12",
 			"text": "A collection of objects providing information<br />                       applicable only to half-duplex ethernet-like<br />                       network interfaces.",
 			"name": "etherStatsHalfDuplexGroup",
 			"oid": "{ etherGroups 11 }",
@@ -910,8 +929,8 @@
 			"type": "og"
 		},
 		{
-			"id": "90",
-			"guid": "5F6D4631-4292-4A92-ABAC-C615BD7D2D4C",
+			"id": "93",
+			"guid": "58D7A04C-15E2-403E-B601-C65C261E2C1B",
 			"text": "A collection of objects providing high-capacity<br />                       statistics applicable to higher-speed<br />                       ethernet-like network interfaces.",
 			"name": "etherHCStatsGroup",
 			"oid": "{ etherGroups 12 }",
@@ -920,8 +939,8 @@
 			"type": "og"
 		},
 		{
-			"id": "91",
-			"guid": "3F9EC2FE-7BDA-4DFF-B3E6-5D069C767B6D",
+			"id": "94",
+			"guid": "12031817-462E-4BFE-8A0F-97F89E0D9E48",
 			"text": "A collection of objects providing high-capacity<br />                       statistics for the MAC Control sublayer on<br />                       higher-speed ethernet-like network interfaces.",
 			"name": "etherHCControlGroup",
 			"oid": "{ etherGroups 13 }",
@@ -930,8 +949,8 @@
 			"type": "og"
 		},
 		{
-			"id": "92",
-			"guid": "AE3FFB6C-8CEC-4843-A7AB-FB4D7E2C15FB",
+			"id": "95",
+			"guid": "1068786A-B3C8-43E2-9926-B7B762B04D0D",
 			"text": "A collection of objects providing high-capacity<br />                       statistics for the MAC Control PAUSE function on<br />                       higher-speed ethernet-like network interfaces.",
 			"name": "etherHCControlPauseGroup",
 			"oid": "{ etherGroups 14 }",
@@ -940,8 +959,8 @@
 			"type": "og"
 		},
 		{
-			"id": "93",
-			"guid": "16EC9244-3ED1-4164-8F7D-FBD6D7D35376",
+			"id": "96",
+			"guid": "36E8A414-5856-4C91-AAE2-F581756ECBA1",
 			"text": "A collection of objects providing information<br />                       about the Rate Control function on ethernet-like<br />                       interfaces.",
 			"name": "etherRateControlGroup",
 			"oid": "{ etherGroups 15 }",
@@ -950,8 +969,8 @@
 			"type": "og"
 		},
 		{
-			"id": "94",
-			"guid": "BD04F35B-A305-418D-9AAF-BA61B3377B3C",
+			"id": "97",
+			"guid": "4A97B040-5479-47E5-83D9-7EDB62DF5597",
 			"name": "end",
 			"type": "end"
 		}

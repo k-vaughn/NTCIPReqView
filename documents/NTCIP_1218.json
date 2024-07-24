@@ -9,7 +9,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2024-07-22T14:37:26.164Z",
+  "lastChangedOn": "2024-07-22T22:43:27.038Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -10851,6 +10851,17 @@
                   "guid": "7584b4af-96d1-418f-967c-af6b1a39a469",
                   "text": "<p>A transportation manager needs to manage the RSU to authenticate the management station that the RSU is exchanging data (transmitting to or receiving from). This feature allows a transportation manager to configure whether the management station that is monitoring or configuring the RSU is “trusted” and, therefore, unlikely to provide data that can adversely affect the cooperative-ITS system.</p>",
                   "type": "text",
+                  "discussion": [
+                    {
+                      "comment": "<p>The traceability from this UN does not align with the text. i.e., several of the requirements do not relate to the management station and those that do are likely covered by ISO 15784-2 or ISO 26048-1. &lt;TODO: Find references in the ISO standards&gt;</p>",
+                      "date": "2024-07-22T22:34:13.891Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -10862,6 +10873,21 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T16:50:27.066Z"
+                    },
+                    {
+                      "addedComment": "<p>The traceability from this UN does not align with the text. i.e., several of the requirements do not relate to the management station and those that do are likely covered by ISO 15784-2 or ISO 26048-1. &lt;TODO: Find references in the ISO standards&gt;</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-22T22:34:13.891Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-07-22T22:34:13.891Z"
                     }
                   ]
                 }
@@ -17061,6 +17087,17 @@
                       "guid": "5e095136-b09e-492e-8ad4-263d0583d491",
                       "heading": "Manage Notification Requirements",
                       "type": "text",
+                      "discussion": [
+                        {
+                          "comment": "<p>Add a requirement to use the independent notification feature defined in ISO 26048-1</p>",
+                          "date": "2024-07-22T22:17:21.112Z",
+                          "author": {
+                            "name": "Kenneth Vaughn",
+                            "email": "kvaughn@trevilon.com",
+                            "company": "Trevilon"
+                          }
+                        }
+                      ],
                       "history": [
                         {
                           "attributesChanged": {
@@ -17072,6 +17109,21 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T17:46:21.649Z"
+                        },
+                        {
+                          "addedComment": "<p>Add a requirement to use the independent notification feature defined in ISO 26048-1</p>",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-07-22T22:17:21.112Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-07-22T22:17:21.112Z"
                         }
                       ],
                       "children": [
@@ -17099,6 +17151,18 @@
                           "guid": "d020684e-6344-4203-8c43-cc8b562e81a3",
                           "heading": "Store Notification Destination Address",
                           "type": "d_req",
+                          "discussion": [
+                            {
+                              "comment": "<p>Delete, this is not how notifications are handled in SNMPv3. See SnmpTarget and ISO26048-1.</p>",
+                              "date": "2024-07-22T22:18:10.712Z",
+                              "author": {
+                                "name": "Kenneth Vaughn",
+                                "email": "kvaughn@trevilon.com",
+                                "company": "Trevilon"
+                              },
+                              "updatedOn": "2024-07-22T22:18:59.365Z"
+                            }
+                          ],
                           "history": [
                             {
                               "attributesChanged": {
@@ -17110,6 +17174,37 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T17:51:01.085Z"
+                            },
+                            {
+                              "addedComment": "<p>Delete, this is not how notifications are handled in SNMPv3 or ISO 26048-1. Use ISO 26048-1.</p>",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-07-22T22:18:10.712Z",
+                              "commentAuthor": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "commentDate": "2024-07-22T22:18:10.712Z"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-07-22T22:18:59.365Z",
+                              "commentAuthor": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "commentDate": "2024-07-22T22:18:10.712Z",
+                              "commentIndex": 0,
+                              "editLastComment": "<p>Delete, this is not how notifications are handled in SNMPv3 or ISO 26048-1. Use ISO 26048-1.</p>"
                             }
                           ],
                           "children": [
@@ -17139,6 +17234,17 @@
                           "guid": "aac121e3-d7f6-4f3f-a99b-582879e180aa",
                           "heading": "Store Notification Destination Port",
                           "type": "d_req",
+                          "discussion": [
+                            {
+                              "comment": "<p>Delete, this is not how notifications are handled in SNMPv3. See SnmpTarget and ISO26048-1.</p>",
+                              "date": "2024-07-22T22:19:05.445Z",
+                              "author": {
+                                "name": "Kenneth Vaughn",
+                                "email": "kvaughn@trevilon.com",
+                                "company": "Trevilon"
+                              }
+                            }
+                          ],
                           "history": [
                             {
                               "attributesChanged": {
@@ -17150,6 +17256,21 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T17:51:01.085Z"
+                            },
+                            {
+                              "addedComment": "<p>Delete, this is not how notifications are handled in SNMPv3. See SnmpTarget and ISO26048-1.</p>",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-07-22T22:19:05.445Z",
+                              "commentAuthor": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "commentDate": "2024-07-22T22:19:05.445Z"
                             }
                           ],
                           "children": [
@@ -17179,6 +17300,26 @@
                           "guid": "3707ff44-9d0b-4735-b0c3-3089f13b6b44",
                           "heading": "Notification Message Requirements",
                           "type": "text",
+                          "discussion": [
+                            {
+                              "comment": "<p>Update all requirements to refer to the configuration of Independent Notifications per ISO 26048-1 rather than \"destination network address and port number\"</p>",
+                              "date": "2024-07-22T22:20:25.334Z",
+                              "author": {
+                                "name": "Kenneth Vaughn",
+                                "email": "kvaughn@trevilon.com",
+                                "company": "Trevilon"
+                              }
+                            },
+                            {
+                              "comment": "<p>Rather than defining unique, independent notifications, it may be better to define counters and similar parameters that can be configured to use the standard notification scheme or be logged, etc.</p>",
+                              "date": "2024-07-22T22:26:07.353Z",
+                              "author": {
+                                "name": "Kenneth Vaughn",
+                                "email": "kvaughn@trevilon.com",
+                                "company": "Trevilon"
+                              }
+                            }
+                          ],
                           "history": [
                             {
                               "attributesChanged": {
@@ -17190,6 +17331,36 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T17:46:21.649Z"
+                            },
+                            {
+                              "addedComment": "<p>Update all requirements to refer to the configuration of Independent Notifications per ISO 26048-1 rather than \"destination network address and port number\"</p>",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-07-22T22:20:25.334Z",
+                              "commentAuthor": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "commentDate": "2024-07-22T22:20:25.334Z"
+                            },
+                            {
+                              "addedComment": "<p>Rather than defining unique, independent notifications, it may be better to define counters and similar parameters that can be configured to use the standard notification scheme or be logged, etc.</p>",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-07-22T22:26:07.353Z",
+                              "commentAuthor": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "commentDate": "2024-07-22T22:26:07.353Z"
                             }
                           ],
                           "children": [
@@ -17316,6 +17487,17 @@
                                   "guid": "2fb8769b-9214-486d-bcb5-9a68ad734fd2",
                                   "text": "<p>The RSU shall transmit a notification to the destination network address and port number upon detection of an authorization error on any data received by the RSU via the network interface or the V2X interface. An authorization error occurs when the identity of a process or user requesting access to the RSU, its services or its data cannot be authenticated, or if a user, process or application requests a service or data for which it is not authorized.</p>",
                                   "type": "text",
+                                  "discussion": [
+                                    {
+                                      "comment": "<p>The \"network interface\" is ambiguous. It may be better to say \"any electronic interface (e.g., local port, central port, V2X, etc.)\"</p><p>We need to investigate if this overlaps with requirements in ISO 15784-2 or ISO 26048-1 and if so, create an exception and/or reference.</p>",
+                                      "date": "2024-07-22T22:23:51.828Z",
+                                      "author": {
+                                        "name": "Kenneth Vaughn",
+                                        "email": "kvaughn@trevilon.com",
+                                        "company": "Trevilon"
+                                      }
+                                    }
+                                  ],
                                   "history": [
                                     {
                                       "attributesChanged": {
@@ -17327,6 +17509,21 @@
                                         "name": "Kenneth Vaughn"
                                       },
                                       "changedOn": "2024-07-18T17:46:21.649Z"
+                                    },
+                                    {
+                                      "addedComment": "<p>The \"network interface\" is ambiguous. It may be better to say \"any electronic interface (e.g., local port, central port, V2X, etc.)\"</p><p>We need to investigate if this overlaps with requirements in ISO 15784-2 or ISO 26048-1 and if so, create an exception and/or reference.</p>",
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "changedOn": "2024-07-22T22:23:51.828Z",
+                                      "commentAuthor": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "commentDate": "2024-07-22T22:23:51.828Z"
                                     }
                                   ]
                                 }
@@ -17356,6 +17553,17 @@
                                   "guid": "48426b7f-98a9-4305-a4dc-bf68e73d0e99",
                                   "text": "<p>The RSU shall transmit notifications to the destination network address and port number upon detection of a signature error in the WAVE messages received by the RSU from the V2X interface.</p>",
                                   "type": "text",
+                                  "discussion": [
+                                    {
+                                      "comment": "<p>Signature or verification error; inconsistent between title and text. Are we really limiting it to an \"error\" in the signature, or would this also report an expired signature (that is correctly encoded)?</p>",
+                                      "date": "2024-07-22T22:29:12.024Z",
+                                      "author": {
+                                        "name": "Kenneth Vaughn",
+                                        "email": "kvaughn@trevilon.com",
+                                        "company": "Trevilon"
+                                      }
+                                    }
+                                  ],
                                   "history": [
                                     {
                                       "attributesChanged": {
@@ -17367,6 +17575,21 @@
                                         "name": "Kenneth Vaughn"
                                       },
                                       "changedOn": "2024-07-18T17:51:21.785Z"
+                                    },
+                                    {
+                                      "addedComment": "<p>Signature or verification error; inconsistent between title and text. Are we really limiting it to an \"error\" in the signature, or would this also report an expired signature (that is correctly encoded)?</p>",
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "changedOn": "2024-07-22T22:29:12.024Z",
+                                      "commentAuthor": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "commentDate": "2024-07-22T22:29:12.024Z"
                                     }
                                   ]
                                 }
@@ -17396,6 +17619,17 @@
                                   "guid": "4f0e08f4-4ad0-4934-8f2e-a5c8ce9b711b",
                                   "text": "<p>The RSU shall transmit a notification to the destination network address and port number upon detection of an attempt of remote network access to the RSU by an application, service, or user from a network address, port number or physical interface not permitted by the RSU's Network Access Control List or Firewall.</p>",
                                   "type": "text",
+                                  "discussion": [
+                                    {
+                                      "comment": "<p>Should revise to read \"attempt of access to the RSU\", (i.e., \"remote network\" does not really apply to \"physical interface\")</p>",
+                                      "date": "2024-07-22T22:31:19.552Z",
+                                      "author": {
+                                        "name": "Kenneth Vaughn",
+                                        "email": "kvaughn@trevilon.com",
+                                        "company": "Trevilon"
+                                      }
+                                    }
+                                  ],
                                   "history": [
                                     {
                                       "attributesChanged": {
@@ -17407,6 +17641,21 @@
                                         "name": "Kenneth Vaughn"
                                       },
                                       "changedOn": "2024-07-18T17:51:21.785Z"
+                                    },
+                                    {
+                                      "addedComment": "<p>Should revise to read \"attempt of access to the RSU\", (i.e., \"remote network\" does not really apply to \"physical interface\")</p>",
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "changedOn": "2024-07-22T22:31:19.552Z",
+                                      "commentAuthor": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "commentDate": "2024-07-22T22:31:19.552Z"
                                     }
                                   ]
                                 }
@@ -17658,6 +17907,17 @@
                                   "guid": "20c8f28e-bfa2-4c9f-b8f6-7a4d1ac9d95f",
                                   "text": "<p>The RSU shall transmit a notification to the destination network address and port number if the Channel Busy Ratio on a wireless channel is greater than a user-configurable threshold. The threshold is not defined by NTCIP 1218 v01.</p>",
                                   "type": "text",
+                                  "discussion": [
+                                    {
+                                      "comment": "<p>How is this meaningful if I do not know the ratio being used?</p>",
+                                      "date": "2024-07-22T22:35:48.687Z",
+                                      "author": {
+                                        "name": "Kenneth Vaughn",
+                                        "email": "kvaughn@trevilon.com",
+                                        "company": "Trevilon"
+                                      }
+                                    }
+                                  ],
                                   "history": [
                                     {
                                       "attributesChanged": {
@@ -17669,6 +17929,21 @@
                                         "name": "Kenneth Vaughn"
                                       },
                                       "changedOn": "2024-07-18T17:51:21.785Z"
+                                    },
+                                    {
+                                      "addedComment": "<p>How is this meaningful if I do not know the ratio being used?</p>",
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "changedOn": "2024-07-22T22:35:48.687Z",
+                                      "commentAuthor": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "commentDate": "2024-07-22T22:35:48.687Z"
                                     }
                                   ]
                                 }
@@ -17698,6 +17973,17 @@
                                   "guid": "9e7b943f-f5ed-479f-9b55-740d87dbcf51",
                                   "text": "<p>The RSU shall transmit a notification to the destination network address and port number if the watchdog process on the RSU detects a potential fault condition. The watchdog process is a health monitor process on the RSU that monitors all software processes and sets a flag when an application or process appears to be inoperative. The watchdog process may also automatically restart an application or process, or reboot the RSU in the event the watchdog determines a restart or reboot is necessary to restore \"normal\" operations. An RSU may have more than one watchdog process, one for the main program, and perhaps for each process or service deemed \"critical\" for the RSU, as determined by the RSU vendor and/or the agency operating the RSU.</p>",
                                   "type": "text",
+                                  "discussion": [
+                                    {
+                                      "comment": "<p>Duplicates functionality of ISO 26048-1 (i.e., watchdog failure counter) coupled with notification feature</p>",
+                                      "date": "2024-07-22T22:39:11.795Z",
+                                      "author": {
+                                        "name": "Kenneth Vaughn",
+                                        "email": "kvaughn@trevilon.com",
+                                        "company": "Trevilon"
+                                      }
+                                    }
+                                  ],
                                   "history": [
                                     {
                                       "attributesChanged": {
@@ -17709,6 +17995,21 @@
                                         "name": "Kenneth Vaughn"
                                       },
                                       "changedOn": "2024-07-18T17:51:21.785Z"
+                                    },
+                                    {
+                                      "addedComment": "<p>Duplicates functionality of ISO 26048-1 (i.e., watchdog failure counter) coupled with notification feature</p>",
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "changedOn": "2024-07-22T22:39:11.795Z",
+                                      "commentAuthor": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "commentDate": "2024-07-22T22:39:11.795Z"
                                     }
                                   ]
                                 }
@@ -17818,6 +18119,17 @@
                                   "guid": "ab16412c-2708-4bcf-b018-0cbbc13bdb95",
                                   "text": "<p>The RSU shall transmit a notification to the destination network address and port number if the RSU detects an environmental error. An environmental error is an environmental condition that may damage the RSU or affect its proper operation. Examples of environmental errors are a high internal temperature which may damage the RSU.</p>",
                                   "type": "text",
+                                  "discussion": [
+                                    {
+                                      "comment": "<p>Potentially redundant with SRSA (e.g., processor temp, etc)</p>",
+                                      "date": "2024-07-22T22:40:34.525Z",
+                                      "author": {
+                                        "name": "Kenneth Vaughn",
+                                        "email": "kvaughn@trevilon.com",
+                                        "company": "Trevilon"
+                                      }
+                                    }
+                                  ],
                                   "history": [
                                     {
                                       "attributesChanged": {
@@ -17829,6 +18141,21 @@
                                         "name": "Kenneth Vaughn"
                                       },
                                       "changedOn": "2024-07-18T17:52:48.728Z"
+                                    },
+                                    {
+                                      "addedComment": "<p>Potentially redundant with SRSA (e.g., processor temp, etc)</p>",
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "changedOn": "2024-07-22T22:40:34.525Z",
+                                      "commentAuthor": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "commentDate": "2024-07-22T22:40:34.525Z"
                                     }
                                   ]
                                 }
@@ -17858,6 +18185,17 @@
                                   "guid": "b63880e5-ca06-4891-b702-22280775863d",
                                   "text": "<p>The RSU shall transmit a notification to the destination network address and port number if the RSU detects an authentication error from a bad community string (mismatch).</p>",
                                   "type": "text",
+                                  "discussion": [
+                                    {
+                                      "comment": "<p>community strings do not exist in SNMPv3 (and this is redundant with a similar SNMPv1 trap anyway)</p>",
+                                      "date": "2024-07-22T22:41:23.933Z",
+                                      "author": {
+                                        "name": "Kenneth Vaughn",
+                                        "email": "kvaughn@trevilon.com",
+                                        "company": "Trevilon"
+                                      }
+                                    }
+                                  ],
                                   "history": [
                                     {
                                       "attributesChanged": {
@@ -17869,6 +18207,21 @@
                                         "name": "Kenneth Vaughn"
                                       },
                                       "changedOn": "2024-07-18T17:52:48.728Z"
+                                    },
+                                    {
+                                      "addedComment": "<p>community strings do not exist in SNMPv3 (and this is redundant with a similar SNMPv1 trap anyway)</p>",
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "changedOn": "2024-07-22T22:41:23.933Z",
+                                      "commentAuthor": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "commentDate": "2024-07-22T22:41:23.933Z"
                                     }
                                   ]
                                 }
@@ -17900,6 +18253,17 @@
                               "guid": "4c264a0a-1d97-44b1-859d-8039a6dc15db",
                               "text": "<p>Upon request from a management station, the RSU shall store the notification type for each notification message generated by the RSU. The valid values are trap and inform, as defined by snmpNotifyType in RFC 3413. Inform type indicates that the RSU is expecting an acknowledgement that the notification message has been received at the destination address and port.</p>",
                               "type": "text",
+                              "discussion": [
+                                {
+                                  "comment": "<p>Redundant with ISO 26048-1 notification feature</p>",
+                                  "date": "2024-07-22T22:42:35.854Z",
+                                  "author": {
+                                    "name": "Kenneth Vaughn",
+                                    "email": "kvaughn@trevilon.com",
+                                    "company": "Trevilon"
+                                  }
+                                }
+                              ],
                               "history": [
                                 {
                                   "attributesChanged": {
@@ -17911,6 +18275,21 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:52:48.728Z"
+                                },
+                                {
+                                  "addedComment": "<p>Redundant with ISO 26048-1 notification feature</p>",
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-07-22T22:42:35.854Z",
+                                  "commentAuthor": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "commentDate": "2024-07-22T22:42:35.854Z"
                                 }
                               ]
                             }
@@ -17940,6 +18319,17 @@
                               "guid": "dfd80784-c5b2-45b0-9397-24be8c05c9c8",
                               "text": "<p>Upon request from a management station, the RSU shall store the minimum period of time, in seconds, required to elapse before re-transmitting a notification message that has not been acknowledged. This requirement is only applicable if the notification message is an inform type, as defined by snmpNotifyType in RFC 3413.</p>",
                               "type": "text",
+                              "discussion": [
+                                {
+                                  "comment": "<p>Redundant</p>",
+                                  "date": "2024-07-22T22:43:09.618Z",
+                                  "author": {
+                                    "name": "Kenneth Vaughn",
+                                    "email": "kvaughn@trevilon.com",
+                                    "company": "Trevilon"
+                                  }
+                                }
+                              ],
                               "history": [
                                 {
                                   "attributesChanged": {
@@ -17951,6 +18341,21 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:52:48.728Z"
+                                },
+                                {
+                                  "addedComment": "<p>Redundant</p>",
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-07-22T22:43:09.618Z",
+                                  "commentAuthor": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "commentDate": "2024-07-22T22:43:09.618Z"
                                 }
                               ]
                             }
@@ -17980,6 +18385,17 @@
                               "guid": "8c6863ae-256e-4b70-b153-1d06004168f6",
                               "text": "<p>Upon request from a management station, the RSU shall store the maximum number of attempts the RSU is to retransmit a notification message to the destination network address and port number. This requirement is only applicable if the notification message is an inform type, as defined by snmpNotifyType in RFC 3413.</p>",
                               "type": "text",
+                              "discussion": [
+                                {
+                                  "comment": "<p>Redundant</p>",
+                                  "date": "2024-07-22T22:43:27.038Z",
+                                  "author": {
+                                    "name": "Kenneth Vaughn",
+                                    "email": "kvaughn@trevilon.com",
+                                    "company": "Trevilon"
+                                  }
+                                }
+                              ],
                               "history": [
                                 {
                                   "attributesChanged": {
@@ -17991,6 +18407,21 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:52:48.728Z"
+                                },
+                                {
+                                  "addedComment": "<p>Redundant</p>",
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-07-22T22:43:27.038Z",
+                                  "commentAuthor": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "commentDate": "2024-07-22T22:43:27.038Z"
                                 }
                               ]
                             }
@@ -19157,6 +19588,18 @@
                                   "guid": "4b7fc913-e5b2-4973-a0b5-90d058b18b0f",
                                   "text": "<p>Upon request by a management station, the RSU shall store a received message to be forwarded immediately to the V2X interface for transmission. The received message shall be authenticated and from a trusted source.</p>",
                                   "type": "text",
+                                  "discussion": [
+                                    {
+                                      "comment": "<p>The title suggests that this is message forwarding (i.e., a network layer issue), while the text states that the message will also be stored (i.e., potentially implying a higher-layer issue). What is the intent of storing the message? Is this true network layer forwarding (i.e., the entire APDU is forwarded and the storage is strictly for auditing purposes) or is there additional functionality being implied (e.g., \"store and repeatedly broadcast\" so that it is \"forwarded\" to all vehicles for some duration). If the latter, then where is the meta-data describing how often it is transmitted and duration (i.e., the APDU potentially contains other data)?</p>",
+                                      "date": "2024-07-22T21:34:19.252Z",
+                                      "author": {
+                                        "name": "Kenneth Vaughn",
+                                        "email": "kvaughn@trevilon.com",
+                                        "company": "Trevilon"
+                                      },
+                                      "updatedOn": "2024-07-22T21:36:06.829Z"
+                                    }
+                                  ],
                                   "history": [
                                     {
                                       "attributesChanged": {
@@ -19168,6 +19611,37 @@
                                         "name": "Kenneth Vaughn"
                                       },
                                       "changedOn": "2024-07-18T17:59:29.419Z"
+                                    },
+                                    {
+                                      "addedComment": "<p>The title suggests that this is message forwarding (i.e., a network layer issue), while the text states that the message will also be stored (i.e., potentially implying a higher-layer issue). What is the intent of storing the message? Is this true network layer forwarding (where storing the message is strictly for auditing purposes) or is there additional functionality being implied (e.g., \"store and repeatedly broadcast\" so that it is \"forwarded\" to all vehicles for some duration). If the latter, then where is the meta-data describing how often it is transmitted and duration?</p>",
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "changedOn": "2024-07-22T21:34:19.252Z",
+                                      "commentAuthor": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "commentDate": "2024-07-22T21:34:19.252Z"
+                                    },
+                                    {
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "changedOn": "2024-07-22T21:36:06.829Z",
+                                      "commentAuthor": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "commentDate": "2024-07-22T21:34:19.252Z",
+                                      "commentIndex": 0,
+                                      "editLastComment": "<p>The title suggests that this is message forwarding (i.e., a network layer issue), while the text states that the message will also be stored (i.e., potentially implying a higher-layer issue). What is the intent of storing the message? Is this true network layer forwarding (where storing the message is strictly for auditing purposes) or is there additional functionality being implied (e.g., \"store and repeatedly broadcast\" so that it is \"forwarded\" to all vehicles for some duration). If the latter, then where is the meta-data describing how often it is transmitted and duration?</p>"
                                     }
                                   ]
                                 }
@@ -26310,6 +26784,17 @@
                           "guid": "f70536de-5ab2-45bd-8711-f6e7e5b4a028",
                           "heading": "Report Valid Geographic Region - Enrollment Certificates",
                           "type": "d_req",
+                          "discussion": [
+                            {
+                              "comment": "<p>To distinguish from 3.5.4.1.1.2, add \" - Country Code\" to the end of the heading</p>",
+                              "date": "2024-07-22T22:14:04.178Z",
+                              "author": {
+                                "name": "Kenneth Vaughn",
+                                "email": "kvaughn@trevilon.com",
+                                "company": "Trevilon"
+                              }
+                            }
+                          ],
                           "history": [
                             {
                               "attributesChanged": {
@@ -26321,6 +26806,21 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T18:30:22.311Z"
+                            },
+                            {
+                              "addedComment": "<p>To distinguish from 3.5.4.1.1.2, add \" - Country Code\" to the end of the heading</p>",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-07-22T22:14:04.178Z",
+                              "commentAuthor": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "commentDate": "2024-07-22T22:14:04.178Z"
                             }
                           ],
                           "children": [
@@ -26329,6 +26829,18 @@
                               "guid": "212a5fde-e7b1-4205-81ca-3abae4bcbdcd",
                               "text": "<p>Upon request from a management station, the RSU shall report the valid geographic region within which the RSU is allowed to procure enrollment certificates. Enrollment certificates may define a geographic region within which the certificate is valid. This requirement allows the RSU to report the valid geographic region by country code. The country code is defined by the United Nations M49 standard. The country code for the United States is 840. Note: the M49 standard is the same as the ISO 3166 except some countries are omitted from the M49 standard.</p>",
                               "type": "text",
+                              "discussion": [
+                                {
+                                  "comment": "<p>\"enrollment certificates\" is too vague. Replace with \"IEEE 1609.2 enrollment certificates\" or similar.</p><p>Also, the first sentence should be updated to be consistent with the remainder of the requirement. Modify the ending of the first sentence by adding \"by country code\".</p>",
+                                  "date": "2024-07-22T22:09:06.736Z",
+                                  "author": {
+                                    "name": "Kenneth Vaughn",
+                                    "email": "kvaughn@trevilon.com",
+                                    "company": "Trevilon"
+                                  },
+                                  "updatedOn": "2024-07-22T22:12:02.426Z"
+                                }
+                              ],
                               "history": [
                                 {
                                   "attributesChanged": {
@@ -26340,6 +26852,37 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T18:30:50.496Z"
+                                },
+                                {
+                                  "addedComment": "<p>\"enrollment certificates\" is too vague. Replace with \"IEEE 1609.2 enrollment certificates\" or similar.</p>",
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-07-22T22:09:06.736Z",
+                                  "commentAuthor": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "commentDate": "2024-07-22T22:09:06.736Z"
+                                },
+                                {
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-07-22T22:12:02.426Z",
+                                  "commentAuthor": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "commentDate": "2024-07-22T22:09:06.736Z",
+                                  "commentIndex": 0,
+                                  "editLastComment": "<p>\"enrollment certificates\" is too vague. Replace with \"IEEE 1609.2 enrollment certificates\" or similar.</p>"
                                 }
                               ]
                             },
@@ -26388,6 +26931,17 @@
                               "guid": "22a8a5bc-7589-4413-bfa0-6e8ff9436460",
                               "text": "<p>Upon request from a management station, the RSU shall report the valid geographic region within which the RSU is allowed to procure enrollment certificates by country code. Enrollment certificates may define a geographic region within which the certificate is valid. This requirement allows the RSU to report the valid geographic region, which is within the radius of the RSU's location in meters, so the RSU may request, receive, and store an enrollment certificate with the appropriate geographic region.</p>",
                               "type": "text",
+                              "discussion": [
+                                {
+                                  "comment": "<p>\"enrollment certificates\" is too vague. Replace with \"IEEE 1609.2 enrollment certificates\" or similar.</p><p>The first sentence needs to be updated to be consistent with the remainder of the requirement. Replace the ending of the first sentence with \"by defining a circular region\".</p>",
+                                  "date": "2024-07-22T22:13:04.815Z",
+                                  "author": {
+                                    "name": "Kenneth Vaughn",
+                                    "email": "kvaughn@trevilon.com",
+                                    "company": "Trevilon"
+                                  }
+                                }
+                              ],
                               "history": [
                                 {
                                   "attributesChanged": {
@@ -26399,6 +26953,21 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T18:30:50.496Z"
+                                },
+                                {
+                                  "addedComment": "<p>\"enrollment certificates\" is too vague. Replace with \"IEEE 1609.2 enrollment certificates\" or similar.</p><p>The first sentence needs to be updated to be consistent with the remainder of the requirement. Replace the ending of the first sentence with \"by defining a circular region\".</p>",
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-07-22T22:13:04.815Z",
+                                  "commentAuthor": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "commentDate": "2024-07-22T22:13:04.815Z"
                                 }
                               ]
                             }
@@ -27009,6 +27578,17 @@
                           "guid": "b48be740-bebd-4361-be4f-50fe5db8d6b1",
                           "text": "<p>The RSU shall support the use of SHA-1 hash function (SHA) used in HMAC-SHA-96.</p>",
                           "type": "text",
+                          "discussion": [
+                            {
+                              "comment": "<p>This should be considered obsolete and we might consider removing the requirement from the standard. Better yet, this and the next requirement should be rewritten to require the use of SHA-2 or the latest replacement of SHA-2 per CISA.&nbsp;</p>",
+                              "date": "2024-07-22T22:07:02.509Z",
+                              "author": {
+                                "name": "Kenneth Vaughn",
+                                "email": "kvaughn@trevilon.com",
+                                "company": "Trevilon"
+                              }
+                            }
+                          ],
                           "history": [
                             {
                               "attributesChanged": {
@@ -27020,6 +27600,21 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T18:31:34.424Z"
+                            },
+                            {
+                              "addedComment": "<p>This should be considered obsolete and we might consider removing the requirement from the standard. Better yet, this and the next requirement should be rewritten to require the use of SHA-2 or the latest replacement of SHA-2 per CISA.&nbsp;</p>",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-07-22T22:07:02.509Z",
+                              "commentAuthor": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "commentDate": "2024-07-22T22:07:02.509Z"
                             }
                           ]
                         },
@@ -27028,6 +27623,17 @@
                           "guid": "cca8d429-3312-4582-ae37-893ced5e85c9",
                           "text": "<p>Note: NIST has disallowed the use of SHA-1 for digital signature generation (as provided in NIST FIPS 186-4) except where specifically allowed by NIST protocol-specific guidance.</p>",
                           "type": "n",
+                          "discussion": [
+                            {
+                              "comment": "<p>SHA-1 does not generate a digital signature as this text potentially implies, it would be better to reword as \"use of SHA-1 in the process of digital signature...\"</p>",
+                              "date": "2024-07-22T22:03:52.106Z",
+                              "author": {
+                                "name": "Kenneth Vaughn",
+                                "email": "kvaughn@trevilon.com",
+                                "company": "Trevilon"
+                              }
+                            }
+                          ],
                           "history": [
                             {
                               "attributesChanged": {
@@ -27039,6 +27645,43 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T18:31:39.802Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<p>Note: NIST has disallowed the use of SHA-1 for digital signature generation (as provided in NIST FIPS 186-4) except where specifically allowed by NIST protocol-specific guidance.</p>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-07-22T22:01:46.929Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<p>Note: NIST has disallowed the use of SHA-1 in the process of digital signature generation (as provided in NIST FIPS 186-4) except where specifically allowed by NIST protocol-specific guidance.</p>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-07-22T22:02:54.077Z"
+                            },
+                            {
+                              "addedComment": "<p>SHA-1 does not generate a digital signature as this text potentially implies, it would be better to reword as \"use of SHA-1 in the process of digital signature...\"</p>",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-07-22T22:03:52.106Z",
+                              "commentAuthor": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "commentDate": "2024-07-22T22:03:52.106Z"
                             }
                           ]
                         },
@@ -27068,6 +27711,17 @@
                       "guid": "1e910c69-04cf-4731-9cbc-8b56b095dabf",
                       "heading": "Support SHA-2 [Deprecated]",
                       "type": "s_req",
+                      "discussion": [
+                        {
+                          "comment": "<p>Unclear:</p><ol><li>On what interface/protocol this applies, and&nbsp;</li><li>Why this was deprecated as it is still considered current</li></ol>",
+                          "date": "2024-07-22T21:59:42.573Z",
+                          "author": {
+                            "name": "Kenneth Vaughn",
+                            "email": "kvaughn@trevilon.com",
+                            "company": "Trevilon"
+                          }
+                        }
+                      ],
                       "history": [
                         {
                           "attributesChanged": {
@@ -27079,6 +27733,21 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T18:31:44.861Z"
+                        },
+                        {
+                          "addedComment": "<p>Unclear:</p><ol><li>On what interface/protocol this applies, and&nbsp;</li><li>Why this was deprecated as it is still considered current</li></ol>",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-07-22T21:59:42.573Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-07-22T21:59:42.573Z"
                         }
                       ],
                       "children": [
@@ -29462,6 +30131,17 @@
                   "guid": "ec0629c0-df30-4c19-bc25-f667fbcfad83",
                   "text": "<p>The RSU shall support a minimum of two (2) user accounts, one account with full read and write access and the second account with full read access.</p>",
                   "type": "text",
+                  "discussion": [
+                    {
+                      "comment": "<p>On what interface and protocol? I suspect that this was derived from prior NTCIP requirements and is related to SNMPv1 and which is now overcome by the SNMPv3 design, which allows for unlimited (i.e., variable memory). We could add a requirement for the device to support the configuration of up to X accounts, each with their own custom configuration (within the constraints of the device) but this could be specified throughout with little benefit</p>",
+                      "date": "2024-07-22T21:56:51.903Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -29473,6 +30153,21 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T18:41:34.382Z"
+                    },
+                    {
+                      "addedComment": "<p>On what interface and protocol? I suspect that this was derived from prior NTCIP requirements and is related to SNMPv1 and which is now overcome by the SNMPv3 design, which allows for unlimited (i.e., variable memory). We could add a requirement for the device to support the configuration of up to X accounts, each with their own custom configuration (within the constraints of the device) but this could be specified throughout with little benefit</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-22T21:56:51.903Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-07-22T21:56:51.903Z"
                     }
                   ]
                 }

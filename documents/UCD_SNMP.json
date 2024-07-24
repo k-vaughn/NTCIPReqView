@@ -1,0 +1,432 @@
+{
+  "id": "UCD_SNMP",
+  "guid": "ba2b82b0-70fe-49a1-8446-65131af3c93f",
+  "name": "UCD_SNMP",
+  "lastId": 0,
+  "createdOn": "2024-07-24T19:04:09.758Z",
+  "createdBy": {
+    "name": "Kenneth Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "lastChangedOn": "2024-07-24T19:04:09.758Z",
+  "lastChangedBy": {
+    "name": "Kenneth Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "data": [],
+  "attributes": {
+    "access": {
+      "name": "Access",
+      "type": "enum",
+      "values": [
+        {
+          "key": "read-only"
+        },
+        {
+          "key": "read-write"
+        },
+        {
+          "key": "read-create"
+        },
+        {
+          "key": "not-accessible"
+        },
+        {
+          "key": "accessible-for-notify"
+        }
+      ]
+    },
+    "action": {
+      "name": "Action",
+      "type": "enum",
+      "values": [
+        {
+          "key": "added"
+        },
+        {
+          "key": "remainCurrent"
+        },
+        {
+          "key": "deprecated"
+        },
+        {
+          "key": "made obsolete"
+        },
+        {
+          "key": "previsouly deprecated"
+        }
+      ]
+    },
+    "additional": {
+      "name": "Additional",
+      "type": "xhtml"
+    },
+    "augments": {
+      "name": "Augments",
+      "type": "string"
+    },
+    "comment": {
+      "name": "Comment",
+      "type": "xhtml"
+    },
+    "conformance": {
+      "name": "Conformance",
+      "type": "string"
+    },
+    "contact": {
+      "name": "Contact",
+      "type": "xhtml"
+    },
+    "defval": {
+      "name": "Default Value",
+      "type": "string"
+    },
+    "dotted-oid": {
+      "name": "Dotted OID",
+      "type": "string"
+    },
+    "format": {
+      "name": "Format",
+      "type": "xhtml"
+    },
+    "index": {
+      "name": "Index",
+      "type": "string"
+    },
+    "info": {
+      "name": "Informative",
+      "type": "xhtml"
+    },
+    "name": {
+      "name": "Name",
+      "type": "string"
+    },
+    "oid": {
+      "name": "OID",
+      "type": "string"
+    },
+    "org": {
+      "name": "Organization",
+      "type": "string"
+    },
+    "part": {
+      "name": "Part",
+      "type": "string"
+    },
+    "reference": {
+      "name": "Reference",
+      "type": "xhtml"
+    },
+    "status": {
+      "name": "Status",
+      "type": "enum",
+      "values": [
+        {
+          "key": "current"
+        },
+        {
+          "key": "deprecated"
+        },
+        {
+          "key": "obsolete"
+        },
+        {
+          "key": "silent"
+        }
+      ]
+    },
+    "syntax": {
+      "name": "Syntax",
+      "type": "xhtml"
+    },
+    "table-type": {
+      "name": "Table Type",
+      "type": "enum",
+      "values": [
+        {
+          "key": "static"
+        },
+        {
+          "key": "managed"
+        },
+        {
+          "key": "dynamic"
+        }
+      ]
+    },
+    "type": {
+      "name": "Type",
+      "type": "enum",
+      "values": [
+        {
+          "key": "ot",
+          "label": "Object Type"
+        },
+        {
+          "key": "xb",
+          "label": "---- Body ----"
+        },
+        {
+          "key": "text",
+          "label": "Text"
+        },
+        {
+          "default": false,
+          "key": "c",
+          "label": "Centered Text"
+        },
+        {
+          "default": false,
+          "key": "it",
+          "label": "Indented Text"
+        },
+        {
+          "default": false,
+          "key": "f",
+          "label": "Figure"
+        },
+        {
+          "default": false,
+          "key": "table",
+          "label": "Table"
+        },
+        {
+          "default": false,
+          "key": "l1",
+          "label": "List Level 1"
+        },
+        {
+          "default": false,
+          "key": "l2",
+          "label": "List Level 2"
+        },
+        {
+          "default": false,
+          "key": "n",
+          "label": "Note"
+        },
+        {
+          "default": false,
+          "key": "e",
+          "label": "Example"
+        },
+        {
+          "key": "xi",
+          "label": "---- Items ----"
+        },
+        {
+          "key": "m",
+          "label": "Managed Item"
+        },
+        {
+          "default": false,
+          "key": "r",
+          "label": "Root Item"
+        },
+        {
+          "default": false,
+          "key": "un",
+          "label": "User Need"
+        },
+        {
+          "default": false,
+          "key": "unp",
+          "label": "User Need Parent"
+        },
+        {
+          "default": false,
+          "key": "unc",
+          "label": "User Need Characteristic"
+        },
+        {
+          "default": false,
+          "key": "unr",
+          "label": "User Need Reference"
+        },
+        {
+          "default": false,
+          "key": "feature",
+          "label": "Feature"
+        },
+        {
+          "default": false,
+          "key": "a_req",
+          "label": "Arch Req't"
+        },
+        {
+          "default": false,
+          "key": "d_req",
+          "label": "Data Exch Req't"
+        },
+        {
+          "default": false,
+          "key": "s_req",
+          "label": "Suppl Req't"
+        },
+        {
+          "default": false,
+          "key": "dia",
+          "label": "Dialog"
+        },
+        {
+          "default": false,
+          "key": "sd",
+          "label": "State Diagram"
+        },
+        {
+          "default": false,
+          "key": "i",
+          "label": "Information Flow"
+        },
+        {
+          "key": "xs",
+          "label": "--- Special ---"
+        },
+        {
+          "default": false,
+          "key": "norm_ref",
+          "label": "Normative Ref"
+        },
+        {
+          "default": false,
+          "key": "term",
+          "label": "Term"
+        },
+        {
+          "default": false,
+          "key": "note-t",
+          "label": "Term Note"
+        },
+        {
+          "default": false,
+          "key": "source",
+          "label": "Source"
+        },
+        {
+          "default": false,
+          "key": "a",
+          "label": "Acronym"
+        },
+        {
+          "default": false,
+          "key": "annex",
+          "label": "Annex"
+        },
+        {
+          "default": false,
+          "key": "bib",
+          "label": "Bibliography"
+        },
+        {
+          "key": "xm",
+          "label": "---- MIB ----"
+        },
+        {
+          "key": "mib",
+          "label": "MIB"
+        },
+        {
+          "key": "mi",
+          "label": "Module Identity"
+        },
+        {
+          "key": "rev",
+          "label": "Revision"
+        },
+        {
+          "key": "text_conv",
+          "label": "Textual Convention"
+        },
+        {
+          "key": "oi",
+          "label": "Object Identity"
+        },
+        {
+          "key": "row",
+          "label": "Row"
+        },
+        {
+          "key": "comment",
+          "label": "Comment"
+        },
+        {
+          "key": "nt",
+          "label": "Notification Type"
+        },
+        {
+          "key": "mc",
+          "label": "Module Compliance"
+        },
+        {
+          "key": "og",
+          "label": "Object Group"
+        },
+        {
+          "key": "ng",
+          "label": "Notification Group"
+        },
+        {
+          "key": "end",
+          "label": "End"
+        }
+      ]
+    },
+    "units": {
+      "name": "Units",
+      "type": "string"
+    },
+    "updated": {
+      "name": "Updated",
+      "type": "string"
+    },
+    "version": {
+      "name": "Version",
+      "type": "string"
+    },
+    "x-text": {
+      "name": "Deprecated by",
+      "type": "xhtml"
+    },
+    "x-type": {
+      "name": "Deprecated Type",
+      "type": "enum",
+      "values": [
+        {
+          "key": "superseded"
+        },
+        {
+          "key": "supplanted"
+        },
+        {
+          "key": "withdrawn"
+        }
+      ]
+    }
+  },
+  "templateColumns": {
+    "960502e7-e7da-4aac-80e9-6ccb84cee925": {
+      "label": "Errors",
+      "template": "<ul>\n{{#unless type}}\n  <li>Missing \"type\"</li>\n{{/unless}}\n{{#if (eval type \"==\" \"un\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}{{#unless conformance}}\n    <li>Missing \"conformance\"</li>\n  {{/unless}}{{/if}}  \n  {{#if (or (eval status \"==\" \"current\") (eval status \"==\" \"silent\"))}}\n    {{#if (hasInlinks \"fulfil\")}}\n      {{#eachInlinkWith type=\"fulfil\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Fulfilling requirement is not current: {{docObjId}}</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      {{#unless (hasInlinks \"opt_group\")}}\n      <li>Missing \"fulfill\" link</li>\n      {{/unless}}\n    {{/if}}\n  {{else}}\n    {{#if (hasInlinks \"fulfil\")}}\n      <li>Invalid \"fulfill\" link</li>\n    {{/if}}  \n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"d_req\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}\n    {{#if (or (hasOutlinks \"fulfil\") (hasOutlinks \"fulfil_opt\"))}}\n      {{#eachOutlinkWith type=\"fulfil\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"Conditionals\")}}{{#eachOutlinkWith type=\"conditional\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n      {{#eachOutlinkWith type=\"fulfil_opt\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Fulfilled need is not current: {{docObjId}}</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"Conditionals\")}}{{#eachOutlinkWith type=\"conditional\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n    {{else}}\n      <li>Missing \"fulfill\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"satisfies\")}}\n      {{#eachInlinkWith type=\"satisfies\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Satisfying object is not current: {{docObjId}}</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      <li>Missing \"satisfies\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"implement\")}}\n      {{#eachInlinkWith type=\"implement\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Implementing dialog is not current</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      <li>Missing \"implement\" link</li>\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"fulfil\")}}\n      <li>Invalid \"fulfill\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"implement\")}}\n      <li>Invalid \"implement\" link</li>\n    {{/if}}\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"s_req\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (or (hasOutlinks \"fulfil\")(hasOutlinks \"fulfil_opt\"))}}\n      {{#eachOutlinkWith type=\"fulfil\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"OptionGroups\")}}{{#eachOutlinkWith type=\"fulfil_opt\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n      {{#eachOutlinkWith type=\"fulfil_opt\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"OptionGroups\")}}{{#eachOutlinkWith type=\"fulfil_opt\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n            <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n  {{else}}\n    <li>Missing \"fulfill\" link</li>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"dia\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (hasOutlinks \"implement\")}}\n      {{#eachOutlinkWith type=\"implement\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Implemented requirement is not current</li>\n      {{/unless}}{{/eachOutlinkWith}}\n  {{else}}\n    <li>Missing \"implement\" link</li>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}\n    {{#if (eval access \"!=\" \"not-accessible\")}}\n      {{#if (hasOutlinks \"satisfies\")}}\n        {{#unless (eval access \"==\" \"read-only\")}}{{#unless (eval (countOutlinks \"satisfies\") \">\" \"1\")}}\n          <li>Missing 2nd \"satisfies\" link</li>\n        {{/unless}}{{/unless}}\n        {{#eachOutlinkWith type=\"satisfies\"}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Satisfied requirement is not current</li>\n        {{/unless}}{{/eachOutlinkWith}}\n      {{else}}\n        <li>Missing \"satisfies\" link</li>\n      {{/if}}\n      {{#unless (hasOutlinks \"group\")}}\n        <li>Missing \"group\" link</li>\n      {{/unless}}\n    {{else}}\n      {{#if (hasOutlinks \"satisfies\")}}\n        <li>Invalid \"satisfies\" link</li>\n      {{/if}}\n      {{#if (hasOutlinks \"group\")}}\n        <li>Invalid \"group\" link</li>\n      {{/if}}\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link (deprecated)</li>\n    {{/if}}\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"og\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#unless (hasInlinks \"group\")}}\n    <li>Missing \"group\" link</li>\n  {{/unless}}\n{{/if}}\n</ul>"
+    }
+  },
+  "views": {
+    "Primary": {
+      "columns": [
+        {
+          "columnId": "id",
+          "width": 65
+        },
+        {
+          "columnId": "description",
+          "width": 500
+        }
+      ],
+      "default": true
+    }
+  },
+  "metadata": {
+    "format": "2.17"
+  }
+}

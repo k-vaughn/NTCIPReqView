@@ -1,2426 +1,2653 @@
 {
-	"id": "UCD_SNMP",
-	"guid": "348A2AA6-245E-4B4D-8842-EFE6F1B4E146",
-	"name": "UCD-SNMP-MIB",
-	"lastId": "215",
-	"createdOn": "2024-07-24T15:01:36",
-	"createdBy": {
-		"name": "Kenneth Vaughn",
-		"email": "kvaughn@trevilon.com",
-		"company": "Trevilon"
-	},
-	"data": [
-		{
-			"id": "1",
-			"guid": "9705C5DD-6107-414D-BD81-AA468B8B7DD2",
-			"text": "<p>Design notes:</p><p></p><p>The design of this mib may seem unusual in parts, as it was</p><p>designed for ease of numerical management routines.</p><p></p><p>In that light, most sub-sections of this mib have four common</p><p>numerical oid consistencies:</p><p></p><p>2021.ID.1   : an integer index value.  In scalers, this is always</p><p>              of value 1.  In tables it is a row index.</p><p>2021.ID.2   : a name of the script, process, etc. that this row represents.</p><p>2021.ID.100 : An error flag indicating if an error is present on</p><p>              that row (a threshold value was crossed, etc).</p><p>2021.ID.101 : An error string describing why the error flag is non-0.</p><p></p><p>These conventions enable managers to easy examine portions of the</p><p>mib by setting the ID to the sub-section they are interested in</p><p>monitoring, and then scanning the .100 value to check for an</p><p>error(s), and get a more specific error message from .101 for the</p><p>named check found in .2.</p><p></p><p>Row numbers between 2 and 100 are sub-section specific.</p><p></p><p>Mib sections utilizing the above conventions:</p><p>  Tables:   procTable, execTable, diskTable, loadTable</p><p>  Scalers:  memory, snmperrs</p>",
-			"name": "comment",
-			"type": "comment"
-		},
-		{
-			"id": "2",
-			"guid": "8349DA24-99E8-4D04-91B6-CEC3A822D745",
-			"text": "<pre>    OBJECT-TYPE, NOTIFICATION-TYPE, MODULE-IDENTITY,<br />    Integer32, Opaque, enterprises, Counter32, Unsigned32<br />        FROM SNMPv2-SMI<br /><br />    CounterBasedGauge64<br />        FROM HCNUM-TC<br /><br />    TEXTUAL-CONVENTION, DisplayString, TruthValue<br />\tFROM SNMPv2-TC;</pre>",
-			"name": "UCD-SNMP-MIB",
-			"type": "mib"
-		},
-		{
-			"id": "3",
-			"guid": "775123A2-8F5A-4811-AD0A-E7BDDB790E20",
-			"text": "This file defines the private UCD SNMP MIB extensions.",
-			"contact": "This mib is no longer being maintained by the University of<br />  California and is now in life-support-mode and being<br />  maintained by the net-snmp project.  The best place to write<br />  for public questions about the net-snmp-coders mailing list<br />  at net-snmp-coders@lists.sourceforge.net.<br /><br />         postal:   Wes Hardaker<br />                   P.O. Box 382<br />                   Davis CA  95617<br /><br />         email:    net-snmp-coders@lists.sourceforge.net<br />        ",
-			"name": "ucdavis",
-			"oid": "{ enterprises 2021 }",
-			"org": "University of California, Davis",
-			"type": "mi",
-			"updated": "202008210000Z",
-			"children": [
-				{
-					"id": "4",
-					"guid": "2F72A63E-6CF3-4EB1-BC23-EACA721CCE06",
-					"text": "Add new memSysAvail object",
-					"type": "rev",
-					"updated": "202008210000Z"
-				},
-				{
-					"id": "5",
-					"guid": "4A370A0B-AA9D-49C0-8247-60B74A26F849",
-					"text": "New 64-bit memory objects",
-					"type": "rev",
-					"updated": "201606100000Z"
-				},
-				{
-					"id": "6",
-					"guid": "B2A689E8-1DEE-4C86-8276-DF4E6AAF5A6C",
-					"text": "New object for number of CPUs as counted by the agent",
-					"type": "rev",
-					"updated": "201407310000Z"
-				},
-				{
-					"id": "7",
-					"guid": "C4B328C7-2EE2-4B51-BF83-FC4A17DDCA67",
-					"text": "New objects for monitoring CPU Steal, Guest and Nice values",
-					"type": "rev",
-					"updated": "201105140000Z"
-				},
-				{
-					"id": "8",
-					"guid": "438E2164-30E1-461A-9FE4-191ABBF00213",
-					"text": "New 64-bit objects for monitoring large disk usage",
-					"type": "rev",
-					"updated": "200901190000Z"
-				},
-				{
-					"id": "9",
-					"guid": "E2CCFCF1-6782-49C8-98C5-9C98BD648E10",
-					"text": "Clarify behaviour of objects in the memory & systemStats groups<br />         (including updated versions of malnamed mem*Text objects).<br />         Define suitable TCs to describe error reporting/fix behaviour.",
-					"type": "rev",
-					"updated": "200611220000Z"
-				},
-				{
-					"id": "10",
-					"guid": "648AFE21-59F1-4837-955B-A1172C00B200",
-					"text": "Added ssCpuRawSoftIRQ for Linux (2.6) and forgotten raw swap counters.",
-					"type": "rev",
-					"updated": "200404070000Z"
-				},
-				{
-					"id": "11",
-					"guid": "3E6F5748-4524-47C3-9B03-69C4EEA3601A",
-					"text": "Deprecate the non-raw objects.",
-					"type": "rev",
-					"updated": "200209050000Z"
-				},
-				{
-					"id": "12",
-					"guid": "8094D25D-A5CE-4F05-9A73-7CA242090DC5",
-					"text": "Group to monitor log files",
-					"type": "rev",
-					"updated": "200109200000Z"
-				},
-				{
-					"id": "13",
-					"guid": "BD19CFA7-AB35-4F85-8AAF-C6870627683F",
-					"text": "Added raw CPU and IO counters.",
-					"type": "rev",
-					"updated": "200101170000Z"
-				},
-				{
-					"id": "14",
-					"guid": "F11A074E-C7FD-42AB-9452-E8F8B75E7972",
-					"text": "SMIv2 version converted from older MIB definitions.",
-					"type": "rev",
-					"updated": "9912090000Z"
-				}
-			]
-		},
-		{
-			"id": "15",
-			"guid": "F55B4DA2-8334-4CC4-AEDC-95734ECD963A",
-			"text": "<p>Current UCD core mib table entries:</p><p>  prTable          OBJECT IDENTIFIER ::= { ucdavis   2 }</p><p>  memory           OBJECT IDENTIFIER ::= { ucdavis   4 }</p><p>  extTable         OBJECT IDENTIFIER ::= { ucdavis   8 }</p><p>  diskTable        OBJECT IDENTIFIER ::= { ucdavis   9 }</p><p>  loadTable        OBJECT IDENTIFIER ::= { ucdavis  10 }</p><p>  systemStats      OBJECT IDENTIFIER ::= { ucdavis  11 }</p><p>  ucdDemoMIB       OBJECT IDENTIFIER ::= { ucdavis  14 } - UCD-DEMO-MIB</p><p>  fileTable        OBJECT IDENTIFIER ::= { ucdavis  15 }</p><p>  logMatch         OBJECT IDENTIFIER ::= { ucdavis  16 }</p><p>  version          OBJECT IDENTIFIER ::= { ucdavis 100 }</p><p>  snmperrs         OBJECT IDENTIFIER ::= { ucdavis 101 }</p><p>  mibRegistryTable OBJECT IDENTIFIER ::= { ucdavis 102 }</p>",
-			"name": "comment",
-			"type": "comment"
-		},
-		{
-			"id": "16",
-			"guid": "63961FA5-E1C6-4738-93FE-F7FAA5DEF1D2",
-			"text": "<p>Older mib table entries that were changed to new locations above:</p><p>  processes        OBJECT IDENTIFIER ::= { ucdavis   1 }</p><p>  exec             OBJECT IDENTIFIER ::= { ucdavis   3 }</p><p>  disk             OBJECT IDENTIFIER ::= { ucdavis   6 }</p><p>  load             OBJECT IDENTIFIER ::= { ucdavis   7 }</p>",
-			"name": "comment",
-			"type": "comment"
-		},
-		{
-			"id": "17",
-			"guid": "7053DAFA-6EBA-47DF-924B-8B8484266059",
-			"text": "<p>Never implemented and removed from the mib:</p><p>  lockd            OBJECT IDENTIFIER ::= { ucdavis   5 }</p>",
-			"name": "comment",
-			"type": "comment"
-		},
-		{
-			"id": "18",
-			"guid": "259C3334-DA56-4B44-A3FF-07D2BE93B437",
-			"heading": "Branches for registering other UCD MIB modules:",
-			"name": "ucdInternal",
-			"oid": "{ ucdavis 12 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "19",
-			"guid": "DCC5F53D-A355-481A-97CE-644FFB694806",
-			"name": "ucdExperimental",
-			"oid": "{ ucdavis 13 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "20",
-			"guid": "98DB8EB6-8B03-4B99-9EB2-0DAC6EDECB21",
-			"text": "<p>OID values assigned in the ucdExperimental branch:</p><p>  ucdIpFwAccMIB    OBJECT IDENTIFIER ::= { ucdExperimental  1 } - UCD-IPFWACC-MIB</p><p>  ucdIpFilter      OBJECT IDENTIFIER ::= { ucdExperimental  2 } - UCD-IPFILTER-MIB</p><p>  wavelan          OBJECT IDENTIFIER ::= { ucdExperimental  3 } - WL-MIB</p><p>  ucdDlmodMIB      OBJECT IDENTIFIER ::= { ucdExperimental 14 } - UCD-DLMOD-MIB</p><p>  ucdDiskIOMIB     OBJECT IDENTIFIER ::= { ucdExperimental 15 } - UCD-DISKIO-MIB</p><p>  lmSensors        OBJECT IDENTIFIER ::= { ucdExperimental 16 } - LM-SENSORS-MIB</p>",
-			"name": "comment",
-			"type": "comment"
-		},
-		{
-			"id": "21",
-			"guid": "C2125BAD-9348-4E4F-9E97-C966BAE6DF57",
-			"text": "<p>These are the old returned values of the agent type.</p><p>originally returned to:  .iso.org.dod.internet.mgmt.mib-2.system.sysObjectID.0</p><p>Current versions of the agent return an equivalent OID from the netSnmpAgentOIDs</p><p>tree (defined in NET-SNMP-TC), which includes values for some additional O/Ss</p>",
-			"name": "comment",
-			"type": "comment"
-		},
-		{
-			"id": "22",
-			"guid": "4C34B398-A7CA-41F5-9A4A-3320130BB3CB",
-			"name": "ucdSnmpAgent",
-			"oid": "{ ucdavis 250 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "23",
-			"guid": "719C898D-077C-474A-AF69-E24E09CA543E",
-			"name": "hpux9",
-			"oid": "{ ucdSnmpAgent 1 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "24",
-			"guid": "E065A737-BF19-4E2D-BFED-B94BDCFD26E3",
-			"name": "sunos4",
-			"oid": "{ ucdSnmpAgent 2 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "25",
-			"guid": "55047EEC-CF1E-4825-9D77-9C84EF464EB3",
-			"name": "solaris",
-			"oid": "{ ucdSnmpAgent 3 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "26",
-			"guid": "1B3A1DFC-1F9D-48E4-AAD4-3563DAD71758",
-			"name": "osf",
-			"oid": "{ ucdSnmpAgent 4 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "27",
-			"guid": "587B349C-7810-4D09-8A69-FBB9F4D0A621",
-			"name": "ultrix",
-			"oid": "{ ucdSnmpAgent 5 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "28",
-			"guid": "51290AC2-F17D-4BC2-AD52-B3736B6526B2",
-			"name": "hpux10",
-			"oid": "{ ucdSnmpAgent 6 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "29",
-			"guid": "390A0B92-CEBD-401A-9356-C64A9A7EADF2",
-			"name": "netbsd1",
-			"oid": "{ ucdSnmpAgent 7 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "30",
-			"guid": "D689045C-DD06-473C-8793-93F7F8F97337",
-			"name": "freebsd",
-			"oid": "{ ucdSnmpAgent 8 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "31",
-			"guid": "AAD1146C-815F-44FF-AB14-4E3C60C9441B",
-			"name": "irix",
-			"oid": "{ ucdSnmpAgent 9 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "32",
-			"guid": "13334515-953A-4849-8FC8-8F621F3F0CE2",
-			"name": "linux",
-			"oid": "{ ucdSnmpAgent 10 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "33",
-			"guid": "01165488-082D-4D11-94AF-FB2762741F82",
-			"name": "bsdi",
-			"oid": "{ ucdSnmpAgent 11 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "34",
-			"guid": "AF90ECE8-4EAE-40C0-ADE3-1704AA5A417A",
-			"name": "openbsd",
-			"oid": "{ ucdSnmpAgent 12 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "35",
-			"guid": "AB3107E1-F627-4FEB-A943-8A9F1CBDD899",
-			"name": "win32",
-			"oid": "{ ucdSnmpAgent 13 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "36",
-			"guid": "628DE84F-61EC-4E55-89F1-B9500235B153",
-			"name": "hpux11",
-			"oid": "{ ucdSnmpAgent 14 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "37",
-			"guid": "70890F8F-1224-4849-86A6-BD8B4982360F",
-			"name": "aix",
-			"oid": "{ ucdSnmpAgent 15 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "38",
-			"guid": "CC4707D7-6C7F-48E7-8244-B7CC0D40E503",
-			"name": "macosx",
-			"oid": "{ ucdSnmpAgent 16 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "39",
-			"guid": "547A8D4F-A86C-412D-8524-E8B8CC9E11FD",
-			"name": "dragonfly",
-			"oid": "{ ucdSnmpAgent 17 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "40",
-			"guid": "1B039682-7F4C-4424-9362-344A44778623",
-			"name": "unknown",
-			"oid": "{ ucdSnmpAgent 255 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "41",
-			"guid": "D4A7AF24-4F63-4A56-B48E-1BC93309F95D",
-			"text": "<p></p><p>Define the Float Textual Convention</p><p>  This definition was written by David Perkins.</p><p></p>",
-			"name": "comment",
-			"type": "comment"
-		},
-		{
-			"id": "42",
-			"guid": "2A0D9855-BE33-49EE-8555-EA6BE8ED9808",
-			"text": "A single precision floating-point number.  The semantics<br />         and encoding are identical for type 'single' defined in<br />         IEEE Standard for Binary Floating-Point,<br />         ANSI/IEEE Std 754-1985.<br />         The value is restricted to the BER serialization of<br />         the following ASN.1 type:<br />             FLOATTYPE ::= [120] IMPLICIT FloatType<br />         (note: the value 120 is the sum of '30'h and '48'h)<br />         The BER serialization of the length for values of<br />         this type must use the definite length, short<br />         encoding form.<br /><br />         For example, the BER serialization of value 123<br />         of type FLOATTYPE is '9f780442f60000'h.  (The tag<br />         is '9f78'h; the length is '04'h; and the value is<br />         '42f60000'h.) The BER serialization of value<br />         '9f780442f60000'h of data type Opaque is<br />         '44079f780442f60000'h. (The tag is '44'h; the length<br />         is '07'h; and the value is '9f780442f60000'h.",
-			"name": "Float",
-			"status": "current",
-			"syntax": "Opaque (SIZE (7))",
-			"type": "text_conv"
-		},
-		{
-			"id": "43",
-			"guid": "492410C9-1A61-41B9-AF9B-03D16773F0B9",
-			"text": "Represents a possible error condition",
-			"name": "UCDErrorFlag",
-			"status": "current",
-			"syntax": "INTEGER { noError(0), error(1) }",
-			"type": "text_conv"
-		},
-		{
-			"id": "44",
-			"guid": "C6C909E2-92A0-48A4-89BA-7B13EF4E753B",
-			"text": "Represents a 'push-button' object, to invoke a suitable<br />         configured action.  Will always return 0 when read.",
-			"name": "UCDErrorFix",
-			"status": "current",
-			"syntax": "INTEGER { noError(0), runFix(1) }",
-			"type": "text_conv"
-		},
-		{
-			"id": "45",
-			"guid": "625F1791-DC95-428A-A155-CB34C65B332C",
-			"text": "<p></p><p>Process table checks</p><p></p>",
-			"name": "comment",
-			"type": "comment"
-		},
-		{
-			"id": "46",
-			"guid": "9F664F65-96F1-458B-A0A8-4C7231384053",
-			"text": "A table containing information on running<br />  programs/daemons configured for monitoring in the<br />  snmpd.conf file of the agent.  Processes violating the<br />  number of running processes required by the agent's<br />  configuration file are flagged with numerical and<br />  textual errors.",
-			"access": "not-accessible",
-			"name": "prTable",
-			"oid": "{ ucdavis 2 }",
-			"status": "current",
-			"syntax": "SEQUENCE OF PrEntry",
-			"type": "ot"
-		},
-		{
-			"id": "47",
-			"guid": "C4F453DC-FC26-449D-B3C3-249EE95D4B74",
-			"text": "An entry containing a process and its statistics.",
-			"access": "not-accessible",
-			"index": "{ prIndex }",
-			"name": "prEntry",
-			"oid": "{ prTable  1 }",
-			"status": "current",
-			"syntax": "PrEntry",
-			"type": "ot"
-		},
-		{
-			"id": "48",
-			"guid": "6E479E08-3057-4ECF-8148-314B20DDECD0",
-			"name": "PrEntry",
-			"syntax": "<pre>{<br />    prIndex Integer32,<br />    prNames DisplayString,<br />    prMin Integer32,<br />    prMax Integer32,<br />    prCount Integer32,<br />    prErrorFlag UCDErrorFlag,<br />    prErrMessage DisplayString,<br />    prErrFix UCDErrorFix,<br />    prErrFixCmd DisplayString<br />}</pre>",
-			"type": "row"
-		},
-		{
-			"id": "49",
-			"guid": "0361037F-8207-428C-91FC-162DF871565C",
-			"text": "Reference Index for each observed process.",
-			"access": "read-only",
-			"name": "prIndex",
-			"oid": "{ prEntry 1 }",
-			"status": "current",
-			"syntax": "Integer32 (0..65535)",
-			"type": "ot"
-		},
-		{
-			"id": "50",
-			"guid": "3EA13012-5237-4116-9F96-0972C9974C7D",
-			"text": "The process name we're counting/checking on.",
-			"access": "read-only",
-			"name": "prNames",
-			"oid": "{ prEntry 2 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "51",
-			"guid": "DEB1D3A7-B7FB-4B9D-ADE7-B06DDAC5966C",
-			"text": "The minimum number of processes that should be<br />  running.  An error flag is generated if the number of<br />  running processes is &lt; the minimum.",
-			"access": "read-only",
-			"name": "prMin",
-			"oid": "{ prEntry 3 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "52",
-			"guid": "A4912F40-CB43-4E33-87AE-F92D1DB8011E",
-			"text": "The maximum number of processes that should be<br />  running.  An error flag is generated if the number of<br />  running processes is &gt; the maximum.",
-			"access": "read-only",
-			"name": "prMax",
-			"oid": "{ prEntry 4 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "53",
-			"guid": "3A2CF4C5-902B-41BF-BCEE-9BC1FB4E8B3A",
-			"text": "The number of current processes running with the name<br />  in question.",
-			"access": "read-only",
-			"name": "prCount",
-			"oid": "{ prEntry 5 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "54",
-			"guid": "537A7436-12B1-4D9D-ACC3-EF0E9EE56D57",
-			"text": "A Error flag to indicate trouble with a process.  It<br />  goes to 1 if there is an error, 0 if no error.",
-			"access": "read-only",
-			"name": "prErrorFlag",
-			"oid": "{ prEntry 100 }",
-			"status": "current",
-			"syntax": "UCDErrorFlag",
-			"type": "ot"
-		},
-		{
-			"id": "55",
-			"guid": "181EE12B-2AFB-4C18-89D0-9832B78E08BA",
-			"text": "An error message describing the problem (if one exists).",
-			"access": "read-only",
-			"name": "prErrMessage",
-			"oid": "{ prEntry 101 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "56",
-			"guid": "EA66F3D6-19B4-40F5-8342-A22787B55847",
-			"text": "Setting this to one will try to fix the problem if<br />  the agent has been configured with a script to call<br />  to attempt to fix problems automatically using remote<br />  snmp operations.",
-			"access": "read-write",
-			"name": "prErrFix",
-			"oid": "{ prEntry 102 }",
-			"status": "current",
-			"syntax": "UCDErrorFix",
-			"type": "ot"
-		},
-		{
-			"id": "57",
-			"guid": "17CCE749-9305-4B56-B538-7119CFF8E2A9",
-			"text": "The command that gets run when the prErrFix column is <br />  set to 1.",
-			"access": "read-only",
-			"name": "prErrFixCmd",
-			"oid": "{ prEntry 103 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "58",
-			"guid": "4A72B2A1-1D06-46FE-9A5F-69953D1DD6C9",
-			"text": "A table of extensible commands returning output and<br />  result codes.  These commands are configured via the<br />  agent's snmpd.conf file.",
-			"access": "not-accessible",
-			"name": "extTable",
-			"oid": "{ ucdavis 8 }",
-			"status": "current",
-			"syntax": "SEQUENCE OF ExtEntry",
-			"type": "ot"
-		},
-		{
-			"id": "59",
-			"guid": "2F5EE141-A0DD-4C2D-954B-2790CBAEDBC6",
-			"text": "An entry containing an extensible script/program and its output.",
-			"access": "not-accessible",
-			"index": "{ extIndex }",
-			"name": "extEntry",
-			"oid": "{ extTable  1 }",
-			"status": "current",
-			"syntax": "ExtEntry",
-			"type": "ot"
-		},
-		{
-			"id": "60",
-			"guid": "0D413C29-2D20-4A46-B882-27124220DD2C",
-			"name": "ExtEntry",
-			"syntax": "<pre>{<br />    extIndex Integer32,<br />    extNames DisplayString,<br />    extCommand DisplayString,<br />    extResult Integer32,<br />    extOutput DisplayString,<br />    extErrFix UCDErrorFix,<br />    extErrFixCmd DisplayString<br />}</pre>",
-			"type": "row"
-		},
-		{
-			"id": "61",
-			"guid": "880CEC19-F1A8-44A8-BAFB-550D50155BEC",
-			"text": "Reference Index for extensible scripts.  Simply an<br />  integer row number.",
-			"access": "read-only",
-			"name": "extIndex",
-			"oid": "{ extEntry 1 }",
-			"status": "current",
-			"syntax": "Integer32 (0..65535)",
-			"type": "ot"
-		},
-		{
-			"id": "62",
-			"guid": "3BCB8BE9-BBDA-4E93-9018-D4BC2808508A",
-			"text": "A Short, one name description of the extensible command.",
-			"access": "read-only",
-			"name": "extNames",
-			"oid": "{ extEntry 2 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "63",
-			"guid": "284144AE-2C67-4523-B288-97680F3149AA",
-			"text": "The command line to be executed.",
-			"access": "read-only",
-			"name": "extCommand",
-			"oid": "{ extEntry 3 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "64",
-			"guid": "A6E52B4C-71F3-42B3-B3E4-DF905E2A2A75",
-			"text": "The result code (exit status) from the executed command.",
-			"access": "read-only",
-			"name": "extResult",
-			"oid": "{ extEntry 100 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "65",
-			"guid": "104046A2-EC0F-4E59-BBEB-4504AD893F25",
-			"text": "The first line of output of the executed command.",
-			"access": "read-only",
-			"name": "extOutput",
-			"oid": "{ extEntry 101 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "66",
-			"guid": "A7D21FF0-7334-4898-B9B8-B7835237FCDB",
-			"text": "Setting this to one will try to fix the problem if<br />  the agent has been configured with a script to call<br />  to attempt to fix problems automatically using remote<br />  snmp operations.",
-			"access": "read-write",
-			"name": "extErrFix",
-			"oid": "{ extEntry 102 }",
-			"status": "current",
-			"syntax": "UCDErrorFix",
-			"type": "ot"
-		},
-		{
-			"id": "67",
-			"guid": "1612520B-9268-4504-8461-352D947B7118",
-			"text": "The command that gets run when the extErrFix column is <br />  set to 1.",
-			"access": "read-only",
-			"name": "extErrFixCmd",
-			"oid": "{ extEntry 103 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "68",
-			"guid": "2FE5834A-93B5-494D-8247-0BF22032230C",
-			"heading": " Memory usage/watch reporting. Not supported on all systems! See agent/mibgroup/ucd_snmp.h to see if its loaded for your architecture. ",
-			"name": "memory",
-			"oid": "{ ucdavis 4 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "69",
-			"guid": "4CCB0B47-2CF3-497E-9289-D9D2DA2C8BB8",
-			"text": "Bogus Index.  This should always return the integer 0.",
-			"access": "read-only",
-			"name": "memIndex",
-			"oid": "{ memory 1 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "70",
-			"guid": "BCA5C817-2470-4D8A-90BE-44875DA97433",
-			"text": "Bogus Name. This should always return the string 'swap'.",
-			"access": "read-only",
-			"name": "memErrorName",
-			"oid": "{ memory 2 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "71",
-			"guid": "586519C9-2756-424B-AB20-55AA158C843E",
-			"text": "The total amount of swap space configured for this host.",
-			"access": "read-only",
-			"name": "memTotalSwap",
-			"oid": "{ memory 3 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "72",
-			"guid": "C4C46405-8A58-4949-9A22-F1BAD78E0829",
-			"text": "The amount of swap space currently unused or available.",
-			"access": "read-only",
-			"name": "memAvailSwap",
-			"oid": "{ memory 4 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "73",
-			"guid": "F3409552-B21A-490B-82A0-F08A26129D86",
-			"text": "The total amount of real/physical memory installed<br />         on this host.",
-			"access": "read-only",
-			"name": "memTotalReal",
-			"oid": "{ memory 5 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "74",
-			"guid": "7405CB78-DA12-4BB2-A74D-8699F904DA55",
-			"text": "The amount of real/physical memory currently unused<br />         or available.",
-			"access": "read-only",
-			"name": "memAvailReal",
-			"oid": "{ memory 6 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "75",
-			"guid": "9933497C-DCDC-47B0-9292-59374D0B38BC",
-			"text": "The total amount of swap space or virtual memory allocated<br />         for text pages on this host.<br /><br />         This object will not be implemented on hosts where the<br />         underlying operating system does not distinguish text<br />         pages from other uses of swap space or virtual memory.",
-			"access": "read-only",
-			"name": "memTotalSwapTXT",
-			"oid": "{ memory 7 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "76",
-			"guid": "C1573426-2794-45CB-944D-E61769115EA6",
-			"text": "The amount of swap space or virtual memory currently<br />         being used by text pages on this host.<br /><br />         This object will not be implemented on hosts where the<br />         underlying operating system does not distinguish text<br />         pages from other uses of swap space or virtual memory.<br /><br />         Note that (despite the name), this value reports the<br />         amount used, rather than the amount free or available<br />         for use.  For clarity, this object is being deprecated<br />         in favour of 'memUsedSwapTXT(16).",
-			"access": "read-only",
-			"name": "memAvailSwapTXT",
-			"oid": "{ memory 8 }",
-			"status": "deprecated",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "77",
-			"guid": "C2DAB22D-1918-43E1-9228-8AF3CE40AE68",
-			"text": "The total amount of real/physical memory allocated<br />         for text pages on this host.<br /><br />         This object will not be implemented on hosts where the<br />         underlying operating system does not distinguish text<br />         pages from other uses of physical memory.",
-			"access": "read-only",
-			"name": "memTotalRealTXT",
-			"oid": "{ memory 9 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "78",
-			"guid": "7E11499C-EA1C-4D20-8AA1-6AEC8B708C20",
-			"text": "The amount of real/physical memory currently being<br />         used by text pages on this host.<br /><br />         This object will not be implemented on hosts where the<br />         underlying operating system does not distinguish text<br />         pages from other uses of physical memory.<br /><br />         Note that (despite the name), this value reports the<br />         amount used, rather than the amount free or available<br />         for use.  For clarity, this object is being deprecated<br />         in favour of 'memUsedRealTXT(17).",
-			"access": "read-only",
-			"name": "memAvailRealTXT",
-			"oid": "{ memory 10 }",
-			"status": "deprecated",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "79",
-			"guid": "6CA50945-D4BC-41D8-81BB-4AFA984EBD75",
-			"text": "The total amount of memory free or available for use on<br />         this host.  This value typically covers both real memory<br />         and swap space or virtual memory.",
-			"access": "read-only",
-			"name": "memTotalFree",
-			"oid": "{ memory 11 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "80",
-			"guid": "7BCCB51B-6EB9-4281-8A77-FB8593C62DEF",
-			"text": "The minimum amount of swap space expected to be kept<br />         free or available during normal operation of this host.<br /><br />         If this value (as reported by 'memAvailSwap(4)') falls<br />         below the specified level, then 'memSwapError(100)' will<br />         be set to 1 and an error message made available via<br />         'memSwapErrorMsg(101)'.",
-			"access": "read-only",
-			"name": "memMinimumSwap",
-			"oid": "{ memory 12 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "81",
-			"guid": "A15B8990-DB9D-4FAE-8ADA-E4DFE48E9F0A",
-			"text": "The total amount of real or virtual memory currently<br />         allocated for use as shared memory.<br /><br />         This object will not be implemented on hosts where the<br />         underlying operating system does not explicitly identify<br />         memory as specifically reserved for this purpose.",
-			"access": "read-only",
-			"name": "memShared",
-			"oid": "{ memory 13 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "82",
-			"guid": "56CFCB77-D093-4DB7-A79F-C7A826D9748E",
-			"text": "The total amount of real or virtual memory currently<br />         allocated for use as memory buffers.<br /><br />         This object will not be implemented on hosts where the<br />         underlying operating system does not explicitly identify<br />         memory as specifically reserved for this purpose.",
-			"access": "read-only",
-			"name": "memBuffer",
-			"oid": "{ memory 14 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "83",
-			"guid": "39F69D9B-42B7-43C0-BFA6-FCDC981453AA",
-			"text": "The total amount of real or virtual memory currently<br />         allocated for use as cached memory.<br /><br />         This object will not be implemented on hosts where the<br />         underlying operating system does not explicitly identify<br />         memory as specifically reserved for this purpose.",
-			"access": "read-only",
-			"name": "memCached",
-			"oid": "{ memory 15 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "84",
-			"guid": "5709DDA7-6599-4838-8628-02827A46C689",
-			"text": "The amount of swap space or virtual memory currently<br />         being used by text pages on this host.<br /><br />         This object will not be implemented on hosts where the<br />         underlying operating system does not distinguish text<br />         pages from other uses of swap space or virtual memory.",
-			"access": "read-only",
-			"name": "memUsedSwapTXT",
-			"oid": "{ memory 16 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "85",
-			"guid": "5281291F-6094-4E61-9609-F4AD738E5C9C",
-			"text": "The amount of real/physical memory currently being<br />         used by text pages on this host.<br /><br />         This object will not be implemented on hosts where the<br />         underlying operating system does not distinguish text<br />         pages from other uses of physical memory.",
-			"access": "read-only",
-			"name": "memUsedRealTXT",
-			"oid": "{ memory 17 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "86",
-			"guid": "B2DDF722-6768-4E38-867A-75E4487B0A92",
-			"text": "The total amount of swap space configured for this host.",
-			"access": "read-only",
-			"name": "memTotalSwapX",
-			"oid": "{ memory 18 }",
-			"status": "current",
-			"syntax": "CounterBasedGauge64",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "87",
-			"guid": "D2C2A249-DCF0-4211-8CB5-2405138EC473",
-			"text": "The amount of swap space currently unused or available.",
-			"access": "read-only",
-			"name": "memAvailSwapX",
-			"oid": "{ memory 19 }",
-			"status": "current",
-			"syntax": "CounterBasedGauge64",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "88",
-			"guid": "DAE5C8F8-B553-451C-B4D9-837E4B23B104",
-			"text": "The total amount of real/physical memory installed<br />         on this host.",
-			"access": "read-only",
-			"name": "memTotalRealX",
-			"oid": "{ memory 20 }",
-			"status": "current",
-			"syntax": "CounterBasedGauge64",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "89",
-			"guid": "C37047BA-9627-4FDD-AA0C-104FB3E07082",
-			"text": "The amount of real/physical memory currently unused<br />         or available.",
-			"access": "read-only",
-			"name": "memAvailRealX",
-			"oid": "{ memory 21 }",
-			"status": "current",
-			"syntax": "CounterBasedGauge64",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "90",
-			"guid": "37579487-A11A-483A-9EC4-6C44C73110FE",
-			"text": "The total amount of memory free or available for use on<br />         this host.  This value typically covers both real memory<br />         and swap space or virtual memory.",
-			"access": "read-only",
-			"name": "memTotalFreeX",
-			"oid": "{ memory 22 }",
-			"status": "current",
-			"syntax": "CounterBasedGauge64",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "91",
-			"guid": "2CD08D2A-2A13-4EC3-877F-4CB18C58CD15",
-			"text": "The minimum amount of swap space expected to be kept<br />         free or available during normal operation of this host.<br /><br />         If this value (as reported by 'memAvailSwap(4)') falls<br />         below the specified level, then 'memSwapError(100)' will<br />         be set to 1 and an error message made available via<br />         'memSwapErrorMsg(101)'.",
-			"access": "read-only",
-			"name": "memMinimumSwapX",
-			"oid": "{ memory 23 }",
-			"status": "current",
-			"syntax": "CounterBasedGauge64",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "92",
-			"guid": "44851F7D-9232-4405-A519-6AB06F27F6A8",
-			"text": "The total amount of real or virtual memory currently<br />         allocated for use as shared memory.<br /><br />         This object will not be implemented on hosts where the<br />         underlying operating system does not explicitly identify<br />         memory as specifically reserved for this purpose.",
-			"access": "read-only",
-			"name": "memSharedX",
-			"oid": "{ memory 24 }",
-			"status": "current",
-			"syntax": "CounterBasedGauge64",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "93",
-			"guid": "D4B74E32-ED8F-4FF8-AF0D-D0DEADD9D96C",
-			"text": "The total amount of real or virtual memory currently<br />         allocated for use as memory buffers.<br /><br />         This object will not be implemented on hosts where the<br />         underlying operating system does not explicitly identify<br />         memory as specifically reserved for this purpose.",
-			"access": "read-only",
-			"name": "memBufferX",
-			"oid": "{ memory 25 }",
-			"status": "current",
-			"syntax": "CounterBasedGauge64",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "94",
-			"guid": "30D948F2-32AF-4E27-8A77-4B8056B88850",
-			"text": "The total amount of real or virtual memory currently<br />         allocated for use as cached memory.<br /><br />         This object will not be implemented on hosts where the<br />         underlying operating system does not explicitly identify<br />         memory as specifically reserved for this purpose.",
-			"access": "read-only",
-			"name": "memCachedX",
-			"oid": "{ memory 26 }",
-			"status": "current",
-			"syntax": "CounterBasedGauge64",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "95",
-			"guid": "4BC01BB8-7E3F-4946-B778-6BC4CC3A3263",
-			"text": "The total amount of available memory, which is an estimate<br />         of how much memory is available for starting new applications,<br />         without swapping.<br /><br />         This object will not be implemented on hosts where the<br />         underlying operating system does not explicitly identify<br />         memory as specifically reserved for this purpose.",
-			"access": "read-only",
-			"name": "memSysAvail",
-			"oid": "{ memory 27 }",
-			"status": "current",
-			"syntax": "CounterBasedGauge64",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "96",
-			"guid": "4F63EEFB-2E4F-4D4A-8402-2653B4612325",
-			"text": "Indicates whether the amount of available swap space<br />         (as reported by 'memAvailSwap(4)'), is less than the<br />         desired minimum (specified by 'memMinimumSwap(12)').",
-			"access": "read-only",
-			"name": "memSwapError",
-			"oid": "{ memory 100 }",
-			"status": "current",
-			"syntax": "UCDErrorFlag",
-			"type": "ot"
-		},
-		{
-			"id": "97",
-			"guid": "1EB9DEE2-3B8A-4562-8643-FFE8BFBE3914",
-			"text": "Describes whether the amount of available swap space<br />         (as reported by 'memAvailSwap(4)'), is less than the<br />         desired minimum (specified by 'memMinimumSwap(12)').",
-			"access": "read-only",
-			"name": "memSwapErrorMsg",
-			"oid": "{ memory 101 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "98",
-			"guid": "D0302A3F-BA7D-4354-895A-FCAD718484DE",
-			"text": "Disk watching information.  Partions to be watched<br />  are configured by the snmpd.conf file of the agent.",
-			"access": "not-accessible",
-			"name": "dskTable",
-			"oid": "{ ucdavis 9 }",
-			"status": "current",
-			"syntax": "SEQUENCE OF DskEntry",
-			"type": "ot"
-		},
-		{
-			"id": "99",
-			"guid": "8EAA8D00-1AE7-41AA-9CC5-617791596BDD",
-			"text": "An entry containing a disk and its statistics.",
-			"access": "not-accessible",
-			"index": "{ dskIndex }",
-			"name": "dskEntry",
-			"oid": "{ dskTable  1 }",
-			"status": "current",
-			"syntax": "DskEntry",
-			"type": "ot"
-		},
-		{
-			"id": "100",
-			"guid": "1924D052-787F-4F12-B62A-3AE591C35BF0",
-			"name": "DskEntry",
-			"syntax": "<pre>{<br />    dskIndex Integer32,<br />    dskPath DisplayString,<br />    dskDevice DisplayString,<br />    dskMinimum Integer32,<br />    dskMinPercent Integer32,<br />    dskTotal Integer32,<br />    dskAvail Integer32,<br />    dskUsed Integer32,<br />    dskPercent Integer32,<br />    dskPercentNode Integer32,<br />    dskErrorFlag UCDErrorFlag,<br />    dskErrorMsg DisplayString,<br />    dskTotalLow Unsigned32,<br />    dskTotalHigh Unsigned32,<br />    dskAvailLow Unsigned32,<br />    dskAvailHigh Unsigned32,<br />    dskUsedLow Unsigned32,<br />    dskUsedHigh Unsigned32<br />}</pre>",
-			"type": "row"
-		},
-		{
-			"id": "101",
-			"guid": "F876E047-E3BD-4EF7-AA9C-F79F0F1C6DBB",
-			"text": "Integer reference number (row number) for the disk mib.",
-			"access": "read-only",
-			"name": "dskIndex",
-			"oid": "{ dskEntry 1 }",
-			"status": "current",
-			"syntax": "Integer32 (0..65535)",
-			"type": "ot"
-		},
-		{
-			"id": "102",
-			"guid": "7B3BDD5F-D82E-4636-9766-9AAAB82F61F3",
-			"text": "Path where the disk is mounted.",
-			"access": "read-only",
-			"name": "dskPath",
-			"oid": "{ dskEntry 2 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "103",
-			"guid": "AA63EDC1-6502-4CD9-845A-A74BDA40CEC6",
-			"text": "Path of the device for the partition",
-			"access": "read-only",
-			"name": "dskDevice",
-			"oid": "{ dskEntry 3 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "104",
-			"guid": "B9F3D1B7-EB90-47ED-8874-5CC9AC188667",
-			"text": "Minimum space required on the disk (in kBytes) before the<br />         errors are triggered.  Either this or dskMinPercent is<br />         configured via the agent's snmpd.conf file.",
-			"access": "read-only",
-			"name": "dskMinimum",
-			"oid": "{ dskEntry 4 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "105",
-			"guid": "8A01C0C7-A6F9-4313-9911-5D67AC59B83D",
-			"text": "Percentage of minimum space required on the disk before the<br />         errors are triggered.  Either this or dskMinimum is<br />         configured via the agent's snmpd.conf file.",
-			"access": "read-only",
-			"name": "dskMinPercent",
-			"oid": "{ dskEntry 5 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "106",
-			"guid": "187B6A4D-6B9F-4B58-97CB-67ABC5F6F3B8",
-			"text": "Total size of the disk/partion (kBytes).<br />  For large disks (&gt;2Tb), this value will<br />  latch at INT32_MAX (2147483647).",
-			"access": "read-only",
-			"name": "dskTotal",
-			"oid": "{ dskEntry 6 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "107",
-			"guid": "83A0B07C-2960-4E2C-81E7-08D8221C01E9",
-			"text": "Available space on the disk.<br />  For large lightly-used disks (&gt;2Tb), this<br />  value will latch at INT32_MAX (2147483647).",
-			"access": "read-only",
-			"name": "dskAvail",
-			"oid": "{ dskEntry 7 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "108",
-			"guid": "A00C5556-EA35-4444-B604-6EB11B06890F",
-			"text": "Used space on the disk.<br />  For large heavily-used disks (&gt;2Tb), this<br />  value will latch at INT32_MAX (2147483647).",
-			"access": "read-only",
-			"name": "dskUsed",
-			"oid": "{ dskEntry 8 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "109",
-			"guid": "C9657B25-60C6-4848-A0FB-3A30CBBF8FD2",
-			"text": "Percentage of space used on disk",
-			"access": "read-only",
-			"name": "dskPercent",
-			"oid": "{ dskEntry 9 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "110",
-			"guid": "60CF67ED-505D-4D84-9D1F-F6757FAD8EA5",
-			"text": "Percentage of inodes used on disk",
-			"access": "read-only",
-			"name": "dskPercentNode",
-			"oid": "{ dskEntry 10 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "111",
-			"guid": "3F5F4ECD-E945-4BF0-ACB7-AA6ED99D8F01",
-			"text": "Total size of the disk/partion (kBytes).<br /> Together with dskTotalHigh composes 64-bit number.",
-			"access": "read-only",
-			"name": "dskTotalLow",
-			"oid": "{ dskEntry 11 }",
-			"status": "current",
-			"syntax": "Unsigned32",
-			"type": "ot"
-		},
-		{
-			"id": "112",
-			"guid": "7C8442B7-35DF-4261-8025-4EC6FA892E39",
-			"text": "Total size of the disk/partion (kBytes).<br /> Together with dskTotalLow composes 64-bit number.",
-			"access": "read-only",
-			"name": "dskTotalHigh",
-			"oid": "{ dskEntry 12 }",
-			"status": "current",
-			"syntax": "Unsigned32",
-			"type": "ot"
-		},
-		{
-			"id": "113",
-			"guid": "F693FCE6-5973-4D4B-B6F9-90AA23622A19",
-			"text": "Available space on the disk (kBytes).<br /> Together with dskAvailHigh composes 64-bit number.",
-			"access": "read-only",
-			"name": "dskAvailLow",
-			"oid": "{ dskEntry 13 }",
-			"status": "current",
-			"syntax": "Unsigned32",
-			"type": "ot"
-		},
-		{
-			"id": "114",
-			"guid": "07A010C3-A1BF-4F25-A43B-31087AB79201",
-			"text": "Available space on the disk (kBytes).<br /> Together with dskAvailLow composes 64-bit number.",
-			"access": "read-only",
-			"name": "dskAvailHigh",
-			"oid": "{ dskEntry 14 }",
-			"status": "current",
-			"syntax": "Unsigned32",
-			"type": "ot"
-		},
-		{
-			"id": "115",
-			"guid": "1739536D-C667-489E-BF74-F8885D21E33B",
-			"text": "Used space on the disk (kBytes).<br /> Together with dskUsedHigh composes 64-bit number.",
-			"access": "read-only",
-			"name": "dskUsedLow",
-			"oid": "{ dskEntry 15 }",
-			"status": "current",
-			"syntax": "Unsigned32",
-			"type": "ot"
-		},
-		{
-			"id": "116",
-			"guid": "01F91F47-3882-4C98-BB5D-C3F01E942613",
-			"text": "Used space on the disk (kBytes).<br /> Together with dskUsedLow composes 64-bit number.",
-			"access": "read-only",
-			"name": "dskUsedHigh",
-			"oid": "{ dskEntry 16 }",
-			"status": "current",
-			"syntax": "Unsigned32",
-			"type": "ot"
-		},
-		{
-			"id": "117",
-			"guid": "DCAF6ADC-64E7-4CB3-B860-CEEEC1DB3A26",
-			"text": "Error flag signaling that the disk or partition is under<br />  the minimum required space configured for it.",
-			"access": "read-only",
-			"name": "dskErrorFlag",
-			"oid": "{ dskEntry 100 }",
-			"status": "current",
-			"syntax": "UCDErrorFlag",
-			"type": "ot"
-		},
-		{
-			"id": "118",
-			"guid": "6D57D30E-B288-45B0-8495-D16AC5E5C32C",
-			"text": "A text description providing a warning and the space left<br />  on the disk.",
-			"access": "read-only",
-			"name": "dskErrorMsg",
-			"oid": "{ dskEntry 101 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "119",
-			"guid": "3EE52122-1674-42B2-A40D-5104D26E2BB8",
-			"text": "Load average information.",
-			"access": "not-accessible",
-			"name": "laTable",
-			"oid": "{ ucdavis 10 }",
-			"status": "current",
-			"syntax": "SEQUENCE OF LaEntry",
-			"type": "ot"
-		},
-		{
-			"id": "120",
-			"guid": "13AA72DB-4762-4C3C-95FE-163B7262D710",
-			"text": "An entry containing a load average and its values.",
-			"access": "not-accessible",
-			"index": "{ laIndex }",
-			"name": "laEntry",
-			"oid": "{ laTable  1 }",
-			"status": "current",
-			"syntax": "LaEntry",
-			"type": "ot"
-		},
-		{
-			"id": "121",
-			"guid": "D75FE436-6EFB-4674-BF46-CDA378F8FF17",
-			"name": "LaEntry",
-			"syntax": "<pre>{<br />    laIndex Integer32,<br />    laNames DisplayString,<br />    laLoad DisplayString,<br />    laConfig DisplayString,<br />    laLoadInt Integer32,<br />    laLoadFloat Float,<br />    laErrorFlag UCDErrorFlag,<br />    laErrMessage DisplayString<br />}</pre>",
-			"type": "row"
-		},
-		{
-			"id": "122",
-			"guid": "8CFDA477-1823-4F79-AF6A-2FBE2A3B0FE4",
-			"text": "reference index/row number for each observed loadave.",
-			"access": "read-only",
-			"name": "laIndex",
-			"oid": "{ laEntry 1 }",
-			"status": "current",
-			"syntax": "Integer32 (0..3)",
-			"type": "ot"
-		},
-		{
-			"id": "123",
-			"guid": "FC31AAB2-4E79-4B7E-9914-B4BFF89C7CF3",
-			"text": "The list of loadave names we're watching.",
-			"access": "read-only",
-			"name": "laNames",
-			"oid": "{ laEntry 2 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "124",
-			"guid": "51FD9CFD-EC62-4E1B-9EB5-42B70861606A",
-			"text": "The 1,5 and 15 minute load averages (one per row).",
-			"access": "read-only",
-			"name": "laLoad",
-			"oid": "{ laEntry 3 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "125",
-			"guid": "5466A23C-4514-422A-B297-1938A3743CBC",
-			"text": "The watch point for load-averages to signal an<br />  error.  If the load averages rises above this value,<br />  the laErrorFlag below is set.",
-			"access": "read-write",
-			"name": "laConfig",
-			"oid": "{ laEntry 4 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "126",
-			"guid": "77DDBCFD-2080-4828-B041-C9B02F5E8D95",
-			"text": "The 1,5 and 15 minute load averages as an integer.<br />  This is computed by taking the floating point<br />  loadaverage value and multiplying by 100, then<br />  converting the value to an integer.",
-			"access": "read-only",
-			"name": "laLoadInt",
-			"oid": "{ laEntry 5 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "127",
-			"guid": "82C66241-C437-471C-815F-165C05E4B002",
-			"text": "The 1,5 and 15 minute load averages as an opaquely<br />  wrapped floating point number.",
-			"access": "read-only",
-			"name": "laLoadFloat",
-			"oid": "{ laEntry 6 }",
-			"status": "current",
-			"syntax": "Float",
-			"type": "ot"
-		},
-		{
-			"id": "128",
-			"guid": "E956A810-1D60-4FE0-A155-AA4164997603",
-			"text": "A Error flag to indicate the load-average has crossed<br />  its threshold value defined in the snmpd.conf file.<br />  It is set to 1 if the threshold is crossed, 0 otherwise.",
-			"access": "read-only",
-			"name": "laErrorFlag",
-			"oid": "{ laEntry 100 }",
-			"status": "current",
-			"syntax": "UCDErrorFlag",
-			"type": "ot"
-		},
-		{
-			"id": "129",
-			"guid": "E807798E-4FD3-4B7A-ACB6-AD62CC2DD55C",
-			"text": "An error message describing the load-average and its<br />  surpased watch-point value.",
-			"access": "read-only",
-			"name": "laErrMessage",
-			"oid": "{ laEntry 101 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "130",
-			"guid": "4003BF14-C51D-46A7-B704-7FE365E52A10",
-			"name": "version",
-			"oid": "{ ucdavis 100 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "131",
-			"guid": "2189DD9D-EC6E-4DCE-9884-33EFCE5D826E",
-			"text": "Index to mib (always 0)",
-			"access": "read-only",
-			"name": "versionIndex",
-			"oid": "{ version 1 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "132",
-			"guid": "81643F3C-BA62-4663-8EE7-DE3CAE55A1D0",
-			"text": "CVS tag keyword",
-			"access": "read-only",
-			"name": "versionTag",
-			"oid": "{ version 2 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "133",
-			"guid": "873A2C9A-30F8-4D5D-A963-7F197A20E4FC",
-			"text": "Date string from RCS keyword",
-			"access": "read-only",
-			"name": "versionDate",
-			"oid": "{ version 3 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "134",
-			"guid": "FE016418-3CD7-4B0A-AEF4-7F44D3A5E6BC",
-			"text": "Date string from ctime() ",
-			"access": "read-only",
-			"name": "versionCDate",
-			"oid": "{ version 4 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "135",
-			"guid": "228711AC-1C89-46D5-84C8-B7C6AE175EFF",
-			"text": "Id string from RCS keyword",
-			"access": "read-only",
-			"name": "versionIdent",
-			"oid": "{ version 5 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "136",
-			"guid": "FB45B3B7-27DE-4FA6-A0F7-E3AB12DF9856",
-			"text": "Options passed to the configure script when this agent was built.",
-			"access": "read-only",
-			"name": "versionConfigureOptions",
-			"oid": "{ version 6 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "137",
-			"guid": "C443CB61-EC3C-4CDF-90B6-A9E4E89C860D",
-			"text": "Set to 1 to clear the exec cache, if enabled",
-			"access": "read-write",
-			"name": "versionClearCache",
-			"oid": "{ version 10 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "138",
-			"guid": "80B7B85A-84CF-469A-91BA-136DF2DCA73B",
-			"text": "Set to 1 to read-read the config file(s).",
-			"access": "read-write",
-			"name": "versionUpdateConfig",
-			"oid": "{ version 11 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "139",
-			"guid": "176593D8-AAFB-4014-8EDF-E94199FA2812",
-			"text": "Set to 1 to restart the agent.",
-			"access": "read-write",
-			"name": "versionRestartAgent",
-			"oid": "{ version 12 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "140",
-			"guid": "DAF95335-E445-48AE-8620-F5589EAB2B09",
-			"text": "Set to 1 to force the agent to save it's persistent data immediately.",
-			"access": "read-write",
-			"name": "versionSavePersistentData",
-			"oid": "{ version 13 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "141",
-			"guid": "238B956A-C573-4E07-B1F2-88923BDE3DB7",
-			"text": "Set to 1 to turn debugging statements on in the agent or 0<br />  to turn it off.",
-			"access": "read-write",
-			"name": "versionDoDebugging",
-			"oid": "{ version 20 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "142",
-			"guid": "A9DA504F-72C4-41EB-BD18-A0B876B47FF7",
-			"name": "snmperrs",
-			"oid": "{ ucdavis 101 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "143",
-			"guid": "008CF5A5-5E8B-4E98-9A32-177A6E8DB4C8",
-			"text": "Bogus Index for snmperrs (always 0).",
-			"access": "read-only",
-			"name": "snmperrIndex",
-			"oid": "{ snmperrs 1 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "144",
-			"guid": "4C298D1E-EAE8-416A-8D84-7DE2F6A4F6C7",
-			"text": "snmp",
-			"access": "read-only",
-			"name": "snmperrNames",
-			"oid": "{ snmperrs 2 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "145",
-			"guid": "B8B68845-1957-4607-B059-027BBDAAE707",
-			"text": "A Error flag to indicate trouble with the agent.  It<br />  goes to 1 if there is an error, 0 if no error.",
-			"access": "read-only",
-			"name": "snmperrErrorFlag",
-			"oid": "{ snmperrs 100 }",
-			"status": "current",
-			"syntax": "UCDErrorFlag",
-			"type": "ot"
-		},
-		{
-			"id": "146",
-			"guid": "D39BE715-6029-4ABF-B8D7-ABC712542F4D",
-			"text": "An error message describing the problem (if one exists).",
-			"access": "read-only",
-			"name": "snmperrErrMessage",
-			"oid": "{ snmperrs 101 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "147",
-			"guid": "435E1DF4-0888-43B6-AF3A-56257BDC6C88",
-			"text": "A table displaying all the oid's registered by mib modules in<br />  the agent.  Since the agent is modular in nature, this lists<br />  each module's OID it is responsible for and the name of the module",
-			"access": "not-accessible",
-			"name": "mrTable",
-			"oid": "{ ucdavis 102 }",
-			"status": "current",
-			"syntax": "SEQUENCE OF MrEntry",
-			"type": "ot"
-		},
-		{
-			"id": "148",
-			"guid": "8AA9BE84-F383-49E1-A48D-04C64428D9FE",
-			"text": "An entry containing a registered mib oid.",
-			"access": "not-accessible",
-			"index": "{ IMPLIED mrIndex }",
-			"name": "mrEntry",
-			"oid": "{ mrTable 1 }",
-			"status": "current",
-			"syntax": "MrEntry",
-			"type": "ot"
-		},
-		{
-			"id": "149",
-			"guid": "EF976A39-3954-43F6-8A9B-B9C1A326C1FB",
-			"name": "MrEntry",
-			"syntax": "<pre>{<br />    mrIndex OBJECT IDENTIFIER,<br />    mrModuleName DisplayString<br />}</pre>",
-			"type": "row"
-		},
-		{
-			"id": "150",
-			"guid": "783B3C33-DF95-4B76-A3D5-6F9648BAD17C",
-			"text": "The registry slot of a mibmodule.",
-			"access": "read-only",
-			"name": "mrIndex",
-			"oid": "{ mrEntry  1 }",
-			"status": "current",
-			"syntax": "OBJECT IDENTIFIER",
-			"type": "ot"
-		},
-		{
-			"id": "151",
-			"guid": "515EA5C7-88E4-40C9-9537-2EFE11813104",
-			"text": "The module name that registered this OID.",
-			"access": "read-only",
-			"name": "mrModuleName",
-			"oid": "{ mrEntry  2 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "152",
-			"guid": "B8E593A4-1A75-4BCA-BA4E-BB6A1640AE82",
-			"name": "systemStats",
-			"oid": "{ ucdavis 11 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "153",
-			"guid": "8963C59F-2102-4471-9ECB-E00688C04455",
-			"text": "Bogus Index.  This should always return the integer 1.",
-			"access": "read-only",
-			"name": "ssIndex",
-			"oid": "{ systemStats 1 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "154",
-			"guid": "AC25AA1D-B27E-43E6-A794-4D6E1E255560",
-			"text": "Bogus Name. This should always return the string 'systemStats'.",
-			"access": "read-only",
-			"name": "ssErrorName",
-			"oid": "{ systemStats 2 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "155",
-			"guid": "68DED1B7-24F4-49CB-A2DA-55FDBB5032B7",
-			"text": "The average amount of memory swapped in from disk,<br />         calculated over the last minute.",
-			"access": "read-only",
-			"name": "ssSwapIn",
-			"oid": "{ systemStats 3 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "156",
-			"guid": "35733695-A554-4910-95E0-5D0CA12077D3",
-			"text": "The average amount of memory swapped out to disk,<br />         calculated over the last minute.",
-			"access": "read-only",
-			"name": "ssSwapOut",
-			"oid": "{ systemStats 4 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "157",
-			"guid": "8DA58AD0-DE72-4867-A1F6-D87627D2424A",
-			"text": "The average amount of data written to disk or other<br />         block device, calculated over the last minute.<br />       <br />  This object has been deprecated in favour of<br />         'ssIORawSent(57)', which can be used to calculate<br />         the same metric, but over any desired time period.",
-			"access": "read-only",
-			"name": "ssIOSent",
-			"oid": "{ systemStats 5 }",
-			"status": "deprecated",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "blocks/s"
-		},
-		{
-			"id": "158",
-			"guid": "EFBDFB86-C9EF-45EC-8334-6FE6E83AFE25",
-			"text": "The average amount of data read from disk or other<br />         block device, calculated over the last minute.<br />       <br />  This object has been deprecated in favour of<br />         'ssIORawReceived(58)', which can be used to calculate<br />         the same metric, but over any desired time period.",
-			"access": "read-only",
-			"name": "ssIOReceive",
-			"oid": "{ systemStats 6 }",
-			"status": "deprecated",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "blocks/s"
-		},
-		{
-			"id": "159",
-			"guid": "EE2E53DE-E4AD-48DD-8377-7E415EC32860",
-			"text": "The average rate of interrupts processed (including<br />         the clock) calculated over the last minute.<br />       <br />  This object has been deprecated in favour of<br />         'ssRawInterrupts(59)', which can be used to calculate<br />         the same metric, but over any desired time period.",
-			"access": "read-only",
-			"name": "ssSysInterrupts",
-			"oid": "{ systemStats 7 }",
-			"status": "deprecated",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "interrupts/s"
-		},
-		{
-			"id": "160",
-			"guid": "45959D39-0F9D-4130-8352-D6A5BFA2740A",
-			"text": "The average rate of context switches,<br />         calculated over the last minute.<br />       <br />  This object has been deprecated in favour of<br />         'ssRawContext(60)', which can be used to calculate<br />         the same metric, but over any desired time period.",
-			"access": "read-only",
-			"name": "ssSysContext",
-			"oid": "{ systemStats 8 }",
-			"status": "deprecated",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "switches/s"
-		},
-		{
-			"id": "161",
-			"guid": "AAE89FA6-CB7E-4FAD-A461-43DAAEA1CC39",
-			"text": "The percentage of CPU time spent processing<br />         user-level code, calculated over the last minute.<br />       <br />  This object has been deprecated in favour of<br />         'ssCpuRawUser(50)', which can be used to calculate<br />         the same metric, but over any desired time period.",
-			"access": "read-only",
-			"name": "ssCpuUser",
-			"oid": "{ systemStats 9 }",
-			"status": "deprecated",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "162",
-			"guid": "CF0A709C-1BFF-444C-8ECE-F64544C134E0",
-			"text": "The percentage of CPU time spent processing<br />         system-level code, calculated over the last minute.<br />       <br />  This object has been deprecated in favour of<br />         'ssCpuRawSystem(52)', which can be used to calculate<br />         the same metric, but over any desired time period.",
-			"access": "read-only",
-			"name": "ssCpuSystem",
-			"oid": "{ systemStats 10 }",
-			"status": "deprecated",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "163",
-			"guid": "70C6C38D-A558-479A-A960-1B7511CCA4DF",
-			"text": "The percentage of processor time spent idle,<br />         calculated over the last minute.<br />       <br />  This object has been deprecated in favour of<br />         'ssCpuRawIdle(53)', which can be used to calculate<br />         the same metric, but over any desired time period.",
-			"access": "read-only",
-			"name": "ssCpuIdle",
-			"oid": "{ systemStats 11 }",
-			"status": "deprecated",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "164",
-			"guid": "BD4E368F-75BA-436B-9CBA-FEAA6347CD1E",
-			"text": "<p>The agent only implements those of the following counters that the</p><p>kernel supports! Don't expect all to be present.</p>",
-			"name": "comment",
-			"type": "comment"
-		},
-		{
-			"id": "165",
-			"guid": "88689CFA-3E6F-4D00-A945-A7C8255F1506",
-			"text": "The number of 'ticks' (typically 1/100s) spent<br />         processing user-level code.<br /><br />         On a multi-processor system, the 'ssCpuRaw*'<br />         counters are cumulative over all CPUs, so their<br />         sum will typically be N*100 (for N processors).",
-			"access": "read-only",
-			"name": "ssCpuRawUser",
-			"oid": "{ systemStats 50 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "166",
-			"guid": "BADC1343-458F-4EBD-9C24-BF9DDC8510B1",
-			"text": "The number of 'ticks' (typically 1/100s) spent<br />         processing reduced-priority code.<br /><br />         This object will not be implemented on hosts where<br />         the underlying operating system does not measure<br />         this particular CPU metric.<br /><br />         On a multi-processor system, the 'ssCpuRaw*'<br />         counters are cumulative over all CPUs, so their<br />         sum will typically be N*100 (for N processors).",
-			"access": "read-only",
-			"name": "ssCpuRawNice",
-			"oid": "{ systemStats 51 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "167",
-			"guid": "5472270D-4593-48C9-8405-0069DCEE7BF4",
-			"text": "The number of 'ticks' (typically 1/100s) spent<br />         processing system-level code.<br /><br />         On a multi-processor system, the 'ssCpuRaw*'<br />         counters are cumulative over all CPUs, so their<br />         sum will typically be N*100 (for N processors).<br /><br />         This object may sometimes be implemented as the<br />         combination of the 'ssCpuRawWait(54)' and<br />         'ssCpuRawKernel(55)' counters, so care must be<br />         taken when summing the overall raw counters.",
-			"access": "read-only",
-			"name": "ssCpuRawSystem",
-			"oid": "{ systemStats 52 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "168",
-			"guid": "05A21BBE-3CBE-4A5A-AC0E-3FD915F348E4",
-			"text": "The number of 'ticks' (typically 1/100s) spent<br />         idle.<br /><br />         On a multi-processor system, the 'ssCpuRaw*'<br />         counters are cumulative over all CPUs, so their<br />         sum will typically be N*100 (for N processors).",
-			"access": "read-only",
-			"name": "ssCpuRawIdle",
-			"oid": "{ systemStats 53 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "169",
-			"guid": "1C23AE83-2523-4541-A9E8-E97E26D81731",
-			"text": "The number of 'ticks' (typically 1/100s) spent<br />         waiting for IO.<br /><br />         This object will not be implemented on hosts where<br />         the underlying operating system does not measure<br />         this particular CPU metric.  This time may also be<br />         included within the 'ssCpuRawSystem(52)' counter.<br /><br />         On a multi-processor system, the 'ssCpuRaw*'<br />         counters are cumulative over all CPUs, so their<br />         sum will typically be N*100 (for N processors).",
-			"access": "read-only",
-			"name": "ssCpuRawWait",
-			"oid": "{ systemStats 54 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "170",
-			"guid": "59C0643D-14F2-4BE1-9197-D96EF538E8A0",
-			"text": "The number of 'ticks' (typically 1/100s) spent<br />         processing kernel-level code.<br /><br />         This object will not be implemented on hosts where<br />         the underlying operating system does not measure<br />         this particular CPU metric.  This time may also be<br />         included within the 'ssCpuRawSystem(52)' counter.<br /><br />         On a multi-processor system, the 'ssCpuRaw*'<br />         counters are cumulative over all CPUs, so their<br />         sum will typically be N*100 (for N processors).",
-			"access": "read-only",
-			"name": "ssCpuRawKernel",
-			"oid": "{ systemStats 55 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "171",
-			"guid": "A6C11194-DA2F-4904-B297-BA8B880E7FD7",
-			"text": "The number of 'ticks' (typically 1/100s) spent<br />         processing hardware interrupts.<br /><br />         This object will not be implemented on hosts where<br />         the underlying operating system does not measure<br />         this particular CPU metric.<br /><br />         On a multi-processor system, the 'ssCpuRaw*'<br />         counters are cumulative over all CPUs, so their<br />         sum will typically be N*100 (for N processors).",
-			"access": "read-only",
-			"name": "ssCpuRawInterrupt",
-			"oid": "{ systemStats 56 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "172",
-			"guid": "5A4079BE-88DB-42F0-AD9A-09BCAFFEC09E",
-			"text": "Number of blocks sent to a block device",
-			"access": "read-only",
-			"name": "ssIORawSent",
-			"oid": "{ systemStats 57 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "173",
-			"guid": "818F4053-FE0F-4B3E-B9BC-922D9CF3AC25",
-			"text": "Number of blocks received from a block device",
-			"access": "read-only",
-			"name": "ssIORawReceived",
-			"oid": "{ systemStats 58 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "174",
-			"guid": "F472AD75-8313-476F-B294-B8405229CF55",
-			"text": "Number of interrupts processed",
-			"access": "read-only",
-			"name": "ssRawInterrupts",
-			"oid": "{ systemStats 59 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "175",
-			"guid": "0B8084B0-8FA1-4210-B065-5705B0CF297D",
-			"text": "Number of context switches",
-			"access": "read-only",
-			"name": "ssRawContexts",
-			"oid": "{ systemStats 60 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "176",
-			"guid": "C1F50BA4-EBF5-4692-BD52-564172BA4A7D",
-			"text": "The number of 'ticks' (typically 1/100s) spent<br />         processing software interrupts.<br /><br />         This object will not be implemented on hosts where<br />         the underlying operating system does not measure<br />         this particular CPU metric.<br /><br />         On a multi-processor system, the 'ssCpuRaw*'<br />         counters are cumulative over all CPUs, so their<br />         sum will typically be N*100 (for N processors).",
-			"access": "read-only",
-			"name": "ssCpuRawSoftIRQ",
-			"oid": "{ systemStats 61 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "177",
-			"guid": "4EADB115-D3CB-48E5-A123-875B3A1BC326",
-			"text": "Number of blocks swapped in",
-			"access": "read-only",
-			"name": "ssRawSwapIn",
-			"oid": "{ systemStats 62 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "178",
-			"guid": "AD90F2B0-9292-4BBB-99A1-26CC823A8BD8",
-			"text": "Number of blocks swapped out",
-			"access": "read-only",
-			"name": "ssRawSwapOut",
-			"oid": "{ systemStats 63 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "179",
-			"guid": "47D88492-1527-4029-A4CF-67B66AFC9BBC",
-			"text": "The number of 'ticks' (typically 1/100s) spent<br />         by the hypervisor code to run other VMs even<br />         though the CPU in the current VM had something runnable.<br /><br />         This object will not be implemented on hosts where<br />         the underlying operating system does not measure<br />         this particular CPU metric.<br /><br />         On a multi-processor system, the 'ssCpuRaw*'<br />         counters are cumulative over all CPUs, so their<br />         sum will typically be N*100 (for N processors).",
-			"access": "read-only",
-			"name": "ssCpuRawSteal",
-			"oid": "{ systemStats 64 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "180",
-			"guid": "ED0849DA-4DA4-41D5-8200-00C5A3335CE8",
-			"text": "The number of 'ticks' (typically 1/100s) spent<br />         by the CPU to run a virtual CPU (guest).<br /><br />         This object will not be implemented on hosts where<br />         the underlying operating system does not measure<br />         this particular CPU metric.<br /><br />         On a multi-processor system, the 'ssCpuRaw*'<br />         counters are cumulative over all CPUs, so their<br />         sum will typically be N*100 (for N processors).",
-			"access": "read-only",
-			"name": "ssCpuRawGuest",
-			"oid": "{ systemStats 65 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "181",
-			"guid": "3628F7A0-BBD0-4198-A5DF-EFC4042EC1D5",
-			"text": "The number of 'ticks' (typically 1/100s) spent<br />         by the CPU to run a niced virtual CPU (guest).<br /><br />         This object will not be implemented on hosts where<br />         the underlying operating system does not measure<br />         this particular CPU metric.<br /><br />         On a multi-processor system, the 'ssCpuRaw*'<br />         counters are cumulative over all CPUs, so their<br />         sum will typically be N*100 (for N processors).",
-			"access": "read-only",
-			"name": "ssCpuRawGuestNice",
-			"oid": "{ systemStats 66 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "182",
-			"guid": "C487D2A7-27D3-42A0-94DD-6C395BD25787",
-			"text": "The number of processors, as counted by the agent.<br />         This object's value may be useful in the management<br />         of certain operating systems where notions such as<br />         load average do not take into account the number of<br />         processors in the system.<br /><br />         For other objects in the systemStats group whose<br />         descriptions refer to 'N processors', this object's<br />         value is N.",
-			"access": "read-only",
-			"name": "ssCpuNumCpus",
-			"oid": "{ systemStats 67 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "183",
-			"guid": "3AA782D3-126A-4E88-BF3E-6E935DBDB801",
-			"text": "<p>possibly used in the future:</p><p></p><p>ssErrorFlag OBJECT-TYPE</p><p>    SYNTAX    UCDErrorFlag</p><p>    MAX-ACCESS  read-only</p><p>    STATUS      current</p><p>    DESCRIPTION</p><p>        \"Error flag.\"</p><p>    ::= { systemStats 100 }</p><p></p><p>ssErrMessage OBJECT-TYPE</p><p>    SYNTAX      DisplayString</p><p>    MAX-ACCESS  read-only</p><p>    STATUS      current</p><p>    DESCRIPTION</p><p>        \"Error message describing the errorflag condition.\"</p><p>    ::= { systemStats 101 }</p>",
-			"name": "comment",
-			"type": "comment"
-		},
-		{
-			"id": "184",
-			"guid": "09383F06-CFBA-4467-8874-7EC02B55D774",
-			"name": "ucdTraps",
-			"oid": "{ ucdavis 251 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "185",
-			"guid": "6165F7A0-75AF-4E85-84DA-3A5FDE0C7F6F",
-			"text": "This trap could in principle be sent when the agent start",
-			"name": "ucdStart",
-			"oid": "{ ucdTraps 1 }",
-			"status": "current",
-			"type": "nt"
-		},
-		{
-			"id": "186",
-			"guid": "FEE33E61-3783-47E6-80B0-AA013F55C4F0",
-			"text": "This trap is sent when the agent terminates",
-			"name": "ucdShutdown",
-			"oid": "{ ucdTraps 2 }",
-			"status": "current",
-			"type": "nt"
-		},
-		{
-			"id": "187",
-			"guid": "BD6C6B38-739F-4081-A3D2-71DD2B21CF0E",
-			"text": "<p></p><p>File Table:  monitor a list of files to check for a maximum size.</p><p></p>",
-			"name": "comment",
-			"type": "comment"
-		},
-		{
-			"id": "188",
-			"guid": "688E6774-52BC-4DB6-89ED-2BCC983EC81C",
-			"text": "Table of monitored files.",
-			"access": "not-accessible",
-			"name": "fileTable",
-			"oid": "{ ucdavis 15 }",
-			"status": "current",
-			"syntax": "SEQUENCE OF FileEntry",
-			"type": "ot"
-		},
-		{
-			"id": "189",
-			"guid": "2AFB71FA-C531-4CD1-8A12-A2A6C3F7D323",
-			"text": "Entry of file",
-			"access": "not-accessible",
-			"index": "{ fileIndex }",
-			"name": "fileEntry",
-			"oid": "{ fileTable 1 }",
-			"status": "current",
-			"syntax": "FileEntry",
-			"type": "ot"
-		},
-		{
-			"id": "190",
-			"guid": "42FB0347-429A-43C9-A640-7E7D2B97DCD4",
-			"name": "FileEntry",
-			"syntax": "<pre>{<br />    fileIndex Integer32,<br />    fileName DisplayString,<br />    fileSize Integer32,<br />    fileMax Integer32,<br />    fileErrorFlag UCDErrorFlag,<br />    fileErrorMsg DisplayString<br />}</pre>",
-			"type": "row"
-		},
-		{
-			"id": "191",
-			"guid": "02967640-6432-4D01-8853-01469EF6CA25",
-			"text": "Index of file",
-			"access": "read-only",
-			"name": "fileIndex",
-			"oid": "{ fileEntry 1 }",
-			"status": "current",
-			"syntax": "Integer32 (0..2147483647)",
-			"type": "ot"
-		},
-		{
-			"id": "192",
-			"guid": "0950CFDB-0242-4704-A283-ED102633E815",
-			"text": "Filename",
-			"access": "read-only",
-			"name": "fileName",
-			"oid": "{ fileEntry 2 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "193",
-			"guid": "8512554D-50CD-4A71-BFA6-21BB6F839F38",
-			"text": "Size of file (kB)",
-			"access": "read-only",
-			"name": "fileSize",
-			"oid": "{ fileEntry 3 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "194",
-			"guid": "635B17AE-46BC-4E57-BCD6-0DEC41624FEC",
-			"text": "Limit of filesize (kB)",
-			"access": "read-only",
-			"name": "fileMax",
-			"oid": "{ fileEntry 4 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot",
-			"units": "kB"
-		},
-		{
-			"id": "195",
-			"guid": "480D7ABB-DF1A-440D-A682-8A5080609F46",
-			"text": "Limit exceeded flag",
-			"access": "read-only",
-			"name": "fileErrorFlag",
-			"oid": "{ fileEntry 100 }",
-			"status": "current",
-			"syntax": "UCDErrorFlag",
-			"type": "ot"
-		},
-		{
-			"id": "196",
-			"guid": "996103D9-9463-439E-B238-032F6A4215C9",
-			"text": "Filesize error message",
-			"access": "read-only",
-			"name": "fileErrorMsg",
-			"oid": "{ fileEntry 101 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "197",
-			"guid": "C2272868-77A1-4ECB-B2D4-4DCA59FF2B14",
-			"name": "logMatch",
-			"oid": "{ ucdavis 16 }",
-			"status": "current",
-			"type": "oi"
-		},
-		{
-			"id": "198",
-			"guid": "B21D9120-4299-4514-AC38-65603E0A39B6",
-			"text": "The maximum number of logmatch entries<br /> this snmpd daemon can support.",
-			"access": "read-only",
-			"name": "logMatchMaxEntries",
-			"oid": "{ logMatch 1 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "199",
-			"guid": "2CADCA07-C439-431C-BA1A-67E4806ACB99",
-			"text": "Table of monitored files.",
-			"access": "not-accessible",
-			"name": "logMatchTable",
-			"oid": "{ logMatch 2 }",
-			"status": "current",
-			"syntax": "SEQUENCE OF LogMatchEntry",
-			"type": "ot"
-		},
-		{
-			"id": "200",
-			"guid": "C3A194D0-8913-4891-9B27-F429EE3C8C4E",
-			"text": "Entry of file",
-			"access": "not-accessible",
-			"index": "{ logMatchIndex }",
-			"name": "logMatchEntry",
-			"oid": "{ logMatchTable 1 }",
-			"status": "current",
-			"syntax": "LogMatchEntry",
-			"type": "ot"
-		},
-		{
-			"id": "201",
-			"guid": "050363EA-6852-4D85-BC0A-226B28838AC1",
-			"text": "Index of logmatch",
-			"access": "read-only",
-			"name": "logMatchIndex",
-			"oid": "{ logMatchEntry 1 }",
-			"status": "current",
-			"syntax": "Integer32 (1..2147483647)",
-			"type": "ot"
-		},
-		{
-			"id": "202",
-			"guid": "1BA9B580-6DF7-4D4F-974C-191D3D38AA76",
-			"text": "logmatch instance name",
-			"access": "read-only",
-			"name": "logMatchName",
-			"oid": "{ logMatchEntry 2 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "203",
-			"guid": "A8047801-EA09-4183-A702-B5CCD31997AD",
-			"text": "filename to be logmatched",
-			"access": "read-only",
-			"name": "logMatchFilename",
-			"oid": "{ logMatchEntry 3 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "204",
-			"guid": "355AE71E-258E-47B5-B9D5-695E78206C27",
-			"text": "regular expression",
-			"access": "read-only",
-			"name": "logMatchRegEx",
-			"oid": "{ logMatchEntry 4 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "205",
-			"guid": "428A5D9E-F654-4952-AD54-3FFDA3754023",
-			"text": "global count of matches",
-			"access": "read-only",
-			"name": "logMatchGlobalCounter",
-			"oid": "{ logMatchEntry 5 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "206",
-			"guid": "2DB409DA-0A30-4B36-B647-F03A79255A51",
-			"text": "Description.",
-			"access": "read-only",
-			"name": "logMatchGlobalCount",
-			"oid": "{ logMatchEntry 6 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "207",
-			"guid": "B8F5AB1C-0D23-4F10-8E34-1632AB2B7D7B",
-			"text": "Regex match counter. This counter will<br /> be reset with each logfile rotation.",
-			"access": "read-only",
-			"name": "logMatchCurrentCounter",
-			"oid": "{ logMatchEntry 7 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "208",
-			"guid": "455D17D7-8C38-4974-8A8F-7F9FB513FFE9",
-			"text": "Description.",
-			"access": "read-only",
-			"name": "logMatchCurrentCount",
-			"oid": "{ logMatchEntry 8 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "209",
-			"guid": "664930D2-4A10-4E35-944F-8AC6F84269F0",
-			"text": "Regex match counter. This counter will<br /> be reset with each read",
-			"access": "read-only",
-			"name": "logMatchCounter",
-			"oid": "{ logMatchEntry 9 }",
-			"status": "current",
-			"syntax": "Counter32",
-			"type": "ot"
-		},
-		{
-			"id": "210",
-			"guid": "41258D95-D5A7-4524-A481-E72C8BEEE176",
-			"text": "Description.",
-			"access": "read-only",
-			"name": "logMatchCount",
-			"oid": "{ logMatchEntry 10 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "211",
-			"guid": "3C060F20-C2A5-4185-B72F-323530DB3DB8",
-			"text": "time between updates (if not queried) in seconds",
-			"access": "read-only",
-			"name": "logMatchCycle",
-			"oid": "{ logMatchEntry 11 }",
-			"status": "current",
-			"syntax": "Integer32",
-			"type": "ot"
-		},
-		{
-			"id": "212",
-			"guid": "DE2FB01A-B398-4816-825F-DFD082F17F72",
-			"text": "errorflag: is this line configured correctly?",
-			"access": "read-only",
-			"name": "logMatchErrorFlag",
-			"oid": "{ logMatchEntry 100 }",
-			"status": "current",
-			"syntax": "UCDErrorFlag",
-			"type": "ot"
-		},
-		{
-			"id": "213",
-			"guid": "83573FC5-0CA5-42B0-9413-E6F4324652E9",
-			"text": "message of regex precompilation",
-			"access": "read-only",
-			"name": "logMatchRegExCompilation",
-			"oid": "{ logMatchEntry 101 }",
-			"status": "current",
-			"syntax": "DisplayString",
-			"type": "ot"
-		},
-		{
-			"id": "214",
-			"guid": "E8D8E5E5-E4F8-43B5-9889-932B05F406AF",
-			"name": "end",
-			"type": "end"
-		}
-	],
-	"attributes": {
-		"access": {
-			"name": "Access",
-			"type": "enum",
-			"values": [
-				{
-					"key": "read-only"
-				},
-				{
-					"key": "read-write"
-				},
-				{
-					"key": "read-create"
-				},
-				{
-					"key": "not-accessible"
-				},
-				{
-					"key": "accessible-for-notify"
-				}
-			]
-		},
-		"action": {
-			"name": "Action",
-			"type": "enum",
-			"values": [
-				{
-					"key": "added"
-				},
-				{
-					"key": "remainCurrent"
-				},
-				{
-					"key": "deprecated"
-				},
-				{
-					"key": "madeObsolete"
-				},
-				{
-					"key": "previouslyDeprecated"
-				}
-			]
-		},
-		"additional": {
-			"name": "Additional",
-			"type": "xhtml"
-		},
-		"augments": {
-			"name": "Augments",
-			"type": "string"
-		},
-		"comment": {
-			"name": "Comment",
-			"type": "xhtml"
-		},
-		"conformance": {
-			"name": "Conformance",
-			"type": "string"
-		},
-		"contact": {
-			"name": "Contact",
-			"type": "xhtml"
-		},
-		"defval": {
-			"name": "Default Value",
-			"type": "string"
-		},
-		"dotted-oid": {
-			"name": "Dotted OID",
-			"type": "string"
-		},
-		"format": {
-			"name": "Format",
-			"type": "xhtml"
-		},
-		"index": {
-			"name": "Index",
-			"type": "string"
-		},
-		"info": {
-			"name": "Informative",
-			"type": "xhtml"
-		},
-		"name": {
-			"name": "Name",
-			"type": "string"
-		},
-		"oid": {
-			"name": "OID",
-			"type": "string"
-		},
-		"org": {
-			"name": "Organization",
-			"type": "string"
-		},
-		"part": {
-			"name": "Part",
-			"type": "string"
-		},
-		"reference": {
-			"name": "Reference",
-			"type": "xhtml"
-		},
-		"status": {
-			"name": "Status",
-			"type": "enum",
-			"values": [
-				{
-					"key": "current"
-				},
-				{
-					"key": "deprecated"
-				},
-				{
-					"key": "obsolete"
-				}
-			]
-		},
-		"syntax": {
-			"name": "Syntax",
-			"type": "xhtml"
-		},
-		"table-type": {
-			"name": "Table Type",
-			"type": "enum",
-			"values": [
-				{
-					"key": "static"
-				},
-				{
-					"key": "managed"
-				},
-				{
-					"key": "dynamic"
-				}
-			]
-		},
-		"type": {
-			"name": "Type",
-			"type": "enum",
-			"values": [
-				{
-					"key": "comment"
-				},
-				{
-					"key": "end"
-				},
-				{
-					"key": "mc",
-					"label": "module-compliance"
-				},
-				{
-					"key": "mi",
-					"label": "module-identity"
-				},
-				{
-					"key": "mib"
-				},
-				{
-					"key": "ng",
-					"label": "notification-group"
-				},
-				{
-					"key": "nt",
-					"label": "notification-type"
-				},
-				{
-					"key": "og",
-					"label": "object-group"
-				},
-				{
-					"key": "oi",
-					"label": "object-identity"
-				},
-				{
-					"key": "ot",
-					"label": "object-type"
-				},
-				{
-					"key": "ref",
-					"label": "reference"
-				},
-				{
-					"key": "rev",
-					"label": "revision"
-				},
-				{
-					"key": "row"
-				},
-				{
-					"key": "text_conv"
-				}
-			]
-		},
-		"units": {
-			"name": "Units",
-			"type": "string"
-		},
-		"updated": {
-			"name": "Updated",
-			"type": "string"
-		},
-		"version": {
-			"name": "Version",
-			"type": "string"
-		},
-		"x-text": {
-			"name": "Deprecated by",
-			"type": "xhtml"
-		},
-		"x-type": {
-			"name": "Deprecated Type",
-			"type": "enum",
-			"values": [
-				{
-					"key": "superseded"
-				},
-				{
-					"key": "supplanted"
-				},
-				{
-					"key": "withdrawn"
-				}
-			]
-		}
-	}
+  "id": "UCD_SNMP",
+  "guid": "348A2AA6-245E-4B4D-8842-EFE6F1B4E146",
+  "name": "UCD-SNMP-MIB",
+  "lastId": 215,
+  "createdOn": "2024-07-24T15:01:36",
+  "createdBy": {
+    "name": "Kenneth Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "lastChangedOn": "2024-07-24T20:47:47.135Z",
+  "lastChangedBy": {
+    "name": "Kenneth Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "data": [
+    {
+      "id": "1",
+      "guid": "9705C5DD-6107-414D-BD81-AA468B8B7DD2",
+      "text": "<p>Design notes:</p><p></p><p>The design of this mib may seem unusual in parts, as it was</p><p>designed for ease of numerical management routines.</p><p></p><p>In that light, most sub-sections of this mib have four common</p><p>numerical oid consistencies:</p><p></p><p>2021.ID.1   : an integer index value.  In scalers, this is always</p><p>              of value 1.  In tables it is a row index.</p><p>2021.ID.2   : a name of the script, process, etc. that this row represents.</p><p>2021.ID.100 : An error flag indicating if an error is present on</p><p>              that row (a threshold value was crossed, etc).</p><p>2021.ID.101 : An error string describing why the error flag is non-0.</p><p></p><p>These conventions enable managers to easy examine portions of the</p><p>mib by setting the ID to the sub-section they are interested in</p><p>monitoring, and then scanning the .100 value to check for an</p><p>error(s), and get a more specific error message from .101 for the</p><p>named check found in .2.</p><p></p><p>Row numbers between 2 and 100 are sub-section specific.</p><p></p><p>Mib sections utilizing the above conventions:</p><p>  Tables:   procTable, execTable, diskTable, loadTable</p><p>  Scalers:  memory, snmperrs</p>",
+      "name": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "2",
+      "guid": "8349DA24-99E8-4D04-91B6-CEC3A822D745",
+      "text": "<pre>    OBJECT-TYPE, NOTIFICATION-TYPE, MODULE-IDENTITY,<br>    Integer32, Opaque, enterprises, Counter32, Unsigned32<br>        FROM SNMPv2-SMI<br><br>    CounterBasedGauge64<br>        FROM HCNUM-TC<br><br>    TEXTUAL-CONVENTION, DisplayString, TruthValue<br>\tFROM SNMPv2-TC;</pre>",
+      "name": "UCD-SNMP-MIB",
+      "type": "mib"
+    },
+    {
+      "id": "3",
+      "guid": "775123A2-8F5A-4811-AD0A-E7BDDB790E20",
+      "text": "This file defines the private UCD SNMP MIB extensions.",
+      "contact": "This mib is no longer being maintained by the University of<br>  California and is now in life-support-mode and being<br>  maintained by the net-snmp project.  The best place to write<br>  for public questions about the net-snmp-coders mailing list<br>  at net-snmp-coders@lists.sourceforge.net.<br><br>         postal:   Wes Hardaker<br>                   P.O. Box 382<br>                   Davis CA  95617<br><br>         email:    net-snmp-coders@lists.sourceforge.net<br>        ",
+      "name": "ucdavis",
+      "oid": "{ enterprises 2021 }",
+      "org": "University of California, Davis",
+      "type": "mi",
+      "updated": "202008210000Z",
+      "children": [
+        {
+          "id": "4",
+          "guid": "2F72A63E-6CF3-4EB1-BC23-EACA721CCE06",
+          "text": "Add new memSysAvail object",
+          "type": "rev",
+          "updated": "202008210000Z"
+        },
+        {
+          "id": "5",
+          "guid": "4A370A0B-AA9D-49C0-8247-60B74A26F849",
+          "text": "New 64-bit memory objects",
+          "type": "rev",
+          "updated": "201606100000Z"
+        },
+        {
+          "id": "6",
+          "guid": "B2A689E8-1DEE-4C86-8276-DF4E6AAF5A6C",
+          "text": "New object for number of CPUs as counted by the agent",
+          "type": "rev",
+          "updated": "201407310000Z"
+        },
+        {
+          "id": "7",
+          "guid": "C4B328C7-2EE2-4B51-BF83-FC4A17DDCA67",
+          "text": "New objects for monitoring CPU Steal, Guest and Nice values",
+          "type": "rev",
+          "updated": "201105140000Z"
+        },
+        {
+          "id": "8",
+          "guid": "438E2164-30E1-461A-9FE4-191ABBF00213",
+          "text": "New 64-bit objects for monitoring large disk usage",
+          "type": "rev",
+          "updated": "200901190000Z"
+        },
+        {
+          "id": "9",
+          "guid": "E2CCFCF1-6782-49C8-98C5-9C98BD648E10",
+          "text": "Clarify behaviour of objects in the memory &amp; systemStats groups<br>         (including updated versions of malnamed mem*Text objects).<br>         Define suitable TCs to describe error reporting/fix behaviour.",
+          "type": "rev",
+          "updated": "200611220000Z"
+        },
+        {
+          "id": "10",
+          "guid": "648AFE21-59F1-4837-955B-A1172C00B200",
+          "text": "Added ssCpuRawSoftIRQ for Linux (2.6) and forgotten raw swap counters.",
+          "type": "rev",
+          "updated": "200404070000Z"
+        },
+        {
+          "id": "11",
+          "guid": "3E6F5748-4524-47C3-9B03-69C4EEA3601A",
+          "text": "Deprecate the non-raw objects.",
+          "type": "rev",
+          "updated": "200209050000Z"
+        },
+        {
+          "id": "12",
+          "guid": "8094D25D-A5CE-4F05-9A73-7CA242090DC5",
+          "text": "Group to monitor log files",
+          "type": "rev",
+          "updated": "200109200000Z"
+        },
+        {
+          "id": "13",
+          "guid": "BD19CFA7-AB35-4F85-8AAF-C6870627683F",
+          "text": "Added raw CPU and IO counters.",
+          "type": "rev",
+          "updated": "200101170000Z"
+        },
+        {
+          "id": "14",
+          "guid": "F11A074E-C7FD-42AB-9452-E8F8B75E7972",
+          "text": "SMIv2 version converted from older MIB definitions.",
+          "type": "rev",
+          "updated": "9912090000Z"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "guid": "F55B4DA2-8334-4CC4-AEDC-95734ECD963A",
+      "text": "<p>Current UCD core mib table entries:</p><p>  prTable          OBJECT IDENTIFIER ::= { ucdavis   2 }</p><p>  memory           OBJECT IDENTIFIER ::= { ucdavis   4 }</p><p>  extTable         OBJECT IDENTIFIER ::= { ucdavis   8 }</p><p>  diskTable        OBJECT IDENTIFIER ::= { ucdavis   9 }</p><p>  loadTable        OBJECT IDENTIFIER ::= { ucdavis  10 }</p><p>  systemStats      OBJECT IDENTIFIER ::= { ucdavis  11 }</p><p>  ucdDemoMIB       OBJECT IDENTIFIER ::= { ucdavis  14 } - UCD-DEMO-MIB</p><p>  fileTable        OBJECT IDENTIFIER ::= { ucdavis  15 }</p><p>  logMatch         OBJECT IDENTIFIER ::= { ucdavis  16 }</p><p>  version          OBJECT IDENTIFIER ::= { ucdavis 100 }</p><p>  snmperrs         OBJECT IDENTIFIER ::= { ucdavis 101 }</p><p>  mibRegistryTable OBJECT IDENTIFIER ::= { ucdavis 102 }</p>",
+      "name": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "16",
+      "guid": "63961FA5-E1C6-4738-93FE-F7FAA5DEF1D2",
+      "text": "<p>Older mib table entries that were changed to new locations above:</p><p>  processes        OBJECT IDENTIFIER ::= { ucdavis   1 }</p><p>  exec             OBJECT IDENTIFIER ::= { ucdavis   3 }</p><p>  disk             OBJECT IDENTIFIER ::= { ucdavis   6 }</p><p>  load             OBJECT IDENTIFIER ::= { ucdavis   7 }</p>",
+      "name": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "17",
+      "guid": "7053DAFA-6EBA-47DF-924B-8B8484266059",
+      "text": "<p>Never implemented and removed from the mib:</p><p>  lockd            OBJECT IDENTIFIER ::= { ucdavis   5 }</p>",
+      "name": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "18",
+      "guid": "259C3334-DA56-4B44-A3FF-07D2BE93B437",
+      "heading": "Branches for registering other UCD MIB modules:",
+      "name": "ucdInternal",
+      "oid": "{ ucdavis 12 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "19",
+      "guid": "DCC5F53D-A355-481A-97CE-644FFB694806",
+      "name": "ucdExperimental",
+      "oid": "{ ucdavis 13 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "20",
+      "guid": "98DB8EB6-8B03-4B99-9EB2-0DAC6EDECB21",
+      "text": "<p>OID values assigned in the ucdExperimental branch:</p><p>  ucdIpFwAccMIB    OBJECT IDENTIFIER ::= { ucdExperimental  1 } - UCD-IPFWACC-MIB</p><p>  ucdIpFilter      OBJECT IDENTIFIER ::= { ucdExperimental  2 } - UCD-IPFILTER-MIB</p><p>  wavelan          OBJECT IDENTIFIER ::= { ucdExperimental  3 } - WL-MIB</p><p>  ucdDlmodMIB      OBJECT IDENTIFIER ::= { ucdExperimental 14 } - UCD-DLMOD-MIB</p><p>  ucdDiskIOMIB     OBJECT IDENTIFIER ::= { ucdExperimental 15 } - UCD-DISKIO-MIB</p><p>  lmSensors        OBJECT IDENTIFIER ::= { ucdExperimental 16 } - LM-SENSORS-MIB</p>",
+      "name": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "21",
+      "guid": "C2125BAD-9348-4E4F-9E97-C966BAE6DF57",
+      "text": "<p>These are the old returned values of the agent type.</p><p>originally returned to:  .iso.org.dod.internet.mgmt.mib-2.system.sysObjectID.0</p><p>Current versions of the agent return an equivalent OID from the netSnmpAgentOIDs</p><p>tree (defined in NET-SNMP-TC), which includes values for some additional O/Ss</p>",
+      "name": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "22",
+      "guid": "4C34B398-A7CA-41F5-9A4A-3320130BB3CB",
+      "name": "ucdSnmpAgent",
+      "oid": "{ ucdavis 250 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "23",
+      "guid": "719C898D-077C-474A-AF69-E24E09CA543E",
+      "name": "hpux9",
+      "oid": "{ ucdSnmpAgent 1 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "24",
+      "guid": "E065A737-BF19-4E2D-BFED-B94BDCFD26E3",
+      "name": "sunos4",
+      "oid": "{ ucdSnmpAgent 2 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "25",
+      "guid": "55047EEC-CF1E-4825-9D77-9C84EF464EB3",
+      "name": "solaris",
+      "oid": "{ ucdSnmpAgent 3 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "26",
+      "guid": "1B3A1DFC-1F9D-48E4-AAD4-3563DAD71758",
+      "name": "osf",
+      "oid": "{ ucdSnmpAgent 4 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "27",
+      "guid": "587B349C-7810-4D09-8A69-FBB9F4D0A621",
+      "name": "ultrix",
+      "oid": "{ ucdSnmpAgent 5 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "28",
+      "guid": "51290AC2-F17D-4BC2-AD52-B3736B6526B2",
+      "name": "hpux10",
+      "oid": "{ ucdSnmpAgent 6 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "29",
+      "guid": "390A0B92-CEBD-401A-9356-C64A9A7EADF2",
+      "name": "netbsd1",
+      "oid": "{ ucdSnmpAgent 7 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "30",
+      "guid": "D689045C-DD06-473C-8793-93F7F8F97337",
+      "name": "freebsd",
+      "oid": "{ ucdSnmpAgent 8 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "31",
+      "guid": "AAD1146C-815F-44FF-AB14-4E3C60C9441B",
+      "name": "irix",
+      "oid": "{ ucdSnmpAgent 9 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "32",
+      "guid": "13334515-953A-4849-8FC8-8F621F3F0CE2",
+      "name": "linux",
+      "oid": "{ ucdSnmpAgent 10 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "33",
+      "guid": "01165488-082D-4D11-94AF-FB2762741F82",
+      "name": "bsdi",
+      "oid": "{ ucdSnmpAgent 11 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "34",
+      "guid": "AF90ECE8-4EAE-40C0-ADE3-1704AA5A417A",
+      "name": "openbsd",
+      "oid": "{ ucdSnmpAgent 12 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "35",
+      "guid": "AB3107E1-F627-4FEB-A943-8A9F1CBDD899",
+      "name": "win32",
+      "oid": "{ ucdSnmpAgent 13 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "36",
+      "guid": "628DE84F-61EC-4E55-89F1-B9500235B153",
+      "name": "hpux11",
+      "oid": "{ ucdSnmpAgent 14 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "37",
+      "guid": "70890F8F-1224-4849-86A6-BD8B4982360F",
+      "name": "aix",
+      "oid": "{ ucdSnmpAgent 15 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "38",
+      "guid": "CC4707D7-6C7F-48E7-8244-B7CC0D40E503",
+      "name": "macosx",
+      "oid": "{ ucdSnmpAgent 16 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "39",
+      "guid": "547A8D4F-A86C-412D-8524-E8B8CC9E11FD",
+      "name": "dragonfly",
+      "oid": "{ ucdSnmpAgent 17 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "40",
+      "guid": "1B039682-7F4C-4424-9362-344A44778623",
+      "name": "unknown",
+      "oid": "{ ucdSnmpAgent 255 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "41",
+      "guid": "D4A7AF24-4F63-4A56-B48E-1BC93309F95D",
+      "text": "<p></p><p>Define the Float Textual Convention</p><p>  This definition was written by David Perkins.</p><p></p>",
+      "name": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "42",
+      "guid": "2A0D9855-BE33-49EE-8555-EA6BE8ED9808",
+      "text": "A single precision floating-point number.  The semantics<br>         and encoding are identical for type 'single' defined in<br>         IEEE Standard for Binary Floating-Point,<br>         ANSI/IEEE Std 754-1985.<br>         The value is restricted to the BER serialization of<br>         the following ASN.1 type:<br>             FLOATTYPE ::= [120] IMPLICIT FloatType<br>         (note: the value 120 is the sum of '30'h and '48'h)<br>         The BER serialization of the length for values of<br>         this type must use the definite length, short<br>         encoding form.<br><br>         For example, the BER serialization of value 123<br>         of type FLOATTYPE is '9f780442f60000'h.  (The tag<br>         is '9f78'h; the length is '04'h; and the value is<br>         '42f60000'h.) The BER serialization of value<br>         '9f780442f60000'h of data type Opaque is<br>         '44079f780442f60000'h. (The tag is '44'h; the length<br>         is '07'h; and the value is '9f780442f60000'h.",
+      "name": "Float",
+      "status": "current",
+      "syntax": "Opaque (SIZE (7))",
+      "type": "text_conv"
+    },
+    {
+      "id": "43",
+      "guid": "492410C9-1A61-41B9-AF9B-03D16773F0B9",
+      "text": "Represents a possible error condition",
+      "name": "UCDErrorFlag",
+      "status": "current",
+      "syntax": "INTEGER { noError(0), error(1) }",
+      "type": "text_conv"
+    },
+    {
+      "id": "44",
+      "guid": "C6C909E2-92A0-48A4-89BA-7B13EF4E753B",
+      "text": "Represents a 'push-button' object, to invoke a suitable<br>         configured action.  Will always return 0 when read.",
+      "name": "UCDErrorFix",
+      "status": "current",
+      "syntax": "INTEGER { noError(0), runFix(1) }",
+      "type": "text_conv"
+    },
+    {
+      "id": "45",
+      "guid": "625F1791-DC95-428A-A155-CB34C65B332C",
+      "text": "<p></p><p>Process table checks</p><p></p>",
+      "name": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "46",
+      "guid": "9F664F65-96F1-458B-A0A8-4C7231384053",
+      "text": "A table containing information on running<br>  programs/daemons configured for monitoring in the<br>  snmpd.conf file of the agent.  Processes violating the<br>  number of running processes required by the agent's<br>  configuration file are flagged with numerical and<br>  textual errors.",
+      "access": "not-accessible",
+      "name": "prTable",
+      "oid": "{ ucdavis 2 }",
+      "status": "current",
+      "syntax": "SEQUENCE OF PrEntry",
+      "type": "ot"
+    },
+    {
+      "id": "47",
+      "guid": "C4F453DC-FC26-449D-B3C3-249EE95D4B74",
+      "text": "An entry containing a process and its statistics.",
+      "access": "not-accessible",
+      "index": "{ prIndex }",
+      "name": "prEntry",
+      "oid": "{ prTable  1 }",
+      "status": "current",
+      "syntax": "PrEntry",
+      "type": "ot"
+    },
+    {
+      "id": "48",
+      "guid": "6E479E08-3057-4ECF-8148-314B20DDECD0",
+      "name": "PrEntry",
+      "syntax": "<pre>{<br>    prIndex Integer32,<br>    prNames DisplayString,<br>    prMin Integer32,<br>    prMax Integer32,<br>    prCount Integer32,<br>    prErrorFlag UCDErrorFlag,<br>    prErrMessage DisplayString,<br>    prErrFix UCDErrorFix,<br>    prErrFixCmd DisplayString<br>}</pre>",
+      "type": "row"
+    },
+    {
+      "id": "49",
+      "guid": "0361037F-8207-428C-91FC-162DF871565C",
+      "text": "Reference Index for each observed process.",
+      "access": "read-only",
+      "name": "prIndex",
+      "oid": "{ prEntry 1 }",
+      "status": "current",
+      "syntax": "Integer32 (0..65535)",
+      "type": "ot"
+    },
+    {
+      "id": "50",
+      "guid": "3EA13012-5237-4116-9F96-0972C9974C7D",
+      "text": "The process name we're counting/checking on.",
+      "access": "read-only",
+      "name": "prNames",
+      "oid": "{ prEntry 2 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "51",
+      "guid": "DEB1D3A7-B7FB-4B9D-ADE7-B06DDAC5966C",
+      "text": "The minimum number of processes that should be<br>  running.  An error flag is generated if the number of<br>  running processes is &lt; the minimum.",
+      "access": "read-only",
+      "name": "prMin",
+      "oid": "{ prEntry 3 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "52",
+      "guid": "A4912F40-CB43-4E33-87AE-F92D1DB8011E",
+      "text": "The maximum number of processes that should be<br>  running.  An error flag is generated if the number of<br>  running processes is &gt; the maximum.",
+      "access": "read-only",
+      "name": "prMax",
+      "oid": "{ prEntry 4 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "53",
+      "guid": "3A2CF4C5-902B-41BF-BCEE-9BC1FB4E8B3A",
+      "text": "The number of current processes running with the name<br>  in question.",
+      "access": "read-only",
+      "name": "prCount",
+      "oid": "{ prEntry 5 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "54",
+      "guid": "537A7436-12B1-4D9D-ACC3-EF0E9EE56D57",
+      "text": "A Error flag to indicate trouble with a process.  It<br>  goes to 1 if there is an error, 0 if no error.",
+      "access": "read-only",
+      "name": "prErrorFlag",
+      "oid": "{ prEntry 100 }",
+      "status": "current",
+      "syntax": "UCDErrorFlag",
+      "type": "ot"
+    },
+    {
+      "id": "55",
+      "guid": "181EE12B-2AFB-4C18-89D0-9832B78E08BA",
+      "text": "An error message describing the problem (if one exists).",
+      "access": "read-only",
+      "name": "prErrMessage",
+      "oid": "{ prEntry 101 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "56",
+      "guid": "EA66F3D6-19B4-40F5-8342-A22787B55847",
+      "text": "Setting this to one will try to fix the problem if<br>  the agent has been configured with a script to call<br>  to attempt to fix problems automatically using remote<br>  snmp operations.",
+      "access": "read-write",
+      "name": "prErrFix",
+      "oid": "{ prEntry 102 }",
+      "status": "current",
+      "syntax": "UCDErrorFix",
+      "type": "ot"
+    },
+    {
+      "id": "57",
+      "guid": "17CCE749-9305-4B56-B538-7119CFF8E2A9",
+      "text": "The command that gets run when the prErrFix column is <br>  set to 1.",
+      "access": "read-only",
+      "name": "prErrFixCmd",
+      "oid": "{ prEntry 103 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "58",
+      "guid": "4A72B2A1-1D06-46FE-9A5F-69953D1DD6C9",
+      "text": "A table of extensible commands returning output and<br>  result codes.  These commands are configured via the<br>  agent's snmpd.conf file.",
+      "access": "not-accessible",
+      "name": "extTable",
+      "oid": "{ ucdavis 8 }",
+      "status": "current",
+      "syntax": "SEQUENCE OF ExtEntry",
+      "type": "ot"
+    },
+    {
+      "id": "59",
+      "guid": "2F5EE141-A0DD-4C2D-954B-2790CBAEDBC6",
+      "text": "An entry containing an extensible script/program and its output.",
+      "access": "not-accessible",
+      "index": "{ extIndex }",
+      "name": "extEntry",
+      "oid": "{ extTable  1 }",
+      "status": "current",
+      "syntax": "ExtEntry",
+      "type": "ot"
+    },
+    {
+      "id": "60",
+      "guid": "0D413C29-2D20-4A46-B882-27124220DD2C",
+      "name": "ExtEntry",
+      "syntax": "<pre>{<br>    extIndex Integer32,<br>    extNames DisplayString,<br>    extCommand DisplayString,<br>    extResult Integer32,<br>    extOutput DisplayString,<br>    extErrFix UCDErrorFix,<br>    extErrFixCmd DisplayString<br>}</pre>",
+      "type": "row"
+    },
+    {
+      "id": "61",
+      "guid": "880CEC19-F1A8-44A8-BAFB-550D50155BEC",
+      "text": "Reference Index for extensible scripts.  Simply an<br>  integer row number.",
+      "access": "read-only",
+      "name": "extIndex",
+      "oid": "{ extEntry 1 }",
+      "status": "current",
+      "syntax": "Integer32 (0..65535)",
+      "type": "ot"
+    },
+    {
+      "id": "62",
+      "guid": "3BCB8BE9-BBDA-4E93-9018-D4BC2808508A",
+      "text": "A Short, one name description of the extensible command.",
+      "access": "read-only",
+      "name": "extNames",
+      "oid": "{ extEntry 2 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "63",
+      "guid": "284144AE-2C67-4523-B288-97680F3149AA",
+      "text": "The command line to be executed.",
+      "access": "read-only",
+      "name": "extCommand",
+      "oid": "{ extEntry 3 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "64",
+      "guid": "A6E52B4C-71F3-42B3-B3E4-DF905E2A2A75",
+      "text": "The result code (exit status) from the executed command.",
+      "access": "read-only",
+      "name": "extResult",
+      "oid": "{ extEntry 100 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "65",
+      "guid": "104046A2-EC0F-4E59-BBEB-4504AD893F25",
+      "text": "The first line of output of the executed command.",
+      "access": "read-only",
+      "name": "extOutput",
+      "oid": "{ extEntry 101 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "66",
+      "guid": "A7D21FF0-7334-4898-B9B8-B7835237FCDB",
+      "text": "Setting this to one will try to fix the problem if<br>  the agent has been configured with a script to call<br>  to attempt to fix problems automatically using remote<br>  snmp operations.",
+      "access": "read-write",
+      "name": "extErrFix",
+      "oid": "{ extEntry 102 }",
+      "status": "current",
+      "syntax": "UCDErrorFix",
+      "type": "ot"
+    },
+    {
+      "id": "67",
+      "guid": "1612520B-9268-4504-8461-352D947B7118",
+      "text": "The command that gets run when the extErrFix column is <br>  set to 1.",
+      "access": "read-only",
+      "name": "extErrFixCmd",
+      "oid": "{ extEntry 103 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "68",
+      "guid": "2FE5834A-93B5-494D-8247-0BF22032230C",
+      "heading": " Memory usage/watch reporting. Not supported on all systems! See agent/mibgroup/ucd_snmp.h to see if its loaded for your architecture. ",
+      "name": "memory",
+      "oid": "{ ucdavis 4 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "69",
+      "guid": "4CCB0B47-2CF3-497E-9289-D9D2DA2C8BB8",
+      "text": "Bogus Index.  This should always return the integer 0.",
+      "access": "read-only",
+      "name": "memIndex",
+      "oid": "{ memory 1 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "70",
+      "guid": "BCA5C817-2470-4D8A-90BE-44875DA97433",
+      "text": "Bogus Name. This should always return the string 'swap'.",
+      "access": "read-only",
+      "name": "memErrorName",
+      "oid": "{ memory 2 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "71",
+      "guid": "586519C9-2756-424B-AB20-55AA158C843E",
+      "text": "The total amount of swap space configured for this host.",
+      "access": "read-only",
+      "name": "memTotalSwap",
+      "oid": "{ memory 3 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "72",
+      "guid": "C4C46405-8A58-4949-9A22-F1BAD78E0829",
+      "text": "The amount of swap space currently unused or available.",
+      "access": "read-only",
+      "name": "memAvailSwap",
+      "oid": "{ memory 4 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "73",
+      "guid": "F3409552-B21A-490B-82A0-F08A26129D86",
+      "text": "The total amount of real/physical memory installed<br>         on this host.",
+      "access": "read-only",
+      "name": "memTotalReal",
+      "oid": "{ memory 5 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "74",
+      "guid": "7405CB78-DA12-4BB2-A74D-8699F904DA55",
+      "text": "The amount of real/physical memory currently unused<br>         or available.",
+      "access": "read-only",
+      "name": "memAvailReal",
+      "oid": "{ memory 6 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "75",
+      "guid": "9933497C-DCDC-47B0-9292-59374D0B38BC",
+      "text": "The total amount of swap space or virtual memory allocated<br>         for text pages on this host.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not distinguish text<br>         pages from other uses of swap space or virtual memory.",
+      "access": "read-only",
+      "name": "memTotalSwapTXT",
+      "oid": "{ memory 7 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "76",
+      "guid": "C1573426-2794-45CB-944D-E61769115EA6",
+      "text": "The amount of swap space or virtual memory currently<br>         being used by text pages on this host.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not distinguish text<br>         pages from other uses of swap space or virtual memory.<br><br>         Note that (despite the name), this value reports the<br>         amount used, rather than the amount free or available<br>         for use.  For clarity, this object is being deprecated<br>         in favour of 'memUsedSwapTXT(16).",
+      "access": "read-only",
+      "name": "memAvailSwapTXT",
+      "oid": "{ memory 8 }",
+      "status": "deprecated",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "77",
+      "guid": "C2DAB22D-1918-43E1-9228-8AF3CE40AE68",
+      "text": "The total amount of real/physical memory allocated<br>         for text pages on this host.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not distinguish text<br>         pages from other uses of physical memory.",
+      "access": "read-only",
+      "name": "memTotalRealTXT",
+      "oid": "{ memory 9 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "78",
+      "guid": "7E11499C-EA1C-4D20-8AA1-6AEC8B708C20",
+      "text": "The amount of real/physical memory currently being<br>         used by text pages on this host.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not distinguish text<br>         pages from other uses of physical memory.<br><br>         Note that (despite the name), this value reports the<br>         amount used, rather than the amount free or available<br>         for use.  For clarity, this object is being deprecated<br>         in favour of 'memUsedRealTXT(17).",
+      "access": "read-only",
+      "name": "memAvailRealTXT",
+      "oid": "{ memory 10 }",
+      "status": "deprecated",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "79",
+      "guid": "6CA50945-D4BC-41D8-81BB-4AFA984EBD75",
+      "text": "The total amount of memory free or available for use on<br>         this host.  This value typically covers both real memory<br>         and swap space or virtual memory.",
+      "access": "read-only",
+      "name": "memTotalFree",
+      "oid": "{ memory 11 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB",
+      "links": {
+        "satisfies": [
+          "NTCIP_1218-910"
+        ]
+      },
+      "history": [
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-910"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-07-24T20:47:47.135Z"
+        }
+      ]
+    },
+    {
+      "id": "80",
+      "guid": "7BCCB51B-6EB9-4281-8A77-FB8593C62DEF",
+      "text": "The minimum amount of swap space expected to be kept<br>         free or available during normal operation of this host.<br><br>         If this value (as reported by 'memAvailSwap(4)') falls<br>         below the specified level, then 'memSwapError(100)' will<br>         be set to 1 and an error message made available via<br>         'memSwapErrorMsg(101)'.",
+      "access": "read-only",
+      "name": "memMinimumSwap",
+      "oid": "{ memory 12 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "81",
+      "guid": "A15B8990-DB9D-4FAE-8ADA-E4DFE48E9F0A",
+      "text": "The total amount of real or virtual memory currently<br>         allocated for use as shared memory.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not explicitly identify<br>         memory as specifically reserved for this purpose.",
+      "access": "read-only",
+      "name": "memShared",
+      "oid": "{ memory 13 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "82",
+      "guid": "56CFCB77-D093-4DB7-A79F-C7A826D9748E",
+      "text": "The total amount of real or virtual memory currently<br>         allocated for use as memory buffers.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not explicitly identify<br>         memory as specifically reserved for this purpose.",
+      "access": "read-only",
+      "name": "memBuffer",
+      "oid": "{ memory 14 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "83",
+      "guid": "39F69D9B-42B7-43C0-BFA6-FCDC981453AA",
+      "text": "The total amount of real or virtual memory currently<br>         allocated for use as cached memory.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not explicitly identify<br>         memory as specifically reserved for this purpose.",
+      "access": "read-only",
+      "name": "memCached",
+      "oid": "{ memory 15 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "84",
+      "guid": "5709DDA7-6599-4838-8628-02827A46C689",
+      "text": "The amount of swap space or virtual memory currently<br>         being used by text pages on this host.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not distinguish text<br>         pages from other uses of swap space or virtual memory.",
+      "access": "read-only",
+      "name": "memUsedSwapTXT",
+      "oid": "{ memory 16 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "85",
+      "guid": "5281291F-6094-4E61-9609-F4AD738E5C9C",
+      "text": "The amount of real/physical memory currently being<br>         used by text pages on this host.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not distinguish text<br>         pages from other uses of physical memory.",
+      "access": "read-only",
+      "name": "memUsedRealTXT",
+      "oid": "{ memory 17 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "86",
+      "guid": "B2DDF722-6768-4E38-867A-75E4487B0A92",
+      "text": "The total amount of swap space configured for this host.",
+      "access": "read-only",
+      "name": "memTotalSwapX",
+      "oid": "{ memory 18 }",
+      "status": "current",
+      "syntax": "CounterBasedGauge64",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "87",
+      "guid": "D2C2A249-DCF0-4211-8CB5-2405138EC473",
+      "text": "The amount of swap space currently unused or available.",
+      "access": "read-only",
+      "name": "memAvailSwapX",
+      "oid": "{ memory 19 }",
+      "status": "current",
+      "syntax": "CounterBasedGauge64",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "88",
+      "guid": "DAE5C8F8-B553-451C-B4D9-837E4B23B104",
+      "text": "The total amount of real/physical memory installed<br>         on this host.",
+      "access": "read-only",
+      "name": "memTotalRealX",
+      "oid": "{ memory 20 }",
+      "status": "current",
+      "syntax": "CounterBasedGauge64",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "89",
+      "guid": "C37047BA-9627-4FDD-AA0C-104FB3E07082",
+      "text": "The amount of real/physical memory currently unused<br>         or available.",
+      "access": "read-only",
+      "name": "memAvailRealX",
+      "oid": "{ memory 21 }",
+      "status": "current",
+      "syntax": "CounterBasedGauge64",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "90",
+      "guid": "37579487-A11A-483A-9EC4-6C44C73110FE",
+      "text": "The total amount of memory free or available for use on<br>         this host.  This value typically covers both real memory<br>         and swap space or virtual memory.",
+      "access": "read-only",
+      "name": "memTotalFreeX",
+      "oid": "{ memory 22 }",
+      "status": "current",
+      "syntax": "CounterBasedGauge64",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "91",
+      "guid": "2CD08D2A-2A13-4EC3-877F-4CB18C58CD15",
+      "text": "The minimum amount of swap space expected to be kept<br>         free or available during normal operation of this host.<br><br>         If this value (as reported by 'memAvailSwap(4)') falls<br>         below the specified level, then 'memSwapError(100)' will<br>         be set to 1 and an error message made available via<br>         'memSwapErrorMsg(101)'.",
+      "access": "read-only",
+      "name": "memMinimumSwapX",
+      "oid": "{ memory 23 }",
+      "status": "current",
+      "syntax": "CounterBasedGauge64",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "92",
+      "guid": "44851F7D-9232-4405-A519-6AB06F27F6A8",
+      "text": "The total amount of real or virtual memory currently<br>         allocated for use as shared memory.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not explicitly identify<br>         memory as specifically reserved for this purpose.",
+      "access": "read-only",
+      "name": "memSharedX",
+      "oid": "{ memory 24 }",
+      "status": "current",
+      "syntax": "CounterBasedGauge64",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "93",
+      "guid": "D4B74E32-ED8F-4FF8-AF0D-D0DEADD9D96C",
+      "text": "The total amount of real or virtual memory currently<br>         allocated for use as memory buffers.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not explicitly identify<br>         memory as specifically reserved for this purpose.",
+      "access": "read-only",
+      "name": "memBufferX",
+      "oid": "{ memory 25 }",
+      "status": "current",
+      "syntax": "CounterBasedGauge64",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "94",
+      "guid": "30D948F2-32AF-4E27-8A77-4B8056B88850",
+      "text": "The total amount of real or virtual memory currently<br>         allocated for use as cached memory.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not explicitly identify<br>         memory as specifically reserved for this purpose.",
+      "access": "read-only",
+      "name": "memCachedX",
+      "oid": "{ memory 26 }",
+      "status": "current",
+      "syntax": "CounterBasedGauge64",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "95",
+      "guid": "4BC01BB8-7E3F-4946-B778-6BC4CC3A3263",
+      "text": "The total amount of available memory, which is an estimate<br>         of how much memory is available for starting new applications,<br>         without swapping.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not explicitly identify<br>         memory as specifically reserved for this purpose.",
+      "access": "read-only",
+      "name": "memSysAvail",
+      "oid": "{ memory 27 }",
+      "status": "current",
+      "syntax": "CounterBasedGauge64",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "96",
+      "guid": "4F63EEFB-2E4F-4D4A-8402-2653B4612325",
+      "text": "Indicates whether the amount of available swap space<br>         (as reported by 'memAvailSwap(4)'), is less than the<br>         desired minimum (specified by 'memMinimumSwap(12)').",
+      "access": "read-only",
+      "name": "memSwapError",
+      "oid": "{ memory 100 }",
+      "status": "current",
+      "syntax": "UCDErrorFlag",
+      "type": "ot"
+    },
+    {
+      "id": "97",
+      "guid": "1EB9DEE2-3B8A-4562-8643-FFE8BFBE3914",
+      "text": "Describes whether the amount of available swap space<br>         (as reported by 'memAvailSwap(4)'), is less than the<br>         desired minimum (specified by 'memMinimumSwap(12)').",
+      "access": "read-only",
+      "name": "memSwapErrorMsg",
+      "oid": "{ memory 101 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "98",
+      "guid": "D0302A3F-BA7D-4354-895A-FCAD718484DE",
+      "text": "Disk watching information.  Partions to be watched<br>  are configured by the snmpd.conf file of the agent.",
+      "access": "not-accessible",
+      "name": "dskTable",
+      "oid": "{ ucdavis 9 }",
+      "status": "current",
+      "syntax": "SEQUENCE OF DskEntry",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "NTCIP_1218-920"
+        ]
+      },
+      "history": [
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-920"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-07-24T20:47:47.135Z"
+        }
+      ]
+    },
+    {
+      "id": "99",
+      "guid": "8EAA8D00-1AE7-41AA-9CC5-617791596BDD",
+      "text": "An entry containing a disk and its statistics.",
+      "access": "not-accessible",
+      "index": "{ dskIndex }",
+      "name": "dskEntry",
+      "oid": "{ dskTable  1 }",
+      "status": "current",
+      "syntax": "DskEntry",
+      "type": "ot"
+    },
+    {
+      "id": "100",
+      "guid": "1924D052-787F-4F12-B62A-3AE591C35BF0",
+      "name": "DskEntry",
+      "syntax": "<pre>{<br>    dskIndex Integer32,<br>    dskPath DisplayString,<br>    dskDevice DisplayString,<br>    dskMinimum Integer32,<br>    dskMinPercent Integer32,<br>    dskTotal Integer32,<br>    dskAvail Integer32,<br>    dskUsed Integer32,<br>    dskPercent Integer32,<br>    dskPercentNode Integer32,<br>    dskErrorFlag UCDErrorFlag,<br>    dskErrorMsg DisplayString,<br>    dskTotalLow Unsigned32,<br>    dskTotalHigh Unsigned32,<br>    dskAvailLow Unsigned32,<br>    dskAvailHigh Unsigned32,<br>    dskUsedLow Unsigned32,<br>    dskUsedHigh Unsigned32<br>}</pre>",
+      "type": "row"
+    },
+    {
+      "id": "101",
+      "guid": "F876E047-E3BD-4EF7-AA9C-F79F0F1C6DBB",
+      "text": "Integer reference number (row number) for the disk mib.",
+      "access": "read-only",
+      "name": "dskIndex",
+      "oid": "{ dskEntry 1 }",
+      "status": "current",
+      "syntax": "Integer32 (0..65535)",
+      "type": "ot",
+      "links": {
+        "satisfiesWithNote": [
+          "NTCIP_1218-920"
+        ]
+      },
+      "history": [
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-920"
+            ],
+            "type": "satisfiesWithNote"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-07-24T20:47:47.135Z"
+        }
+      ]
+    },
+    {
+      "id": "102",
+      "guid": "7B3BDD5F-D82E-4636-9766-9AAAB82F61F3",
+      "text": "Path where the disk is mounted.",
+      "access": "read-only",
+      "name": "dskPath",
+      "oid": "{ dskEntry 2 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "103",
+      "guid": "AA63EDC1-6502-4CD9-845A-A74BDA40CEC6",
+      "text": "Path of the device for the partition",
+      "access": "read-only",
+      "name": "dskDevice",
+      "oid": "{ dskEntry 3 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "104",
+      "guid": "B9F3D1B7-EB90-47ED-8874-5CC9AC188667",
+      "text": "Minimum space required on the disk (in kBytes) before the<br>         errors are triggered.  Either this or dskMinPercent is<br>         configured via the agent's snmpd.conf file.",
+      "access": "read-only",
+      "name": "dskMinimum",
+      "oid": "{ dskEntry 4 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "105",
+      "guid": "8A01C0C7-A6F9-4313-9911-5D67AC59B83D",
+      "text": "Percentage of minimum space required on the disk before the<br>         errors are triggered.  Either this or dskMinimum is<br>         configured via the agent's snmpd.conf file.",
+      "access": "read-only",
+      "name": "dskMinPercent",
+      "oid": "{ dskEntry 5 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "106",
+      "guid": "187B6A4D-6B9F-4B58-97CB-67ABC5F6F3B8",
+      "text": "Total size of the disk/partion (kBytes).<br>  For large disks (&gt;2Tb), this value will<br>  latch at INT32_MAX (2147483647).",
+      "access": "read-only",
+      "name": "dskTotal",
+      "oid": "{ dskEntry 6 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "107",
+      "guid": "83A0B07C-2960-4E2C-81E7-08D8221C01E9",
+      "text": "Available space on the disk.<br>  For large lightly-used disks (&gt;2Tb), this<br>  value will latch at INT32_MAX (2147483647).",
+      "access": "read-only",
+      "name": "dskAvail",
+      "oid": "{ dskEntry 7 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "NTCIP_1218-920"
+        ]
+      },
+      "history": [
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-920"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-07-24T20:47:47.135Z"
+        }
+      ]
+    },
+    {
+      "id": "108",
+      "guid": "A00C5556-EA35-4444-B604-6EB11B06890F",
+      "text": "Used space on the disk.<br>  For large heavily-used disks (&gt;2Tb), this<br>  value will latch at INT32_MAX (2147483647).",
+      "access": "read-only",
+      "name": "dskUsed",
+      "oid": "{ dskEntry 8 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "109",
+      "guid": "C9657B25-60C6-4848-A0FB-3A30CBBF8FD2",
+      "text": "Percentage of space used on disk",
+      "access": "read-only",
+      "name": "dskPercent",
+      "oid": "{ dskEntry 9 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "110",
+      "guid": "60CF67ED-505D-4D84-9D1F-F6757FAD8EA5",
+      "text": "Percentage of inodes used on disk",
+      "access": "read-only",
+      "name": "dskPercentNode",
+      "oid": "{ dskEntry 10 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "111",
+      "guid": "3F5F4ECD-E945-4BF0-ACB7-AA6ED99D8F01",
+      "text": "Total size of the disk/partion (kBytes).<br> Together with dskTotalHigh composes 64-bit number.",
+      "access": "read-only",
+      "name": "dskTotalLow",
+      "oid": "{ dskEntry 11 }",
+      "status": "current",
+      "syntax": "Unsigned32",
+      "type": "ot"
+    },
+    {
+      "id": "112",
+      "guid": "7C8442B7-35DF-4261-8025-4EC6FA892E39",
+      "text": "Total size of the disk/partion (kBytes).<br> Together with dskTotalLow composes 64-bit number.",
+      "access": "read-only",
+      "name": "dskTotalHigh",
+      "oid": "{ dskEntry 12 }",
+      "status": "current",
+      "syntax": "Unsigned32",
+      "type": "ot"
+    },
+    {
+      "id": "113",
+      "guid": "F693FCE6-5973-4D4B-B6F9-90AA23622A19",
+      "text": "Available space on the disk (kBytes).<br> Together with dskAvailHigh composes 64-bit number.",
+      "access": "read-only",
+      "name": "dskAvailLow",
+      "oid": "{ dskEntry 13 }",
+      "status": "current",
+      "syntax": "Unsigned32",
+      "type": "ot"
+    },
+    {
+      "id": "114",
+      "guid": "07A010C3-A1BF-4F25-A43B-31087AB79201",
+      "text": "Available space on the disk (kBytes).<br> Together with dskAvailLow composes 64-bit number.",
+      "access": "read-only",
+      "name": "dskAvailHigh",
+      "oid": "{ dskEntry 14 }",
+      "status": "current",
+      "syntax": "Unsigned32",
+      "type": "ot"
+    },
+    {
+      "id": "115",
+      "guid": "1739536D-C667-489E-BF74-F8885D21E33B",
+      "text": "Used space on the disk (kBytes).<br> Together with dskUsedHigh composes 64-bit number.",
+      "access": "read-only",
+      "name": "dskUsedLow",
+      "oid": "{ dskEntry 15 }",
+      "status": "current",
+      "syntax": "Unsigned32",
+      "type": "ot"
+    },
+    {
+      "id": "116",
+      "guid": "01F91F47-3882-4C98-BB5D-C3F01E942613",
+      "text": "Used space on the disk (kBytes).<br> Together with dskUsedLow composes 64-bit number.",
+      "access": "read-only",
+      "name": "dskUsedHigh",
+      "oid": "{ dskEntry 16 }",
+      "status": "current",
+      "syntax": "Unsigned32",
+      "type": "ot"
+    },
+    {
+      "id": "117",
+      "guid": "DCAF6ADC-64E7-4CB3-B860-CEEEC1DB3A26",
+      "text": "Error flag signaling that the disk or partition is under<br>  the minimum required space configured for it.",
+      "access": "read-only",
+      "name": "dskErrorFlag",
+      "oid": "{ dskEntry 100 }",
+      "status": "current",
+      "syntax": "UCDErrorFlag",
+      "type": "ot"
+    },
+    {
+      "id": "118",
+      "guid": "6D57D30E-B288-45B0-8495-D16AC5E5C32C",
+      "text": "A text description providing a warning and the space left<br>  on the disk.",
+      "access": "read-only",
+      "name": "dskErrorMsg",
+      "oid": "{ dskEntry 101 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "119",
+      "guid": "3EE52122-1674-42B2-A40D-5104D26E2BB8",
+      "text": "Load average information.",
+      "access": "not-accessible",
+      "name": "laTable",
+      "oid": "{ ucdavis 10 }",
+      "status": "current",
+      "syntax": "SEQUENCE OF LaEntry",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "NTCIP_1218-914",
+          "NTCIP_1218-916",
+          "NTCIP_1218-918"
+        ]
+      },
+      "history": [
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-914",
+              "NTCIP_1218-916",
+              "NTCIP_1218-918"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-07-24T20:47:47.135Z"
+        }
+      ]
+    },
+    {
+      "id": "120",
+      "guid": "13AA72DB-4762-4C3C-95FE-163B7262D710",
+      "text": "An entry containing a load average and its values.",
+      "access": "not-accessible",
+      "index": "{ laIndex }",
+      "name": "laEntry",
+      "oid": "{ laTable  1 }",
+      "status": "current",
+      "syntax": "LaEntry",
+      "type": "ot"
+    },
+    {
+      "id": "121",
+      "guid": "D75FE436-6EFB-4674-BF46-CDA378F8FF17",
+      "name": "LaEntry",
+      "syntax": "<pre>{<br>    laIndex Integer32,<br>    laNames DisplayString,<br>    laLoad DisplayString,<br>    laConfig DisplayString,<br>    laLoadInt Integer32,<br>    laLoadFloat Float,<br>    laErrorFlag UCDErrorFlag,<br>    laErrMessage DisplayString<br>}</pre>",
+      "type": "row"
+    },
+    {
+      "id": "122",
+      "guid": "8CFDA477-1823-4F79-AF6A-2FBE2A3B0FE4",
+      "text": "reference index/row number for each observed loadave.",
+      "access": "read-only",
+      "name": "laIndex",
+      "oid": "{ laEntry 1 }",
+      "status": "current",
+      "syntax": "Integer32 (0..3)",
+      "type": "ot",
+      "links": {
+        "satisfiesWithNote": [
+          "NTCIP_1218-914",
+          "NTCIP_1218-916",
+          "NTCIP_1218-918"
+        ]
+      },
+      "history": [
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-914",
+              "NTCIP_1218-916",
+              "NTCIP_1218-918"
+            ],
+            "type": "satisfiesWithNote"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-07-24T20:47:47.135Z"
+        }
+      ]
+    },
+    {
+      "id": "123",
+      "guid": "FC31AAB2-4E79-4B7E-9914-B4BFF89C7CF3",
+      "text": "The list of loadave names we're watching.",
+      "access": "read-only",
+      "name": "laNames",
+      "oid": "{ laEntry 2 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "124",
+      "guid": "51FD9CFD-EC62-4E1B-9EB5-42B70861606A",
+      "text": "The 1,5 and 15 minute load averages (one per row).",
+      "access": "read-only",
+      "name": "laLoad",
+      "oid": "{ laEntry 3 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "NTCIP_1218-914",
+          "NTCIP_1218-916",
+          "NTCIP_1218-918"
+        ]
+      },
+      "history": [
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-914",
+              "NTCIP_1218-916",
+              "NTCIP_1218-918"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-07-24T20:47:47.135Z"
+        }
+      ]
+    },
+    {
+      "id": "125",
+      "guid": "5466A23C-4514-422A-B297-1938A3743CBC",
+      "text": "The watch point for load-averages to signal an<br>  error.  If the load averages rises above this value,<br>  the laErrorFlag below is set.",
+      "access": "read-write",
+      "name": "laConfig",
+      "oid": "{ laEntry 4 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "126",
+      "guid": "77DDBCFD-2080-4828-B041-C9B02F5E8D95",
+      "text": "The 1,5 and 15 minute load averages as an integer.<br>  This is computed by taking the floating point<br>  loadaverage value and multiplying by 100, then<br>  converting the value to an integer.",
+      "access": "read-only",
+      "name": "laLoadInt",
+      "oid": "{ laEntry 5 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "127",
+      "guid": "82C66241-C437-471C-815F-165C05E4B002",
+      "text": "The 1,5 and 15 minute load averages as an opaquely<br>  wrapped floating point number.",
+      "access": "read-only",
+      "name": "laLoadFloat",
+      "oid": "{ laEntry 6 }",
+      "status": "current",
+      "syntax": "Float",
+      "type": "ot"
+    },
+    {
+      "id": "128",
+      "guid": "E956A810-1D60-4FE0-A155-AA4164997603",
+      "text": "A Error flag to indicate the load-average has crossed<br>  its threshold value defined in the snmpd.conf file.<br>  It is set to 1 if the threshold is crossed, 0 otherwise.",
+      "access": "read-only",
+      "name": "laErrorFlag",
+      "oid": "{ laEntry 100 }",
+      "status": "current",
+      "syntax": "UCDErrorFlag",
+      "type": "ot"
+    },
+    {
+      "id": "129",
+      "guid": "E807798E-4FD3-4B7A-ACB6-AD62CC2DD55C",
+      "text": "An error message describing the load-average and its<br>  surpased watch-point value.",
+      "access": "read-only",
+      "name": "laErrMessage",
+      "oid": "{ laEntry 101 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "130",
+      "guid": "4003BF14-C51D-46A7-B704-7FE365E52A10",
+      "name": "version",
+      "oid": "{ ucdavis 100 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "131",
+      "guid": "2189DD9D-EC6E-4DCE-9884-33EFCE5D826E",
+      "text": "Index to mib (always 0)",
+      "access": "read-only",
+      "name": "versionIndex",
+      "oid": "{ version 1 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "132",
+      "guid": "81643F3C-BA62-4663-8EE7-DE3CAE55A1D0",
+      "text": "CVS tag keyword",
+      "access": "read-only",
+      "name": "versionTag",
+      "oid": "{ version 2 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "133",
+      "guid": "873A2C9A-30F8-4D5D-A963-7F197A20E4FC",
+      "text": "Date string from RCS keyword",
+      "access": "read-only",
+      "name": "versionDate",
+      "oid": "{ version 3 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "134",
+      "guid": "FE016418-3CD7-4B0A-AEF4-7F44D3A5E6BC",
+      "text": "Date string from ctime() ",
+      "access": "read-only",
+      "name": "versionCDate",
+      "oid": "{ version 4 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "135",
+      "guid": "228711AC-1C89-46D5-84C8-B7C6AE175EFF",
+      "text": "Id string from RCS keyword",
+      "access": "read-only",
+      "name": "versionIdent",
+      "oid": "{ version 5 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "136",
+      "guid": "FB45B3B7-27DE-4FA6-A0F7-E3AB12DF9856",
+      "text": "Options passed to the configure script when this agent was built.",
+      "access": "read-only",
+      "name": "versionConfigureOptions",
+      "oid": "{ version 6 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "137",
+      "guid": "C443CB61-EC3C-4CDF-90B6-A9E4E89C860D",
+      "text": "Set to 1 to clear the exec cache, if enabled",
+      "access": "read-write",
+      "name": "versionClearCache",
+      "oid": "{ version 10 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "138",
+      "guid": "80B7B85A-84CF-469A-91BA-136DF2DCA73B",
+      "text": "Set to 1 to read-read the config file(s).",
+      "access": "read-write",
+      "name": "versionUpdateConfig",
+      "oid": "{ version 11 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "139",
+      "guid": "176593D8-AAFB-4014-8EDF-E94199FA2812",
+      "text": "Set to 1 to restart the agent.",
+      "access": "read-write",
+      "name": "versionRestartAgent",
+      "oid": "{ version 12 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "140",
+      "guid": "DAF95335-E445-48AE-8620-F5589EAB2B09",
+      "text": "Set to 1 to force the agent to save it's persistent data immediately.",
+      "access": "read-write",
+      "name": "versionSavePersistentData",
+      "oid": "{ version 13 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "141",
+      "guid": "238B956A-C573-4E07-B1F2-88923BDE3DB7",
+      "text": "Set to 1 to turn debugging statements on in the agent or 0<br>  to turn it off.",
+      "access": "read-write",
+      "name": "versionDoDebugging",
+      "oid": "{ version 20 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "142",
+      "guid": "A9DA504F-72C4-41EB-BD18-A0B876B47FF7",
+      "name": "snmperrs",
+      "oid": "{ ucdavis 101 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "143",
+      "guid": "008CF5A5-5E8B-4E98-9A32-177A6E8DB4C8",
+      "text": "Bogus Index for snmperrs (always 0).",
+      "access": "read-only",
+      "name": "snmperrIndex",
+      "oid": "{ snmperrs 1 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "144",
+      "guid": "4C298D1E-EAE8-416A-8D84-7DE2F6A4F6C7",
+      "text": "snmp",
+      "access": "read-only",
+      "name": "snmperrNames",
+      "oid": "{ snmperrs 2 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "145",
+      "guid": "B8B68845-1957-4607-B059-027BBDAAE707",
+      "text": "A Error flag to indicate trouble with the agent.  It<br>  goes to 1 if there is an error, 0 if no error.",
+      "access": "read-only",
+      "name": "snmperrErrorFlag",
+      "oid": "{ snmperrs 100 }",
+      "status": "current",
+      "syntax": "UCDErrorFlag",
+      "type": "ot"
+    },
+    {
+      "id": "146",
+      "guid": "D39BE715-6029-4ABF-B8D7-ABC712542F4D",
+      "text": "An error message describing the problem (if one exists).",
+      "access": "read-only",
+      "name": "snmperrErrMessage",
+      "oid": "{ snmperrs 101 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "147",
+      "guid": "435E1DF4-0888-43B6-AF3A-56257BDC6C88",
+      "text": "A table displaying all the oid's registered by mib modules in<br>  the agent.  Since the agent is modular in nature, this lists<br>  each module's OID it is responsible for and the name of the module",
+      "access": "not-accessible",
+      "name": "mrTable",
+      "oid": "{ ucdavis 102 }",
+      "status": "current",
+      "syntax": "SEQUENCE OF MrEntry",
+      "type": "ot"
+    },
+    {
+      "id": "148",
+      "guid": "8AA9BE84-F383-49E1-A48D-04C64428D9FE",
+      "text": "An entry containing a registered mib oid.",
+      "access": "not-accessible",
+      "index": "{ IMPLIED mrIndex }",
+      "name": "mrEntry",
+      "oid": "{ mrTable 1 }",
+      "status": "current",
+      "syntax": "MrEntry",
+      "type": "ot"
+    },
+    {
+      "id": "149",
+      "guid": "EF976A39-3954-43F6-8A9B-B9C1A326C1FB",
+      "name": "MrEntry",
+      "syntax": "<pre>{<br>    mrIndex OBJECT IDENTIFIER,<br>    mrModuleName DisplayString<br>}</pre>",
+      "type": "row"
+    },
+    {
+      "id": "150",
+      "guid": "783B3C33-DF95-4B76-A3D5-6F9648BAD17C",
+      "text": "The registry slot of a mibmodule.",
+      "access": "read-only",
+      "name": "mrIndex",
+      "oid": "{ mrEntry  1 }",
+      "status": "current",
+      "syntax": "OBJECT IDENTIFIER",
+      "type": "ot"
+    },
+    {
+      "id": "151",
+      "guid": "515EA5C7-88E4-40C9-9537-2EFE11813104",
+      "text": "The module name that registered this OID.",
+      "access": "read-only",
+      "name": "mrModuleName",
+      "oid": "{ mrEntry  2 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "152",
+      "guid": "B8E593A4-1A75-4BCA-BA4E-BB6A1640AE82",
+      "name": "systemStats",
+      "oid": "{ ucdavis 11 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "153",
+      "guid": "8963C59F-2102-4471-9ECB-E00688C04455",
+      "text": "Bogus Index.  This should always return the integer 1.",
+      "access": "read-only",
+      "name": "ssIndex",
+      "oid": "{ systemStats 1 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "154",
+      "guid": "AC25AA1D-B27E-43E6-A794-4D6E1E255560",
+      "text": "Bogus Name. This should always return the string 'systemStats'.",
+      "access": "read-only",
+      "name": "ssErrorName",
+      "oid": "{ systemStats 2 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "155",
+      "guid": "68DED1B7-24F4-49CB-A2DA-55FDBB5032B7",
+      "text": "The average amount of memory swapped in from disk,<br>         calculated over the last minute.",
+      "access": "read-only",
+      "name": "ssSwapIn",
+      "oid": "{ systemStats 3 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "156",
+      "guid": "35733695-A554-4910-95E0-5D0CA12077D3",
+      "text": "The average amount of memory swapped out to disk,<br>         calculated over the last minute.",
+      "access": "read-only",
+      "name": "ssSwapOut",
+      "oid": "{ systemStats 4 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "157",
+      "guid": "8DA58AD0-DE72-4867-A1F6-D87627D2424A",
+      "text": "The average amount of data written to disk or other<br>         block device, calculated over the last minute.<br>       <br>  This object has been deprecated in favour of<br>         'ssIORawSent(57)', which can be used to calculate<br>         the same metric, but over any desired time period.",
+      "access": "read-only",
+      "name": "ssIOSent",
+      "oid": "{ systemStats 5 }",
+      "status": "deprecated",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "blocks/s"
+    },
+    {
+      "id": "158",
+      "guid": "EFBDFB86-C9EF-45EC-8334-6FE6E83AFE25",
+      "text": "The average amount of data read from disk or other<br>         block device, calculated over the last minute.<br>       <br>  This object has been deprecated in favour of<br>         'ssIORawReceived(58)', which can be used to calculate<br>         the same metric, but over any desired time period.",
+      "access": "read-only",
+      "name": "ssIOReceive",
+      "oid": "{ systemStats 6 }",
+      "status": "deprecated",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "blocks/s"
+    },
+    {
+      "id": "159",
+      "guid": "EE2E53DE-E4AD-48DD-8377-7E415EC32860",
+      "text": "The average rate of interrupts processed (including<br>         the clock) calculated over the last minute.<br>       <br>  This object has been deprecated in favour of<br>         'ssRawInterrupts(59)', which can be used to calculate<br>         the same metric, but over any desired time period.",
+      "access": "read-only",
+      "name": "ssSysInterrupts",
+      "oid": "{ systemStats 7 }",
+      "status": "deprecated",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "interrupts/s"
+    },
+    {
+      "id": "160",
+      "guid": "45959D39-0F9D-4130-8352-D6A5BFA2740A",
+      "text": "The average rate of context switches,<br>         calculated over the last minute.<br>       <br>  This object has been deprecated in favour of<br>         'ssRawContext(60)', which can be used to calculate<br>         the same metric, but over any desired time period.",
+      "access": "read-only",
+      "name": "ssSysContext",
+      "oid": "{ systemStats 8 }",
+      "status": "deprecated",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "switches/s"
+    },
+    {
+      "id": "161",
+      "guid": "AAE89FA6-CB7E-4FAD-A461-43DAAEA1CC39",
+      "text": "The percentage of CPU time spent processing<br>         user-level code, calculated over the last minute.<br>       <br>  This object has been deprecated in favour of<br>         'ssCpuRawUser(50)', which can be used to calculate<br>         the same metric, but over any desired time period.",
+      "access": "read-only",
+      "name": "ssCpuUser",
+      "oid": "{ systemStats 9 }",
+      "status": "deprecated",
+      "syntax": "Integer32",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "NTCIP_1218-912"
+        ]
+      },
+      "history": [
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-912"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-07-24T20:47:47.135Z"
+        }
+      ]
+    },
+    {
+      "id": "162",
+      "guid": "CF0A709C-1BFF-444C-8ECE-F64544C134E0",
+      "text": "The percentage of CPU time spent processing<br>         system-level code, calculated over the last minute.<br>       <br>  This object has been deprecated in favour of<br>         'ssCpuRawSystem(52)', which can be used to calculate<br>         the same metric, but over any desired time period.",
+      "access": "read-only",
+      "name": "ssCpuSystem",
+      "oid": "{ systemStats 10 }",
+      "status": "deprecated",
+      "syntax": "Integer32",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "NTCIP_1218-912"
+        ]
+      },
+      "history": [
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-912"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-07-24T20:47:47.135Z"
+        }
+      ]
+    },
+    {
+      "id": "163",
+      "guid": "70C6C38D-A558-479A-A960-1B7511CCA4DF",
+      "text": "The percentage of processor time spent idle,<br>         calculated over the last minute.<br>       <br>  This object has been deprecated in favour of<br>         'ssCpuRawIdle(53)', which can be used to calculate<br>         the same metric, but over any desired time period.",
+      "access": "read-only",
+      "name": "ssCpuIdle",
+      "oid": "{ systemStats 11 }",
+      "status": "deprecated",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "164",
+      "guid": "BD4E368F-75BA-436B-9CBA-FEAA6347CD1E",
+      "text": "<p>The agent only implements those of the following counters that the</p><p>kernel supports! Don't expect all to be present.</p>",
+      "name": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "165",
+      "guid": "88689CFA-3E6F-4D00-A945-A7C8255F1506",
+      "text": "The number of 'ticks' (typically 1/100s) spent<br>         processing user-level code.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).",
+      "access": "read-only",
+      "name": "ssCpuRawUser",
+      "oid": "{ systemStats 50 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "166",
+      "guid": "BADC1343-458F-4EBD-9C24-BF9DDC8510B1",
+      "text": "The number of 'ticks' (typically 1/100s) spent<br>         processing reduced-priority code.<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).",
+      "access": "read-only",
+      "name": "ssCpuRawNice",
+      "oid": "{ systemStats 51 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "167",
+      "guid": "5472270D-4593-48C9-8405-0069DCEE7BF4",
+      "text": "The number of 'ticks' (typically 1/100s) spent<br>         processing system-level code.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).<br><br>         This object may sometimes be implemented as the<br>         combination of the 'ssCpuRawWait(54)' and<br>         'ssCpuRawKernel(55)' counters, so care must be<br>         taken when summing the overall raw counters.",
+      "access": "read-only",
+      "name": "ssCpuRawSystem",
+      "oid": "{ systemStats 52 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "168",
+      "guid": "05A21BBE-3CBE-4A5A-AC0E-3FD915F348E4",
+      "text": "The number of 'ticks' (typically 1/100s) spent<br>         idle.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).",
+      "access": "read-only",
+      "name": "ssCpuRawIdle",
+      "oid": "{ systemStats 53 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "169",
+      "guid": "1C23AE83-2523-4541-A9E8-E97E26D81731",
+      "text": "The number of 'ticks' (typically 1/100s) spent<br>         waiting for IO.<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.  This time may also be<br>         included within the 'ssCpuRawSystem(52)' counter.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).",
+      "access": "read-only",
+      "name": "ssCpuRawWait",
+      "oid": "{ systemStats 54 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "170",
+      "guid": "59C0643D-14F2-4BE1-9197-D96EF538E8A0",
+      "text": "The number of 'ticks' (typically 1/100s) spent<br>         processing kernel-level code.<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.  This time may also be<br>         included within the 'ssCpuRawSystem(52)' counter.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).",
+      "access": "read-only",
+      "name": "ssCpuRawKernel",
+      "oid": "{ systemStats 55 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "171",
+      "guid": "A6C11194-DA2F-4904-B297-BA8B880E7FD7",
+      "text": "The number of 'ticks' (typically 1/100s) spent<br>         processing hardware interrupts.<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).",
+      "access": "read-only",
+      "name": "ssCpuRawInterrupt",
+      "oid": "{ systemStats 56 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "172",
+      "guid": "5A4079BE-88DB-42F0-AD9A-09BCAFFEC09E",
+      "text": "Number of blocks sent to a block device",
+      "access": "read-only",
+      "name": "ssIORawSent",
+      "oid": "{ systemStats 57 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "173",
+      "guid": "818F4053-FE0F-4B3E-B9BC-922D9CF3AC25",
+      "text": "Number of blocks received from a block device",
+      "access": "read-only",
+      "name": "ssIORawReceived",
+      "oid": "{ systemStats 58 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "174",
+      "guid": "F472AD75-8313-476F-B294-B8405229CF55",
+      "text": "Number of interrupts processed",
+      "access": "read-only",
+      "name": "ssRawInterrupts",
+      "oid": "{ systemStats 59 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "175",
+      "guid": "0B8084B0-8FA1-4210-B065-5705B0CF297D",
+      "text": "Number of context switches",
+      "access": "read-only",
+      "name": "ssRawContexts",
+      "oid": "{ systemStats 60 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "176",
+      "guid": "C1F50BA4-EBF5-4692-BD52-564172BA4A7D",
+      "text": "The number of 'ticks' (typically 1/100s) spent<br>         processing software interrupts.<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).",
+      "access": "read-only",
+      "name": "ssCpuRawSoftIRQ",
+      "oid": "{ systemStats 61 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "177",
+      "guid": "4EADB115-D3CB-48E5-A123-875B3A1BC326",
+      "text": "Number of blocks swapped in",
+      "access": "read-only",
+      "name": "ssRawSwapIn",
+      "oid": "{ systemStats 62 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "178",
+      "guid": "AD90F2B0-9292-4BBB-99A1-26CC823A8BD8",
+      "text": "Number of blocks swapped out",
+      "access": "read-only",
+      "name": "ssRawSwapOut",
+      "oid": "{ systemStats 63 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "179",
+      "guid": "47D88492-1527-4029-A4CF-67B66AFC9BBC",
+      "text": "The number of 'ticks' (typically 1/100s) spent<br>         by the hypervisor code to run other VMs even<br>         though the CPU in the current VM had something runnable.<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).",
+      "access": "read-only",
+      "name": "ssCpuRawSteal",
+      "oid": "{ systemStats 64 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "180",
+      "guid": "ED0849DA-4DA4-41D5-8200-00C5A3335CE8",
+      "text": "The number of 'ticks' (typically 1/100s) spent<br>         by the CPU to run a virtual CPU (guest).<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).",
+      "access": "read-only",
+      "name": "ssCpuRawGuest",
+      "oid": "{ systemStats 65 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "181",
+      "guid": "3628F7A0-BBD0-4198-A5DF-EFC4042EC1D5",
+      "text": "The number of 'ticks' (typically 1/100s) spent<br>         by the CPU to run a niced virtual CPU (guest).<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).",
+      "access": "read-only",
+      "name": "ssCpuRawGuestNice",
+      "oid": "{ systemStats 66 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "182",
+      "guid": "C487D2A7-27D3-42A0-94DD-6C395BD25787",
+      "text": "The number of processors, as counted by the agent.<br>         This object's value may be useful in the management<br>         of certain operating systems where notions such as<br>         load average do not take into account the number of<br>         processors in the system.<br><br>         For other objects in the systemStats group whose<br>         descriptions refer to 'N processors', this object's<br>         value is N.",
+      "access": "read-only",
+      "name": "ssCpuNumCpus",
+      "oid": "{ systemStats 67 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "183",
+      "guid": "3AA782D3-126A-4E88-BF3E-6E935DBDB801",
+      "text": "<p>possibly used in the future:</p><p></p><p>ssErrorFlag OBJECT-TYPE</p><p>    SYNTAX    UCDErrorFlag</p><p>    MAX-ACCESS  read-only</p><p>    STATUS      current</p><p>    DESCRIPTION</p><p>        \"Error flag.\"</p><p>    ::= { systemStats 100 }</p><p></p><p>ssErrMessage OBJECT-TYPE</p><p>    SYNTAX      DisplayString</p><p>    MAX-ACCESS  read-only</p><p>    STATUS      current</p><p>    DESCRIPTION</p><p>        \"Error message describing the errorflag condition.\"</p><p>    ::= { systemStats 101 }</p>",
+      "name": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "184",
+      "guid": "09383F06-CFBA-4467-8874-7EC02B55D774",
+      "name": "ucdTraps",
+      "oid": "{ ucdavis 251 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "185",
+      "guid": "6165F7A0-75AF-4E85-84DA-3A5FDE0C7F6F",
+      "text": "This trap could in principle be sent when the agent start",
+      "name": "ucdStart",
+      "oid": "{ ucdTraps 1 }",
+      "status": "current",
+      "type": "nt"
+    },
+    {
+      "id": "186",
+      "guid": "FEE33E61-3783-47E6-80B0-AA013F55C4F0",
+      "text": "This trap is sent when the agent terminates",
+      "name": "ucdShutdown",
+      "oid": "{ ucdTraps 2 }",
+      "status": "current",
+      "type": "nt"
+    },
+    {
+      "id": "187",
+      "guid": "BD6C6B38-739F-4081-A3D2-71DD2B21CF0E",
+      "text": "<p></p><p>File Table:  monitor a list of files to check for a maximum size.</p><p></p>",
+      "name": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "188",
+      "guid": "688E6774-52BC-4DB6-89ED-2BCC983EC81C",
+      "text": "Table of monitored files.",
+      "access": "not-accessible",
+      "name": "fileTable",
+      "oid": "{ ucdavis 15 }",
+      "status": "current",
+      "syntax": "SEQUENCE OF FileEntry",
+      "type": "ot"
+    },
+    {
+      "id": "189",
+      "guid": "2AFB71FA-C531-4CD1-8A12-A2A6C3F7D323",
+      "text": "Entry of file",
+      "access": "not-accessible",
+      "index": "{ fileIndex }",
+      "name": "fileEntry",
+      "oid": "{ fileTable 1 }",
+      "status": "current",
+      "syntax": "FileEntry",
+      "type": "ot"
+    },
+    {
+      "id": "190",
+      "guid": "42FB0347-429A-43C9-A640-7E7D2B97DCD4",
+      "name": "FileEntry",
+      "syntax": "<pre>{<br>    fileIndex Integer32,<br>    fileName DisplayString,<br>    fileSize Integer32,<br>    fileMax Integer32,<br>    fileErrorFlag UCDErrorFlag,<br>    fileErrorMsg DisplayString<br>}</pre>",
+      "type": "row"
+    },
+    {
+      "id": "191",
+      "guid": "02967640-6432-4D01-8853-01469EF6CA25",
+      "text": "Index of file",
+      "access": "read-only",
+      "name": "fileIndex",
+      "oid": "{ fileEntry 1 }",
+      "status": "current",
+      "syntax": "Integer32 (0..2147483647)",
+      "type": "ot"
+    },
+    {
+      "id": "192",
+      "guid": "0950CFDB-0242-4704-A283-ED102633E815",
+      "text": "Filename",
+      "access": "read-only",
+      "name": "fileName",
+      "oid": "{ fileEntry 2 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "193",
+      "guid": "8512554D-50CD-4A71-BFA6-21BB6F839F38",
+      "text": "Size of file (kB)",
+      "access": "read-only",
+      "name": "fileSize",
+      "oid": "{ fileEntry 3 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "194",
+      "guid": "635B17AE-46BC-4E57-BCD6-0DEC41624FEC",
+      "text": "Limit of filesize (kB)",
+      "access": "read-only",
+      "name": "fileMax",
+      "oid": "{ fileEntry 4 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "kB"
+    },
+    {
+      "id": "195",
+      "guid": "480D7ABB-DF1A-440D-A682-8A5080609F46",
+      "text": "Limit exceeded flag",
+      "access": "read-only",
+      "name": "fileErrorFlag",
+      "oid": "{ fileEntry 100 }",
+      "status": "current",
+      "syntax": "UCDErrorFlag",
+      "type": "ot"
+    },
+    {
+      "id": "196",
+      "guid": "996103D9-9463-439E-B238-032F6A4215C9",
+      "text": "Filesize error message",
+      "access": "read-only",
+      "name": "fileErrorMsg",
+      "oid": "{ fileEntry 101 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "197",
+      "guid": "C2272868-77A1-4ECB-B2D4-4DCA59FF2B14",
+      "name": "logMatch",
+      "oid": "{ ucdavis 16 }",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "198",
+      "guid": "B21D9120-4299-4514-AC38-65603E0A39B6",
+      "text": "The maximum number of logmatch entries<br> this snmpd daemon can support.",
+      "access": "read-only",
+      "name": "logMatchMaxEntries",
+      "oid": "{ logMatch 1 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "199",
+      "guid": "2CADCA07-C439-431C-BA1A-67E4806ACB99",
+      "text": "Table of monitored files.",
+      "access": "not-accessible",
+      "name": "logMatchTable",
+      "oid": "{ logMatch 2 }",
+      "status": "current",
+      "syntax": "SEQUENCE OF LogMatchEntry",
+      "type": "ot"
+    },
+    {
+      "id": "200",
+      "guid": "C3A194D0-8913-4891-9B27-F429EE3C8C4E",
+      "text": "Entry of file",
+      "access": "not-accessible",
+      "index": "{ logMatchIndex }",
+      "name": "logMatchEntry",
+      "oid": "{ logMatchTable 1 }",
+      "status": "current",
+      "syntax": "LogMatchEntry",
+      "type": "ot"
+    },
+    {
+      "id": "201",
+      "guid": "050363EA-6852-4D85-BC0A-226B28838AC1",
+      "text": "Index of logmatch",
+      "access": "read-only",
+      "name": "logMatchIndex",
+      "oid": "{ logMatchEntry 1 }",
+      "status": "current",
+      "syntax": "Integer32 (1..2147483647)",
+      "type": "ot"
+    },
+    {
+      "id": "202",
+      "guid": "1BA9B580-6DF7-4D4F-974C-191D3D38AA76",
+      "text": "logmatch instance name",
+      "access": "read-only",
+      "name": "logMatchName",
+      "oid": "{ logMatchEntry 2 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "203",
+      "guid": "A8047801-EA09-4183-A702-B5CCD31997AD",
+      "text": "filename to be logmatched",
+      "access": "read-only",
+      "name": "logMatchFilename",
+      "oid": "{ logMatchEntry 3 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "204",
+      "guid": "355AE71E-258E-47B5-B9D5-695E78206C27",
+      "text": "regular expression",
+      "access": "read-only",
+      "name": "logMatchRegEx",
+      "oid": "{ logMatchEntry 4 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "205",
+      "guid": "428A5D9E-F654-4952-AD54-3FFDA3754023",
+      "text": "global count of matches",
+      "access": "read-only",
+      "name": "logMatchGlobalCounter",
+      "oid": "{ logMatchEntry 5 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "206",
+      "guid": "2DB409DA-0A30-4B36-B647-F03A79255A51",
+      "text": "Description.",
+      "access": "read-only",
+      "name": "logMatchGlobalCount",
+      "oid": "{ logMatchEntry 6 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "207",
+      "guid": "B8F5AB1C-0D23-4F10-8E34-1632AB2B7D7B",
+      "text": "Regex match counter. This counter will<br> be reset with each logfile rotation.",
+      "access": "read-only",
+      "name": "logMatchCurrentCounter",
+      "oid": "{ logMatchEntry 7 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "208",
+      "guid": "455D17D7-8C38-4974-8A8F-7F9FB513FFE9",
+      "text": "Description.",
+      "access": "read-only",
+      "name": "logMatchCurrentCount",
+      "oid": "{ logMatchEntry 8 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "209",
+      "guid": "664930D2-4A10-4E35-944F-8AC6F84269F0",
+      "text": "Regex match counter. This counter will<br> be reset with each read",
+      "access": "read-only",
+      "name": "logMatchCounter",
+      "oid": "{ logMatchEntry 9 }",
+      "status": "current",
+      "syntax": "Counter32",
+      "type": "ot"
+    },
+    {
+      "id": "210",
+      "guid": "41258D95-D5A7-4524-A481-E72C8BEEE176",
+      "text": "Description.",
+      "access": "read-only",
+      "name": "logMatchCount",
+      "oid": "{ logMatchEntry 10 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "211",
+      "guid": "3C060F20-C2A5-4185-B72F-323530DB3DB8",
+      "text": "time between updates (if not queried) in seconds",
+      "access": "read-only",
+      "name": "logMatchCycle",
+      "oid": "{ logMatchEntry 11 }",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot"
+    },
+    {
+      "id": "212",
+      "guid": "DE2FB01A-B398-4816-825F-DFD082F17F72",
+      "text": "errorflag: is this line configured correctly?",
+      "access": "read-only",
+      "name": "logMatchErrorFlag",
+      "oid": "{ logMatchEntry 100 }",
+      "status": "current",
+      "syntax": "UCDErrorFlag",
+      "type": "ot"
+    },
+    {
+      "id": "213",
+      "guid": "83573FC5-0CA5-42B0-9413-E6F4324652E9",
+      "text": "message of regex precompilation",
+      "access": "read-only",
+      "name": "logMatchRegExCompilation",
+      "oid": "{ logMatchEntry 101 }",
+      "status": "current",
+      "syntax": "DisplayString",
+      "type": "ot"
+    },
+    {
+      "id": "214",
+      "guid": "E8D8E5E5-E4F8-43B5-9889-932B05F406AF",
+      "name": "end",
+      "type": "end"
+    }
+  ],
+  "attributes": {
+    "access": {
+      "name": "Access",
+      "type": "enum",
+      "values": [
+        {
+          "key": "read-only"
+        },
+        {
+          "key": "read-write"
+        },
+        {
+          "key": "read-create"
+        },
+        {
+          "key": "not-accessible"
+        },
+        {
+          "key": "accessible-for-notify"
+        }
+      ]
+    },
+    "action": {
+      "name": "Action",
+      "type": "enum",
+      "values": [
+        {
+          "key": "added"
+        },
+        {
+          "key": "remainCurrent"
+        },
+        {
+          "key": "deprecated"
+        },
+        {
+          "key": "madeObsolete"
+        },
+        {
+          "key": "previouslyDeprecated"
+        }
+      ]
+    },
+    "additional": {
+      "name": "Additional",
+      "type": "xhtml"
+    },
+    "augments": {
+      "name": "Augments",
+      "type": "string"
+    },
+    "comment": {
+      "name": "Comment",
+      "type": "xhtml"
+    },
+    "conformance": {
+      "name": "Conformance",
+      "type": "string"
+    },
+    "contact": {
+      "name": "Contact",
+      "type": "xhtml"
+    },
+    "defval": {
+      "name": "Default Value",
+      "type": "string"
+    },
+    "dotted-oid": {
+      "name": "Dotted OID",
+      "type": "string"
+    },
+    "format": {
+      "name": "Format",
+      "type": "xhtml"
+    },
+    "index": {
+      "name": "Index",
+      "type": "string"
+    },
+    "info": {
+      "name": "Informative",
+      "type": "xhtml"
+    },
+    "name": {
+      "name": "Name",
+      "type": "string"
+    },
+    "oid": {
+      "name": "OID",
+      "type": "string"
+    },
+    "org": {
+      "name": "Organization",
+      "type": "string"
+    },
+    "part": {
+      "name": "Part",
+      "type": "string"
+    },
+    "reference": {
+      "name": "Reference",
+      "type": "xhtml"
+    },
+    "status": {
+      "name": "Status",
+      "type": "enum",
+      "values": [
+        {
+          "key": "current"
+        },
+        {
+          "key": "deprecated"
+        },
+        {
+          "key": "obsolete"
+        }
+      ]
+    },
+    "syntax": {
+      "name": "Syntax",
+      "type": "xhtml"
+    },
+    "table-type": {
+      "name": "Table Type",
+      "type": "enum",
+      "values": [
+        {
+          "key": "static"
+        },
+        {
+          "key": "managed"
+        },
+        {
+          "key": "dynamic"
+        }
+      ]
+    },
+    "type": {
+      "name": "Type",
+      "type": "enum",
+      "values": [
+        {
+          "key": "comment"
+        },
+        {
+          "key": "end"
+        },
+        {
+          "key": "mc",
+          "label": "module-compliance"
+        },
+        {
+          "key": "mi",
+          "label": "module-identity"
+        },
+        {
+          "key": "mib"
+        },
+        {
+          "key": "ng",
+          "label": "notification-group"
+        },
+        {
+          "key": "nt",
+          "label": "notification-type"
+        },
+        {
+          "key": "og",
+          "label": "object-group"
+        },
+        {
+          "key": "oi",
+          "label": "object-identity"
+        },
+        {
+          "key": "ot",
+          "label": "object-type"
+        },
+        {
+          "key": "ref",
+          "label": "reference"
+        },
+        {
+          "key": "rev",
+          "label": "revision"
+        },
+        {
+          "key": "row"
+        },
+        {
+          "key": "text_conv"
+        }
+      ]
+    },
+    "units": {
+      "name": "Units",
+      "type": "string"
+    },
+    "updated": {
+      "name": "Updated",
+      "type": "string"
+    },
+    "version": {
+      "name": "Version",
+      "type": "string"
+    },
+    "x-text": {
+      "name": "Deprecated by",
+      "type": "xhtml"
+    },
+    "x-type": {
+      "name": "Deprecated Type",
+      "type": "enum",
+      "values": [
+        {
+          "key": "superseded"
+        },
+        {
+          "key": "supplanted"
+        },
+        {
+          "key": "withdrawn"
+        }
+      ]
+    }
+  },
+  "templateColumns": {
+  },
+  "views": {
+    "Primary": {
+      "columns": [
+        {
+          "columnId": "id",
+          "width": 65
+        },
+        {
+          "columnId": "description",
+          "width": 500
+        }
+      ],
+      "default": true
+    }
+  },
+  "metadata": {
+    "format": "2.17"
+  }
 }

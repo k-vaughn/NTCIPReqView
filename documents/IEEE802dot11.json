@@ -2,20 +2,38 @@
   "id": "IEEE802dot11",
   "guid": "2a90d8dd-e2e2-4c51-93c7-4925efc93d8c",
   "name": "IEEE802dot11",
-  "lastId": 0,
+  "lastId": 1,
   "createdOn": "2024-07-24T17:38:28.800Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2024-07-24T17:38:28.800Z",
+  "lastChangedOn": "2024-07-24T17:38:34.687Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "data": [],
+  "data": [
+    {
+      "id": "1",
+      "guid": "428523a0-760f-4705-bf2d-6c654da8ac46",
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-07-24T17:38:34.687Z",
+          "docId": "IEEE802dot11",
+          "structureAction": "Create"
+        }
+      ]
+    }
+  ],
   "attributes": {
     "access": {
       "name": "Access",

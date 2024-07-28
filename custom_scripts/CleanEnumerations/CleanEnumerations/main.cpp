@@ -26,7 +26,7 @@ void writeFile(const std::string& filePath, const std::string& content) {
 }
 
 // Function to process and replace the pattern in the content
-std::string processContent(const std::string& content) {
+std::string processEnumerations(const std::string& content) {
     std::regex pattern(R"(<p>INTEGER\s*\{\s*([^}]*)\s*\}\s*</p>)");
     std::smatch match;
     std::string result = content;
@@ -65,16 +65,46 @@ std::string processContent(const std::string& content) {
     return result;
 }
 
+std::string processParaPre(const std::string& content) {
+    std::regex pattern(R"(<p>&lt;pre&gt;(.*?)&lt;/pre&gt;</p>)");
+    std::smatch match;
+    std::string temp = content;
+    std::string result;
+//    std::string::const_iterator searchStart(result.cbegin());
+
+    while (std::regex_search(temp.cbegin(), temp.cend(), match, pattern)) {
+        auto i = match.position();
+        std::cout << i << std::endl;
+        std::string matchedText = match[1].str();
+
+        // Replace the matched pattern with the processed text
+        std::string replacement = "<pre>" + matchedText + "</pre>";
+        result += temp.substr(0, match.position()) + replacement;
+        temp = temp.substr(match.position() + match.length());
+//        result.replace(match.position(), match.length(), replacement);
+//        searchStart = result.cbegin() + i;
+    }
+    result += temp;
+    return result;
+}
+
+std::string processBreak(const std::string& content) {
+    std::regex brPattern(R"(<br\s*?/>)");
+    return std::regex_replace(content, brPattern, "\\n");
+}
+
 int main() {
-    std::string inputFile = "/Users/kvaughn/GitHub/ITE/NTCIPReqView/documents/NTCIP_1204.json";
-    std::string outputFile = "/Users/kvaughn/Documents/Standards/NTCIP/output/NTCIP_1204.json";
+    std::string inputFile = "/Users/kvaughn/Documents/Standards/ISO/TC204 WG9/26048 - NTCIP Data/ReqView/documents/Temp.json";
+    std::string outputFile = "/Users/kvaughn/Documents/Standards/NTCIP/output/Temp.json";
 
     try {
         // Read the file content
         std::string content = readFile(inputFile);
 
         // Process the content to replace patterns
-        std::string processedContent = processContent(content);
+        std::string processedContent = processEnumerations(content);
+        processedContent = processParaPre(processedContent);
+        processedContent = processBreak(processedContent);
 
         // Write the modified content to the output file
         writeFile(outputFile, processedContent);

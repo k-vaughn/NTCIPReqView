@@ -8,7 +8,7 @@
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-07-28T22:32:33.454Z",
+  "lastChangedOn": "2024-07-28T23:20:15.931Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -7364,7 +7364,7 @@
               "info": "<pre>This object was deprecated in NTCIP 1204 v05.</pre>",
               "name": "essNtcipCategory",
               "oid": "{ essNtcipIdentification 1 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<pre>INTEGER { \n    other (1), \n    permanent (2), \n    transportable (3), \n    mobile (4) }</pre><p><br></p>",
               "type": "ot",
@@ -7485,6 +7485,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -7726,7 +7737,7 @@
               "info": "<pre>The value of 2 has been explicitly defined as being reserved. To be defined as two stations (e.g., for a hybrid), a station needs to have two addresses and two instances of this MIB.\nThe syntax was changed from INTEGER (0..3) to an enumeration in version 05.</pre>",
               "name": "essTypeofStation",
               "oid": "{ essBufrInstrumentation 1 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<pre>INTEGER {\n    automatic (0),\n    staffed (1),\n    reserved (2),\n    missingValue (3) }</pre><p><br></p>",
               "type": "ot",
@@ -7805,6 +7816,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -7819,7 +7841,7 @@
               "info": "<pre>This object was deprecated in v05 to migrate to a more generic SRSA design that allow reporting the status of each door associated with the ESS.</pre>",
               "name": "essDoorStatus",
               "oid": "{ essNtcipInstrumentation 1 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>INTEGER (0..1)</p>",
               "type": "ot",
@@ -7893,6 +7915,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -7908,7 +7941,7 @@
               "info": "<pre>This object was deprecated in v05 to migrate to a more generic SRSA design.</pre>",
               "name": "essBatteryStatus",
               "oid": "{ essNtcipInstrumentation 2 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..101)</p>",
               "type": "ot",
@@ -7986,6 +8019,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -8001,7 +8045,7 @@
               "info": "<pre>This object was deprecated in v05 to migrate to a more generic SRSA design.</pre>",
               "name": "essLineVolts",
               "oid": "{ essNtcipInstrumentation 3 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..255)</p>",
               "type": "ot",
@@ -8079,6 +8123,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -8494,7 +8549,7 @@
               "info": "<pre>The object was deprecated in NTCIP 1204 v05.</pre>",
               "name": "essStatus",
               "oid": "{ essNtcipInstrumentation 9 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>INTEGER (0..3)</p>",
               "type": "ot",
@@ -8582,6 +8637,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             }
@@ -8638,7 +8704,7 @@
               "info": "<pre>This object was deprecated in NTCIP 1204 v05 to use the more generic object and to be consistent with preferred units used in ITS (i.e., 10^-7 degrees). </pre>",
               "name": "essLatitude",
               "oid": "{ essNtcipLocation 1 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (-90000000..90000001)</p>",
               "type": "ot",
@@ -8727,6 +8793,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -8742,7 +8819,7 @@
               "info": "<pre>This object was deprecated in NTCIP 1204 v05 to use the more generic object and to be consistent with preferred units used in ITS (i.e., 10^-7 degrees). </pre>",
               "name": "essLongitude",
               "oid": "{ essNtcipLocation 2 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (-180000000..180000001)</p>",
               "type": "ot",
@@ -8820,6 +8897,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -8835,7 +8923,7 @@
               "info": "<pre>This object was deprecated in NTCIP 1204 v05. </pre>",
               "name": "essVehicleSpeed",
               "oid": "{ essNtcipLocation 3 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..255)</p>",
               "type": "ot",
@@ -8928,6 +9016,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -8943,7 +9042,7 @@
               "info": "<pre>This object was deprecated in NTCIP 1204 v05. </pre>",
               "name": "essVehicleBearing",
               "oid": "{ essNtcipLocation 4 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..361)</p>",
               "type": "ot",
@@ -9035,6 +9134,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -9049,7 +9159,7 @@
               "info": "<pre>This object was deprecated in NTCIP 1204 v05. </pre>",
               "name": "essOdometer",
               "oid": "{ essNtcipLocation 5 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Unsigned32</p>",
               "type": "ot",
@@ -9141,6 +9251,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             }
@@ -9251,7 +9372,7 @@
               "info": "<pre>This object was deprecated in version 05. </pre>",
               "name": "essReferenceHeight",
               "oid": "{ essNtcipHeight 1 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (-400..8001)</p>",
               "type": "ot",
@@ -9339,6 +9460,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -9354,7 +9486,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essPressureHeight",
               "oid": "{ essNtcipHeight 2 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (-1000..1001)</p>",
               "type": "ot",
@@ -9432,6 +9564,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -9447,7 +9590,7 @@
               "info": "<pre>This object was deprecated in version 02. </pre>",
               "name": "essWindSensorHeight",
               "oid": "{ essNtcipHeight 3 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (-1000..1001)</p>",
               "type": "ot",
@@ -9525,6 +9668,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -9540,7 +9694,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essAtmosphericPressure",
               "oid": "{ essBufrLocationVertical 4 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
@@ -9618,6 +9772,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -10724,7 +10889,7 @@
                   "format": "<pre>A value of 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "essPressureSensorAtmosphericPressure",
                   "oid": "{ essPressureSensorEntry 7 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -10828,6 +10993,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -12597,7 +12773,7 @@
                   "format": "<pre>The value of 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "windSensorAvgSpeed",
                   "oid": "{ windSensorEntry 4 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -12679,6 +12855,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -12690,10 +12877,10 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.4.8.1.5",
-                  "format": "<pre>The value of zero (0) shall indicate &#39;calm&#39;, when the associated speed is zero (0), or &#39;light and variable,&#39; when the associated speed is greater than zero (0). Normal observations, as defined by the WMO, shall report a wind direction in the range of 1 to 360 with 90 meaning from the east and 360 meaning from the north. The value of 361 shall indicate an error condition and shall always be reported if the associated speed indicates error.</pre>",
+                  "format": "<pre>The value of zero (0) shall indicate 'calm', when the associated speed is zero (0), or 'light and variable,' when the associated speed is greater than zero (0). Normal observations, as defined by the WMO, shall report a wind direction in the range of 1 to 360 with 90 meaning from the east and 360 meaning from the north. The value of 361 shall indicate an error condition and shall always be reported if the associated speed indicates error.</pre>",
                   "name": "windSensorAvgDirection",
                   "oid": "{ windSensorEntry 5 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..361)</p>",
                   "type": "ot",
@@ -12775,6 +12962,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -12789,7 +12987,7 @@
                   "format": "<pre>The value of 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "windSensorSpotSpeed",
                   "oid": "{ windSensorEntry 6 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -12871,6 +13069,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -12882,10 +13091,10 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.4.8.1.7",
-                  "format": "<pre>The value of zero (0) shall indicate &#39;calm&#39;, when the associated speed is zero (0), or &#39;light and variable,&#39; when the associated speed is greater than zero (0). Normal observations, as defined by the WMO, shall report a wind direction in the range of 1 to 360 with 90 meaning from the east and 360 meaning from the north. The value of 361 shall indicate an error condition and shall always be reported if the associated speed indicates error.</pre>",
+                  "format": "<pre>The value of zero (0) shall indicate 'calm', when the associated speed is zero (0), or 'light and variable,' when the associated speed is greater than zero (0). Normal observations, as defined by the WMO, shall report a wind direction in the range of 1 to 360 with 90 meaning from the east and 360 meaning from the north. The value of 361 shall indicate an error condition and shall always be reported if the associated speed indicates error.</pre>",
                   "name": "windSensorSpotDirection",
                   "oid": "{ windSensorEntry 7 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..361)</p>",
                   "type": "ot",
@@ -12967,6 +13176,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -12981,7 +13201,7 @@
                   "format": "<pre>The value of 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "windSensorGustSpeed",
                   "oid": "{ windSensorEntry 8 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -13063,6 +13283,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -13074,10 +13305,10 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.4.8.1.9",
-                  "format": "<pre>The value of zero (0) shall indicate &#39;calm&#39;, when the associated speed is zero (0), or &#39;light and variable,&#39; when the associated speed is greater than zero (0). Normal observations, as defined by the WMO, shall report a wind direction in the range of 1 to 360 with 90 meaning from the east and 360 meaning from the north. The value of 361 shall indicate an error condition and shall always be reported if the associated speed indicates error.</pre>",
+                  "format": "<pre>The value of zero (0) shall indicate 'calm', when the associated speed is zero (0), or 'light and variable,' when the associated speed is greater than zero (0). Normal observations, as defined by the WMO, shall report a wind direction in the range of 1 to 360 with 90 meaning from the east and 360 meaning from the north. The value of 361 shall indicate an error condition and shall always be reported if the associated speed indicates error.</pre>",
                   "name": "windSensorGustDirection",
                   "oid": "{ windSensorEntry 9 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..361)</p>",
                   "type": "ot",
@@ -13159,6 +13390,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -13170,10 +13412,10 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.4.8.1.10",
-                  "format": "<pre>Range               Meaning (WMO Classification)\nother               not defined within this standard, see manufacturer&#39;s \n                    documentation \nunknown             Unknown conditions \ncalm                Calm - Light air\nlightBreeze         Light breeze - Gentle breeze\nmoderateBreeze      Moderate breeze - Fresh breeze\nstrongBreeze        Strong breeze \ngale                Near Gale \nmoderateGale        Gale \nstrongGale          Strong gale \nstormWinds          Storm \nhurricaneForceWinds Violent Storm - Hurricane\ngustyWinds          defined by a peak and a lull of greater than 46.3 tenths \n                    of meters per second within a 2-minute period.</pre>",
+                  "format": "<pre>Range               Meaning (WMO Classification)\nother               not defined within this standard, see manufacturer's \n                    documentation \nunknown             Unknown conditions \ncalm                Calm - Light air\nlightBreeze         Light breeze - Gentle breeze\nmoderateBreeze      Moderate breeze - Fresh breeze\nstrongBreeze        Strong breeze \ngale                Near Gale \nmoderateGale        Gale \nstrongGale          Strong gale \nstormWinds          Storm \nhurricaneForceWinds Violent Storm - Hurricane\ngustyWinds          defined by a peak and a lull of greater than 46.3 tenths \n                    of meters per second within a 2-minute period.</pre>",
                   "name": "windSensorSituation",
                   "oid": "{ windSensorEntry 10 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<pre>INTEGER {\n    other (1),\n    unknown (2),\n    calm (3),\n    lightBreeze (4),\n    moderateBreeze (5),\n    strongBreeze (6),\n    gale (7),\n    moderateGale (8),\n    strongGale (9),\n    stormWinds (10),\n    hurricaneForceWinds (11),\n    gustyWinds (12) }</pre><p><br></p>",
                   "type": "ot",
@@ -13281,6 +13523,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -14411,7 +14664,7 @@
                   "format": "<pre>The value 1001 shall indicate an error condition or missing value.</pre>",
                   "name": "essAirTemperature",
                   "oid": "{ essTemperatureSensorEntry 3 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
@@ -14493,6 +14746,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -15232,7 +15496,7 @@
               "info": "<pre>This object was deprecated in version 05.</pre>",
               "name": "essWetbulbTemp",
               "oid": "{ essNtcipTemperature 3 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (-1000..1001)</p>",
               "type": "ot",
@@ -15309,6 +15573,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -15324,7 +15599,7 @@
               "info": "<pre>This object was deprecated in version 05.</pre>",
               "name": "essDewpointTemp",
               "oid": "{ essNtcipTemperature 4 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (-1000..1001)</p>",
               "type": "ot",
@@ -15401,6 +15676,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -15415,7 +15701,7 @@
               "format": "<pre>The value 1001 shall indicate an error condition or missing value.</pre>",
               "name": "essMaxTemp",
               "oid": "{ essNtcipTemperature 5 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>Integer32 (-1000..1001)</p>",
               "type": "ot",
@@ -15497,6 +15783,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -15511,7 +15808,7 @@
               "format": "<pre>The value 1001 shall indicate an error condition or missing value.</pre>",
               "name": "essMinTemp",
               "oid": "{ essNtcipTemperature 6 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>Integer32 (-1000..1001)</p>",
               "type": "ot",
@@ -15593,6 +15890,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             }
@@ -15687,7 +15995,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essRelativeHumidity",
               "oid": "{ essBufrPrecip 3 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..101)</p>",
               "type": "ot",
@@ -15765,6 +16073,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -15868,7 +16187,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essAdjacentSnowDepth",
               "oid": "{ essNtcipPrecip 2 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..3001)</p>",
               "type": "ot",
@@ -15946,6 +16265,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -15961,7 +16291,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essRoadwaySnowDepth",
               "oid": "{ essNtcipPrecip 3 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..3001)</p>",
               "type": "ot",
@@ -16039,6 +16369,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -16054,7 +16395,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essRoadwaySnowPackDepth",
               "oid": "{ essNtcipPrecip 4 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..3001)</p>",
               "type": "ot",
@@ -16132,6 +16473,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -16147,7 +16499,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essPrecipYesNo",
               "oid": "{ essNtcipPrecip 5 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<pre>INTEGER {\n    precip (1),\n    noPrecip (2),\n    error (3) }</pre><p><br></p>",
               "type": "ot",
@@ -16235,6 +16587,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -16250,7 +16613,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essPrecipRate",
               "oid": "{ essBufrPrecip 14 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
@@ -16328,6 +16691,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -16343,7 +16717,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essSnowfallAccumRate",
               "oid": "{ essBufrPrecip 15 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
@@ -16421,6 +16795,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -16436,7 +16821,7 @@
               "info": "<pre>Starting in NTCIP 1204 v05; this object should only report human readings; automated sensors should use precipitationSensorPrecipSituation (See 5.8.24.14). </pre>",
               "name": "essPrecipSituation",
               "oid": "{ essNtcipPrecip 6 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<pre>INTEGER {\n    other (1),\n    unknown (2),\n    noPrecipitation (3),\n    unidentifiedSlight (4),\n    unidentifiedModerate (5),\n    unidentifiedHeavy (6),\n    snowSlight (7),\n    snowModerate (8),\n    snowHeavy (9),\n    rainSlight (10),\n    rainModerate (11),\n    rainHeavy (12),\n    frozenPrecipitationSlight (13),\n    frozenPrecipitationModerate (14),\n    frozenPrecipitationHeavy (15) }</pre><p><br></p>",
               "type": "ot",
@@ -16512,6 +16897,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -16527,7 +16923,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essIceThickness",
               "oid": "{ essNtcipPrecip 7 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
@@ -16605,6 +17001,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -16620,7 +17027,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essPrecipitationStartTime",
               "oid": "{ essNtcipPrecip 8 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Unsigned32</p>",
               "type": "ot",
@@ -16698,6 +17105,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -16713,7 +17131,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essPrecipitationEndTime",
               "oid": "{ essNtcipPrecip 9 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Unsigned32</p>",
               "type": "ot",
@@ -16791,6 +17209,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -16806,7 +17235,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essPrecipitationOneHour",
               "oid": "{ essBufrPrecip 19 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
@@ -16884,6 +17313,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -16899,7 +17339,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essPrecipitationThreeHours",
               "oid": "{ essBufrPrecip 20 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
@@ -16977,6 +17417,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -16992,7 +17443,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essPrecipitationSixHours",
               "oid": "{ essBufrPrecip 21 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
@@ -17070,6 +17521,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -17085,7 +17547,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essPrecipitationTwelveHours",
               "oid": "{ essBufrPrecip 22 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
@@ -17163,6 +17625,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -17178,7 +17651,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essPrecipitation24Hours",
               "oid": "{ essBufrPrecip 23 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
@@ -17256,6 +17729,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -17271,7 +17755,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "precipitationSensorModelInformation",
               "oid": "{ essNtcipPrecip 10 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..255)</p>",
               "type": "ot",
@@ -17348,6 +17832,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -17792,7 +18287,7 @@
                   "format": "<pre>The value of 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "waterLevelSensorReading",
                   "oid": "{ waterLevelSensorEntry 2 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -17874,6 +18369,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -19723,7 +20229,7 @@
                   "format": "<pre>The value 3001 shall indicate an error condition or missing value.</pre>",
                   "name": "precipitationSensorAdjacentSnowDepth",
                   "oid": "{ precipitationSensorEntry 8 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..3001)</p>",
                   "type": "ot",
@@ -19816,6 +20322,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -19830,7 +20347,7 @@
                   "format": "<pre>The value 3001 shall indicate an error condition or missing value.</pre>",
                   "name": "precipitationSensorRoadwaySnowDepth",
                   "oid": "{ precipitationSensorEntry 9 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..3001)</p>",
                   "type": "ot",
@@ -19923,6 +20440,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -20042,7 +20570,7 @@
                   "format": "<pre>precip - Moisture is currently being detected by the precipitation sensor. 0.01 inches of liquid water equivalent is to be detected.\nnoPrecip - Moisture is not currently being detected by the precipitation sensor\nerror - The sensor is either not connected, not reporting, or is indicating an error</pre>",
                   "name": "precipitationSensorPrecipYesNo",
                   "oid": "{ precipitationSensorEntry 11 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<pre>INTEGER {\n    precip (1),\n    noPrecip (2),\n    error (3) }</pre><p><br></p>",
                   "type": "ot",
@@ -20134,6 +20662,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -20148,7 +20687,7 @@
                   "format": "<pre>The value of 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "precipitationSensorPrecipRate",
                   "oid": "{ precipitationSensorEntry 12 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -20230,6 +20769,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -20244,7 +20794,7 @@
                   "format": "<pre>The value 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "precipitationSensorSnowfallAccumRate",
                   "oid": "{ precipitationSensorEntry 13 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -20326,6 +20876,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -20340,7 +20901,7 @@
                   "format": "<pre>Intensity     Meaning \nslight</pre>",
                   "name": "precipitationSensorPrecipSituation",
                   "oid": "{ precipitationSensorEntry 14 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<pre>INTEGER {\n    other (1),\n    unknown (2),\n    noPrecipitation (3),\n    unidentifiedSlight (4),\n    unidentifiedModerate (5),\n    unidentifiedHeavy (6),\n    snowSlight (7),\n    snowModerate (8),\n    snowHeavy (9),\n    rainSlight (10),\n    rainModerate (11),\n    rainHeavy (12),\n    frozenPrecipitationSlight (13),\n    frozenPrecipitationModerate (14),\n    frozenPrecipitationHeavy (15) }</pre><p><br></p>",
                   "type": "ot",
@@ -20447,6 +21008,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -20461,7 +21033,7 @@
                   "format": "<pre>The value 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "precipitationSensorIceThickness",
                   "oid": "{ precipitationSensorEntry 15 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -20554,6 +21126,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -20569,7 +21152,7 @@
                   "info": "<pre>This object was deprecated in version 05. </pre>",
                   "name": "precipitationSensorPrecipitationStartTime",
                   "oid": "{ precipitationSensorEntry 16 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "deprecated",
                   "syntax": "<p>Unsigned32</p>",
                   "type": "ot",
@@ -20646,6 +21229,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -20661,7 +21255,7 @@
                   "info": "<pre>This object was deprecated in version 05. </pre>",
                   "name": "precipitationSensorPrecipitationEndTime",
                   "oid": "{ precipitationSensorEntry 17 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "deprecated",
                   "syntax": "<p>Unsigned32</p>",
                   "type": "ot",
@@ -20738,6 +21332,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -20752,7 +21357,7 @@
                   "format": "<pre>The value of 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "precipitationSensorPrecipitationOneHour",
                   "oid": "{ precipitationSensorEntry 18 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -20834,6 +21439,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -20848,7 +21464,7 @@
                   "format": "<pre>The value of 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "precipitationSensorPrecipitationThreeHours",
                   "oid": "{ precipitationSensorEntry 19 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -20930,6 +21546,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -20944,7 +21571,7 @@
                   "format": "<pre>The value of 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "precipitationSensorPrecipitationSixHours",
                   "oid": "{ precipitationSensorEntry 20 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -21026,6 +21653,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -21040,7 +21678,7 @@
                   "format": "<pre>The value of 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "precipitationSensorPrecipitationTwelveHours",
                   "oid": "{ precipitationSensorEntry 21 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -21122,6 +21760,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -21136,7 +21785,7 @@
                   "format": "<pre>The value of 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "precipitationSensorPrecipitation24Hours",
                   "oid": "{ precipitationSensorEntry 22 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -21218,6 +21867,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -21232,7 +21892,7 @@
                   "format": "<pre>The value of 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "precipitationSensorPrecipitationUserDefined",
                   "oid": "{ precipitationSensorEntry 23 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -21314,6 +21974,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -21328,7 +21999,7 @@
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14.1.24",
                   "name": "precipitationSensorPrecipStartDate",
                   "oid": "{ precipitationSensorEntry 24 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>ITSDateStamp</p>",
                   "type": "ot",
@@ -21409,6 +22080,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-27T03:11:47.256Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -21423,7 +22105,7 @@
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14.1.25",
                   "name": "precipitationSensorPrecipStartTimeV5",
                   "oid": "{ precipitationSensorEntry 25 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>ITSDailyTimeStamp</p>",
                   "type": "ot",
@@ -21493,6 +22175,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-27T03:11:47.256Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -21507,7 +22200,7 @@
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14.1.26",
                   "name": "precipitationSensorPrecipEndDate",
                   "oid": "{ precipitationSensorEntry 26 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>ITSDateStamp</p>",
                   "type": "ot",
@@ -21577,6 +22270,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-27T03:11:47.256Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -21591,7 +22295,7 @@
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14.1.27",
                   "name": "precipitationSensorPrecipEndTimeV5",
                   "oid": "{ precipitationSensorEntry 27 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>ITSDailyTimeStamp</p>",
                   "type": "ot",
@@ -21661,6 +22365,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-27T03:11:47.256Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -22923,7 +23638,7 @@
                   "format": "<pre>The value of 101 shall indicate an error condition or missing value.</pre>",
                   "name": "humiditySensorRelativeHumidity",
                   "oid": "{ humiditySensorEntry 7 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..101)</p>",
                   "type": "ot",
@@ -23005,6 +23720,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -23128,7 +23854,7 @@
                   "format": "<pre>The value 1001 shall indicate an error condition or missing value.</pre>",
                   "name": "humiditySensorWetbulbTemp",
                   "oid": "{ humiditySensorEntry 9 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
@@ -23210,6 +23936,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -23224,7 +23961,7 @@
                   "format": "<pre>The value 1001 shall indicate an error condition or missing value.</pre>",
                   "name": "humiditySensorDewpointTemp",
                   "oid": "{ humiditySensorEntry 10 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
@@ -23306,6 +24043,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -23796,7 +24544,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essTotalSun",
               "oid": "{ essBufrRadiation 31 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..1441)</p>",
               "type": "ot",
@@ -23874,6 +24622,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -23889,7 +24648,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essCloudSituation",
               "oid": "{ essNtcipRadiation 1 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<pre>INTEGER {\n    overcast (1),\n    cloudy (2),\n    partlyCloudy (3),\n    mostlyClear (4),\n    clear (5) }</pre><p><br></p>",
               "type": "ot",
@@ -23988,6 +24747,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -24003,7 +24773,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essInstantaneousTerrestrialRadiation",
               "oid": "{ essBufrRadiation 17 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (-2048..2049)</p>",
               "type": "ot",
@@ -24081,6 +24851,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -24096,7 +24877,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essInstantaneousSolarRadiation",
               "oid": "{ essBufrRadiation 18 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (-2048..2049)</p>",
               "type": "ot",
@@ -24174,6 +24955,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -24189,7 +24981,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essTotalRadiation",
               "oid": "{ essBufrRadiation 25 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (-2048..2049)</p>",
               "type": "ot",
@@ -24267,6 +25059,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -24280,7 +25083,7 @@
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.7.2",
               "name": "essTotalRadiationPeriod",
               "oid": "{ essNtcipRadiation 2 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>Integer32 (0..86400)</p>",
               "type": "ot",
@@ -24351,6 +25154,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -25222,7 +26036,7 @@
                   "format": "<pre>The value of 1441 shall indicate a missing value.</pre>",
                   "name": "essTotalSunV4",
                   "oid": "{ radiationSensorEntry 7 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..1441)</p>",
                   "type": "ot",
@@ -25304,6 +26118,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -25318,7 +26143,7 @@
                   "format": "<pre>The value of 2049 shall indicate a missing value.</pre>",
                   "name": "essInstantaneousTerrestrialRadiationV4",
                   "oid": "{ radiationSensorEntry 8 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (-2048..2049)</p>",
                   "type": "ot",
@@ -25400,6 +26225,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -25414,7 +26250,7 @@
                   "format": "<pre>The value of 2049 shall indicate a missing value.</pre>",
                   "name": "essInstantaneousSolarRadiationV4",
                   "oid": "{ radiationSensorEntry 9 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (-2048..2049)</p>",
                   "type": "ot",
@@ -25496,6 +26332,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -25510,7 +26357,7 @@
                   "format": "<pre>The value of 2049 shall indicate a missing value.</pre>",
                   "name": "essTotalRadiationV4",
                   "oid": "{ radiationSensorEntry 10 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (-2048..2049)</p>",
                   "type": "ot",
@@ -25604,6 +26451,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -26010,7 +26868,7 @@
               "format": "<pre>Defined values are: \nOktas  Category    Definition\n0     Fine      Sky clear \n1  Fine      1/8 of sky covered or less, but not zero\n2  Fine      2/8 of sky covered\n3     Partly Cloudy  3/8 of sky covered \n4     Partly Cloudy  4/8 of sky covered\n5     Partly Cloudy  5/8 of sky covered\n6     Cloudy    6/8 of sky covered \n7     Cloudy    7/8 of sky covered or more, but not 8/8\n8     Overcast    8/8 of sky completely covered, no breaks </pre>",
               "name": "essCloudSituationV4",
               "oid": "{ essNtcipRadiation 5 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>Integer32 (0..8)</p>",
               "type": "ot",
@@ -26106,6 +26964,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             }
@@ -26151,7 +27020,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essVisibility",
               "oid": "{ essNtcipVisibility 1 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..1000001)</p>",
               "type": "ot",
@@ -26251,6 +27120,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -26361,7 +27241,7 @@
               "format": "<pre>Range    BUFRs    BUFRa    Meaning\n  1            other visibility anomaly\n  2            unknown\n  3    0    100    clear\n  4    44    130    Fog - not patchy\n  5    41    131    Patchy fog\n  6    36    127    Blowing snow\n  7    04    104    Smoke\n  8    07    207    Sea Spray\n  9            Vehicle Spray\n  10    31    127    Blowing dust or sand\n  11            sun glare\n  12            Swarms of insects</pre>",
               "name": "essVisibilitySituation",
               "oid": "{ essNtcipVisibility 3 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<pre>INTEGER {\n    other (1),\n    unknown (2),\n    clear (3),\n    fogNotPatchy (4),\n    patchyFog (5),\n    blowingSnow (6),\n    smoke (7),\n    seaSpray (8),\n    vehicleSpray (9),\n    blowingDustOrSand (10),\n    sunGlare (11),\n    swarmsOfInsects (12) }</pre><p><br></p>",
               "type": "ot",
@@ -26468,6 +27348,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -28004,11 +28895,11 @@
                   "access": "read-only",
                   "action": "previsouly deprecated",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2.1.7",
-                  "format": "<pre>other - The value reported by the sensor is not defined by the standard. See the manufacturer&#39;s documentation for more information.\nnoReport - The sensor is not providing any reading for surface status and may not be responding\nerrorReport - The sensor is providing a reading for surface status, but either the reading indicates an error code or the data has been deemed invalid or suspect\ndry - The sensor does not detect any moisture or unusual conditions.\ntrace - The sensor detects some moisture, but it is suspected to be isolated\nabsorption - A salt chemical is present that is not fully dissolved in water. As a result, the conductivity readings result in erroneous calculations for amount of chemical in the mix. \nwet - The sensor detects a significant amount of moisture indicating a wet roadway.\nchemically wet - The sensor detects a signaificant amount of moisture mixed with a de-icing or anti-icing chemical\ndew - The sensor detects moisture that is suspected to be from the formation of dew\nfrost - The sensor detects the formation of frost\nfreezeAdvisory - The risk of the formation of some sort of frozen moisture on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nslushAdvisory - The risk of the accumulation of snow or slush on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\niceAdvisory - The risk of the formation of ice or black ice on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nfreezeHazard - The sensor detects some sort of frozen moisture but is unable to classify as slush or ice.\nslush - The sensor detects snow or slush.\nice - The sensor detects ice or black ice. (See essSurfaceBlackIceSignal)</pre>",
+                  "format": "<pre>other - The value reported by the sensor is not defined by the standard. See the manufacturer's documentation for more information.\nnoReport - The sensor is not providing any reading for surface status and may not be responding\nerrorReport - The sensor is providing a reading for surface status, but either the reading indicates an error code or the data has been deemed invalid or suspect\ndry - The sensor does not detect any moisture or unusual conditions.\ntrace - The sensor detects some moisture, but it is suspected to be isolated\nabsorption - A salt chemical is present that is not fully dissolved in water. As a result, the conductivity readings result in erroneous calculations for amount of chemical in the mix. \nwet - The sensor detects a significant amount of moisture indicating a wet roadway.\nchemically wet - The sensor detects a signaificant amount of moisture mixed with a de-icing or anti-icing chemical\ndew - The sensor detects moisture that is suspected to be from the formation of dew\nfrost - The sensor detects the formation of frost\nfreezeAdvisory - The risk of the formation of some sort of frozen moisture on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nslushAdvisory - The risk of the accumulation of snow or slush on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\niceAdvisory - The risk of the formation of ice or black ice on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nfreezeHazard - The sensor detects some sort of frozen moisture but is unable to classify as slush or ice.\nslush - The sensor detects snow or slush.\nice - The sensor detects ice or black ice. (See essSurfaceBlackIceSignal)</pre>",
                   "info": "<pre>This object was deprecated in version 04. </pre>",
                   "name": "essSurfaceStatus",
                   "oid": "{ essPavementSensorEntry 7 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "deprecated",
                   "syntax": "<pre>INTEGER {\n    other (1),\n    error (2),\n    dry (3),\n    traceMoisture (4),\n    wet (5),\n    chemicallyWet (6),\n    iceWarning (7),\n    iceWatch (8),\n    snowWarning (9),\n    snowWatch (10),\n    absorption (11),\n    dew (12),\n    frost (13),\n    absorptionAtDewpoint (14) }</pre><p><br></p>",
                   "type": "ot",
@@ -28096,6 +28987,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -28110,7 +29012,7 @@
                   "format": "<pre>The value 1001 shall indicate an error condition or missing value.</pre>",
                   "name": "essSurfaceTemperature",
                   "oid": "{ essPavementSensorEntry 8 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
@@ -28195,6 +29097,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -28209,7 +29122,7 @@
                   "format": "<pre>The value 1001 shall indicate an error condition or missing value.</pre>",
                   "name": "essPavementTemperature",
                   "oid": "{ essPavementSensorEntry 9 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
@@ -28292,6 +29205,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -28394,7 +29318,7 @@
                   "format": "<pre>The value 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "essSurfaceSalinity",
                   "oid": "{ essPavementSensorEntry 11 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -28459,6 +29383,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -28561,7 +29496,7 @@
                   "format": "<pre>The value 1001 shall indicate an error condition or missing value.</pre>",
                   "name": "essSurfaceFreezePoint",
                   "oid": "{ essPavementSensorEntry 13 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
@@ -28627,6 +29562,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -28638,10 +29584,10 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2.1.14",
-                  "format": "<pre>other - The sensor is reporting a value that is not defined by the standard. See the manufacturer&#39;s documentation for more information.\nnoIce - The sensor is not currently detecting black ice.\nblackIce - The sensor is currently detecting black ice.\ndetectorError - The sensor is not connected, is not reporting, or is reporting an error.</pre>",
+                  "format": "<pre>other - The sensor is reporting a value that is not defined by the standard. See the manufacturer's documentation for more information.\nnoIce - The sensor is not currently detecting black ice.\nblackIce - The sensor is currently detecting black ice.\ndetectorError - The sensor is not connected, is not reporting, or is reporting an error.</pre>",
                   "name": "essSurfaceBlackIceSignal",
                   "oid": "{ essPavementSensorEntry 14 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<pre>INTEGER {\n    other (1),\n    noIce (2),\n    blackIce (3),\n    detectorError (4) }</pre>",
                   "type": "ot",
@@ -28706,6 +29652,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -28717,10 +29674,10 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2.1.15",
-                  "format": "<pre>other - An error has been detected that is not defined by the standard; see the manufacturer&#39;s documentation for more information.\nnone - No error is detected, the sensor appears to be working properly\nnoResponse - The sensor is configured and is believed to be connected, but is not responding\ncutCable - The sensor is not configured, not present or not fully connected, perhaps because the cable was cut\nshortCircuit - The sensor input has detected a short-circuit.\ndirtyLens - The lens of the sensor appears to be dirty.</pre>",
+                  "format": "<pre>other - An error has been detected that is not defined by the standard; see the manufacturer's documentation for more information.\nnone - No error is detected, the sensor appears to be working properly\nnoResponse - The sensor is configured and is believed to be connected, but is not responding\ncutCable - The sensor is not configured, not present or not fully connected, perhaps because the cable was cut\nshortCircuit - The sensor input has detected a short-circuit.\ndirtyLens - The lens of the sensor appears to be dirty.</pre>",
                   "name": "essPavementSensorError",
                   "oid": "{ essPavementSensorEntry 15 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<pre>INTEGER {\n    other (1),\n    none (2),\n    noResponse (3),\n    cutCable (4),\n    shortCircuit (5),\n    dirtyLens (6) }</pre>",
                   "type": "ot",
@@ -28804,6 +29761,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -28818,7 +29786,7 @@
                   "format": "<pre>The value 65535 shall indicate an error condition or missing value.</pre>",
                   "name": "essSurfaceIceOrWaterDepth",
                   "oid": "{ essPavementSensorEntry 16 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -28901,6 +29869,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -28915,7 +29894,7 @@
                   "format": "<pre>The value  65535 shall indicate an error condition or missing value.</pre>",
                   "name": "essSurfaceConductivityV2",
                   "oid": "{ essPavementSensorEntry 17 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
@@ -28980,6 +29959,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -29344,10 +30334,10 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2.1.22",
-                  "format": "<pre>other: The value reported by the sensor is not defined by the standard. See the manufacturer&#39;s documentation for more information\nerror: The sensor is providing a reading for surface status, but either the reading indicates an error code or the data has been deemed invalid or suspect\ndry: no humidity over the sensor (EN 15518-3)\nmoist: from 0.01 mm to 0.2 mm water film thickness over the sensor (EN 15518-3)\nchemically moist: from 0.01 mm to 0.2 mm water film thickness over the sensor mixed with de-icing or anti-icing chemical\nwet: from 0.2 mm water film thickness to 2.0 mm water film thickness over the sensor (EN 15518-3)\nchemically wet: from 0.2 mm water film thickness or greater mixed with de-icing or anti-icing chemical\nstanding water: from 2.0 mm or greater water film thickness over the sensor (EN 15518-3)\nfrost: formation of frost (ice crystals) is detected over the sensor\nslush: snow or ice that has been reduced to a soft water mixture by rain, warm temperature, and/or chemical treatment (Glossary of Meteorology)\nsnow: snow is detected over the sensor\nice: ice or black ice is detected (See essSurfaceBlackIceSignal)\nnoReport: The sensor is not providing any reading for surface status and may not be responding</pre>",
+                  "format": "<pre>other: The value reported by the sensor is not defined by the standard. See the manufacturer's documentation for more information\nerror: The sensor is providing a reading for surface status, but either the reading indicates an error code or the data has been deemed invalid or suspect\ndry: no humidity over the sensor (EN 15518-3)\nmoist: from 0.01 mm to 0.2 mm water film thickness over the sensor (EN 15518-3)\nchemically moist: from 0.01 mm to 0.2 mm water film thickness over the sensor mixed with de-icing or anti-icing chemical\nwet: from 0.2 mm water film thickness to 2.0 mm water film thickness over the sensor (EN 15518-3)\nchemically wet: from 0.2 mm water film thickness or greater mixed with de-icing or anti-icing chemical\nstanding water: from 2.0 mm or greater water film thickness over the sensor (EN 15518-3)\nfrost: formation of frost (ice crystals) is detected over the sensor\nslush: snow or ice that has been reduced to a soft water mixture by rain, warm temperature, and/or chemical treatment (Glossary of Meteorology)\nsnow: snow is detected over the sensor\nice: ice or black ice is detected (See essSurfaceBlackIceSignal)\nnoReport: The sensor is not providing any reading for surface status and may not be responding</pre>",
                   "name": "pavementSensorSurfaceCondition",
                   "oid": "{ essPavementSensorEntry 22 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<pre>INTEGER {\n    other (1),\n    error (2),\n    dry (3),\n    moist (4),\n    chemicallyMoist(5),\n    wet (6),\n    chemicallyWet (7),\n    standingWater (8),\n    frost (9),\n    slush (10),\n    snow (11),\n    ice (12),\n    noReport (13)  }</pre>",
                   "type": "ot",
@@ -29428,6 +30418,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -29439,10 +30440,10 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2.1.23",
-                  "format": "<pre>other: The value reported by the sensor is not defined by the standard. See the manufacturer&#39;s documentation for more information.\nerror: The sensor is providing a reading for surface status, but either the reading indicates an error code or the data has been deemed invalid or suspect\nnoAdvisory: No frozen moisture is detected and the risk of frozen moisture is low.\niceAdvisory: The risk of the formation of ice or black ice on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nslushAdvisory: The risk of the accumulation of snow or slush on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nfreezeAdvisory: The risk of the formation of some sort of frozen moisture on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nfreezeHazard: The sensor detects some sort of frozen moisture but is unable to classify as slush or ice\nnoReport: The sensor is not providing any reading for surface status and may not be responding</pre>",
+                  "format": "<pre>other: The value reported by the sensor is not defined by the standard. See the manufacturer's documentation for more information.\nerror: The sensor is providing a reading for surface status, but either the reading indicates an error code or the data has been deemed invalid or suspect\nnoAdvisory: No frozen moisture is detected and the risk of frozen moisture is low.\niceAdvisory: The risk of the formation of ice or black ice on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nslushAdvisory: The risk of the accumulation of snow or slush on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nfreezeAdvisory: The risk of the formation of some sort of frozen moisture on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nfreezeHazard: The sensor detects some sort of frozen moisture but is unable to classify as slush or ice\nnoReport: The sensor is not providing any reading for surface status and may not be responding</pre>",
                   "name": "pavementSensorForecastCondition",
                   "oid": "{ essPavementSensorEntry 23 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<pre>INTEGER {\n    other (1),\n    error (2),\n    noAdvisory (3),\n    iceAdvisory (4),\n    slushAdvisory(5),\n    freezeAdvisory (6),\n    freezeHazard (7),\n    noReport (8)  }</pre>",
                   "type": "ot",
@@ -29523,6 +30524,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -29537,7 +30549,7 @@
                   "format": "<pre>The value 101 shall indicate an error condition or missing value.</pre>",
                   "name": "pavementSensorFrictionCoefficient",
                   "oid": "{ essPavementSensorEntry 24 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..101)</p>",
                   "type": "ot",
@@ -29629,6 +30641,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -29825,7 +30848,7 @@
                   "format": "<pre>The value 101 shall indicate an error condition or missing value.</pre>",
                   "name": "pavementIcePercentage",
                   "oid": "{ essPavementSensorEntry 27 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..101)</p>",
                   "type": "ot",
@@ -29883,6 +30906,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -31063,7 +32097,7 @@
                   "format": "<pre>The value 1001 shall indicate an error condition or missing value.</pre>",
                   "name": "essSubSurfaceTemperature",
                   "oid": "{ essSubSurfaceSensorEntry 5 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
@@ -31145,6 +32179,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -31255,7 +32300,7 @@
                   "format": "<pre>The value 101 indicates an error condition or missing value.</pre>",
                   "name": "essSubSurfaceMoisture",
                   "oid": "{ essSubSurfaceSensorEntry 7 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>Integer32 (0..101)</p>",
                   "type": "ot",
@@ -31359,6 +32404,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -31370,10 +32426,10 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.4.1.8",
-                  "format": "<pre>other - An error has been detected that is not defined by the standard; see the manufacturer&#39;s documentation for more information.\nnone - No error is detected, the sensor appears to be working properly\nnoResponse - The sensor is configured and is believed to be connected, but is not responding\ncutCable - The sensor is not configured, not present or not fully connected, perhaps because the cable was cut\nshortCircuit - The sensor input has detected a short-circuit.</pre>",
+                  "format": "<pre>other - An error has been detected that is not defined by the standard; see the manufacturer's documentation for more information.\nnone - No error is detected, the sensor appears to be working properly\nnoResponse - The sensor is configured and is believed to be connected, but is not responding\ncutCable - The sensor is not configured, not present or not fully connected, perhaps because the cable was cut\nshortCircuit - The sensor input has detected a short-circuit.</pre>",
                   "name": "essSubSurfaceSensorError",
                   "oid": "{ essSubSurfaceSensorEntry 8 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<pre>INTEGER {\n    other (1),\n    none (2),\n    noResponse (3),\n    cutCable (4),\n    shortCircuit (5) }</pre>",
                   "type": "ot",
@@ -31454,6 +32510,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -32244,7 +33311,7 @@
               "info": "<pre>This object was deprecated in version 04.</pre>",
               "name": "essMobileFriction",
               "oid": "{ essNtcipMobile 1 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..101)</p>",
               "type": "ot",
@@ -32322,6 +33389,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -32336,7 +33414,7 @@
               "info": "<pre>This object was deprecated in version 04.</pre>",
               "name": "essMobileObservationGroundState",
               "oid": "{ essNtcipMobile 2 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<pre>INTEGER {\n    other (1),\n    dry (2),\n    moist (3),\n    wet (4),\n    flooded (5),\n    frozen (6),\n    glaze (7),\n    dustySandy (8),\n    veryDry (9),\n    icy (10),\n    patchyWetSnow (11),\n    moderateWetSnowCover (12),\n    fullWetSnowCover (13),\n    patchyDrySnow (14),\n    moderateDrySnowCover (15),\n    fullDrySnowCover (16),\n    driftingSnow (17),\n    unknown (18) }</pre>",
               "type": "ot",
@@ -32411,6 +33489,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -32425,7 +33514,7 @@
               "info": "<pre>This object was deprecated in version 04.</pre>",
               "name": "essMobileObservationPavement",
               "oid": "{ essNtcipMobile 3 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<pre>INTEGER {\n    other (1),\n    dry (2),\n    wet (3),\n    puddles (4),\n    shallowStandingWater (5),\n    shallowFlowingWater (6),\n    deepStandingWater (7),\n    deepFlowingWater (8),\n    dustingFreshSnow (9),\n    moderateFreshSnow (10),\n    deepFreshSnow (11),\n    plowedSnow (12),\n    slush (13),\n    packedSnowPatches (14),\n    packedSnow (15),\n    lightSnowDrifts (16),\n    moderateSnowDrifts (17),\n    heavySnowDrifts (18),\n    frost (19),\n    icePatches (20),\n    moderatelyIcy (21),\n    heavyIcing (22),\n    blackIce (23),\n    sheetIce (24),\n    frozenSlush (25) }</pre>",
               "type": "ot",
@@ -32500,6 +33589,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -32513,7 +33613,7 @@
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.10.4",
               "name": "essMobileObservationGroundStateV4",
               "oid": "{ essNtcipMobile 4 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<pre>INTEGER {\n    other (1),\n    dry (2),\n    moist (3),\n    wet (4),\n    flooded (5),\n    frozen (6),\n    glaze (7),\n    dustySandy (8),\n    veryDry (9),\n    icy (10),\n    patchyWetSnow (11),\n    moderateWetSnowCover (12),\n    fullWetSnowCover (13),\n    patchyDrySnow (14),\n    moderateDrySnowCover (15),\n    fullDrySnowCover (16),\n    driftingSnow (17),\n    unknown (18),\n   puddles (19),\n   standingWater (20),\n   flowingWater (21),\n   freshSnow (22),\n   plowedSnow (23),\n   slush (24) }</pre>",
               "type": "ot",
@@ -32582,6 +33682,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -32595,7 +33706,7 @@
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.10.5",
               "name": "essMobileObservationPavementV4",
               "oid": "{ essNtcipMobile 5 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<pre>INTEGER {\n    other (1),\n    dry (2),\n    wet (3),\n    puddles (4),\n    shallowStandingWater (5),\n    shallowFlowingWater (6),\n    deepStandingWater (7),\n    deepFlowingWater (8),\n    dustingFreshSnow (9),\n    moderateFreshSnow (10),\n    deepFreshSnow (11),\n    plowedSnow (12),\n    slush (13),\n    packedSnowPatches (14),\n    packedSnow (15),\n    lightSnowDrifts (16),\n    moderateSnowDrifts (17),\n    heavySnowDrifts (18),\n    frost (19),\n    icePatches (20),\n    moderatelyIcy (21),\n    heavyIcing (22),\n    blackIce (23),\n    sheetIce (24),\n    frozenSlush (25),\n   absorption (26),\n   absorptionAtDewpoint (27),\n   bareAndDry (28),\n   bareAndWet (29),\n   blowingsnow (30),\n   chemicallyWet (31),\n   dew (32),\n   damp (33),\n   wetSlush (34) }</pre>",
               "type": "ot",
@@ -32664,6 +33775,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             }
@@ -33700,7 +34822,7 @@
               "info": "<pre>This object was made obsolete in version 03.</pre>",
               "name": "ptsOperationalMode",
               "oid": "{ essNtcipTreatment 6 }",
-              "param_type": "configuration",
+              "param_type": "control",
               "status": "obsolete",
               "syntax": "<pre>INTEGER {\n    off (1),\n    manual (2),\n    automatic (3) }</pre>",
               "type": "ot",
@@ -33777,6 +34899,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -33792,7 +34925,7 @@
               "info": "<pre>This object was made obsolete in version 03.</pre>",
               "name": "ptsCommandState",
               "oid": "{ essNtcipTreatment 7 }",
-              "param_type": "configuration",
+              "param_type": "control",
               "status": "obsolete",
               "syntax": "<pre>INTEGER {\n    other (1),\n    inactive (2),\n    activate (3) }</pre>",
               "type": "ot",
@@ -33869,6 +35002,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -33882,7 +35026,7 @@
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.8",
               "name": "ptsSprayerState",
               "oid": "{ essNtcipTreatment 8 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<pre>INTEGER {\n    other (1),\n    inactive (2),\n    active (3) }</pre>",
               "type": "ot",
@@ -33951,6 +35095,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -34051,7 +35206,7 @@
               "info": "<pre>SNMP counter objects do not have a defined initialization value nor any ability to be reset. The value reported by this object only has meaning when compared to a previous reading and when there is no intervening device initialization as indicated by snmpEngineBoots.</pre>",
               "name": "ptsSignalEventCount",
               "oid": "{ essNtcipTreatment 10 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>Counter32</p>",
               "type": "ot",
@@ -34142,6 +35297,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -34157,7 +35323,7 @@
               "info": "<pre>This object was deprecated in version 05.\nWithin SNMPv1, this object was represented as a Counter in violation of Counter semantics. Within SNMPv3 exchanges, it is encoded as an Unsigned32 to conform to SMIv2 and SNMPv3 rules.</pre>",
               "name": "ptsLastSignalEvent",
               "oid": "{ essNtcipTreatment 11 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Unsigned32</p>",
               "type": "ot",
@@ -34245,6 +35411,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -34259,7 +35436,7 @@
               "info": "<pre>SNMP counter objects do not have a defined initialization value nor any ability to be reset. The value reported by this object only has meaning when compared to a previous reading and when there is no intervening device initialization as indicated by snmpEngineBoots.</pre>",
               "name": "ptsActiveEventCount",
               "oid": "{ essNtcipTreatment 12 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>Counter32</p>",
               "type": "ot",
@@ -34341,6 +35518,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -34355,7 +35543,7 @@
               "info": "<pre>SNMP counter objects do not have a defined initialization value nor any ability to be reset. The value reported by this object only has meaning when compared to a previous reading and when there is no intervening device initialization as indicated by snmpEngineBoots.</pre>",
               "name": "ptsInactiveEventCount",
               "oid": "{ essNtcipTreatment 13 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>Counter32</p>",
               "type": "ot",
@@ -34437,6 +35625,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -34452,7 +35651,7 @@
               "info": "<pre>This object was deprecated in version 05.\nWithin SNMPv1, this object was represented as a Counter in violation of Counter semantics. Within SNMPv3 exchanges, it is encoded as an Unsigned32 to conform to SMIv2 and SNMPv3 rules.</pre>",
               "name": "ptsLastActiveEvent",
               "oid": "{ essNtcipTreatment 14 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Unsigned32</p>",
               "type": "ot",
@@ -34529,6 +35728,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -34544,7 +35754,7 @@
               "info": "<pre>This object was deprecated in version 05.\nWithin SNMPv1, this object was represented as a Counter in violation of Counter semantics. Within SNMPv3 exchanges, it is encoded as an Unsigned32 to conform to SMIv2 and SNMPv3 rules.</pre>",
               "name": "ptsLastInactiveEvent",
               "oid": "{ essNtcipTreatment 15 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Counter32</p>",
               "type": "ot",
@@ -34621,6 +35831,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -34632,10 +35853,10 @@
               "access": "read-only",
               "action": "remainCurrent",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.16",
-              "format": "<pre>other        - indicates a unknown or initial state\nok           - indicates the bridge sprayer is operational\ngenericError - indicates the bridge sprayer has an error\ntankLow      - indicates the bridge sprayer&#39;s tank is low</pre>",
+              "format": "<pre>other        - indicates a unknown or initial state\nok           - indicates the bridge sprayer is operational\ngenericError - indicates the bridge sprayer has an error\ntankLow      - indicates the bridge sprayer's tank is low</pre>",
               "name": "ptsError",
               "oid": "{ essNtcipTreatment 16 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<pre>INTEGER {\n    other (1),\n    ok (2),\n    genericError (3),\n    tankLow (4) }</pre>",
               "type": "ot",
@@ -34716,6 +35937,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -34922,7 +36154,7 @@
               "info": "<pre>This object does not directly control the sprayer, rather it merely signals an external sprayer.</pre>",
               "name": "ptsCommandStateV3",
               "oid": "{ essNtcipTreatment 19 }",
-              "param_type": "configuration",
+              "param_type": "control",
               "status": "current",
               "syntax": "<pre>INTEGER {\n    other (1),\n    inactive (2),\n    activate (3) }</pre>",
               "type": "ot",
@@ -35004,6 +36236,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -35374,7 +36617,7 @@
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.24",
               "name": "ptsLastSignalEventDate",
               "oid": "{ essNtcipTreatment 24}",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>ITSDateStamp</p>",
               "type": "ot",
@@ -35444,6 +36687,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -35457,7 +36711,7 @@
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.25",
               "name": "ptsLastSignalEventTime",
               "oid": "{ essNtcipTreatment 25 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>ITSDailyTimeStamp</p>",
               "type": "ot",
@@ -35527,6 +36781,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -35540,7 +36805,7 @@
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.26",
               "name": "ptsLastActiveEventDate",
               "oid": "{ essNtcipTreatment 26 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>ITSDateStamp</p>",
               "type": "ot",
@@ -35610,6 +36875,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -35623,7 +36899,7 @@
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.27",
               "name": "ptsLastActiveEventTime",
               "oid": "{ essNtcipTreatment 27 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>ITSDailyTimeStamp</p>",
               "type": "ot",
@@ -35693,6 +36969,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -35706,7 +36993,7 @@
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.28",
               "name": "ptsLastInactiveEventDate",
               "oid": "{ essNtcipTreatment 28 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>ITSDateStamp</p>",
               "type": "ot",
@@ -35776,6 +37063,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -35789,7 +37087,7 @@
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.29",
               "name": "ptsLastInactiveEventTime",
               "oid": "{ essNtcipTreatment 29 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>ITSDailyTimeStamp</p>",
               "type": "ot",
@@ -35859,6 +37157,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -36150,7 +37459,7 @@
               "format": "<pre>The value 255 shall indicate an error condition or missing value.</pre>",
               "name": "essCO",
               "oid": "{ essNtcipAirQuality 1 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>Integer32 (0..255)</p>",
               "type": "ot",
@@ -36233,6 +37542,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -36248,7 +37568,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essCO2",
               "oid": "{ essNtcipAirQuality 2 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
@@ -36327,6 +37647,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -36342,7 +37673,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essNO",
               "oid": "{ essNtcipAirQuality 3 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..255)</p>",
               "type": "ot",
@@ -36421,6 +37752,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -36435,7 +37777,7 @@
               "format": "<pre>The value 255 shall indicate an error condition or missing value.</pre>",
               "name": "essNO2",
               "oid": "{ essNtcipAirQuality 4 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>Integer32 (0..255)</p>",
               "type": "ot",
@@ -36518,6 +37860,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -36532,7 +37885,7 @@
               "format": "<pre>The value 65535 shall indicate an error condition or missing value.</pre>",
               "name": "essSO2",
               "oid": "{ essNtcipAirQuality 5 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
@@ -36615,6 +37968,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -36630,7 +37994,7 @@
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essO3",
               "oid": "{ essNtcipAirQuality 6 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..255)</p>",
               "type": "ot",
@@ -36709,6 +38073,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -36723,7 +38098,7 @@
               "format": "<pre>The value 65535 shall indicate an error condition or missing value.</pre>",
               "name": "essPM10",
               "oid": "{ essNtcipAirQuality 7 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
@@ -36806,6 +38181,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -36894,7 +38280,7 @@
               "format": "<pre>The value 65535 shall indicate an error condition or missing value.</pre>",
               "name": "essPM25",
               "oid": "{ essNtcipAirQuality 9 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
@@ -36976,6 +38362,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -38135,7 +39532,7 @@
               "format": "<pre>The value 65535 shall indicate an error condition or missing value. </pre>",
               "name": "essCO2V4",
               "oid": "{ essNtcipAirQuality 13 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>INTEGER (0..65535)</p>",
               "type": "ot",
@@ -38217,6 +39614,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -38231,7 +39639,7 @@
               "format": "<pre>The value 255 shall indicate an error condition or missing value. </pre>",
               "name": "essNOV4",
               "oid": "{ essNtcipAirQuality 14 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>INTEGER (0..255)</p>",
               "type": "ot",
@@ -38313,6 +39721,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             },
@@ -38327,7 +39746,7 @@
               "format": "<pre>The value 65535 shall indicate an error condition or missing value.</pre>",
               "name": "essO3V4",
               "oid": "{ essNtcipAirQuality 15 }",
-              "param_type": "configuration",
+              "param_type": "status",
               "status": "current",
               "syntax": "<p>INTEGER (0..65535)</p>",
               "type": "ot",
@@ -38409,6 +39828,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T22:32:33.454Z"
+                },
+                {
+                  "attributesChanged": {
+                    "param_type": "configuration"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-07-28T23:20:15.931Z"
                 }
               ]
             }
@@ -39013,7 +40443,7 @@
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.14.2.1.3",
                   "name": "essSnapshotCameraStoragePath",
                   "oid": "{ essSnapshotCameraEntry 3 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>SnmpAdminString (SIZE(1..255))</p>",
                   "type": "ot",
@@ -39094,6 +40524,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-27T03:11:47.256Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -39108,7 +40549,7 @@
                   "info": "<pre>Version 02 of this standard had a typo for the MAX-ACCESS; this object is required tobe read-write for the camera to capture a snapshot image.</pre>",
                   "name": "essSnapshotCameraCommand",
                   "oid": "{ essSnapshotCameraEntry 4 }",
-                  "param_type": "configuration",
+                  "param_type": "control",
                   "status": "current",
                   "syntax": "<pre>INTEGER {\n    ready(1),\n    captureSnapshot(2)  }</pre>",
                   "type": "ot",
@@ -39178,6 +40619,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-27T03:11:47.256Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -39192,7 +40644,7 @@
                   "format": "<pre>none - no error was detected \nhardware - an error occurred with the camera hardware when attempting to capture a picture.\ninsufficientMemory - the ESS does not have sufficient memory to store the new picture.</pre>",
                   "name": "essSnapshotCameraError",
                   "oid": "{ essSnapshotCameraEntry 5 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<pre>INTEGER {\n    none(1),\n    hardware(2),\n    insufficientMemory(3)  }</pre>",
                   "type": "ot",
@@ -39273,6 +40725,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },
@@ -39386,7 +40849,7 @@
                   "format": "<pre>other: A file format not identified by this document. If other file formats \n       are used, they shall be presented in all uppercase to avoid conflicts \n       with future extensions to this list.\njpeg: Joint Photographic Experts Group format as standardized in ISO/IEC \n      10918.\nheif: High Efficiency Image File format as standardized in ISO/IEC 23008-12.\ntiff: Tagged Image File Format, Revision 6.0 as defined by the Aldus \n      Corporation and available from ITU at https://www.itu.int/itudoc/itu-\n      t/com16/tiff-fx/docs/tiff6.pdf\npng:  Portable Network Graphics (Third Edition) as defined by the World Wide \n      Web Consortium (W3C) and available at https://www.w3.org/TR/png-3/.\ngif:  Graphics Interchange Format Version 89a as developed by CompuServe\n      Incorporated and available at https://www.w3.org/Graphics/GIF/spec-\n      gif89a.txt\nbmp:  Microsoft Windows Bitmap Format, version 5 as defined by Microsoft \n      Corporation and available at https://learn.microsoft.com/en-\n      us/windows/win32/gdi/bitmap-storage\nwebp: The raster graphics file format developed by Google and available at \n      https://developers.google.com/speed/webp/docs/riff_container\npdf:  Portable Document Format as developed by Adobe, Inc. and standardized \n      in ISO 32000-2.\neps:  Encapsulated PostScript File Format, Version 3 as specified by Adobe\n      Systems Incorporated in May 1992 and available at \n      https://printtechnologies.org/standards/files/epsf_spec_v3_0.pdf\nraw:  The native format offered by the camera manufacturer. This format is \n      not interoperable among manufacturers or perhaps even models, but \n      ensures no loss of information.\ndng:  Digital Negative, Version 1.7.1.0 format as developed by Adobe as a \n      generic, interoperable raw format and available at https://\n      helpx.adobe.com/content/dam/help/en/photoshop/pdf/DNG_Spec_1_7_1_0.pdf</pre>",
                   "name": "essSnapshotCameraSupportedFormats",
                   "oid": "{ essSnapshotCameraEntry 7 }",
-                  "param_type": "configuration",
+                  "param_type": "status",
                   "status": "current",
                   "syntax": "<p>BITS { other (0), jpeg (1), heif (2), tiff (3), png (4), gif (5), bmp (6), webp (7), pdf (8), eps (9), raw (10), dng (11) }</p>",
                   "type": "ot",
@@ -39467,6 +40930,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "param_type": "configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-28T23:20:15.931Z"
                     }
                   ]
                 },

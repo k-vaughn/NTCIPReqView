@@ -94,8 +94,8 @@ std::string processBreak(const std::string& content) {
 }
 
 int main() {
-    std::string inputFile = "/Users/kvaughn/Documents/Standards/ISO/TC204 WG9/26048 - NTCIP Data/ReqView/documents/Temp.json";
-    std::string outputFile = "/Users/kvaughn/Documents/Standards/NTCIP/output/Temp.json";
+    std::string inputFile = "/Users/kvaughn/GitHub/ITE/NTCIPReqView/documents/NTCIP_1204.json";
+    std::string outputFile = "/Users/kvaughn/Documents/Standards/NTCIP/output/NTCIP_1204.json";
 
     try {
         // Read the file content

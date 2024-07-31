@@ -8,7 +8,7 @@
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-07-29T17:12:17.754Z",
+  "lastChangedOn": "2024-07-31T15:52:15.351Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -18,7 +18,7 @@
     {
       "id": "378",
       "guid": "4b439940-e2fe-4528-9504-63220944c70e",
-      "heading": "Introduction",
+      "heading": "General",
       "type": "text",
       "history": [
         {
@@ -31,6 +31,17 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-07-25T20:47:36.902Z"
+        },
+        {
+          "attributesChanged": {
+            "heading": "Introduction"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-07-29T18:28:49.396Z"
         }
       ]
     },
@@ -7662,7 +7673,8 @@
           "id": "8",
           "guid": "736F9486-94F2-43E3-AFFF-BF8B519EABA3",
           "heading": "Data Instrumentation Objects",
-          "text": "<p>Objects used to describe the type of data and the type of \ninstrumentation used to collect the data being received from the \ness when the data has a BUFR equivalent.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.1.2</p>",
+          "text": "<pre>Objects used to describe the type of data and the type of instrumentation used to collect the data being received from the ess when the data has a BUFR equivalent. </pre><p><br></p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.1.2",
           "name": "essBufrInstrumentation",
           "oid": "{ essBufr 2 }",
           "status": "current",
@@ -7694,6 +7706,28 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-27T03:11:47.256Z"
+            },
+            {
+              "attributesChanged": {
+                "text": "<p>Objects used to describe the type of data and the type of \ninstrumentation used to collect the data being received from the \ness when the data has a BUFR equivalent.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.1.2</p>"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-07-31T15:52:03.565Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-07-31T15:52:15.351Z"
             }
           ],
           "children": [

@@ -8,7 +8,7 @@
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-08-03T21:45:52.971Z",
+  "lastChangedOn": "2024-08-04T19:03:57.859Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -9293,7 +9293,8 @@
         {
           "id": "3",
           "guid": "95E25B36-3476-46AD-8994-F8AE8FDD21D6",
-          "text": "<p>This node contains objects that describe BUFR information based on\nthe BUFR Standards.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.1</p>",
+          "text": "<p>This node contains objects that describe BUFR information based on\nthe BUFR Standards.&nbsp;</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.1",
           "name": "essBufr",
           "oid": "{ess 1}",
           "status": "current",
@@ -9336,13 +9337,36 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-27T03:11:47.256Z"
+            },
+            {
+              "attributesChanged": {
+                "text": "<p>This node contains objects that describe BUFR information based on\nthe BUFR Standards.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.1</p>"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:54:10.630Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:54:13.011Z"
             }
           ]
         },
         {
           "id": "4",
           "guid": "E8B16785-CD58-425C-AD07-0B706EED15BB",
-          "text": "<p>This node contains objects that describe surface transportation\nenvironmental information which deviates from the BUFR Standards.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2</p>",
+          "text": "<p>This node contains objects that describe surface transportation environmental information which deviates from the BUFR Standards.</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2",
           "name": "essNtcip",
           "oid": "{ess 2}",
           "status": "current",
@@ -9385,6 +9409,39 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-27T03:11:47.256Z"
+            },
+            {
+              "attributesChanged": {
+                "text": "<p>This node contains objects that describe surface transportation\nenvironmental information which deviates from the BUFR Standards.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2</p>"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:54:22.377Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:54:27.440Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.1"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:54:38.561Z"
             }
           ]
         },
@@ -9480,7 +9537,7 @@
               "access": "read-only",
               "action": "deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.1.1",
-              "format": "<pre>value          description\nother          of a design not listed in this standard. \npermanent      not designed to be relocated.\ntransportable  able to be relocated, but does not take readings while moving.\nmobile         capable of taking readings while moving.</pre>",
+              "format": "<pre>value          description\nother          of a design not listed in this standard. \npermanent      not designed to be relocated.\ntransportable  able to be relocated, but does not take readings while \n               moving.\nmobile         capable of taking readings while moving.</pre>",
               "info": "<pre>This object was deprecated in NTCIP 1204 v05.</pre>",
               "name": "essNtcipCategory",
               "oid": "{ essNtcipIdentification 1 }",
@@ -9616,6 +9673,28 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T23:20:15.931Z"
+                },
+                {
+                  "attributesChanged": {
+                    "format": "<pre>value          description\nother          of a design not listed in this standard. \npermanent      not designed to be relocated.\ntransportable  able to be relocated, but does not take readings while moving.\nmobile         capable of taking readings while moving.</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T19:03:25.705Z"
+                },
+                {
+                  "attributesChanged": {
+                    "format": "<pre>value          description\nother          of a design not listed in this standard. \npermanent      not designed to be relocated.\ntransportable  able to be relocated, but does not take readings while \nmoving.\nmobile         capable of taking readings while moving.</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T19:03:57.859Z"
                 }
               ]
             },
@@ -9798,7 +9877,8 @@
             {
               "id": "9",
               "guid": "60CE9258-DBED-41D6-8C59-BB2A3391AA3A",
-              "text": "<p>Objects used to describe the type of data and the type of \ninstrumentation used to collect the data being received from the \nESS when there is not a BUFR equivalent to the data.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.15</p>",
+              "text": "<p>Objects used to describe the type of data and the type of instrumentation used to collect the data being received from the ESS when there is not a BUFR equivalent to the data.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.15",
               "name": "essNtcipInstrumentation",
               "oid": "{ essNtcip 15 }",
               "status": "current",
@@ -9830,6 +9910,28 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>Objects used to describe the type of data and the type of \ninstrumentation used to collect the data being received from the \nESS when there is not a BUFR equivalent to the data.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.15</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T01:55:57.743Z"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T01:56:03.248Z"
                 }
               ]
             },
@@ -10999,7 +11101,8 @@
           "id": "26",
           "guid": "CADAB0DD-574C-477A-B9B4-88D1C157C46C",
           "heading": "Location Objects",
-          "text": "<p>Contains objects used to describe the location of the ESS that is\ntransmitting the collected data.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.2</p>",
+          "text": "<p>Contains objects used to describe the location of the ESS that is\ntransmitting the collected data.</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.2",
           "name": "essNtcipLocation",
           "oid": "{essNtcip 2 }",
           "status": "current",
@@ -11031,6 +11134,28 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-27T03:11:47.256Z"
+            },
+            {
+              "attributesChanged": {
+                "text": "<p>Contains objects used to describe the location of the ESS that is\ntransmitting the collected data.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.2</p>"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:56:14.457Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:56:21.384Z"
             }
           ],
           "children": [
@@ -11649,6 +11774,7 @@
           "guid": "FC576A27-B7D1-4CD4-9E44-BCA8ACA4A36D",
           "heading": "Station Elevation Objects",
           "text": "<p>Objects used to describe the elevation at the ESS that is transmitting \nthe collected data.</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.3",
           "name": "essNtcipHeight",
           "oid": "{essNtcip 3 }",
           "status": "current",
@@ -11680,6 +11806,17 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-27T03:11:47.256Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:56:49.556Z"
             }
           ],
           "children": [
@@ -11687,6 +11824,7 @@
               "id": "33",
               "guid": "45B14FB0-C431-4A90-A6C4-72BA2EB89EE5",
               "text": "<p>Objects used to describe the atmospheric pressure at the ESS.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.1.7",
               "name": "essBufrLocationVertical",
               "oid": "{essBufr 7 }",
               "status": "deprecated",
@@ -11707,6 +11845,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-25T22:22:03.004Z"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T01:57:00.064Z"
                 }
               ]
             },
@@ -11714,6 +11863,7 @@
               "id": "34",
               "guid": "40C31D8E-0B8B-4A96-BA07-7973D047D1D7",
               "text": "<p>Objects used to describe the atmospheric pressure reported by each ESS pressure sensor.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.16",
               "name": "essNtcipPressure",
               "oid": "{essNtcip 16 }",
               "status": "current",
@@ -11734,6 +11884,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-25T22:22:03.004Z"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T01:57:05.540Z"
                 }
               ]
             },
@@ -14059,6 +14220,7 @@
           "guid": "58022601-3DEA-4D64-917B-A7BF85649929",
           "heading": "Wind Data Section",
           "text": "<p>Objects used to describe the wind data that is collected at the ESS in a \nformat that is consistent with BUFR.</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.1.11",
           "name": "essBufrWind",
           "oid": "{essBufr 11 }",
           "status": "current",
@@ -14090,6 +14252,17 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-27T03:11:47.256Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:57:19.581Z"
             }
           ],
           "children": [
@@ -14097,6 +14270,7 @@
               "id": "55",
               "guid": "F576E6E8-FB5E-420B-90EA-36AC74EF48B3",
               "text": "<p> Objects used to describe the wind data that is collected at the ESS in a \nformat that is not defined by BUFR.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.4",
               "name": "essNtcipWind",
               "oid": "{essNtcip 4 }",
               "status": "current",
@@ -14128,6 +14302,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T01:57:25.414Z"
                 }
               ]
             },
@@ -17130,6 +17315,7 @@
           "guid": "E3504D88-BC58-4DF4-8189-719730AFECFE",
           "heading": "Temperature Data Objects",
           "text": "<p>Objects used to describe the temperature data that is collected at the ESS.</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.5",
           "name": "essNtcipTemperature",
           "oid": "{essNtcip 5}",
           "status": "current",
@@ -17150,6 +17336,17 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-25T22:22:03.004Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:57:37.466Z"
             }
           ],
           "children": [
@@ -19155,7 +19352,8 @@
           "id": "105",
           "guid": "09BB7C61-23E7-490B-BA45-6E0827984541",
           "heading": "Humidity and Precipitation Data Objects",
-          "text": "<p>Objects used to describe the humidity and precipitation data collected by the ESS and presented in BUFR-equivalent formats.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.1.13</p>",
+          "text": "<p>Objects used to describe the humidity and precipitation data collected by the ESS and presented in BUFR-equivalent formats.</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.1.13",
           "name": "essBufrPrecip",
           "oid": "{essBufr 13 }",
           "status": "current",
@@ -19187,13 +19385,36 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-27T03:11:47.256Z"
+            },
+            {
+              "attributesChanged": {
+                "text": "<p>Objects used to describe the humidity and precipitation data collected by the ESS and presented in BUFR-equivalent formats.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.1.13</p>"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:57:53.259Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:58:04.118Z"
             }
           ],
           "children": [
             {
               "id": "106",
               "guid": "A090A781-3FCF-4CB8-902E-2A665628F62F",
-              "text": "<p>Objects used to describe the humidity and precipitation data collected by the ESS and presented in a format not defined by BUFR.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.6</p>",
+              "text": "<p>Objects used to describe the humidity and precipitation data collected by the ESS and presented in a format not defined by BUFR.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6",
               "name": "essNtcipPrecip",
               "oid": "{essNtcip 6 }",
               "status": "current",
@@ -19225,6 +19446,28 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>Objects used to describe the humidity and precipitation data collected by the ESS and presented in a format not defined by BUFR.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.6</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T01:58:13.416Z"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T01:58:18.416Z"
                 }
               ]
             },
@@ -28396,7 +28639,8 @@
           "id": "199",
           "guid": "CC5D05BE-4579-4891-9934-21343444648A",
           "heading": "Radiation Objects",
-          "text": "<p>Objects used to describe the data that is collected by the pavement surface sensor and recorded in a format consistent with BUFR.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.1.14</p>",
+          "text": "<p>Objects used to describe the data that is collected by the pavement surface sensor and recorded in a format consistent with BUFR.</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.1.14",
           "name": "essBufrRadiation",
           "oid": "{essBufr 14 }",
           "status": "current",
@@ -28428,13 +28672,36 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-27T03:11:47.256Z"
+            },
+            {
+              "attributesChanged": {
+                "text": "<p>Objects used to describe the data that is collected by the pavement surface sensor and recorded in a format consistent with BUFR.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.1.14</p>"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:58:27.122Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:58:31.370Z"
             }
           ],
           "children": [
             {
               "id": "200",
               "guid": "2097A363-0E99-4F0E-BF39-D5154B2930DF",
-              "text": "<p>Objects used to describe the data that is collected by the pavement surface sensor and recorded in a format not directly derived from BUFR.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.7</p>",
+              "text": "<p>Objects used to describe the data that is collected by the pavement surface sensor and recorded in a format not directly derived from BUFR.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.7",
               "name": "essNtcipRadiation",
               "oid": "{essNtcip 7}",
               "status": "current",
@@ -28466,6 +28733,28 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>Objects used to describe the data that is collected by the pavement surface sensor and recorded in a format not directly derived from BUFR.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.7</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T01:58:41.723Z"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T01:58:45.243Z"
                 }
               ]
             },
@@ -31294,6 +31583,7 @@
           "guid": "335DE723-65D4-4759-88F2-6DB6F1647CE7",
           "heading": "Visibility Data Objects",
           "text": "<p>Objects used to describe the visibility data that is collected by the ESS.</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.8",
           "name": "essNtcipVisibility",
           "oid": "{essNtcip 8 }",
           "status": "current",
@@ -31314,6 +31604,17 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-25T22:22:03.004Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:58:54.239Z"
             }
           ],
           "children": [
@@ -34069,7 +34370,8 @@
           "id": "239",
           "guid": "A098F5DE-FF42-458E-8CF1-A3CBB486FB32",
           "heading": "Pavement Sensor Objects",
-          "text": "<p>Objects used to describe the data that is collected by the pavement surface sensor.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.9.1\n</p>",
+          "text": "<p>Objects used to describe the data that is collected by the pavement surface sensor.&nbsp;</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9",
           "name": "essNtcipPavement",
           "oid": "{essNtcip 9}",
           "status": "current",
@@ -34101,6 +34403,28 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-27T03:11:47.256Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:59:02.732Z"
+            },
+            {
+              "attributesChanged": {
+                "text": "<p>Objects used to describe the data that is collected by the pavement surface sensor.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.9.1\n</p>"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:59:17.393Z"
             }
           ],
           "children": [
@@ -39789,7 +40113,8 @@
           "id": "296",
           "guid": "FF0216CB-367C-4967-B8E4-36EC5D4E61B0",
           "heading": "Mobile Platform Objects",
-          "text": "<p>Objects related to monitoring mobile platforms that act as an ESS (e.g., specially-equipped maintenance vehicles). \n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.10</p>",
+          "text": "<p>Objects related to monitoring mobile platforms that act as an ESS (e.g., specially-equipped maintenance vehicles).&nbsp;</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.10",
           "name": "essNtcipMobile",
           "oid": "{essNtcip 10}",
           "status": "current",
@@ -39882,6 +40207,28 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-27T03:11:47.256Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:59:30.471Z"
+            },
+            {
+              "attributesChanged": {
+                "text": "<p>Objects related to monitoring mobile platforms that act as an ESS (e.g., specially-equipped maintenance vehicles). \n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.10</p>"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:59:37.756Z"
             }
           ],
           "children": [
@@ -40381,7 +40728,8 @@
           "id": "304",
           "guid": "789FCC21-8385-4500-A625-6C3625262D56",
           "heading": "Pavement Treatment Objects",
-          "text": "<p>Objects that monitor the various types and amounts of treatments that are spread on the pavement surface.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.11</p>",
+          "text": "<p>Objects that monitor the various types and amounts of treatments that are spread on the pavement surface.</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11",
           "name": "essNtcipTreatment",
           "oid": "{ essNtcip 11 }",
           "status": "current",
@@ -40413,6 +40761,28 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-27T03:11:47.256Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:59:56.653Z"
+            },
+            {
+              "attributesChanged": {
+                "text": "<p>Objects that monitor the various types and amounts of treatments that are spread on the pavement surface.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.11</p>"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T02:00:02.812Z"
             }
           ],
           "children": [
@@ -44271,7 +44641,8 @@
           "id": "336",
           "guid": "620DEB69-5330-4370-BD60-DFE8E67932BA",
           "heading": "Air Quality Parameters",
-          "text": "<p>Objects used for monitoring air quality conditions.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.12</p>",
+          "text": "<p>Objects used for monitoring air quality conditions.</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.12",
           "name": "essNtcipAirQuality",
           "oid": "{ essNtcip 12 }",
           "status": "current",
@@ -44303,6 +44674,28 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-27T03:11:47.256Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:59:44.653Z"
+            },
+            {
+              "attributesChanged": {
+                "text": "<p>Objects used for monitoring air quality conditions.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.12</p>"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T01:59:51.297Z"
             }
           ],
           "children": [
@@ -47025,7 +47418,8 @@
           "id": "364",
           "guid": "324B6976-0BC3-40DA-9264-8247B5B7603D",
           "heading": "Water Quality Parameters",
-          "text": "<p>This node contains objects used for monitoring water quality conditions. Reserved for future use.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.13</p>",
+          "text": "<p>This node contains objects used for monitoring water quality conditions. Reserved for future use.</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.13",
           "name": "essNtcipWaterQuality",
           "oid": "{ essNtcip 13 }",
           "status": "current",
@@ -47057,6 +47451,28 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-27T03:11:47.256Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T02:00:09.198Z"
+            },
+            {
+              "attributesChanged": {
+                "text": "<p>This node contains objects used for monitoring water quality conditions. Reserved for future use.\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.13</p>"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T02:00:16.263Z"
             }
           ]
         },
@@ -47064,7 +47480,8 @@
           "id": "365",
           "guid": "69A56FE1-EA71-40FE-8CF2-7EA591D4D58C",
           "heading": "Snapshot Parameters",
-          "text": "<p>Contains objects used to describe the snapshot camera feature\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.14</p>",
+          "text": "<p>Contains objects used to describe the snapshot camera feature.</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.14",
           "name": "essNtcipSnapshot",
           "oid": "{ essNtcip 14 }",
           "status": "current",
@@ -47096,6 +47513,28 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-27T03:11:47.256Z"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T02:00:45.853Z"
+            },
+            {
+              "attributesChanged": {
+                "text": "<p>Contains objects used to describe the snapshot camera feature\n&amp;lt;Object Identifier&amp;gt; 1.3.6.1.4.1.1206.4.2.5.2.14</p>"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T02:01:00.279Z"
             }
           ],
           "children": [
@@ -48660,6 +49099,7 @@
           "guid": "75dc627e-1a77-486b-99e4-3478d312b77a",
           "heading": "Conformance Information",
           "text": "<p>A node defining conformance information related to ESS objects.</p>",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127",
           "name": "essConformance",
           "oid": "{ess 127}",
           "status": "current",
@@ -48704,6 +49144,17 @@
               "changedOn": "2024-07-26T13:52:37.518Z",
               "docId": "NTCIP_1204",
               "structureAction": "Cut"
+            },
+            {
+              "attributesChanged": {
+                "dotted_oid": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-04T02:00:34.850Z"
             }
           ],
           "children": [
@@ -48711,6 +49162,7 @@
               "id": "2331",
               "guid": "390d639e-2257-4375-b0a6-81d35c22b688",
               "text": "<p>A node for compliance statements for ESS objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.1",
               "name": "essCompliances",
               "oid": "{essConformance 1}",
               "status": "current",
@@ -48754,6 +49206,17 @@
                   "changedOn": "2024-07-26T13:44:52.572Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:01:27.080Z"
                 }
               ]
             },
@@ -48761,6 +49224,7 @@
               "id": "2332",
               "guid": "75c165e0-02d9-44e9-b2d2-2950b76d9762",
               "text": "<p>A node for group definitions related to ESS objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2",
               "name": "essGroups",
               "oid": "{essConformance 2}",
               "status": "current",
@@ -48804,6 +49268,17 @@
                   "changedOn": "2024-07-26T13:44:56.694Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:01:38.183Z"
                 }
               ]
             },
@@ -48812,6 +49287,7 @@
               "guid": "b82f1dee-d4ce-48e6-92a2-5e01f457131d",
               "heading": "Controller Groups",
               "text": "<p>A node for group definitions related to ESS objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.1",
               "name": "essControllerGroups",
               "oid": "{essGroups 1}",
               "status": "current",
@@ -48856,6 +49332,17 @@
                   "changedOn": "2024-07-26T13:45:03.480Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:01:41.566Z"
                 }
               ],
               "children": [
@@ -48939,6 +49426,7 @@
               "guid": "1e47052c-914a-48a4-80a5-296884f2338e",
               "heading": "Pressure Groups",
               "text": "<p>A node for group definitions related to ESS pressure sensor objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.2",
               "name": "essPressureGroups",
               "oid": "{essGroups 2}",
               "status": "current",
@@ -49015,6 +49503,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-29T17:12:15.276Z"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:01:44.279Z"
                 }
               ],
               "children": [
@@ -49257,6 +49756,7 @@
               "guid": "9d10749d-a2c7-4e30-a62f-273edf512afe",
               "heading": "Wind Groups",
               "text": "<p>A node for group definitions related to ESS wind sensor objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.3",
               "name": "essWindGroups",
               "oid": "{essGroups 3}",
               "status": "current",
@@ -49301,6 +49801,17 @@
                   "changedOn": "2024-07-26T13:48:35.421Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:01:46.757Z"
                 }
               ],
               "children": [
@@ -49565,6 +50076,7 @@
               "guid": "e50a27cc-a5a2-4fe4-87ea-5d4b5d60d680",
               "heading": "Temperature Groups",
               "text": "<p>A node for group definitions related to ESS temperture sensor objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.4",
               "name": "essTemperatureGroups",
               "oid": "{essGroups 4}",
               "status": "current",
@@ -49609,6 +50121,17 @@
                   "changedOn": "2024-07-26T13:48:49.315Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:01:49.397Z"
                 }
               ],
               "children": [
@@ -49885,6 +50408,7 @@
               "guid": "795c0261-38a3-4421-991c-eb4c47ebedc9",
               "heading": "Humidity Groups",
               "text": "<p>A node for group definitions related to ESS humidity objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.5",
               "name": "essHumidityGroups",
               "oid": "{essGroups 5}",
               "status": "current",
@@ -49929,6 +50453,17 @@
                   "changedOn": "2024-07-26T13:48:59.690Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:01:52.568Z"
                 }
               ],
               "children": [
@@ -50171,6 +50706,7 @@
               "guid": "40dd0d33-eec5-4174-8cba-4f0144ee7c57",
               "heading": "Precipitation Groups",
               "text": "<p>A node for group definitions related to ESS precipitation objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.6",
               "name": "essPrecipitationGroups",
               "oid": "{essGroups 6}",
               "status": "current",
@@ -50215,6 +50751,17 @@
                   "changedOn": "2024-07-26T13:49:18.954Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:01:58.489Z"
                 }
               ],
               "children": [
@@ -51207,6 +51754,7 @@
               "guid": "c260842f-d7cc-4b6d-b6eb-6b99c1ccfb94",
               "heading": "Radiation Groups",
               "text": "<p>A node for group definitions related to ESS radiation objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.7",
               "name": "essRadiationGroups",
               "oid": "{essGroups 7}",
               "status": "current",
@@ -51251,6 +51799,17 @@
                   "changedOn": "2024-07-26T13:49:51.127Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:02:01.387Z"
                 }
               ],
               "children": [
@@ -51505,6 +52064,7 @@
               "guid": "bbae2602-5b61-45d0-9255-493b0b94e1c9",
               "heading": "Visibility Groups",
               "text": "<p>A node for group definitions related to ESS visibility objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.8",
               "name": "essVisibilityGroups",
               "oid": "{essGroups 8}",
               "status": "current",
@@ -51571,6 +52131,17 @@
                   "changedOn": "2024-07-26T13:49:56.174Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:02:04.564Z"
                 }
               ],
               "children": [
@@ -51994,6 +52565,7 @@
               "guid": "8c3df4a4-d17e-4aa8-99c8-9b20e77b787c",
               "heading": "Pavement Groups",
               "text": "<p>A node for group definitions related to ESS objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.9",
               "name": "essPavementGroups",
               "oid": "{essGroups 9}",
               "status": "current",
@@ -52038,6 +52610,17 @@
                   "changedOn": "2024-07-26T13:50:32.751Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:02:07.182Z"
                 }
               ],
               "children": [
@@ -52737,6 +53320,7 @@
               "guid": "b3bfd6b7-cd8b-42af-86e3-18fbb482150e",
               "heading": "Subsurface Groups",
               "text": "<p>A node for group definitions related to ESS subsurface objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.10",
               "name": "essSubSurfaceGroups",
               "oid": "{essGroups 10}",
               "status": "current",
@@ -52781,6 +53365,17 @@
                   "changedOn": "2024-07-26T13:50:45.528Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:02:10.059Z"
                 }
               ],
               "children": [
@@ -53193,6 +53788,7 @@
               "guid": "676b5898-4afa-4473-81db-190b127cc471",
               "heading": "Snapshot Groups",
               "text": "<p>A node for group definitions related to ESS snapshot objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.11",
               "name": "essSnapshotGroups",
               "oid": "{essGroups 11}",
               "status": "current",
@@ -53237,6 +53833,17 @@
                   "changedOn": "2024-07-26T13:50:53.655Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:02:12.471Z"
                 }
               ],
               "children": [
@@ -53354,6 +53961,7 @@
               "guid": "a43680aa-5bed-467c-8bb3-17133b727171",
               "heading": "Observed Groups",
               "text": "<p>A node for group definitions related to ESS observed readings.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.12",
               "name": "essObservedGroups",
               "oid": "{essGroups 12}",
               "status": "current",
@@ -53398,6 +54006,17 @@
                   "changedOn": "2024-07-26T13:51:02.423Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:02:17.807Z"
                 }
               ],
               "children": [
@@ -53641,6 +54260,7 @@
               "guid": "607d3dcc-02d0-400c-b2c3-b679c6c1f396",
               "heading": "Water Level Groups",
               "text": "<p>A node for group definitions related to ESS water level objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.13",
               "name": "essWaterLevelGroups",
               "oid": "{essGroups 13}",
               "status": "current",
@@ -53685,6 +54305,17 @@
                   "changedOn": "2024-07-26T13:51:12.473Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:02:20.951Z"
                 }
               ],
               "children": [
@@ -54001,6 +54632,7 @@
               "guid": "bda823c0-2b9f-44f7-ad34-4c01826da937",
               "heading": "Air Quality Groups",
               "text": "<p>A node for group definitions related to ESS air quality objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.14",
               "name": "essAirQualityGroups",
               "oid": "{essGroups 14}",
               "status": "current",
@@ -54045,6 +54677,17 @@
                   "changedOn": "2024-07-26T13:51:24.757Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:02:23.575Z"
                 }
               ],
               "children": [
@@ -54939,6 +55582,7 @@
               "guid": "8803db2c-08d2-4815-a10a-cc0966119daf",
               "heading": "Pavement Treatment Groups",
               "text": "<p>A node for group definitions related to PTS objects.</p>",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.15",
               "name": "essPavementTreatmentGroups",
               "oid": "{essGroups 15}",
               "status": "current",
@@ -54983,6 +55627,17 @@
                   "changedOn": "2024-07-26T13:51:37.244Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-04T02:02:26.935Z"
                 }
               ],
               "children": [

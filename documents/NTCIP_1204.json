@@ -8,7 +8,7 @@
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-08-05T01:33:56.189Z",
+  "lastChangedOn": "2024-08-05T13:03:41.703Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -11523,7 +11523,7 @@
               "access": "read-only",
               "action": "deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.15.9",
-              "format": "<pre>value                description \n0 - noError         no error is reported \n1 - watchdogFailure     the watchdog has failed \n2 - powerError  irregular occurrence detected with primary power source\n3 - sensorFailure  condition detected preventing proper reporting or a sensor value is deemed invalid or suspect</pre>",
+              "format": "<pre>value &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;description&nbsp;\n0 - noError &nbsp; &nbsp; &nbsp; &nbsp; no error is reported&nbsp;\n1 - watchdogFailure &nbsp; &nbsp; the watchdog has failed&nbsp;\n2 - powerError &nbsp;irregular occurrence detected with primary power source\n3 - sensorFailure &nbsp;condition detected preventing proper reporting or a&nbsp;\n&nbsp; &nbsp; sensor value is deemed invalid or suspect</pre>",
               "info": "<pre>The object was deprecated in NTCIP 1204 v05.</pre>",
               "name": "essStatus",
               "oid": "{ essNtcipInstrumentation 9 }",
@@ -11626,6 +11626,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T23:20:15.931Z"
+                },
+                {
+                  "attributesChanged": {
+                    "format": "<pre>value                description \n0 - noError         no error is reported \n1 - watchdogFailure     the watchdog has failed \n2 - powerError  irregular occurrence detected with primary power source\n3 - sensorFailure  condition detected preventing proper reporting or a sensor value is deemed invalid or suspect</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T12:58:38.688Z"
                 }
               ]
             }
@@ -15288,7 +15299,7 @@
               "access": "read-only",
               "action": "previsouly deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.4.3",
-              "format": "<pre>Range               Meaning \nother               not defined within this standard, see manufacturers \n                    documentation \nunknown             Unknown conditions \ncalm                Calm \nlightBreeze         Light breeze \nmoderateBreeze      Moderate breeze \nstrongBreeze        Strong breeze \ngale                Gale \nmoderateGale        Moderate gale \nstrongGale          Strong gale \nstormWinds          Storm winds \nhurricaneForceWinds Hurricane force winds \ngustyWinds          defined by a peak and a lull of greater than 46.3 tenths \n                    of meters per second within a 2 minute period.</pre>",
+              "format": "<pre>Range               Meaning \nother               not defined within this standard, see manufacturers \n                    documentation \nunknown             Unknown conditions \ncalm                Calm \nlightBreeze         Light breeze \nmoderateBreeze      Moderate breeze \nstrongBreeze        Strong breeze \ngale                Gale \nmoderateGale        Moderate gale \nstrongGale          Strong gale \nstormWinds          Storm winds \nhurricaneForceWinds Hurricane force winds \ngustyWinds          defined by a peak and a lull of greater than 46.3 \n                    tenths of meters per second within a 2 minute period.</pre>",
               "info": "<pre>This object was deprecated in version 02. </pre>",
               "name": "essWindSituation",
               "oid": "{ essNtcipWind 3 }",
@@ -15390,6 +15401,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-29T14:14:52.985Z"
+                },
+                {
+                  "attributesChanged": {
+                    "format": "<pre>Range               Meaning \nother               not defined within this standard, see manufacturers \n                    documentation \nunknown             Unknown conditions \ncalm                Calm \nlightBreeze         Light breeze \nmoderateBreeze      Moderate breeze \nstrongBreeze        Strong breeze \ngale                Gale \nmoderateGale        Moderate gale \nstrongGale          Strong gale \nstormWinds          Storm winds \nhurricaneForceWinds Hurricane force winds \ngustyWinds          defined by a peak and a lull of greater than 46.3 tenths \n                    of meters per second within a 2 minute period.</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T12:57:48.392Z"
                 }
               ]
             },
@@ -17033,7 +17055,7 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.4.8.1.10",
-                  "format": "<pre>Range               Meaning (WMO Classification)\nother               not defined within this standard, see manufacturer's \n                    documentation \nunknown             Unknown conditions \ncalm                Calm - Light air\nlightBreeze         Light breeze - Gentle breeze\nmoderateBreeze      Moderate breeze - Fresh breeze\nstrongBreeze        Strong breeze \ngale                Near Gale \nmoderateGale        Gale \nstrongGale          Strong gale \nstormWinds          Storm \nhurricaneForceWinds Violent Storm - Hurricane\ngustyWinds          defined by a peak and a lull of greater than 46.3 tenths \n                    of meters per second within a 2-minute period.</pre>",
+                  "format": "<pre>Range &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Meaning (WMO Classification)\nother &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; not defined within this standard, see manufacturer's&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; documentation&nbsp;\nunknown &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Unknown conditions&nbsp;\ncalm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Calm - Light air\nlightBreeze &nbsp; &nbsp; &nbsp; &nbsp; Light breeze - Gentle breeze\nmoderateBreeze &nbsp; &nbsp; &nbsp;Moderate breeze - Fresh breeze\nstrongBreeze &nbsp; &nbsp; &nbsp; &nbsp;Strong breeze&nbsp;\ngale &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Near Gale&nbsp;\nmoderateGale &nbsp; &nbsp; &nbsp; &nbsp;Gale&nbsp;\nstrongGale &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Strong gale&nbsp;\nstormWinds &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Storm&nbsp;\nhurricaneForceWinds Violent Storm - Hurricane\ngustyWinds &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;defined by a peak and a lull of greater than 46.3&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tenths of meters per second within a 2-minute period.</pre>",
                   "name": "windSensorSituation",
                   "oid": "{ windSensorEntry 10 }",
                   "param_type": "status",
@@ -17155,6 +17177,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T23:20:15.931Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "format": "<pre>Range               Meaning (WMO Classification)\nother               not defined within this standard, see manufacturer's \n                    documentation \nunknown             Unknown conditions \ncalm                Calm - Light air\nlightBreeze         Light breeze - Gentle breeze\nmoderateBreeze      Moderate breeze - Fresh breeze\nstrongBreeze        Strong breeze \ngale                Near Gale \nmoderateGale        Gale \nstrongGale          Strong gale \nstormWinds          Storm \nhurricaneForceWinds Violent Storm - Hurricane\ngustyWinds          defined by a peak and a lull of greater than 46.3 tenths \n                    of meters per second within a 2-minute period.</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T12:57:30.845Z"
                     }
                   ]
                 },
@@ -20541,7 +20574,7 @@
               "access": "read-only",
               "action": "previsouly deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.5",
-              "format": "<pre>precip - Moisture is currently being detected by the precipitation sensor\nnoPrecip - Moisture is not currently being detected by the precipitation sensor\nerror - The sensor is either not connected, not reporting, or is indicating an error</pre>",
+              "format": "<pre>precip - Moisture is currently being detected by the precipitation sensor\nnoPrecip - Moisture is not currently being detected by the precipitation&nbsp;\n&nbsp; &nbsp; sensor\nerror - The sensor is either not connected, not reporting, or is&nbsp;\n&nbsp; &nbsp; indicating an error</pre>",
               "info": "<pre>This object was deprecated in version 04. </pre>",
               "name": "essPrecipYesNo",
               "oid": "{ essNtcipPrecip 5 }",
@@ -20644,6 +20677,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T23:20:15.931Z"
+                },
+                {
+                  "attributesChanged": {
+                    "format": "<pre>precip - Moisture is currently being detected by the precipitation sensor\nnoPrecip - Moisture is not currently being detected by the precipitation sensor\nerror - The sensor is either not connected, not reporting, or is indicating an error</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T12:56:50.595Z"
                 }
               ]
             },
@@ -20887,7 +20931,7 @@
               "access": "read-only",
               "action": "remainCurrent",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.6",
-              "format": "<pre>Intensity     Meaning \nslight&nbsp; &nbsp; &nbsp; &lt; 2mm/h water equivalent&nbsp;\nmoderate &nbsp; &nbsp;&gt;= 2 and &lt; 8 mm/h water equivalent&nbsp;\nheavy &nbsp; &nbsp; &nbsp; &gt;= 8 mm/h water equivalent If one exists, the corresponding BUFR value is indicated for staffed (BUFRs) and automated (BUFRa) stations. The indicated value can be found in the BUFR Table referenced below. Defined values are:&nbsp;\nRange &nbsp; BUFRa &nbsp; BUFRs &nbsp;Meaning&nbsp;\n1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;other&nbsp;\n2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unknown &nbsp;\n3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;no precipitation&nbsp;\n4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified slight&nbsp;\n5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified moderate&nbsp;\n6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified heavy&nbsp;\n7 &nbsp; &nbsp; &nbsp; 171 &nbsp; &nbsp; &nbsp;85 &nbsp; &nbsp;snow slight&nbsp;\n8 &nbsp; &nbsp; &nbsp; 172 &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp;snow moderate&nbsp;\n9 &nbsp; &nbsp; &nbsp; 173 &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp;snow heavy&nbsp;\n10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 61 &nbsp; &nbsp;rain slight&nbsp;\n11 &nbsp; &nbsp; &nbsp;165 &nbsp; &nbsp; &nbsp;63 &nbsp; &nbsp;rain moderate&nbsp;\n12 &nbsp; &nbsp; &nbsp;163 &nbsp; &nbsp; &nbsp;65 &nbsp; &nbsp;rain heavy&nbsp;\n13 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation slight&nbsp;\n14 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation moderate&nbsp;\n15 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation heavy</pre>",
+              "format": "<pre>Intensity     Meaning \nslight&nbsp; &nbsp; &nbsp; &lt; 2mm/h water equivalent&nbsp;\nmoderate &nbsp; &nbsp;&gt;= 2 and &lt; 8 mm/h water equivalent&nbsp;\nheavy &nbsp; &nbsp; &nbsp; &gt;= 8 mm/h water equivalent If one exists, the corresponding&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BUFR value is indicated for staffed (BUFRs) and automated&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (BUFRa) stations. The indicated value can be found in the&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BUFR Table referenced below. Defined values are:&nbsp;\nRange &nbsp; BUFRa &nbsp; BUFRs &nbsp;Meaning&nbsp;\n1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;other&nbsp;\n2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unknown &nbsp;\n3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;no precipitation&nbsp;\n4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified slight&nbsp;\n5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified moderate&nbsp;\n6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified heavy&nbsp;\n7 &nbsp; &nbsp; &nbsp; 171 &nbsp; &nbsp; &nbsp;85 &nbsp; &nbsp;snow slight&nbsp;\n8 &nbsp; &nbsp; &nbsp; 172 &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp;snow moderate&nbsp;\n9 &nbsp; &nbsp; &nbsp; 173 &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp;snow heavy&nbsp;\n10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 61 &nbsp; &nbsp;rain slight&nbsp;\n11 &nbsp; &nbsp; &nbsp;165 &nbsp; &nbsp; &nbsp;63 &nbsp; &nbsp;rain moderate&nbsp;\n12 &nbsp; &nbsp; &nbsp;163 &nbsp; &nbsp; &nbsp;65 &nbsp; &nbsp;rain heavy&nbsp;\n13 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation slight&nbsp;\n14 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation moderate&nbsp;\n15 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation heavy</pre>",
               "info": "<p>Starting in NTCIP 1204 v05; this object should only report human readings; automated sensors should use precipitationSensorPrecipSituation (See 5.8.24.14). </p>",
               "name": "essPrecipSituation",
               "oid": "{ essNtcipPrecip 6 }",
@@ -21001,6 +21045,28 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-29T15:59:03.630Z"
+                },
+                {
+                  "attributesChanged": {
+                    "format": "<pre>Intensity     Meaning \nslight&nbsp; &nbsp; &nbsp; &lt; 2mm/h water equivalent&nbsp;\nmoderate &nbsp; &nbsp;&gt;= 2 and &lt; 8 mm/h water equivalent&nbsp;\nheavy &nbsp; &nbsp; &nbsp; &gt;= 8 mm/h water equivalent If one exists, the corresponding BUFR value is indicated for staffed (BUFRs) and automated (BUFRa) stations. The indicated value can be found in the BUFR Table referenced below. Defined values are:&nbsp;\nRange &nbsp; BUFRa &nbsp; BUFRs &nbsp;Meaning&nbsp;\n1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;other&nbsp;\n2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unknown &nbsp;\n3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;no precipitation&nbsp;\n4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified slight&nbsp;\n5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified moderate&nbsp;\n6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified heavy&nbsp;\n7 &nbsp; &nbsp; &nbsp; 171 &nbsp; &nbsp; &nbsp;85 &nbsp; &nbsp;snow slight&nbsp;\n8 &nbsp; &nbsp; &nbsp; 172 &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp;snow moderate&nbsp;\n9 &nbsp; &nbsp; &nbsp; 173 &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp;snow heavy&nbsp;\n10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 61 &nbsp; &nbsp;rain slight&nbsp;\n11 &nbsp; &nbsp; &nbsp;165 &nbsp; &nbsp; &nbsp;63 &nbsp; &nbsp;rain moderate&nbsp;\n12 &nbsp; &nbsp; &nbsp;163 &nbsp; &nbsp; &nbsp;65 &nbsp; &nbsp;rain heavy&nbsp;\n13 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation slight&nbsp;\n14 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation moderate&nbsp;\n15 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation heavy</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T12:36:50.035Z"
+                },
+                {
+                  "attributesChanged": {
+                    "format": "<pre>Intensity     Meaning \nslight&nbsp; &nbsp; &nbsp; &lt; 2mm/h water equivalent&nbsp;\nmoderate &nbsp; &nbsp;&gt;= 2 and &lt; 8 mm/h water equivalent&nbsp;\nheavy &nbsp; &nbsp; &nbsp; &gt;= 8 mm/h water equivalent If one exists, the corresponding BUFR&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; value is indicated for staffed (BUFRs) and automated (BUFRa)&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; stations. The indicated value can be found in the BUFR Table&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; referenced below. Defined values are:&nbsp;\nRange &nbsp; BUFRa &nbsp; BUFRs &nbsp;Meaning&nbsp;\n1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;other&nbsp;\n2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unknown &nbsp;\n3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;no precipitation&nbsp;\n4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified slight&nbsp;\n5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified moderate&nbsp;\n6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified heavy&nbsp;\n7 &nbsp; &nbsp; &nbsp; 171 &nbsp; &nbsp; &nbsp;85 &nbsp; &nbsp;snow slight&nbsp;\n8 &nbsp; &nbsp; &nbsp; 172 &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp;snow moderate&nbsp;\n9 &nbsp; &nbsp; &nbsp; 173 &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp;snow heavy&nbsp;\n10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 61 &nbsp; &nbsp;rain slight&nbsp;\n11 &nbsp; &nbsp; &nbsp;165 &nbsp; &nbsp; &nbsp;63 &nbsp; &nbsp;rain moderate&nbsp;\n12 &nbsp; &nbsp; &nbsp;163 &nbsp; &nbsp; &nbsp;65 &nbsp; &nbsp;rain heavy&nbsp;\n13 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation slight&nbsp;\n14 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation moderate&nbsp;\n15 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation heavy</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T12:37:32.722Z"
                 }
               ]
             },
@@ -25040,7 +25106,7 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14.1.11",
-                  "format": "<pre>precip - Moisture is currently being detected by the precipitation sensor. 0.01 inches of liquid water equivalent is to be detected.\nnoPrecip - Moisture is not currently being detected by the precipitation sensor\nerror - The sensor is either not connected, not reporting, or is indicating an error</pre>",
+                  "format": "<pre>precip - Moisture is currently being detected by the precipitation sensor.&nbsp;\n&nbsp; &nbsp; 0.01 inches of liquid water equivalent is to be detected.\nnoPrecip - Moisture is not currently being detected by the precipitation&nbsp;\n&nbsp; &nbsp; sensor\nerror - The sensor is either not connected, not reporting, or is&nbsp;\n&nbsp; &nbsp; indicating an error</pre>",
                   "name": "precipitationSensorPrecipYesNo",
                   "oid": "{ precipitationSensorEntry 11 }",
                   "param_type": "status",
@@ -25146,6 +25212,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T23:20:15.931Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "format": "<pre>precip - Moisture is currently being detected by the precipitation sensor. 0.01 inches of liquid water equivalent is to be detected.\nnoPrecip - Moisture is not currently being detected by the precipitation sensor\nerror - The sensor is either not connected, not reporting, or is indicating an error</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T12:56:11.049Z"
                     }
                   ]
                 },
@@ -25395,7 +25472,7 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14.1.14",
-                  "format": "<pre>Intensity     Meaning \nslight&nbsp; &nbsp; &nbsp; &lt; 2mm/h water equivalent&nbsp;\nmoderate &nbsp; &nbsp;&gt;= 2 and &lt; 8 mm/h water equivalent&nbsp;\nheavy &nbsp; &nbsp; &nbsp; &gt;= 8 mm/h water equivalent If one exists, the corresponding BUFR value is indicated for staffed (BUFRs) and automated (BUFRa) stations. The indicated value can be found in the BUFR Table referenced below. Defined values are:&nbsp;\nRange &nbsp; BUFRa &nbsp; BUFRs &nbsp;Meaning&nbsp;\n1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;other&nbsp;\n2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unknown &nbsp;\n3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;no precipitation&nbsp;\n4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified slight&nbsp;\n5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified moderate&nbsp;\n6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified heavy&nbsp;\n7 &nbsp; &nbsp; &nbsp; 171 &nbsp; &nbsp; &nbsp;85 &nbsp; &nbsp;snow slight&nbsp;\n8 &nbsp; &nbsp; &nbsp; 172 &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp;snow moderate&nbsp;\n9 &nbsp; &nbsp; &nbsp; 173 &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp;snow heavy&nbsp;\n10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 61 &nbsp; &nbsp;rain slight&nbsp;\n11 &nbsp; &nbsp; &nbsp;165 &nbsp; &nbsp; &nbsp;63 &nbsp; &nbsp;rain moderate&nbsp;\n12 &nbsp; &nbsp; &nbsp;163 &nbsp; &nbsp; &nbsp;65 &nbsp; &nbsp;rain heavy&nbsp;\n13 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation slight&nbsp;\n14 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation moderate&nbsp;\n15 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation heavy</pre>",
+                  "format": "<pre>Intensity     Meaning \nslight&nbsp; &nbsp; &nbsp; &lt; 2mm/h water equivalent&nbsp;\nmoderate &nbsp; &nbsp;&gt;= 2 and &lt; 8 mm/h water equivalent&nbsp;\nheavy &nbsp; &nbsp; &nbsp; &gt;= 8 mm/h water equivalent If one exists, the corresponding&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BUFR value is indicated for staffed (BUFRs) and automated&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (BUFRa) stations. The indicated value can be found in the&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BUFR Table referenced below. Defined values are:&nbsp;\n\nRange &nbsp; BUFRa &nbsp; BUFRs &nbsp;Meaning&nbsp;\n1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;other&nbsp;\n2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unknown &nbsp;\n3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;no precipitation&nbsp;\n4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified slight&nbsp;\n5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified moderate&nbsp;\n6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified heavy&nbsp;\n7 &nbsp; &nbsp; &nbsp; 171 &nbsp; &nbsp; &nbsp;85 &nbsp; &nbsp;snow slight&nbsp;\n8 &nbsp; &nbsp; &nbsp; 172 &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp;snow moderate&nbsp;\n9 &nbsp; &nbsp; &nbsp; 173 &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp;snow heavy&nbsp;\n10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 61 &nbsp; &nbsp;rain slight&nbsp;\n11 &nbsp; &nbsp; &nbsp;165 &nbsp; &nbsp; &nbsp;63 &nbsp; &nbsp;rain moderate&nbsp;\n12 &nbsp; &nbsp; &nbsp;163 &nbsp; &nbsp; &nbsp;65 &nbsp; &nbsp;rain heavy&nbsp;\n13 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation slight&nbsp;\n14 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation moderate&nbsp;\n15 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation heavy</pre>",
                   "name": "precipitationSensorPrecipSituation",
                   "oid": "{ precipitationSensorEntry 14 }",
                   "param_type": "status",
@@ -25539,6 +25616,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-29T16:01:56.717Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "format": "<pre>Intensity     Meaning \nslight&nbsp; &nbsp; &nbsp; &lt; 2mm/h water equivalent&nbsp;\nmoderate &nbsp; &nbsp;&gt;= 2 and &lt; 8 mm/h water equivalent&nbsp;\nheavy &nbsp; &nbsp; &nbsp; &gt;= 8 mm/h water equivalent If one exists, the corresponding BUFR value is indicated for staffed (BUFRs) and automated (BUFRa) stations. The indicated value can be found in the BUFR Table referenced below. Defined values are:&nbsp;\nRange &nbsp; BUFRa &nbsp; BUFRs &nbsp;Meaning&nbsp;\n1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;other&nbsp;\n2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unknown &nbsp;\n3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;no precipitation&nbsp;\n4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified slight&nbsp;\n5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified moderate&nbsp;\n6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;unidentified heavy&nbsp;\n7 &nbsp; &nbsp; &nbsp; 171 &nbsp; &nbsp; &nbsp;85 &nbsp; &nbsp;snow slight&nbsp;\n8 &nbsp; &nbsp; &nbsp; 172 &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp;snow moderate&nbsp;\n9 &nbsp; &nbsp; &nbsp; 173 &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp;snow heavy&nbsp;\n10 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 61 &nbsp; &nbsp;rain slight&nbsp;\n11 &nbsp; &nbsp; &nbsp;165 &nbsp; &nbsp; &nbsp;63 &nbsp; &nbsp;rain moderate&nbsp;\n12 &nbsp; &nbsp; &nbsp;163 &nbsp; &nbsp; &nbsp;65 &nbsp; &nbsp;rain heavy&nbsp;\n13 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation slight&nbsp;\n14 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation moderate&nbsp;\n15 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frozen precipitation heavy</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T12:40:39.128Z"
                     }
                   ]
                 },
@@ -35491,7 +35579,7 @@
                   "access": "read-write",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2.1.3",
-                  "format": "<pre>other                 a different type of bridge deck \nunknown               the data was never recorded in the system or is a mobile sensor\nasphalt               asphalt pavement on ground \nconcrete              concrete pavement on ground \nsteelBridgeconcrete   a concrete driving surface on a steel girder bridge \nsteelBridgeAsphalt    an asphalt driving surface on a steel girder bridge \nsteelBridge           a steel lattice driving surface on the bridge \nconcreteBridge        a concrete driving surface on a concrete bridge \nconcreteBridgeAsphalt an asphalt overlay driving surface on a concrete bridge \ntimberBridge          a wooden deck driving surface on the bridge</pre>",
+                  "format": "<pre>other                 a different type of bridge deck \nunknown               the data was never recorded in the system or is a \n                      mobile sensor\nasphalt               asphalt pavement on ground \nconcrete              concrete pavement on ground \nsteelBridgeconcrete   a concrete driving surface on a steel girder bridge \nsteelBridgeAsphalt    an asphalt driving surface on a steel girder bridge \nsteelBridge           a steel lattice driving surface on the bridge \nconcreteBridge        a concrete driving surface on a concrete bridge \nconcreteBridgeAsphalt an asphalt overlay driving surface on a concrete \n                      bridge \ntimberBridge          a wooden deck driving surface on the bridge</pre>",
                   "name": "essPavementType",
                   "oid": "{ essPavementSensorEntry 3 }",
                   "param_type": "configuration",
@@ -35574,6 +35662,28 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T22:32:33.454Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "format": "<pre>other                 a different type of bridge deck \nunknown               the data was never recorded in the system or is a mobile sensor\nasphalt               asphalt pavement on ground \nconcrete              concrete pavement on ground \nsteelBridgeconcrete   a concrete driving surface on a steel girder bridge \nsteelBridgeAsphalt    an asphalt driving surface on a steel girder bridge \nsteelBridge           a steel lattice driving surface on the bridge \nconcreteBridge        a concrete driving surface on a concrete bridge \nconcreteBridgeAsphalt an asphalt overlay driving surface on a concrete bridge \ntimberBridge          a wooden deck driving surface on the bridge</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T12:46:30.367Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "format": "<pre>other                 a different type of bridge deck \nunknown               the data was never recorded in the system or is a \n                      mobile sensor\nasphalt               asphalt pavement on ground \nconcrete              concrete pavement on ground \nsteelBridgeconcrete   a concrete driving surface on a steel girder bridge \nsteelBridgeAsphalt    an asphalt driving surface on a steel girder bridge \nsteelBridge           a steel lattice driving surface on the bridge \nconcreteBridge        a concrete driving surface on a concrete bridge \nconcreteBridgeAsphalt an asphalt overlay driving surface on a concrete bridge \ntimberBridge          a wooden deck driving surface on the bridge</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T12:46:51.801Z"
                     }
                   ]
                 },
@@ -35855,7 +35965,7 @@
                   "access": "read-only",
                   "action": "previsouly deprecated",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2.1.7",
-                  "format": "<pre>other - The value reported by the sensor is not defined by the standard. See the manufacturer's documentation for more information.\nnoReport - The sensor is not providing any reading for surface status and may not be responding\nerrorReport - The sensor is providing a reading for surface status, but either the reading indicates an error code or the data has been deemed invalid or suspect\ndry - The sensor does not detect any moisture or unusual conditions.\ntrace - The sensor detects some moisture, but it is suspected to be isolated\nabsorption - A salt chemical is present that is not fully dissolved in water. As a result, the conductivity readings result in erroneous calculations for amount of chemical in the mix. \nwet - The sensor detects a significant amount of moisture indicating a wet roadway.\nchemically wet - The sensor detects a signaificant amount of moisture mixed with a de-icing or anti-icing chemical\ndew - The sensor detects moisture that is suspected to be from the formation of dew\nfrost - The sensor detects the formation of frost\nfreezeAdvisory - The risk of the formation of some sort of frozen moisture on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nslushAdvisory - The risk of the accumulation of snow or slush on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\niceAdvisory - The risk of the formation of ice or black ice on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nfreezeHazard - The sensor detects some sort of frozen moisture but is unable to classify as slush or ice.\nslush - The sensor detects snow or slush.\nice - The sensor detects ice or black ice. (See essSurfaceBlackIceSignal)</pre>",
+                  "format": "<pre>other - The value reported by the sensor is not defined by the standard.&nbsp;\n&nbsp; &nbsp; See the manufacturer's documentation for more information.\nnoReport - The sensor is not providing any reading for surface status and&nbsp;\n&nbsp; &nbsp; may not be responding\nerrorReport - The sensor is providing a reading for surface status, but&nbsp;\n&nbsp; &nbsp; either the reading indicates an error code or the data has been deemed&nbsp;\n&nbsp; &nbsp; invalid or suspect\ndry - The sensor does not detect any moisture or unusual conditions.\ntrace - The sensor detects some moisture, but it is suspected to be&nbsp;\n&nbsp; &nbsp; isolated\nabsorption - A salt chemical is present that is not fully dissolved in&nbsp;\n&nbsp; &nbsp; water. As a result, the conductivity readings result in erroneous&nbsp;\n&nbsp; &nbsp; calculations for amount of chemical in the mix.&nbsp;\nwet - The sensor detects a significant amount of moisture indicating a wet&nbsp;\n&nbsp; &nbsp; roadway.\nchemically wet - The sensor detects a signaificant amount of moisture&nbsp;\n&nbsp; &nbsp; mixed with a de-icing or anti-icing chemical\ndew - The sensor detects moisture that is suspected to be from the&nbsp;\n&nbsp; &nbsp; formation of dew\nfrost - The sensor detects the formation of frost\nfreezeAdvisory - The risk of the formation of some sort of frozen moisture&nbsp;\n&nbsp; &nbsp; on the roadway is elevated, but its occurrence, location, and/or&nbsp;\n&nbsp; &nbsp; timing is still uncertain\nslushAdvisory - The risk of the accumulation of snow or slush on the&nbsp;\n&nbsp; &nbsp; roadway is elevated, but its occurrence, location, and/or timing is&nbsp;\n&nbsp; &nbsp; still uncertain\niceAdvisory - The risk of the formation of ice or black ice on the roadway&nbsp;\n&nbsp; &nbsp; is elevated, but its occurrence, location, and/or timing is still&nbsp;\n&nbsp; &nbsp; uncertain\nfreezeHazard - The sensor detects some sort of frozen moisture but is&nbsp;\n&nbsp; &nbsp; unable to classify as slush or ice.\nslush - The sensor detects snow or slush.\nice - The sensor detects ice or black ice. (See essSurfaceBlackIceSignal)</pre>",
                   "info": "<pre>This object was deprecated in version 04. </pre>",
                   "name": "essSurfaceStatus",
                   "oid": "{ essPavementSensorEntry 7 }",
@@ -35958,6 +36068,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T23:20:15.931Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "format": "<pre>other - The value reported by the sensor is not defined by the standard. See the manufacturer's documentation for more information.\nnoReport - The sensor is not providing any reading for surface status and may not be responding\nerrorReport - The sensor is providing a reading for surface status, but either the reading indicates an error code or the data has been deemed invalid or suspect\ndry - The sensor does not detect any moisture or unusual conditions.\ntrace - The sensor detects some moisture, but it is suspected to be isolated\nabsorption - A salt chemical is present that is not fully dissolved in water. As a result, the conductivity readings result in erroneous calculations for amount of chemical in the mix. \nwet - The sensor detects a significant amount of moisture indicating a wet roadway.\nchemically wet - The sensor detects a signaificant amount of moisture mixed with a de-icing or anti-icing chemical\ndew - The sensor detects moisture that is suspected to be from the formation of dew\nfrost - The sensor detects the formation of frost\nfreezeAdvisory - The risk of the formation of some sort of frozen moisture on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nslushAdvisory - The risk of the accumulation of snow or slush on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\niceAdvisory - The risk of the formation of ice or black ice on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nfreezeHazard - The sensor detects some sort of frozen moisture but is unable to classify as slush or ice.\nslush - The sensor detects snow or slush.\nice - The sensor detects ice or black ice. (See essSurfaceBlackIceSignal)</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T12:49:17.172Z"
                     }
                   ]
                 },
@@ -36596,7 +36717,7 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2.1.14",
-                  "format": "<pre>other - The sensor is reporting a value that is not defined by the standard. See the manufacturer's documentation for more information.\nnoIce - The sensor is not currently detecting black ice.\nblackIce - The sensor is currently detecting black ice.\ndetectorError - The sensor is not connected, is not reporting, or is reporting an error.</pre>",
+                  "format": "<pre>other - The sensor is reporting a value that is not defined by the&nbsp;\n&nbsp; &nbsp; standard. See the manufacturer's documentation for more information.\nnoIce - The sensor is not currently detecting black ice.\nblackIce - The sensor is currently detecting black ice.\ndetectorError - The sensor is not connected, is not reporting, or is&nbsp;\n&nbsp; &nbsp; reporting an error.</pre>",
                   "name": "essSurfaceBlackIceSignal",
                   "oid": "{ essPavementSensorEntry 14 }",
                   "param_type": "status",
@@ -36675,6 +36796,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T23:20:15.931Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "format": "<pre>other - The sensor is reporting a value that is not defined by the standard. See the manufacturer's documentation for more information.\nnoIce - The sensor is not currently detecting black ice.\nblackIce - The sensor is currently detecting black ice.\ndetectorError - The sensor is not connected, is not reporting, or is reporting an error.</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T12:55:08.439Z"
                     }
                   ]
                 },
@@ -36686,7 +36818,7 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2.1.15",
-                  "format": "<pre>other - An error has been detected that is not defined by the standard; see the manufacturer's documentation for more information.\nnone - No error is detected, the sensor appears to be working properly\nnoResponse - The sensor is configured and is believed to be connected, but is not responding\ncutCable - The sensor is not configured, not present or not fully connected, perhaps because the cable was cut\nshortCircuit - The sensor input has detected a short-circuit.\ndirtyLens - The lens of the sensor appears to be dirty.</pre>",
+                  "format": "<pre>other - An error has been detected that is not defined by the standard;&nbsp;\n&nbsp; &nbsp; see the manufacturer's documentation for more information.\nnone - No error is detected, the sensor appears to be working properly\nnoResponse - The sensor is configured and is believed to be connected,&nbsp;\n&nbsp; &nbsp; but is not responding\ncutCable - The sensor is not configured, not present or not fully&nbsp;\n&nbsp; &nbsp; connected, perhaps because the cable was cut\nshortCircuit - The sensor input has detected a short-circuit.\ndirtyLens - The lens of the sensor appears to be dirty.</pre>",
                   "name": "essPavementSensorError",
                   "oid": "{ essPavementSensorEntry 15 }",
                   "param_type": "status",
@@ -36799,6 +36931,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-31T20:57:39.134Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "format": "<pre>other - An error has been detected that is not defined by the standard; see the manufacturer's documentation for more information.\nnone - No error is detected, the sensor appears to be working properly\nnoResponse - The sensor is configured and is believed to be connected, but is not responding\ncutCable - The sensor is not configured, not present or not fully connected, perhaps because the cable was cut\nshortCircuit - The sensor input has detected a short-circuit.\ndirtyLens - The lens of the sensor appears to be dirty.</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T12:54:39.235Z"
                     }
                   ]
                 },
@@ -37444,7 +37587,7 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2.1.22",
-                  "format": "<pre>other: The value reported by the sensor is not defined by the standard. See the manufacturer's documentation for more information\nerror: The sensor is providing a reading for surface status, but either the reading indicates an error code or the data has been deemed invalid or suspect\ndry: no humidity over the sensor (EN 15518-3)\nmoist: from 0.01 mm to 0.2 mm water film thickness over the sensor (EN 15518-3)\nchemically moist: from 0.01 mm to 0.2 mm water film thickness over the sensor mixed with de-icing or anti-icing chemical\nwet: from 0.2 mm water film thickness to 2.0 mm water film thickness over the sensor (EN 15518-3)\nchemically wet: from 0.2 mm water film thickness or greater mixed with de-icing or anti-icing chemical\nstanding water: from 2.0 mm or greater water film thickness over the sensor (EN 15518-3)\nfrost: formation of frost (ice crystals) is detected over the sensor\nslush: snow or ice that has been reduced to a soft water mixture by rain, warm temperature, and/or chemical treatment (Glossary of Meteorology)\nsnow: snow is detected over the sensor\nice: ice or black ice is detected (See essSurfaceBlackIceSignal)\nnoReport: The sensor is not providing any reading for surface status and may not be responding</pre>",
+                  "format": "<pre>other: The value reported by the sensor is not defined by the standard.&nbsp;\n&nbsp; &nbsp; See the manufacturer's documentation for more information\nerror: The sensor is providing a reading for surface status, but either&nbsp;\n&nbsp; &nbsp; the reading indicates an error code or the data has been deemed&nbsp;\n&nbsp; &nbsp; invalid or suspect\ndry: no humidity over the sensor (EN 15518-3)\nmoist: from 0.01 mm to 0.2 mm water film thickness over the sensor&nbsp;\n&nbsp; &nbsp; (EN 15518-3)\nchemically moist: from 0.01 mm to 0.2 mm water film thickness over the&nbsp;\n&nbsp; &nbsp; sensor mixed with de-icing or anti-icing chemical\nwet: from 0.2 mm water film thickness to 2.0 mm water film thickness over&nbsp;\n&nbsp; &nbsp; the sensor (EN 15518-3)\nchemically wet: from 0.2 mm water film thickness or greater mixed with&nbsp;\n&nbsp; &nbsp; de-icing or anti-icing chemical\nstanding water: from 2.0 mm or greater water film thickness over the&nbsp;\n&nbsp; &nbsp; sensor (EN 15518-3)\nfrost: formation of frost (ice crystals) is detected over the sensor\nslush: snow or ice that has been reduced to a soft water mixture by rain,&nbsp;\n&nbsp; &nbsp; warm temperature, and/or chemical treatment (Glossary of Meteorology)\nsnow: snow is detected over the sensor\nice: ice or black ice is detected (See essSurfaceBlackIceSignal)\nnoReport: The sensor is not providing any reading for surface status and&nbsp;\n&nbsp; &nbsp; may not be responding</pre>",
                   "name": "pavementSensorSurfaceCondition",
                   "oid": "{ essPavementSensorEntry 22 }",
                   "param_type": "status",
@@ -37539,6 +37682,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T23:20:15.931Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "format": "<pre>other: The value reported by the sensor is not defined by the standard. See the manufacturer's documentation for more information\nerror: The sensor is providing a reading for surface status, but either the reading indicates an error code or the data has been deemed invalid or suspect\ndry: no humidity over the sensor (EN 15518-3)\nmoist: from 0.01 mm to 0.2 mm water film thickness over the sensor (EN 15518-3)\nchemically moist: from 0.01 mm to 0.2 mm water film thickness over the sensor mixed with de-icing or anti-icing chemical\nwet: from 0.2 mm water film thickness to 2.0 mm water film thickness over the sensor (EN 15518-3)\nchemically wet: from 0.2 mm water film thickness or greater mixed with de-icing or anti-icing chemical\nstanding water: from 2.0 mm or greater water film thickness over the sensor (EN 15518-3)\nfrost: formation of frost (ice crystals) is detected over the sensor\nslush: snow or ice that has been reduced to a soft water mixture by rain, warm temperature, and/or chemical treatment (Glossary of Meteorology)\nsnow: snow is detected over the sensor\nice: ice or black ice is detected (See essSurfaceBlackIceSignal)\nnoReport: The sensor is not providing any reading for surface status and may not be responding</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T12:54:03.450Z"
                     }
                   ]
                 },
@@ -37550,7 +37704,7 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2.1.23",
-                  "format": "<pre>other: The value reported by the sensor is not defined by the standard. See the manufacturer's documentation for more information.\nerror: The sensor is providing a reading for surface status, but either the reading indicates an error code or the data has been deemed invalid or suspect\nnoAdvisory: No frozen moisture is detected and the risk of frozen moisture is low.\niceAdvisory: The risk of the formation of ice or black ice on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nslushAdvisory: The risk of the accumulation of snow or slush on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nfreezeAdvisory: The risk of the formation of some sort of frozen moisture on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nfreezeHazard: The sensor detects some sort of frozen moisture but is unable to classify as slush or ice\nnoReport: The sensor is not providing any reading for surface status and may not be responding</pre>",
+                  "format": "<pre>other: The value reported by the sensor is not defined by the standard.&nbsp;\n&nbsp; &nbsp; See the manufacturer's documentation for more information.\nerror: The sensor is providing a reading for surface status, but either&nbsp;\n&nbsp; &nbsp; the reading indicates an error code or the data has been deemed&nbsp;\n&nbsp; &nbsp; invalid or suspect\nnoAdvisory: No frozen moisture is detected and the risk of frozen moisture&nbsp;\n&nbsp; &nbsp; is low.\niceAdvisory: The risk of the formation of ice or black ice on the roadway&nbsp;\n&nbsp; &nbsp; is elevated, but its occurrence, location, and/or timing is still&nbsp;\n&nbsp; &nbsp; uncertain\nslushAdvisory: The risk of the accumulation of snow or slush on the&nbsp;\n&nbsp; &nbsp; roadway is elevated, but its occurrence, location, and/or timing is&nbsp;\n&nbsp; &nbsp; still uncertain\nfreezeAdvisory: The risk of the formation of some sort of frozen moisture&nbsp;\n&nbsp; &nbsp; on the roadway is elevated, but its occurrence, location, and/or&nbsp;\n&nbsp; &nbsp; timing is still uncertain\nfreezeHazard: The sensor detects some sort of frozen moisture but is&nbsp;\n&nbsp; &nbsp; unable to classify as slush or ice\nnoReport: The sensor is not providing any reading for surface status and&nbsp;\n&nbsp; &nbsp; may not be responding</pre>",
                   "name": "pavementSensorForecastCondition",
                   "oid": "{ essPavementSensorEntry 23 }",
                   "param_type": "status",
@@ -37645,6 +37799,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T23:20:15.931Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "format": "<pre>other: The value reported by the sensor is not defined by the standard. See the manufacturer's documentation for more information.\nerror: The sensor is providing a reading for surface status, but either the reading indicates an error code or the data has been deemed invalid or suspect\nnoAdvisory: No frozen moisture is detected and the risk of frozen moisture is low.\niceAdvisory: The risk of the formation of ice or black ice on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nslushAdvisory: The risk of the accumulation of snow or slush on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nfreezeAdvisory: The risk of the formation of some sort of frozen moisture on the roadway is elevated, but its occurrence, location, and/or timing is still uncertain\nfreezeHazard: The sensor detects some sort of frozen moisture but is unable to classify as slush or ice\nnoReport: The sensor is not providing any reading for surface status and may not be responding</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T12:52:45.806Z"
                     }
                   ]
                 },
@@ -39687,7 +39852,7 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.4.1.8",
-                  "format": "<pre>other - An error has been detected that is not defined by the standard; see the manufacturer's documentation for more information.\nnone - No error is detected, the sensor appears to be working properly\nnoResponse - The sensor is configured and is believed to be connected, but is not responding\ncutCable - The sensor is not configured, not present or not fully connected, perhaps because the cable was cut\nshortCircuit - The sensor input has detected a short-circuit.</pre>",
+                  "format": "<pre>other - An error has been detected that is not defined by the standard;&nbsp;\n&nbsp; &nbsp; see the manufacturer's documentation for more information.\nnone - No error is detected, the sensor appears to be working properly\nnoResponse - The sensor is configured and is believed to be connected, but&nbsp;\n&nbsp; &nbsp; is not responding\ncutCable - The sensor is not configured, not present or not fully&nbsp;\n&nbsp; &nbsp; connected, perhaps because the cable was cut\nshortCircuit - The sensor input has detected a short-circuit.</pre>",
                   "name": "essSubSurfaceSensorError",
                   "oid": "{ essSubSurfaceSensorEntry 8 }",
                   "param_type": "status",
@@ -39782,6 +39947,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T23:20:15.931Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "format": "<pre>other - An error has been detected that is not defined by the standard; see the manufacturer's documentation for more information.\nnone - No error is detected, the sensor appears to be working properly\nnoResponse - The sensor is configured and is believed to be connected, but is not responding\ncutCable - The sensor is not configured, not present or not fully connected, perhaps because the cable was cut\nshortCircuit - The sensor input has detected a short-circuit.</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T13:03:41.703Z"
                     }
                   ]
                 },
@@ -40277,7 +40453,7 @@
               "access": "read-only",
               "action": "previsouly deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.5",
-              "format": "<pre>The OPTIONAL fields shall be present if the data is supported by the implementation and is valid. The OPTIONAL fields shall be omitted for any data that is invalid or not supported by the implementation.\n\n\nEssPavementData ::= SEQUENCE OF PavementSensorData\n&nbsp; -- for (\n-- &nbsp;x = 1;&nbsp;\n-- &nbsp;x &lt; numEssPavementSensors.0;&nbsp;\n-- &nbsp;x++)\n\n\n\n\nPavementSensorData ::= SEQUENCE {\n&nbsp; essPavementSensorIndex.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceStatusV2.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceTemperature.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPavementTemperature.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceWaterDepth.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceSalinity.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceConductivity.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceFreezePoint.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceBlackIceSignal.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPavementSensorError.x &nbsp; &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n}</pre>",
+              "format": "<pre>The OPTIONAL fields shall be present if the data is supported by the&nbsp;\nimplementation and is valid. The OPTIONAL fields shall be omitted for any&nbsp;\ndata that is invalid or not supported by the implementation.\n\n\nEssPavementData ::= SEQUENCE OF PavementSensorData\n&nbsp; -- for (\n-- &nbsp;x = 1;&nbsp;\n-- &nbsp;x &lt; numEssPavementSensors.0;&nbsp;\n-- &nbsp;x++)\n\n\n\n\nPavementSensorData ::= SEQUENCE {\n&nbsp; essPavementSensorIndex.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceStatusV2.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceTemperature.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPavementTemperature.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceWaterDepth.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceSalinity.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceConductivity.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceFreezePoint.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceBlackIceSignal.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPavementSensorError.x &nbsp; &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n}</pre>",
               "info": "<pre>This object was deprecated in version 03. </pre>",
               "name": "essPavementBlock",
               "oid": "{ essNtcipPavement 5 }",
@@ -40400,6 +40576,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-29T16:10:17.786Z"
+                },
+                {
+                  "attributesChanged": {
+                    "format": "<pre>The OPTIONAL fields shall be present if the data is supported by the implementation and is valid. The OPTIONAL fields shall be omitted for any data that is invalid or not supported by the implementation.\n\n\nEssPavementData ::= SEQUENCE OF PavementSensorData\n&nbsp; -- for (\n-- &nbsp;x = 1;&nbsp;\n-- &nbsp;x &lt; numEssPavementSensors.0;&nbsp;\n-- &nbsp;x++)\n\n\n\n\nPavementSensorData ::= SEQUENCE {\n&nbsp; essPavementSensorIndex.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceStatusV2.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceTemperature.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPavementTemperature.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceWaterDepth.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceSalinity.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceConductivity.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceFreezePoint.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceBlackIceSignal.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPavementSensorError.x &nbsp; &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n}</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T12:51:19.341Z"
                 }
               ]
             },
@@ -40411,7 +40598,7 @@
               "access": "read-only",
               "action": "deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.6",
-              "format": "<pre>The OPTIONAL fields shall be present if the data is supported by the implementation and is valid. The OPTIONAL fields shall be omitted for any data that is invalid or not supported by the implementation.\n\n\nEssSubSurfaceData ::= SEQUENCE OF SubSurfaceSensorData\n&nbsp; -- for (\n-- &nbsp;x = 1;&nbsp;\n-- &nbsp;x &lt; numEssSubSurfaceSensors.0;&nbsp;\n-- &nbsp;x++)\n\n\nSubSurfaceSensorData ::= SEQUENCE {\n&nbsp; essSubSurfaceSensorIndex.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSubSurfaceTemperature.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSubSurfaceMoisture.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSubSurfaceSensorError.x &nbsp; &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n&nbsp; }</pre>",
+              "format": "<pre>The OPTIONAL fields shall be present if the data is supported by the&nbsp;\nimplementation and is valid. The OPTIONAL fields shall be omitted for any&nbsp;\ndata that is invalid or not supported by the implementation.\n\n\nEssSubSurfaceData ::= SEQUENCE OF SubSurfaceSensorData\n&nbsp; -- for (\n-- &nbsp;x = 1;&nbsp;\n-- &nbsp;x &lt; numEssSubSurfaceSensors.0;&nbsp;\n-- &nbsp;x++)\n\n\nSubSurfaceSensorData ::= SEQUENCE {\n&nbsp; essSubSurfaceSensorIndex.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSubSurfaceTemperature.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSubSurfaceMoisture.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSubSurfaceSensorError.x &nbsp; &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n&nbsp; }</pre>",
               "info": "<p>This object was deprecated and withdrawn in version 05 as the associated requirement was deemed to be no longer necessary in version 04.</p>",
               "name": "essSubSurfaceBlock",
               "oid": "{ essNtcipPavement 6 }",
@@ -40530,6 +40717,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-29T16:10:13.403Z"
+                },
+                {
+                  "attributesChanged": {
+                    "format": "<pre>The OPTIONAL fields shall be present if the data is supported by the implementation and is valid. The OPTIONAL fields shall be omitted for any data that is invalid or not supported by the implementation.\n\n\nEssSubSurfaceData ::= SEQUENCE OF SubSurfaceSensorData\n&nbsp; -- for (\n-- &nbsp;x = 1;&nbsp;\n-- &nbsp;x &lt; numEssSubSurfaceSensors.0;&nbsp;\n-- &nbsp;x++)\n\n\nSubSurfaceSensorData ::= SEQUENCE {\n&nbsp; essSubSurfaceSensorIndex.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSubSurfaceTemperature.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSubSurfaceMoisture.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSubSurfaceSensorError.x &nbsp; &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n&nbsp; }</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T12:51:02.928Z"
                 }
               ]
             },
@@ -40541,7 +40739,7 @@
               "access": "read-only",
               "action": "previsouly deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.7",
-              "format": "<pre>The OPTIONAL fields shall be present if the data is supported by the implementation and is valid. The OPTIONAL fields shall be omitted for any data that is invalid or not supported by the implementation.\n\n\nEssPavementDataV3 ::= SEQUENCE OF PavementSensorDataV3\n&nbsp; -- for (\n-- &nbsp;x = 1;&nbsp;\n-- &nbsp;x &lt; numEssPavementSensors.0;&nbsp;\n-- &nbsp;x++)\n\n\n\n\nPavementSensorDataV3 ::= SEQUENCE {\n&nbsp; essPavementSensorIndex.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceStatus.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceTemperature.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPavementTemperature.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceSalinity.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceFreezePoint.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceBlackIceSignal.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPavementSensorError.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceIceOrWaterDepth.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceConductivityV2.x &nbsp; &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n}</pre>",
+              "format": "<pre>The OPTIONAL fields shall be present if the data is supported by the&nbsp;\nimplementation and is valid. The OPTIONAL fields shall be omitted for any&nbsp;\ndata that is invalid or not supported by the implementation.\n\n\nEssPavementDataV3 ::= SEQUENCE OF PavementSensorDataV3\n&nbsp; -- for (\n-- &nbsp;x = 1;&nbsp;\n-- &nbsp;x &lt; numEssPavementSensors.0;&nbsp;\n-- &nbsp;x++)\n\n\n\n\nPavementSensorDataV3 ::= SEQUENCE {\n&nbsp; essPavementSensorIndex.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceStatus.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceTemperature.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPavementTemperature.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceSalinity.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceFreezePoint.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceBlackIceSignal.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPavementSensorError.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceIceOrWaterDepth.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceConductivityV2.x &nbsp; &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n}</pre>",
               "info": "<p>This object was deprecated and withdrawn in NTCIP 1204 v04 as the associated requirement was deemed to be no longer necessary.</p>",
               "name": "essPavementV3Block",
               "oid": "{ essNtcipPavement 7 }",
@@ -40638,6 +40836,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-29T16:11:00.054Z"
+                },
+                {
+                  "attributesChanged": {
+                    "format": "<pre>The OPTIONAL fields shall be present if the data is supported by the implementation and is valid. The OPTIONAL fields shall be omitted for any data that is invalid or not supported by the implementation.\n\n\nEssPavementDataV3 ::= SEQUENCE OF PavementSensorDataV3\n&nbsp; -- for (\n-- &nbsp;x = 1;&nbsp;\n-- &nbsp;x &lt; numEssPavementSensors.0;&nbsp;\n-- &nbsp;x++)\n\n\n\n\nPavementSensorDataV3 ::= SEQUENCE {\n&nbsp; essPavementSensorIndex.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceStatus.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceTemperature.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPavementTemperature.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceSalinity.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceFreezePoint.x &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceBlackIceSignal.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPavementSensorError.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceIceOrWaterDepth.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essSurfaceConductivityV2.x &nbsp; &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n}</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T12:50:43.819Z"
                 }
               ]
             }
@@ -42291,7 +42500,7 @@
               "access": "read-only",
               "action": "previsouly deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.5",
-              "format": "<pre>The OPTIONAL fields shall be present if the data is supported by the implementation and is valid. The OPTIONAL fields shall be omitted for any data that is invalid or not supported by the implementation.\n\n\nNote: The following structure contains pts data elements in addition to the ess data elements. Although these are not currently required to fulfill any existing requirements, they are included to maintain backward compatibility with the version 02 standard.\n\n\nPavementTreatmentBlock ::= SEQUENCE {\n&nbsp; treatmentInfo &nbsp;SEQUENCE OF PavementTreatmentData OPTIONAL,\n&nbsp; essPaveTreatmentAmount.0 &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPaveTreatmentWidth.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsOperationalMode.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsCommandState.0 &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsSprayerState.0 &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsSignalDuration.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsSignalEventCount.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsLastSignalEvent.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsActiveEventCount.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsInactiveEventCount.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsLastactiveEvent.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsLastInactiveEvent.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsError.0 &nbsp; &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsMonitoringDetectors.0 &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n}\n\n\nPavementTreatmentData ::=&nbsp;\n&nbsp; -- for (\n&nbsp; -- &nbsp;x = 1;&nbsp;\n&nbsp; -- &nbsp;x &lt; numEssTreatments.0;&nbsp;\n&nbsp; -- &nbsp;x++)\nSEQUENCE {\n&nbsp; essPavementTreatmentIndex.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPaveTreatProductType.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPaveTreatProductForm.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPercentProductMix.x &nbsp; &nbsp; &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n}</pre><p><br></p>",
+              "format": "<pre>The OPTIONAL fields shall be present if the data is supported by the&nbsp;\nimplementation and is valid. The OPTIONAL fields shall be omitted for any&nbsp;\ndata that is invalid or not supported by the implementation.\n\n\n\nNote: The following structure contains pts data elements in addition to&nbsp;\nthe ess data elements. Although these are not currently required to&nbsp;\nfulfill any existing requirements, they are included to maintain backward&nbsp;\ncompatibility with the version 02 standard.\n\n\nPavementTreatmentBlock ::= SEQUENCE {\n&nbsp; treatmentInfo &nbsp;SEQUENCE OF PavementTreatmentData OPTIONAL,\n&nbsp; essPaveTreatmentAmount.0 &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPaveTreatmentWidth.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsOperationalMode.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsCommandState.0 &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsSprayerState.0 &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsSignalDuration.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsSignalEventCount.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsLastSignalEvent.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsActiveEventCount.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsInactiveEventCount.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsLastactiveEvent.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsLastInactiveEvent.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsError.0 &nbsp; &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsMonitoringDetectors.0 &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n}\n\n\nPavementTreatmentData ::=&nbsp;\n&nbsp; -- for (\n&nbsp; -- &nbsp;x = 1;&nbsp;\n&nbsp; -- &nbsp;x &lt; numEssTreatments.0;&nbsp;\n&nbsp; -- &nbsp;x++)\nSEQUENCE {\n&nbsp; essPavementTreatmentIndex.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPaveTreatProductType.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPaveTreatProductForm.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPercentProductMix.x &nbsp; &nbsp; &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n}</pre><p><br></p>",
               "info": "<p>This object was deprecated and withdrawn in version 05 as the associated requirement was deemed to be no longer necessary in version 04.</p>",
               "name": "pavementTreatmentBlock",
               "oid": "{ essNtcipTreatment 5 }",
@@ -42388,6 +42597,28 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-29T16:13:47.569Z"
+                },
+                {
+                  "attributesChanged": {
+                    "format": "<pre>The OPTIONAL fields shall be present if the data is supported by the implementation and is valid. The OPTIONAL fields shall be omitted for any data that is invalid or not supported by the implementation.\n\n\nNote: The following structure contains pts data elements in addition to the ess data elements. Although these are not currently required to fulfill any existing requirements, they are included to maintain backward compatibility with the version 02 standard.\n\n\nPavementTreatmentBlock ::= SEQUENCE {\n&nbsp; treatmentInfo &nbsp;SEQUENCE OF PavementTreatmentData OPTIONAL,\n&nbsp; essPaveTreatmentAmount.0 &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPaveTreatmentWidth.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsOperationalMode.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsCommandState.0 &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsSprayerState.0 &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsSignalDuration.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsSignalEventCount.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsLastSignalEvent.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsActiveEventCount.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsInactiveEventCount.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsLastactiveEvent.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsLastInactiveEvent.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsError.0 &nbsp; &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsMonitoringDetectors.0 &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n}\n\n\nPavementTreatmentData ::=&nbsp;\n&nbsp; -- for (\n&nbsp; -- &nbsp;x = 1;&nbsp;\n&nbsp; -- &nbsp;x &lt; numEssTreatments.0;&nbsp;\n&nbsp; -- &nbsp;x++)\nSEQUENCE {\n&nbsp; essPavementTreatmentIndex.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPaveTreatProductType.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPaveTreatProductForm.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPercentProductMix.x &nbsp; &nbsp; &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n}</pre><p><br></p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T12:43:17.401Z"
+                },
+                {
+                  "attributesChanged": {
+                    "format": "<pre>The OPTIONAL fields shall be present if the data is supported by the implementation and is valid. The OPTIONAL fields shall be omitted for any data that is invalid or not supported by the implementation.\n\n\nNote: The following structure contains pts data elements in addition to&nbsp;\nthe ess data elements. Although these are not currently required to&nbsp;\nfulfill any existing requirements, they are included to maintain backward&nbsp;\ncompatibility with the version 02 standard.\n\n\nPavementTreatmentBlock ::= SEQUENCE {\n&nbsp; treatmentInfo &nbsp;SEQUENCE OF PavementTreatmentData OPTIONAL,\n&nbsp; essPaveTreatmentAmount.0 &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPaveTreatmentWidth.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsOperationalMode.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsCommandState.0 &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsSprayerState.0 &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsSignalDuration.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsSignalEventCount.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsLastSignalEvent.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsActiveEventCount.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsInactiveEventCount.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsLastactiveEvent.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsLastInactiveEvent.0 &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsError.0 &nbsp; &nbsp; &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; ptsMonitoringDetectors.0 &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n}\n\n\nPavementTreatmentData ::=&nbsp;\n&nbsp; -- for (\n&nbsp; -- &nbsp;x = 1;&nbsp;\n&nbsp; -- &nbsp;x &lt; numEssTreatments.0;&nbsp;\n&nbsp; -- &nbsp;x++)\nSEQUENCE {\n&nbsp; essPavementTreatmentIndex.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPaveTreatProductType.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPaveTreatProductForm.x &nbsp; &nbsp;OPTIONAL, -- @NTCIP1204-Ess\n&nbsp; essPercentProductMix.x &nbsp; &nbsp; &nbsp;OPTIONAL &nbsp;-- @NTCIP1204-Ess\n}</pre><p><br></p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T12:43:36.495Z"
                 }
               ]
             },
@@ -48826,7 +49057,7 @@
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.14.2.1.5",
-                  "format": "<pre>none - no error was detected \nhardware - an error occurred with the camera hardware when attempting to capture a picture.\ninsufficientMemory - the ESS does not have sufficient memory to store the new picture.</pre>",
+                  "format": "<pre>none - no error was detected&nbsp;\nhardware - an error occurred with the camera hardware when attempting to&nbsp;\n&nbsp; &nbsp; capture a picture.\ninsufficientMemory - the ESS does not have sufficient memory to store the new&nbsp;\n&nbsp; &nbsp; picture.</pre>",
                   "name": "essSnapshotCameraError",
                   "oid": "{ essSnapshotCameraEntry 5 }",
                   "param_type": "status",
@@ -48921,6 +49152,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T23:20:15.931Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "format": "<pre>none - no error was detected \nhardware - an error occurred with the camera hardware when attempting to capture a picture.\ninsufficientMemory - the ESS does not have sufficient memory to store the new picture.</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:46:03.789Z"
                     }
                   ]
                 },
@@ -48932,7 +49174,7 @@
                   "access": "read-write",
                   "action": "deprecated",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.14.2.6",
-                  "format": "<pre>This parameter shall only consist of upper and lower case characters (A-Z, a-z), digits (0-9), underscores (_), periods (.), spaces, and the following case-sensitive field names enclosed in chevrons (&lt;&gt;):\ncamera: A three digit camera number equal to essSnapshotCameraIndex.\nsequence: A three digit value that increments by one each time this&nbsp;\ncamera is used to take a picture. This value shall roll-over from '999' to '000'. The initial value of this field and its value after a power outage is manufacture dependent.\ndate: A six digit code indicating the UTC date in the format of YYMMDD.\ntime: A six digit code indicating the UTC time in the format of HHMMSS.\n\nAll implementations shall support all static character filenames with up to eight characters in the base filename, a period, and up to three characters in the filename extension. Support for longer filenames and the above fields are optional.\n\nFor example, if this parameter has a value of 'latest.jpg', every snapshot taken is saved to 'latest.jpg' and overwrites any previous image saved to that filename. If this parameter has a value of '&lt;date&gt; &lt;sequence&gt;.jpg', each snapshot has a name (e.g., '060925 038') indicating the date it was taken along with a relatively unique code. While the second form prevents the inadvertent overwriting of filenames, it increases the likelihood of consuming large amounts of field device memory (eventually resulting in insufficientMemory errors) if not properly managed by the management station.</pre>",
+                  "format": "<pre>This parameter shall only consist of upper and lower case characters (A-Z,&nbsp;\na-z), digits (0-9), underscores (_), periods (.), spaces, and the following\ncase-sensitive field names enclosed in chevrons (&lt;&gt;):\ncamera: A three digit camera number equal to essSnapshotCameraIndex.\nsequence: A three digit value that increments by one each time this&nbsp;\ncamera is used to take a picture. This value shall roll-over from '999' to&nbsp;\n&nbsp; &nbsp; '000'. The initial value of this field and its value after a power outage&nbsp;\n&nbsp; &nbsp; is manufacture dependent.\ndate: A six digit code indicating the UTC date in the format of YYMMDD.\ntime: A six digit code indicating the UTC time in the format of HHMMSS.\n\n\nAll implementations shall support all static character filenames with up to&nbsp;\neight characters in the base filename, a period, and up to three characters&nbsp;\nin the filename extension. Support for longer filenames and the above fields&nbsp;\nare optional.\n\n\nFor example, if this parameter has a value of 'latest.jpg', every snapshot&nbsp;\ntaken is saved to 'latest.jpg' and overwrites any previous image saved to&nbsp;\nthat filename. If this parameter has a value of '&lt;date&gt; &lt;sequence&gt;.jpg', each&nbsp;\nsnapshot has a name (e.g., '060925 038') indicating the date it was taken&nbsp;\nalong with a relatively unique code. While the second form prevents the&nbsp;\ninadvertent overwriting of filenames, it increases the likelihood of&nbsp;\nconsuming large amounts of field device memory (eventually resulting in&nbsp;\ninsufficientMemory errors) if not properly managed by the management station.</pre>",
                   "info": "<p>This object was deprecated in version 05.&nbsp;</p><p>The filename does not necessarily define file format and it is left to the users to define an appropriate filename. For example, this object may be set to a value of 'latest.bmp'. All implementations would be required to save their images with this filename; however, the image saved may vary. Some implementations may only save bitmapped images and the file would have an appropriate name. Other implementations may only save JPEG images and the '.bmp' extension may be confusing. Other implementations may support both formats and use the extension in this field to select the storage format, while yet others may support both formats but ignore the extension assigned by this field (and use some other mechanism to select the storage format).</p><p>A zero length filename may result in unexpected operations. An implementation may reject a zero length filename by responding with genErr.</p>",
                   "name": "essSnapshotCameraFilename",
                   "oid": "{ essSnapshotCameraEntry 6 }",
@@ -49109,6 +49351,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-03T18:44:20.673Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "format": "<pre>This parameter shall only consist of upper and lower case characters (A-Z, a-z), digits (0-9), underscores (_), periods (.), spaces, and the following case-sensitive field names enclosed in chevrons (&lt;&gt;):\ncamera: A three digit camera number equal to essSnapshotCameraIndex.\nsequence: A three digit value that increments by one each time this&nbsp;\ncamera is used to take a picture. This value shall roll-over from '999' to '000'. The initial value of this field and its value after a power outage is manufacture dependent.\ndate: A six digit code indicating the UTC date in the format of YYMMDD.\ntime: A six digit code indicating the UTC time in the format of HHMMSS.\n\nAll implementations shall support all static character filenames with up to eight characters in the base filename, a period, and up to three characters in the filename extension. Support for longer filenames and the above fields are optional.\n\nFor example, if this parameter has a value of 'latest.jpg', every snapshot taken is saved to 'latest.jpg' and overwrites any previous image saved to that filename. If this parameter has a value of '&lt;date&gt; &lt;sequence&gt;.jpg', each snapshot has a name (e.g., '060925 038') indicating the date it was taken along with a relatively unique code. While the second form prevents the inadvertent overwriting of filenames, it increases the likelihood of consuming large amounts of field device memory (eventually resulting in insufficientMemory errors) if not properly managed by the management station.</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:44:46.083Z"
                     }
                   ]
                 },
@@ -49353,7 +49606,7 @@
                   "access": "read-write",
                   "action": "added",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.14.2.9",
-                  "format": "<pre>Case-sensitive field names enclosed in chevrons (&lt;&gt;) shall be interpreted as follows:\n\ncamera: A three digit camera number equal to essSnapshotCameraIndex.\nsequence: A three digit value that increments by one each time this&nbsp;\ncamera is used to take a picture. This value shall roll-over from '999' to '000'. The initial value of this field and its value after a power outage is manufacture dependent.\ndate: A six digit code indicating the UTC date in the format of YYMMDD.\ntime: A six digit code indicating the UTC time in the format of HHMMSS.\n\nAll implementations shall support all static NVT-ASCII character filenames with up to eight characters in the base filename. Support for longer filenames, the above fields, and non-NVT-ASCII characters are optional.\n\nFor example, if this parameter has a value of 'latest' and the value of essSnapshotCameraFileFormat is 'jpeg', every snapshot taken is saved to 'latest.jpeg' and overwrites any previous image saved to that filename. If this parameter has a value of '&lt;date&gt; &lt;sequence&gt;', each snapshot has a base name (e.g., '060925 038') indicating the date it was taken along with a relatively unique code. While the second form prevents the inadvertent overwriting of filenames, it increases the likelihood of consuming large amounts of field device memory (eventually resulting in insufficientMemory errors) if not properly managed by the management station.</pre>",
+                  "format": "<pre>Case-sensitive field names enclosed in chevrons (&lt;&gt;) shall be interpreted as&nbsp;\nfollows:\n\n\ncamera: A three digit camera number equal to essSnapshotCameraIndex.\nsequence: A three digit value that increments by one each time this&nbsp;\ncamera is used to take a picture. This value shall roll-over from '999' to&nbsp;\n&nbsp; &nbsp; '000'. The initial value of this field and its value after a power outage&nbsp;\n&nbsp; &nbsp; is manufacture dependent.\ndate: A six digit code indicating the UTC date in the format of YYMMDD.\ntime: A six digit code indicating the UTC time in the format of HHMMSS.\n\n\nAll implementations shall support all static NVT-ASCII character filenames&nbsp;\nwith up to eight characters in the base filename. Support for longer&nbsp;\nfilenames, the above fields, and non-NVT-ASCII characters are optional.\n\n\nFor example, if this parameter has a value of 'latest' and the value of&nbsp;\nessSnapshotCameraFileFormat is 'jpeg', every snapshot taken is saved to&nbsp;\n'latest.jpeg' and overwrites any previous image saved to that filename. If&nbsp;\nthis parameter has a value of '&lt;date&gt; &lt;sequence&gt;', each snapshot has a base&nbsp;\nname (e.g., '060925 038') indicating the date it was taken along with a&nbsp;\nrelatively unique code. While the second form prevents the inadvertent&nbsp;\noverwriting of filenames, it increases the likelihood of consuming large&nbsp;\namounts of field device memory (eventually resulting in insufficientMemory&nbsp;\nerrors) if not properly managed by the management station.</pre><p><br></p>",
                   "name": "essSnapshotCameraFilenameV5",
                   "oid": "{ essSnapshotCameraEntry 9 }",
                   "param_type": "configuration",
@@ -49448,6 +49701,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-29T16:52:28.214Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "format": "<pre>Case-sensitive field names enclosed in chevrons (&lt;&gt;) shall be interpreted as follows:\n\ncamera: A three digit camera number equal to essSnapshotCameraIndex.\nsequence: A three digit value that increments by one each time this&nbsp;\ncamera is used to take a picture. This value shall roll-over from '999' to '000'. The initial value of this field and its value after a power outage is manufacture dependent.\ndate: A six digit code indicating the UTC date in the format of YYMMDD.\ntime: A six digit code indicating the UTC time in the format of HHMMSS.\n\nAll implementations shall support all static NVT-ASCII character filenames with up to eight characters in the base filename. Support for longer filenames, the above fields, and non-NVT-ASCII characters are optional.\n\nFor example, if this parameter has a value of 'latest' and the value of essSnapshotCameraFileFormat is 'jpeg', every snapshot taken is saved to 'latest.jpeg' and overwrites any previous image saved to that filename. If this parameter has a value of '&lt;date&gt; &lt;sequence&gt;', each snapshot has a base name (e.g., '060925 038') indicating the date it was taken along with a relatively unique code. While the second form prevents the inadvertent overwriting of filenames, it increases the likelihood of consuming large amounts of field device memory (eventually resulting in insufficientMemory errors) if not properly managed by the management station.</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T12:10:56.652Z"
                     }
                   ]
                 },

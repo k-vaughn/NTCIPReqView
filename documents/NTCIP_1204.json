@@ -8,7 +8,7 @@
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-08-04T19:03:57.859Z",
+  "lastChangedOn": "2024-08-05T01:33:56.189Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -2759,7 +2759,7 @@
             {
               "id": "2118",
               "guid": "5b22c967-3d90-4494-a0ed-0763efec5280",
-              "heading": "Addressing vulnerabilities",
+              "heading": "Addressing Vulnerabilities",
               "text": "<p>This document standardizes the objects that can be used by a remote entity to monitor and/or control a device. Allowing remote operations without providing sufficient information security can have a negative effect on the communications network and/or the transportation system. In particular, the mis-configuration of \"read-write\" and/or \"read-create\" objects can result in the activation of unauthorized features or unauthorized changes to the device configuration; these changes can result in potentially hazardous situations.</p>",
               "type": "text",
               "history": [
@@ -2806,6 +2806,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-03T20:52:53.537Z"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": "Addressing vulnerabilities"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T01:17:08.077Z"
                 }
               ],
               "children": [
@@ -3264,7 +3275,7 @@
               "id": "725",
               "guid": "f572c93a-498c-4172-b274-0e112d742b75",
               "heading": "Sensor Manager Requirements",
-              "text": "<p>Requirements for managing a sensor follow:</p>",
+              "text": "<p>Requirements for managing a Sensor Manager follow:</p>",
               "type": "text",
               "history": [
                 {
@@ -3277,6 +3288,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-02T22:06:56.694Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>Requirements for managing a sensor follow:</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T01:17:34.844Z"
                 }
               ],
               "children": [
@@ -3452,7 +3474,32 @@
                   "id": "786",
                   "guid": "4d8b44da-91a0-4b0c-bd78-a789788f3e39",
                   "heading": "Manage Wind Sensors",
+                  "text": "<p>Requirements for managing wind sensors follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:18:07.699Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>Requirements for managing&nbsp;</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:18:20.354Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "2193",
@@ -3697,7 +3744,21 @@
                   "id": "797",
                   "guid": "a7652aa5-83cd-4a34-aef3-ff068994c176",
                   "heading": "Manage Temperature Sensors",
+                  "text": "<p>Requirements for managing temperature sensors follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:18:39.284Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "2195",
@@ -3864,7 +3925,21 @@
                   "id": "811",
                   "guid": "1b5191e4-c962-4782-9a0c-170b2d34269f",
                   "heading": "Manage Humidity Sensors",
+                  "text": "<p>Requirements for managing humidity sensors follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:18:57.217Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "2200",
@@ -4047,7 +4122,21 @@
                   "id": "825",
                   "guid": "2a94e09a-9fd0-436c-b005-f10e958a9f29",
                   "heading": "Manage Precipitation Sensors",
+                  "text": "<p>Requirements for managing precipitation sensors follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:19:23.202Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "2201",
@@ -4286,19 +4375,91 @@
                   "id": "840",
                   "guid": "7e19c086-d2d4-4978-b852-14e2683257ae",
                   "heading": "Manage Solar Radiation Sensors",
+                  "text": "<p>Requirements for managing solar radiation sensors follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:19:56.154Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "2202",
                       "guid": "a4eabeee-ee00-4f29-be50-12d88293ee30",
-                      "heading": "Determine Number of Radiation Sensors",
+                      "heading": "Determine Number of Solar Radiation Sensors",
+                      "text": "<p>Upon request, the ESS shall return the number of solar radiation sensors connected to the ESS.</p>",
                       "status": "current",
                       "type": "d_req",
                       "links": {
                         "fulfil": [
                           "NTCIP_1204-540"
                         ]
-                      }
+                      },
+                      "history": [
+                        {
+                          "attributesChanged": {
+                            "heading": "Determine Number of Radiation Sensors"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-05T01:20:13.034Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-05T01:20:31.050Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Upon request,&nbsp;</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-05T01:20:43.102Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Upon request, the ESS shall return&nbsp;</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-05T01:21:04.699Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Upon request, the ESS shall return the number of solar radiation sensors</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-05T01:21:22.801Z"
+                        }
+                      ]
                     },
                     {
                       "id": "842",
@@ -4465,7 +4626,21 @@
                   "id": "854",
                   "guid": "1a7df4a0-18cb-4fc3-8536-0f2185e7a820",
                   "heading": "Manage Visibility Sensor",
+                  "text": "<p>Requirements for managing visibility sensors follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:21:50.121Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "2317",
@@ -4696,7 +4871,21 @@
                   "id": "868",
                   "guid": "81aa3c3e-bbb3-4221-9a20-ba1223ace222",
                   "heading": "Manage Pavement Sensors",
+                  "text": "<p>Requirements for managing pavement sensors follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:22:12.789Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "2203",
@@ -5353,7 +5542,21 @@
                   "id": "884",
                   "guid": "461df9af-de3d-45c3-b8ac-51506beeb7a5",
                   "heading": "Manage Subsurface Sensors",
+                  "text": "<p>Requirements for managing subsurface sensors follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:22:34.334Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "2204",
@@ -5574,7 +5777,21 @@
                   "id": "896",
                   "guid": "17a2909b-a49b-4fb0-a7d9-92ff376becd3",
                   "heading": "Manage Air Quality Sensors",
+                  "text": "<p>Requirements for managing air quality sensors follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:23:03.156Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "2205",
@@ -5893,7 +6110,21 @@
                   "id": "910",
                   "guid": "5c5bdd01-2e4a-4bd3-8855-d8767f99501a",
                   "heading": "Manage Water Level Sensors",
+                  "text": "<p>Requirements for managing water level sensors follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:23:27.471Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "2206",
@@ -5945,13 +6176,104 @@
                       "id": "917",
                       "guid": "54e5b480-83ff-4853-b99f-e02ff8393180",
                       "heading": "Retrieve Water Level Sensor Identity",
+                      "text": "<p>Upn request, the ESS shall return the entity identifier of the specified water level sensor so that the management station is able to properly interpret the accuracy, resolution, and limits of the data.</p>",
                       "status": "current",
                       "type": "d_req",
                       "links": {
                         "fulfil_opt": [
                           "NTCIP_1204-563"
                         ]
-                      }
+                      },
+                      "history": [
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-05T01:24:06.753Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Upn request, the ESS shall return</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-05T01:24:30.851Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Upn request, the ESS shall return the entity identifier of the&nbsp;</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-05T01:24:50.097Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Upn request, the ESS shall return the entity identifier of the specified water level sensor</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-05T01:25:09.158Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Upn request, the ESS shall return the entity identifier of the specified water level sensor so that the management station&nbsp;</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-05T01:25:28.172Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Upn request, the ESS shall return the entity identifier of the specified water level sensor so that the management station is able to properly interpret&nbsp;</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-05T01:25:50.287Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Upn request, the ESS shall return the entity identifier of the specified water level sensor so that the management station is able to properly interpret the accuracy,&nbsp;</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-05T01:26:03.725Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Upn request, the ESS shall return the entity identifier of the specified water level sensor so that the management station is able to properly interpret the accuracy, resolution, and limits</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-05T01:26:13.177Z"
+                        }
+                      ]
                     },
                     {
                       "id": "919",
@@ -6057,14 +6379,27 @@
                       "id": "1175",
                       "guid": "330f5227-17c2-41df-a4c1-2c2a753811ce",
                       "heading": "Retrieve Water Level",
-                      "text": "<p>Upon request, the ESS shall return the current depth of water from a user defined point for the specified water level sensor. The current depth of water can be over a body of water, such as a stream or a reservoir, or the current depth of water on a roadway pavement, such as an underpass. This requirement is concerned with the water depth in bodies of water or the pavement surface for flooding concerns, as opposed to requirements 0.f or 0.f, water film depth, which are concerned about icing or hydroplaning on the pavement surface.</p>",
+                      "text": "<p>Upon request, the ESS shall return the current depth of water from a user defined point for the specified water level sensor. The current depth of water can be over a body of water, such as a stream or a reservoir, or the current depth of water on a roadway pavement, such as an underpass. This requirement is concerned with the water depth in bodies of water or the pavement surface for flooding concerns, as opposed to requirements 3.5.2.8.9 or 3.5.2.8.10, water film depth, which are concerned about icing or hydroplaning on the pavement surface.</p>",
                       "status": "current",
                       "type": "d_req",
                       "links": {
                         "fulfil": [
                           "NTCIP_1204-563"
                         ]
-                      }
+                      },
+                      "history": [
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Upon request, the ESS shall return the current depth of water from a user defined point for the specified water level sensor. The current depth of water can be over a body of water, such as a stream or a reservoir, or the current depth of water on a roadway pavement, such as an underpass. This requirement is concerned with the water depth in bodies of water or the pavement surface for flooding concerns, as opposed to requirements 0.f or 0.f, water film depth, which are concerned about icing or hydroplaning on the pavement surface.</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-05T01:27:01.096Z"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -6072,7 +6407,21 @@
                   "id": "1118",
                   "guid": "162c46fe-1626-4885-aff6-2c2c5bc31004",
                   "heading": "Monitor Situation Assessments",
+                  "text": "<p>Requirements for monitoring situation assessments follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:27:53.805Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "1120",
@@ -6167,7 +6516,21 @@
                   "id": "942",
                   "guid": "704defb4-314b-4b86-a157-7fa39614576e",
                   "heading": "Manage Snapshot Cameras",
+                  "text": "<p>Requirements for managing snapshot cameras follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:28:27.924Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "2314",
@@ -6823,13 +7186,41 @@
               "id": "1222",
               "guid": "b981db07-7a22-4748-8764-8e6c052914a7",
               "heading": "PTS Manager Requirements",
+              "text": "<p>Requirements for managing a PTS manager follow.</p>",
               "type": "text",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T01:29:07.365Z"
+                }
+              ],
               "children": [
                 {
                   "id": "1224",
                   "guid": "454699ef-8a3d-4738-8ed3-49106d27b69f",
                   "heading": "PTS Configuration Requirements",
+                  "text": "<p>Requirements for configuring a PTS manager follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:29:33.223Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "930",
@@ -7330,7 +7721,32 @@
                   "id": "1254",
                   "guid": "f7cbefa7-b547-41b8-b54c-b9451f3435ed",
                   "heading": "PTS Status Monitoring Requirements",
+                  "text": "<p>Requirements for monitoring the status of a PTS manager follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:30:13.293Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>Requirements for monitoring a PTS manager follow.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:30:24.827Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "1256",
@@ -7594,7 +8010,32 @@
                   "id": "1266",
                   "guid": "7ebce37a-0c5e-4a72-9da4-3c262f0565cc",
                   "heading": "PTS Data Retrieval Requirements",
+                  "text": "<p>Requirements for retrieving data from a PTS manager follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:30:52.047Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>Requirements for retrieving a PTS manager follow.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:31:01.618Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "2321",
@@ -7727,7 +8168,21 @@
                   "id": "1277",
                   "guid": "2315d6a9-3bf1-49c3-b058-1f122a24edc4",
                   "heading": "PTS Control Requirements",
+                  "text": "<p>Requirements for controlling a PTS manager follow.</p>",
                   "type": "text",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-05T01:31:18.808Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "1279",
@@ -7830,7 +8285,21 @@
           "id": "1377",
           "guid": "fe9e50de-d242-4ea9-9794-091b17738639",
           "heading": "Supplemental Non-Communications Requirements",
+          "text": "<p>Supplemental requirements for ESS follow. These requirements do not directly involve communications between the management station and the ESS, but, if the supplemental requirement is selected in the PRL, the ESS shall fulfill the stated requirement to claim conformance to this document.</p>",
           "type": "text",
+          "history": [
+            {
+              "attributesChanged": {
+                "text": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-05T01:31:39.768Z"
+            }
+          ],
           "children": [
             {
               "id": "1379",
@@ -8274,7 +8743,7 @@
               "id": "1424",
               "guid": "71c01f64-9cbc-4aba-86c4-c2bd02568b06",
               "heading": "Support Camera Number in Filename",
-              "text": "<p>The ESS shall support the ability to specify a field in the filename parameter that is replaced by the camera number when a snapshot is saved. This is the '&lt;camera&gt;' field as defined in Section <strong>Error! Reference source not found.</strong>.</p>",
+              "text": "<p>The ESS shall support the ability to specify a field in the filename parameter that is replaced by the camera number when a snapshot is saved. This is the '&lt;camera&gt;' field as defined in Section 5.16.3.9.</p>",
               "status": "current",
               "type": "s_req",
               "links": {
@@ -8282,13 +8751,26 @@
                   "NTCIP_1204-544",
                   "NTCIP_1204-557"
                 ]
-              }
+              },
+              "history": [
+                {
+                  "attributesChanged": {
+                    "text": "<p>The ESS shall support the ability to specify a field in the filename parameter that is replaced by the camera number when a snapshot is saved. This is the '&lt;camera&gt;' field as defined in Section <strong>Error! Reference source not found.</strong>.</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T01:32:46.408Z"
+                }
+              ]
             },
             {
               "id": "1426",
               "guid": "45f56a7a-8dac-4dc8-b460-3bc8548cf92a",
               "heading": "Support Sequence Number in Filename",
-              "text": "<p>The ESS shall support the ability to specify a field in the filename parameter that is replaced by the current sequence number when a snapshot is saved. This is the '&lt;sequence&gt;' field as defined in Section <strong>Error! Reference source not found.</strong>.</p>",
+              "text": "<p>The ESS shall support the ability to specify a field in the filename parameter that is replaced by the current sequence number when a snapshot is saved. This is the '&lt;sequence&gt;' field as defined in Section 5.16.3.9.</p>",
               "status": "current",
               "type": "s_req",
               "links": {
@@ -8296,13 +8778,26 @@
                   "NTCIP_1204-544",
                   "NTCIP_1204-557"
                 ]
-              }
+              },
+              "history": [
+                {
+                  "attributesChanged": {
+                    "text": "<p>The ESS shall support the ability to specify a field in the filename parameter that is replaced by the current sequence number when a snapshot is saved. This is the '&lt;sequence&gt;' field as defined in Section <strong>Error! Reference source not found.</strong>.</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T01:32:54.506Z"
+                }
+              ]
             },
             {
               "id": "1428",
               "guid": "bfa6e5cf-323f-4fda-9eac-2d5a31689898",
               "heading": "Support Date in Filename",
-              "text": "<p>The ESS shall support the ability to specify a field in the filename parameter that is replaced by the current UTC date when a snapshot is saved. This is the '&lt;date&gt;' field as defined in Section <strong>Error! Reference source not found.</strong>.</p>",
+              "text": "<p>The ESS shall support the ability to specify a field in the filename parameter that is replaced by the current UTC date when a snapshot is saved. This is the '&lt;date&gt;' field as defined in Section 5.16.3.9.</p>",
               "status": "current",
               "type": "s_req",
               "links": {
@@ -8310,13 +8805,26 @@
                   "NTCIP_1204-544",
                   "NTCIP_1204-557"
                 ]
-              }
+              },
+              "history": [
+                {
+                  "attributesChanged": {
+                    "text": "<p>The ESS shall support the ability to specify a field in the filename parameter that is replaced by the current UTC date when a snapshot is saved. This is the '&lt;date&gt;' field as defined in Section <strong>Error! Reference source not found.</strong>.</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T01:33:19.379Z"
+                }
+              ]
             },
             {
               "id": "1430",
               "guid": "f6178035-0c4c-431a-bd55-19d03a558a57",
               "heading": "Support Time in Filename",
-              "text": "<p>The ESS shall support the ability to specify a field in the filename parameter that is replaced by the current UTC time when a snapshot is saved. This is the '&lt;time&gt;' field as defined in Section <strong>Error! Reference source not found.</strong>.</p>",
+              "text": "<p>The ESS shall support the ability to specify a field in the filename parameter that is replaced by the current UTC time when a snapshot is saved. This is the '&lt;time&gt;' field as defined in Section 5.16.3.9.</p>",
               "status": "current",
               "type": "s_req",
               "links": {
@@ -8324,7 +8832,20 @@
                   "NTCIP_1204-544",
                   "NTCIP_1204-557"
                 ]
-              }
+              },
+              "history": [
+                {
+                  "attributesChanged": {
+                    "text": "<p>The ESS shall support the ability to specify a field in the filename parameter that is replaced by the current UTC time when a snapshot is saved. This is the '&lt;time&gt;' field as defined in Section <strong>Error! Reference source not found.</strong>.</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-05T01:33:10.644Z"
+                }
+              ]
             },
             {
               "id": "1432",
@@ -8759,8 +9280,21 @@
     {
       "id": "1939",
       "guid": "fadbd6b7-b75f-40ea-a83a-2c49a8167af7",
-      "heading": "Management Information Base (MIB)",
+      "heading": "Management Information Base (MIB) [Normative]",
       "type": "text",
+      "history": [
+        {
+          "attributesChanged": {
+            "heading": "Management Information Base (MIB)"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-08-05T01:33:56.189Z"
+        }
+      ],
       "children": [
         {
           "id": "1",

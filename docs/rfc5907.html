@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WG9-rfc5907: NTPv4-MIB</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="jq/jquery-ui.css" rel="stylesheet">
+	<script src="external/jquery/jquery.js"></script>
+	<script src="jq/jquery-ui.js"></script>
+	<script src="assets/js/columns.js"></script>
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" style="position: static;">
+						<h2><a href="index.html">NTCIP</a><img src="images/car_wifi.png" style="width: 2em;" /></h2>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="metr_overview.html">Overview</a></li>
+								<li><a href="development.html">Development Approach</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<div class="inner">
+						<div class="controls-container">
+							<div class="controls">
+           						<label><input type="checkbox" checked data-column="0">ID</label>
+           						<label><input type="checkbox" checked data-column="1">Description</label>
+           						<label><input type="checkbox" checked data-column="2">Attributes</label>
+           						<label><input type="checkbox" checked data-column="3">Discussion</label>
+           						<label><input type="checkbox" checked data-column="4">Links</label>
+       						</div>
+						</div>
+					</div>
+			</div>
+<div class="content">
+						<table>
+							<tr>
+								<td><h1>WG9<br />rfc5907: NTPv4-MIB</h1><br />    <em>Last modified on 2024-07-24 16:45</em></td>
+								<td width="390px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/ite-org/NTCIPReqView/issues" class="button primary">Submit Comment</a><br /></span>Traceability Tables: <div class="tab">
+									<button onclick="location.href='NTCIP_1203.html'" title="NTCIP 1203">DMS</button>
+									<button onclick="location.href='NTCIP_1204.html'" title="NTCIP 1204">ESS</button>
+									<button onclick="location.href='NTCIP_1218.html'" title="NTCIP 1218">RSU</button>
+									<button onclick="location.href='26048_1.html'" title="ISO 26048-1">Global</button>
+									</div>
+								</td>
+							</tr>
+						</table>
+<div class="reqviewTable table-responsive-md">
+    <table class="table table-sm resizable">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="header-cell resizable-header"><i class="fas fa-asterisk"></i>ID<div class="resizer"></div></th>
+          <th class="header-cell resizable-header"><i class="fas fa-align-left"></i>Description<div class="resizer"></div></th>
+		  <th class="header-cell resizable-header"><i class="fas fa-align-left"></i>Attributes<div class="resizer"></div></th>
+          <th class="header-cell resizable-header"><i class="fas fa-comments"></i>Discussion<div class="resizer"></div></th>
+          <th class="header-cell resizable-header"><i class="fas fa-link"></i>Links<div class="resizer"></div></th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr> 
+			<td><a id="rfc5907-1"></a>rfc5907-1</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>*********************************************************************</p><p></p><p>   The Network Time Protocol Version 4</p><p>   Management Information Base (MIB)</p><p></p><p>   Authors: Heiko Gerstung (heiko.gerstung@meinberg.de)</p><p>            Chris Elliott (chelliot@pobox.com)</p><p></p><p>   for the Internet Engineering Task Force (IETF)</p><p>   NTP Working Group (ntpwg)</p><p></p><p></p><p>*********************************************************************</p><p>  Rev 1.00</p><p>        Published as RFC 5907</p><p></p><p>*********************************************************************</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-2"></a>rfc5907-2</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><pre>    MODULE-IDENTITY, OBJECT-TYPE , mib-2, Integer32, NOTIFICATION-TYPE,<br>    Unsigned32, Counter32, TimeTicks<br>        FROM SNMPv2-SMI -- RFC 2578<br>    MODULE-COMPLIANCE, OBJECT-GROUP, NOTIFICATION-GROUP<br>        FROM SNMPv2-CONF -- RFC 2580<br>    DisplayString, TEXTUAL-CONVENTION<br>        FROM SNMPv2-TC -- RFC 2579<br>    InetAddressType, InetAddress<br>        FROM INET-ADDRESS-MIB -- RFC 4001<br>    Utf8String<br>        FROM SYSAPPL-MIB;</pre></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-3"></a>rfc5907-3</td>
+							<td style="padding-left:10px">
+					<h1>1</h1>
+					<div class="htmlContent">The Management Information Base for NTP time entities.<br><br>         Copyright (c) 2010 IETF Trust and the persons identified as<br>         authors of the code.  All rights reserved.<br><br>         Redistribution and use in source and binary forms, with or<br>         without modification, is permitted pursuant to, and subject<br>         to the license terms contained in, the Simplified BSD License<br>         set forth in Section 4.c of the IETF Trust's Legal Provisions<br>         Relating to IETF Documents<br>         (http://trustee.ietf.org/license-info).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-4"></a>rfc5907-4</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">This revision of the MIB module is published as RFC 5907.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-5"></a>rfc5907-5</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-6"></a>rfc5907-6</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>MIB contains 6 groups</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-7"></a>rfc5907-7</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-8"></a>rfc5907-8</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-9"></a>rfc5907-9</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-10"></a>rfc5907-10</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-11"></a>rfc5907-11</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-12"></a>rfc5907-12</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>Textual Conventions</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-13"></a>rfc5907-13</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The NTP stratum, with 16 representing no stratum.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-14"></a>rfc5907-14</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">NTP date/time on the device, in 128-bit<br>         NTP date format.  If time is not syncronized, this<br>         field shall be a zero-length string.<br><br>         This trusted certificate (TC) is not to be used for objects<br>         that are used to set the time of the node querying this<br>         object.  NTP should be used for this -- or at least SNTP.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-15"></a>rfc5907-15</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>Section 1: General NTP Entity information objects</p><p>           (relatively static information)</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-16"></a>rfc5907-16</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The product name of the running NTP version, e.g., 'ntpd'.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-17"></a>rfc5907-17</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The software version of the installed NTP implementation<br>         as a full version string, e.g., 'ntpd-4.2.0b@1.1433 ...'</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-18"></a>rfc5907-18</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The vendor/author of the installed NTP version.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-19"></a>rfc5907-19</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">General hardware/os platform information,<br>         e.g., 'Linux 2.6.12 / x86'.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-20"></a>rfc5907-20</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The time resolution in integer format, where the resolution<br>        is represented as divisions of a second, e.g., a value of 1000<br>        translates to 1.0 ms.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-21"></a>rfc5907-21</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The entity's precision in integer format, shows the precision.<br>         A value of -5 would mean 2^-5 = 31.25 ms.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-22"></a>rfc5907-22</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The distance from this NTP entity to the root time reference<br>        (stratum 0) source including the unit, e.g., '13.243 ms'.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-23"></a>rfc5907-23</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>Section 2: Current NTP status (dynamic information)</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-24"></a>rfc5907-24</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The current mode of the NTP.  The definition of each possible<br>         value is:<br>            notRunning(1) - NTP is not running.<br>            notSynchronized(2) - NTP is not synchronized to any time<br>                                 source (stratum = 16).<br>            noneConfigured(3) - NTP is not synchronized and does not<br>                                have a reference configured<br>                                (stratum = 16).<br>            syncToLocal(4) - NTP is distributing time based on its<br>                             local clock (degraded accuracy and/or<br>                             reliability).<br>            syncToRefclock(5) - NTP is synchronized to a local<br>                                hardware refclock (e.g., GPS).<br>            syncToRemoteServer(6) - NTP is synchronized to a remote<br>                                    NTP server ('upstream' server).<br>            unknown(99) - The state of NTP is unknown.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Report NTP Server Status"> <span><a href="NTCIP_1218.html#NTCIP_1218-1027">NTCIP_1218-1027</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-25"></a>rfc5907-25</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The NTP entity's own stratum value.  Should be a stratum of<br>         syspeer + 1 (or 16 if no syspeer).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-26"></a>rfc5907-26</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The association ID of the current syspeer.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-27"></a>rfc5907-27</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The hostname/descriptive name of the current reference source<br>         selected as syspeer, e.g., 'ntp1.ptb.de' or 'GPS' or<br>         'DCFi', ...</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-28"></a>rfc5907-28</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The time offset to the current selected reference time source<br>         as a string including unit, e.g., '0.032 ms' or '1.232 s'.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-29"></a>rfc5907-29</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of reference sources configured for NTP.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-30"></a>rfc5907-30</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The root dispersion of the running NTP entity, e.g., '6.927'.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-31"></a>rfc5907-31</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The uptime of the NTP entity, (i.e., the time since ntpd was<br>         (re-)initialized not sysUptime!).  The time is represented in<br>         hundreds of seconds since Jan 1, 1970 (00:00:00.000) UTC.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-32"></a>rfc5907-32</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The current NTP date/time on the device, in 128-bit<br>         NTP date format.  If time is not syncronized, this<br>         field shall be a zero-length string.<br><br>         This object can be used to timestamp events on this<br>         node and allow a management station to correlate<br>         different time objects.  For example, a management<br>         station could query this object and sysUpTime in<br>         the same operation to be able to relate sysUpTime<br>         to NTP time.<br><br>         This object is not to be used to set the time of<br>         the node querying this object.  NTP should be used<br>         for this -- or at least SNTP.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-33"></a>rfc5907-33</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Date the next known leap second will occur.  If there is<br>         no leap second announced, then this object should be 0.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-34"></a>rfc5907-34</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Direction of next known leap second.  If there is no<br>         leap second announced, then this object should be 0.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-35"></a>rfc5907-35</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of NTP messages delivered to the<br>         NTP entity from the transport service.<br>         Discountinuities in the value of this counter can occur<br>         upon cold start or reinitialization of the NTP entity, the<br>         management system and at other times as indicated by<br>         discontinuities in the value of sysUpTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-36"></a>rfc5907-36</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of NTP messages delivered to the<br>         transport service by this NTP entity.<br>         Discountinuities in the value of this counter can occur<br>         upon cold start or reinitialization of the NTP entity, the<br>         management system and at other times as indicated by<br>         discontinuities in the value of sysUpTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-37"></a>rfc5907-37</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of NTP messages that were delivered<br>         to this NTP entity and were for an unsupported NTP<br>         version.<br>         Discountinuities in the value of this counter can occur<br>         upon cold start or reinitialization of the NTP entity, the<br>         management system and at other times as indicated by<br>         discontinuities in the value of sysUpTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-38"></a>rfc5907-38</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of NTP messages that were delivered<br>         to this NTP entity and this entity was not able to<br>         process due to an NTP protocol error.<br>         Discountinuities in the value of this counter can occur<br>         upon cold start or reinitialization of the NTP entity, the<br>         management system and at other times as indicated by<br>         discontinuities in the value of sysUpTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-39"></a>rfc5907-39</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of SNMP notifications that this NTP<br>         entity has generated.<br>         Discountinuities in the value of this counter can occur<br>         upon cold start or reinitialization of the NTP entity, the<br>         management system and at other times as indicated by<br>         discontinuities in the value of sysUpTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-40"></a>rfc5907-40</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of packets sent and received by packet mode.<br>         One entry per packet mode.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-41"></a>rfc5907-41</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A statistical record of the number of packets sent and<br>         received for each packet mode.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-42"></a>rfc5907-42</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-43"></a>rfc5907-43</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The NTP packet mode.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-44"></a>rfc5907-44</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of NTP packets sent with this packet mode.<br>         Discountinuities in the value of this counter can occur<br>         upon cold start or reinitialization of the NTP entity, the<br>         management system and at other times as indicated by<br>         discontinuities in the value of sysUpTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-45"></a>rfc5907-45</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of NTP packets received with this packet mode.<br><br>         Discountinuities in the value of this counter can occur<br>         upon cold start or reinitialization of the NTP entity, the<br>         management system and at other times as indicated by<br>         discontinuities in the value of sysUpTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-46"></a>rfc5907-46</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>Section 3: The status of all currently mobilized associations</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-47"></a>rfc5907-47</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The table of currently mobilized associations.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-48"></a>rfc5907-48</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The table entry of currently mobilized associations.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-49"></a>rfc5907-49</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-50"></a>rfc5907-50</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The association ID.  This is an internal, unique ID.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-51"></a>rfc5907-51</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The hostname or other descriptive name for the association.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-52"></a>rfc5907-52</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The refclock driver ID, if available.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-53"></a>rfc5907-53</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The type of address of the association.  Can be either IPv4 or<br>         IPv6 (both with or without zone index) and contains the type of<br>         address for unicast, multicast, and broadcast associations.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-54"></a>rfc5907-54</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The IP address (IPv4 or IPv6, with or without zone index) of<br>         the association.  The type and size depends on the<br>         ntpAssocAddressType object.  Represents the IP address of a<br>         uni/multi/broadcast association.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-55"></a>rfc5907-55</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The time offset to the association as a string.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-56"></a>rfc5907-56</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The association stratum value.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-57"></a>rfc5907-57</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The jitter in milliseconds as a string.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-58"></a>rfc5907-58</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The network delay in milliseconds as a string.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-59"></a>rfc5907-59</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The root dispersion of the association.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-60"></a>rfc5907-60</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The table of statistics for current associations.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-61"></a>rfc5907-61</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The table entry of statistics for current associations.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-62"></a>rfc5907-62</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-63"></a>rfc5907-63</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of NTP messages delivered to the<br>         NTP entity from this association.<br>         Discountinuities in the value of this counter can occur<br>         upon cold start or reinitialization of the NTP entity, the<br>         management system and at other times as indicated by<br>         discontinuities in the value of sysUpTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-64"></a>rfc5907-64</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of NTP messages delivered to the<br>         transport service by this NTP entity for this<br>         association.<br>         Discountinuities in the value of this counter can occur<br>         upon cold start or reinitialization of the NTP entity, the<br>         management system and at other times as indicated by<br>         discontinuities in the value of sysUpTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-65"></a>rfc5907-65</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of NTP messages that were delivered<br>         to this NTP entity from this association and this entity<br>         was not able to process due to an NTP protocol error.<br>         Discountinuities in the value of this counter can occur<br>         upon cold start or reinitialization of the NTP entity, the<br>         management system and at other times as indicated by<br>         discontinuities in the value of sysUpTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-66"></a>rfc5907-66</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>Section 4: Control objects</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-67"></a>rfc5907-67</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The interval at which the ntpEntNotifHeartbeat notification<br>         should be sent, in seconds.  If set to 0 and the<br>         entNotifHeartbeat bit in ntpEntNotifBits is 1, then<br>         ntpEntNotifHeartbeat is sent once.<br>         This value is stored persistently and will be restored to its<br>         last set value upon cold start or restart.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-68"></a>rfc5907-68</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A bit for each notification.  A 1 for a particular bit enables<br>         that particular notification, a 0 disables it.<br>         This value is stored persistently and will be restored to its<br>         last set value upon cold start or restart.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-69"></a>rfc5907-69</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>Section 5: Notification objects</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-70"></a>rfc5907-70</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Used as a payload object for all notifications.  Holds a<br>         cleartext event message.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-71"></a>rfc5907-71</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>SNMP notification definitions</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-72"></a>rfc5907-72</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-73"></a>rfc5907-73</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The notification to be sent when the NTP entity changes mode,<br>         including starting and stopping (if possible).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-74"></a>rfc5907-74</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The notification to be sent when stratum level of NTP changes.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-75"></a>rfc5907-75</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The notification to be sent when a (new) syspeer has been<br>         selected.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-76"></a>rfc5907-76</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The notification to be sent when a new association is<br>         mobilized.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-77"></a>rfc5907-77</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The notification to be sent when an association is<br>         demobilized.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-78"></a>rfc5907-78</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The notification to be sent when the NTP configuration has<br>         changed, e.g., when the system connected to the Internet and<br>         was assigned a new IP address by the ISPs DHCP server.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-79"></a>rfc5907-79</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The notification to be sent when a leap second has been<br>         announced.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-80"></a>rfc5907-80</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The notification to be sent periodically (as defined by<br>         ntpEntHeartbeatInterval) to indicate that the NTP entity is<br>         still alive.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-81"></a>rfc5907-81</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>Conformance/Compliance statements</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-82"></a>rfc5907-82</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-83"></a>rfc5907-83</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-84"></a>rfc5907-84</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-85"></a>rfc5907-85</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The compliance statement for SNMP entities that use NTP and<br>         implement the NTP MIB.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-86"></a>rfc5907-86</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Optional notifications for this MIB.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-87"></a>rfc5907-87</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects for the NTP MIB.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-88"></a>rfc5907-88</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects for the NTP MIB.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc5907-89"></a>rfc5907-89</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+  </div>
+							</div>
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://iso-tc204.github.io/iso24315p1/">Website Content:</a> <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p></li>
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>Portions subject to ISO copyright. This website is not an ISO International Standard. It is provided to facilitate efforts to review and comment on the current draft. It is subject to change without notice and may not be referred to as an International Standard.</li>
+								<li>Users of this website are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</li>
+							</ul>
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>

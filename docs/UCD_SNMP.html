@@ -1,0 +1,3557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WG9-UCD_SNMP: UCD-SNMP-MIB</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="jq/jquery-ui.css" rel="stylesheet">
+	<script src="external/jquery/jquery.js"></script>
+	<script src="jq/jquery-ui.js"></script>
+	<script src="assets/js/columns.js"></script>
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" style="position: static;">
+						<h2><a href="index.html">NTCIP</a><img src="images/car_wifi.png" style="width: 2em;" /></h2>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="metr_overview.html">Overview</a></li>
+								<li><a href="development.html">Development Approach</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<div class="inner">
+						<div class="controls-container">
+							<div class="controls">
+           						<label><input type="checkbox" checked data-column="0">ID</label>
+           						<label><input type="checkbox" checked data-column="1">Description</label>
+           						<label><input type="checkbox" checked data-column="2">Attributes</label>
+           						<label><input type="checkbox" checked data-column="3">Discussion</label>
+           						<label><input type="checkbox" checked data-column="4">Links</label>
+       						</div>
+						</div>
+					</div>
+			</div>
+<div class="content">
+						<table>
+							<tr>
+								<td><h1>WG9<br />UCD_SNMP: UCD-SNMP-MIB</h1><br />    <em>Last modified on 2024-07-24 16:47</em></td>
+								<td width="390px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/ite-org/NTCIPReqView/issues" class="button primary">Submit Comment</a><br /></span>Traceability Tables: <div class="tab">
+									<button onclick="location.href='NTCIP_1203.html'" title="NTCIP 1203">DMS</button>
+									<button onclick="location.href='NTCIP_1204.html'" title="NTCIP 1204">ESS</button>
+									<button onclick="location.href='NTCIP_1218.html'" title="NTCIP 1218">RSU</button>
+									<button onclick="location.href='26048_1.html'" title="ISO 26048-1">Global</button>
+									</div>
+								</td>
+							</tr>
+						</table>
+<div class="reqviewTable table-responsive-md">
+    <table class="table table-sm resizable">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="header-cell resizable-header"><i class="fas fa-asterisk"></i>ID<div class="resizer"></div></th>
+          <th class="header-cell resizable-header"><i class="fas fa-align-left"></i>Description<div class="resizer"></div></th>
+		  <th class="header-cell resizable-header"><i class="fas fa-align-left"></i>Attributes<div class="resizer"></div></th>
+          <th class="header-cell resizable-header"><i class="fas fa-comments"></i>Discussion<div class="resizer"></div></th>
+          <th class="header-cell resizable-header"><i class="fas fa-link"></i>Links<div class="resizer"></div></th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr> 
+			<td><a id="UCD_SNMP-1"></a>UCD_SNMP-1</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>Design notes:</p><p></p><p>The design of this mib may seem unusual in parts, as it was</p><p>designed for ease of numerical management routines.</p><p></p><p>In that light, most sub-sections of this mib have four common</p><p>numerical oid consistencies:</p><p></p><p>2021.ID.1   : an integer index value.  In scalers, this is always</p><p>              of value 1.  In tables it is a row index.</p><p>2021.ID.2   : a name of the script, process, etc. that this row represents.</p><p>2021.ID.100 : An error flag indicating if an error is present on</p><p>              that row (a threshold value was crossed, etc).</p><p>2021.ID.101 : An error string describing why the error flag is non-0.</p><p></p><p>These conventions enable managers to easy examine portions of the</p><p>mib by setting the ID to the sub-section they are interested in</p><p>monitoring, and then scanning the .100 value to check for an</p><p>error(s), and get a more specific error message from .101 for the</p><p>named check found in .2.</p><p></p><p>Row numbers between 2 and 100 are sub-section specific.</p><p></p><p>Mib sections utilizing the above conventions:</p><p>  Tables:   procTable, execTable, diskTable, loadTable</p><p>  Scalers:  memory, snmperrs</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-2"></a>UCD_SNMP-2</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><pre>    OBJECT-TYPE, NOTIFICATION-TYPE, MODULE-IDENTITY,<br>    Integer32, Opaque, enterprises, Counter32, Unsigned32<br>        FROM SNMPv2-SMI<br><br>    CounterBasedGauge64<br>        FROM HCNUM-TC<br><br>    TEXTUAL-CONVENTION, DisplayString, TruthValue<br>	FROM SNMPv2-TC;</pre></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-3"></a>UCD_SNMP-3</td>
+							<td style="padding-left:10px">
+					<h1>1</h1>
+					<div class="htmlContent">This file defines the private UCD SNMP MIB extensions.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-4"></a>UCD_SNMP-4</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">Add new memSysAvail object</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-5"></a>UCD_SNMP-5</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">New 64-bit memory objects</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-6"></a>UCD_SNMP-6</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">New object for number of CPUs as counted by the agent</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-7"></a>UCD_SNMP-7</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">New objects for monitoring CPU Steal, Guest and Nice values</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-8"></a>UCD_SNMP-8</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">New 64-bit objects for monitoring large disk usage</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-9"></a>UCD_SNMP-9</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">Clarify behaviour of objects in the memory &amp; systemStats groups<br>         (including updated versions of malnamed mem*Text objects).<br>         Define suitable TCs to describe error reporting/fix behaviour.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-10"></a>UCD_SNMP-10</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">Added ssCpuRawSoftIRQ for Linux (2.6) and forgotten raw swap counters.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-11"></a>UCD_SNMP-11</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">Deprecate the non-raw objects.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-12"></a>UCD_SNMP-12</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">Group to monitor log files</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-13"></a>UCD_SNMP-13</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">Added raw CPU and IO counters.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-14"></a>UCD_SNMP-14</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">SMIv2 version converted from older MIB definitions.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-15"></a>UCD_SNMP-15</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>Current UCD core mib table entries:</p><p>  prTable          OBJECT IDENTIFIER ::= { ucdavis   2 }</p><p>  memory           OBJECT IDENTIFIER ::= { ucdavis   4 }</p><p>  extTable         OBJECT IDENTIFIER ::= { ucdavis   8 }</p><p>  diskTable        OBJECT IDENTIFIER ::= { ucdavis   9 }</p><p>  loadTable        OBJECT IDENTIFIER ::= { ucdavis  10 }</p><p>  systemStats      OBJECT IDENTIFIER ::= { ucdavis  11 }</p><p>  ucdDemoMIB       OBJECT IDENTIFIER ::= { ucdavis  14 } - UCD-DEMO-MIB</p><p>  fileTable        OBJECT IDENTIFIER ::= { ucdavis  15 }</p><p>  logMatch         OBJECT IDENTIFIER ::= { ucdavis  16 }</p><p>  version          OBJECT IDENTIFIER ::= { ucdavis 100 }</p><p>  snmperrs         OBJECT IDENTIFIER ::= { ucdavis 101 }</p><p>  mibRegistryTable OBJECT IDENTIFIER ::= { ucdavis 102 }</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-16"></a>UCD_SNMP-16</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>Older mib table entries that were changed to new locations above:</p><p>  processes        OBJECT IDENTIFIER ::= { ucdavis   1 }</p><p>  exec             OBJECT IDENTIFIER ::= { ucdavis   3 }</p><p>  disk             OBJECT IDENTIFIER ::= { ucdavis   6 }</p><p>  load             OBJECT IDENTIFIER ::= { ucdavis   7 }</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-17"></a>UCD_SNMP-17</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>Never implemented and removed from the mib:</p><p>  lockd            OBJECT IDENTIFIER ::= { ucdavis   5 }</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-18"></a>UCD_SNMP-18</td>
+							<td style="padding-left:10px">
+					<h1>2&nbsp;Branches for registering other UCD MIB modules:</h1>
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-19"></a>UCD_SNMP-19</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-20"></a>UCD_SNMP-20</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>OID values assigned in the ucdExperimental branch:</p><p>  ucdIpFwAccMIB    OBJECT IDENTIFIER ::= { ucdExperimental  1 } - UCD-IPFWACC-MIB</p><p>  ucdIpFilter      OBJECT IDENTIFIER ::= { ucdExperimental  2 } - UCD-IPFILTER-MIB</p><p>  wavelan          OBJECT IDENTIFIER ::= { ucdExperimental  3 } - WL-MIB</p><p>  ucdDlmodMIB      OBJECT IDENTIFIER ::= { ucdExperimental 14 } - UCD-DLMOD-MIB</p><p>  ucdDiskIOMIB     OBJECT IDENTIFIER ::= { ucdExperimental 15 } - UCD-DISKIO-MIB</p><p>  lmSensors        OBJECT IDENTIFIER ::= { ucdExperimental 16 } - LM-SENSORS-MIB</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-21"></a>UCD_SNMP-21</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>These are the old returned values of the agent type.</p><p>originally returned to:  .iso.org.dod.internet.mgmt.mib-2.system.sysObjectID.0</p><p>Current versions of the agent return an equivalent OID from the netSnmpAgentOIDs</p><p>tree (defined in NET-SNMP-TC), which includes values for some additional O/Ss</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-22"></a>UCD_SNMP-22</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-23"></a>UCD_SNMP-23</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-24"></a>UCD_SNMP-24</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-25"></a>UCD_SNMP-25</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-26"></a>UCD_SNMP-26</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-27"></a>UCD_SNMP-27</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-28"></a>UCD_SNMP-28</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-29"></a>UCD_SNMP-29</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-30"></a>UCD_SNMP-30</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-31"></a>UCD_SNMP-31</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-32"></a>UCD_SNMP-32</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-33"></a>UCD_SNMP-33</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-34"></a>UCD_SNMP-34</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-35"></a>UCD_SNMP-35</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-36"></a>UCD_SNMP-36</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-37"></a>UCD_SNMP-37</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-38"></a>UCD_SNMP-38</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-39"></a>UCD_SNMP-39</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-40"></a>UCD_SNMP-40</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-41"></a>UCD_SNMP-41</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>Define the Float Textual Convention</p><p>  This definition was written by David Perkins.</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-42"></a>UCD_SNMP-42</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A single precision floating-point number.  The semantics<br>         and encoding are identical for type 'single' defined in<br>         IEEE Standard for Binary Floating-Point,<br>         ANSI/IEEE Std 754-1985.<br>         The value is restricted to the BER serialization of<br>         the following ASN.1 type:<br>             FLOATTYPE ::= [120] IMPLICIT FloatType<br>         (note: the value 120 is the sum of '30'h and '48'h)<br>         The BER serialization of the length for values of<br>         this type must use the definite length, short<br>         encoding form.<br><br>         For example, the BER serialization of value 123<br>         of type FLOATTYPE is '9f780442f60000'h.  (The tag<br>         is '9f78'h; the length is '04'h; and the value is<br>         '42f60000'h.) The BER serialization of value<br>         '9f780442f60000'h of data type Opaque is<br>         '44079f780442f60000'h. (The tag is '44'h; the length<br>         is '07'h; and the value is '9f780442f60000'h.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-43"></a>UCD_SNMP-43</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Represents a possible error condition</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-44"></a>UCD_SNMP-44</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Represents a 'push-button' object, to invoke a suitable<br>         configured action.  Will always return 0 when read.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-45"></a>UCD_SNMP-45</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>Process table checks</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-46"></a>UCD_SNMP-46</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A table containing information on running<br>  programs/daemons configured for monitoring in the<br>  snmpd.conf file of the agent.  Processes violating the<br>  number of running processes required by the agent's<br>  configuration file are flagged with numerical and<br>  textual errors.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-47"></a>UCD_SNMP-47</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An entry containing a process and its statistics.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-48"></a>UCD_SNMP-48</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-49"></a>UCD_SNMP-49</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Reference Index for each observed process.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-50"></a>UCD_SNMP-50</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The process name we're counting/checking on.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-51"></a>UCD_SNMP-51</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The minimum number of processes that should be<br>  running.  An error flag is generated if the number of<br>  running processes is &lt; the minimum.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-52"></a>UCD_SNMP-52</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The maximum number of processes that should be<br>  running.  An error flag is generated if the number of<br>  running processes is &gt; the maximum.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-53"></a>UCD_SNMP-53</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of current processes running with the name<br>  in question.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-54"></a>UCD_SNMP-54</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A Error flag to indicate trouble with a process.  It<br>  goes to 1 if there is an error, 0 if no error.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-55"></a>UCD_SNMP-55</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An error message describing the problem (if one exists).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-56"></a>UCD_SNMP-56</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Setting this to one will try to fix the problem if<br>  the agent has been configured with a script to call<br>  to attempt to fix problems automatically using remote<br>  snmp operations.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-57"></a>UCD_SNMP-57</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The command that gets run when the prErrFix column is <br>  set to 1.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-58"></a>UCD_SNMP-58</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A table of extensible commands returning output and<br>  result codes.  These commands are configured via the<br>  agent's snmpd.conf file.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-59"></a>UCD_SNMP-59</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An entry containing an extensible script/program and its output.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-60"></a>UCD_SNMP-60</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-61"></a>UCD_SNMP-61</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Reference Index for extensible scripts.  Simply an<br>  integer row number.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-62"></a>UCD_SNMP-62</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A Short, one name description of the extensible command.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-63"></a>UCD_SNMP-63</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The command line to be executed.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-64"></a>UCD_SNMP-64</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The result code (exit status) from the executed command.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-65"></a>UCD_SNMP-65</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The first line of output of the executed command.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-66"></a>UCD_SNMP-66</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Setting this to one will try to fix the problem if<br>  the agent has been configured with a script to call<br>  to attempt to fix problems automatically using remote<br>  snmp operations.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-67"></a>UCD_SNMP-67</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The command that gets run when the extErrFix column is <br>  set to 1.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-68"></a>UCD_SNMP-68</td>
+							<td style="padding-left:10px">
+					<h1>3&nbsp; Memory usage/watch reporting. Not supported on all systems! See agent/mibgroup/ucd_snmp.h to see if its loaded for your architecture. </h1>
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-69"></a>UCD_SNMP-69</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Bogus Index.  This should always return the integer 0.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-70"></a>UCD_SNMP-70</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Bogus Name. This should always return the string 'swap'.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-71"></a>UCD_SNMP-71</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of swap space configured for this host.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-72"></a>UCD_SNMP-72</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The amount of swap space currently unused or available.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-73"></a>UCD_SNMP-73</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of real/physical memory installed<br>         on this host.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-74"></a>UCD_SNMP-74</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The amount of real/physical memory currently unused<br>         or available.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-75"></a>UCD_SNMP-75</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of swap space or virtual memory allocated<br>         for text pages on this host.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not distinguish text<br>         pages from other uses of swap space or virtual memory.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-76"></a>UCD_SNMP-76</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The amount of swap space or virtual memory currently<br>         being used by text pages on this host.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not distinguish text<br>         pages from other uses of swap space or virtual memory.<br><br>         Note that (despite the name), this value reports the<br>         amount used, rather than the amount free or available<br>         for use.  For clarity, this object is being deprecated<br>         in favour of 'memUsedSwapTXT(16).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-77"></a>UCD_SNMP-77</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of real/physical memory allocated<br>         for text pages on this host.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not distinguish text<br>         pages from other uses of physical memory.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-78"></a>UCD_SNMP-78</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The amount of real/physical memory currently being<br>         used by text pages on this host.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not distinguish text<br>         pages from other uses of physical memory.<br><br>         Note that (despite the name), this value reports the<br>         amount used, rather than the amount free or available<br>         for use.  For clarity, this object is being deprecated<br>         in favour of 'memUsedRealTXT(17).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-79"></a>UCD_SNMP-79</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of memory free or available for use on<br>         this host.  This value typically covers both real memory<br>         and swap space or virtual memory.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Report Amount of Free Memory"> <span><a href="NTCIP_1218.html#NTCIP_1218-910">NTCIP_1218-910</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-80"></a>UCD_SNMP-80</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The minimum amount of swap space expected to be kept<br>         free or available during normal operation of this host.<br><br>         If this value (as reported by 'memAvailSwap(4)') falls<br>         below the specified level, then 'memSwapError(100)' will<br>         be set to 1 and an error message made available via<br>         'memSwapErrorMsg(101)'.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-81"></a>UCD_SNMP-81</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of real or virtual memory currently<br>         allocated for use as shared memory.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not explicitly identify<br>         memory as specifically reserved for this purpose.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-82"></a>UCD_SNMP-82</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of real or virtual memory currently<br>         allocated for use as memory buffers.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not explicitly identify<br>         memory as specifically reserved for this purpose.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-83"></a>UCD_SNMP-83</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of real or virtual memory currently<br>         allocated for use as cached memory.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not explicitly identify<br>         memory as specifically reserved for this purpose.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-84"></a>UCD_SNMP-84</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The amount of swap space or virtual memory currently<br>         being used by text pages on this host.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not distinguish text<br>         pages from other uses of swap space or virtual memory.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-85"></a>UCD_SNMP-85</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The amount of real/physical memory currently being<br>         used by text pages on this host.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not distinguish text<br>         pages from other uses of physical memory.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-86"></a>UCD_SNMP-86</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of swap space configured for this host.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-87"></a>UCD_SNMP-87</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The amount of swap space currently unused or available.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-88"></a>UCD_SNMP-88</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of real/physical memory installed<br>         on this host.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-89"></a>UCD_SNMP-89</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The amount of real/physical memory currently unused<br>         or available.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-90"></a>UCD_SNMP-90</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of memory free or available for use on<br>         this host.  This value typically covers both real memory<br>         and swap space or virtual memory.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-91"></a>UCD_SNMP-91</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The minimum amount of swap space expected to be kept<br>         free or available during normal operation of this host.<br><br>         If this value (as reported by 'memAvailSwap(4)') falls<br>         below the specified level, then 'memSwapError(100)' will<br>         be set to 1 and an error message made available via<br>         'memSwapErrorMsg(101)'.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-92"></a>UCD_SNMP-92</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of real or virtual memory currently<br>         allocated for use as shared memory.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not explicitly identify<br>         memory as specifically reserved for this purpose.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-93"></a>UCD_SNMP-93</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of real or virtual memory currently<br>         allocated for use as memory buffers.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not explicitly identify<br>         memory as specifically reserved for this purpose.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-94"></a>UCD_SNMP-94</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of real or virtual memory currently<br>         allocated for use as cached memory.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not explicitly identify<br>         memory as specifically reserved for this purpose.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-95"></a>UCD_SNMP-95</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total amount of available memory, which is an estimate<br>         of how much memory is available for starting new applications,<br>         without swapping.<br><br>         This object will not be implemented on hosts where the<br>         underlying operating system does not explicitly identify<br>         memory as specifically reserved for this purpose.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-96"></a>UCD_SNMP-96</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Indicates whether the amount of available swap space<br>         (as reported by 'memAvailSwap(4)'), is less than the<br>         desired minimum (specified by 'memMinimumSwap(12)').</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-97"></a>UCD_SNMP-97</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Describes whether the amount of available swap space<br>         (as reported by 'memAvailSwap(4)'), is less than the<br>         desired minimum (specified by 'memMinimumSwap(12)').</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-98"></a>UCD_SNMP-98</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Disk watching information.  Partions to be watched<br>  are configured by the snmpd.conf file of the agent.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Report Storage Space Available"> <span><a href="NTCIP_1218.html#NTCIP_1218-920">NTCIP_1218-920</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-99"></a>UCD_SNMP-99</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An entry containing a disk and its statistics.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-100"></a>UCD_SNMP-100</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-101"></a>UCD_SNMP-101</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Integer reference number (row number) for the disk mib.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies with note:</div>
+                <div class="link" title="Report Storage Space Available"> <span><a href="NTCIP_1218.html#NTCIP_1218-920">NTCIP_1218-920</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-102"></a>UCD_SNMP-102</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Path where the disk is mounted.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-103"></a>UCD_SNMP-103</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Path of the device for the partition</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-104"></a>UCD_SNMP-104</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Minimum space required on the disk (in kBytes) before the<br>         errors are triggered.  Either this or dskMinPercent is<br>         configured via the agent's snmpd.conf file.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-105"></a>UCD_SNMP-105</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Percentage of minimum space required on the disk before the<br>         errors are triggered.  Either this or dskMinimum is<br>         configured via the agent's snmpd.conf file.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-106"></a>UCD_SNMP-106</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Total size of the disk/partion (kBytes).<br>  For large disks (&gt;2Tb), this value will<br>  latch at INT32_MAX (2147483647).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-107"></a>UCD_SNMP-107</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Available space on the disk.<br>  For large lightly-used disks (&gt;2Tb), this<br>  value will latch at INT32_MAX (2147483647).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Report Storage Space Available"> <span><a href="NTCIP_1218.html#NTCIP_1218-920">NTCIP_1218-920</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-108"></a>UCD_SNMP-108</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Used space on the disk.<br>  For large heavily-used disks (&gt;2Tb), this<br>  value will latch at INT32_MAX (2147483647).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-109"></a>UCD_SNMP-109</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Percentage of space used on disk</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-110"></a>UCD_SNMP-110</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Percentage of inodes used on disk</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-111"></a>UCD_SNMP-111</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Total size of the disk/partion (kBytes).<br> Together with dskTotalHigh composes 64-bit number.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-112"></a>UCD_SNMP-112</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Total size of the disk/partion (kBytes).<br> Together with dskTotalLow composes 64-bit number.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-113"></a>UCD_SNMP-113</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Available space on the disk (kBytes).<br> Together with dskAvailHigh composes 64-bit number.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-114"></a>UCD_SNMP-114</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Available space on the disk (kBytes).<br> Together with dskAvailLow composes 64-bit number.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-115"></a>UCD_SNMP-115</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Used space on the disk (kBytes).<br> Together with dskUsedHigh composes 64-bit number.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-116"></a>UCD_SNMP-116</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Used space on the disk (kBytes).<br> Together with dskUsedLow composes 64-bit number.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-117"></a>UCD_SNMP-117</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Error flag signaling that the disk or partition is under<br>  the minimum required space configured for it.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-118"></a>UCD_SNMP-118</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A text description providing a warning and the space left<br>  on the disk.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-119"></a>UCD_SNMP-119</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Load average information.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Report CPU Load Average - 15 Minutes"> <span><a href="NTCIP_1218.html#NTCIP_1218-914">NTCIP_1218-914</a></span> </div>
+                <div class="link" title="Report CPU Load Average - 5 Minutes"> <span><a href="NTCIP_1218.html#NTCIP_1218-916">NTCIP_1218-916</a></span> </div>
+                <div class="link" title="Report CPU Load Average - 1 Minute"> <span><a href="NTCIP_1218.html#NTCIP_1218-918">NTCIP_1218-918</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-120"></a>UCD_SNMP-120</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An entry containing a load average and its values.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-121"></a>UCD_SNMP-121</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-122"></a>UCD_SNMP-122</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">reference index/row number for each observed loadave.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies with note:</div>
+                <div class="link" title="Report CPU Load Average - 15 Minutes"> <span><a href="NTCIP_1218.html#NTCIP_1218-914">NTCIP_1218-914</a></span> </div>
+                <div class="link" title="Report CPU Load Average - 5 Minutes"> <span><a href="NTCIP_1218.html#NTCIP_1218-916">NTCIP_1218-916</a></span> </div>
+                <div class="link" title="Report CPU Load Average - 1 Minute"> <span><a href="NTCIP_1218.html#NTCIP_1218-918">NTCIP_1218-918</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-123"></a>UCD_SNMP-123</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The list of loadave names we're watching.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-124"></a>UCD_SNMP-124</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The 1,5 and 15 minute load averages (one per row).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Report CPU Load Average - 15 Minutes"> <span><a href="NTCIP_1218.html#NTCIP_1218-914">NTCIP_1218-914</a></span> </div>
+                <div class="link" title="Report CPU Load Average - 5 Minutes"> <span><a href="NTCIP_1218.html#NTCIP_1218-916">NTCIP_1218-916</a></span> </div>
+                <div class="link" title="Report CPU Load Average - 1 Minute"> <span><a href="NTCIP_1218.html#NTCIP_1218-918">NTCIP_1218-918</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-125"></a>UCD_SNMP-125</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The watch point for load-averages to signal an<br>  error.  If the load averages rises above this value,<br>  the laErrorFlag below is set.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-126"></a>UCD_SNMP-126</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The 1,5 and 15 minute load averages as an integer.<br>  This is computed by taking the floating point<br>  loadaverage value and multiplying by 100, then<br>  converting the value to an integer.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-127"></a>UCD_SNMP-127</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The 1,5 and 15 minute load averages as an opaquely<br>  wrapped floating point number.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-128"></a>UCD_SNMP-128</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A Error flag to indicate the load-average has crossed<br>  its threshold value defined in the snmpd.conf file.<br>  It is set to 1 if the threshold is crossed, 0 otherwise.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-129"></a>UCD_SNMP-129</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An error message describing the load-average and its<br>  surpased watch-point value.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-130"></a>UCD_SNMP-130</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-131"></a>UCD_SNMP-131</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Index to mib (always 0)</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-132"></a>UCD_SNMP-132</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">CVS tag keyword</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-133"></a>UCD_SNMP-133</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Date string from RCS keyword</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-134"></a>UCD_SNMP-134</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Date string from ctime() </div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-135"></a>UCD_SNMP-135</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Id string from RCS keyword</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-136"></a>UCD_SNMP-136</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Options passed to the configure script when this agent was built.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-137"></a>UCD_SNMP-137</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Set to 1 to clear the exec cache, if enabled</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-138"></a>UCD_SNMP-138</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Set to 1 to read-read the config file(s).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-139"></a>UCD_SNMP-139</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Set to 1 to restart the agent.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-140"></a>UCD_SNMP-140</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Set to 1 to force the agent to save it's persistent data immediately.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-141"></a>UCD_SNMP-141</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Set to 1 to turn debugging statements on in the agent or 0<br>  to turn it off.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-142"></a>UCD_SNMP-142</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-143"></a>UCD_SNMP-143</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Bogus Index for snmperrs (always 0).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-144"></a>UCD_SNMP-144</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">snmp</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-145"></a>UCD_SNMP-145</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A Error flag to indicate trouble with the agent.  It<br>  goes to 1 if there is an error, 0 if no error.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-146"></a>UCD_SNMP-146</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An error message describing the problem (if one exists).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-147"></a>UCD_SNMP-147</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A table displaying all the oid's registered by mib modules in<br>  the agent.  Since the agent is modular in nature, this lists<br>  each module's OID it is responsible for and the name of the module</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-148"></a>UCD_SNMP-148</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An entry containing a registered mib oid.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-149"></a>UCD_SNMP-149</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-150"></a>UCD_SNMP-150</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The registry slot of a mibmodule.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-151"></a>UCD_SNMP-151</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The module name that registered this OID.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-152"></a>UCD_SNMP-152</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-153"></a>UCD_SNMP-153</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Bogus Index.  This should always return the integer 1.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-154"></a>UCD_SNMP-154</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Bogus Name. This should always return the string 'systemStats'.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-155"></a>UCD_SNMP-155</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The average amount of memory swapped in from disk,<br>         calculated over the last minute.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-156"></a>UCD_SNMP-156</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The average amount of memory swapped out to disk,<br>         calculated over the last minute.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-157"></a>UCD_SNMP-157</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The average amount of data written to disk or other<br>         block device, calculated over the last minute.<br>       <br>  This object has been deprecated in favour of<br>         'ssIORawSent(57)', which can be used to calculate<br>         the same metric, but over any desired time period.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-158"></a>UCD_SNMP-158</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The average amount of data read from disk or other<br>         block device, calculated over the last minute.<br>       <br>  This object has been deprecated in favour of<br>         'ssIORawReceived(58)', which can be used to calculate<br>         the same metric, but over any desired time period.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-159"></a>UCD_SNMP-159</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The average rate of interrupts processed (including<br>         the clock) calculated over the last minute.<br>       <br>  This object has been deprecated in favour of<br>         'ssRawInterrupts(59)', which can be used to calculate<br>         the same metric, but over any desired time period.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-160"></a>UCD_SNMP-160</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The average rate of context switches,<br>         calculated over the last minute.<br>       <br>  This object has been deprecated in favour of<br>         'ssRawContext(60)', which can be used to calculate<br>         the same metric, but over any desired time period.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-161"></a>UCD_SNMP-161</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The percentage of CPU time spent processing<br>         user-level code, calculated over the last minute.<br>       <br>  This object has been deprecated in favour of<br>         'ssCpuRawUser(50)', which can be used to calculate<br>         the same metric, but over any desired time period.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Report Instantaneous CPU Load"> <span><a href="NTCIP_1218.html#NTCIP_1218-912">NTCIP_1218-912</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-162"></a>UCD_SNMP-162</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The percentage of CPU time spent processing<br>         system-level code, calculated over the last minute.<br>       <br>  This object has been deprecated in favour of<br>         'ssCpuRawSystem(52)', which can be used to calculate<br>         the same metric, but over any desired time period.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Report Instantaneous CPU Load"> <span><a href="NTCIP_1218.html#NTCIP_1218-912">NTCIP_1218-912</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-163"></a>UCD_SNMP-163</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The percentage of processor time spent idle,<br>         calculated over the last minute.<br>       <br>  This object has been deprecated in favour of<br>         'ssCpuRawIdle(53)', which can be used to calculate<br>         the same metric, but over any desired time period.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-164"></a>UCD_SNMP-164</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>The agent only implements those of the following counters that the</p><p>kernel supports! Don't expect all to be present.</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-165"></a>UCD_SNMP-165</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of 'ticks' (typically 1/100s) spent<br>         processing user-level code.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-166"></a>UCD_SNMP-166</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of 'ticks' (typically 1/100s) spent<br>         processing reduced-priority code.<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-167"></a>UCD_SNMP-167</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of 'ticks' (typically 1/100s) spent<br>         processing system-level code.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).<br><br>         This object may sometimes be implemented as the<br>         combination of the 'ssCpuRawWait(54)' and<br>         'ssCpuRawKernel(55)' counters, so care must be<br>         taken when summing the overall raw counters.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-168"></a>UCD_SNMP-168</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of 'ticks' (typically 1/100s) spent<br>         idle.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-169"></a>UCD_SNMP-169</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of 'ticks' (typically 1/100s) spent<br>         waiting for IO.<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.  This time may also be<br>         included within the 'ssCpuRawSystem(52)' counter.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-170"></a>UCD_SNMP-170</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of 'ticks' (typically 1/100s) spent<br>         processing kernel-level code.<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.  This time may also be<br>         included within the 'ssCpuRawSystem(52)' counter.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-171"></a>UCD_SNMP-171</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of 'ticks' (typically 1/100s) spent<br>         processing hardware interrupts.<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-172"></a>UCD_SNMP-172</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Number of blocks sent to a block device</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-173"></a>UCD_SNMP-173</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Number of blocks received from a block device</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-174"></a>UCD_SNMP-174</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Number of interrupts processed</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-175"></a>UCD_SNMP-175</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Number of context switches</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-176"></a>UCD_SNMP-176</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of 'ticks' (typically 1/100s) spent<br>         processing software interrupts.<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-177"></a>UCD_SNMP-177</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Number of blocks swapped in</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-178"></a>UCD_SNMP-178</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Number of blocks swapped out</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-179"></a>UCD_SNMP-179</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of 'ticks' (typically 1/100s) spent<br>         by the hypervisor code to run other VMs even<br>         though the CPU in the current VM had something runnable.<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-180"></a>UCD_SNMP-180</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of 'ticks' (typically 1/100s) spent<br>         by the CPU to run a virtual CPU (guest).<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-181"></a>UCD_SNMP-181</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of 'ticks' (typically 1/100s) spent<br>         by the CPU to run a niced virtual CPU (guest).<br><br>         This object will not be implemented on hosts where<br>         the underlying operating system does not measure<br>         this particular CPU metric.<br><br>         On a multi-processor system, the 'ssCpuRaw*'<br>         counters are cumulative over all CPUs, so their<br>         sum will typically be N*100 (for N processors).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-182"></a>UCD_SNMP-182</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of processors, as counted by the agent.<br>         This object's value may be useful in the management<br>         of certain operating systems where notions such as<br>         load average do not take into account the number of<br>         processors in the system.<br><br>         For other objects in the systemStats group whose<br>         descriptions refer to 'N processors', this object's<br>         value is N.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-183"></a>UCD_SNMP-183</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>possibly used in the future:</p><p></p><p>ssErrorFlag OBJECT-TYPE</p><p>    SYNTAX    UCDErrorFlag</p><p>    MAX-ACCESS  read-only</p><p>    STATUS      current</p><p>    DESCRIPTION</p><p>        "Error flag."</p><p>    ::= { systemStats 100 }</p><p></p><p>ssErrMessage OBJECT-TYPE</p><p>    SYNTAX      DisplayString</p><p>    MAX-ACCESS  read-only</p><p>    STATUS      current</p><p>    DESCRIPTION</p><p>        "Error message describing the errorflag condition."</p><p>    ::= { systemStats 101 }</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-184"></a>UCD_SNMP-184</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-185"></a>UCD_SNMP-185</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This trap could in principle be sent when the agent start</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-186"></a>UCD_SNMP-186</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This trap is sent when the agent terminates</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-187"></a>UCD_SNMP-187</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>File Table:  monitor a list of files to check for a maximum size.</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-188"></a>UCD_SNMP-188</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Table of monitored files.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-189"></a>UCD_SNMP-189</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Entry of file</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-190"></a>UCD_SNMP-190</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-191"></a>UCD_SNMP-191</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Index of file</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-192"></a>UCD_SNMP-192</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Filename</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-193"></a>UCD_SNMP-193</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Size of file (kB)</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-194"></a>UCD_SNMP-194</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Limit of filesize (kB)</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-195"></a>UCD_SNMP-195</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Limit exceeded flag</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-196"></a>UCD_SNMP-196</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Filesize error message</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-197"></a>UCD_SNMP-197</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-198"></a>UCD_SNMP-198</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The maximum number of logmatch entries<br> this snmpd daemon can support.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-199"></a>UCD_SNMP-199</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Table of monitored files.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-200"></a>UCD_SNMP-200</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Entry of file</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-201"></a>UCD_SNMP-201</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Index of logmatch</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-202"></a>UCD_SNMP-202</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">logmatch instance name</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-203"></a>UCD_SNMP-203</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">filename to be logmatched</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-204"></a>UCD_SNMP-204</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">regular expression</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-205"></a>UCD_SNMP-205</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">global count of matches</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-206"></a>UCD_SNMP-206</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Description.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-207"></a>UCD_SNMP-207</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Regex match counter. This counter will<br> be reset with each logfile rotation.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-208"></a>UCD_SNMP-208</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Description.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-209"></a>UCD_SNMP-209</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Regex match counter. This counter will<br> be reset with each read</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-210"></a>UCD_SNMP-210</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Description.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-211"></a>UCD_SNMP-211</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">time between updates (if not queried) in seconds</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-212"></a>UCD_SNMP-212</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">errorflag: is this line configured correctly?</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-213"></a>UCD_SNMP-213</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">message of regex precompilation</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="UCD_SNMP-214"></a>UCD_SNMP-214</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+  </div>
+							</div>
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://iso-tc204.github.io/iso24315p1/">Website Content:</a> <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p></li>
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>Portions subject to ISO copyright. This website is not an ISO International Standard. It is provided to facilitate efforts to review and comment on the current draft. It is subject to change without notice and may not be referred to as an International Standard.</li>
+								<li>Users of this website are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</li>
+							</ul>
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>

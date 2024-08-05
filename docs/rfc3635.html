@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WG9-rfc3635: EtherLike-MIB</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="jq/jquery-ui.css" rel="stylesheet">
+	<script src="external/jquery/jquery.js"></script>
+	<script src="jq/jquery-ui.js"></script>
+	<script src="assets/js/columns.js"></script>
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" style="position: static;">
+						<h2><a href="index.html">NTCIP</a><img src="images/car_wifi.png" style="width: 2em;" /></h2>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="metr_overview.html">Overview</a></li>
+								<li><a href="development.html">Development Approach</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<div class="inner">
+						<div class="controls-container">
+							<div class="controls">
+           						<label><input type="checkbox" checked data-column="0">ID</label>
+           						<label><input type="checkbox" checked data-column="1">Description</label>
+           						<label><input type="checkbox" checked data-column="2">Attributes</label>
+           						<label><input type="checkbox" checked data-column="3">Discussion</label>
+           						<label><input type="checkbox" checked data-column="4">Links</label>
+       						</div>
+						</div>
+					</div>
+			</div>
+<div class="content">
+						<table>
+							<tr>
+								<td><h1>WG9<br />rfc3635: EtherLike-MIB</h1><br />    <em>Last modified on 2024-07-24 16:42</em></td>
+								<td width="390px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/ite-org/NTCIPReqView/issues" class="button primary">Submit Comment</a><br /></span>Traceability Tables: <div class="tab">
+									<button onclick="location.href='NTCIP_1203.html'" title="NTCIP 1203">DMS</button>
+									<button onclick="location.href='NTCIP_1204.html'" title="NTCIP 1204">ESS</button>
+									<button onclick="location.href='NTCIP_1218.html'" title="NTCIP 1218">RSU</button>
+									<button onclick="location.href='26048_1.html'" title="ISO 26048-1">Global</button>
+									</div>
+								</td>
+							</tr>
+						</table>
+<div class="reqviewTable table-responsive-md">
+    <table class="table table-sm resizable">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="header-cell resizable-header"><i class="fas fa-asterisk"></i>ID<div class="resizer"></div></th>
+          <th class="header-cell resizable-header"><i class="fas fa-align-left"></i>Description<div class="resizer"></div></th>
+		  <th class="header-cell resizable-header"><i class="fas fa-align-left"></i>Attributes<div class="resizer"></div></th>
+          <th class="header-cell resizable-header"><i class="fas fa-comments"></i>Discussion<div class="resizer"></div></th>
+          <th class="header-cell resizable-header"><i class="fas fa-link"></i>Links<div class="resizer"></div></th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr> 
+			<td><a id="rfc3635-1"></a>rfc3635-1</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><pre>           MODULE-IDENTITY, OBJECT-TYPE, OBJECT-IDENTITY,<br>           Integer32, Counter32, Counter64, mib-2, transmission<br>               FROM SNMPv2-SMI<br>           MODULE-COMPLIANCE, OBJECT-GROUP<br>               FROM SNMPv2-CONF<br>           TruthValue<br>               FROM SNMPv2-TC<br>           ifIndex, InterfaceIndex<br>               FROM IF-MIB;</pre></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-2"></a>rfc3635-2</td>
+							<td style="padding-left:10px">
+					<h1>1</h1>
+					<div class="htmlContent">The MIB module to describe generic objects for<br>                       ethernet-like network interfaces.<br><br>                       The following reference is used throughout this<br>                       MIB module:<br><br>                       [IEEE 802.3 Std] refers to:<br>                          IEEE Std 802.3, 2002 Edition: 'IEEE Standard<br>                          for Information technology -<br>                          Telecommunications and information exchange<br>                          between systems - Local and metropolitan<br>                          area networks - Specific requirements -<br>                          Part 3: Carrier sense multiple access with<br>                          collision detection (CSMA/CD) access method<br>                          and physical layer specifications', as<br>                          amended by IEEE Std 802.3ae-2002:<br>                          'Amendment: Media Access Control (MAC)<br>                          Parameters, Physical Layer, and Management<br>                          Parameters for 10 Gb/s Operation', August,<br>                          2002.<br><br>                       Of particular interest is Clause 30, '10 Mb/s,<br>                       100 Mb/s, 1000 Mb/s, and 10 Gb/s Management'.<br><br>                       Copyright (C) The Internet Society (2003).  This<br>                       version of this MIB module is part of RFC 3635;<br>                       see the RFC itself for full legal notices.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-3"></a>rfc3635-3</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">Updated to include support for 10 Gb/sec<br>                        interfaces.  This resulted in the following<br>                        revisions:<br><br>                        - Updated dot3StatsAlignmentErrors and<br>                          dot3StatsSymbolErrors DESCRIPTIONs to<br>                          reflect behaviour at 10 Gb/s<br>                        - Added dot3StatsRateControlAbility and<br>                          dot3RateControlStatus for management<br>                          of the Rate Control function in 10 Gb/s<br>                          WAN applications<br>                        - Added 64-bit versions of all counters<br>                          that are used on high-speed ethernet<br>                          interfaces<br>                        - Added object groups to contain the new<br>                          objects<br>                        - Deprecated etherStatsBaseGroup and<br>                          split into etherStatsBaseGroup2 and<br>                          etherStatsHalfDuplexGroup, so that<br>                          interfaces which can only operate at<br>                          full-duplex do not need to implement<br>                          half-duplex-only statistics<br>                        - Deprecated dot3Compliance and replaced<br>                          it with dot3Compliance2, which includes<br>                          the compliance information for the new<br>                          object groups<br><br>                        In addition, the dot3Tests and dot3Errors<br>                        object identities have been deprecated,<br>                        since there is no longer a standard method<br>                        for using them.<br><br>                        This version published as RFC 3635.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-4"></a>rfc3635-4</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">Updated to include support for 1000 Mb/sec<br>                        interfaces and full-duplex interfaces.<br>                        This version published as RFC 2665.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-5"></a>rfc3635-5</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">Updated to include support for 100 Mb/sec<br>                        interfaces.<br>                        This version published as RFC 2358.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-6"></a>rfc3635-6</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">Initial version, published as RFC 1650.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-7"></a>rfc3635-7</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-8"></a>rfc3635-8</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-9"></a>rfc3635-9</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>the Ethernet-like Statistics group</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-10"></a>rfc3635-10</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Statistics for a collection of ethernet-like<br>                       interfaces attached to a particular system.<br>                       There will be one row in this table for each<br>                       ethernet-like interface in the system.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Monitor Data Link Errors - Ethernet"> <span><a href="NTCIP_1218.html#NTCIP_1218-960">NTCIP_1218-960</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-11"></a>rfc3635-11</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Statistics for a particular interface to an<br>                       ethernet-like medium.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-12"></a>rfc3635-12</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-13"></a>rfc3635-13</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An index value that uniquely identifies an<br>                       interface to an ethernet-like medium.  The<br>                       interface identified by a particular value of<br>                       this index is the same interface as identified<br>                       by the same value of ifIndex.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Monitor Data Link Errors - Ethernet"> <span><a href="NTCIP_1218.html#NTCIP_1218-960">NTCIP_1218-960</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-14"></a>rfc3635-14</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of frames received on a particular<br>                       interface that are not an integral number of<br>                       octets in length and do not pass the FCS check.<br><br>                       The count represented by an instance of this<br>                       object is incremented when the alignmentError<br>                       status is returned by the MAC service to the<br>                       LLC (or other MAC user). Received frames for<br>                       which multiple error conditions pertain are,<br>                       according to the conventions of IEEE 802.3<br>                       Layer Management, counted exclusively according<br>                       to the error status presented to the LLC.<br><br>                       This counter does not increment for group<br>                       encoding schemes greater than 4 bits per group.<br><br>                       For interfaces operating at 10 Gb/s, this<br>                       counter can roll over in less than 5 minutes if<br>                       it is incrementing at its maximum rate.  Since<br>                       that amount of time could be less than a<br>                       management station's poll cycle time, in order<br>                       to avoid a loss of information, a management<br>                       station is advised to poll the<br>                       dot3HCStatsAlignmentErrors object for 10 Gb/s<br>                       or faster interfaces.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Monitor Data Link Errors - Ethernet"> <span><a href="NTCIP_1218.html#NTCIP_1218-960">NTCIP_1218-960</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-15"></a>rfc3635-15</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of frames received on a particular<br>                       interface that are an integral number of octets<br>                       in length but do not pass the FCS check.  This<br>                       count does not include frames received with<br>                       frame-too-long or frame-too-short error.<br><br>                       The count represented by an instance of this<br>                       object is incremented when the frameCheckError<br>                       status is returned by the MAC service to the<br>                       LLC (or other MAC user). Received frames for<br>                       which multiple error conditions pertain are,<br>                       according to the conventions of IEEE 802.3<br>                       Layer Management, counted exclusively according<br>                       to the error status presented to the LLC.<br><br>                       Note:  Coding errors detected by the physical<br>                       layer for speeds above 10 Mb/s will cause the<br>                       frame to fail the FCS check.<br><br>                       For interfaces operating at 10 Gb/s, this<br>                       counter can roll over in less than 5 minutes if<br>                       it is incrementing at its maximum rate.  Since<br>                       that amount of time could be less than a<br>                       management station's poll cycle time, in order<br>                       to avoid a loss of information, a management<br>                       station is advised to poll the<br>                       dot3HCStatsFCSErrors object for 10 Gb/s or<br>                       faster interfaces.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Monitor Data Link Errors - Ethernet"> <span><a href="NTCIP_1218.html#NTCIP_1218-960">NTCIP_1218-960</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-16"></a>rfc3635-16</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of frames that are involved in a single<br>                       collision, and are subsequently transmitted<br>                       successfully.<br><br>                       A frame that is counted by an instance of this<br>                       object is also counted by the corresponding<br>                       instance of either the ifOutUcastPkts,<br>                       ifOutMulticastPkts, or ifOutBroadcastPkts,<br>                       and is not counted by the corresponding<br>                       instance of the dot3StatsMultipleCollisionFrames<br>                       object.<br><br>                       This counter does not increment when the<br>                       interface is operating in full-duplex mode.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-17"></a>rfc3635-17</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of frames that are involved in more<br>                       than one collision and are subsequently<br>                       transmitted successfully.<br><br>                       A frame that is counted by an instance of this<br>                       object is also counted by the corresponding<br>                       instance of either the ifOutUcastPkts,<br>                       ifOutMulticastPkts, or ifOutBroadcastPkts,<br>                       and is not counted by the corresponding<br>                       instance of the dot3StatsSingleCollisionFrames<br>                       object.<br><br>                       This counter does not increment when the<br>                       interface is operating in full-duplex mode.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-18"></a>rfc3635-18</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of times that the SQE TEST ERROR<br>                       is received on a particular interface. The<br>                       SQE TEST ERROR is set in accordance with the<br>                       rules for verification of the SQE detection<br>                       mechanism in the PLS Carrier Sense Function as<br>                       described in IEEE Std. 802.3, 2000 Edition,<br>                       section 7.2.4.6.<br><br>                       This counter does not increment on interfaces<br>                       operating at speeds greater than 10 Mb/s, or on<br>                       interfaces operating in full-duplex mode.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-19"></a>rfc3635-19</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of frames for which the first<br>                       transmission attempt on a particular interface<br>                       is delayed because the medium is busy.<br><br>                       The count represented by an instance of this<br>                       object does not include frames involved in<br>                       collisions.<br><br>                       This counter does not increment when the<br>                       interface is operating in full-duplex mode.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-20"></a>rfc3635-20</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of times that a collision is<br>                       detected on a particular interface later than<br>                       one slotTime into the transmission of a packet.<br><br>                       A (late) collision included in a count<br>                       represented by an instance of this object is<br>                       also considered as a (generic) collision for<br>                       purposes of other collision-related<br>                       statistics.<br><br>                       This counter does not increment when the<br>                       interface is operating in full-duplex mode.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-21"></a>rfc3635-21</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of frames for which transmission on a<br>                       particular interface fails due to excessive<br>                       collisions.<br><br>                       This counter does not increment when the<br>                       interface is operating in full-duplex mode.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-22"></a>rfc3635-22</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of frames for which transmission on a<br>                       particular interface fails due to an internal<br>                       MAC sublayer transmit error. A frame is only<br>                       counted by an instance of this object if it is<br>                       not counted by the corresponding instance of<br>                       either the dot3StatsLateCollisions object, the<br>                       dot3StatsExcessiveCollisions object, or the<br>                       dot3StatsCarrierSenseErrors object.<br><br>                       The precise meaning of the count represented by<br>                       an instance of this object is implementation-<br>                       specific.  In particular, an instance of this<br>                       object may represent a count of transmission<br>                       errors on a particular interface that are not<br>                       otherwise counted.<br><br>                       For interfaces operating at 10 Gb/s, this<br>                       counter can roll over in less than 5 minutes if<br>                       it is incrementing at its maximum rate.  Since<br>                       that amount of time could be less than a<br>                       management station's poll cycle time, in order<br>                       to avoid a loss of information, a management<br>                       station is advised to poll the<br>                       dot3HCStatsInternalMacTransmitErrors object for<br>                       10 Gb/s or faster interfaces.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-23"></a>rfc3635-23</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of times that the carrier sense<br>                       condition was lost or never asserted when<br>                       attempting to transmit a frame on a particular<br>                       interface.<br><br>                       The count represented by an instance of this<br>                       object is incremented at most once per<br>                       transmission attempt, even if the carrier sense<br>                       condition fluctuates during a transmission<br>                       attempt.<br><br>                       This counter does not increment when the<br>                       interface is operating in full-duplex mode.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-24"></a>rfc3635-24</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>{ dot3StatsEntry 12 } is not assigned</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-25"></a>rfc3635-25</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of frames received on a particular<br>                       interface that exceed the maximum permitted<br>                       frame size.<br><br>                       The count represented by an instance of this<br>                       object is incremented when the frameTooLong<br>                       status is returned by the MAC service to the<br>                       LLC (or other MAC user). Received frames for<br>                       which multiple error conditions pertain are,<br>                       according to the conventions of IEEE 802.3<br>                       Layer Management, counted exclusively according<br>                       to the error status presented to the LLC.<br><br>                       For interfaces operating at 10 Gb/s, this<br>                       counter can roll over in less than 80 minutes if<br>                       it is incrementing at its maximum rate.  Since<br>                       that amount of time could be less than a<br>                       management station's poll cycle time, in order<br>                       to avoid a loss of information, a management<br>                       station is advised to poll the<br>                       dot3HCStatsFrameTooLongs object for 10 Gb/s<br>                       or faster interfaces.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-26"></a>rfc3635-26</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>{ dot3StatsEntry 14 } is not assigned</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-27"></a>rfc3635-27</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>{ dot3StatsEntry 15 } is not assigned</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-28"></a>rfc3635-28</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of frames for which reception on a<br>                       particular interface fails due to an internal<br>                       MAC sublayer receive error. A frame is only<br>                       counted by an instance of this object if it is<br>                       not counted by the corresponding instance of<br>                       either the dot3StatsFrameTooLongs object, the<br>                       dot3StatsAlignmentErrors object, or the<br>                       dot3StatsFCSErrors object.<br><br>                       The precise meaning of the count represented by<br>                       an instance of this object is implementation-<br>                       specific.  In particular, an instance of this<br>                       object may represent a count of receive errors<br>                       on a particular interface that are not<br>                       otherwise counted.<br><br>                       For interfaces operating at 10 Gb/s, this<br>                       counter can roll over in less than 5 minutes if<br>                       it is incrementing at its maximum rate.  Since<br>                       that amount of time could be less than a<br>                       management station's poll cycle time, in order<br>                       to avoid a loss of information, a management<br>                       station is advised to poll the<br>                       dot3HCStatsInternalMacReceiveErrors object for<br>                       10 Gb/s or faster interfaces.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-29"></a>rfc3635-29</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"> THIS OBJECT IS DEPRECATED <br><br>                       This object contains an OBJECT IDENTIFIER<br>                       which identifies the chipset used to<br>                       realize the interface. Ethernet-like<br>                       interfaces are typically built out of<br>                       several different chips. The MIB implementor<br>                       is presented with a decision of which chip<br>                       to identify via this object. The implementor<br>                       should identify the chip which is usually<br>                       called the Medium Access Control chip.<br>                       If no such chip is easily identifiable,<br>                       the implementor should identify the chip<br>                       which actually gathers the transmit<br>                       and receive statistics and error<br>                       indications. This would allow a<br>                       manager station to correlate the<br>                       statistics and the chip generating<br>                       them, giving it the ability to take<br>                       into account any known anomalies<br>                       in the chip.<br><br>                       This object has been deprecated.  Implementation<br>                       feedback indicates that it is of limited use for<br>                       debugging network problems in the field, and<br>                       the administrative overhead involved in<br>                       maintaining a registry of chipset OIDs is not<br>                       justified.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-30"></a>rfc3635-30</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">For an interface operating at 100 Mb/s, the<br>                       number of times there was an invalid data symbol<br>                       when a valid carrier was present.<br><br>                       For an interface operating in half-duplex mode<br>                       at 1000 Mb/s, the number of times the receiving<br>                       media is non-idle (a carrier event) for a period<br>                       of time equal to or greater than slotTime, and<br>                       during which there was at least one occurrence<br>                       of an event that causes the PHY to indicate<br>                       'Data reception error' or 'carrier extend error'<br>                       on the GMII.<br><br>                       For an interface operating in full-duplex mode<br>                       at 1000 Mb/s, the number of times the receiving<br>                       media is non-idle (a carrier event) for a period<br>                       of time equal to or greater than minFrameSize,<br>                       and during which there was at least one<br>                       occurrence of an event that causes the PHY to<br>                       indicate 'Data reception error' on the GMII.<br><br>                       For an interface operating at 10 Gb/s, the<br>                       number of times the receiving media is non-idle<br>                       (a carrier event) for a period of time equal to<br>                       or greater than minFrameSize, and during which<br>                       there was at least one occurrence of an event<br>                       that causes the PHY to indicate 'Receive Error'<br>                       on the XGMII.<br><br>                       The count represented by an instance of this<br>                       object is incremented at most once per carrier<br>                       event, even if multiple symbol errors occur<br>                       during the carrier event.  This count does<br>                       not increment if a collision is present.<br><br>                       This counter does not increment when the<br>                       interface is operating at 10 Mb/s.<br><br>                       For interfaces operating at 10 Gb/s, this<br>                       counter can roll over in less than 5 minutes if<br>                       it is incrementing at its maximum rate.  Since<br>                       that amount of time could be less than a<br>                       management station's poll cycle time, in order<br>                       to avoid a loss of information, a management<br>                       station is advised to poll the<br>                       dot3HCStatsSymbolErrors object for 10 Gb/s<br>                       or faster interfaces.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-31"></a>rfc3635-31</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The current mode of operation of the MAC<br>                       entity.  'unknown' indicates that the current<br>                       duplex mode could not be determined.<br><br>                       Management control of the duplex mode is<br>                       accomplished through the MAU MIB.  When<br>                       an interface does not support autonegotiation,<br>                       or when autonegotiation is not enabled, the<br>                       duplex mode is controlled using<br>                       ifMauDefaultType.  When autonegotiation is<br>                       supported and enabled, duplex mode is controlled<br>                       using ifMauAutoNegAdvertisedBits.  In either<br>                       case, the currently operating duplex mode is<br>                       reflected both in this object and in ifMauType.<br><br>                       Note that this object provides redundant<br>                       information with ifMauType.  Normally, redundant<br>                       objects are discouraged.  However, in this<br>                       instance, it allows a management application to<br>                       determine the duplex status of an interface<br>                       without having to know every possible value of<br>                       ifMauType.  This was felt to be sufficiently<br>                       valuable to justify the redundancy.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-32"></a>rfc3635-32</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The current Rate Control mode of operation of<br>                       the MAC sublayer of this interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-33"></a>rfc3635-33</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>the Ethernet-like Collision Statistics group</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-34"></a>rfc3635-34</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>Implementation of this group is optional; it is appropriate</p><p>for all systems which have the necessary metering</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-35"></a>rfc3635-35</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of collision histograms for a<br>                       particular set of interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-36"></a>rfc3635-36</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A cell in the histogram of per-frame<br>                       collisions for a particular interface.  An<br>                       instance of this object represents the<br>                       frequency of individual MAC frames for which<br>                       the transmission (successful or otherwise) on a<br>                       particular interface is accompanied by a<br>                       particular number of media collisions.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-37"></a>rfc3635-37</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-38"></a>rfc3635-38</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>{ dot3CollEntry 1 } is no longer in use</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-39"></a>rfc3635-39</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of per-frame media collisions for<br>                       which a particular collision histogram cell<br>                       represents the frequency on a particular<br>                       interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-40"></a>rfc3635-40</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of individual MAC frames for which the<br>                       transmission (successful or otherwise) on a<br>                       particular interface occurs after the<br>                       frame has experienced exactly the number<br>                       of collisions in the associated<br>                       dot3CollCount object.<br><br>                       For example, a frame which is transmitted<br>                       on interface 77 after experiencing<br>                       exactly 4 collisions would be indicated<br>                       by incrementing only dot3CollFrequencies.77.4.<br>                       No other instance of dot3CollFrequencies would<br>                       be incremented in this example.<br><br>                       This counter does not increment when the<br>                       interface is operating in full-duplex mode.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-41"></a>rfc3635-41</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A table of descriptive and status information<br>                       about the MAC Control sublayer on the<br>                       ethernet-like interfaces attached to a<br>                       particular system.  There will be one row in<br>                       this table for each ethernet-like interface in<br>                       the system which implements the MAC Control<br>                       sublayer.  If some, but not all, of the<br>                       ethernet-like interfaces in the system implement<br>                       the MAC Control sublayer, there will be fewer<br>                       rows in this table than in the dot3StatsTable.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-42"></a>rfc3635-42</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An entry in the table, containing information<br>                       about the MAC Control sublayer on a single<br>                       ethernet-like interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-43"></a>rfc3635-43</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-44"></a>rfc3635-44</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A list of the possible MAC Control functions<br>                       implemented for this interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-45"></a>rfc3635-45</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of MAC Control frames received on this<br>                       interface that contain an opcode that is not<br>                       supported by this device.<br><br>                       For interfaces operating at 10 Gb/s, this<br>                       counter can roll over in less than 5 minutes if<br>                       it is incrementing at its maximum rate.  Since<br>                       that amount of time could be less than a<br>                       management station's poll cycle time, in order<br>                       to avoid a loss of information, a management<br>                       station is advised to poll the<br>                       dot3HCControlInUnknownOpcodes object for 10 Gb/s<br>                       or faster interfaces.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-46"></a>rfc3635-46</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of MAC Control frames received on this<br>                       interface that contain an opcode that is not<br>                       supported by this device.<br><br>                       This counter is a 64 bit version of<br>                       dot3ControlInUnknownOpcodes.  It should be used<br>                       on interfaces operating at 10 Gb/s or faster.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-47"></a>rfc3635-47</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A table of descriptive and status information<br>                       about the MAC Control PAUSE function on the<br>                       ethernet-like interfaces attached to a<br>                       particular system. There will be one row in<br>                       this table for each ethernet-like interface in<br>                       the system which supports the MAC Control PAUSE<br>                       function (i.e., the 'pause' bit in the<br>                       corresponding instance of<br>                       dot3ControlFunctionsSupported is set).  If some,<br>                       but not all, of the ethernet-like interfaces in<br>                       the system implement the MAC Control PAUSE<br>                       function (for example, if some interfaces only<br>                       support half-duplex), there will be fewer rows<br>                       in this table than in the dot3StatsTable.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-48"></a>rfc3635-48</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An entry in the table, containing information<br>                       about the MAC Control PAUSE function on a single<br>                       ethernet-like interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-49"></a>rfc3635-49</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-50"></a>rfc3635-50</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This object is used to configure the default<br>                       administrative PAUSE mode for this interface.<br><br>                       This object represents the<br>                       administratively-configured PAUSE mode for this<br>                       interface.  If auto-negotiation is not enabled<br>                       or is not implemented for the active MAU<br>                       attached to this interface, the value of this<br>                       object determines the operational PAUSE mode<br>                       of the interface whenever it is operating in<br>                       full-duplex mode.  In this case, a set to this<br>                       object will force the interface into the<br>                       specified mode.<br><br>                       If auto-negotiation is implemented and enabled<br>                       for the MAU attached to this interface, the<br>                       PAUSE mode for this interface is determined by<br>                       auto-negotiation, and the value of this object<br>                       denotes the mode to which the interface will<br>                       automatically revert if/when auto-negotiation is<br>                       later disabled.  Note that when auto-negotiation<br>                       is running, administrative control of the PAUSE<br>                       mode may be accomplished using the<br>                       ifMauAutoNegCapAdvertisedBits object in the<br>                       MAU-MIB.<br><br>                       Note that the value of this object is ignored<br>                       when the interface is not operating in<br>                       full-duplex mode.<br><br>                       An attempt to set this object to<br>                       'enabledXmit(2)' or 'enabledRcv(3)' will fail<br>                       on interfaces that do not support operation<br>                       at greater than 100 Mb/s.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-51"></a>rfc3635-51</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This object reflects the PAUSE mode currently<br>                       in use on this interface, as determined by<br>                       either (1) the result of the auto-negotiation<br>                       function or (2) if auto-negotiation is not<br>                       enabled or is not implemented for the active MAU<br>                       attached to this interface, by the value of<br>                       dot3PauseAdminMode.  Interfaces operating at<br>                       100 Mb/s or less will never return<br>                       'enabledXmit(2)' or 'enabledRcv(3)'.  Interfaces<br>                       operating in half-duplex mode will always return<br>                       'disabled(1)'.  Interfaces on which<br>                       auto-negotiation is enabled but not yet<br>                       completed should return the value<br>                       'disabled(1)'.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-52"></a>rfc3635-52</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of MAC Control frames received on this<br>                       interface with an opcode indicating the PAUSE<br>                       operation.<br><br>                       This counter does not increment when the<br>                       interface is operating in half-duplex mode.<br><br>                       For interfaces operating at 10 Gb/s, this<br>                       counter can roll over in less than 5 minutes if<br>                       it is incrementing at its maximum rate.  Since<br>                       that amount of time could be less than a<br>                       management station's poll cycle time, in order<br>                       to avoid a loss of information, a management<br>                       station is advised to poll the<br>                       dot3HCInPauseFrames object for 10 Gb/s or<br>                       faster interfaces.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-53"></a>rfc3635-53</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of MAC Control frames transmitted on<br>                       this interface with an opcode indicating the<br>                       PAUSE operation.<br><br>                       This counter does not increment when the<br>                       interface is operating in half-duplex mode.<br><br>                       For interfaces operating at 10 Gb/s, this<br>                       counter can roll over in less than 5 minutes if<br>                       it is incrementing at its maximum rate.  Since<br>                       that amount of time could be less than a<br>                       management station's poll cycle time, in order<br>                       to avoid a loss of information, a management<br>                       station is advised to poll the<br>                       dot3HCOutPauseFrames object for 10 Gb/s or<br>                       faster interfaces.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-54"></a>rfc3635-54</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of MAC Control frames received on this<br>                       interface with an opcode indicating the PAUSE<br>                       operation.<br><br>                       This counter does not increment when the<br>                       interface is operating in half-duplex mode.<br><br>                       This counter is a 64 bit version of<br>                       dot3InPauseFrames.  It should be used on<br>                       interfaces operating at 10 Gb/s or faster.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-55"></a>rfc3635-55</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of MAC Control frames transmitted on<br>                       this interface with an opcode indicating the<br>                       PAUSE operation.<br><br>                       This counter does not increment when the<br>                       interface is operating in half-duplex mode.<br><br>                       This counter is a 64 bit version of<br>                       dot3OutPauseFrames.  It should be used on<br>                       interfaces operating at 10 Gb/s or faster.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-56"></a>rfc3635-56</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A table containing 64-bit versions of error<br>                       counters from the dot3StatsTable.  The 32-bit<br>                       versions of these counters may roll over quite<br>                       quickly on higher speed ethernet interfaces.<br>                       The counters that have 64-bit versions in this<br>                       table are the counters that apply to full-duplex<br>                       interfaces, since 10 Gb/s and faster<br>                       ethernet-like interfaces do not support<br>                       half-duplex, and very few 1000 Mb/s<br>                       ethernet-like interfaces support half-duplex.<br><br>                       Entries in this table are recommended for<br>                       interfaces capable of operating at 1000 Mb/s or<br>                       faster, and are required for interfaces capable<br>                       of operating at 10 Gb/s or faster.  Lower speed<br>                       ethernet-like interfaces do not need entries in<br>                       this table, in which case there may be fewer<br>                       entries in this table than in the<br>                       dot3StatsTable. However, implementations<br>                       containing interfaces with a mix of speeds may<br>                       choose to implement entries in this table for<br>                       all ethernet-like interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-57"></a>rfc3635-57</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An entry containing 64-bit statistics for a<br>                       single ethernet-like interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-58"></a>rfc3635-58</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-59"></a>rfc3635-59</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of frames received on a particular<br>                       interface that are not an integral number of<br>                       octets in length and do not pass the FCS check.<br><br>                       The count represented by an instance of this<br>                       object is incremented when the alignmentError<br>                       status is returned by the MAC service to the<br>                       LLC (or other MAC user). Received frames for<br>                       which multiple error conditions pertain are,<br>                       according to the conventions of IEEE 802.3<br>                       Layer Management, counted exclusively according<br>                       to the error status presented to the LLC.<br><br>                       This counter does not increment for group<br>                       encoding schemes greater than 4 bits per group.<br><br>                       This counter is a 64 bit version of<br>                       dot3StatsAlignmentErrors.  It should be used<br>                       on interfaces operating at 10 Gb/s or faster.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-60"></a>rfc3635-60</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of frames received on a particular<br>                       interface that are an integral number of octets<br>                       in length but do not pass the FCS check.  This<br>                       count does not include frames received with<br>                       frame-too-long or frame-too-short error.<br><br>                       The count represented by an instance of this<br>                       object is incremented when the frameCheckError<br>                       status is returned by the MAC service to the<br>                       LLC (or other MAC user). Received frames for<br>                       which multiple error conditions pertain are,<br>                       according to the conventions of IEEE 802.3<br>                       Layer Management, counted exclusively according<br>                       to the error status presented to the LLC.<br><br>                       Note:  Coding errors detected by the physical<br>                       layer for speeds above 10 Mb/s will cause the<br>                       frame to fail the FCS check.<br><br>                       This counter is a 64 bit version of<br>                       dot3StatsFCSErrors.  It should be used on<br>                       interfaces operating at 10 Gb/s or faster.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-61"></a>rfc3635-61</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of frames for which transmission on a<br>                       particular interface fails due to an internal<br>                       MAC sublayer transmit error. A frame is only<br>                       counted by an instance of this object if it is<br>                       not counted by the corresponding instance of<br>                       either the dot3StatsLateCollisions object, the<br>                       dot3StatsExcessiveCollisions object, or the<br>                       dot3StatsCarrierSenseErrors object.<br><br>                       The precise meaning of the count represented by<br>                       an instance of this object is implementation-<br>                       specific.  In particular, an instance of this<br>                       object may represent a count of transmission<br>                       errors on a particular interface that are not<br>                       otherwise counted.<br><br>                       This counter is a 64 bit version of<br>                       dot3StatsInternalMacTransmitErrors.  It should<br>                       be used on interfaces operating at 10 Gb/s or<br>                       faster.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-62"></a>rfc3635-62</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of frames received on a particular<br>                       interface that exceed the maximum permitted<br>                       frame size.<br><br>                       The count represented by an instance of this<br>                       object is incremented when the frameTooLong<br>                       status is returned by the MAC service to the<br>                       LLC (or other MAC user). Received frames for<br>                       which multiple error conditions pertain are,<br>                       according to the conventions of IEEE 802.3<br>                       Layer Management, counted exclusively according<br>                       to the error status presented to the LLC.<br><br>                       This counter is a 64 bit version of<br>                       dot3StatsFrameTooLongs.  It should be used on<br>                       interfaces operating at 10 Gb/s or faster.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-63"></a>rfc3635-63</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A count of frames for which reception on a<br>                       particular interface fails due to an internal<br>                       MAC sublayer receive error. A frame is only<br>                       counted by an instance of this object if it is<br>                       not counted by the corresponding instance of<br>                       either the dot3StatsFrameTooLongs object, the<br>                       dot3StatsAlignmentErrors object, or the<br>                       dot3StatsFCSErrors object.<br><br>                       The precise meaning of the count represented by<br>                       an instance of this object is implementation-<br>                       specific.  In particular, an instance of this<br>                       object may represent a count of receive errors<br>                       on a particular interface that are not<br>                       otherwise counted.<br><br>                       This counter is a 64 bit version of<br>                       dot3StatsInternalMacReceiveErrors.  It should be<br>                       used on interfaces operating at 10 Gb/s or<br>                       faster.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-64"></a>rfc3635-64</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">For an interface operating at 100 Mb/s, the<br>                       number of times there was an invalid data symbol<br>                       when a valid carrier was present.<br><br>                       For an interface operating in half-duplex mode<br>                       at 1000 Mb/s, the number of times the receiving<br>                       media is non-idle (a carrier event) for a period<br>                       of time equal to or greater than slotTime, and<br>                       during which there was at least one occurrence<br>                       of an event that causes the PHY to indicate<br>                       'Data reception error' or 'carrier extend error'<br>                       on the GMII.<br><br>                       For an interface operating in full-duplex mode<br>                       at 1000 Mb/s, the number of times the receiving<br>                       media is non-idle (a carrier event) for a period<br>                       of time equal to or greater than minFrameSize,<br>                       and during which there was at least one<br>                       occurrence of an event that causes the PHY to<br>                       indicate 'Data reception error' on the GMII.<br><br>                       For an interface operating at 10 Gb/s, the<br>                       number of times the receiving media is non-idle<br>                       (a carrier event) for a period of time equal to<br>                       or greater than minFrameSize, and during which<br>                       there was at least one occurrence of an event<br>                       that causes the PHY to indicate 'Receive Error'<br>                       on the XGMII.<br><br>                       The count represented by an instance of this<br>                       object is incremented at most once per carrier<br>                       event, even if multiple symbol errors occur<br>                       during the carrier event.  This count does<br>                       not increment if a collision is present.<br><br>                       This counter is a 64 bit version of<br>                       dot3StatsSymbolErrors.  It should be used on<br>                       interfaces operating at 10 Gb/s or faster.<br><br>                       Discontinuities in the value of this counter can<br>                       occur at re-initialization of the management<br>                       system, and at other times as indicated by the<br>                       value of ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-65"></a>rfc3635-65</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p> 802.3 Tests</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-66"></a>rfc3635-66</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-67"></a>rfc3635-67</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-68"></a>rfc3635-68</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p> TDR Test</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-69"></a>rfc3635-69</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">******** THIS IDENTITY IS DEPRECATED *******<br><br>                       The Time-Domain Reflectometry (TDR) test is<br>                       specific to ethernet-like interfaces of type<br>                       10Base5 and 10Base2.  The TDR value may be<br>                       useful in determining the approximate distance<br>                       to a cable fault.  It is advisable to repeat<br>                       this test to check for a consistent resulting<br>                       TDR value, to verify that there is a fault.<br><br>                       A TDR test returns as its result the time<br>                       interval, measured in 10 MHz ticks or 100 nsec<br>                       units, between the start of TDR test<br>                       transmission and the subsequent detection of a<br>                       collision or deassertion of carrier.  On<br>                       successful completion of a TDR test, the result<br>                       is stored as the value of an appropriate<br>                       instance of an appropriate vendor specific MIB<br>                       object, and the OBJECT IDENTIFIER of that<br>                       instance is stored in the appropriate instance<br>                       of the appropriate test result code object<br>                       (thereby indicating where the result has been<br>                       stored).<br><br>                       This object identity has been deprecated, since<br>                       the ifTestTable in the IF-MIB was deprecated,<br>                       and there is no longer a standard mechanism for<br>                       initiating an interface test.  This left no<br>                       standard way of using this object identity.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-70"></a>rfc3635-70</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>Loopback Test</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-71"></a>rfc3635-71</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">******** THIS IDENTITY IS DEPRECATED *******<br><br>                       This test configures the MAC chip and executes<br>                       an internal loopback test of memory, data paths,<br>                       and the MAC chip logic.  This loopback test can<br>                       only be executed if the interface is offline.<br>                       Once the test has completed, the MAC chip should<br>                       be reinitialized for network operation, but it<br>                       should remain offline.<br><br>                       If an error occurs during a test, the<br>                       appropriate test result object will be set<br>                       to indicate a failure.  The two OBJECT<br>                       IDENTIFIER values dot3ErrorInitError and<br>                       dot3ErrorLoopbackError may be used to provided<br>                       more information as values for an appropriate<br>                       test result code object.<br><br>                       This object identity has been deprecated, since<br>                       the ifTestTable in the IF-MIB was deprecated,<br>                       and there is no longer a standard mechanism for<br>                       initiating an interface test.  This left no<br>                       standard way of using this object identity.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-72"></a>rfc3635-72</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">******** THIS IDENTITY IS DEPRECATED *******<br><br>                       Couldn't initialize MAC chip for test.<br><br>                       This object identity has been deprecated, since<br>                       the ifTestTable in the IF-MIB was deprecated,<br>                       and there is no longer a standard mechanism for<br>                       initiating an interface test.  This left no<br>                       standard way of using this object identity.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-73"></a>rfc3635-73</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">******** THIS IDENTITY IS DEPRECATED *******<br><br>                       Expected data not received (or not received<br>                       correctly) in loopback test.<br><br>                       This object identity has been deprecated, since<br>                       the ifTestTable in the IF-MIB was deprecated,<br>                       and there is no longer a standard mechanism for<br>                       initiating an interface test.  This left no<br>                       standard way of using this object identity.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-74"></a>rfc3635-74</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>{ dot3 8 }, the dot3ChipSets tree, is defined in [RFC2666]</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-75"></a>rfc3635-75</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-76"></a>rfc3635-76</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-77"></a>rfc3635-77</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-78"></a>rfc3635-78</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This group is optional. It is appropriate<br>                           for all systems which have the necessary<br>                           metering. Implementation in such systems is<br>                           highly recommended.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-79"></a>rfc3635-79</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This group is optional. It is appropriate<br>                           for all systems which have the necessary<br>                           metering. Implementation in such systems is<br>                           highly recommended.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-80"></a>rfc3635-80</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This group is optional. It is appropriate<br>                           for all ethernet-like network interfaces<br>                           which are capable of operating in<br>                           half-duplex mode and have the necessary<br>                           metering. Implementation in systems with<br>                           such interfaces is highly recommended.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-81"></a>rfc3635-81</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>units of conformance</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-82"></a>rfc3635-82</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">********* THIS GROUP IS DEPRECATED **********<br><br>                       A collection of objects providing information<br>                       applicable to all ethernet-like network<br>                       interfaces.<br><br>                       This object group has been deprecated and<br>                       replaced by etherStatsBaseGroup and<br>                       etherStatsLowSpeedGroup.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-83"></a>rfc3635-83</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing a histogram<br>                       of packets successfully transmitted after<br>                       experiencing exactly N collisions.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-84"></a>rfc3635-84</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">********* THIS GROUP IS DEPRECATED **********<br><br>                       A collection of objects providing information<br>                       applicable to 100 Mb/sec ethernet-like network<br>                       interfaces.<br><br>                       This object group has been deprecated and<br>                       replaced by etherStatsBaseGroup and<br>                       etherStatsHighSpeedGroup.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-85"></a>rfc3635-85</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">********* THIS GROUP IS DEPRECATED **********<br><br>                       A collection of objects providing information<br>                       applicable to all ethernet-like network<br>                       interfaces.<br><br>                       This object group has been deprecated and<br>                       replaced by etherStatsBaseGroup2 and<br>                       etherStatsHalfDuplexGroup, to separate<br>                       objects which must be implemented by all<br>                       ethernet-like network interfaces from<br>                       objects that need only be implemented on<br>                       ethernet-like network interfaces that are<br>                       capable of half-duplex operation.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-86"></a>rfc3635-86</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information<br>                       applicable to ethernet-like network interfaces<br>                       capable of operating at 10 Mb/s or slower in<br>                       half-duplex mode.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-87"></a>rfc3635-87</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information<br>                       applicable to ethernet-like network interfaces<br>                       capable of operating at 100 Mb/s or faster.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-88"></a>rfc3635-88</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information<br>                       about the duplex mode of an ethernet-like<br>                       network interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-89"></a>rfc3635-89</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information<br>                       about the MAC Control sublayer on ethernet-like<br>                       network interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-90"></a>rfc3635-90</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information<br>                       about and control of the MAC Control PAUSE<br>                       function on ethernet-like network interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-91"></a>rfc3635-91</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information<br>                       applicable to all ethernet-like network<br>                       interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-92"></a>rfc3635-92</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information<br>                       applicable only to half-duplex ethernet-like<br>                       network interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-93"></a>rfc3635-93</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing high-capacity<br>                       statistics applicable to higher-speed<br>                       ethernet-like network interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-94"></a>rfc3635-94</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing high-capacity<br>                       statistics for the MAC Control sublayer on<br>                       higher-speed ethernet-like network interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-95"></a>rfc3635-95</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing high-capacity<br>                       statistics for the MAC Control PAUSE function on<br>                       higher-speed ethernet-like network interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-96"></a>rfc3635-96</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information<br>                       about the Rate Control function on ethernet-like<br>                       interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc3635-97"></a>rfc3635-97</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+  </div>
+							</div>
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://iso-tc204.github.io/iso24315p1/">Website Content:</a> <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p></li>
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>Portions subject to ISO copyright. This website is not an ISO International Standard. It is provided to facilitate efforts to review and comment on the current draft. It is subject to change without notice and may not be referred to as an International Standard.</li>
+								<li>Users of this website are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</li>
+							</ul>
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>

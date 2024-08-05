@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WG9-rfc2863: IF-MIB</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="jq/jquery-ui.css" rel="stylesheet">
+	<script src="external/jquery/jquery.js"></script>
+	<script src="jq/jquery-ui.js"></script>
+	<script src="assets/js/columns.js"></script>
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" style="position: static;">
+						<h2><a href="index.html">NTCIP</a><img src="images/car_wifi.png" style="width: 2em;" /></h2>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="metr_overview.html">Overview</a></li>
+								<li><a href="development.html">Development Approach</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<div class="inner">
+						<div class="controls-container">
+							<div class="controls">
+           						<label><input type="checkbox" checked data-column="0">ID</label>
+           						<label><input type="checkbox" checked data-column="1">Description</label>
+           						<label><input type="checkbox" checked data-column="2">Attributes</label>
+           						<label><input type="checkbox" checked data-column="3">Discussion</label>
+           						<label><input type="checkbox" checked data-column="4">Links</label>
+       						</div>
+						</div>
+					</div>
+			</div>
+<div class="content">
+						<table>
+							<tr>
+								<td><h1>WG9<br />rfc2863: IF-MIB</h1><br />    <em>Last modified on 2024-07-24 16:38</em></td>
+								<td width="390px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/ite-org/NTCIPReqView/issues" class="button primary">Submit Comment</a><br /></span>Traceability Tables: <div class="tab">
+									<button onclick="location.href='NTCIP_1203.html'" title="NTCIP 1203">DMS</button>
+									<button onclick="location.href='NTCIP_1204.html'" title="NTCIP 1204">ESS</button>
+									<button onclick="location.href='NTCIP_1218.html'" title="NTCIP 1218">RSU</button>
+									<button onclick="location.href='26048_1.html'" title="ISO 26048-1">Global</button>
+									</div>
+								</td>
+							</tr>
+						</table>
+<div class="reqviewTable table-responsive-md">
+    <table class="table table-sm resizable">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="header-cell resizable-header"><i class="fas fa-asterisk"></i>ID<div class="resizer"></div></th>
+          <th class="header-cell resizable-header"><i class="fas fa-align-left"></i>Description<div class="resizer"></div></th>
+		  <th class="header-cell resizable-header"><i class="fas fa-align-left"></i>Attributes<div class="resizer"></div></th>
+          <th class="header-cell resizable-header"><i class="fas fa-comments"></i>Discussion<div class="resizer"></div></th>
+          <th class="header-cell resizable-header"><i class="fas fa-link"></i>Links<div class="resizer"></div></th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr> 
+			<td><a id="rfc2863-1"></a>rfc2863-1</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>Module IF-MIB (RFC 2863:06/2000)</p><p></p><p>Copyright (C) The Internet Society (2000). This version of</p><p>this MIB module is part of RFC 2863;</p><p>see the RFC itself for full legal notices.</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-2"></a>rfc2863-2</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><pre>    MODULE-IDENTITY, OBJECT-TYPE, Counter32, Gauge32, Counter64,<br>    Integer32, TimeTicks, mib-2,<br>    NOTIFICATION-TYPE                        FROM SNMPv2-SMI<br>    TEXTUAL-CONVENTION, DisplayString,<br>    PhysAddress, TruthValue, RowStatus,<br>    TimeStamp, AutonomousType, TestAndIncr   FROM SNMPv2-TC<br>    MODULE-COMPLIANCE, OBJECT-GROUP,<br>    NOTIFICATION-GROUP                       FROM SNMPv2-CONF<br>    snmpTraps                                FROM SNMPv2-MIB<br>    IANAifType                               FROM IANAifType-MIB;</pre></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-3"></a>rfc2863-3</td>
+							<td style="padding-left:10px">
+					<h1>1</h1>
+					<div class="htmlContent">The MIB module to describe generic objects for network<br>            interface sub-layers.  This MIB is an updated version of<br>            MIB-II's ifTable, and incorporates the extensions defined in<br>            RFC 1229.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-4"></a>rfc2863-4</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">Clarifications agreed upon by the Interfaces MIB WG, and<br>            published as RFC 2863.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-5"></a>rfc2863-5</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">Revisions made by the Interfaces MIB WG, and published in<br>            RFC 2233.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-6"></a>rfc2863-6</td>
+							<td style="padding-left:20px">
+					
+					<div class="htmlContent">Initial revision, published as part of RFC 1573.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-7"></a>rfc2863-7</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-8"></a>rfc2863-8</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-9"></a>rfc2863-9</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>Textual Conventions</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-10"></a>rfc2863-10</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>OwnerString has the same semantics as used in RFC 1271</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-11"></a>rfc2863-11</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This data type is used to model an administratively<br>            assigned name of the owner of a resource.  This information<br>            is taken from the NVT ASCII character set.  It is suggested<br>            that this name contain one or more of the following: ASCII<br>            form of the manager station's transport address, management<br>            station name (e.g., domain name), network management<br>            personnel's name, location, or phone number.  In some cases<br>            the agent itself will be the owner of an entry.  In these<br>            cases, this string shall be set to a string starting with<br>            'agent'.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-12"></a>rfc2863-12</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>InterfaceIndex contains the semantics of ifIndex and should be used</p><p>for any objects defined in other MIB modules that need these semantics.</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-13"></a>rfc2863-13</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A unique value, greater than zero, for each interface or<br>            interface sub-layer in the managed system.  It is<br>            recommended that values are assigned contiguously starting<br>            from 1.  The value for each interface sub-layer must remain<br>            constant at least from one re-initialization of the entity's<br>            network management system to the next re-initialization.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-14"></a>rfc2863-14</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This textual convention is an extension of the<br>            InterfaceIndex convention.  The latter defines a greater<br>            than zero value used to identify an interface or interface<br>            sub-layer in the managed system.  This extension permits the<br>            additional value of zero.  the value zero is object-specific<br>            and must therefore be defined as part of the description of<br>            any object which uses this syntax.  Examples of the usage of<br>            zero might include situations where interface was unknown,<br>            or when none or all interfaces need to be referenced.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-15"></a>rfc2863-15</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of network interfaces (regardless of their<br>            current state) present on this system.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-16"></a>rfc2863-16</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The value of sysUpTime at the time of the last creation or<br>            deletion of an entry in the ifTable.  If the number of<br>            entries has been unchanged since the last re-initialization<br>            of the local network management subsystem, then this object<br>            contains a zero value.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-17"></a>rfc2863-17</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>the Interfaces table</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-18"></a>rfc2863-18</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>The Interfaces table contains information on the entity's</p><p>interfaces.  Each sub-layer below the internetwork-layer</p><p>of a network interface is considered to be an interface.</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-19"></a>rfc2863-19</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A list of interface entries.  The number of entries is<br>            given by the value of ifNumber.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Enable/Disable a Communications Port"> <span><a href="NTCIP_1218.html#NTCIP_1218-639">NTCIP_1218-639</a></span> </div>
+                <div class="link" title="Report Ethernet Port - MAC Address"> <span><a href="NTCIP_1218.html#NTCIP_1218-643">NTCIP_1218-643</a></span> </div>
+                <div class="link" title="Determine Operating Class"> <span><a href="NTCIP_1218.html#NTCIP_1218-789">NTCIP_1218-789</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-20"></a>rfc2863-20</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An entry containing management information applicable to a<br>            particular interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-21"></a>rfc2863-21</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-22"></a>rfc2863-22</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A unique value, greater than zero, for each interface.  It<br>            is recommended that values are assigned contiguously<br>            starting from 1.  The value for each interface sub-layer<br>            must remain constant at least from one re-initialization of<br>            the entity's network management system to the next re-<br>            initialization.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Enable/Disable a Communications Port"> <span><a href="NTCIP_1218.html#NTCIP_1218-639">NTCIP_1218-639</a></span> </div>
+                <div class="link" title="Report Ethernet Port - MAC Address"> <span><a href="NTCIP_1218.html#NTCIP_1218-643">NTCIP_1218-643</a></span> </div>
+                <div class="link" title="Determine Operating Class"> <span><a href="NTCIP_1218.html#NTCIP_1218-789">NTCIP_1218-789</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-23"></a>rfc2863-23</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A textual string containing information about the<br>            interface.  This string should include the name of the<br>            manufacturer, the product name and the version of the<br>            interface hardware/software.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-24"></a>rfc2863-24</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The type of interface.  Additional values for ifType are<br>            assigned by the Internet Assigned Numbers Authority (IANA),<br>            through updating the syntax of the IANAifType textual<br>            convention.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Enable/Disable a Communications Port"> <span><a href="NTCIP_1218.html#NTCIP_1218-639">NTCIP_1218-639</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-25"></a>rfc2863-25</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The size of the largest packet which can be sent/received<br>            on the interface, specified in octets.  For interfaces that<br>            are used for transmitting network datagrams, this is the<br>            size of the largest network datagram that can be sent on the<br>            interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-26"></a>rfc2863-26</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An estimate of the interface's current bandwidth in bits<br>            per second.  For interfaces which do not vary in bandwidth<br>            or for those where no accurate estimation can be made, this<br>            object should contain the nominal bandwidth.  If the<br>            bandwidth of the interface is greater than the maximum value<br>            reportable by this object then this object should report its<br>            maximum value (4,294,967,295) and ifHighSpeed must be used<br>            to report the interace's speed.  For a sub-layer which has<br>            no concept of bandwidth, this object should be zero.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-27"></a>rfc2863-27</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The interface's address at its protocol sub-layer.  For<br>            example, for an 802.x interface, this object normally<br>            contains a MAC address.  The interface's media-specific MIB<br>            must define the bit and byte ordering and the format of the<br>            value of this object.  For interfaces which do not have such<br>            an address (e.g., a serial line), this object should contain<br>            an octet string of zero length.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Report Ethernet Port - MAC Address"> <span><a href="NTCIP_1218.html#NTCIP_1218-643">NTCIP_1218-643</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-28"></a>rfc2863-28</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The desired state of the interface.  The testing(3) state<br>            indicates that no operational packets can be passed.  When a<br>            managed system initializes, all interfaces start with<br>            ifAdminStatus in the down(2) state.  As a result of either<br>            explicit management action or per configuration information<br>            retained by the managed system, ifAdminStatus is then<br>            changed to either the up(1) or testing(3) states (or remains<br>            in the down(2) state).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Enable/Disable a Communications Port"> <span><a href="NTCIP_1218.html#NTCIP_1218-639">NTCIP_1218-639</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-29"></a>rfc2863-29</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The current operational state of the interface.  The<br>            testing(3) state indicates that no operational packets can<br>            be passed.  If ifAdminStatus is down(2) then ifOperStatus<br>            should be down(2).  If ifAdminStatus is changed to up(1)<br>            then ifOperStatus should change to up(1) if the interface is<br>            ready to transmit and receive network traffic; it should<br>            change to dormant(5) if the interface is waiting for<br>            external actions (such as a serial line waiting for an<br>            incoming connection); it should remain in the down(2) state<br>            if and only if there is a fault that prevents it from going<br>            to the up(1) state; it should remain in the notPresent(6)<br>            state if the interface has missing (typically, hardware)<br>            components.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> Satisfies:</div>
+                <div class="link" title="Enable/Disable a Communications Port"> <span><a href="NTCIP_1218.html#NTCIP_1218-639">NTCIP_1218-639</a></span> </div>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-30"></a>rfc2863-30</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The value of sysUpTime at the time the interface entered<br>            its current operational state.  If the current state was<br>            entered prior to the last re-initialization of the local<br>            network management subsystem, then this object contains a<br>            zero value.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-31"></a>rfc2863-31</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of octets received on the interface,<br>            including framing characters.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-32"></a>rfc2863-32</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of packets, delivered by this sub-layer to a<br>            higher (sub-)layer, which were not addressed to a multicast<br>            or broadcast address at this sub-layer.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-33"></a>rfc2863-33</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of packets, delivered by this sub-layer to a<br>            higher (sub-)layer, which were addressed to a multicast or<br>            broadcast address at this sub-layer.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.<br><br>            This object is deprecated in favour of ifInMulticastPkts and<br>            ifInBroadcastPkts.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-34"></a>rfc2863-34</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of inbound packets which were chosen to be<br>            discarded even though no errors had been detected to prevent<br>            their being deliverable to a higher-layer protocol.  One<br>            possible reason for discarding such a packet could be to<br>            free up buffer space.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-35"></a>rfc2863-35</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">For packet-oriented interfaces, the number of inbound<br>            packets that contained errors preventing them from being<br>            deliverable to a higher-layer protocol.  For character-<br>            oriented or fixed-length interfaces, the number of inbound<br>            transmission units that contained errors preventing them<br>            from being deliverable to a higher-layer protocol.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-36"></a>rfc2863-36</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">For packet-oriented interfaces, the number of packets<br>            received via the interface which were discarded because of<br>            an unknown or unsupported protocol.  For character-oriented<br>            or fixed-length interfaces that support protocol<br>            multiplexing the number of transmission units received via<br>            the interface which were discarded because of an unknown or<br>            unsupported protocol.  For any interface that does not<br>            support protocol multiplexing, this counter will always be<br>            0.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-37"></a>rfc2863-37</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of octets transmitted out of the<br>            interface, including framing characters.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-38"></a>rfc2863-38</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of packets that higher-level protocols<br>            requested be transmitted, and which were not addressed to a<br>            multicast or broadcast address at this sub-layer, including<br>            those that were discarded or not sent.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-39"></a>rfc2863-39</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of packets that higher-level protocols<br>            requested be transmitted, and which were addressed to a<br>            multicast or broadcast address at this sub-layer, including<br>            those that were discarded or not sent.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.<br><br>            This object is deprecated in favour of ifOutMulticastPkts<br>            and ifOutBroadcastPkts.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-40"></a>rfc2863-40</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of outbound packets which were chosen to be<br>            discarded even though no errors had been detected to prevent<br>            their being transmitted.  One possible reason for discarding<br>            such a packet could be to free up buffer space.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-41"></a>rfc2863-41</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">For packet-oriented interfaces, the number of outbound<br>            packets that could not be transmitted because of errors.<br>            For character-oriented or fixed-length interfaces, the<br>            number of outbound transmission units that could not be<br>            transmitted because of errors.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-42"></a>rfc2863-42</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The length of the output packet queue (in packets).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-43"></a>rfc2863-43</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A reference to MIB definitions specific to the particular<br>            media being used to realize the interface.  It is<br>            recommended that this value point to an instance of a MIB<br>            object in the media-specific MIB, i.e., that this object<br>            have the semantics associated with the InstancePointer<br>            textual convention defined in RFC 2579.  In fact, it is<br>            recommended that the media-specific MIB specify what value<br>            ifSpecific should/can take for values of ifType.  If no MIB<br>            definitions specific to the particular media are available,<br>            the value should be set to the OBJECT IDENTIFIER { 0 0 }.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-44"></a>rfc2863-44</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>  Extension to the interface table</p><p></p><p>This table replaces the ifExtnsTable table.</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-45"></a>rfc2863-45</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A list of interface entries.  The number of entries is<br>            given by the value of ifNumber.  This table contains<br>            additional objects for the interface table.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-46"></a>rfc2863-46</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An entry containing additional management information<br>            applicable to a particular interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-47"></a>rfc2863-47</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The textual name of the interface.  The value of this<br>            object should be the name of the interface as assigned by<br>            the local device and should be suitable for use in commands<br>            entered at the device's `console'.  This might be a text<br>            name, such as `le0' or a simple port number, such as `1',<br>            depending on the interface naming syntax of the device.  If<br>            several entries in the ifTable together represent a single<br>            interface as named by the device, then each will have the<br>            same value of ifName.  Note that for an agent which responds<br>            to SNMP queries concerning an interface on some other<br>            (proxied) device, then the value of ifName for such an<br>            interface is the proxied device's local name for it.<br><br>            If there is no local name, or this object is otherwise not<br>            applicable, then this object contains a zero-length string.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-48"></a>rfc2863-48</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of packets, delivered by this sub-layer to a<br>            higher (sub-)layer, which were addressed to a multicast<br>            address at this sub-layer.  For a MAC layer protocol, this<br>            includes both Group and Functional addresses.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-49"></a>rfc2863-49</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of packets, delivered by this sub-layer to a<br>            higher (sub-)layer, which were addressed to a broadcast<br>            address at this sub-layer.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-50"></a>rfc2863-50</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of packets that higher-level protocols<br>            requested be transmitted, and which were addressed to a<br>            multicast address at this sub-layer, including those that<br>            were discarded or not sent.  For a MAC layer protocol, this<br>            includes both Group and Functional addresses.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-51"></a>rfc2863-51</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of packets that higher-level protocols<br>            requested be transmitted, and which were addressed to a<br>            broadcast address at this sub-layer, including those that<br>            were discarded or not sent.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-52"></a>rfc2863-52</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>High Capacity Counter objects.  These objects are all</p><p>64 bit versions of the "basic" ifTable counters.  These</p><p>objects all have the same basic semantics as their 32-bit</p><p>counterparts, however, their syntax has been extended</p><p>to 64 bits.</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-53"></a>rfc2863-53</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of octets received on the interface,<br>            including framing characters.  This object is a 64-bit<br>            version of ifInOctets.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-54"></a>rfc2863-54</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of packets, delivered by this sub-layer to a<br>            higher (sub-)layer, which were not addressed to a multicast<br>            or broadcast address at this sub-layer.  This object is a<br>            64-bit version of ifInUcastPkts.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-55"></a>rfc2863-55</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of packets, delivered by this sub-layer to a<br>            higher (sub-)layer, which were addressed to a multicast<br>            address at this sub-layer.  For a MAC layer protocol, this<br>            includes both Group and Functional addresses.  This object<br>            is a 64-bit version of ifInMulticastPkts.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-56"></a>rfc2863-56</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The number of packets, delivered by this sub-layer to a<br>            higher (sub-)layer, which were addressed to a broadcast<br>            address at this sub-layer.  This object is a 64-bit version<br>            of ifInBroadcastPkts.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-57"></a>rfc2863-57</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of octets transmitted out of the<br>            interface, including framing characters.  This object is a<br>            64-bit version of ifOutOctets.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-58"></a>rfc2863-58</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of packets that higher-level protocols<br>            requested be transmitted, and which were not addressed to a<br>            multicast or broadcast address at this sub-layer, including<br>            those that were discarded or not sent.  This object is a<br>            64-bit version of ifOutUcastPkts.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-59"></a>rfc2863-59</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of packets that higher-level protocols<br>            requested be transmitted, and which were addressed to a<br>            multicast address at this sub-layer, including those that<br>            were discarded or not sent.  For a MAC layer protocol, this<br>            includes both Group and Functional addresses.  This object<br>            is a 64-bit version of ifOutMulticastPkts.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-60"></a>rfc2863-60</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The total number of packets that higher-level protocols<br>            requested be transmitted, and which were addressed to a<br>            broadcast address at this sub-layer, including those that<br>            were discarded or not sent.  This object is a 64-bit version<br>            of ifOutBroadcastPkts.<br><br>            Discontinuities in the value of this counter can occur at<br>            re-initialization of the management system, and at other<br>            times as indicated by the value of<br>            ifCounterDiscontinuityTime.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-61"></a>rfc2863-61</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Indicates whether linkUp/linkDown traps should be generated<br>            for this interface.<br><br>            By default, this object should have the value enabled(1) for<br>            interfaces which do not operate on 'top' of any other<br>            interface (as defined in the ifStackTable), and disabled(2)<br>            otherwise.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-62"></a>rfc2863-62</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An estimate of the interface's current bandwidth in units<br>            of 1,000,000 bits per second.  If this object reports a<br>            value of `n' then the speed of the interface is somewhere in<br>            the range of `n-500,000' to `n+499,999'.  For interfaces<br>            which do not vary in bandwidth or for those where no<br>            accurate estimation can be made, this object should contain<br>            the nominal bandwidth.  For a sub-layer which has no concept<br>            of bandwidth, this object should be zero.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-63"></a>rfc2863-63</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This object has a value of false(2) if this interface only<br>            accepts packets/frames that are addressed to this station.<br>            This object has a value of true(1) when the station accepts<br>            all packets/frames transmitted on the media.  The value<br>            true(1) is only legal on certain types of media.  If legal,<br>            setting this object to a value of true(1) may require the<br>            interface to be reset before becoming effective.<br><br>            The value of ifPromiscuousMode does not affect the reception<br>            of broadcast and multicast packets/frames by the interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-64"></a>rfc2863-64</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This object has the value 'true(1)' if the interface<br>            sublayer has a physical connector and the value 'false(2)'<br>            otherwise.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-65"></a>rfc2863-65</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This object is an 'alias' name for the interface as<br>            specified by a network manager, and provides a non-volatile<br>            'handle' for the interface.<br><br>            On the first instantiation of an interface, the value of<br>            ifAlias associated with that interface is the zero-length<br>            string.  As and when a value is written into an instance of<br>            ifAlias through a network management set operation, then the<br>            agent must retain the supplied value in the ifAlias instance<br>            associated with the same interface for as long as that<br>            interface remains instantiated, including across all re-<br>            initializations/reboots of the network management system,<br>            including those which result in a change of the interface's<br>            ifIndex value.<br><br>            An example of the value which a network manager might store<br>            in this object for a WAN interface is the (Telco's) circuit<br>            number/identifier of the interface.<br><br>            Some agents may support write-access only for interfaces<br>            having particular values of ifType.  An agent which supports<br>            write access to this object is required to keep the value in<br>            non-volatile storage, but it may limit the length of new<br>            values depending on how much storage is already occupied by<br>            the current values for other interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-66"></a>rfc2863-66</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The value of sysUpTime on the most recent occasion at which<br>            any one or more of this interface's counters suffered a<br>            discontinuity.  The relevant counters are the specific<br>            instances associated with this interface of any Counter32 or<br>            Counter64 object contained in the ifTable or ifXTable.  If<br>            no such discontinuities have occurred since the last re-<br>            initialization of the local management subsystem, then this<br>            object contains a zero value.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-67"></a>rfc2863-67</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>          The Interface Stack Group</p><p></p><p>Implementation of this group is optional, but strongly recommended</p><p>for all systems</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-68"></a>rfc2863-68</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The table containing information on the relationships<br>            between the multiple sub-layers of network interfaces.  In<br>            particular, it contains information on which sub-layers run<br>            'on top of' which other sub-layers, where each sub-layer<br>            corresponds to a conceptual row in the ifTable.  For<br>            example, when the sub-layer with ifIndex value x runs over<br>            the sub-layer with ifIndex value y, then this table<br>            contains:<br><br>              ifStackStatus.x.y=active<br><br>            For each ifIndex value, I, which identifies an active<br>            interface, there are always at least two instantiated rows<br>            in this table associated with I.  For one of these rows, I<br>            is the value of ifStackHigherLayer; for the other, I is the<br>            value of ifStackLowerLayer.  (If I is not involved in<br>            multiplexing, then these are the only two rows associated<br>            with I.)<br><br>            For example, two rows exist even for an interface which has<br>            no others stacked on top or below it:<br><br>              ifStackStatus.0.x=active<br>              ifStackStatus.x.0=active </div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-69"></a>rfc2863-69</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Information on a particular relationship between two sub-<br>            layers, specifying that one sub-layer runs on 'top' of the<br>            other sub-layer.  Each sub-layer corresponds to a conceptual<br>            row in the ifTable.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-70"></a>rfc2863-70</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The value of ifIndex corresponding to the higher sub-layer<br>            of the relationship, i.e., the sub-layer which runs on 'top'<br>            of the sub-layer identified by the corresponding instance of<br>            ifStackLowerLayer.  If there is no higher sub-layer (below<br>            the internetwork layer), then this object has the value 0.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-71"></a>rfc2863-71</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The value of ifIndex corresponding to the lower sub-layer<br>            of the relationship, i.e., the sub-layer which runs 'below'<br>            the sub-layer identified by the corresponding instance of<br>            ifStackHigherLayer.  If there is no lower sub-layer, then<br>            this object has the value 0.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-72"></a>rfc2863-72</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The status of the relationship between two sub-layers.<br><br>            Changing the value of this object from 'active' to<br>            'notInService' or 'destroy' will likely have consequences up<br>            and down the interface stack.  Thus, write access to this<br>            object is likely to be inappropriate for some types of<br>            interfaces, and many implementations will choose not to<br>            support write-access for any type of interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-73"></a>rfc2863-73</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The value of sysUpTime at the time of the last change of<br>            the (whole) interface stack.  A change of the interface<br>            stack is defined to be any creation, deletion, or change in<br>            value of any instance of ifStackStatus.  If the interface<br>            stack has been unchanged since the last re-initialization of<br>            the local network management subsystem, then this object<br>            contains a zero value.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-74"></a>rfc2863-74</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>  Generic Receive Address Table</p><p></p><p>This group of objects is mandatory for all types of</p><p>interfaces which can receive packets/frames addressed to</p><p>more than one address.</p><p></p><p>This table replaces the ifExtnsRcvAddr table.  The main</p><p>difference is that this table makes use of the RowStatus</p><p>textual convention, while ifExtnsRcvAddr did not.</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-75"></a>rfc2863-75</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This table contains an entry for each address (broadcast,<br>            multicast, or uni-cast) for which the system will receive<br>            packets/frames on a particular interface, except as follows:<br><br>            - for an interface operating in promiscuous mode, entries<br>            are only required for those addresses for which the system<br>            would receive frames were it not operating in promiscuous<br>            mode.<br><br>            - for 802.5 functional addresses, only one entry is<br>            required, for the address which has the functional address<br>            bit ANDed with the bit mask of all functional addresses for<br>            which the interface will accept frames.<br><br>            A system is normally able to use any unicast address which<br>            corresponds to an entry in this table as a source address.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-76"></a>rfc2863-76</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A list of objects identifying an address for which the<br>            system will accept packets/frames on the particular<br>            interface identified by the index value ifIndex.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-77"></a>rfc2863-77</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An address for which the system will accept packets/frames<br>            on this entry's interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-78"></a>rfc2863-78</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This object is used to create and delete rows in the<br>            ifRcvAddressTable.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-79"></a>rfc2863-79</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This object has the value nonVolatile(3) for those entries<br>            in the table which are valid and will not be deleted by the<br>            next restart of the managed system.  Entries having the<br>            value volatile(2) are valid and exist, but have not been<br>            saved, so that will not exist after the next restart of the<br>            managed system.  Entries having the value other(1) are valid<br>            and exist but are not classified as to whether they will<br>            continue to exist after the next restart.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-80"></a>rfc2863-80</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>definition of interface-related traps.</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-81"></a>rfc2863-81</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A linkDown trap signifies that the SNMP entity, acting in<br>            an agent role, has detected that the ifOperStatus object for<br>            one of its communication links is about to enter the down<br>            state from some other state (but not from the notPresent<br>            state).  This other state is indicated by the included value<br>            of ifOperStatus.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-82"></a>rfc2863-82</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A linkUp trap signifies that the SNMP entity, acting in an<br>            agent role, has detected that the ifOperStatus object for<br>            one of its communication links left the down state and<br>            transitioned into some other state (but not into the<br>            notPresent state).  This other state is indicated by the<br>            included value of ifOperStatus.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-83"></a>rfc2863-83</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>conformance information</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-84"></a>rfc2863-84</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-85"></a>rfc2863-85</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-86"></a>rfc2863-86</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-87"></a>rfc2863-87</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>compliance statements</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-88"></a>rfc2863-88</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Write access is not required.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-89"></a>rfc2863-89</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>units of conformance</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-90"></a>rfc2863-90</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information applicable to<br>            all network interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-91"></a>rfc2863-91</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>the following five groups are mutually exclusive; at most</p><p>one of these groups is implemented for any interface</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-92"></a>rfc2863-92</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information specific to<br>            non-high speed (non-high speed interfaces transmit and<br>            receive at speeds less than or equal to 20,000,000<br>            bits/second) character-oriented or fixed-length-transmission<br>            network interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-93"></a>rfc2863-93</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information specific to<br>            high speed (greater than 20,000,000 bits/second) character-<br>            oriented or fixed-length-transmission network interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-94"></a>rfc2863-94</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information specific to<br>            non-high speed (non-high speed interfaces transmit and<br>            receive at speeds less than or equal to 20,000,000<br>            bits/second) packet-oriented network interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-95"></a>rfc2863-95</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information specific to<br>            high speed (greater than 20,000,000 bits/second but less<br>            than or equal to 650,000,000 bits/second) packet-oriented<br>            network interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-96"></a>rfc2863-96</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information specific to<br>            higher speed (greater than 650,000,000 bits/second) packet-<br>            oriented network interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-97"></a>rfc2863-97</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information on the<br>            multiple addresses which an interface receives.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-98"></a>rfc2863-98</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information on the<br>            layering of MIB-II interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-99"></a>rfc2863-99</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing information specific to<br>            interface counter discontinuities.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-100"></a>rfc2863-100</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>Deprecated Definitions - Objects</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-101"></a>rfc2863-101</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p></p><p>   The Interface Test Table</p><p></p><p>This group of objects is optional.  However, a media-specific</p><p>MIB may make implementation of this group mandatory.</p><p></p><p>This table replaces the ifExtnsTestTable</p><p></p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-102"></a>rfc2863-102</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This table contains one entry per interface.  It defines<br>            objects which allow a network manager to instruct an agent<br>            to test an interface for various faults.  Tests for an<br>            interface are defined in the media-specific MIB for that<br>            interface.  After invoking a test, the object ifTestResult<br>            can be read to determine the outcome.  If an agent can not<br>            perform the test, ifTestResult is set to so indicate.  The<br>            object ifTestCode can be used to provide further test-<br>            specific or interface-specific (or even enterprise-specific)<br>            information concerning the outcome of the test.  Only one<br>            test can be in progress on each interface at any one time.<br>            If one test is in progress when another test is invoked, the<br>            second test is rejected.  Some agents may reject a test when<br>            a prior test is active on another interface.<br><br>            Before starting a test, a manager-station must first obtain<br>            'ownership' of the entry in the ifTestTable for the<br>            interface to be tested.  This is accomplished with the<br>            ifTestId and ifTestStatus objects as follows:<br><br>          try_again:<br>              get (ifTestId, ifTestStatus)<br>              while (ifTestStatus != notInUse)<br>                  /*<br>                   * Loop while a test is running or some other<br>                   * manager is configuring a test.<br>                   */<br>                  short delay<br>                  get (ifTestId, ifTestStatus)<br>              }<br><br>              /*<br>               * Is not being used right now -- let's compete<br>               * to see who gets it.<br>               */<br>              lock_value = ifTestId<br><br>              if ( set(ifTestId = lock_value, ifTestStatus = inUse,<br>                       ifTestOwner = 'my-IP-address') == FAILURE)<br>                  /*<br>                   * Another manager got the ifTestEntry -- go<br>                   * try again<br>                   */<br>                  goto try_again;<br><br>              /*<br>               * I have the lock<br>               */<br>              set up any test parameters.<br><br>              /*<br>               * This starts the test<br>               */<br>              set(ifTestType = test_to_run);<br><br>              wait for test completion by polling ifTestResult<br><br>              when test completes, agent sets ifTestResult<br>                   agent also sets ifTestStatus = 'notInUse'<br><br>              retrieve any additional test results, and ifTestId<br><br>              if (ifTestId == lock_value+1) results are valid<br><br>            A manager station first retrieves the value of the<br>            appropriate ifTestId and ifTestStatus objects, periodically<br>            repeating the retrieval if necessary, until the value of<br>            ifTestStatus is 'notInUse'.  The manager station then tries<br>            to set the same ifTestId object to the value it just<br>            retrieved, the same ifTestStatus object to 'inUse', and the<br>            corresponding ifTestOwner object to a value indicating<br>            itself.  If the set operation succeeds then the manager has<br>            obtained ownership of the ifTestEntry, and the value of the<br>            ifTestId object is incremented by the agent (per the<br>            semantics of TestAndIncr).  Failure of the set operation<br>            indicates that some other manager has obtained ownership of<br>            the ifTestEntry.<br><br>            Once ownership is obtained, any test parameters can be<br>            setup, and then the test is initiated by setting ifTestType.<br>            On completion of the test, the agent sets ifTestStatus to<br>            'notInUse'.  Once this occurs, the manager can retrieve the<br>            results.  In the (rare) event that the invocation of tests<br>            by two network managers were to overlap, then there would be<br>            a possibility that the first test's results might be<br>            overwritten by the second test's results prior to the first<br>            results being read.  This unlikely circumstance can be<br>            detected by a network manager retrieving ifTestId at the<br>            same time as retrieving the test results, and ensuring that<br>            the results are for the desired request.<br><br>            If ifTestType is not set within an abnormally long period of<br>            time after ownership is obtained, the agent should time-out<br>            the manager, and reset the value of the ifTestStatus object<br>            back to 'notInUse'.  It is suggested that this time-out<br>            period be 5 minutes.<br><br>            In general, a management station must not retransmit a<br>            request to invoke a test for which it does not receive a<br>            response; instead, it properly inspects an agent's MIB to<br>            determine if the invocation was successful.  Only if the<br>            invocation was unsuccessful, is the invocation request<br>            retransmitted.<br><br>            Some tests may require the interface to be taken off-line in<br>            order to execute them, or may even require the agent to<br>            reboot after completion of the test.  In these<br>            circumstances, communication with the management station<br>            invoking the test may be lost until after completion of the<br>            test.  An agent is not required to support such tests.<br>            However, if such tests are supported, then the agent should<br>            make every effort to transmit a response to the request<br>            which invoked the test prior to losing communication.  When<br>            the agent is restored to normal service, the results of the<br>            test are properly made available in the appropriate objects.<br>            Note that this requires that the ifIndex value assigned to<br>            an interface must be unchanged even if the test causes a<br>            reboot.  An agent must reject any test for which it cannot,<br>            perhaps due to resource constraints, make available at least<br>            the minimum amount of information after that test<br>            completes.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-103"></a>rfc2863-103</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">An entry containing objects for invoking tests on an<br>            interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-104"></a>rfc2863-104</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-105"></a>rfc2863-105</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This object identifies the current invocation of the<br>            interface's test.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-106"></a>rfc2863-106</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This object indicates whether or not some manager currently<br>            has the necessary 'ownership' required to invoke a test on<br>            this interface.  A write to this object is only successful<br>            when it changes its value from 'notInUse(1)' to 'inUse(2)'.<br>            After completion of a test, the agent resets the value back<br>            to 'notInUse(1)'.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-107"></a>rfc2863-107</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A control variable used to start and stop operator-<br>            initiated interface tests.  Most OBJECT IDENTIFIER values<br>            assigned to tests are defined elsewhere, in association with<br>            specific types of interface.  However, this document assigns<br>            a value for a full-duplex loopback test, and defines the<br>            special meanings of the subject identifier:<br><br>                noTest  OBJECT IDENTIFIER ::= { 0 0 }<br><br>            When the value noTest is written to this object, no action<br>            is taken unless a test is in progress, in which case the<br>            test is aborted.  Writing any other value to this object is<br>            only valid when no test is currently in progress, in which<br>            case the indicated test is initiated.<br><br>            When read, this object always returns the most recent value<br>            that ifTestType was set to.  If it has not been set since<br>            the last initialization of the network management subsystem<br>            on the agent, a value of noTest is returned.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-108"></a>rfc2863-108</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This object contains the result of the most recently<br>            requested test, or the value none(1) if no tests have been<br>            requested since the last reset.  Note that this facility<br>            provides no provision for saving the results of one test<br>            when starting another, as could be required if used by<br>            multiple managers concurrently.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-109"></a>rfc2863-109</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">This object contains a code which contains more specific<br>            information on the test result, for example an error-code<br>            after a failed test.  Error codes and other values this<br>            object may take are specific to the type of interface and/or<br>            test.  The value may have the semantics of either the<br>            AutonomousType or InstancePointer textual conventions as<br>            defined in RFC 2579.  The identifier:<br><br>                testCodeUnknown  OBJECT IDENTIFIER ::= { 0 0 }<br><br>            is defined for use if no additional result code is<br>            available.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-110"></a>rfc2863-110</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The entity which currently has the 'ownership' required to<br>            invoke a test on this interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-111"></a>rfc2863-111</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>Deprecated Definitions - Groups</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-112"></a>rfc2863-112</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects deprecated in favour of<br>            ifGeneralInformationGroup.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-113"></a>rfc2863-113</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">A collection of objects providing the ability to invoke<br>            tests on an interface.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-114"></a>rfc2863-114</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The previous collection of objects providing information on<br>            the layering of MIB-II interfaces.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-115"></a>rfc2863-115</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">The collection of objects deprecated from the original MIB-<br>            II interfaces group.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-116"></a>rfc2863-116</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"><p>Deprecated Definitions - Compliance</p></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-117"></a>rfc2863-117</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Write access is not required, nor is support for the value<br>            testing(3).</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-118"></a>rfc2863-118</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent">Write access is not required.</div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+        <tr> 
+			<td><a id="rfc2863-119"></a>rfc2863-119</td>
+							<td style="padding-left:10px">
+					
+					<div class="htmlContent"></div>
+<!--					-->				</td>
+					
+        <td>
+        </td>
+		
+			<td>
+			</td>
+
+			<td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+  </div>
+							</div>
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://iso-tc204.github.io/iso24315p1/">Website Content:</a> <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p></li>
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>Portions subject to ISO copyright. This website is not an ISO International Standard. It is provided to facilitate efforts to review and comment on the current draft. It is subject to change without notice and may not be referred to as an International Standard.</li>
+								<li>Users of this website are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</li>
+							</ul>
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>

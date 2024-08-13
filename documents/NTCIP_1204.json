@@ -1,14 +1,14 @@
 {
   "id": "NTCIP_1204",
   "guid": "0759092F-8D8C-4322-AAA5-017F0A4F46A1",
-  "lastId": 3208,
+  "lastId": 3210,
   "createdOn": "2023-08-03T09:58:29",
   "createdBy": {
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-08-13T19:43:54.138Z",
+  "lastChangedOn": "2024-08-13T22:54:22.703Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -1276,6 +1276,8 @@
               "guid": "705940ad-1eb3-41ba-8a06-d95279cfc755",
               "heading": "Responsive Device",
               "text": "<p>A transportation system operator needs the device to be responsive to conditions without causing unnecessary communication delays.</p>",
+              "conformance": "M",
+              "status": "current",
               "type": "un",
               "history": [
                 {
@@ -1343,6 +1345,28 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-13T13:52:02.113Z"
+                },
+                {
+                  "attributesChanged": {
+                    "status": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T21:57:06.493Z"
+                },
+                {
+                  "attributesChanged": {
+                    "conformance": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T21:57:34.050Z"
                 }
               ]
             }
@@ -3242,7 +3266,7 @@
                   "id": "708",
                   "guid": "3d7c9a88-3cfc-44b5-8d48-f65b16e3b865",
                   "heading": "Retrieve Mobile ESS Movement",
-                  "status": "deprecated",
+                  "status": "current",
                   "type": "d_req",
                   "links": {
                     "fulfil": [
@@ -3277,6 +3301,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-13T12:57:29.140Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "status": "deprecated"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T21:58:46.462Z"
                     }
                   ],
                   "children": [
@@ -3557,64 +3592,6 @@
                       ]
                     },
                     {
-                      "id": "2290",
-                      "guid": "03ea18b5-5df9-415e-b44a-8691a19b2e1f",
-                      "heading": "Configure Atmospheric Pressure Sensor Identity",
-                      "text": "<p>Upon request, the ESS shall store the index of the entry in the physical entity table (entPhysicalTable) that is associated with the specified atmospheric pressure sensor.</p>",
-                      "status": "current",
-                      "type": "d_req",
-                      "links": {
-                        "fulfil": [
-                          "Conditionals-77"
-                        ]
-                      },
-                      "discussion": [
-                        {
-                          "comment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor). Therefore, we do not need a configuration requirement.</p>",
-                          "date": "2024-07-31T17:51:06.470Z",
-                          "author": {
-                            "name": "Kenneth Vaughn",
-                            "email": "kvaughn@trevilon.com",
-                            "company": "Trevilon"
-                          },
-                          "updatedOn": "2024-08-12T12:40:12.314Z"
-                        }
-                      ],
-                      "history": [
-                        {
-                          "addedComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "changedOn": "2024-07-31T17:51:06.470Z",
-                          "commentAuthor": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "commentDate": "2024-07-31T17:51:06.470Z"
-                        },
-                        {
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "changedOn": "2024-08-12T12:40:12.314Z",
-                          "commentAuthor": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "commentDate": "2024-07-31T17:51:06.470Z",
-                          "commentIndex": 0,
-                          "editLastComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>"
-                        }
-                      ]
-                    },
-                    {
                       "id": "1014",
                       "guid": "5901d901-b400-4b62-a505-53d093818278",
                       "heading": "Retrieve Atmospheric Pressure",
@@ -3789,47 +3766,6 @@
                       ]
                     },
                     {
-                      "id": "2292",
-                      "guid": "ad50b11a-662b-473a-b1de-87181086112a",
-                      "heading": "Configure Wind Sensor Identity",
-                      "text": "<p>Upon request, the ESS shall store the index of the entry in the physical entity table (entPhysicalTable) that is associated with the specified wind sensor.</p>",
-                      "status": "current",
-                      "type": "d_req",
-                      "links": {
-                        "fulfil": [
-                          "Conditionals-78"
-                        ]
-                      },
-                      "discussion": [
-                        {
-                          "comment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "date": "2024-07-31T17:54:03.914Z",
-                          "author": {
-                            "name": "Kenneth Vaughn",
-                            "email": "kvaughn@trevilon.com",
-                            "company": "Trevilon"
-                          }
-                        }
-                      ],
-                      "history": [
-                        {
-                          "addedComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "changedOn": "2024-07-31T17:54:03.914Z",
-                          "commentAuthor": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "commentDate": "2024-07-31T17:54:03.914Z"
-                        }
-                      ]
-                    },
-                    {
                       "id": "959",
                       "guid": "74453dfd-d1e0-464e-8c5c-ad95e4e62ca9",
                       "heading": "Retrieve Wind Data",
@@ -3842,14 +3778,24 @@
                         ]
                       },
                       "discussion": [
+
+                      ],
+                      "history": [
                         {
-                          "comment": "<p>windSensorSituation says it is staffed, but in this context it is automatically derived...</p>",
-                          "date": "2024-06-11T18:02:38.484Z",
-                          "author": {
-                            "email": "kvaughn@trevilon.com",
+                          "changedBy": {
                             "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:14:23.696Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
                             "heading": "Kenneth Vaughn"
-                          }
+                          },
+                          "commentDate": "2024-06-11T18:02:38.484Z",
+                          "commentIndex": 0,
+                          "deleteLastComment": "<p>windSensorSituation says it is staffed, but in this context it is automatically derived...</p>"
                         }
                       ],
                       "children": [
@@ -4025,47 +3971,6 @@
                       ]
                     },
                     {
-                      "id": "2293",
-                      "guid": "e7e6197d-7d76-446c-9619-da9a194fa37b",
-                      "heading": "Configure Temperature Sensor Identity",
-                      "text": "<p>Upon request, the ESS shall store the index of the entry in the physical entity table (entPhysicalTable) that is associated with the specified temperature sensor.</p>",
-                      "status": "current",
-                      "type": "d_req",
-                      "links": {
-                        "fulfil": [
-                          "Conditionals-79"
-                        ]
-                      },
-                      "discussion": [
-                        {
-                          "comment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "date": "2024-07-31T17:54:49.241Z",
-                          "author": {
-                            "name": "Kenneth Vaughn",
-                            "email": "kvaughn@trevilon.com",
-                            "company": "Trevilon"
-                          }
-                        }
-                      ],
-                      "history": [
-                        {
-                          "addedComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "changedOn": "2024-07-31T17:54:49.241Z",
-                          "commentAuthor": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "commentDate": "2024-07-31T17:54:49.241Z"
-                        }
-                      ]
-                    },
-                    {
                       "id": "968",
                       "guid": "7c26db1c-cf3e-4457-9245-2be23735ff2e",
                       "heading": "Retrieve Air Temperature",
@@ -4208,8 +4113,8 @@
                     {
                       "id": "2299",
                       "guid": "b44c0226-51ba-4c29-873c-990c91f7cfec",
-                      "heading": "Configure Humidity Sensor Identity",
-                      "text": "<p>Upon request, the ESS shall store the index of the entry in the physical entity table (entPhysicalTable) that is associated with the specified humidity sensor.</p>",
+                      "heading": "Configure Humidity Sensor Temperature",
+                      "text": "<p>Upon request, the ESS shall store the index of the temperature sensor that is associated with the specified humidity sensor.</p>",
                       "status": "current",
                       "type": "d_req",
                       "links": {
@@ -4218,16 +4123,7 @@
                         ]
                       },
                       "discussion": [
-                        {
-                          "comment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "date": "2024-06-12T23:03:10.558Z",
-                          "author": {
-                            "email": "kvaughn@trevilon.com",
-                            "company": "Trevilon",
-                            "heading": "Kenneth Vaughn"
-                          },
-                          "updatedOn": "2024-07-31T17:58:14.096Z"
-                        }
+
                       ],
                       "history": [
                         {
@@ -4245,6 +4141,34 @@
                           "commentDate": "2024-06-12T23:03:10.558Z",
                           "commentIndex": 0,
                           "editLastComment": "<p>Includes configuring the humidity sensor to point to its related temp sensor. This object only had a read in v04 but was defined in read-write</p>"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": "Configure Humidity Sensor Identity",
+                            "text": "<p>Upon request, the ESS shall store the index of the entry in the physical entity table (entPhysicalTable) that is associated with the specified humidity sensor.</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:05:55.126Z"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:07:53.968Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "heading": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-06-12T23:03:10.558Z",
+                          "commentIndex": 0,
+                          "deleteLastComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>"
                         }
                       ]
                     },
@@ -4399,47 +4323,6 @@
                           "guid": "4fa72cd8-a424-45cd-9bf9-65b8c698ee16",
                           "text": "<p>the location of the sensor.</p>",
                           "type": "l1"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "2297",
-                      "guid": "4c5fc999-400b-4e5a-862d-d6406bc25c2f",
-                      "heading": "Configure Precipitation Sensor Identity",
-                      "text": "<p>Upon request, the ESS shall store the index of the entry in the physical entity table (entPhysicalTable) that is associated with the specified precipitation sensor.</p>",
-                      "status": "current",
-                      "type": "d_req",
-                      "links": {
-                        "fulfil": [
-                          "Conditionals-81"
-                        ]
-                      },
-                      "discussion": [
-                        {
-                          "comment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "date": "2024-07-31T17:57:22.392Z",
-                          "author": {
-                            "name": "Kenneth Vaughn",
-                            "email": "kvaughn@trevilon.com",
-                            "company": "Trevilon"
-                          }
-                        }
-                      ],
-                      "history": [
-                        {
-                          "addedComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "changedOn": "2024-07-31T17:57:22.392Z",
-                          "commentAuthor": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "commentDate": "2024-07-31T17:57:22.392Z"
                         }
                       ]
                     },
@@ -4713,47 +4596,6 @@
                       ]
                     },
                     {
-                      "id": "2301",
-                      "guid": "80cdb6f8-9683-42ed-8d8b-7bf2527cca36",
-                      "heading": "Configure Solar Radiation Sensor Identity",
-                      "text": "<p>Upon request, the ESS shall store the index of the entry in the physical entity table (entPhysicalTable) that is associated with the specified solar radiation sensor.</p>",
-                      "status": "current",
-                      "type": "d_req",
-                      "links": {
-                        "fulfil": [
-                          "Conditionals-83"
-                        ]
-                      },
-                      "discussion": [
-                        {
-                          "comment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "date": "2024-07-31T17:58:44.606Z",
-                          "author": {
-                            "name": "Kenneth Vaughn",
-                            "email": "kvaughn@trevilon.com",
-                            "company": "Trevilon"
-                          }
-                        }
-                      ],
-                      "history": [
-                        {
-                          "addedComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "changedOn": "2024-07-31T17:58:44.606Z",
-                          "commentAuthor": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "commentDate": "2024-07-31T17:58:44.606Z"
-                        }
-                      ]
-                    },
-                    {
                       "id": "1023",
                       "guid": "ca3f8cf3-6bb6-49ba-bbc7-23f77f75928d",
                       "heading": "Retrieve Solar Radiation",
@@ -4973,47 +4815,6 @@
                       ]
                     },
                     {
-                      "id": "2302",
-                      "guid": "77175a17-951e-4619-8dad-2489c6ecf1f3",
-                      "heading": "Configure Visibility Sensor Identity",
-                      "text": "<p>Upon request, the ESS shall store the index of the entry in the physical entity table (entPhysicalTable) that is associated with the visibility sensor.</p>",
-                      "status": "current",
-                      "type": "d_req",
-                      "links": {
-                        "fulfil": [
-                          "Conditionals-84"
-                        ]
-                      },
-                      "discussion": [
-                        {
-                          "comment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "date": "2024-07-31T17:59:15.327Z",
-                          "author": {
-                            "name": "Kenneth Vaughn",
-                            "email": "kvaughn@trevilon.com",
-                            "company": "Trevilon"
-                          }
-                        }
-                      ],
-                      "history": [
-                        {
-                          "addedComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "changedOn": "2024-07-31T17:59:15.327Z",
-                          "commentAuthor": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "commentDate": "2024-07-31T17:59:15.327Z"
-                        }
-                      ]
-                    },
-                    {
                       "id": "1010",
                       "guid": "86f673cf-e1ac-42e8-9b4d-0fea79dc2c3e",
                       "heading": "Retrieve Visibility",
@@ -5026,14 +4827,24 @@
                         ]
                       },
                       "discussion": [
+
+                      ],
+                      "history": [
                         {
-                          "comment": "<p>Object was previously deprecated but RTM still traces to it and there is no replacement</p>",
-                          "date": "2024-06-11T20:54:36.222Z",
-                          "author": {
-                            "email": "kvaughn@trevilon.com",
+                          "changedBy": {
                             "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:15:52.633Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
                             "heading": "Kenneth Vaughn"
-                          }
+                          },
+                          "commentDate": "2024-06-11T20:54:36.222Z",
+                          "commentIndex": 0,
+                          "deleteLastComment": "<p>Object was previously deprecated but RTM still traces to it and there is no replacement</p>"
                         }
                       ]
                     }
@@ -5163,47 +4974,6 @@
                           "guid": "2a9136d9-823a-44e9-a626-6623f7018631",
                           "text": "<p>the location of the geometric center of the pavement surface area that the sensor is monitoring.</p>",
                           "type": "l1"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "2306",
-                      "guid": "82e7ac37-42a8-426d-b784-602195ca8206",
-                      "heading": "Configure Pavement Sensor Identity",
-                      "text": "<p>Upon request, the ESS shall store the index of the entry in the physical entity table (entPhysicalTable) that is associated with the specified pavement sensor.</p>",
-                      "status": "current",
-                      "type": "d_req",
-                      "links": {
-                        "fulfil": [
-                          "Conditionals-85"
-                        ]
-                      },
-                      "discussion": [
-                        {
-                          "comment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "date": "2024-07-31T17:59:48.827Z",
-                          "author": {
-                            "name": "Kenneth Vaughn",
-                            "email": "kvaughn@trevilon.com",
-                            "company": "Trevilon"
-                          }
-                        }
-                      ],
-                      "history": [
-                        {
-                          "addedComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "changedOn": "2024-07-31T17:59:48.827Z",
-                          "commentAuthor": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "commentDate": "2024-07-31T17:59:48.827Z"
                         }
                       ]
                     },
@@ -5641,14 +5411,24 @@
                         ]
                       },
                       "discussion": [
+
+                      ],
+                      "history": [
                         {
-                          "comment": "<p>See exact wording of requirement</p>",
-                          "date": "2024-06-11T18:39:35.359Z",
-                          "author": {
-                            "email": "kvaughn@trevilon.com",
+                          "changedBy": {
                             "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:16:44.613Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
                             "heading": "Kenneth Vaughn"
-                          }
+                          },
+                          "commentDate": "2024-06-11T18:39:35.359Z",
+                          "commentIndex": 0,
+                          "deleteLastComment": "<p>See exact wording of requirement</p>"
                         }
                       ]
                     },
@@ -5665,14 +5445,24 @@
                         ]
                       },
                       "discussion": [
+
+                      ],
+                      "history": [
                         {
-                          "comment": "<p>In v04, this was traced to a scalar get, but if these are the right objects, it needs to be a tabular get.</p>",
-                          "date": "2023-08-11T21:03:15.411Z",
-                          "author": {
-                            "email": "kvaughn@trevilon.com",
+                          "changedBy": {
                             "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:17:14.813Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
                             "heading": "Kenneth Vaughn"
-                          }
+                          },
+                          "commentDate": "2023-08-11T21:03:15.411Z",
+                          "commentIndex": 0,
+                          "deleteLastComment": "<p>In v04, this was traced to a scalar get, but if these are the right objects, it needs to be a tabular get.</p>"
                         }
                       ]
                     },
@@ -5807,47 +5597,6 @@
                           "guid": "663a7cb9-760c-43a8-8526-e033c8bd727f",
                           "text": "<p>the location of the geometric center of the sensor.</p>",
                           "type": "l1"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "2307",
-                      "guid": "45e6a1cb-5dd6-459b-b2db-00898b6b02d4",
-                      "heading": "Configure Subsurface Sensor Identity",
-                      "text": "<p>Upon request, the ESS shall store the index of the entry in the physical entity table (entPhysicalTable) that is associated with the specified subsurface sensor.</p>",
-                      "status": "current",
-                      "type": "d_req",
-                      "links": {
-                        "fulfil": [
-                          "Conditionals-86"
-                        ]
-                      },
-                      "discussion": [
-                        {
-                          "comment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "date": "2024-07-31T18:00:31.428Z",
-                          "author": {
-                            "name": "Kenneth Vaughn",
-                            "email": "kvaughn@trevilon.com",
-                            "company": "Trevilon"
-                          }
-                        }
-                      ],
-                      "history": [
-                        {
-                          "addedComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "changedOn": "2024-07-31T18:00:31.428Z",
-                          "commentAuthor": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "commentDate": "2024-07-31T18:00:31.428Z"
                         }
                       ]
                     },
@@ -6058,47 +5807,6 @@
                       ]
                     },
                     {
-                      "id": "2312",
-                      "guid": "460271db-b8f7-4dff-a2f3-3a95d84eca06",
-                      "heading": "Configure Air Quality Sensor Identity",
-                      "text": "<p>Upon request, the ESS shall store the index of the entry in the physical entity table (entPhysicalTable) that is associated with the specified air quality sensor.</p>",
-                      "status": "current",
-                      "type": "d_req",
-                      "links": {
-                        "fulfil": [
-                          "Conditionals-88"
-                        ]
-                      },
-                      "discussion": [
-                        {
-                          "comment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "date": "2024-07-31T18:01:49.436Z",
-                          "author": {
-                            "name": "Kenneth Vaughn",
-                            "email": "kvaughn@trevilon.com",
-                            "company": "Trevilon"
-                          }
-                        }
-                      ],
-                      "history": [
-                        {
-                          "addedComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "changedOn": "2024-07-31T18:01:49.436Z",
-                          "commentAuthor": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "commentDate": "2024-07-31T18:01:49.436Z"
-                        }
-                      ]
-                    },
-                    {
                       "id": "1145",
                       "guid": "a64b2dcd-cf22-46d3-917e-8836552b3a4f",
                       "heading": "Retrieve Carbon Monoxide Reading",
@@ -6181,6 +5889,7 @@
                       "guid": "16c03b65-f866-43c1-a958-ac90c16101b1",
                       "heading": "Retrieve Particulate Matter 1.0 Reading",
                       "text": "<p>Upon request, the ESS shall return the current concentration detected by the specified air quality sensor of small particulate matter of 1.0 micrometers or less in diameter.</p>",
+                      "status": "current",
                       "type": "d_req",
                       "links": {
                         "fulfil_opt": [
@@ -6234,6 +5943,17 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-08-03T21:32:29.064Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "status": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:17:48.028Z"
                         }
                       ]
                     },
@@ -6494,47 +6214,6 @@
                       ]
                     },
                     {
-                      "id": "2295",
-                      "guid": "b99fe44a-f29d-4610-859d-f799c7c1ba6d",
-                      "heading": "Configure Water Level Sensor Identity",
-                      "text": "<p>Upon request, the ESS shall store the index of the entry in the physical entity table (entPhysicalTable) that is associated with the specified water level sensor.</p>",
-                      "status": "current",
-                      "type": "d_req",
-                      "links": {
-                        "fulfil": [
-                          "Conditionals-80"
-                        ]
-                      },
-                      "discussion": [
-                        {
-                          "comment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "date": "2024-07-31T17:56:55.624Z",
-                          "author": {
-                            "name": "Kenneth Vaughn",
-                            "email": "kvaughn@trevilon.com",
-                            "company": "Trevilon"
-                          }
-                        }
-                      ],
-                      "history": [
-                        {
-                          "addedComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "changedOn": "2024-07-31T17:56:55.624Z",
-                          "commentAuthor": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "commentDate": "2024-07-31T17:56:55.624Z"
-                        }
-                      ]
-                    },
-                    {
                       "id": "926",
                       "guid": "e8cee3cc-1eba-4a80-8750-216f8bb11329",
                       "heading": "Configure Water Level Sensor Warning Level",
@@ -6704,6 +6383,173 @@
                     }
                   ],
                   "children": [
+                    {
+                      "id": "3209",
+                      "guid": "5b46991d-52f8-4dcd-b64d-156bbabba47b",
+                      "heading": "Determine Number of Snapshot Cameras",
+                      "text": "<p>Upon request, the ESS shall return the number of snapshot cameras connected to the ESS.</p>",
+                      "status": "current",
+                      "type": "d_req",
+                      "links": {
+                        "fulfil": [
+                          "NTCIP_1204-544",
+                          "NTCIP_1204-557"
+                        ]
+                      },
+                      "history": [
+                        {
+                          "affectedNodeId": "942",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:45:18.309Z",
+                          "docId": "NTCIP_1204",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:45:37.418Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:45:56.255Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": "Determine Number of Snapshot Cameras Supported",
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:46:32.179Z"
+                        },
+                        {
+                          "addedLink": {
+                            "target": [
+                              "NTCIP_1204-544"
+                            ],
+                            "type": "fulfil"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:46:56.335Z"
+                        },
+                        {
+                          "addedLink": {
+                            "target": [
+                              "NTCIP_1204-557"
+                            ],
+                            "type": "fulfil"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:47:39.685Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "status": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:48:14.530Z"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "3210",
+                      "guid": "e7cde7e4-409c-4cbf-8bff-229d276e0731",
+                      "heading": "Retrieve Snapshot Camera Identity",
+                      "text": "<p>Upon request, the ESS shall return the entity identifier of the specified snapshot camera so that the management station is able to properly understand its capabilities.</p>",
+                      "status": "current",
+                      "type": "d_req",
+                      "links": {
+                        "fulfil": [
+                          "NTCIP_1204-544",
+                          "NTCIP_1204-557"
+                        ]
+                      },
+                      "history": [
+                        {
+                          "affectedNodeId": "917",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:50:36.139Z",
+                          "docId": "NTCIP_1204",
+                          "structureAction": "Copy"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": "Retrieve Water Level Sensor Identity",
+                            "text": "<p>Upn request, the ESS shall return the entity identifier of the specified water level sensor so that the management station is able to properly interpret the accuracy, resolution, and limits of the data.</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:51:26.309Z"
+                        },
+                        {
+                          "addedLink": {
+                            "target": [
+                              "NTCIP_1204-544"
+                            ],
+                            "type": "fulfil"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:51:50.136Z"
+                        },
+                        {
+                          "addedLink": {
+                            "target": [
+                              "NTCIP_1204-557"
+                            ],
+                            "type": "fulfil"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-13T22:51:59.680Z"
+                        }
+                      ]
+                    },
                     {
                       "id": "2314",
                       "guid": "1c83a3dd-5032-485f-a84a-0f96eca203bf",
@@ -6924,47 +6770,6 @@
                           "guid": "1c8e88d5-9bb1-4f87-859e-49103c1d7409",
                           "text": "<p>the location of the pavement treatment system.</p>",
                           "type": "l1"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "2310",
-                      "guid": "c58ace94-f2d8-4ff4-ad26-ab769cc3094c",
-                      "heading": "Configure Pavement Treatment System Identity",
-                      "text": "<p>Upon request, the ESS shall store the index of the entry in the physical entity table (entPhysicalTable) that is associated with the pavement treatment system.</p>",
-                      "status": "current",
-                      "type": "d_req",
-                      "links": {
-                        "fulfil": [
-                          "Conditionals-87"
-                        ]
-                      },
-                      "discussion": [
-                        {
-                          "comment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a component)</p>",
-                          "date": "2024-07-31T18:01:25.209Z",
-                          "author": {
-                            "name": "Kenneth Vaughn",
-                            "email": "kvaughn@trevilon.com",
-                            "company": "Trevilon"
-                          }
-                        }
-                      ],
-                      "history": [
-                        {
-                          "addedComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a component)</p>",
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "changedOn": "2024-07-31T18:01:25.209Z",
-                          "commentAuthor": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "commentDate": "2024-07-31T18:01:25.209Z"
                         }
                       ]
                     },
@@ -8451,6 +8256,7 @@
               "guid": "52abd725-33ce-447f-b211-bde35a1f5f31",
               "heading": "Maximum Response Time for Requests",
               "text": "<p>The ESS shall process each received request in accordance with all of the rules of the relevant base standards (e.g., NTCIP 2301 v03), including updating the value the RPU is storing internally and producing the response PDU, within the maximum response time. If the agency specification does not indicate the maximum response time, the maximum response time for any standardized request shall be 100 ms.</p><p>The maximum response time for any non-standard request shall be calculated as follows:</p>",
+              "status": "current",
               "type": "s_req",
               "links": {
                 "fulfil": [
@@ -8548,6 +8354,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-13T14:07:08.635Z"
+                },
+                {
+                  "attributesChanged": {
+                    "status": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T21:57:43.636Z"
                 }
               ],
               "children": [
@@ -8919,15 +8736,7 @@
                 ]
               },
               "discussion": [
-                {
-                  "comment": "<p>Do we want to use SFTP (SSH with FTP), FTPS (FTP with SSL), FTP over HTTPS, MFT, or something else</p><p>https://www.howtogeek.com/194740/what-is-the-difference-between-ftps-and-sftp/</p>",
-                  "date": "2023-08-11T19:34:41.972Z",
-                  "author": {
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "heading": "Kenneth Vaughn"
-                  }
-                }
+
               ],
               "history": [
                 {
@@ -8940,6 +8749,22 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-03T21:42:53.880Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:19:43.735Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "heading": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2023-08-11T19:34:41.972Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>Do we want to use SFTP (SSH with FTP), FTPS (FTP with SSL), FTP over HTTPS, MFT, or something else</p><p>https://www.howtogeek.com/194740/what-is-the-difference-between-ftps-and-sftp/</p>"
                 }
               ]
             },
@@ -9967,15 +9792,7 @@
                 ]
               },
               "discussion": [
-                {
-                  "comment": "<p>Annex H states that this is part of the configuration but NTCIP 8004 states that all read-only objects are status objects. Do we need to allow for exceptions for read-only objects? In other words, is the assertion that some configuration objects can only be changed through non-SNMP methods? If so, do we need to create a third type of parameter? Or perhaps this is a special case of inter-related configuration object?</p>",
-                  "date": "2023-08-14T15:08:11.334Z",
-                  "author": {
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "heading": "Kenneth Vaughn"
-                  }
-                }
+
               ],
               "history": [
                 {
@@ -10127,6 +9944,22 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-12T21:44:22.285Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:20:15.473Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "heading": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2023-08-14T15:08:11.334Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>Annex H states that this is part of the configuration but NTCIP 8004 states that all read-only objects are status objects. Do we need to allow for exceptions for read-only objects? In other words, is the assertion that some configuration objects can only be changed through non-SNMP methods? If so, do we need to create a third type of parameter? Or perhaps this is a special case of inter-related configuration object?</p>"
                 }
               ]
             },
@@ -11467,15 +11300,7 @@
               "x_text": "<pre>fdControllerStatus (ISO 26048-1)</pre>",
               "x_type": "superseded",
               "discussion": [
-                {
-                  "comment": "<p>This is redundant except for sensor errors. Do we want to keep?</p>",
-                  "date": "2023-08-11T18:51:48.456Z",
-                  "author": {
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "heading": "Kenneth Vaughn"
-                  }
-                }
+
               ],
               "history": [
                 {
@@ -11569,6 +11394,22 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-05T12:58:38.688Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:21:31.137Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "heading": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2023-08-11T18:51:48.456Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>This is redundant except for sensor errors. Do we want to keep?</p>"
                 }
               ]
             }
@@ -11658,15 +11499,7 @@
               "x_text": "<pre>ISO26048-1-FieldDevice:fdConfiguredLatitude</pre>",
               "x_type": "superseded",
               "discussion": [
-                {
-                  "comment": "<p>All of the other location objects in this standard are in microdegrees. Do we want to keep all location objetcs in this standard in microdegrees, have a mixture of microdegrees and 1/10ths of microdegrees or change all to 1/10ths of microdegrees</p>",
-                  "date": "2023-08-11T19:42:27.587Z",
-                  "author": {
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "heading": "Kenneth Vaughn"
-                  }
-                }
+
               ],
               "history": [
                 {
@@ -11771,6 +11604,22 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-29T15:43:11.178Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:21:45.550Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "heading": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2023-08-11T19:42:27.587Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>All of the other location objects in this standard are in microdegrees. Do we want to keep all location objetcs in this standard in microdegrees, have a mixture of microdegrees and 1/10ths of microdegrees or change all to 1/10ths of microdegrees</p>"
                 }
               ]
             },
@@ -12407,15 +12256,7 @@
               "x_text": "<pre>ISO26048-1-FieldDevice:fdConfiguredElevation</pre>",
               "x_type": "superseded",
               "discussion": [
-                {
-                  "comment": "<p>Many other standards are using decimeters. Do we want to update all of our height objects?</p>",
-                  "date": "2023-08-11T19:54:14.874Z",
-                  "author": {
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "heading": "Kenneth Vaughn"
-                  }
-                }
+
               ],
               "history": [
                 {
@@ -12509,6 +12350,22 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-29T15:08:06.160Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:22:07.635Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "heading": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2023-08-11T19:54:14.874Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>Many other standards are using decimeters. Do we want to update all of our height objects?</p>"
                 }
               ]
             },
@@ -14261,15 +14118,7 @@
                     ]
                   },
                   "discussion": [
-                    {
-                      "comment": "<p>Do we need objects to retrieve lat/long/elev of each sensor or is it acceptable to have lat/long/elev of the ESS coupled with the X, Y, and Z offsets (i.e., this allows the calculation of the exact lat/long to be shifted to the management station as this is a reasonably complex calculation on a mobile or transportable station that can change latitude, elevation, and orientation)</p>",
-                      "date": "2024-07-31T19:00:18.809Z",
-                      "author": {
-                        "name": "Kenneth Vaughn",
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon"
-                      }
-                    }
+
                   ],
                   "history": [
                     {
@@ -14361,6 +14210,22 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-13T14:29:24.385Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:22:53.224Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-07-31T19:00:18.809Z",
+                      "commentIndex": 0,
+                      "deleteLastComment": "<p>Do we need objects to retrieve lat/long/elev of each sensor or is it acceptable to have lat/long/elev of the ESS coupled with the X, Y, and Z offsets (i.e., this allows the calculation of the exact lat/long to be shifted to the management station as this is a reasonably complex calculation on a mobile or transportable station that can change latitude, elevation, and orientation)</p>"
                     }
                   ]
                 },
@@ -14591,8 +14456,7 @@
                       "NTCIP_1204-2341"
                     ],
                     "satisfies": [
-                      "NTCIP_1204-779",
-                      "NTCIP_1204-2290"
+                      "NTCIP_1204-779"
                     ]
                   },
                   "history": [
@@ -14740,6 +14604,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-12T17:11:16.256Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:11:25.867Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1204-2290"
+                        ],
+                        "type": "satisfies"
+                      }
                     }
                   ]
                 }
@@ -17107,7 +16985,7 @@
                   "id": "83",
                   "guid": "37FA04CB-3645-45F7-85D4-BE7C3899FE9C",
                   "heading": "Wind Sensor Situation",
-                  "text": "<p>The assessment of the wind situation from a staffed station as defined by the Beaufort Wind Scale in the Glossary of Meteorology.&nbsp;&nbsp;Specific ranges for these values are defined in the Glossary of Meteorology.</p>",
+                  "text": "<p>The assessment of the wind situation from the sensor as defined by the Beaufort Wind Scale in the Glossary of Meteorology. &nbsp;Specific ranges for these values are defined in the Glossary of Meteorology.</p>",
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.4.8.1.10",
@@ -17270,6 +17148,17 @@
                         ],
                         "type": "group"
                       }
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The assessment of the wind situation from a staffed station as defined by the Beaufort Wind Scale in the Glossary of Meteorology.&nbsp;&nbsp;Specific ranges for these values are defined in the Glossary of Meteorology.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:13:02.464Z"
                     }
                   ]
                 },
@@ -17869,8 +17758,7 @@
                       "NTCIP_1204-2345"
                     ],
                     "satisfies": [
-                      "NTCIP_1204-790",
-                      "NTCIP_1204-2292"
+                      "NTCIP_1204-790"
                     ]
                   },
                   "history": [
@@ -17996,6 +17884,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-12T17:11:08.762Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:11:25.867Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1204-2292"
+                        ],
+                        "type": "satisfies"
+                      }
                     }
                   ]
                 }
@@ -19497,8 +19399,7 @@
                   "type": "ot",
                   "links": {
                     "satisfies": [
-                      "NTCIP_1204-804",
-                      "NTCIP_1204-2293"
+                      "NTCIP_1204-804"
                     ]
                   },
                   "history": [
@@ -19610,6 +19511,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-12T17:11:22.162Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:11:25.867Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1204-2293"
+                        ],
+                        "type": "satisfies"
+                      }
                     }
                   ]
                 }
@@ -23800,8 +23715,7 @@
                       "NTCIP_1204-2397"
                     ],
                     "satisfies": [
-                      "NTCIP_1204-917",
-                      "NTCIP_1204-2295"
+                      "NTCIP_1204-917"
                     ]
                   },
                   "history": [
@@ -23955,6 +23869,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-12T17:11:26.930Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:11:25.867Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1204-2295"
+                        ],
+                        "type": "satisfies"
+                      }
                     }
                   ]
                 }
@@ -26971,15 +26899,7 @@
                     ]
                   },
                   "discussion": [
-                    {
-                      "comment": "<p>\"inches\" really? Shouldn't this be based on SI units</p>",
-                      "date": "2023-08-11T19:58:51.408Z",
-                      "author": {
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon",
-                        "heading": "Kenneth Vaughn"
-                      }
-                    }
+
                   ],
                   "history": [
                     {
@@ -27061,6 +26981,22 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-13T14:16:13.724Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:28:04.214Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "heading": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2023-08-11T19:58:51.408Z",
+                      "commentIndex": 0,
+                      "deleteLastComment": "<p>\"inches\" really? Shouldn't this be based on SI units</p>"
                     }
                   ]
                 },
@@ -27719,8 +27655,7 @@
                       "NTCIP_1204-2363"
                     ],
                     "satisfies": [
-                      "NTCIP_1204-832",
-                      "NTCIP_1204-2297"
+                      "NTCIP_1204-832"
                     ]
                   },
                   "history": [
@@ -27836,6 +27771,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-12T17:11:31.429Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:11:25.867Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1204-2297"
+                        ],
+                        "type": "satisfies"
+                      }
                     }
                   ]
                 }
@@ -29567,8 +29516,7 @@
                       "NTCIP_1204-2353"
                     ],
                     "satisfies": [
-                      "NTCIP_1204-818",
-                      "NTCIP_1204-2299"
+                      "NTCIP_1204-818"
                     ]
                   },
                   "history": [
@@ -29684,6 +29632,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-12T17:11:35.952Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:06:08.764Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1204-2299"
+                        ],
+                        "type": "satisfies"
+                      }
                     }
                   ]
                 }
@@ -30074,15 +30036,7 @@
               "x_text": "<pre>essCloudSituationV4 (See 5.9.11)</pre>",
               "x_type": "superseded",
               "discussion": [
-                {
-                  "comment": "<p>This was text from version 1, which had apparently been inadvertently replaced in version 2 with the description from essVisibilitySituation without anyone noticing. It seems reasonably to restore the original intent.</p>",
-                  "date": "2023-08-11T19:59:31.573Z",
-                  "author": {
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "heading": "Kenneth Vaughn"
-                  }
-                }
+
               ],
               "history": [
                 {
@@ -30176,6 +30130,22 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T23:20:15.931Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:29:04.327Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "heading": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2023-08-11T19:59:31.573Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>This was text from version 1, which had apparently been inadvertently replaced in version 2 with the description from essVisibilitySituation without anyone noticing. It seems reasonably to restore the original intent.</p>"
                 }
               ]
             },
@@ -31980,15 +31950,7 @@
                     ]
                   },
                   "discussion": [
-                    {
-                      "comment": "<p>Previously the definition said W/m^2 but the &lt;Units&gt; clause said J/m^2. If this is an \"average\" I believe it should be W/m^2; if we want to report \"total radiation\" (i.e., a sum) J/m^2 (i.e., convertible to kWh/m^2) would be the more appropriate units. However, given that the period over which the total can be summed is configurable from 0 to 86400 seconds (1 sec to 1 day), the range on the sum would need to be much larger e.g., 0.01 to 2,800,000.00 kWh/m^2 at a minimum. Thus, I assume the intent is an average in W/m^2</p>",
-                      "date": "2023-08-11T20:00:24.996Z",
-                      "author": {
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon",
-                        "heading": "Kenneth Vaughn"
-                      }
-                    }
+
                   ],
                   "history": [
                     {
@@ -32082,6 +32044,22 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-29T15:43:11.178Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:29:29.365Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "heading": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2023-08-11T20:00:24.996Z",
+                      "commentIndex": 0,
+                      "deleteLastComment": "<p>Previously the definition said W/m^2 but the &lt;Units&gt; clause said J/m^2. If this is an \"average\" I believe it should be W/m^2; if we want to report \"total radiation\" (i.e., a sum) J/m^2 (i.e., convertible to kWh/m^2) would be the more appropriate units. However, given that the period over which the total can be summed is configurable from 0 to 86400 seconds (1 sec to 1 day), the range on the sum would need to be much larger e.g., 0.01 to 2,800,000.00 kWh/m^2 at a minimum. Thus, I assume the intent is an average in W/m^2</p>"
                     }
                   ]
                 },
@@ -32433,8 +32411,7 @@
                       "NTCIP_1204-2367"
                     ],
                     "satisfies": [
-                      "NTCIP_1204-847",
-                      "NTCIP_1204-2301"
+                      "NTCIP_1204-847"
                     ]
                   },
                   "history": [
@@ -32550,6 +32527,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-12T17:11:41.561Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:11:25.867Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1204-2301"
+                        ],
+                        "type": "satisfies"
+                      }
                     }
                   ]
                 }
@@ -32912,15 +32903,7 @@
                 ]
               },
               "discussion": [
-                {
-                  "comment": "<p>Inserted as node 2 to align clause numbering with section numbering</p>",
-                  "date": "2024-07-31T19:58:31.067Z",
-                  "author": {
-                    "name": "Kenneth Vaughn",
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon"
-                  }
-                }
+
               ],
               "history": [
                 {
@@ -33064,6 +33047,22 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-31T20:49:44.204Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:29:44.957Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-07-31T19:58:31.067Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>Inserted as node 2 to align clause numbering with section numbering</p>"
                 }
               ]
             },
@@ -35176,8 +35175,7 @@
                       "NTCIP_1204-2372"
                     ],
                     "satisfies": [
-                      "NTCIP_1204-861",
-                      "NTCIP_1204-2302"
+                      "NTCIP_1204-861"
                     ]
                   },
                   "history": [
@@ -35370,6 +35368,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-12T17:11:46.592Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:11:25.867Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1204-2302"
+                        ],
+                        "type": "satisfies"
+                      }
                     }
                   ]
                 },
@@ -38409,7 +38421,7 @@
                   "id": "270",
                   "guid": "291B98FF-62A1-47EF-ADF1-9FEDAC2D518F",
                   "heading": "Pavement Surface Friction Coefficient",
-                  "text": "<p>A value representing the manufacturer's estimate of the friction coefficient of the roadway pavement for the specified pavement sensor. The actual coefficient of friction is dependent on many variables, including characteristics of the tire traveling on the pavement; thus it is recognized that it is impossible to provide a on a single mathematically precise value. However, the reported friction coefficient shall be based on an empirical model that has a strong correlation with actual measured friction coefficients using a standard test method and test apparatus, such as a decelerometer or a locked-wheel tester. The estimate is provided in hundredths (i.e., if the weight of a vehicle is 15,000 N and the friction coefficient is 50, the resultant friction force offered by locked wheels on the pavement is 15,000 * 50/100 = 7,500 N). This value should not be compared across vendors or sites but can be useful to gauge the relative friction of a specific site at different points in time. For example, this value could be used to activate a warning message, but the exact value that would trigger that condition would need to be discovered empirically at each site.</p>",
+                  "text": "<p>A value representing the manufacturer's estimate of the friction coefficient of the roadway pavement for the specified pavement sensor. The actual coefficient of friction is dependent on many variables, including characteristics of the tire traveling on the pavement; thus it is recognized that it is impossible to provide a single mathematically precise value. However, the reported friction coefficient shall be based on an empirical model that has a strong correlation with actual measured friction coefficients using a standard test method and test apparatus, such as a decelerometer or a locked-wheel tester. The estimate is provided in hundredths (i.e., if the weight of a vehicle is 15,000 N and the estimated friction coefficient is 50, the resultant friction force offered by locked wheels on the pavement is expected to be approximately 15,000 N * 50/100 = 7,500 N). This value should not be compared across vendors or sites due to the number of site-specific factors that can impact its accuracy, but the value can be useful to gauge the relative friction of a specific site at different points in time. For example, this value could be used to activate a warning message, but the exact value that would trigger that condition would need to be discovered empirically at each site.</p>",
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2.1.24",
@@ -38429,15 +38441,7 @@
                     ]
                   },
                   "discussion": [
-                    {
-                      "comment": "<p>Needs review, what is precisely meant here. Is this intended to be a static value or dynamic (e.g., it can be effected by precipitation). Is it intended for the speed limit, prevailing speed, or some assumed speed (i.e., it can be effected by speed). Is it based on some idealized tire? Is this actually implemented by devices, and if so, is it used by agencies. It seems too vague to provide meaningful information.</p>",
-                      "date": "2023-08-11T20:01:03.473Z",
-                      "author": {
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon",
-                        "heading": "Kenneth Vaughn"
-                      }
-                    }
+
                   ],
                   "history": [
                     {
@@ -38530,6 +38534,55 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-12T21:37:49.620Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:30:22.211Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "heading": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2023-08-11T20:01:03.473Z",
+                      "commentIndex": 0,
+                      "deleteLastComment": "<p>Needs review, what is precisely meant here. Is this intended to be a static value or dynamic (e.g., it can be effected by precipitation). Is it intended for the speed limit, prevailing speed, or some assumed speed (i.e., it can be effected by speed). Is it based on some idealized tire? Is this actually implemented by devices, and if so, is it used by agencies. It seems too vague to provide meaningful information.</p>"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>A value representing the manufacturer's estimate of the friction coefficient of the roadway pavement for the specified pavement sensor. The actual coefficient of friction is dependent on many variables, including characteristics of the tire traveling on the pavement; thus it is recognized that it is impossible to provide a on a single mathematically precise value. However, the reported friction coefficient shall be based on an empirical model that has a strong correlation with actual measured friction coefficients using a standard test method and test apparatus, such as a decelerometer or a locked-wheel tester. The estimate is provided in hundredths (i.e., if the weight of a vehicle is 15,000 N and the friction coefficient is 50, the resultant friction force offered by locked wheels on the pavement is 15,000 * 50/100 = 7,500 N). This value should not be compared across vendors or sites but can be useful to gauge the relative friction of a specific site at different points in time. For example, this value could be used to activate a warning message, but the exact value that would trigger that condition would need to be discovered empirically at each site.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:30:48.672Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>A value representing the manufacturer's estimate of the friction coefficient of the roadway pavement for the specified pavement sensor. The actual coefficient of friction is dependent on many variables, including characteristics of the tire traveling on the pavement; thus it is recognized that it is impossible to provide a single mathematically precise value. However, the reported friction coefficient shall be based on an empirical model that has a strong correlation with actual measured friction coefficients using a standard test method and test apparatus, such as a decelerometer or a locked-wheel tester. The estimate is provided in hundredths (i.e., if the weight of a vehicle is 15,000 N and the friction coefficient is 50, the resultant friction force offered by locked wheels on the pavement is 15,000 * 50/100 = 7,500 N). This value should not be compared across vendors or sites but can be useful to gauge the relative friction of a specific site at different points in time. For example, this value could be used to activate a warning message, but the exact value that would trigger that condition would need to be discovered empirically at each site.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:31:52.060Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>A value representing the manufacturer's estimate of the friction coefficient of the roadway pavement for the specified pavement sensor. The actual coefficient of friction is dependent on many variables, including characteristics of the tire traveling on the pavement; thus it is recognized that it is impossible to provide a single mathematically precise value. However, the reported friction coefficient shall be based on an empirical model that has a strong correlation with actual measured friction coefficients using a standard test method and test apparatus, such as a decelerometer or a locked-wheel tester. The estimate is provided in hundredths (i.e., if the weight of a vehicle is 15,000 N and the estimated friction coefficient is 50, the resultant friction force offered by locked wheels on the pavement is expected to be approximately 15,000 N * 50/100 = 7,500 N). This value should not be compared across vendors or sites but can be useful to gauge the relative friction of a specific site at different points in time. For example, this value could be used to activate a warning message, but the exact value that would trigger that condition would need to be discovered empirically at each site.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:34:57.607Z"
                     }
                   ]
                 },
@@ -38781,13 +38834,14 @@
                   "units": "percent",
                   "discussion": [
                     {
-                      "comment": "<p>In v04 this only traced to Retrieve Sensor Profile with Mobile Sources (which is deprecated and likely deleted)</p>",
+                      "comment": "<p>In v04 this only traced to Retrieve Sensor Profile with Mobile Sources (which was deleted in preference for the dynamic objects of ISO 26048-1). Should this be:</p><p>- traced to an existing requirement (e.g., 3.5.2.8.17 Retrieve Roadway Ice Thickness),</p><p>- traced to a new requirement, or</p><p>- deprecated</p>",
                       "date": "2024-06-12T23:48:59.448Z",
                       "author": {
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon",
                         "heading": "Kenneth Vaughn"
-                      }
+                      },
+                      "updatedOn": "2024-08-13T22:39:00.440Z"
                     }
                   ],
                   "history": [
@@ -38843,6 +38897,22 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T23:20:15.931Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:39:00.440Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "heading": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-06-12T23:48:59.448Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p>In v04 this only traced to Retrieve Sensor Profile with Mobile Sources (which is deprecated and likely deleted)</p>"
                     }
                   ]
                 },
@@ -39272,8 +39342,7 @@
                       "NTCIP_1204-2382"
                     ],
                     "satisfies": [
-                      "NTCIP_1204-876",
-                      "NTCIP_1204-2306"
+                      "NTCIP_1204-876"
                     ]
                   },
                   "history": [
@@ -39389,6 +39458,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-12T17:11:51.172Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:11:25.867Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1204-2306"
+                        ],
+                        "type": "satisfies"
+                      }
                     }
                   ]
                 }
@@ -40275,8 +40358,7 @@
                       "NTCIP_1204-2387"
                     ],
                     "satisfies": [
-                      "NTCIP_1204-890",
-                      "NTCIP_1204-2307"
+                      "NTCIP_1204-890"
                     ]
                   },
                   "history": [
@@ -40392,6 +40474,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-12T17:12:02.890Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:11:25.867Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1204-2307"
+                        ],
+                        "type": "satisfies"
+                      }
                     }
                   ]
                 },
@@ -41310,15 +41406,7 @@
               "type": "ot",
               "version": "v05",
               "discussion": [
-                {
-                  "comment": "<p>All other block objects were deprecated. Was this supposed to be deprecated as well? If not, we should add an informative note</p>",
-                  "date": "2023-08-11T20:02:36.240Z",
-                  "author": {
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "heading": "Kenneth Vaughn"
-                  }
-                }
+
               ],
               "history": [
                 {
@@ -41430,6 +41518,22 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-05T12:51:02.928Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:39:24.962Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "heading": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2023-08-11T20:02:36.240Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>All other block objects were deprecated. Was this supposed to be deprecated as well? If not, we should add an informative note</p>"
                 }
               ]
             },
@@ -41565,15 +41669,7 @@
           "status": "current",
           "type": "oi",
           "discussion": [
-            {
-              "comment": "<p>Does the limited use still apply?</p>",
-              "date": "2023-08-11T20:03:27.525Z",
-              "author": {
-                "email": "kvaughn@trevilon.com",
-                "company": "Trevilon",
-                "heading": "Kenneth Vaughn"
-              }
-            }
+
           ],
           "history": [
             {
@@ -41674,6 +41770,22 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-08-04T01:59:37.756Z"
+            },
+            {
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-13T22:39:40.145Z",
+              "commentAuthor": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "heading": "Kenneth Vaughn"
+              },
+              "commentDate": "2023-08-11T20:03:27.525Z",
+              "commentIndex": 0,
+              "deleteLastComment": "<p>Does the limited use still apply?</p>"
             }
           ],
           "children": [
@@ -43344,15 +43456,7 @@
               "x_text": "<pre>ptsOperationalModeV3 (See 5.13.19)</pre>",
               "x_type": "superseded",
               "discussion": [
-                {
-                  "comment": "<p>MIssing trace</p>",
-                  "date": "2023-08-03T21:28:24.132Z",
-                  "author": {
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "heading": "Kenneth Vaughn"
-                  }
-                }
+
               ],
               "history": [
                 {
@@ -43457,6 +43561,22 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-01T18:22:29.913Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:40:14.080Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "heading": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2023-08-03T21:28:24.132Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>MIssing trace</p>"
                 }
               ]
             },
@@ -43480,15 +43600,7 @@
               "x_text": "<pre>ptsCommandStateV3 (See 5.13.19)</pre>",
               "x_type": "superseded",
               "discussion": [
-                {
-                  "comment": "<p>Missing trace</p>",
-                  "date": "2023-08-03T21:28:33.447Z",
-                  "author": {
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "heading": "Kenneth Vaughn"
-                  }
-                }
+
               ],
               "history": [
                 {
@@ -43560,6 +43672,22 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T23:20:15.931Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:40:20.394Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "heading": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2023-08-03T21:28:33.447Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>Missing trace</p>"
                 }
               ]
             },
@@ -43767,24 +43895,7 @@
                 ]
               },
               "discussion": [
-                {
-                  "comment": "<p>Given that the text does not explicitly state that the value initializes at zero or any reset conditions, I assume that the Counter/Counter32 semantics apply - i.e., it initializes at a potentially random value and does not support resets</p>",
-                  "date": "2023-08-11T20:04:06.904Z",
-                  "author": {
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "heading": "Kenneth Vaughn"
-                  }
-                },
-                {
-                  "comment": "<p>This object had indicated units of milliseconds, which does not seem to make sense for a \"counter\"</p>",
-                  "date": "2023-08-11T20:05:03.165Z",
-                  "author": {
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "heading": "Kenneth Vaughn"
-                  }
-                }
+
               ],
               "history": [
                 {
@@ -43855,6 +43966,38 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T23:20:15.931Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:41:24.396Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "heading": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2023-08-11T20:04:06.904Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>Given that the text does not explicitly state that the value initializes at zero or any reset conditions, I assume that the Counter/Counter32 semantics apply - i.e., it initializes at a potentially random value and does not support resets</p>"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:41:28.996Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "heading": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2023-08-11T20:05:03.165Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>This object had indicated units of milliseconds, which does not seem to make sense for a \"counter\"</p>"
                 }
               ]
             },
@@ -43878,15 +44021,7 @@
               "x_text": "<pre>ptsLastSignalEventDate and ptsLastSignalEventTime (See 5.13.26 and 5.13.27)</pre>",
               "x_type": "superseded",
               "discussion": [
-                {
-                  "comment": "<p>This does not conform to the semantic of a counter</p>",
-                  "date": "2023-08-11T20:05:27.069Z",
-                  "author": {
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "heading": "Kenneth Vaughn"
-                  }
-                }
+
               ],
               "history": [
                 {
@@ -43980,6 +44115,22 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-03T18:43:08.796Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:41:41.728Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "heading": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2023-08-11T20:05:27.069Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>This does not conform to the semantic of a counter</p>"
                 }
               ]
             },
@@ -44008,15 +44159,7 @@
                 ]
               },
               "discussion": [
-                {
-                  "comment": "<p>Given that the text does not explicitly state that the value initializes at zero or any reset conditions, I assume that the Counter/Counter32 semantics apply - i.e., it initializes at a potentially random value and does not support resets</p>",
-                  "date": "2023-08-11T20:04:22.705Z",
-                  "author": {
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "heading": "Kenneth Vaughn"
-                  }
-                }
+
               ],
               "history": [
                 {
@@ -44087,6 +44230,22 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T23:20:15.931Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:43:30.571Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "heading": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2023-08-11T20:04:22.705Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>Given that the text does not explicitly state that the value initializes at zero or any reset conditions, I assume that the Counter/Counter32 semantics apply - i.e., it initializes at a potentially random value and does not support resets</p>"
                 }
               ]
             },
@@ -44115,15 +44274,7 @@
                 ]
               },
               "discussion": [
-                {
-                  "comment": "<p>Given that the text does not explicitly state that the value initializes at zero or any reset conditions, I assume that the Counter/Counter32 semantics apply - i.e., it initializes at a potentially random value and does not support resets</p>",
-                  "date": "2023-08-11T20:04:28.668Z",
-                  "author": {
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "heading": "Kenneth Vaughn"
-                  }
-                }
+
               ],
               "history": [
                 {
@@ -44194,6 +44345,22 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T23:20:15.931Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:43:46.039Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "heading": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2023-08-11T20:04:28.668Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>Given that the text does not explicitly state that the value initializes at zero or any reset conditions, I assume that the Counter/Counter32 semantics apply - i.e., it initializes at a potentially random value and does not support resets</p>"
                 }
               ]
             },
@@ -46015,8 +46182,7 @@
                   "NTCIP_1204-2414"
                 ],
                 "satisfies": [
-                  "NTCIP_1204-934",
-                  "NTCIP_1204-2310"
+                  "NTCIP_1204-934"
                 ]
               },
               "history": [
@@ -46132,6 +46298,20 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-12T17:11:59.099Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:11:25.867Z",
+                  "removedLink": {
+                    "target": [
+                      "NTCIP_1204-2310"
+                    ],
+                    "type": "satisfies"
+                  }
                 }
               ]
             }
@@ -48376,8 +48556,7 @@
                       "NTCIP_1204-2407"
                     ],
                     "satisfies": [
-                      "NTCIP_1204-903",
-                      "NTCIP_1204-2312"
+                      "NTCIP_1204-903"
                     ]
                   },
                   "history": [
@@ -48493,6 +48672,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-12T17:10:37.687Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:11:25.867Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1204-2312"
+                        ],
+                        "type": "satisfies"
+                      }
                     }
                   ]
                 }
@@ -49100,6 +49293,9 @@
               "links": {
                 "group": [
                   "NTCIP_1204-2389"
+                ],
+                "satisfies": [
+                  "NTCIP_1204-3209"
                 ]
               },
               "history": [
@@ -49171,6 +49367,20 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-29T14:17:09.196Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "NTCIP_1204-3209"
+                    ],
+                    "type": "satisfies"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-13T22:45:48.471Z"
                 }
               ]
             },
@@ -49651,15 +49861,7 @@
                     ]
                   },
                   "discussion": [
-                    {
-                      "comment": "<p>Informative text for consideration if we want to allow UTF-8</p>",
-                      "date": "2023-08-11T20:14:34.218Z",
-                      "author": {
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon",
-                        "heading": "Kenneth Vaughn"
-                      }
-                    }
+
                   ],
                   "history": [
                     {
@@ -49730,6 +49932,22 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T23:20:15.931Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:48:53.734Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "heading": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2023-08-11T20:14:34.218Z",
+                      "commentIndex": 0,
+                      "deleteLastComment": "<p>Informative text for consideration if we want to allow UTF-8</p>"
                     }
                   ]
                 },
@@ -49964,15 +50182,7 @@
                   "x_text": "<pre>essSnapshotCameraFilenameV5 and essSnapshotCameraFileFormat</pre>",
                   "x_type": "superseded",
                   "discussion": [
-                    {
-                      "comment": "<p>Is it time to deprecate this object and replace with a filename that allows international characters as well plus a storage format enumeration that also defines the extension?</p>",
-                      "date": "2023-08-11T20:15:11.990Z",
-                      "author": {
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon",
-                        "heading": "Kenneth Vaughn"
-                      }
-                    }
+
                   ],
                   "history": [
                     {
@@ -50141,6 +50351,22 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-05T01:44:46.083Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:49:07.963Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "heading": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2023-08-11T20:15:11.990Z",
+                      "commentIndex": 0,
+                      "deleteLastComment": "<p>Is it time to deprecate this object and replace with a filename that allows international characters as well plus a storage format enumeration that also defines the extension?</p>"
                     }
                   ]
                 },
@@ -50510,6 +50736,11 @@
                   "status": "current",
                   "syntax": "<p>PhysicalIndexOrZero</p>",
                   "type": "ot",
+                  "links": {
+                    "satisfies": [
+                      "NTCIP_1204-3210"
+                    ]
+                  },
                   "history": [
                     {
                       "affectedNodeId": "368",
@@ -50675,6 +50906,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-12T17:11:01.960Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1204-3210"
+                        ],
+                        "type": "satisfies"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:52:56.532Z"
                     }
                   ]
                 }
@@ -50939,6 +51184,7 @@
                   "guid": "f49d6fe4-fc11-4b6a-bc39-de70693a5a2e",
                   "text": "<p><span style=\"text-align: start;\">The NTCIP 1204 objects required to claim base conformance to the NTCIP 1204 v01.&nbsp;</span></p>",
                   "info": "<p>First defined in v01.</p>",
+                  "status": "deprecated",
                   "type": "og",
                   "history": [
                     {
@@ -50984,6 +51230,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-12T21:44:56.559Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "status": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-13T22:54:22.703Z"
                     }
                   ]
                 },
@@ -58401,7 +58658,7 @@
   "templateColumns": {
     "ff7ea633-6def-49fe-b156-ba947230c253": {
       "label": "Errors",
-      "template": "<ul>\n{{#unless type}}\n  <li>Missing \"type\"</li>\n{{/unless}}\n{{#if (eval type \"==\" \"un\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}{{#unless conformance}}\n    <li>Missing \"conformance\"</li>\n  {{/unless}}{{/if}}  \n  {{#if (or (eval status \"==\" \"current\") (eval status \"==\" \"silent\"))}}\n    {{#if (hasInlinks \"fulfil\")}}\n      {{#eachInlinkWith type=\"fulfil\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Fulfilling requirement is not current: {{docObjId}}</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      {{#unless (hasInlinks \"opt_group\")}}\n      <li>Missing \"fulfill\" link</li>\n      {{/unless}}\n    {{/if}}\n  {{else}}\n    {{#if (hasInlinks \"fulfil\")}}\n      <li>Invalid \"fulfill\" link</li>\n    {{/if}}  \n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"d_req\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}\n    {{#if (or (hasOutlinks \"fulfil\") (hasOutlinks \"fulfil_opt\"))}}\n      {{#eachOutlinkWith type=\"fulfil\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"Conditionals\")}}{{#eachOutlinkWith type=\"conditional\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n      {{#eachOutlinkWith type=\"fulfil_opt\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Fulfilled need is not current: {{docObjId}}</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"Conditionals\")}}{{#eachOutlinkWith type=\"conditional\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n    {{else}}\n      <li>Missing \"fulfill\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"satisfies\")}}\n      {{#eachInlinkWith type=\"satisfies\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Satisfying object is not current: {{docObjId}}</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      <li>Missing \"satisfies\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"implement\")}}\n      {{#eachInlinkWith type=\"implement\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Implementing dialog is not current</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      <li>Missing \"implement\" link</li>\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"fulfil\")}}\n      <li>Invalid \"fulfill\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"implement\")}}\n      <li>Invalid \"implement\" link</li>\n    {{/if}}\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"s_req\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (or (hasOutlinks \"fulfil\")(hasOutlinks \"fulfil_opt\"))}}\n      {{#eachOutlinkWith type=\"fulfil\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"OptionGroups\")}}{{#eachOutlinkWith type=\"fulfil_opt\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n      {{#eachOutlinkWith type=\"fulfil_opt\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"OptionGroups\")}}{{#eachOutlinkWith type=\"fulfil_opt\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n            <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n  {{else}}\n    <li>Missing \"fulfill\" link</li>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"dia\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (hasOutlinks \"implement\")}}\n      {{#eachOutlinkWith type=\"implement\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Implemented requirement is not current</li>\n      {{/unless}}{{/eachOutlinkWith}}\n  {{else}}\n    <li>Missing \"implement\" link</li>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}\n    {{#if (eval access \"!=\" \"not-accessible\")}}\n      {{#if (hasOutlinks \"satisfies\")}}\n        {{#unless (eval access \"==\" \"read-only\")}}{{#unless (eval (countOutlinks \"satisfies\") \">\" \"1\")}}\n          <li>Missing 2nd \"satisfies\" link</li>\n        {{/unless}}{{/unless}}\n        {{#eachOutlinkWith type=\"satisfies\"}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Satisfied requirement is not current</li>\n        {{/unless}}{{/eachOutlinkWith}}\n      {{else}}\n        <li>Missing \"satisfies\" link</li>\n      {{/if}}\n      {{#unless (hasOutlinks \"group\")}}\n        <li>Missing \"group\" link</li>\n      {{/unless}}\n    {{else}}\n      {{#if (hasOutlinks \"satisfies\")}}\n        <li>Invalid \"satisfies\" link</li>\n      {{/if}}\n      {{#if (hasOutlinks \"group\")}}\n        <li>Invalid \"group\" link</li>\n      {{/if}}\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link (deprecated)</li>\n    {{/if}}\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"og\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#unless (hasInlinks \"group\")}}\n    <li>Missing \"group\" link</li>\n  {{/unless}}\n{{/if}}\n</ul>"
+      "template": "<ul>\n{{#unless type}}\n  <li>Missing \"type\"</li>\n{{/unless}}\n{{#if (eval type \"==\" \"un\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}{{#unless conformance}}\n    <li>Missing \"conformance\"</li>\n  {{/unless}}{{/if}}  \n  {{#if (or (eval status \"==\" \"current\") (eval status \"==\" \"silent\"))}}\n    {{#if (hasInlinks \"fulfil\")}}\n      {{#eachInlinkWith type=\"fulfil\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Fulfilling requirement is not current: {{docObjId}}</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      {{#unless (hasInlinks \"opt_group\")}}\n      <li>Missing \"fulfill\" link</li>\n      {{/unless}}\n    {{/if}}\n  {{else}}\n    {{#if (hasInlinks \"fulfil\")}}\n      <li>Invalid \"fulfill\" link</li>\n    {{/if}}  \n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"d_req\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}\n    {{#if (or (hasOutlinks \"fulfil\") (hasOutlinks \"fulfil_opt\"))}}\n      {{#eachOutlinkWith type=\"fulfil\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"Conditionals\")}}{{#eachOutlinkWith type=\"conditional\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n      {{#eachOutlinkWith type=\"fulfil_opt\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Fulfilled need is not current: {{docObjId}}</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"Conditionals\")}}{{#eachOutlinkWith type=\"conditional\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n    {{else}}\n      <li>Missing \"fulfill\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"satisfies\")}}\n      {{#eachInlinkWith type=\"satisfies\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Satisfying object is not current: {{docObjId}}</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      <li>Missing \"satisfies\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"implement\")}}\n      {{#eachInlinkWith type=\"implement\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Implementing dialog is not current</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      <li>Missing \"implement\" link</li>\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"fulfil\")}}\n      <li>Invalid \"fulfill\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"implement\")}}\n      <li>Invalid \"implement\" link</li>\n    {{/if}}\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"s_req\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (or (hasOutlinks \"fulfil\")(hasOutlinks \"fulfil_opt\"))}}\n      {{#eachOutlinkWith type=\"fulfil\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"OptionGroups\")}}{{#eachOutlinkWith type=\"fulfil_opt\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n      {{#eachOutlinkWith type=\"fulfil_opt\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"OptionGroups\")}}{{#eachOutlinkWith type=\"fulfil_opt\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n            <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n  {{else}}\n    <li>Missing \"fulfill\" link</li>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"dia\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (hasOutlinks \"implement\")}}\n      {{#eachOutlinkWith type=\"implement\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Implemented requirement is not current</li>\n      {{/unless}}{{/eachOutlinkWith}}\n  {{else}}\n    <li>Missing \"implement\" link</li>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#unless (hasOutlinks \"group\")}}\n    <li>Missing \"group\" link</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}\n    {{#if (eval access \"!=\" \"not-accessible\")}}\n      {{#if (hasOutlinks \"satisfies\")}}\n        {{#unless (eval access \"==\" \"read-only\")}}{{#unless (eval (countOutlinks \"satisfies\") \">\" \"1\")}}\n          <li>Missing 2nd \"satisfies\" link</li>\n        {{/unless}}{{/unless}}\n        {{#eachOutlinkWith type=\"satisfies\"}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Satisfied requirement is not current</li>\n        {{/unless}}{{/eachOutlinkWith}}\n      {{else}}\n        <li>Missing \"satisfies\" link</li>\n      {{/if}}\n    {{else}}\n      {{#if (hasOutlinks \"satisfies\")}}\n        <li>Invalid \"satisfies\" link</li>\n      {{/if}}\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link (deprecated)</li>\n    {{/if}}\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"og\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#unless (hasInlinks \"group\")}}\n    <li>Missing \"group\" link</li>\n  {{/unless}}\n{{/if}}\n</ul>"
     }
   },
   "views": {

@@ -1,1 +1,608 @@
-{"id":"Cabinet-MIB","guid":"ECE1269C-B5D4-418C-BFDE-71E7A7C362D2","heading":"ISO26048-1-FieldDevice","lastId":22,"createdOn":"2023-06-21T12:02:37","createdBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"lastChangedOn":"2024-06-13T12:09:34.536Z","lastChangedBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"data":[{"id":"1","guid":"78CC1AC1-28F1-4797-990A-A150DC4DF897","text":"","heading":"comment","type":"comment"},{"id":"2","guid":"0D4C9318-E91B-4710-A3C4-6209302ABEB3","text":"","heading":"DEFINITIONS","type":"mib"},{"id":"3","guid":"F0EB650E-3F10-4137-BEDB-CECF32A2B381","text":"","contact":"<p>name: ISO TC 204 Committee Manager email: jennifer.collins@sae.org website: https://www.iso.org/committee/54706.html</p>","heading":"fdMIB","oid":"fdGlobalMIB 2","org":"ISO TC 204 WG 9","type":"mi","updated":"201909090414Z"},{"id":"4","guid":"EA9CDA6B-A957-4AC1-8CF5-DCDF4D61E034","text":"","heading":"comment","type":"comment"},{"id":"19","guid":"23a222a0-9b90-45ea-a974-be5ec7f5fb50","heading":"fdConfiguredLocation","access":"read-write","links":{"satisfies":["26048_1-1281","26048_1-1282","26048_1-1084"]},"status":"current","type":"ot"},{"id":"5","guid":"CA5CD060-4C43-47F3-9599-0FF6EEA6A18B","heading":"fdConfiguredLatitude","text":"","access":"read-only","links":{"satisfies":["26048_1-1083","26048_1-1084"]},"oid":"fdCabinetMIB 1","status":"current","syntax":"ITSLatitude84","type":"ot","units":" tenths of microdegrees"},{"id":"6","guid":"9059BC14-AED5-4093-81B2-05DF5DA61C1F","heading":"fdConfiguredLongitude","text":"","access":"read-only","links":{"satisfies":["26048_1-1083","26048_1-1084"]},"oid":"fdCabinetMIB 2","status":"current","syntax":"ITSLongitude84","type":"ot","units":"tenths of microdegrees"},{"id":"7","guid":"6EEB9B80-F0C5-44B3-9BBE-57E4B722982C","heading":"fdConfiguredElevation","text":"","access":"read-only","links":{"satisfies":["26048_1-1083","26048_1-1084"]},"oid":"fdCabinetMIB 3","status":"current","syntax":"ITSElevationMetres","type":"ot","units":"metres"},{"id":"20","guid":"34e5e094-f433-473e-8922-4e8eb049bb68","heading":"fdGnssLatitude","access":"read-only","links":{"satisfies":["26048_1-1283"]},"status":"current","type":"ot"},{"id":"21","guid":"53f6e6cc-f523-4f5f-9980-eede95834d4b","heading":"fdGnssLongitude","access":"read-only","links":{"satisfies":["26048_1-1283"]},"status":"current","type":"ot"},{"id":"22","guid":"52f615bc-62be-43c6-a751-d2ae1fb946f8","heading":"fdGnssElevation","access":"read-only","links":{"satisfies":["26048_1-1283"]},"status":"current","type":"ot"},{"id":"8","guid":"6CB781A1-D04C-4261-BF67-1282AF22DCDF","heading":"fdPowerSource","text":"","access":"read-only","links":{"satisfies":["26048_1-350"]},"oid":"fdCabinetMIB 4","status":"current","syntax":"INTEGER {<br> unknown (0),<br> other (1),<br> mainLine (2),<br> battery (3),<br> generator (4),<br> solar (5),<br> wind (6),<br> ups (7)<br> }","type":"ot"},{"id":"18","guid":"ed64b260-feed-4455-98ef-fe996d7423fb","heading":"fdMobility","access":"read-only","links":{"satisfies":["26048_1-1207"]},"status":"current","type":"ot"},{"id":"9","guid":"686F3A08-5836-471F-B251-E83A74A0D9D6","text":"","heading":"comment","type":"comment"},{"id":"10","guid":"29935850-E3ED-4C10-8766-A4EEF7E33DE5","text":"","heading":"fdConformance","oid":"fdGlobalConformance 2","status":"current","type":"oi"},{"id":"11","guid":"75BBD3FF-DFE9-44D1-A0F3-EA4465A87C59","text":"","heading":"fdCompliances","oid":"fdCabinetConformance 1","status":"current","type":"oi"},{"id":"12","guid":"72C13229-1513-4AA4-B76C-D683DCD1F26E","text":"","heading":"fdGroups","oid":"fdCabinetConformance 2","status":"current","type":"oi"},{"id":"14","guid":"88F780C0-4927-4C45-A655-65DB03AA8CBA","text":"","heading":"fdGroupV1","oid":"fdCabinetGroups 1","status":"current","syntax":"{ fdCabinetLatitude,<br> fdCabinetLongitude,<br> fdCabinetElevation<br> }","type":"og"},{"id":"15","guid":"DE223FE9-5AE4-46F6-8D74-4F213DE93093","text":"","heading":"fdGnssGroupV1","oid":"fdCabinetGroups 2","status":"current","syntax":"{ fdCabinetPowerSource<br> }","type":"og"},{"id":"16","guid":"7FD5E969-DB87-4E97-8B3C-2C1FA8462DAD","heading":"end","type":"end"}],"attributes":{"access":{"heading":"Access","type":"enum","values":[{"key":"read-only"},{"key":"read-write"},{"key":"read-create"},{"key":"not-accessible"},{"key":"accessible-for-notify"}]},"augments":{"heading":"Augments","type":"string"},"comment":{"heading":"Comment","type":"xhtml"},"contact":{"heading":"Contact","type":"xhtml"},"defval":{"heading":"Default Value","type":"string"},"index":{"heading":"Index","type":"string"},"name":{"heading":"Name","type":"string"},"oid":{"heading":"OID","type":"string"},"org":{"heading":"Organization","type":"string"},"part":{"heading":"Part","type":"string"},"status":{"heading":"Status","type":"enum","values":[{"key":"current"},{"key":"deprecated"},{"key":"obsolete"}]},"syntax":{"heading":"Syntax","type":"xhtml"},"type":{"heading":"Type","type":"enum","values":[{"key":"comment"},{"key":"end"},{"key":"mc","label":"module-compliance"},{"key":"mi","label":"module-identity"},{"key":"mib"},{"key":"ng","label":"notification-group"},{"key":"nt","label":"notification-type"},{"key":"og","label":"object-group"},{"key":"oi","label":"object-identity"},{"key":"ot","label":"object-type"},{"key":"ref","label":"reference"},{"key":"rev","label":"revision"},{"key":"row"},{"key":"text_conv"}]},"units":{"heading":"Units","type":"string"},"updated":{"heading":"Updated","type":"string"}},"templateColumns":{"b92d24f0-7422-485c-a907-6e781bc60d29":{"label":"Errors","template":"{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-only\") (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\"))) (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies link\" link</div>\n  {{/if}}\n{{/if}}"}},"views":{"Primary":{"columns":[{"columnId":"id","width":113},{"columnId":"type","width":123},{"columnId":"name","width":188},{"columnId":"description","width":869},{"columnId":"links","width":300}],"default":true}},"metadata":{"format":"2.17"}}
+{
+  "id": "Cabinet-MIB",
+  "guid": "ECE1269C-B5D4-418C-BFDE-71E7A7C362D2",
+  "lastId": 25,
+  "createdOn": "2023-06-21T12:02:37",
+  "createdBy": {
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon",
+    "heading": "Kenneth Vaughn"
+  },
+  "lastChangedOn": "2024-08-12T13:37:05.122Z",
+  "lastChangedBy": {
+    "name": "Kenneth Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "data": [
+    {
+      "id": "1",
+      "guid": "78CC1AC1-28F1-4797-990A-A150DC4DF897",
+      "heading": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "2",
+      "guid": "0D4C9318-E91B-4710-A3C4-6209302ABEB3",
+      "heading": "DEFINITIONS",
+      "type": "mib"
+    },
+    {
+      "id": "3",
+      "guid": "F0EB650E-3F10-4137-BEDB-CECF32A2B381",
+      "heading": "fdMIB",
+      "contact": "<p>name: ISO TC 204 Committee Manager email: jennifer.collins@sae.org website: https://www.iso.org/committee/54706.html</p>",
+      "oid": "fdGlobalMIB 2",
+      "org": "ISO TC 204 WG 9",
+      "type": "mi",
+      "updated": "201909090414Z"
+    },
+    {
+      "id": "4",
+      "guid": "EA9CDA6B-A957-4AC1-8CF5-DCDF4D61E034",
+      "heading": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "19",
+      "guid": "23a222a0-9b90-45ea-a974-be5ec7f5fb50",
+      "heading": "fdConfiguredLocation",
+      "access": "read-write",
+      "status": "current",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-1281",
+          "26048_1-1282",
+          "26048_1-1084"
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "guid": "CA5CD060-4C43-47F3-9599-0FF6EEA6A18B",
+      "heading": "fdConfiguredLatitude",
+      "access": "read-only",
+      "oid": "fdCabinetMIB 1",
+      "status": "current",
+      "syntax": "ITSLatitude84",
+      "type": "ot",
+      "units": " tenths of microdegrees",
+      "links": {
+        "satisfies": [
+          "26048_1-1083",
+          "26048_1-1084"
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "guid": "9059BC14-AED5-4093-81B2-05DF5DA61C1F",
+      "heading": "fdConfiguredLongitude",
+      "access": "read-only",
+      "oid": "fdCabinetMIB 2",
+      "status": "current",
+      "syntax": "ITSLongitude84",
+      "type": "ot",
+      "units": "tenths of microdegrees",
+      "links": {
+        "satisfies": [
+          "26048_1-1083",
+          "26048_1-1084"
+        ]
+      }
+    },
+    {
+      "id": "7",
+      "guid": "6EEB9B80-F0C5-44B3-9BBE-57E4B722982C",
+      "heading": "fdConfiguredElevation",
+      "access": "read-only",
+      "oid": "fdCabinetMIB 3",
+      "status": "current",
+      "syntax": "ITSElevationMetres",
+      "type": "ot",
+      "units": "metres",
+      "links": {
+        "satisfies": [
+          "26048_1-1083",
+          "26048_1-1084"
+        ]
+      }
+    },
+    {
+      "id": "20",
+      "guid": "34e5e094-f433-473e-8922-4e8eb049bb68",
+      "heading": "fdGnssLatitude",
+      "access": "read-only",
+      "status": "current",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-1283",
+          "NTCIP_1204-708"
+        ]
+      },
+      "history": [
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1204-708"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-08-12T13:16:55.108Z"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "guid": "53f6e6cc-f523-4f5f-9980-eede95834d4b",
+      "heading": "fdGnssLongitude",
+      "access": "read-only",
+      "status": "current",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-1283",
+          "NTCIP_1204-708"
+        ]
+      },
+      "history": [
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1204-708"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-08-12T13:16:55.108Z"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "guid": "52f615bc-62be-43c6-a751-d2ae1fb946f8",
+      "heading": "fdGnssElevation",
+      "access": "read-only",
+      "status": "current",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-1283",
+          "NTCIP_1204-708"
+        ]
+      },
+      "history": [
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1204-708"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-08-12T13:16:55.108Z"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "guid": "6CB781A1-D04C-4261-BF67-1282AF22DCDF",
+      "heading": "fdPowerSource",
+      "access": "read-only",
+      "oid": "fdCabinetMIB 4",
+      "status": "current",
+      "syntax": "INTEGER {<br> unknown (0),<br> other (1),<br> mainLine (2),<br> battery (3),<br> generator (4),<br> solar (5),<br> wind (6),<br> ups (7)<br> }",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-350"
+        ]
+      }
+    },
+    {
+      "id": "18",
+      "guid": "ed64b260-feed-4455-98ef-fe996d7423fb",
+      "heading": "fdMobility",
+      "access": "read-only",
+      "status": "current",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-1207"
+        ]
+      }
+    },
+    {
+      "id": "23",
+      "guid": "b457b2af-c4b6-4796-81b9-d798e36799fc",
+      "heading": "fdSpeed",
+      "links": {
+        "satisfies": [
+          "NTCIP_1204-708"
+        ]
+      },
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-08-12T13:33:51.297Z",
+          "docId": "Cabinet-MIB",
+          "structureAction": "Create"
+        },
+        {
+          "attributesChanged": {
+            "heading": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-08-12T13:34:00.042Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1204-708"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-08-12T13:37:05.122Z"
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "guid": "2244d475-51b7-4821-a162-5e457b42f55a",
+      "heading": "fdBearing",
+      "links": {
+        "satisfies": [
+          "NTCIP_1204-708"
+        ]
+      },
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-08-12T13:36:31.806Z",
+          "docId": "Cabinet-MIB",
+          "structureAction": "Create"
+        },
+        {
+          "attributesChanged": {
+            "heading": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-08-12T13:36:36.494Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1204-708"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-08-12T13:37:05.122Z"
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "guid": "8b3e635a-8345-43c2-8460-769afe58e727",
+      "heading": "fdOdometer",
+      "links": {
+        "satisfies": [
+          "NTCIP_1204-708"
+        ]
+      },
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-08-12T13:36:38.793Z",
+          "docId": "Cabinet-MIB",
+          "structureAction": "Create"
+        },
+        {
+          "attributesChanged": {
+            "heading": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-08-12T13:36:52.021Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1204-708"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-08-12T13:37:05.122Z"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "guid": "686F3A08-5836-471F-B251-E83A74A0D9D6",
+      "heading": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "10",
+      "guid": "29935850-E3ED-4C10-8766-A4EEF7E33DE5",
+      "heading": "fdConformance",
+      "oid": "fdGlobalConformance 2",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "11",
+      "guid": "75BBD3FF-DFE9-44D1-A0F3-EA4465A87C59",
+      "heading": "fdCompliances",
+      "oid": "fdCabinetConformance 1",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "12",
+      "guid": "72C13229-1513-4AA4-B76C-D683DCD1F26E",
+      "heading": "fdGroups",
+      "oid": "fdCabinetConformance 2",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "14",
+      "guid": "88F780C0-4927-4C45-A655-65DB03AA8CBA",
+      "heading": "fdGroupV1",
+      "oid": "fdCabinetGroups 1",
+      "status": "current",
+      "syntax": "{ fdCabinetLatitude,<br> fdCabinetLongitude,<br> fdCabinetElevation<br> }",
+      "type": "og"
+    },
+    {
+      "id": "15",
+      "guid": "DE223FE9-5AE4-46F6-8D74-4F213DE93093",
+      "heading": "fdGnssGroupV1",
+      "oid": "fdCabinetGroups 2",
+      "status": "current",
+      "syntax": "{ fdCabinetPowerSource<br> }",
+      "type": "og"
+    },
+    {
+      "id": "16",
+      "guid": "7FD5E969-DB87-4E97-8B3C-2C1FA8462DAD",
+      "heading": "end",
+      "type": "end"
+    }
+  ],
+  "attributes": {
+    "access": {
+      "heading": "Access",
+      "type": "enum",
+      "values": [
+        {
+          "key": "read-only"
+        },
+        {
+          "key": "read-write"
+        },
+        {
+          "key": "read-create"
+        },
+        {
+          "key": "not-accessible"
+        },
+        {
+          "key": "accessible-for-notify"
+        }
+      ]
+    },
+    "augments": {
+      "heading": "Augments",
+      "type": "string"
+    },
+    "comment": {
+      "heading": "Comment",
+      "type": "xhtml"
+    },
+    "contact": {
+      "heading": "Contact",
+      "type": "xhtml"
+    },
+    "defval": {
+      "heading": "Default Value",
+      "type": "string"
+    },
+    "index": {
+      "heading": "Index",
+      "type": "string"
+    },
+    "name": {
+      "heading": "Name",
+      "type": "string"
+    },
+    "oid": {
+      "heading": "OID",
+      "type": "string"
+    },
+    "org": {
+      "heading": "Organization",
+      "type": "string"
+    },
+    "part": {
+      "heading": "Part",
+      "type": "string"
+    },
+    "status": {
+      "heading": "Status",
+      "type": "enum",
+      "values": [
+        {
+          "key": "current"
+        },
+        {
+          "key": "deprecated"
+        },
+        {
+          "key": "obsolete"
+        }
+      ]
+    },
+    "syntax": {
+      "heading": "Syntax",
+      "type": "xhtml"
+    },
+    "type": {
+      "heading": "Type",
+      "type": "enum",
+      "values": [
+        {
+          "key": "comment"
+        },
+        {
+          "key": "end"
+        },
+        {
+          "key": "mc",
+          "label": "module-compliance"
+        },
+        {
+          "key": "mi",
+          "label": "module-identity"
+        },
+        {
+          "key": "mib"
+        },
+        {
+          "key": "ng",
+          "label": "notification-group"
+        },
+        {
+          "key": "nt",
+          "label": "notification-type"
+        },
+        {
+          "key": "og",
+          "label": "object-group"
+        },
+        {
+          "key": "oi",
+          "label": "object-identity"
+        },
+        {
+          "key": "ot",
+          "label": "object-type"
+        },
+        {
+          "key": "ref",
+          "label": "reference"
+        },
+        {
+          "key": "rev",
+          "label": "revision"
+        },
+        {
+          "key": "row"
+        },
+        {
+          "key": "text_conv"
+        }
+      ]
+    },
+    "units": {
+      "heading": "Units",
+      "type": "string"
+    },
+    "updated": {
+      "heading": "Updated",
+      "type": "string"
+    }
+  },
+  "templateColumns": {
+    "b92d24f0-7422-485c-a907-6e781bc60d29": {
+      "label": "Errors",
+      "template": "{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-only\") (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\"))) (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies link\" link</div>\n  {{/if}}\n{{/if}}"
+    }
+  },
+  "views": {
+    "Primary": {
+      "columns": [
+        {
+          "columnId": "id",
+          "width": 113
+        },
+        {
+          "columnId": "type",
+          "width": 123
+        },
+        {
+          "columnId": "name",
+          "width": 188
+        },
+        {
+          "columnId": "description",
+          "width": 869
+        },
+        {
+          "columnId": "links",
+          "width": 300
+        }
+      ],
+      "default": true
+    }
+  },
+  "metadata": {
+    "format": "2.17"
+  }
+}

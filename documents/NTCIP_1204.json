@@ -1,14 +1,14 @@
 {
   "id": "NTCIP_1204",
   "guid": "0759092F-8D8C-4322-AAA5-017F0A4F46A1",
-  "lastId": 3284,
+  "lastId": 3292,
   "createdOn": "2023-08-03T09:58:29",
   "createdBy": {
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-08-15T15:56:11.516Z",
+  "lastChangedOn": "2024-08-15T16:48:37.598Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -7567,6 +7567,133 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "id": "3292",
+                      "guid": "00978480-1581-4ff9-bc27-81a755406d75",
+                      "heading": "Retrieve PTS Operational Mode",
+                      "text": "<p>Upon request, the stationary PTS shall return its current operational mode.</p>",
+                      "status": "current",
+                      "type": "d_req",
+                      "links": {
+                        "fulfil": [
+                          "NTCIP_1204-573"
+                        ],
+                        "fulfil_opt": [
+                          "NTCIP_1204-575"
+                        ]
+                      },
+                      "history": [
+                        {
+                          "affectedNodeId": "1254",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-15T16:41:45.713Z",
+                          "docId": "NTCIP_1204",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-15T16:42:03.539Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-15T16:42:36.326Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Upon request, the stationary PTS shall indicate its current operational mode.</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-15T16:42:51.030Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-15T16:42:58.803Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "status": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-15T16:43:12.967Z"
+                        },
+                        {
+                          "addedLink": {
+                            "target": [
+                              "NTCIP_1204-573"
+                            ],
+                            "type": "fulfil"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-15T16:43:43.451Z"
+                        },
+                        {
+                          "addedLink": {
+                            "target": [
+                              "NTCIP_1204-575"
+                            ],
+                            "type": "fulfil"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-15T16:43:52.039Z"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedLink": {
+                            "newType": "fulfil_opt",
+                            "oldTargets": [
+                              "NTCIP_1204-575"
+                            ],
+                            "oldType": "fulfil"
+                          },
+                          "changedOn": "2024-08-15T16:44:16.338Z"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -10551,8 +10678,13 @@
               "status": "deprecated",
               "syntax": "<p>INTEGER (0..1)</p>",
               "type": "ot",
-              "x_text": "<pre>fdSrsaTypeWarning.FDO</pre>",
+              "x_text": "<p>fdSrsaTypeWarning.FDO</p>",
               "x_type": "superseded",
+              "links": {
+                "group": [
+                  "NTCIP_1204-3285"
+                ]
+              },
               "history": [
                 {
                   "attributesChanged": {
@@ -10632,6 +10764,31 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T23:20:15.931Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "NTCIP_1204-3285"
+                    ],
+                    "type": "group"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:05:05.777Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>fdSrsaTypeWarning.FDO</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:09:51.848Z"
                 }
               ]
             },
@@ -10639,12 +10796,12 @@
               "id": "13",
               "guid": "A8ABC675-CB6F-4FA7-8B76-B3D93AD44626",
               "heading": "Battery Status",
-              "text": "<pre>Indicates the current charge stored in the battery.</pre>",
+              "text": "<p>Indicates the current charge stored in the battery.</p>",
               "access": "read-only",
               "action": "deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.15.2",
               "format": "<p>Values 0 to 100 indicate percent of full charge. The value 101 indicates an error in determining the percent of charge.</p>",
-              "info": "<pre>This object was deprecated in v05 to migrate to a more generic SRSA design.</pre>",
+              "info": "<p>This object was deprecated in v05 to migrate to a more generic SRSA design.</p>",
               "name": "essBatteryStatus",
               "oid": "{ essNtcipInstrumentation 2 }",
               "param_type": "status",
@@ -10652,8 +10809,13 @@
               "syntax": "<p>Integer32 (0..101)</p>",
               "type": "ot",
               "units": "percent",
-              "x_text": "<pre>fdSrsaPortValue.FBC</pre>",
+              "x_text": "<p>fdSrsaPortValue.FBC</p>",
               "x_type": "superseded",
+              "links": {
+                "group": [
+                  "NTCIP_1204-3286"
+                ]
+              },
               "history": [
                 {
                   "attributesChanged": {
@@ -10736,6 +10898,53 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T23:20:15.931Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<pre>Indicates the current charge stored in the battery.</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:01:21.526Z"
+                },
+                {
+                  "attributesChanged": {
+                    "info": "<pre>This object was deprecated in v05 to migrate to a more generic SRSA design.</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:01:27.539Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "NTCIP_1204-3286"
+                    ],
+                    "type": "group"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:05:15.864Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>fdSrsaPortValue.FBC</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:10:01.280Z"
                 }
               ]
             },
@@ -10748,7 +10957,7 @@
               "action": "deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.15.3",
               "format": "<p>Values 0 through 254 shall indicate valid values. The value 254 shall mean a voltage of 508 Vrms or greater. The value of 255 shall indicate an error condition or missing value.</p>",
-              "info": "<pre>This object was deprecated in v05 to migrate to a more generic SRSA design.</pre>",
+              "info": "<p>This object was deprecated in v05 to migrate to a more generic SRSA design.</p>",
               "name": "essLineVolts",
               "oid": "{ essNtcipInstrumentation 3 }",
               "param_type": "status",
@@ -10756,8 +10965,13 @@
               "syntax": "<p>Integer32 (0..255)</p>",
               "type": "ot",
               "units": "*2 Volts Root Mean Squared (Vrms)",
-              "x_text": "<pre>fdSrsaPortValue.FLV</pre>",
+              "x_text": "<p>fdSrsaPortValue.FLV</p>",
               "x_type": "superseded",
+              "links": {
+                "group": [
+                  "NTCIP_1204-3287"
+                ]
+              },
               "history": [
                 {
                   "attributesChanged": {
@@ -10840,6 +11054,42 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T23:20:15.931Z"
+                },
+                {
+                  "attributesChanged": {
+                    "info": "<pre>This object was deprecated in v05 to migrate to a more generic SRSA design.</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:01:33.451Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "NTCIP_1204-3287"
+                    ],
+                    "type": "group"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:05:25.531Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>fdSrsaPortValue.FLV</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:10:11.679Z"
                 }
               ]
             },
@@ -10851,7 +11101,7 @@
               "access": "read-only",
               "action": "previsouly deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.15.4",
-              "info": "<pre>This object was deprecated in version 03. </pre>",
+              "info": "<p>This object was deprecated in version 03.&nbsp;</p>",
               "name": "essStationMetaDataBlock",
               "oid": "{ essNtcipInstrumentation 4 }",
               "param_type": "status",
@@ -10970,6 +11220,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T22:27:59.323Z"
+                },
+                {
+                  "attributesChanged": {
+                    "info": "<pre>This object was deprecated in version 03. </pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:01:47.651Z"
                 }
               ]
             },
@@ -11479,7 +11740,7 @@
               "action": "deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.15.9",
               "format": "<pre>value &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;description&nbsp;\n0 - noError &nbsp; &nbsp; &nbsp; &nbsp; no error is reported&nbsp;\n1 - watchdogFailure &nbsp; &nbsp; the watchdog has failed&nbsp;\n2 - powerError &nbsp;irregular occurrence detected with primary power source\n3 - sensorFailure &nbsp;condition detected preventing proper reporting or a&nbsp;\n&nbsp; &nbsp; sensor value is deemed invalid or suspect</pre>",
-              "info": "<pre>The object was deprecated in NTCIP 1204 v05.</pre>",
+              "info": "<p>The object was deprecated in NTCIP 1204 v05.</p>",
               "name": "essStatus",
               "oid": "{ essNtcipInstrumentation 9 }",
               "param_type": "status",
@@ -11489,6 +11750,11 @@
               "version": "v05",
               "x_text": "<pre>fdControllerStatus (ISO 26048-1)</pre>",
               "x_type": "superseded",
+              "links": {
+                "group": [
+                  "NTCIP_1204-3289"
+                ]
+              },
               "discussion": [
 
               ],
@@ -11600,6 +11866,31 @@
                   "commentDate": "2023-08-11T18:51:48.456Z",
                   "commentIndex": 0,
                   "deleteLastComment": "<p>This is redundant except for sensor errors. Do we want to keep?</p>"
+                },
+                {
+                  "attributesChanged": {
+                    "info": "<pre>The object was deprecated in NTCIP 1204 v05.</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:14:02.304Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "NTCIP_1204-3289"
+                    ],
+                    "type": "group"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:14:11.643Z"
                 }
               ]
             }
@@ -12682,7 +12973,7 @@
               "action": "previsouly deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.3.2",
               "format": "<pre>The value of 1001 shall indicate a missing value.</pre>",
-              "info": "<pre>This object was deprecated in version 04. </pre>",
+              "info": "<p>This object was deprecated in version 04.&nbsp;</p>",
               "name": "essPressureHeight",
               "oid": "{ essNtcipHeight 2 }",
               "param_type": "status",
@@ -12805,6 +13096,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T19:39:17.656Z"
+                },
+                {
+                  "attributesChanged": {
+                    "info": "<pre>This object was deprecated in version 04. </pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:16:34.458Z"
                 }
               ]
             },
@@ -12817,7 +13119,7 @@
               "action": "previsouly deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.3.3",
               "format": "<pre>The value of 1001 shall indicate a missing value.</pre>",
-              "info": "<pre>This object was deprecated in version 02. </pre>",
+              "info": "<p>This object was deprecated in version 02.&nbsp;</p>",
               "name": "essWindSensorHeight",
               "oid": "{ essNtcipHeight 3 }",
               "param_type": "status",
@@ -12928,6 +13230,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T19:56:50.850Z"
+                },
+                {
+                  "attributesChanged": {
+                    "info": "<pre>This object was deprecated in version 02. </pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:16:28.218Z"
                 }
               ]
             },
@@ -12940,7 +13253,7 @@
               "action": "previsouly deprecated",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.1.7.4",
               "format": "<pre>A value of 65535 shall indicate an error condition or missing value.</pre>",
-              "info": "<pre>This object was deprecated in version 04. </pre>",
+              "info": "<p>This object was deprecated in version 04.&nbsp;</p>",
               "name": "essAtmosphericPressure",
               "oid": "{ essBufrLocationVertical 4 }",
               "param_type": "status",
@@ -13063,6 +13376,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T19:39:17.656Z"
+                },
+                {
+                  "attributesChanged": {
+                    "info": "<pre>This object was deprecated in version 04. </pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:16:22.413Z"
                 }
               ]
             },
@@ -13070,7 +13394,7 @@
               "id": "42",
               "guid": "84A99039-9CB4-4BA6-BE6C-E5A46CDD3268",
               "heading": "Number of Pressure Sensors",
-              "text": "<pre>Indicates the number of entries in the pressure sensor table.</pre>",
+              "text": "<p>Indicates the number of entries in the pressure sensor table.</p>",
               "access": "read-only",
               "action": "remainCurrent",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.16.1",
@@ -13158,6 +13482,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-29T14:12:55.823Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<pre>Indicates the number of entries in the pressure sensor table.</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:16:16.639Z"
                 }
               ]
             },
@@ -13165,7 +13500,7 @@
               "id": "43",
               "guid": "AD145679-D93F-478B-9D16-235B9347EB86",
               "heading": "Pressure Sensor Table",
-              "text": "<pre>Table containing the pressure sensor data.</pre>",
+              "text": "<p>Table containing the pressure sensor data.</p>",
               "access": "not-accessible",
               "action": "remainCurrent",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.16.2",
@@ -13202,6 +13537,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<pre>Table containing the pressure sensor data.</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:16:08.599Z"
                 }
               ]
             },
@@ -25683,7 +26029,7 @@
               "id": "156",
               "guid": "D862DA5C-E5A2-4FD1-8C13-DC929D988271",
               "heading": "Number of Precipitation Sensors",
-              "text": "<pre>Indicates the number of entries in the precipitation sensor table.</pre>",
+              "text": "<p>Indicates the number of entries in the precipitation sensor table.</p>",
               "access": "read-only",
               "action": "remainCurrent",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.13",
@@ -25696,6 +26042,9 @@
               "type": "ot",
               "units": "sensors",
               "links": {
+                "group": [
+                  "NTCIP_1204-2355"
+                ],
                 "satisfies": [
                   "NTCIP_1204-2201"
                 ]
@@ -25754,6 +26103,31 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-29T14:15:15.951Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "NTCIP_1204-2355"
+                    ],
+                    "type": "group"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:26:10.744Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<pre>Indicates the number of entries in the precipitation sensor table.</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:26:48.119Z"
                 }
               ]
             },
@@ -25761,7 +26135,7 @@
               "id": "157",
               "guid": "69184337-5707-4F26-A015-B9757D48965C",
               "heading": "Precipitation Sensor Table",
-              "text": "<pre>Table containing the precipitation sensor data fields.</pre>",
+              "text": "<p>Table containing the precipitation sensor data fields.</p>",
               "access": "not-accessible",
               "action": "remainCurrent",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14",
@@ -25798,6 +26172,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<pre>Table containing the precipitation sensor data fields.</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:26:56.131Z"
                 }
               ]
             },
@@ -26041,6 +26426,11 @@
                   "status": "current",
                   "syntax": "<p>Integer32 (1..255)</p>",
                   "type": "ot",
+                  "links": {
+                    "group": [
+                      "NTCIP_1204-2355"
+                    ]
+                  },
                   "history": [
                     {
                       "attributesChanged": {
@@ -26105,6 +26495,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:31:09.402Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1204-2355"
+                        ],
+                        "type": "group"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:26:33.975Z"
                     }
                   ]
                 },
@@ -26968,7 +27372,7 @@
                   "id": "168",
                   "guid": "FFA475DC-1F76-4D15-83CA-A6C52F446693",
                   "heading": "Roadway Snow Depth",
-                  "text": "<pre>The current depth of unpacked snow in centimeters on the driving surface. </pre>",
+                  "text": "<p>The current depth of unpacked snow in centimeters on the driving surface.</p>",
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14.1.9",
@@ -27079,6 +27483,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T23:20:15.931Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<pre>The current depth of unpacked snow in centimeters on the driving surface. </pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:25:37.680Z"
                     }
                   ]
                 },
@@ -27086,7 +27501,7 @@
                   "id": "169",
                   "guid": "B040CB8F-AA0B-4432-987E-8382F48A06C6",
                   "heading": "Roadway Snow Pack Depth",
-                  "text": "<pre>The current depth of packed snow in centimeters on the roadway surface. </pre>",
+                  "text": "<p>The current depth of packed snow in centimeters on the roadway surface.</p>",
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14.1.10",
@@ -27196,6 +27611,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-29T14:15:22.117Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<pre>The current depth of packed snow in centimeters on the roadway surface. </pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:25:30.813Z"
                     }
                   ]
                 },
@@ -27203,7 +27629,7 @@
                   "id": "170",
                   "guid": "8730499B-000D-486C-8053-8A11D6F9F1ED",
                   "heading": "Precipitation Indicator",
-                  "text": "<pre>Indicates whether or not moisture is detected by the sensor.</pre>",
+                  "text": "<p>Indicates whether or not moisture is detected by the sensor.</p>",
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14.1.11",
@@ -27324,6 +27750,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-05T12:56:11.049Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<pre>Indicates whether or not moisture is detected by the sensor.</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:25:23.613Z"
                     }
                   ]
                 },
@@ -27346,7 +27783,8 @@
                   "units": "tenths of grams per square meter per second",
                   "links": {
                     "group": [
-                      "NTCIP_1204-2356"
+                      "NTCIP_1204-2356",
+                      "NTCIP_1204-3290"
                     ],
                     "satisfies": [
                       "NTCIP_1204-989"
@@ -27443,6 +27881,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-29T15:43:11.178Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1204-3290"
+                        ],
+                        "type": "group"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:30:19.207Z"
                     }
                   ]
                 },
@@ -27465,7 +27917,8 @@
                   "units": "10^-7 meters per second",
                   "links": {
                     "group": [
-                      "NTCIP_1204-2356"
+                      "NTCIP_1204-2356",
+                      "NTCIP_1204-3290"
                     ],
                     "satisfies": [
                       "NTCIP_1204-989"
@@ -27562,6 +28015,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-29T15:43:11.178Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1204-3290"
+                        ],
+                        "type": "group"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:30:19.207Z"
                     }
                   ]
                 },
@@ -27748,7 +28215,7 @@
                   "id": "174",
                   "guid": "C2284D9F-83E8-4877-9CF8-03B5A9CB490E",
                   "heading": "Ice Deposit (Thickness)",
-                  "text": "<pre>Indicates the thickness of the ice in millimeters. </pre>",
+                  "text": "<p>Indicates the thickness of the ice in millimeters.</p>",
                   "access": "read-only",
                   "action": "deprecated",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14.1.15",
@@ -27936,6 +28403,17 @@
                         ],
                         "type": "satisfies"
                       }
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<pre>Indicates the thickness of the ice in millimeters. </pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:30:49.077Z"
                     }
                   ]
                 },
@@ -27948,7 +28426,7 @@
                   "action": "deprecated",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14.1.16",
                   "format": "<p>As this standard has been developed long after 1970, a value of 0 for time should indicate to the management station that the data received is suspect.</p>",
-                  "info": "<pre>This object was deprecated in version 05. </pre>",
+                  "info": "<p>This object was deprecated in version 05.&nbsp;</p>",
                   "name": "precipitationSensorPrecipitationStartTime",
                   "oid": "{ precipitationSensorEntry 16 }",
                   "param_type": "status",
@@ -27958,6 +28436,11 @@
                   "units": "seconds",
                   "x_text": "<pre>precipitationSensorPrecipStartDate  and precipitationSensorPrecipStartTimeV5 </pre>",
                   "x_type": "superseded",
+                  "links": {
+                    "group": [
+                      "NTCIP_1204-3290"
+                    ]
+                  },
                   "history": [
                     {
                       "attributesChanged": {
@@ -28039,6 +28522,31 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T23:20:15.931Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1204-3290"
+                        ],
+                        "type": "group"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:30:19.207Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "info": "<pre>This object was deprecated in version 05. </pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:30:55.197Z"
                     }
                   ]
                 },
@@ -28051,7 +28559,7 @@
                   "action": "deprecated",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14.1.17",
                   "format": "<p>As this standard has been developed long after 1970, a value of 0 for the time should indicate to the management station that the data received is suspect.</p>",
-                  "info": "<pre>This object was deprecated in version 05. </pre>",
+                  "info": "<p>This object was deprecated in version 05.&nbsp;</p>",
                   "name": "precipitationSensorPrecipitationEndTime",
                   "oid": "{ precipitationSensorEntry 17 }",
                   "param_type": "status",
@@ -28061,6 +28569,11 @@
                   "units": "seconds",
                   "x_text": "<pre>precipitationSensorPrecipEndDate  and precipitationSensorPrecipEndTimeV5 </pre>",
                   "x_type": "superseded",
+                  "links": {
+                    "group": [
+                      "NTCIP_1204-3290"
+                    ]
+                  },
                   "history": [
                     {
                       "attributesChanged": {
@@ -28142,6 +28655,31 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T23:20:15.931Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1204-3290"
+                        ],
+                        "type": "group"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:30:19.207Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "info": "<pre>This object was deprecated in version 05. </pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:31:01.164Z"
                     }
                   ]
                 },
@@ -36925,6 +37463,11 @@
                   "status": "current",
                   "syntax": "<p>Integer32 (1..255)</p>",
                   "type": "ot",
+                  "links": {
+                    "group": [
+                      "NTCIP_1204-2369"
+                    ]
+                  },
                   "history": [
                     {
                       "affectedNodeId": "46",
@@ -37014,6 +37557,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-31T20:35:36.750Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1204-2369"
+                        ],
+                        "type": "group"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:33:21.440Z"
                     }
                   ]
                 },
@@ -38084,7 +38641,7 @@
                   "id": "2430",
                   "guid": "830e5ed6-f145-4645-8ac7-085610cad51b",
                   "heading": "Visibility Sensor Current Reading",
-                  "text": "<pre>Indicates the current surface visibility reading.</pre>",
+                  "text": "<p>Indicates the current surface visibility reading.</p>",
                   "access": "read-only",
                   "action": "added",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.16.2.1.8",
@@ -38254,6 +38811,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-31T20:30:10.416Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<pre>Indicates the current surface visibility reading.</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:32:22.787Z"
                     }
                   ]
                 }
@@ -38327,7 +38895,7 @@
               "id": "240",
               "guid": "0247443C-0F88-44E7-A9EA-A0B95C2E6E25",
               "heading": "Number of Pavement Sensors",
-              "text": "<pre>Indicates the number of entries in the pavement sensor table.</pre>",
+              "text": "<p>Indicates the number of entries in the pavement sensor table.</p>",
               "access": "read-only",
               "action": "remainCurrent",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.1",
@@ -38431,6 +38999,17 @@
                     ],
                     "type": "group"
                   }
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<pre>Indicates the number of entries in the pavement sensor table.</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:32:29.929Z"
                 }
               ]
             },
@@ -38438,7 +39017,7 @@
               "id": "241",
               "guid": "EEF9392B-0EAE-49AA-B95C-2C604FA90045",
               "heading": "Pavement Sensor Table",
-              "text": "<pre>Table containing the pavement sensor data.</pre>",
+              "text": "<p>Table containing the pavement sensor data.</p>",
               "access": "not-accessible",
               "action": "remainCurrent",
               "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2",
@@ -38475,6 +39054,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-27T03:11:47.256Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<pre>Table containing the pavement sensor data.</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:32:37.001Z"
                 }
               ]
             },
@@ -40045,6 +40635,9 @@
                   "type": "ot",
                   "units": "parts per 100,000 by weight",
                   "links": {
+                    "group": [
+                      "NTCIP_1204-3291"
+                    ],
                     "satisfies": [
                       "NTCIP_1204-1043"
                     ]
@@ -40115,6 +40708,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-28T23:20:15.931Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1204-3291"
+                        ],
+                        "type": "group"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:36:12.954Z"
                     }
                   ]
                 },
@@ -40126,7 +40733,7 @@
                   "access": "read-only",
                   "action": "previsouly deprecated",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2.1.12",
-                  "info": "<pre>This object was deprecated in version 2. </pre>",
+                  "info": "<p>This object was deprecated in version 2.&nbsp;</p>",
                   "name": "essSurfaceConductivity",
                   "oid": "{ essPavementSensorEntry 12 }",
                   "param_type": "status",
@@ -40234,6 +40841,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-14T21:54:20.563Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "info": "<pre>This object was deprecated in version 2. </pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:33:51.613Z"
                     }
                   ]
                 },
@@ -40377,7 +40995,7 @@
                   "id": "260",
                   "guid": "51ECFF06-C658-4169-9C51-A3E29366AADB",
                   "heading": "Surface Black Ice Signal",
-                  "text": "<pre>A value indicating if Black Ice is detected by the sensor.</pre>",
+                  "text": "<p>A value indicating if Black Ice is detected by the sensor.</p>",
                   "access": "read-only",
                   "action": "remainCurrent",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.9.2.1.14",
@@ -40516,6 +41134,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-14T20:36:22.382Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<pre>A value indicating if Black Ice is detected by the sensor.</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:33:59.393Z"
                     }
                   ]
                 },
@@ -49176,7 +49805,8 @@
                   "NTCIP_1204-2412"
                 ],
                 "satisfies": [
-                  "NTCIP_1204-1279"
+                  "NTCIP_1204-1279",
+                  "NTCIP_1204-3292"
                 ]
               },
               "history": [
@@ -49270,6 +49900,20 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-01T18:23:16.621Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "NTCIP_1204-3292"
+                    ],
+                    "type": "satisfies"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:45:33.232Z"
                 }
               ]
             },
@@ -51977,6 +52621,10 @@
               "type": "ot",
               "units": "sensors",
               "links": {
+                "group": [
+                  "NTCIP_1204-2311",
+                  "NTCIP_1204-3276"
+                ],
                 "satisfies": [
                   "NTCIP_1204-2205"
                 ]
@@ -52036,6 +52684,21 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-29T14:17:09.196Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "NTCIP_1204-2311",
+                      "NTCIP_1204-3276"
+                    ],
+                    "type": "group"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-15T16:47:21.419Z"
                 }
               ]
             },
@@ -56704,6 +57367,334 @@
                   ]
                 },
                 {
+                  "id": "3285",
+                  "guid": "e050534c-4f0f-4d59-a1de-7f456b4e1229",
+                  "text": "<p>The NTCIP 1204 objects required to claim conformance to door status in v02.</p>",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.1.1",
+                  "name": "essDoorStatusGroupV2",
+                  "oid": "{essControllerGroups 1}",
+                  "status": "deprecated",
+                  "type": "og",
+                  "x_text": "<p>fdSrsaBasicGroupV1, where fdSrsaTypeCode = FBO</p>",
+                  "x_type": "superseded",
+                  "history": [
+                    {
+                      "affectedNodeId": "3203",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:02:36.977Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The NTCIP 1204 objects required to claim base conformance to NTCIP 1204 v01.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:03:17.064Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "essCharacteristicsGroupV1"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:03:56.012Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "essDoorStatusGroupV1"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:04:00.975Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The NTCIP 1204 objects required to claim conformance to door status in v01.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:04:05.738Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:04:42.269Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:07:05.796Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<p>fdSrsaInputGroupV1</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:08:52.966Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<p>fdSrsaInputGroupV1, where fdSrsaTypeCode = FBO</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:10:54.476Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "3286",
+                  "guid": "a548b03e-8dbf-42d0-9a86-35a3f531c888",
+                  "text": "<p>The NTCIP 1204 objects required to claim base conformance to battery status in v02.</p>",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.1.1",
+                  "name": "essBatteryGroupV2",
+                  "oid": "{essControllerGroups 1}",
+                  "status": "deprecated",
+                  "type": "og",
+                  "x_text": "<p>fdSrsaInputGroupV1, where fdSrsaTypeCode = FBC</p>",
+                  "x_type": "superseded",
+                  "history": [
+                    {
+                      "affectedNodeId": "3203",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:02:43.830Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The NTCIP 1204 objects required to claim base conformance to NTCIP 1204 v01.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:03:44.771Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The NTCIP 1204 objects required to claim base conformance to battery status in v01.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:04:13.897Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "essCharacteristicsGroupV1"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:04:33.900Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:04:42.269Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "essCharacteristicsGroupV2"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:05:38.457Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:07:09.224Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<p>fdSrsaInputGroupV1</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:08:24.574Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<p>fdSrsaInputGroupV1, where fdSrsaTypeCode = \"FBC\"</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:08:58.501Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "3287",
+                  "guid": "07bf28a8-294f-44b4-83fc-ce5ddbdf2e04",
+                  "text": "<p>The NTCIP 1204 objects required to claim base conformance to line volts in v02.</p>",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.1.1",
+                  "name": "essLineVoltsGroupV2",
+                  "oid": "{essControllerGroups 1}",
+                  "status": "deprecated",
+                  "type": "og",
+                  "x_text": "<p>fdSrsaInputGroupV1, where fdSrsaTypeCode = FLV</p>",
+                  "x_type": "superseded",
+                  "history": [
+                    {
+                      "affectedNodeId": "3203",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:02:48.212Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The NTCIP 1204 objects required to claim base conformance to NTCIP 1204 v01.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:03:33.828Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The NTCIP 1204 objects required to claim base conformance to line volts in v01.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:04:25.324Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "essCharacteristicsGroupV1"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:04:28.504Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:04:42.269Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "essCharacteristicsGroupV2"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:05:49.163Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:07:13.722Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<p>fdSrsaInputGroupV1</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:09:24.628Z"
+                    }
+                  ]
+                },
+                {
                   "id": "3241",
                   "guid": "d024c246-e2e5-4aea-87a4-b8c81d49a8ad",
                   "text": "<p>The objects required to claim support for the metadata block in v02.</p>",
@@ -57155,6 +58146,86 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:44:58.441Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "3289",
+                  "guid": "7b228a3b-334b-4cd1-8550-47e9745cef02",
+                  "text": "<p>The objects required to claim support for monitoring ESS status in v04.</p>",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.1.1",
+                  "name": "essStatusGroupV3",
+                  "oid": "{essControllerGroups 1}",
+                  "status": "deprecated",
+                  "type": "og",
+                  "x_text": "<p>fdControllerGroupV1</p>",
+                  "x_type": "superseded",
+                  "history": [
+                    {
+                      "affectedNodeId": "3247",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:13:10.222Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "essWeatherBlockGroupV3"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:13:21.300Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The objects required to claim support for the weather block in v03.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:13:37.420Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_type": "withdrawn"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:13:49.119Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<p>In v04</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:13:53.327Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:15:18.791Z"
                     }
                   ]
                 },
@@ -61443,10 +62514,89 @@
                   ]
                 },
                 {
-                  "id": "2356",
-                  "guid": "3cdab1d8-d660-4987-b156-520735f7891a",
+                  "id": "3290",
+                  "guid": "dc2cc485-fabf-407a-9fda-adef906d4e5d",
                   "text": "<p>The objects required to claim support for precipitation data readings for v04.</p>",
                   "name": "essPrecipDataGroupV4",
+                  "oid": "{essPrecipitationGroups 2}",
+                  "status": "deprecated",
+                  "type": "og",
+                  "x_text": "<p>essPrecipDataGroupV5</p>",
+                  "x_type": "superseded",
+                  "history": [
+                    {
+                      "affectedNodeId": "2356",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:29:23.625Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "essPrecipDataGroupV5"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:29:28.748Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The objects required to claim support for precipitation data readings for v05.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:29:34.494Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:30:30.793Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:30:32.477Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "status": "current"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:30:34.945Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "2356",
+                  "guid": "3cdab1d8-d660-4987-b156-520735f7891a",
+                  "text": "<p>The objects required to claim support for precipitation data readings for v05.</p>",
+                  "name": "essPrecipDataGroupV5",
                   "oid": "{essPrecipitationGroups 2}",
                   "status": "current",
                   "type": "og",
@@ -61588,6 +62738,28 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T13:47:47.840Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "essPrecipDataGroupV4"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:29:06.022Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The objects required to claim support for precipitation data readings for v04.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:29:11.541Z"
                     }
                   ]
                 },
@@ -63101,6 +64273,7 @@
                   "text": "<p>The objects required to claim support for radiation readings for v02.</p>",
                   "name": "essRadiationGroupV2",
                   "status": "deprecated",
+                  "type": "og",
                   "x_text": "<p>essRadiationDataGroupV4</p>",
                   "x_type": "superseded",
                   "history": [
@@ -63202,6 +64375,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:33:35.412Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:48:23.325Z"
                     }
                   ]
                 },
@@ -65552,6 +66736,82 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:33:35.412Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "3291",
+                  "guid": "cbcbd461-75a5-4729-b841-d6d4257055ee",
+                  "text": "<p>The objects required to claim support for pavement salinity for v01.</p>",
+                  "name": "essSurfaceSalinityGroupV1",
+                  "status": "current",
+                  "type": "og",
+                  "history": [
+                    {
+                      "affectedNodeId": "3235",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:35:02.014Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "essSurfaceConductivityGroupV1"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:35:20.201Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The objects required to claim support for pavement surface conductivity for v01.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:35:36.171Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "status": "deprecated"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:36:15.676Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_type": "superseded"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:36:17.985Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<p>essSurfaceConductivityGroupV2</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:36:22.560Z"
                     }
                   ]
                 },
@@ -69120,6 +70380,7 @@
                   "text": "<p>The objects required to claim support for water depth readings for v01.</p>",
                   "name": "essWaterDepthGroupV1",
                   "status": "deprecated",
+                  "type": "og",
                   "x_text": "<p>essWaterLevelDataGroupV2</p>",
                   "x_type": "superseded",
                   "history": [
@@ -69232,6 +70493,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:33:47.616Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:48:37.598Z"
                     }
                   ]
                 },
@@ -71252,7 +72524,7 @@
                 {
                   "id": "3276",
                   "guid": "4bb90744-7bb5-4d87-b37d-b13af375b447",
-                  "text": "<p>The objects required to claim support for air quality sensor location for v05.</p>",
+                  "text": "<p>The objects required to claim support for air quality sensor location for v04.</p>",
                   "name": "essAirQualitySensorLocationGroupV4",
                   "oid": "{essAirQualityGroups 10}",
                   "status": "deprecated",
@@ -71314,6 +72586,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T15:16:42.477Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The objects required to claim support for air quality sensor location for v05.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-15T16:47:04.741Z"
                     }
                   ]
                 },
@@ -73800,7 +75083,7 @@
   "templateColumns": {
     "ff7ea633-6def-49fe-b156-ba947230c253": {
       "label": "Errors",
-      "template": "<ul>\n{{#unless type}}\n  <li>Missing \"type\"</li>\n{{/unless}}\n{{#if (eval type \"==\" \"un\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}{{#unless conformance}}\n    <li>Missing \"conformance\"</li>\n  {{/unless}}{{/if}}  \n  {{#if (or (eval status \"==\" \"current\") (eval status \"==\" \"silent\"))}}\n    {{#if (hasInlinks \"fulfil\")}}\n      {{#eachInlinkWith type=\"fulfil\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Fulfilling requirement is not current: {{docObjId}}</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      {{#unless (hasInlinks \"opt_group\")}}\n      <li>Missing \"fulfill\" link</li>\n      {{/unless}}\n    {{/if}}\n  {{else}}\n    {{#if (hasInlinks \"fulfil\")}}\n      <li>Invalid \"fulfill\" link</li>\n    {{/if}}  \n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"d_req\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}\n    {{#if (or (hasOutlinks \"fulfil\") (hasOutlinks \"fulfil_opt\"))}}\n      {{#eachOutlinkWith type=\"fulfil\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"Conditionals\")}}{{#eachOutlinkWith type=\"conditional\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n      {{#eachOutlinkWith type=\"fulfil_opt\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Fulfilled need is not current: {{docObjId}}</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"Conditionals\")}}{{#eachOutlinkWith type=\"conditional\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n    {{else}}\n      <li>Missing \"fulfill\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"satisfies\")}}\n      {{#eachInlinkWith type=\"satisfies\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Satisfying object is not current: {{docObjId}}</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      <li>Missing \"satisfies\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"implement\")}}\n      {{#eachInlinkWith type=\"implement\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Implementing dialog is not current</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      <li>Missing \"implement\" link</li>\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"fulfil\")}}\n      <li>Invalid \"fulfill\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"implement\")}}\n      <li>Invalid \"implement\" link</li>\n    {{/if}}\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"s_req\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (or (hasOutlinks \"fulfil\")(hasOutlinks \"fulfil_opt\"))}}\n      {{#eachOutlinkWith type=\"fulfil\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"OptionGroups\")}}{{#eachOutlinkWith type=\"fulfil_opt\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n      {{#eachOutlinkWith type=\"fulfil_opt\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"OptionGroups\")}}{{#eachOutlinkWith type=\"fulfil_opt\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n            <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n  {{else}}\n    <li>Missing \"fulfill\" link</li>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"dia\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (hasOutlinks \"implement\")}}\n      {{#eachOutlinkWith type=\"implement\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Implemented requirement is not current</li>\n      {{/unless}}{{/eachOutlinkWith}}\n  {{else}}\n    <li>Missing \"implement\" link</li>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#unless (hasOutlinks \"group\")}}\n    <li>Missing \"group\" link</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}\n    {{#if (eval access \"!=\" \"not-accessible\")}}\n      {{#if (hasOutlinks \"satisfies\")}}\n        {{#unless (eval access \"==\" \"read-only\")}}{{#unless (eval (countOutlinks \"satisfies\") \">\" \"1\")}}\n          <li>Missing 2nd \"satisfies\" link</li>\n        {{/unless}}{{/unless}}\n        {{#eachOutlinkWith type=\"satisfies\"}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Satisfied requirement is not current</li>\n        {{/unless}}{{/eachOutlinkWith}}\n      {{else}}\n        <li>Missing \"satisfies\" link</li>\n      {{/if}}\n    {{else}}\n      {{#if (hasOutlinks \"satisfies\")}}\n        <li>Invalid \"satisfies\" link</li>\n      {{/if}}\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link (deprecated)</li>\n    {{/if}}\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"og\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#unless (hasInlinks \"group\")}}\n    <li>Missing \"group\" link</li>\n  {{/unless}}\n{{/if}}\n</ul>"
+      "template": "<ul>\n{{#unless type}}\n  <li>Missing \"type\"</li>\n{{/unless}}\n{{#if (eval type \"==\" \"un\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}{{#unless conformance}}\n    <li>Missing \"conformance\"</li>\n  {{/unless}}{{/if}}  \n  {{#if (or (eval status \"==\" \"current\") (eval status \"==\" \"silent\"))}}\n    {{#if (hasInlinks \"fulfil\")}}\n      {{#eachInlinkWith type=\"fulfil\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Fulfilling requirement is not current: {{docObjId}}</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      {{#unless (hasInlinks \"opt_group\")}}\n      <li>Missing \"fulfill\" link</li>\n      {{/unless}}\n    {{/if}}\n  {{else}}\n    {{#if (hasInlinks \"fulfil\")}}\n      <li>Invalid \"fulfill\" link</li>\n    {{/if}}  \n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"d_req\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (eval status \"==\" \"current\")}}\n    {{#if (or (hasOutlinks \"fulfil\") (hasOutlinks \"fulfil_opt\"))}}\n      {{#eachOutlinkWith type=\"fulfil\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"Conditionals\")}}{{#eachOutlinkWith type=\"conditional\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n      {{#eachOutlinkWith type=\"fulfil_opt\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Fulfilled need is not current: {{docObjId}}</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"Conditionals\")}}{{#eachOutlinkWith type=\"conditional\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n    {{else}}\n      <li>Missing \"fulfill\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"satisfies\")}}\n      {{#eachInlinkWith type=\"satisfies\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Satisfying object is not current: {{docObjId}}</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      <li>Missing \"satisfies\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"implement\")}}\n      {{#eachInlinkWith type=\"implement\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Implementing dialog is not current</li>\n      {{/unless}}{{/eachInlinkWith}}\n    {{else}}\n      <li>Missing \"implement\" link</li>\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"fulfil\")}}\n      <li>Invalid \"fulfill\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link</li>\n    {{/if}}\n    {{#if (hasInlinks \"implement\")}}\n      <li>Invalid \"implement\" link</li>\n    {{/if}}\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"s_req\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (or (hasOutlinks \"fulfil\")(hasOutlinks \"fulfil_opt\"))}}\n      {{#eachOutlinkWith type=\"fulfil\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"OptionGroups\")}}{{#eachOutlinkWith type=\"fulfil_opt\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n      {{#eachOutlinkWith type=\"fulfil_opt\"}}\n        {{#if (eval type \"==\" \"un\")}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Fulfilled need is not current</li>\n        {{/unless}}{{/if}}\n        {{#if (eval docId \"==\" \"OptionGroups\")}}{{#eachOutlinkWith type=\"fulfil_opt\"}}\n          {{#unless (eval status \"==\" \"current\")}}\n            <li>Fulfilled need is not current: {{docObjId}}</li>\n          {{/unless}}\n        {{/eachOutlinkWith}}{{/if}}\n      {{/eachOutlinkWith}}\n  {{else}}\n    <li>Missing \"fulfill\" link</li>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"dia\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#if (hasOutlinks \"implement\")}}\n      {{#eachOutlinkWith type=\"implement\"}}{{#unless (eval status \"==\" \"current\")}}\n        <li>Implemented requirement is not current</li>\n      {{/unless}}{{/eachOutlinkWith}}\n  {{else}}\n    <li>Missing \"implement\" link</li>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#unless (hasOutlinks \"group\")}}{{#unless (searchString heading \"Table\")}}{{#unless (searchString name \"Entry\")}}\n    <li>Missing \"group\" link</li>\n  {{/unless}}{{/unless}}{{/unless}}\n  {{#if (eval status \"==\" \"current\")}}\n    {{#if (eval access \"!=\" \"not-accessible\")}}\n      {{#if (hasOutlinks \"satisfies\")}}\n        {{#unless (eval access \"==\" \"read-only\")}}{{#unless (eval (countOutlinks \"satisfies\") \">\" \"1\")}}{{#unless (eval param_type \"==\" \"control\")}}\n          <li>Missing 2nd \"satisfies\" link</li>\n        {{/unless}}{{/unless}}{{/unless}}\n        {{#eachOutlinkWith type=\"satisfies\"}}{{#unless (eval status \"==\" \"current\")}}\n          <li>Satisfied requirement is not current</li>\n        {{/unless}}{{/eachOutlinkWith}}\n      {{else}}\n        {{#unless (searchString heading \"Index\")}}\n            <li>Missing \"satisfies\" link</li>\n        {{/unless}}\n      {{/if}}\n    {{else}}\n      {{#if (hasOutlinks \"satisfies\")}}\n        <li>Invalid \"satisfies\" link</li>\n      {{/if}}\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link (deprecated)</li>\n    {{/if}}\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"og\")}}\n  {{#unless status}}\n    <li>Missing \"status\"</li>\n  {{/unless}}\n  {{#unless (hasInlinks \"group\")}}\n    <li>Missing \"group\" link</li>\n  {{/unless}}\n{{/if}}\n</ul>"
     }
   },
   "views": {

@@ -1,14 +1,14 @@
 {
   "id": "NTCIP_1204",
   "guid": "0759092F-8D8C-4322-AAA5-017F0A4F46A1",
-  "lastId": 3293,
+  "lastId": 3294,
   "createdOn": "2023-08-03T09:58:29",
   "createdBy": {
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-08-21T21:03:36.563Z",
+  "lastChangedOn": "2024-08-21T21:58:36.565Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -254,8 +254,8 @@
                 {
                   "id": "475",
                   "guid": "831cfa5a-534a-41d7-ae1c-cb9a593172e0",
-                  "heading": "Control Access to Data",
-                  "text": "<p>allows administrators to configure the detailed accessprivilegesthat are granted to each authenticated user.</p>",
+                  "heading": "Control access to data",
+                  "text": "<p>allows administrators to configure the detailed access privileges that are granted to each authenticated user.</p>",
                   "conformance": "M",
                   "status": "current",
                   "type": "unr",
@@ -289,6 +289,18 @@
                       "commentDate": "2023-08-11T18:43:18.690Z",
                       "commentIndex": 0,
                       "deleteLastComment": "<p>How do we want to handle placeholders for ISO 26048-1 user needs?</p>"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": "Control Access to Data",
+                        "text": "<p>allows administrators to configure the detailed accessprivilegesthat are granted to each authenticated user.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-21T21:30:09.570Z"
                     }
                   ]
                 },
@@ -651,26 +663,6 @@
                   "heading": "Monitor field device components",
                   "type": "text",
                   "children": [
-                    {
-                      "id": "2070",
-                      "guid": "a3b8396b-7daa-4df3-b684-cba3b48cce0a",
-                      "heading": "Monitor ambient environment",
-                      "text": "<p>allows a user to monitor the ambient environment, including:</p>",
-                      "type": "text",
-                      "history": [
-                        {
-                          "attributesChanged": {
-                            "text": null
-                          },
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Kenneth Vaughn"
-                          },
-                          "changedOn": "2024-08-02T20:58:36.518Z"
-                        }
-                      ]
-                    },
                     {
                       "id": "2074",
                       "guid": "548d4b03-dda7-46e6-a5a6-83f6635cbe21",
@@ -4801,6 +4793,47 @@
                           "type": "l1"
                         },
                         {
+                          "id": "3294",
+                          "guid": "59a48bca-b2e5-4e7b-9a9c-dddcfb4dfd5a",
+                          "text": "<p>the direction that the sensor uses to measure distance;</p>",
+                          "type": "l1",
+                          "history": [
+                            {
+                              "affectedNodeId": "863",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-08-21T21:55:22.741Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Create"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-08-21T21:55:27.214Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "type": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-08-21T21:55:30.037Z"
+                            }
+                          ]
+                        },
+                        {
                           "id": "2886",
                           "guid": "769ddbeb-29af-499a-b84a-350d3837c60b",
                           "text": "<p>the relative height of the sensor to the reference height of the ESS; and</p>",
@@ -6152,7 +6185,7 @@
                       "id": "917",
                       "guid": "54e5b480-83ff-4853-b99f-e02ff8393180",
                       "heading": "Retrieve Water Level Sensor Identity",
-                      "text": "<p>Upn request, the ESS shall return the entity identifier of the specified water level sensor so that the management station is able to properly interpret the accuracy, resolution, and limits of the data.</p>",
+                      "text": "<p>Upon request, the ESS shall return the entity identifier of the specified water level sensor so that the management station is able to properly interpret the accuracy, resolution, and limits of the data.</p>",
                       "status": "current",
                       "type": "d_req",
                       "links": {
@@ -6248,6 +6281,17 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-08-05T01:26:13.177Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Upn request, the ESS shall return the entity identifier of the specified water level sensor so that the management station is able to properly interpret the accuracy, resolution, and limits of the data.</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-21T21:58:36.565Z"
                         }
                       ]
                     },

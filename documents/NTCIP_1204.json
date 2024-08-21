@@ -8,7 +8,7 @@
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-08-15T17:33:14.278Z",
+  "lastChangedOn": "2024-08-21T21:03:36.563Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -9207,7 +9207,7 @@
           "id": "1",
           "guid": "BA16EB33-F300-4401-BD19-64F899FC190B",
           "heading": "MIB Header",
-          "text": "<pre>MODULE-IDENTITY, OBJECT-IDENTITY, OBJECT-TYPE, \nInteger32, Unsigned32, Counter32\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-SMI\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2578 &nbsp;\nDisplayString, TEXTUAL-CONVENTION\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-TC\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2579\nOBJECT-GROUP\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-CONF\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2580\nSnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMP-FRAMEWORK-MIB\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 3411\nPhysicalIndexOrZero\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM ENTITY-MIB\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 6933\nITSDailyTimeStamp, ITSDateStamp, ITSInteger16, ITSOerString&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM ISO26048-1-FieldDevice-TC\ndevices\n                                               FROM NTCIP8004-Transportation;</pre><p><br></p>",
+          "text": "<pre>MODULE-IDENTITY, OBJECT-IDENTITY, OBJECT-TYPE, \nInteger32, Unsigned32, Counter32\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-SMI\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2578 &nbsp;\nDisplayString\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-TC\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2579\nOBJECT-GROUP\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-CONF\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2580\nSnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMP-FRAMEWORK-MIB\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 3411\nPhysicalIndexOrZero\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM ENTITY-MIB\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 6933\nITSDailyTimeStamp, ITSDateStamp, ITSInteger16, ITSOerString&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM ISO26048-1-FieldDevice-TC\ndevices\n                                               FROM NTCIP8004-Transportation;</pre><p><br></p>",
           "name": "NTCIP1204-Ess",
           "type": "mib",
           "history": [
@@ -9280,6 +9280,17 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-08-14T13:33:11.229Z"
+            },
+            {
+              "attributesChanged": {
+                "text": "<pre>MODULE-IDENTITY, OBJECT-IDENTITY, OBJECT-TYPE, \nInteger32, Unsigned32, Counter32\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-SMI\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2578 &nbsp;\nDisplayString, TEXTUAL-CONVENTION\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-TC\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2579\nOBJECT-GROUP\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-CONF\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2580\nSnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMP-FRAMEWORK-MIB\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 3411\nPhysicalIndexOrZero\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM ENTITY-MIB\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 6933\nITSDailyTimeStamp, ITSDateStamp, ITSInteger16, ITSOerString&nbsp;\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM ISO26048-1-FieldDevice-TC\ndevices\n                                               FROM NTCIP8004-Transportation;</pre><p><br></p>"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-08-21T20:56:27.099Z"
             }
           ]
         },
@@ -10676,7 +10687,7 @@
               "oid": "{ essNtcipInstrumentation 1 }",
               "param_type": "status",
               "status": "deprecated",
-              "syntax": "<p>INTEGER (0..1)</p>",
+              "syntax": "<p>Integer32 (0..1)</p>",
               "type": "ot",
               "x_text": "<p>fdSrsaTypeWarning.FDO</p>",
               "x_type": "superseded",
@@ -10789,6 +10800,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T16:09:51.848Z"
+                },
+                {
+                  "attributesChanged": {
+                    "syntax": "<p>INTEGER (0..1)</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-21T20:57:02.410Z"
                 }
               ]
             },
@@ -11745,7 +11767,7 @@
               "oid": "{ essNtcipInstrumentation 9 }",
               "param_type": "status",
               "status": "deprecated",
-              "syntax": "<p>INTEGER (0..3)</p>",
+              "syntax": "<p>Integer32 (0..3)</p>",
               "type": "ot",
               "version": "v05",
               "x_text": "<pre>fdControllerStatus (ISO 26048-1)</pre>",
@@ -11891,6 +11913,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T16:14:11.643Z"
+                },
+                {
+                  "attributesChanged": {
+                    "syntax": "<p>INTEGER (0..3)</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-21T20:57:32.391Z"
                 }
               ]
             }
@@ -37582,11 +37615,6 @@
                   "status": "current",
                   "syntax": "<p>Integer32 (1..255)</p>",
                   "type": "ot",
-                  "links": {
-                    "group": [
-                      "NTCIP_1204-2369"
-                    ]
-                  },
                   "history": [
                     {
                       "affectedNodeId": "46",
@@ -37690,6 +37718,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T16:33:21.440Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-21T20:28:14.718Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1204-2369"
+                        ],
+                        "type": "group"
+                      }
                     }
                   ]
                 },
@@ -54286,7 +54328,7 @@
               "oid": "{ essNtcipAirQuality 13 }",
               "param_type": "status",
               "status": "current",
-              "syntax": "<p>INTEGER (0..65535)</p>",
+              "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
               "units": "parts per million",
               "links": {
@@ -54388,6 +54430,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-01T18:24:50.397Z"
+                },
+                {
+                  "attributesChanged": {
+                    "syntax": "<p>INTEGER (0..65535)</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-21T20:58:24.435Z"
                 }
               ]
             },
@@ -54404,7 +54457,7 @@
               "oid": "{ essNtcipAirQuality 14 }",
               "param_type": "status",
               "status": "current",
-              "syntax": "<p>INTEGER (0..255)</p>",
+              "syntax": "<p>Integer32 (0..255)</p>",
               "type": "ot",
               "units": "parts per billion",
               "links": {
@@ -54506,6 +54559,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-01T18:25:00.664Z"
+                },
+                {
+                  "attributesChanged": {
+                    "syntax": "<p>INTEGER (0..255)</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-21T20:58:27.979Z"
                 }
               ]
             },
@@ -54522,7 +54586,7 @@
               "oid": "{ essNtcipAirQuality 15 }",
               "param_type": "status",
               "status": "current",
-              "syntax": "<p>INTEGER (0..65535)</p>",
+              "syntax": "<p>Integer32 (0..65535)</p>",
               "type": "ot",
               "units": "parts per billion",
               "links": {
@@ -54624,6 +54688,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-01T18:25:09.199Z"
+                },
+                {
+                  "attributesChanged": {
+                    "syntax": "<p>INTEGER (0..65535)</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-21T20:58:32.197Z"
                 }
               ]
             },
@@ -64034,8 +64109,10 @@
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.6.9",
                   "name": "essPrecipIceThicknessGroupV4",
                   "oid": "{essPrecipitationGroups 9}",
-                  "status": "current",
+                  "status": "deprecated",
                   "type": "og",
+                  "x_text": "<p>essPavementTemperatureGroupV2</p>",
+                  "x_type": "superseded",
                   "history": [
                     {
                       "affectedNodeId": "#",
@@ -64185,6 +64262,39 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T17:20:05.456Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "status": "current"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-21T21:01:13.292Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-21T21:01:16.386Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-21T21:03:36.563Z"
                     }
                   ]
                 },
@@ -67906,7 +68016,7 @@
                   "guid": "a045e60f-3c1d-4d45-9126-3e2292752bae",
                   "text": "<p>The objects required to claim support for pavement sensor meta-data for v01.</p>",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.9.2",
-                  "name": "essPavementSensorMetaDataGroupV5",
+                  "name": "essPavementSensorMetaDataGroupV1",
                   "oid": "{essPavementGroups 2}",
                   "status": "current",
                   "type": "og",
@@ -68069,6 +68179,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T17:24:02.024Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "essPavementSensorMetaDataGroupV5"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-21T20:28:58.843Z"
                     }
                   ]
                 },
@@ -68633,6 +68754,8 @@
                   "oid": "{essPavementGroups 6}",
                   "status": "deprecated",
                   "type": "og",
+                  "x_text": "<p>essPavementTemperatureGroupV2</p>",
+                  "x_type": "superseded",
                   "history": [
                     {
                       "affectedNodeId": "2373",
@@ -68732,6 +68855,28 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T17:25:02.741Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-21T21:02:24.812Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-21T21:02:43.379Z"
                     }
                   ]
                 },
@@ -70556,7 +70701,7 @@
                   "guid": "dd9b398b-d9bf-443b-b3c5-a3293c40070c",
                   "text": "<p>The objects required to claim support for pavement sensor location for v04.</p>",
                   "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.127.2.9.19",
-                  "name": "essPavementSensorLocationGroupV5",
+                  "name": "essPavementSensorLocationGroupV4",
                   "oid": "{essPavementGroups 19}",
                   "status": "deprecated",
                   "type": "og",
@@ -70672,6 +70817,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T17:25:58.721Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "essPavementSensorLocationGroupV5"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-21T20:29:23.824Z"
                     }
                   ]
                 },

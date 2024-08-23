@@ -1,14 +1,14 @@
 {
   "id": "NTCIP_1204",
   "guid": "0759092F-8D8C-4322-AAA5-017F0A4F46A1",
-  "lastId": 3294,
+  "lastId": 3304,
   "createdOn": "2023-08-03T09:58:29",
   "createdBy": {
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-08-23T15:09:15.592Z",
+  "lastChangedOn": "2024-08-23T16:34:41.428Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -165,6 +165,478 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-08-03T17:45:28.198Z"
+            }
+          ],
+          "children": [
+            {
+              "id": "3295",
+              "guid": "69e2c208-8830-4e51-bde9-c1c7f1fcd5ee",
+              "heading": "Physical View of the Reference Architecture",
+              "type": "text",
+              "history": [
+                {
+                  "affectedNodeId": "2574",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:06:41.362Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:06:47.841Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:10:13.110Z"
+                }
+              ]
+            },
+            {
+              "id": "3296",
+              "guid": "abe4715b-8d3e-4cab-8bce-1a963f9ba6a2",
+              "heading": "Remote Weather Station",
+              "type": "text",
+              "history": [
+                {
+                  "affectedNodeId": "2574",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:06:50.704Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:07:03.822Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:10:13.110Z"
+                }
+              ]
+            },
+            {
+              "id": "3297",
+              "guid": "83a47d75-0ced-4451-bc6d-82dac356ffea",
+              "heading": "Air Quality Station",
+              "type": "text",
+              "history": [
+                {
+                  "affectedNodeId": "2574",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:07:10.932Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:07:16.850Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:10:13.110Z"
+                }
+              ]
+            },
+            {
+              "id": "3298",
+              "guid": "b4e2086a-d0bf-4768-a6b7-b9f1016f2619",
+              "heading": "Mobile Weather Station",
+              "type": "text",
+              "history": [
+                {
+                  "affectedNodeId": "2574",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:07:19.397Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:07:32.396Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:10:13.110Z"
+                }
+              ]
+            },
+            {
+              "id": "3299",
+              "guid": "f40af892-7ba3-4436-a9f9-8071ed281a31",
+              "heading": "Sprayer Combined with a Pavement Sensor",
+              "type": "text",
+              "history": [
+                {
+                  "affectedNodeId": "2574",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:07:42.899Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:07:49.821Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:10:13.110Z"
+                }
+              ]
+            },
+            {
+              "id": "3300",
+              "guid": "11662848-99e5-4db4-842e-b09ee7d41a59",
+              "heading": "Pavement Treatment Station",
+              "type": "text",
+              "history": [
+                {
+                  "affectedNodeId": "2574",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:07:58.664Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:08:03.828Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:10:13.110Z"
+                }
+              ]
+            },
+            {
+              "id": "3301",
+              "guid": "96a2cd8c-11b7-435c-92f8-8399683b3571",
+              "heading": "ESS Characteristics",
+              "type": "unp",
+              "history": [
+                {
+                  "affectedNodeId": "2574",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:08:12.636Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:08:17.470Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:09:54.258Z"
+                }
+              ],
+              "children": [
+                {
+                  "id": "3302",
+                  "guid": "7f2ca3a8-bf11-4506-b9ea-d7f3f92aba88",
+                  "text": "<p>a) Permanent</p>",
+                  "conformance": "O.1 (1)",
+                  "type": "unc",
+                  "history": [
+                    {
+                      "affectedNodeId": "3301",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T16:08:24.564Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T16:08:31.124Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>Permanent</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T16:09:02.060Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T16:10:00.816Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T16:11:32.177Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "3303",
+                  "guid": "4da64a5c-5c34-49fa-aea9-3971aecebbdc",
+                  "text": "<p>b) Transportable</p>",
+                  "conformance": "O.1 (1)",
+                  "type": "unc",
+                  "history": [
+                    {
+                      "affectedNodeId": "3301",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T16:08:38.232Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T16:08:44.610Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>Transportable</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T16:08:57.702Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T16:10:00.816Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T16:11:32.177Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "3304",
+                  "guid": "ac8b2b7b-023e-47a6-b472-8ac739db24fc",
+                  "text": "<p>c) Mobile</p>",
+                  "conformance": "O.1 (1)",
+                  "type": "unc",
+                  "history": [
+                    {
+                      "affectedNodeId": "3301",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T16:08:46.553Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T16:08:53.705Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T16:10:00.816Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T16:11:32.177Z"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -4111,7 +4583,8 @@
                       "type": "d_req",
                       "links": {
                         "fulfil": [
-                          "Conditionals-82"
+                          "NTCIP_1204-536",
+                          "NTCIP_1204-546"
                         ]
                       },
                       "discussion": [
@@ -4161,6 +4634,48 @@
                           "commentDate": "2024-06-12T23:03:10.558Z",
                           "commentIndex": 0,
                           "deleteLastComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>"
+                        },
+                        {
+                          "addedLink": {
+                            "target": [
+                              "NTCIP_1204-536"
+                            ],
+                            "type": "fulfil"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-23T16:33:36.547Z"
+                        },
+                        {
+                          "addedLink": {
+                            "target": [
+                              "NTCIP_1204-546"
+                            ],
+                            "type": "fulfil"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-23T16:34:07.133Z"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-08-23T16:34:41.428Z",
+                          "removedLink": {
+                            "target": [
+                              "Conditionals-82"
+                            ],
+                            "type": "fulfil"
+                          }
                         }
                       ]
                     },
@@ -8727,7 +9242,6 @@
               "type": "s_req",
               "links": {
                 "fulfil": [
-                  "NTCIP_1204-3208",
                   "Conditionals-90"
                 ]
               },
@@ -8781,6 +9295,20 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-13T14:03:30.194Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T16:20:09.588Z",
+                  "removedLink": {
+                    "target": [
+                      "NTCIP_1204-3208"
+                    ],
+                    "type": "fulfil"
+                  }
                 }
               ]
             }

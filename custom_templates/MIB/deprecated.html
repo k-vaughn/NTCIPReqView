@@ -1,0 +1,2 @@
+{{#eachDocumentObject}}{{#if (and (eval type "==" "ot") (eval action "==" "deprecated")) }}{{name}} {{x_type}} {{#unless (eval x_type "==" "withdrawwn")}}by {{/unless}}{{formatString x_text}}
+{{/if}}{{/eachDocumentObject}}

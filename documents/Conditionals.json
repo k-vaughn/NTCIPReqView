@@ -8,7 +8,7 @@
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-08-21T23:16:54.355Z",
+  "lastChangedOn": "2024-08-23T16:35:51.560Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -553,33 +553,6 @@
       ]
     },
     {
-      "id": "77",
-      "guid": "56e7fd25-0c86-4b3c-a576-bc2b2831a983",
-      "heading": "Pressure Sensor Identity",
-      "text": "<p>PressIdent</p>",
-      "links": {
-        "condRef": [
-          "NTCIP_1204-779"
-        ],
-        "conditional": [
-          "NTCIP_1204-530"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "text": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Kenneth Vaughn"
-          },
-          "changedOn": "2024-08-21T23:16:54.355Z"
-        }
-      ]
-    },
-    {
       "id": "51",
       "guid": "8a48ffd8-a0f1-4a03-ab3f-540e09a18189",
       "heading": "Wind Sensor Location",
@@ -603,33 +576,6 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:16:48.307Z"
-        }
-      ]
-    },
-    {
-      "id": "78",
-      "guid": "75ae0208-51fa-4f0a-871c-71210860a02f",
-      "heading": "Wind Sensor Identity",
-      "text": "<p>WindIdent</p>",
-      "links": {
-        "condRef": [
-          "NTCIP_1204-790"
-        ],
-        "conditional": [
-          "NTCIP_1204-532"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "text": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Kenneth Vaughn"
-          },
-          "changedOn": "2024-08-21T23:16:41.284Z"
         }
       ]
     },
@@ -661,33 +607,6 @@
       ]
     },
     {
-      "id": "79",
-      "guid": "adbe5ab6-f01a-43b5-9f92-061a3c2953dd",
-      "heading": "Air Temperature Sensor Identity",
-      "text": "<p>TempIdent</p>",
-      "links": {
-        "condRef": [
-          "NTCIP_1204-804"
-        ],
-        "conditional": [
-          "NTCIP_1204-534"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "text": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Kenneth Vaughn"
-          },
-          "changedOn": "2024-08-21T23:16:27.306Z"
-        }
-      ]
-    },
-    {
       "id": "53",
       "guid": "aae7cf08-2f00-4306-8605-7c8dfcb0b9f5",
       "heading": "Humidity Sensor Location",
@@ -715,33 +634,6 @@
       ]
     },
     {
-      "id": "82",
-      "guid": "69caadd4-8cf5-41fe-878a-946960bf6127",
-      "heading": "Humidity Sensor Identity",
-      "text": "<p>HumidityIdent</p>",
-      "links": {
-        "condRef": [
-          "NTCIP_1204-818"
-        ],
-        "conditional": [
-          "NTCIP_1204-536"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "text": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Kenneth Vaughn"
-          },
-          "changedOn": "2024-08-21T23:16:10.473Z"
-        }
-      ]
-    },
-    {
       "id": "54",
       "guid": "460353db-7300-4b17-b8e6-9cd0b7d9361c",
       "heading": "Precipitation Sensor Location",
@@ -765,33 +657,6 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:16:01.049Z"
-        }
-      ]
-    },
-    {
-      "id": "81",
-      "guid": "a49904bd-f89a-48ee-8b52-751602660ef9",
-      "heading": "Precipitation Sensor Identity",
-      "text": "<p>PrecipIdent</p>",
-      "links": {
-        "condRef": [
-          "NTCIP_1204-832"
-        ],
-        "conditional": [
-          "NTCIP_1204-538"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "text": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Kenneth Vaughn"
-          },
-          "changedOn": "2024-08-21T23:15:53.781Z"
         }
       ]
     },
@@ -888,33 +753,6 @@
       ]
     },
     {
-      "id": "83",
-      "guid": "901c018c-e20d-4b4b-a9c3-6f535e50b037",
-      "heading": "Solar Radiation Identity",
-      "text": "<p>radIdent</p>",
-      "links": {
-        "condRef": [
-          "NTCIP_1204-847"
-        ],
-        "conditional": [
-          "NTCIP_1204-540"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "text": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Kenneth Vaughn"
-          },
-          "changedOn": "2024-08-21T23:14:40.668Z"
-        }
-      ]
-    },
-    {
       "id": "57",
       "guid": "97f68ce7-3973-4170-84cc-2cd5313cdebd",
       "heading": "Configure Visibility Sensor Location",
@@ -938,33 +776,6 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:14:32.040Z"
-        }
-      ]
-    },
-    {
-      "id": "84",
-      "guid": "69126c4e-4047-4f1d-9526-8c58a606e416",
-      "heading": "Configure Visibility Sensor Identity",
-      "text": "<p>VisIdent</p>",
-      "links": {
-        "condRef": [
-          "NTCIP_1204-861"
-        ],
-        "conditional": [
-          "NTCIP_1204-542"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "text": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Kenneth Vaughn"
-          },
-          "changedOn": "2024-08-21T23:14:26.706Z"
         }
       ]
     },
@@ -1021,34 +832,6 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:14:08.945Z"
-        }
-      ]
-    },
-    {
-      "id": "85",
-      "guid": "16068d2c-2341-46b8-8498-ad96a1acfc7f",
-      "heading": "Pavement Sensor Identity",
-      "text": "<p>PaveIdent</p>",
-      "links": {
-        "condRef": [
-          "NTCIP_1204-876"
-        ],
-        "conditional": [
-          "NTCIP_1204-550",
-          "NTCIP_1204-552"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "text": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Kenneth Vaughn"
-          },
-          "changedOn": "2024-08-21T23:14:01.460Z"
         }
       ]
     },
@@ -1161,33 +944,6 @@
       ]
     },
     {
-      "id": "86",
-      "guid": "a49db68f-32d0-4942-9d53-ba23b299f3b8",
-      "heading": "Subsurface Sensor Identity",
-      "text": "<p>SubSurfIdent</p>",
-      "links": {
-        "condRef": [
-          "NTCIP_1204-890"
-        ],
-        "conditional": [
-          "NTCIP_1204-559"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "text": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Kenneth Vaughn"
-          },
-          "changedOn": "2024-08-21T23:13:07.597Z"
-        }
-      ]
-    },
-    {
       "id": "65",
       "guid": "2bf71fbb-fc7a-48ef-abc7-bba138a4bc52",
       "heading": "Configure Water Location",
@@ -1211,33 +967,6 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:12:57.885Z"
-        }
-      ]
-    },
-    {
-      "id": "80",
-      "guid": "40951b54-d1df-4ed0-ac0a-dfd24d7eda24",
-      "heading": "Configure Water Identity",
-      "text": "<p>WaterIdent</p>",
-      "links": {
-        "condRef": [
-          "NTCIP_1204-917"
-        ],
-        "conditional": [
-          "NTCIP_1204-563"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "text": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Kenneth Vaughn"
-          },
-          "changedOn": "2024-08-21T23:12:51.684Z"
         }
       ]
     },
@@ -1303,33 +1032,6 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:12:18.973Z"
-        }
-      ]
-    },
-    {
-      "id": "88",
-      "guid": "9586b6d8-be6b-4201-b186-01c1c7d1ad23",
-      "heading": "Air Quality Sensor Identity",
-      "text": "<p>AQIdent</p>",
-      "links": {
-        "condRef": [
-          "NTCIP_1204-903"
-        ],
-        "conditional": [
-          "NTCIP_1204-565"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "text": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Kenneth Vaughn"
-          },
-          "changedOn": "2024-08-21T23:12:10.888Z"
         }
       ]
     },
@@ -1662,34 +1364,6 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:10:57.483Z"
-        }
-      ]
-    },
-    {
-      "id": "87",
-      "guid": "7ef66329-3181-4e39-8d8f-acb7fc0a84f0",
-      "heading": "PTS Identity",
-      "text": "<p>PtsIdent</p>",
-      "links": {
-        "condRef": [
-          "NTCIP_1204-934"
-        ],
-        "conditional": [
-          "NTCIP_1204-575",
-          "NTCIP_1204-573"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "text": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Kenneth Vaughn"
-          },
-          "changedOn": "2024-08-21T23:10:50.613Z"
         }
       ]
     },

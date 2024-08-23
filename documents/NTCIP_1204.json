@@ -8,7 +8,7 @@
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-08-21T21:58:36.565Z",
+  "lastChangedOn": "2024-08-23T14:14:34.305Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -10061,7 +10061,7 @@
               "syntax": "<pre>INTEGER { \n    other (1), \n    permanent (2), \n    transportable (3), \n    mobile (4) }</pre><p><br></p>",
               "type": "ot",
               "version": "v05",
-              "x_text": "<pre>ISO26048-1-FieldDevice:fdMobility (ISO 26048-1)</pre>",
+              "x_text": "<p>ISO26048-1-FieldDevice.fdMobility</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -10237,6 +10237,28 @@
                   "commentDate": "2023-08-14T15:08:11.334Z",
                   "commentIndex": 0,
                   "deleteLastComment": "<p>Annex H states that this is part of the configuration but NTCIP 8004 states that all read-only objects are status objects. Do we need to allow for exceptions for read-only objects? In other words, is the assertion that some configuration objects can only be changed through non-SNMP methods? If so, do we need to create a third type of parameter? Or perhaps this is a special case of inter-related configuration object?</p>"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>ISO26048-1-FieldDevice:fdMobility (ISO 26048-1)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:07:59.320Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<p>ISO26048-1-FieldDevice:fdMobility</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:10:20.956Z"
                 }
               ]
             },
@@ -10256,7 +10278,7 @@
               "syntax": "<p>DisplayString (SIZE (0..255))</p>",
               "type": "ot",
               "version": "v05",
-              "x_text": "<pre>sysLocation (RFC 3418)</pre>",
+              "x_text": "<p>SNMPv2-MIB.sysLocation (RFC 3418)</p>",
               "x_type": "supplanted",
               "links": {
                 "group": [
@@ -10368,6 +10390,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-12T21:44:22.285Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>sysLocation (RFC 3418)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:08:47.286Z"
                 }
               ]
             }
@@ -10733,7 +10766,7 @@
               "status": "deprecated",
               "syntax": "<p>Integer32 (0..1)</p>",
               "type": "ot",
-              "x_text": "<p>fdSrsaTypeWarning.FDO</p>",
+              "x_text": "<p>ISO26048-1-Srsa.fdSrsaTypeWarning.FDO</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -10855,6 +10888,39 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-21T20:57:02.410Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<p>fdSrsaTypeWarning.FDO</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:10:38.839Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<p>ISO26048-1-FieldDevice.fdSrsaTypeWarning.FDO</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:10:51.254Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<p>ISO26048-1-SRSA.fdSrsaTypeWarning.FDO</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:11:16.277Z"
                 }
               ]
             },
@@ -10875,7 +10941,7 @@
               "syntax": "<p>Integer32 (0..101)</p>",
               "type": "ot",
               "units": "percent",
-              "x_text": "<p>fdSrsaPortValue.FBC</p>",
+              "x_text": "<p>ISO26048-1-Srsa.fdSrsaPortValue.FBC</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -11011,6 +11077,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T16:10:01.280Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<p>fdSrsaPortValue.FBC</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:11:27.774Z"
                 }
               ]
             },
@@ -11031,7 +11108,7 @@
               "syntax": "<p>Integer32 (0..255)</p>",
               "type": "ot",
               "units": "*2 Volts Root Mean Squared (Vrms)",
-              "x_text": "<p>fdSrsaPortValue.FLV</p>",
+              "x_text": "<p>ISO26048-1-Srsa.fdSrsaPortValue.FLV</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -11156,6 +11233,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T16:10:11.679Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<p>fdSrsaPortValue.FLV</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:11:33.892Z"
                 }
               ]
             },
@@ -11175,7 +11263,7 @@
               "syntax": "<p>ITSOerString</p>",
               "type": "ot",
               "version": "v03",
-              "x_text": "<pre>essStationMetaDataV3Block (See 5.3.8)</pre>",
+              "x_text": "<p>essStationMetaDataV3Block</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -11297,6 +11385,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T16:01:47.651Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essStationMetaDataV3Block (See 5.3.8)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:12:13.385Z"
                 }
               ]
             },
@@ -11316,7 +11415,7 @@
               "syntax": "<p>ITSOerString</p>",
               "type": "ot",
               "version": "v03",
-              "x_text": "<pre>essWeatherV3Block (See 5.3.9)</pre>",
+              "x_text": "<p>essWeatherV3Block</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -11438,6 +11537,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T22:33:43.759Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essWeatherV3Block (See 5.3.9)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:12:25.240Z"
                 }
               ]
             },
@@ -11814,7 +11924,7 @@
               "syntax": "<p>Integer32 (0..3)</p>",
               "type": "ot",
               "version": "v05",
-              "x_text": "<pre>fdControllerStatus (ISO 26048-1)</pre>",
+              "x_text": "<p>ISO26048-1-Controller.fdControllerStatus</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -11968,6 +12078,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-21T20:57:32.391Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>fdControllerStatus (ISO 26048-1)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:12:52.825Z"
                 }
               ]
             }
@@ -12054,7 +12175,7 @@
               "type": "ot",
               "units": "microdegrees of latitude",
               "version": "v05",
-              "x_text": "<pre>ISO26048-1-FieldDevice:fdConfiguredLatitude</pre>",
+              "x_text": "<p>ISO26048-1-FieldDevice.fdConfiguredLatitude</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -12197,6 +12318,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T19:37:57.122Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>ISO26048-1-FieldDevice:fdConfiguredLatitude</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:13:09.757Z"
                 }
               ]
             },
@@ -12219,7 +12351,7 @@
               "type": "ot",
               "units": "microdegrees of longitude",
               "version": "v05",
-              "x_text": "<pre>ISO26048-1-FieldDevice:fdConfiguredLongitude </pre>",
+              "x_text": "<p>ISO26048-1-FieldDevice.fdConfiguredLongitude&nbsp;</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -12332,6 +12464,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T19:37:57.122Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>ISO26048-1-FieldDevice:fdConfiguredLongitude </pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:13:20.487Z"
                 }
               ]
             },
@@ -12353,7 +12496,7 @@
               "type": "ot",
               "units": "kilometers per hour",
               "version": "v05",
-              "x_text": "<pre>ISO26048-1-FieldDevice:fdSpeed</pre>",
+              "x_text": "<p>ISO26048-1-FieldDevice.fdSpeed</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -12470,6 +12613,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:41:15.609Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>ISO26048-1-FieldDevice:fdSpeed</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:13:33.919Z"
                 }
               ]
             },
@@ -12491,7 +12645,7 @@
               "type": "ot",
               "units": "compass degrees",
               "version": "v05",
-              "x_text": "<pre>ISO26048-1-FieldDevice:fdBearing</pre>",
+              "x_text": "<p>ISO26048-1-FieldDevice.fdBearing</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -12607,6 +12761,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:41:15.609Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>ISO26048-1-FieldDevice:fdBearing</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:13:47.756Z"
                 }
               ]
             },
@@ -12627,7 +12792,7 @@
               "type": "ot",
               "units": "meters",
               "version": "v05",
-              "x_text": "<pre>ISO26048-1-FieldDevice:fdOdometer</pre>",
+              "x_text": "<p>ISO26048-1-FieldDevice.fdOdometer</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -12743,6 +12908,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:41:15.609Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>ISO26048-1-FieldDevice:fdOdometer</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:13:56.472Z"
                 }
               ]
             }
@@ -12906,7 +13082,7 @@
               "syntax": "<p>Integer32 (-400..8001)</p>",
               "type": "ot",
               "units": "meters",
-              "x_text": "<pre>ISO26048-1-FieldDevice:fdConfiguredElevation</pre>",
+              "x_text": "<p>ISO26048-1-FieldDevice.fdConfiguredElevation</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -13038,6 +13214,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T19:37:57.122Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>ISO26048-1-FieldDevice:fdConfiguredElevation</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:14:09.974Z"
                 }
               ]
             },
@@ -13060,7 +13247,7 @@
               "type": "ot",
               "units": "meters",
               "version": "v04",
-              "x_text": "<pre>essPressureSensorHeight.1 (See 5.5.7.2)</pre>",
+              "x_text": "<p>essPressureSensorHeight.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -13184,6 +13371,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T16:16:34.458Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essPressureSensorHeight.1 (See 5.5.7.2)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:14:20.907Z"
                 }
               ]
             },
@@ -13205,7 +13403,7 @@
               "type": "ot",
               "units": "meters",
               "version": "v02",
-              "x_text": "<pre>windSensorHeight.1 (See 5.6.10.2)</pre>",
+              "x_text": "<p>windSensorHeight.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -13318,6 +13516,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T16:16:28.218Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>windSensorHeight.1 (See 5.6.10.2)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:14:32.325Z"
                 }
               ]
             },
@@ -13340,7 +13549,7 @@
               "type": "ot",
               "units": "decapascal",
               "version": "v04",
-              "x_text": "<pre>essPressureSensorAtmosphericPressure.1 (See 5.5.7.7)</pre>",
+              "x_text": "<p>essPressureSensorAtmosphericPressure.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -13464,6 +13673,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T16:16:22.413Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essPressureSensorAtmosphericPressure.1 (See 5.5.7.7)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:14:41.224Z"
                 }
               ]
             },
@@ -14104,7 +14324,7 @@
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
                   "units": "meters",
-                  "x_text": "<pre>essPressureSensorZOffset</pre>",
+                  "x_text": "<p>essPressureSensorZOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -14249,6 +14469,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T13:28:00.197Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essPressureSensorZOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:14:48.861Z"
                     }
                   ]
                 },
@@ -14270,7 +14501,7 @@
                   "syntax": "<p>Integer32 (-90000000..90000001)</p>",
                   "type": "ot",
                   "units": "microdegrees of latitude",
-                  "x_text": "<pre>essPressureSensorYOffset</pre>",
+                  "x_text": "<p>essPressureSensorYOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -14426,6 +14657,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T13:28:07.119Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essPressureSensorYOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:14:53.528Z"
                     }
                   ]
                 },
@@ -14447,7 +14689,7 @@
                   "syntax": "<p>Integer32 (-180000000..180000001)</p>",
                   "type": "ot",
                   "units": "microdegrees of longitude",
-                  "x_text": "<pre>essPressureSensorXOffset</pre>",
+                  "x_text": "<p>essPressureSensorXOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -14592,6 +14834,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T13:28:13.948Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essPressureSensorXOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:14:59.095Z"
                     }
                   ]
                 },
@@ -14744,7 +14997,7 @@
                   "syntax": "<p>Integer32 (0..255)</p>",
                   "type": "ot",
                   "version": "v05",
-                  "x_text": "<pre>essPressureSensorEntityID</pre>",
+                  "x_text": "<p>essPressureSensorEntityID</p>",
                   "x_type": "supplanted",
                   "links": {
                     "group": [
@@ -14900,6 +15153,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T13:28:22.049Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essPressureSensorEntityID</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:15:04.385Z"
                     }
                   ]
                 },
@@ -15696,7 +15960,7 @@
               "type": "ot",
               "units": "compass degrees",
               "version": "v02",
-              "x_text": "<pre>windSensorAvgDirection.1 (See 5.6.10.5)</pre>",
+              "x_text": "<p>windSensorAvgDirection.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -15817,6 +16081,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T13:28:31.111Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>windSensorAvgDirection.1 (See 5.6.10.5)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:15:16.291Z"
                 }
               ]
             },
@@ -15839,7 +16114,7 @@
               "type": "ot",
               "units": "tenths of meters per second",
               "version": "v02",
-              "x_text": "<pre>windSensorAvgSpeed.1 (See 5.6.10.4)</pre>",
+              "x_text": "<p>windSensorAvgSpeed.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -15962,6 +16237,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T13:28:36.845Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>windSensorAvgSpeed.1 (See 5.6.10.4)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:15:24.325Z"
                 }
               ]
             },
@@ -15982,7 +16268,7 @@
               "type": "ot",
               "units": "compass degrees",
               "version": "v02",
-              "x_text": "<pre>windSensorSpotDirection.1 (See 5.6.10.7)</pre>",
+              "x_text": "<p>windSensorSpotDirection.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -16092,6 +16378,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T13:28:43.811Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>windSensorSpotDirection.1 (See 5.6.10.7)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:15:54.258Z"
                 }
               ]
             },
@@ -16113,7 +16410,7 @@
               "type": "ot",
               "units": "tenths of meters per second",
               "version": "v02",
-              "x_text": "<pre>windSensorSpotSpeed.1 (See 5.6.10.6)</pre>",
+              "x_text": "<p>windSensorSpotSpeed.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -16225,6 +16522,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T13:28:49.950Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>windSensorSpotSpeed.1 (See 5.6.10.6)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:16:03.202Z"
                 }
               ]
             },
@@ -16245,7 +16553,7 @@
               "syntax": "<pre>INTEGER {\n&nbsp; &nbsp; other (1),\n&nbsp; &nbsp; unknown (2),\n&nbsp; &nbsp; calm (3),\n    lightBreeze (4),\n    moderateBreeze (5),\n    strongBreeze (6),\n    gale (7),\n    moderateGale (8),\n    strongGale (9),\n    stormWinds (10),\n    hurricaneForceWinds (11),\n    gustyWinds (12) }</pre><p><br></p>",
               "type": "ot",
               "version": "v02",
-              "x_text": "<pre>windSensorSituation.1 (See 5.6.10.10)</pre>",
+              "x_text": "<p>windSensorSituation.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -16448,6 +16756,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T21:01:44.046Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>windSensorSituation.1 (See 5.6.10.10)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:16:12.442Z"
                 }
               ]
             },
@@ -16470,7 +16789,7 @@
               "type": "ot",
               "units": "tenths of meters per second",
               "version": "v02",
-              "x_text": "<pre>windSensorGustSpeed.1 (See 5.6.10.8)</pre>",
+              "x_text": "<p>windSensorGustSpeed.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -16582,6 +16901,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T19:57:26.978Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>windSensorGustSpeed.1 (See 5.6.10.8)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:16:22.841Z"
                 }
               ]
             },
@@ -16603,7 +16933,7 @@
               "type": "ot",
               "units": "compass degrees",
               "version": "v02",
-              "x_text": "<pre>windSensorGustDirection.1 (See 5.6.10.9)</pre>",
+              "x_text": "<p>windSensorGustDirection.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -16713,6 +17043,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T19:57:26.978Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>windSensorGustDirection.1 (See 5.6.10.9)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:16:32.674Z"
                 }
               ]
             },
@@ -17253,7 +17594,7 @@
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
                   "units": "meters",
-                  "x_text": "<pre>windSensorZOffset</pre>",
+                  "x_text": "<p>windSensorZOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -17365,6 +17706,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-14T21:22:13.963Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>windSensorZOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:16:39.430Z"
                     }
                   ]
                 },
@@ -18365,7 +18717,7 @@
                   "syntax": "<p>Integer32 (-90000000..90000001)</p>",
                   "type": "ot",
                   "units": "microdegrees latitude",
-                  "x_text": "<pre>windSensorYOffset</pre>",
+                  "x_text": "<p>windSensorYOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -18489,6 +18841,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:16:32.450Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>windSensorYOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:16:46.394Z"
                     }
                   ]
                 },
@@ -18510,7 +18873,7 @@
                   "syntax": "<p>Integer32 (-180000000..180000001)</p>",
                   "type": "ot",
                   "units": "microdegrees longitude",
-                  "x_text": "<pre>windSensorXOffset</pre>",
+                  "x_text": "<p>windSensorXOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -18634,6 +18997,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:16:32.450Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>windSensorXOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:16:51.310Z"
                     }
                   ]
                 },
@@ -18654,7 +19028,7 @@
                   "syntax": "<p>Integer32 (0..255)</p>",
                   "type": "ot",
                   "version": "v05",
-                  "x_text": "<pre>windSensorEntityID</pre>",
+                  "x_text": "<p>windSensorEntityID</p>",
                   "x_type": "supplanted",
                   "links": {
                     "group": [
@@ -18766,6 +19140,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:14:32.516Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>windSensorEntityID</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:16:56.349Z"
                     }
                   ]
                 },
@@ -19769,7 +20154,7 @@
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
                   "units": "meters",
-                  "x_text": "<pre>essTemperatureSensorZOffset</pre>",
+                  "x_text": "<p>essTemperatureSensorZOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -19926,6 +20311,17 @@
                         ],
                         "type": "group"
                       }
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essTemperatureSensorZOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:17:04.182Z"
                     }
                   ]
                 },
@@ -20094,7 +20490,7 @@
                   "syntax": "<p>Integer32 (-90000000..90000001)</p>",
                   "type": "ot",
                   "units": "microdegrees latitude",
-                  "x_text": "<pre>essTemperatureSensorYOffset</pre>",
+                  "x_text": "<p>essTemperatureSensorYOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -20228,6 +20624,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:24:59.430Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essTemperatureSensorYOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:17:09.640Z"
                     }
                   ]
                 },
@@ -20249,7 +20656,7 @@
                   "syntax": "<p>Integer32 (-180000000..180000001)</p>",
                   "type": "ot",
                   "units": "microdegrees longitude",
-                  "x_text": "<pre>essTemperatureSensorXOffset</pre>",
+                  "x_text": "<p>essTemperatureSensorXOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -20361,6 +20768,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:24:59.430Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essTemperatureSensorXOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:17:20.336Z"
                     }
                   ]
                 },
@@ -20489,7 +20907,7 @@
                   "syntax": "<p>Integer32 (0..255)</p>",
                   "type": "ot",
                   "version": "v05",
-                  "x_text": "<pre>essTemperatureSensorEntityID</pre>",
+                  "x_text": "<p>essTemperatureSensorEntityID</p>",
                   "x_type": "supplanted",
                   "links": {
                     "group": [
@@ -20601,6 +21019,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:20:29.099Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essTemperatureSensorEntityID</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:17:31.390Z"
                     }
                   ]
                 },
@@ -21115,7 +21544,7 @@
               "syntax": "<p>Integer32 (-1000..1001)</p>",
               "type": "ot",
               "units": "tenths of degrees Celsius",
-              "x_text": "<pre>humiditySensorWetbulbTemp</pre>",
+              "x_text": "<p>humiditySensorWetbulbTemp</p>",
               "x_type": "supplanted",
               "links": {
                 "group": [
@@ -21239,6 +21668,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T13:34:52.008Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>humiditySensorWetbulbTemp</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:17:38.313Z"
                 }
               ]
             },
@@ -21260,7 +21700,7 @@
               "syntax": "<p>Integer32 (-1000..1001)</p>",
               "type": "ot",
               "units": "tenths of degrees Celsius",
-              "x_text": "<pre>humiditySensorDewpointTemp</pre>",
+              "x_text": "<p>humiditySensorDewpointTemp</p>",
               "x_type": "supplanted",
               "links": {
                 "group": [
@@ -21384,6 +21824,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T13:34:57.835Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>humiditySensorDewpointTemp</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:17:42.720Z"
                 }
               ]
             },
@@ -21825,7 +22276,7 @@
               "type": "ot",
               "units": "percent humidity",
               "version": "v04",
-              "x_text": "<pre>humiditySensorRelativeHumidity.1 (See 5.8.27.7)</pre>",
+              "x_text": "<p>humiditySensorRelativeHumidity.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -21949,6 +22400,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T13:33:09.343Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>humiditySensorRelativeHumidity.1 (See 5.8.27.7)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:17:52.847Z"
                 }
               ]
             },
@@ -21969,7 +22431,7 @@
               "type": "ot",
               "units": "centimeters",
               "version": "v02",
-              "x_text": "<pre>waterLevelSensorReading.1 (See 5.8.21.2)</pre>",
+              "x_text": "<p>waterLevelSensorReading.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -22096,6 +22558,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T21:10:32.946Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>waterLevelSensorReading.1 (See 5.8.21.2)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:18:01.983Z"
                 }
               ]
             },
@@ -22117,7 +22590,7 @@
               "type": "ot",
               "units": "centimeters",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorAdjacentSnowDepth.1 (See 5.8.24.8)</pre>",
+              "x_text": "<p>precipitationSensorAdjacentSnowDepth.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -22219,6 +22692,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:17:08.639Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorAdjacentSnowDepth.1 (See 5.8.24.8)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:18:10.202Z"
                 }
               ]
             },
@@ -22240,7 +22724,7 @@
               "type": "ot",
               "units": "centimeters",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorRoadwaySnowDepth.1 (See 5.8.24.9)</pre>",
+              "x_text": "<p>precipitationSensorRoadwaySnowDepth.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -22342,6 +22826,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:17:08.639Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorRoadwaySnowDepth.1 (See 5.8.24.9)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:18:18.201Z"
                 }
               ]
             },
@@ -22363,7 +22858,7 @@
               "type": "ot",
               "units": "centimeters",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorRoadwaySnowPackDepth.1 (See 5.8.24.10)</pre>",
+              "x_text": "<p>precipitationSensorRoadwaySnowPackDepth.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -22465,6 +22960,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:17:08.639Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorRoadwaySnowPackDepth.1 (See 5.8.24.10)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:18:27.168Z"
                 }
               ]
             },
@@ -22485,7 +22991,7 @@
               "syntax": "<pre>INTEGER {\n    precip (1),\n    noPrecip (2),\n    error (3) }</pre><p><br></p>",
               "type": "ot",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorPrecipYesNo.1 (See 5.8.24.11)</pre>",
+              "x_text": "<p>precipitationSensorPrecipYesNo.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -22609,6 +23115,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:08:37.697Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorPrecipYesNo.1 (See 5.8.24.11)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:18:37.451Z"
                 }
               ]
             },
@@ -22631,7 +23148,7 @@
               "type": "ot",
               "units": "tenths of grams per square meter per second",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorPrecipRate.1 (See 5.8.24.12)</pre>",
+              "x_text": "<p>precipitationSensorPrecipRate.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -22744,6 +23261,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:09:03.093Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorPrecipRate.1 (See 5.8.24.12)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:18:46.040Z"
                 }
               ]
             },
@@ -22766,7 +23294,7 @@
               "type": "ot",
               "units": "10^-7 meters per second",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorSnowfallAccumRate.1 (See 5.8.24.13)</pre>",
+              "x_text": "<p>precipitationSensorSnowfallAccumRate.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -22879,6 +23407,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:17:08.639Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorSnowfallAccumRate.1 (See 5.8.24.13)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:18:54.484Z"
                 }
               ]
             },
@@ -23122,7 +23661,7 @@
               "type": "ot",
               "units": "millimeters",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorIceThickness.1 (See 5.8.24.15)</pre>",
+              "x_text": "<p>precipitationSensorIceThickness.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -23224,6 +23763,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:17:08.639Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorIceThickness.1 (See 5.8.24.15)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:19:03.135Z"
                 }
               ]
             },
@@ -23245,7 +23795,7 @@
               "type": "ot",
               "units": "seconds",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorPrecipitationStartTime.1 (See 5.8.24.16)</pre>",
+              "x_text": "<p>precipitationSensorPrecipitationStartTime.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -23347,6 +23897,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:09:03.093Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorPrecipitationStartTime.1 (See 5.8.24.16)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:19:13.596Z"
                 }
               ]
             },
@@ -23368,7 +23929,7 @@
               "type": "ot",
               "units": "seconds",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorPrecipitationEndTime.1 (See 5.8.24.17)</pre>",
+              "x_text": "<p>precipitationSensorPrecipitationEndTime.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -23470,6 +24031,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:09:03.093Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorPrecipitationEndTime.1 (See 5.8.24.17)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:19:21.569Z"
                 }
               ]
             },
@@ -23492,7 +24064,7 @@
               "type": "ot",
               "units": "tenths of kilograms per square meter",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorPrecipitationOneHour.1 (See 5.8.24.18)</pre>",
+              "x_text": "<p>precipitationSensorPrecipitationOneHour.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -23605,6 +24177,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:10:16.478Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorPrecipitationOneHour.1 (See 5.8.24.18)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:19:30.082Z"
                 }
               ]
             },
@@ -23627,7 +24210,7 @@
               "type": "ot",
               "units": "tenths of kilograms per square meter",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorPrecipitationThreeHours.1 (See 5.8.24.19)</pre>",
+              "x_text": "<p>precipitationSensorPrecipitationThreeHours.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -23740,6 +24323,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:10:16.478Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorPrecipitationThreeHours.1 (See 5.8.24.19)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:19:39.463Z"
                 }
               ]
             },
@@ -23762,7 +24356,7 @@
               "type": "ot",
               "units": "tenths of kilograms per square meter",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorPrecipitationSixHours.1 (See 5.8.24.20)</pre>",
+              "x_text": "<p>precipitationSensorPrecipitationSixHours.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -23875,6 +24469,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:10:16.478Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorPrecipitationSixHours.1 (See 5.8.24.20)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:19:49.929Z"
                 }
               ]
             },
@@ -23897,7 +24502,7 @@
               "type": "ot",
               "units": "tenths of kilograms per square meter",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorPrecipitationTwelveHours.1 (See 5.8.24.21)</pre>",
+              "x_text": "<p>precipitationSensorPrecipitationTwelveHours.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -24010,6 +24615,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:10:16.478Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorPrecipitationTwelveHours.1 (See 5.8.24.21)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:19:58.268Z"
                 }
               ]
             },
@@ -24032,7 +24648,7 @@
               "type": "ot",
               "units": "tenths of kilograms per square meter",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorPrecipitation24Hours.1 (See 5.8.24.22)</pre>",
+              "x_text": "<p>precipitationSensorPrecipitation24Hours.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -24145,6 +24761,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:10:16.478Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorPrecipitation24Hours.1 (See 5.8.24.22)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:20:07.567Z"
                 }
               ]
             },
@@ -24165,7 +24792,7 @@
               "syntax": "<p>Integer32 (0..255)</p>",
               "type": "ot",
               "version": "v04",
-              "x_text": "<pre>precipitationSensorModelInformationV4.1 (See 5.8.24.6)</pre>",
+              "x_text": "<p>precipitationSensorModelInformationV4.1</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -24278,6 +24905,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T13:59:17.304Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>precipitationSensorModelInformationV4.1 (See 5.8.24.6)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:20:18.358Z"
                 }
               ]
             },
@@ -24990,7 +25628,7 @@
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
                   "units": "meters",
-                  "x_text": "<pre>waterLevelSensorZOffset</pre>",
+                  "x_text": "<p>waterLevelSensorZOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -25119,6 +25757,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T15:12:11.517Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>waterLevelSensorZOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:20:29.600Z"
                     }
                   ]
                 },
@@ -25140,7 +25789,7 @@
                   "syntax": "<p>Integer32 (-90000000..90000001)</p>",
                   "type": "ot",
                   "units": "microdegrees latitude",
-                  "x_text": "<pre>waterLevelSensorYOffset</pre>",
+                  "x_text": "<p>waterLevelSensorYOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -25275,6 +25924,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T15:12:18.060Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>waterLevelSensorYOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:20:34.985Z"
                     }
                   ]
                 },
@@ -25296,7 +25956,7 @@
                   "syntax": "<p>Integer32 (-180000000..180000001)</p>",
                   "type": "ot",
                   "units": "microdegrees longitude",
-                  "x_text": "<pre>waterLevelSensorYOffset</pre>",
+                  "x_text": "<p>waterLevelSensorYOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -25420,6 +26080,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T15:12:24.366Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>waterLevelSensorYOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:20:39.807Z"
                     }
                   ]
                 },
@@ -25548,7 +26219,7 @@
                   "syntax": "<p>Integer32 (0..255)</p>",
                   "type": "ot",
                   "version": "v05",
-                  "x_text": "<pre>waterLevelSensorEntityID</pre>",
+                  "x_text": "<p>waterLevelSensorEntityID</p>",
                   "x_type": "supplanted",
                   "links": {
                     "group": [
@@ -25660,6 +26331,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T15:13:20.015Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>waterLevelSensorEntityID</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:20:44.885Z"
                     }
                   ]
                 },
@@ -26713,7 +27395,7 @@
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
                   "units": "meters",
-                  "x_text": "<pre>precipitationSensorZOffset</pre>",
+                  "x_text": "<p>precipitationSensorZOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -26825,6 +27507,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:30:34.617Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>precipitationSensorZOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:20:55.307Z"
                     }
                   ]
                 },
@@ -26846,7 +27539,7 @@
                   "syntax": "<p>Integer32 (-90000000..90000001)</p>",
                   "type": "ot",
                   "units": "microdegrees latitude",
-                  "x_text": "<pre>precipitationSensorYOffset</pre>",
+                  "x_text": "<p>precipitationSensorYOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -26970,6 +27663,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:30:40.970Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>precipitationSensorYOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:21:00.857Z"
                     }
                   ]
                 },
@@ -26991,7 +27695,7 @@
                   "syntax": "<p>Integer32 (-180000000..180000001)</p>",
                   "type": "ot",
                   "units": "microdegrees longitude",
-                  "x_text": "<pre>precipitationSensorXOffset</pre>",
+                  "x_text": "<p>precipitationSensorXOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -27115,6 +27819,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:30:46.804Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>precipitationSensorXOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:21:05.223Z"
                     }
                   ]
                 },
@@ -27244,7 +27959,7 @@
                   "syntax": "<p>Integer32 (0..255)</p>",
                   "type": "ot",
                   "version": "v05",
-                  "x_text": "<pre>precipitationSensorEntityID (See 5.8.24.24)</pre>",
+                  "x_text": "<p>precipitationSensorEntityID</p>",
                   "x_type": "supplanted",
                   "links": {
                     "group": [
@@ -27346,6 +28061,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:00:45.453Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>precipitationSensorEntityID (See 5.8.24.24)</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:21:13.636Z"
                     }
                   ]
                 },
@@ -28617,7 +29343,7 @@
                   "syntax": "<p>Unsigned32</p>",
                   "type": "ot",
                   "units": "seconds",
-                  "x_text": "<pre>precipitationSensorPrecipStartDate  and precipitationSensorPrecipStartTimeV5 </pre>",
+                  "x_text": "<p>precipitationSensorPrecipStartDate &nbsp;and precipitationSensorPrecipStartTimeV5&nbsp;</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -28730,6 +29456,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T16:30:55.197Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>precipitationSensorPrecipStartDate  and precipitationSensorPrecipStartTimeV5 </pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:21:23.508Z"
                     }
                   ]
                 },
@@ -28750,7 +29487,7 @@
                   "syntax": "<p>Unsigned32</p>",
                   "type": "ot",
                   "units": "seconds",
-                  "x_text": "<pre>precipitationSensorPrecipEndDate  and precipitationSensorPrecipEndTimeV5 </pre>",
+                  "x_text": "<p>precipitationSensorPrecipEndDate &nbsp;and precipitationSensorPrecipEndTimeV5&nbsp;</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -28863,6 +29600,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T16:31:01.164Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>precipitationSensorPrecipEndDate  and precipitationSensorPrecipEndTimeV5 </pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:21:29.847Z"
                     }
                   ]
                 },
@@ -30978,7 +31726,7 @@
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
                   "units": "meters",
-                  "x_text": "<pre>humiditySensorZOffset</pre>",
+                  "x_text": "<p>humiditySensorZOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -31090,6 +31838,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T13:39:18.476Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>humiditySensorZOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:21:39.123Z"
                     }
                   ]
                 },
@@ -31111,7 +31870,7 @@
                   "syntax": "<p>Integer32 (-90000000..90000001)</p>",
                   "type": "ot",
                   "units": "microdegrees latitude",
-                  "x_text": "<pre>humiditySensorYOffset</pre>",
+                  "x_text": "<p>humiditySensorYOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -31246,6 +32005,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T13:39:18.476Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>humiditySensorYOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:21:43.637Z"
                     }
                   ]
                 },
@@ -31267,7 +32037,7 @@
                   "syntax": "<p>Integer32 (-180000000..180000001)</p>",
                   "type": "ot",
                   "units": "microdegrees longitude",
-                  "x_text": "<pre>humiditySensorXOffset</pre>",
+                  "x_text": "<p>humiditySensorXOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -31391,6 +32161,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T13:39:18.476Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>humiditySensorXOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:21:48.619Z"
                     }
                   ]
                 },
@@ -31520,7 +32301,7 @@
                   "syntax": "<p>Integer32 (0..255)</p>",
                   "type": "ot",
                   "version": "v05",
-                  "x_text": "<pre>humiditySensorEntityID</pre>",
+                  "x_text": "<p>humiditySensorEntityID</p>",
                   "x_type": "supplanted",
                   "links": {
                     "group": [
@@ -31622,6 +32403,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:27:39.216Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>humiditySensorEntityID</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:21:53.574Z"
                     }
                   ]
                 },
@@ -32677,7 +33469,7 @@
               "type": "ot",
               "units": "joules per square meter",
               "version": "v02",
-              "x_text": "<pre>essInstantaneousSolarRadiation (See 5.9.5)</pre>",
+              "x_text": "<p>essInstantaneousSolarRadiation</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -32787,6 +33579,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:18:49.630Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essInstantaneousSolarRadiation (See 5.9.5)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:22:05.318Z"
                 }
               ]
             },
@@ -32809,7 +33612,7 @@
               "type": "ot",
               "units": "minutes",
               "version": "v04",
-              "x_text": "<pre>essTotalSunV4 (See 5.9.10.7)</pre>",
+              "x_text": "<p>essTotalSunV4</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -32949,6 +33752,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T21:46:59.647Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essTotalSunV4 (See 5.9.10.7)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:22:13.769Z"
                 }
               ]
             },
@@ -32969,7 +33783,7 @@
               "syntax": "<pre>INTEGER {\n    overcast (1),\n    cloudy (2),\n    partlyCloudy (3),\n    mostlyClear (4),\n    clear (5) }</pre><p><br></p>",
               "type": "ot",
               "version": "v04",
-              "x_text": "<pre>essCloudSituationV4 (See 5.9.11)</pre>",
+              "x_text": "<p>essCloudSituationV4</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -33101,6 +33915,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T21:03:24.630Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essCloudSituationV4 (See 5.9.11)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:22:22.219Z"
                 }
               ]
             },
@@ -33123,7 +33948,7 @@
               "type": "ot",
               "units": "watts per square meter",
               "version": "v04",
-              "x_text": "<pre>essInstantaneousTerrestrialRadiationV4 (See 5.9.10.8)</pre>",
+              "x_text": "<p>essInstantaneousTerrestrialRadiationV4</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -33236,6 +34061,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T21:46:59.647Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essInstantaneousTerrestrialRadiationV4 (See 5.9.10.8)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:22:31.085Z"
                 }
               ]
             },
@@ -33258,7 +34094,7 @@
               "type": "ot",
               "units": "watts per square meter",
               "version": "v04",
-              "x_text": "<pre>essInstantaneousSolarRadiationV4 (See 5.9.10.9)</pre>",
+              "x_text": "<p>essInstantaneousSolarRadiationV4</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -33371,6 +34207,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T21:46:59.647Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essInstantaneousSolarRadiationV4 (See 5.9.10.9)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:22:50.586Z"
                 }
               ]
             },
@@ -33393,7 +34240,7 @@
               "type": "ot",
               "units": "joules per square meter",
               "version": "v04",
-              "x_text": "<pre>essTotalRadiationV4 (See 5.9.10.10)</pre>",
+              "x_text": "<p>essTotalRadiationV4</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -33506,6 +34353,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T21:46:59.647Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essTotalRadiationV4 (See 5.9.10.10)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:23:00.187Z"
                 }
               ]
             },
@@ -34115,7 +34973,7 @@
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
                   "units": "meters",
-                  "x_text": "<pre>radiationSensorZOffset</pre>",
+                  "x_text": "<p>radiationSensorZOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -34227,6 +35085,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:38:02.850Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>radiationSensorZOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:23:07.074Z"
                     }
                   ]
                 },
@@ -34248,7 +35117,7 @@
                   "syntax": "<p>Integer32 (-90000000..90000001)</p>",
                   "type": "ot",
                   "units": "microdegrees latitude",
-                  "x_text": "<pre>radiationSensorYOffset</pre>",
+                  "x_text": "<p>radiationSensorYOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -34383,6 +35252,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:38:08.418Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>radiationSensorYOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:23:11.425Z"
                     }
                   ]
                 },
@@ -34404,7 +35284,7 @@
                   "syntax": "<p>Integer32 (-180000000..180000001)</p>",
                   "type": "ot",
                   "units": "microdegrees of longitude",
-                  "x_text": "<pre>radiationSensorXOffset</pre>",
+                  "x_text": "<p>radiationSensorXOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -34528,6 +35408,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:38:14.083Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>radiationSensorXOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:23:15.969Z"
                     }
                   ]
                 },
@@ -34657,7 +35548,7 @@
                   "syntax": "<p>Integer32 (0..255)</p>",
                   "type": "ot",
                   "version": "v05",
-                  "x_text": "<pre>radiationSensorEntityID (See 5.9.10.11)</pre>",
+                  "x_text": "<p>radiationSensorEntityID</p>",
                   "x_type": "supplanted",
                   "links": {
                     "group": [
@@ -34759,6 +35650,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:38:28.294Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>radiationSensorEntityID (See 5.9.10.11)</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:23:24.887Z"
                     }
                   ]
                 },
@@ -35923,7 +36825,7 @@
               "type": "ot",
               "units": "decimeters",
               "version": "v04",
-              "x_text": "<pre>essVisibilitySensorCurrentReading</pre>",
+              "x_text": "<p>essVisibilitySensorCurrentReading</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -36089,6 +36991,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:19:54.340Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essVisibilitySensorCurrentReading</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:23:35.341Z"
                 }
               ]
             },
@@ -36485,7 +37398,7 @@
               "syntax": "<p>Integer32 (-1000..1001)</p>",
               "type": "ot",
               "units": "meters",
-              "x_text": "<pre>essVisibilitySensorZOffset</pre>",
+              "x_text": "<p>essVisibilitySensorZOffset</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -36608,6 +37521,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T14:40:48.769Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essVisibilitySensorZOffset</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:23:39.974Z"
                 }
               ]
             },
@@ -36629,7 +37553,7 @@
               "syntax": "<p>Integer32 (-90000000..90000001)</p>",
               "type": "ot",
               "units": "microdegrees latitude",
-              "x_text": "<pre>essVisibilitySensorYOffset</pre>",
+              "x_text": "<p>essVisibilitySensorYOffset</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -36775,6 +37699,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T14:40:55.016Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essVisibilitySensorYOffset</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:23:44.636Z"
                 }
               ]
             },
@@ -36796,7 +37731,7 @@
               "syntax": "<p>Integer32 (-180000000..180000001)</p>",
               "type": "ot",
               "units": "microdegrees longitude",
-              "x_text": "<pre>essVisibilitySensorXOffset</pre>",
+              "x_text": "<p>essVisibilitySensorXOffset</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -36942,6 +37877,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T14:41:01.169Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essVisibilitySensorXOffset</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:23:50.715Z"
                 }
               ]
             },
@@ -36960,7 +37906,7 @@
               "status": "deprecated",
               "syntax": "<p>DisplayString (SIZE (0..255))</p>",
               "type": "ot",
-              "x_text": "<pre>essVisibilitySensorLocation</pre>",
+              "x_text": "<p>essVisibilitySensorLocation</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -37168,6 +38114,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T14:41:15.313Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essVisibilitySensorLocation</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:23:55.306Z"
                 }
               ]
             },
@@ -37188,7 +38145,7 @@
               "syntax": "<p>Integer32 (0..255)</p>",
               "type": "ot",
               "version": "v05",
-              "x_text": "<pre>essVisibilitySensorEntityID</pre>",
+              "x_text": "<p>essVisibilitySensorEntityID</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -37312,6 +38269,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T14:42:41.142Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essVisibilitySensorEntityID</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:24:00.059Z"
                 }
               ]
             },
@@ -40244,7 +41212,7 @@
                   "syntax": "<pre>INTEGER {\n    other (1),\n    error (2),\n    dry (3),\n    traceMoisture (4),\n    wet (5),\n    chemicallyWet (6),\n    iceWarning (7),\n    iceWatch (8),\n    snowWarning (9),\n    snowWatch (10),\n    absorption (11),\n    dew (12),\n    frost (13),\n    absorptionAtDewpoint (14) }</pre><p><br></p>",
                   "type": "ot",
                   "version": "v04",
-                  "x_text": "<p>pavementSesnsorSurfaceCondition (See 5.11.3.22) and pavementSensorForecastCondition (See 5.11.3.23)</p>",
+                  "x_text": "<p>pavementSesnsorSurfaceCondition and pavementSensorForecastCondition</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -40390,6 +41358,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T15:26:58.694Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<p>pavementSesnsorSurfaceCondition (See 5.11.3.22) and pavementSensorForecastCondition (See 5.11.3.23)</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:24:16.119Z"
                     }
                   ]
                 },
@@ -40710,7 +41689,7 @@
                   "type": "ot",
                   "units": "millimeters",
                   "version": "v02",
-                  "x_text": "<pre>essSurfaceIceOrWaterDepth (See 5.11.3.16)</pre>",
+                  "x_text": "<p>essSurfaceIceOrWaterDepth</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -40820,6 +41799,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T15:27:04.829Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essSurfaceIceOrWaterDepth (See 5.11.3.16)</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:24:26.525Z"
                     }
                   ]
                 },
@@ -40947,7 +41937,7 @@
                   "type": "ot",
                   "units": "mhos",
                   "version": "v02",
-                  "x_text": "<pre>essSurfaceConductivityV2 (See 5.11.3.17)</pre>",
+                  "x_text": "<p>essSurfaceConductivityV2</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -41057,6 +42047,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T16:33:51.613Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essSurfaceConductivityV2 (See 5.11.3.17)</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:24:35.071Z"
                     }
                   ]
                 },
@@ -41735,7 +42736,7 @@
                   "syntax": "<p>Integer32 (0..255)</p>",
                   "type": "ot",
                   "version": "v05",
-                  "x_text": "<pre>pavementSensorEntityID (See 5.11.3.28)</pre>",
+                  "x_text": "<p>pavementSensorEntityID</p>",
                   "x_type": "supplanted",
                   "links": {
                     "group": [
@@ -41837,6 +42838,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:47:40.513Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>pavementSensorEntityID (See 5.11.3.28)</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:24:45.652Z"
                     }
                   ]
                 },
@@ -42028,7 +43040,7 @@
                   "syntax": "<p>Integer32 (-90000000..90000001)</p>",
                   "type": "ot",
                   "units": "microdegrees latitude",
-                  "x_text": "<pre>pavementSensorYOffset</pre>",
+                  "x_text": "<p>pavementSensorYOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -42163,6 +43175,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:58:36.396Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>pavementSensorYOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:24:50.156Z"
                     }
                   ]
                 },
@@ -42184,7 +43207,7 @@
                   "syntax": "<p>Integer32 (-180000000..180000001)</p>",
                   "type": "ot",
                   "units": "microdegrees longitude",
-                  "x_text": "<pre>pavementSensorXOffset</pre>",
+                  "x_text": "<p>pavementSensorXOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -42319,6 +43342,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:58:36.396Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>pavementSensorXOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:24:54.677Z"
                     }
                   ]
                 },
@@ -42793,7 +43827,7 @@
                   "syntax": "<p>Integer32 (-90000000..90000001)</p>",
                   "type": "ot",
                   "units": "microdegrees latitude",
-                  "x_text": "<pre>essPavementMonitorYOffset</pre>",
+                  "x_text": "<p>essPavementMonitorYOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -42917,6 +43951,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:59:17.230Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essPavementMonitorYOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:25:01.424Z"
                     }
                   ]
                 },
@@ -42938,7 +43983,7 @@
                   "syntax": "<p>Integer32 (-180000000..180000001)</p>",
                   "type": "ot",
                   "units": "microdegrees longitude",
-                  "x_text": "<pre>essPavementMonitorXOffset</pre>",
+                  "x_text": "<p>essPavementMonitorXOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -43062,6 +44107,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T14:59:22.290Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essPavementMonitorXOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:25:05.823Z"
                     }
                   ]
                 },
@@ -45223,7 +46279,7 @@
                   "syntax": "<p>Integer32 (-90000000..90000001)</p>",
                   "type": "ot",
                   "units": "microdegrees latitude",
-                  "x_text": "<pre>essSubSurfaceSensorYOffset</pre>",
+                  "x_text": "<p>essSubSurfaceSensorYOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -45357,6 +46413,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T15:05:27.234Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essSubSurfaceSensorYOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:25:12.658Z"
                     }
                   ]
                 },
@@ -45378,7 +46445,7 @@
                   "syntax": "<p>Integer32 (-180000000..180000001)</p>",
                   "type": "ot",
                   "units": "microdegrees longitude",
-                  "x_text": "<pre>essSubSurfaceSensorXOffset</pre>",
+                  "x_text": "<p>essSubSurfaceSensorXOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -45512,6 +46579,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T15:05:34.925Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essSubSurfaceSensorXOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:25:17.124Z"
                     }
                   ]
                 },
@@ -45532,7 +46610,7 @@
                   "syntax": "<p>Integer32 (0..255)</p>",
                   "type": "ot",
                   "version": "v05",
-                  "x_text": "<pre>essSubSurfaceSensorEntityID (See 5.11.6.11)</pre>",
+                  "x_text": "<p>essSubSurfaceSensorEntityID</p>",
                   "x_type": "supplanted",
                   "links": {
                     "group": [
@@ -45634,6 +46712,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T15:05:49.866Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essSubSurfaceSensorEntityID (See 5.11.6.11)</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:25:25.881Z"
                     }
                   ]
                 },
@@ -45818,7 +46907,7 @@
               "syntax": "<p>ITSOerString</p>",
               "type": "ot",
               "version": "v03",
-              "x_text": "<pre>essPavementV3Block (See 5.11.9)</pre>",
+              "x_text": "<p>essPavementV3Block</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -45962,6 +47051,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T22:30:19.045Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essPavementV3Block (See 5.11.9)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:25:35.848Z"
                 }
               ]
             },
@@ -45982,6 +47082,7 @@
               "syntax": "<p>ITSOerString</p>",
               "type": "ot",
               "version": "v05",
+              "x_type": "withdrawn",
               "links": {
                 "group": [
                   "NTCIP_1204-3245"
@@ -46130,6 +47231,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T22:37:00.573Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T14:14:34.305Z"
                 }
               ]
             },
@@ -46422,7 +47534,7 @@
               "type": "ot",
               "units": "percent friction",
               "version": "v04",
-              "x_text": "<pre>pavementSensorFrictionCoefficient (See 5.11.3.24)</pre>",
+              "x_text": "<p>pavementSensorFrictionCoefficient</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -46574,6 +47686,17 @@
                     ],
                     "type": "group"
                   }
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>pavementSensorFrictionCoefficient (See 5.11.3.24)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:25:44.120Z"
                 }
               ]
             },
@@ -46593,7 +47716,7 @@
               "syntax": "<pre>INTEGER {\n    other (1),\n    dry (2),\n    moist (3),\n    wet (4),\n    flooded (5),\n    frozen (6),\n    glaze (7),\n    dustySandy (8),\n    veryDry (9),\n    icy (10),\n    patchyWetSnow (11),\n    moderateWetSnowCover (12),\n    fullWetSnowCover (13),\n    patchyDrySnow (14),\n    moderateDrySnowCover (15),\n    fullDrySnowCover (16),\n    driftingSnow (17),\n    unknown (18) }</pre>",
               "type": "ot",
               "version": "v04",
-              "x_text": "<pre>essMobileObservationGroundStateV4 (See 5.12.4)</pre>",
+              "x_text": "<p>essMobileObservationGroundStateV4</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -46704,6 +47827,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T15:42:02.297Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essMobileObservationGroundStateV4 (See 5.12.4)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:25:52.736Z"
                 }
               ]
             },
@@ -46723,7 +47857,7 @@
               "syntax": "<pre>INTEGER {\n    other (1),\n    dry (2),\n    wet (3),\n    puddles (4),\n    shallowStandingWater (5),\n    shallowFlowingWater (6),\n    deepStandingWater (7),\n    deepFlowingWater (8),\n    dustingFreshSnow (9),\n    moderateFreshSnow (10),\n    deepFreshSnow (11),\n    plowedSnow (12),\n    slush (13),\n    packedSnowPatches (14),\n    packedSnow (15),\n    lightSnowDrifts (16),\n    moderateSnowDrifts (17),\n    heavySnowDrifts (18),\n    frost (19),\n    icePatches (20),\n    moderatelyIcy (21),\n    heavyIcing (22),\n    blackIce (23),\n    sheetIce (24),\n    frozenSlush (25) }</pre>",
               "type": "ot",
               "version": "v04",
-              "x_text": "<pre>essMobileObservationPavementV4 (See 5.12.5)</pre>",
+              "x_text": "<p>essMobileObservationPavementV4</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -46834,6 +47968,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T15:42:02.297Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essMobileObservationPavementV4 (See 5.12.5)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:26:03.299Z"
                 }
               ]
             },
@@ -48367,7 +49512,7 @@
               "syntax": "<pre>INTEGER {\n    off (1),\n    manual (2),\n    automatic (3) }</pre>",
               "type": "ot",
               "version": "v03",
-              "x_text": "<pre>ptsOperationalModeV3 (See 5.13.19)</pre>",
+              "x_text": "<p>ptsOperationalModeV3</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -48510,6 +49655,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T22:16:07.517Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>ptsOperationalModeV3 (See 5.13.19)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:26:14.037Z"
                 }
               ]
             },
@@ -48530,7 +49686,7 @@
               "syntax": "<pre>INTEGER {\n    other (1),\n    inactive (2),\n    activate (3) }</pre>",
               "type": "ot",
               "version": "v03",
-              "x_text": "<pre>ptsCommandStateV3 (See 5.13.19)</pre>",
+              "x_text": "<p>ptsCommandStateV3</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -48640,6 +49796,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T22:16:07.517Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>ptsCommandStateV3 (See 5.13.19)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:26:22.637Z"
                 }
               ]
             },
@@ -49056,7 +50223,7 @@
               "syntax": "<p>Unsigned32</p>",
               "type": "ot",
               "units": "seconds",
-              "x_text": "<pre>ptsLastSignalEventDate and ptsLastSignalEventTime (See 5.13.26 and 5.13.27)</pre>",
+              "x_text": "<p>ptsLastSignalEventDate and ptsLastSignalEventTime</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -49188,6 +50355,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T22:09:12.775Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>ptsLastSignalEventDate and ptsLastSignalEventTime (See 5.13.26 and 5.13.27)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:26:35.087Z"
                 }
               ]
             },
@@ -49468,7 +50646,7 @@
               "syntax": "<p>Unsigned32</p>",
               "type": "ot",
               "units": "seconds",
-              "x_text": "<pre>ptsLastActiveEventDate and ptsLastActiveEventTime (See 5.13.28 and 5.13.29)</pre>",
+              "x_text": "<p>ptsLastActiveEventDate and ptsLastActiveEventTime</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -49581,6 +50759,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T22:09:12.775Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>ptsLastActiveEventDate and ptsLastActiveEventTime (See 5.13.28 and 5.13.29)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:26:44.251Z"
                 }
               ]
             },
@@ -49601,7 +50790,7 @@
               "syntax": "<p>Counter32</p>",
               "type": "ot",
               "units": "seconds",
-              "x_text": "<pre>ptsLastInactiveEventDate and ptsLastInactiveEventTime (See 5.13.30 and 5.13.31)</pre>",
+              "x_text": "<p>ptsLastInactiveEventDate and ptsLastInactiveEventTime</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -49714,6 +50903,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T22:09:12.775Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>ptsLastInactiveEventDate and ptsLastInactiveEventTime (See 5.13.30 and 5.13.31)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:26:53.303Z"
                 }
               ]
             },
@@ -50259,7 +51459,7 @@
               "syntax": "<p>Integer32 (-90000000..90000001)</p>",
               "type": "ot",
               "units": "microdegrees latitude",
-              "x_text": "<pre>essPavementTreatmentYOffset</pre>",
+              "x_text": "<p>essPavementTreatmentYOffset</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -50383,6 +51583,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T15:22:25.614Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essPavementTreatmentYOffset</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:27:00.203Z"
                 }
               ]
             },
@@ -50404,7 +51615,7 @@
               "syntax": "<p>Integer32 (-180000000..180000001)</p>",
               "type": "ot",
               "units": "microdegrees longitude",
-              "x_text": "<pre>essPavementTreatmentXOffset</pre>",
+              "x_text": "<p>essPavementTreatmentXOffset</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -50528,6 +51739,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T15:22:31.505Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essPavementTreatmentXOffset</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:27:05.987Z"
                 }
               ]
             },
@@ -50657,7 +51879,7 @@
               "syntax": "<p>Integer32 (0..255)</p>",
               "type": "ot",
               "version": "v05",
-              "x_text": "<pre>ptsEntityID (See 5.13.25)</pre>",
+              "x_text": "<p>ptsEntityID</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -50759,6 +51981,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-15T15:22:44.821Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>ptsEntityID (See 5.13.25)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:27:14.720Z"
                 }
               ]
             },
@@ -51876,7 +53109,7 @@
               "type": "ot",
               "units": "parts per billion",
               "version": "v04",
-              "x_text": "<pre>essCO2V4 (See 5.14.13)</pre>",
+              "x_text": "<p>essCO2V4</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -51990,6 +53223,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:48:25.879Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essCO2V4 (See 5.14.13)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:27:27.203Z"
                 }
               ]
             },
@@ -52011,7 +53255,7 @@
               "type": "ot",
               "units": "parts per million",
               "version": "v04",
-              "x_text": "<pre>essNOV4 (See 5.14.14)</pre>",
+              "x_text": "<p>essNOV4</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -52125,6 +53369,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:49:54.191Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essNOV4 (See 5.14.14)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:27:35.947Z"
                 }
               ]
             },
@@ -52373,7 +53628,7 @@
               "type": "ot",
               "units": "parts per one hundred billion",
               "version": "v04",
-              "x_text": "<pre>essO3V4 (See 5.14.15)</pre>",
+              "x_text": "<p>essO3V4</p>",
               "x_type": "superseded",
               "links": {
                 "group": [
@@ -52476,6 +53731,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-14T20:51:16.884Z"
+                },
+                {
+                  "attributesChanged": {
+                    "x_text": "<pre>essO3V4 (See 5.14.15)</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-08-23T13:27:44.353Z"
                 }
               ]
             },
@@ -53332,7 +54598,7 @@
                   "syntax": "<p>Integer32 (-1000..1001)</p>",
                   "type": "ot",
                   "units": "meters",
-                  "x_text": "<pre>airQualitySensorZOffset</pre>",
+                  "x_text": "<p>airQualitySensorZOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -53445,6 +54711,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T15:18:03.717Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>airQualitySensorZOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:27:50.974Z"
                     }
                   ]
                 },
@@ -53466,7 +54743,7 @@
                   "syntax": "<p>Integer32 (-90000000..90000001)</p>",
                   "type": "ot",
                   "units": "microdegrees latitude",
-                  "x_text": "<pre>airQualitySensorYOffset</pre>",
+                  "x_text": "<p>airQualitySensorYOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -53591,6 +54868,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T15:18:03.717Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>airQualitySensorYOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:27:56.039Z"
                     }
                   ]
                 },
@@ -53612,7 +54900,7 @@
                   "syntax": "<p>Integer32 (-180000000..180000001)</p>",
                   "type": "ot",
                   "units": "microdegrees longitude",
-                  "x_text": "<pre>airQualitySensorXOffset</pre>",
+                  "x_text": "<p>airQualitySensorXOffset</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -53726,6 +55014,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T15:18:03.717Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>airQualitySensorXOffset</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:28:00.936Z"
                     }
                   ]
                 },
@@ -53855,7 +55154,7 @@
                   "syntax": "<p>Integer32(0..255)</p>",
                   "type": "ot",
                   "version": "v05",
-                  "x_text": "<pre>airQualitySensorEntityID</pre>",
+                  "x_text": "<p>airQualitySensorEntityID</p>",
                   "x_type": "supplanted",
                   "links": {
                     "group": [
@@ -53957,6 +55256,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T15:18:29.348Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>airQualitySensorEntityID</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:28:05.591Z"
                     }
                   ]
                 },
@@ -56081,7 +57391,7 @@
                   "status": "deprecated",
                   "syntax": "<p>OCTET STRING (SIZE(0..255))</p>",
                   "type": "ot",
-                  "x_text": "<pre>essSnapshotCameraFilenameV5 and essSnapshotCameraFileFormat</pre>",
+                  "x_text": "<p>essSnapshotCameraFilenameV5 and essSnapshotCameraFileFormat</p>",
                   "x_type": "superseded",
                   "links": {
                     "group": [
@@ -56316,6 +57626,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-14T22:24:31.026Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<pre>essSnapshotCameraFilenameV5 and essSnapshotCameraFileFormat</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:28:13.956Z"
                     }
                   ]
                 },
@@ -57450,7 +58771,7 @@
                   "oid": "{essControllerGroups 2}",
                   "status": "deprecated",
                   "type": "og",
-                  "x_text": "<p>fdMobilityGroupV1</p>",
+                  "x_text": "<p>ISO26048-1-FieldDevice.fdMobilityGroupV1</p>",
                   "x_type": "superseded",
                   "history": [
                     {
@@ -57584,6 +58905,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T17:14:01.837Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<p>fdMobilityGroupV1</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:28:58.743Z"
                     }
                   ]
                 },
@@ -57764,7 +59096,7 @@
                   "oid": "{essControllerGroups 4}",
                   "status": "deprecated",
                   "type": "og",
-                  "x_text": "<p>fdSrsaBasicGroupV1, where fdSrsaTypeCode = FBO</p>",
+                  "x_text": "<p>ISO26048-1-Srsa.fdSrsaBasicGroupV1, where fdSrsaTypeCode = FBO</p>",
                   "x_type": "superseded",
                   "history": [
                     {
@@ -57887,6 +59219,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T17:14:09.502Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<p>fdSrsaBasicGroupV1, where fdSrsaTypeCode = FBO</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:29:09.752Z"
                     }
                   ]
                 },
@@ -57899,7 +59242,7 @@
                   "oid": "{essControllerGroups 5}",
                   "status": "deprecated",
                   "type": "og",
-                  "x_text": "<p>fdSrsaInputGroupV1, where fdSrsaTypeCode = FBC</p>",
+                  "x_text": "<p>ISO26048-1-Srsa.fdSrsaInputGroupV1, where fdSrsaTypeCode = FBC</p>",
                   "x_type": "superseded",
                   "history": [
                     {
@@ -58022,6 +59365,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T17:14:12.801Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<p>fdSrsaInputGroupV1, where fdSrsaTypeCode = FBC</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:29:19.421Z"
                     }
                   ]
                 },
@@ -58034,7 +59388,7 @@
                   "oid": "{essControllerGroups 6}",
                   "status": "deprecated",
                   "type": "og",
-                  "x_text": "<p>fdSrsaInputGroupV1, where fdSrsaTypeCode = FLV</p>",
+                  "x_text": "<p>ISO26048-1-Srsa.fdSrsaInputGroupV1, where fdSrsaTypeCode = FLV</p>",
                   "x_type": "superseded",
                   "history": [
                     {
@@ -58146,6 +59500,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T17:14:15.601Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<p>fdSrsaInputGroupV1, where fdSrsaTypeCode = FLV</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:28:41.101Z"
                     }
                   ]
                 },
@@ -58723,7 +60088,7 @@
                   "oid": "{essControllerGroups 12}",
                   "status": "deprecated",
                   "type": "og",
-                  "x_text": "<p>fdControllerGroupV1</p>",
+                  "x_text": "<p>ISO26048-1-Controller.fdControllerGroupV1</p>",
                   "x_type": "superseded",
                   "history": [
                     {
@@ -58813,6 +60178,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T17:14:32.293Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "x_text": "<p>fdControllerGroupV1</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-23T13:29:46.164Z"
                     }
                   ]
                 },

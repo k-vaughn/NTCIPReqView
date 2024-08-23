@@ -68,7 +68,7 @@
 
 {{#*inline "reference"}}
 	{{#if (eval docId "!=" (get "source"))}}
-		{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}
+		{{docName}}
 	{{else}}
 		{{{sectionNumber}}}
 	{{/if}}

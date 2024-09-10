@@ -9,7 +9,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2024-08-09T22:11:18.229Z",
+  "lastChangedOn": "2024-09-10T14:15:17.346Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -42268,13 +42268,14 @@
           }
         },
         {
-          "comment": "<p>Revise descriptions to conform to the NTCIP 8004 format using &lt;Definition&gt; &lt;Informative&gt; &lt;Format&gt; etc</p>",
+          "comment": "<p>Revise descriptions to conform to the NTCIP 8004 format using &lt;Definition&gt; &lt;Informative&gt; &lt;Format&gt; &lt;Superseded by&gt;, etc</p>",
           "date": "2024-08-09T19:14:15.349Z",
           "author": {
             "name": "Kenneth Vaughn",
             "email": "kvaughn@trevilon.com",
             "company": "Trevilon"
-          }
+          },
+          "updatedOn": "2024-09-10T14:15:17.346Z"
         },
         {
           "comment": "<p>Add Parameter Type to all objects</p>",
@@ -42366,6 +42367,22 @@
             "name": "Kenneth Vaughn"
           },
           "commentDate": "2024-08-09T19:15:50.199Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-09-10T14:15:17.346Z",
+          "commentAuthor": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "commentDate": "2024-08-09T19:14:15.349Z",
+          "commentIndex": 1,
+          "editLastComment": "<p>Revise descriptions to conform to the NTCIP 8004 format using &lt;Definition&gt; &lt;Informative&gt; &lt;Format&gt; etc</p>"
         }
       ],
       "children": [

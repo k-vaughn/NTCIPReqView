@@ -2,14 +2,14 @@
   "id": "NTCIP_1218",
   "guid": "b408b184-03fb-44d0-8fe2-be731124a4ab",
   "name": "NTCIP 1218",
-  "lastId": 1994,
+  "lastId": 1998,
   "createdOn": "2024-07-18T15:17:24.557Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2024-10-16T15:29:58.820Z",
+  "lastChangedOn": "2024-10-16T18:41:28.196Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -413,16 +413,7 @@
                   "text": "<p>Evolved Universal Terrestrial Radio Access (E-UTRA); Physical layer procedures, V14.2.0 (Release 14) [3GPP TS 36.213]</p>",
                   "type": "list_table_row",
                   "discussion": [
-                    {
-                      "comment": "<p>Not used in a normative statement. Could be made normative by rephrasing rsuRadioType to read:&nbsp;</p><p>&lt;Definition&gt; Indicates the type of V2X radio.&nbsp;</p><p>&lt;Format&gt;&nbsp;</p><p>value &nbsp; &nbsp;meaning</p><p>other &nbsp; &nbsp;The radio conforms to a format other than those specified in this enumeration</p><p>dsrc &nbsp; &nbsp; &nbsp;The radio shall support DSRC communications as defined by IEEE 802.11 and the Federal Communications Commission</p><p>pc5 &nbsp; &nbsp; &nbsp; The radio shall support DSRC communications as defined by ETSI TS 136 213, ETSI TS 136 321, and ETSI TS 136 322.</p><p><br></p>",
-                      "date": "2024-08-09T15:42:23.173Z",
-                      "author": {
-                        "name": "Kenneth Vaughn",
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon"
-                      },
-                      "updatedOn": "2024-08-09T15:58:53.317Z"
-                    }
+
                   ],
                   "history": [
                     {
@@ -494,6 +485,22 @@
                       "commentDate": "2024-08-09T15:42:23.173Z",
                       "commentIndex": 0,
                       "editLastComment": "<p>Not used in a normative statement.</p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-16T16:07:05.373Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T15:42:23.173Z",
+                      "commentIndex": 0,
+                      "deleteLastComment": "<p>Not used in a normative statement. Could be made normative by rephrasing rsuRadioType to read:&nbsp;</p><p>&lt;Definition&gt; Indicates the type of V2X radio.&nbsp;</p><p>&lt;Format&gt;&nbsp;</p><p>value &nbsp; &nbsp;meaning</p><p>other &nbsp; &nbsp;The radio conforms to a format other than those specified in this enumeration</p><p>dsrc &nbsp; &nbsp; &nbsp;The radio shall support DSRC communications as defined by IEEE 802.11 and the Federal Communications Commission</p><p>pc5 &nbsp; &nbsp; &nbsp; The radio shall support DSRC communications as defined by ETSI TS 136 213, ETSI TS 136 321, and ETSI TS 136 322.</p><p><br></p>"
                     }
                   ]
                 },
@@ -504,16 +511,7 @@
                   "text": "<p>Evolved Universal Terrestrial Radio Access (E-UTRA); Medium Access Control (MAC) protocol specification, V14.2.1 (Release 14) [3GPP TS 36.321]</p>",
                   "type": "list_table_row",
                   "discussion": [
-                    {
-                      "comment": "<p>Not used in a normative statement. See comment re: ETSI TS 136 213</p>",
-                      "date": "2024-08-09T15:44:58.597Z",
-                      "author": {
-                        "name": "Kenneth Vaughn",
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon"
-                      },
-                      "updatedOn": "2024-08-09T16:16:13.643Z"
-                    }
+
                   ],
                   "history": [
                     {
@@ -585,6 +583,22 @@
                       "commentDate": "2024-08-09T15:44:58.597Z",
                       "commentIndex": 0,
                       "editLastComment": "<p>Not used in a normative statement. (although D.1.1 says shall, Annex D is informative). See comment re: ETSI TS 136 213</p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-16T16:09:16.274Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T15:44:58.597Z",
+                      "commentIndex": 0,
+                      "deleteLastComment": "<p>Not used in a normative statement. See comment re: ETSI TS 136 213</p>"
                     }
                   ]
                 },
@@ -595,16 +609,7 @@
                   "text": "<p>Evolved Universal Terrestrial Radio Access (E-UTRA); Radio Link Control (RLC) protocol specification, V14.1.0 (Release 14) [3GPP TS 36.322]</p>",
                   "type": "list_table_row",
                   "discussion": [
-                    {
-                      "comment": "<p>Not used in a normative statement. See comment re: ETSI TS 136 213</p>",
-                      "date": "2024-08-09T15:47:03.362Z",
-                      "author": {
-                        "name": "Kenneth Vaughn",
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon"
-                      },
-                      "updatedOn": "2024-08-09T16:00:15.027Z"
-                    }
+
                   ],
                   "history": [
                     {
@@ -660,6 +665,22 @@
                       "commentDate": "2024-08-09T15:47:03.362Z",
                       "commentIndex": 0,
                       "editLastComment": "<p>Not used in a normative statement.</p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-16T16:09:23.311Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T15:47:03.362Z",
+                      "commentIndex": 0,
+                      "deleteLastComment": "<p>Not used in a normative statement. See comment re: ETSI TS 136 213</p>"
                     }
                   ]
                 },
@@ -831,28 +852,29 @@
                 {
                   "id": "27",
                   "guid": "1cb974b4-8739-472a-b9bb-8243142ef063",
-                  "heading": "IEEE Provider Service Identified (PSID) Registration Authority",
-                  "text": "<p>IEEE Provider Service Identified (PSID) Registration Authority</p><p>Note: See <a href=\"https://standards.ieee.org/products-services/regauth/psid/public/\"><span style=\"color:windowtext;\">https://standards.ieee.org/products-services/regauth/psid/public/</span></a></p>",
+                  "heading": "IEEE Provider Service Identifier (PSID) Registration Authority",
+                  "text": "<p>IEEE Provider Service Identifier (PSID) Registration Authority</p><p>Note: See <a href=\"https://standards.ieee.org/products-services/regauth/psid/public/\"><span style=\"color:windowtext;\">https://standards.ieee.org/products-services/regauth/psid/public/</span></a></p>",
                   "type": "list_table_row",
                   "discussion": [
                     {
-                      "comment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>",
+                      "comment": "<p><span style=\"text-align: start;\">Not used in a normative statement. Added 1.3.5, but this should really be a refrence to the PSID Public Listing as opposed to the Registration Authority (i.e., the RA maintains the PL)</span></p>",
                       "date": "2024-08-09T16:07:33.456Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
-                      }
+                      },
+                      "updatedOn": "2024-10-16T18:40:48.702Z"
                     },
                     {
-                      "comment": "<p>Should be \"Identifier\" instead of \"Identified\"</p>",
+                      "comment": "<p>Changed \"Identified\" to \"Identifier\"&nbsp;</p>",
                       "date": "2024-08-09T16:07:45.989Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
                       },
-                      "updatedOn": "2024-08-09T16:08:14.130Z"
+                      "updatedOn": "2024-10-16T16:14:34.745Z"
                     }
                   ],
                   "history": [
@@ -935,6 +957,50 @@
                       "commentDate": "2024-08-09T16:07:45.989Z",
                       "commentIndex": 1,
                       "editLastComment": "<p>Should be \"Identifier\"</p>"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": "IEEE Provider Service Identified (PSID) Registration Authority",
+                        "text": "<p>IEEE Provider Service Identified (PSID) Registration Authority</p><p>Note: See <a href=\"https://standards.ieee.org/products-services/regauth/psid/public/\"><span style=\"color:windowtext;\">https://standards.ieee.org/products-services/regauth/psid/public/</span></a></p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-16T16:13:59.301Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-16T16:14:34.745Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:07:45.989Z",
+                      "commentIndex": 1,
+                      "editLastComment": "<p>Should be \"Identifier\" instead of \"Identified\"</p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-16T18:40:48.702Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:07:33.456Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>"
                     }
                   ]
                 },
@@ -4057,6 +4123,17 @@
           "guid": "5aeccaf4-5459-4888-9f76-cb13df71476b",
           "heading": "General Statements",
           "type": "text",
+          "discussion": [
+            {
+              "comment": "<p>Added general statements</p>",
+              "date": "2024-10-16T16:24:05.075Z",
+              "author": {
+                "name": "Kenneth Vaughn",
+                "email": "kvaughn@trevilon.com",
+                "company": "Trevilon"
+              }
+            }
+          ],
           "history": [
             {
               "attributesChanged": {
@@ -4068,13 +4145,29 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-07-18T16:10:11.197Z"
+            },
+            {
+              "addedComment": "<p>Added general statements</p>",
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-10-16T16:24:05.075Z",
+              "commentAuthor": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "commentDate": "2024-10-16T16:24:05.075Z"
             }
           ],
           "children": [
             {
               "id": "142",
               "guid": "b6e312a3-79b4-4ef5-b349-0accc5a6105a",
-              "text": "<p>&lt;In the opinion of the responsible NTCIP working group, Section 1.3 does not apply in the context of NTCIP 1218 v01.&gt;</p>",
+              "heading": "SNMPv3",
+              "text": "<p>The information defined in this document can theoretically be exchanged over any communications stack, but is designed to be exchanged using SNMPv3. Within the context of this document SNMPv3 refers to a complete communications stack, as described in NTCIP 2301 v03 and ISO 15784-2:2024, which (among other requirements) require support for Transport Layer Security (TLS) version 1.3 and the TLS Transport Model (TLSTM). TLSTM defines how the SNMP engine uses the TLS certificate to manage SNMP data access.</p>",
               "type": "text",
               "history": [
                 {
@@ -4087,6 +4180,231 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-18T16:10:11.197Z"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": "<p>&lt;In the opinion of the responsible NTCIP working group, Section 1.3 does not apply in the context of NTCIP 1218 v01.&gt;</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T16:23:51.164Z"
+                }
+              ]
+            },
+            {
+              "id": "1995",
+              "guid": "834d16cc-00de-4866-93f7-6920b6e8341d",
+              "heading": "Use of SMIv2",
+              "text": "<p>SNMPv3 is designed to exchange data defined using the Structure of Management Information (SMI) Version 2 (v2) as defined in RFC 2578. The data definitions also conform with NTCIP 8004, which defines additional rules (e.g., the subclauses used within the DESCRIPTION clause. This document updates the MIB to conform to the current version of NTCIP 8004 while retaining the object identifiers of previously declared object types. In some cases, minor revisions have been made to objects; when these have any technical impact, the issue is identified in the Informative subclause of the object type description and in the object refinement table in Annex A, when necessary.</p>",
+              "history": [
+                {
+                  "affectedNodeId": "141",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T16:24:28.420Z",
+                  "docId": "NTCIP_1218",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T16:24:56.956Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T16:25:56.667Z"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": "Compatibility with Versions Prior to NTCIP 1218 v02"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T16:26:11.196Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>Prior to v02, NTCIP 1218 was intended for use with SNMPv1, which has known security vulnerabilities. Starting with v02, NTCIP 1218 is intended for use with SNMPv3, which addresses the known security vulnerabilities with SNMPv1 with minimal redesign but is not directly compatible with prior implementations using SNMPv1.</p><p>&nbsp;</p><p>Because the migration to SNMPv3 broke direct backward compatibility, the NTCIP community agreed to address a number of other known technical issues with NTCIP data to further address security, ambiguity, code reusability, longevity and other issues. Most of these issues were related with NTCIP 1201 and NTCIP 1103, which prior versions of this document normatively referenced. These references have been replaced with references to ISO 26048-1. In addition, v03 deprecated and replaced some objects from prior versions of NTCIP 1209.</p><p>&nbsp;</p><p>This document does not define rules for exchanging any data that was deprecated in NTCIP 1209 v03 or earlier. Implementations that need to interoperate with equipment that conforms to versions of this document prior to NTCIP 1209 v03, should refer to those prior versions for specific requirements, especially in relation to data from NTCIP 1103 and NTCIP 1201.</p><p>&nbsp;</p><p>Most of the objects directly defined in prior versions of this document were upgraded without significant compatibility issues. Deprecated objects are retained within the Management Information Base (MIB) in order to provide an unambiguous definition of how they should be presented if they are exchanged using SNMPv3 (e.g., this might be done when communicating to a proxy agent that provides an SNMPv3 interface for a native SNMPv1 device).&nbsp;</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T16:27:30.529Z"
+                }
+              ]
+            },
+            {
+              "id": "1996",
+              "guid": "f76e9376-db05-4679-850d-14ac7516a4ee",
+              "heading": "Presentation of MIB and References",
+              "text": "<p>This document contains a MIB as well as references to elements defined within the MIB. This document uses the Courier New font to distinguish this text from normal English text.</p>",
+              "history": [
+                {
+                  "affectedNodeId": "141",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T18:31:45.480Z",
+                  "docId": "NTCIP_1218",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T18:33:19.358Z"
+                }
+              ]
+            },
+            {
+              "id": "1997",
+              "guid": "92f90f8b-6691-4ed6-8f51-e295d2e361aa",
+              "heading": "Superseding and Supplanting Objects",
+              "text": "<p>Many of the object types defined in this document identify superseding or supplanting object types by using a \"&lt;Superseded by&gt;\" or \"&lt;Supplanted by&gt;\" clause. Supplanting object type(s) provide similar functionality while superseding objects provide a new interface for the same device capability.</p><p>For example, eventConfigMode (defined in NTCIP 1103 v03) is supplanted with fdCondTriggerMode (defined in ISO 26048-1). Although both objects provide similar functionality (i.e., identifying a type of condition to trigger an event), setting an instance of eventConfigMode does not affect any instance of fdCondTriggerMode in an implementation that supports both objects because the associated event logs are defined separately.&nbsp;</p><p>By contrast, globalTime (defined in NTCIP 1201 v03) is superseded by fdClockUtcDate and fdClockUtcTime. In other words, if a device supports both globalTime and fdClockUtcTime, setting globalTime will affect the time reported by fdClockUtcTime. The core device capability is the same (e.g., keeping time), but there is a new interface that provides greater range and resolution.</p>",
+              "history": [
+                {
+                  "affectedNodeId": "141",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T18:33:37.808Z",
+                  "docId": "NTCIP_1218",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T18:33:46.115Z"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T18:34:08.212Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>Many of the object types defined in this document identify superseding or supplanting object types by using a \"&lt;Superseded by&gt;\" or \"&lt;Supplanted by&gt;\" clause. Supplanting object type(s) provide similar functionality while superseding objects provide a new interface for the same device capability.</p><p>&nbsp;</p><p>For example, eventConfigMode (defined in NTCIP 1103 v03) is supplanted with fdCondTriggerMode (defined in ISO 26048-1). Although both objects provide similar functionality (i.e., identifying a type of condition to trigger an event), setting an instance of eventConfigMode does not affect any instance of fdCondTriggerMode in an implementation that supports both objects because the associated event logs are defined separately.&nbsp;</p><p>&nbsp;</p><p>By contrast, globalTime (defined in NTCIP 1201 v03) is superseded by fdClockUtcDate and fdClockUtcTime. In other words, if a device supports both globalTime and fdClockUtcTime, setting globalTime will affect the time reported by fdClockUtcTime. The core device capability is the same (e.g., keeping time), but there is a new interface that provides greater range and resolution.</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T18:34:55.297Z"
+                }
+              ]
+            },
+            {
+              "id": "1998",
+              "guid": "902edd77-9d27-4e13-92aa-a72de62c5b4d",
+              "heading": "PSID Values",
+              "text": "<p>All PSID values referenced in this document and used within a device conforming to this document shall be interpreted according to the IEEE Provider Service Identifier (PSID) Registration Authority.</p>",
+              "discussion": [
+                {
+                  "comment": "<p>Should probably reference the Public Listing rather than the RA</p>",
+                  "date": "2024-10-16T18:41:28.196Z",
+                  "author": {
+                    "name": "Kenneth Vaughn",
+                    "email": "kvaughn@trevilon.com",
+                    "company": "Trevilon"
+                  }
+                }
+              ],
+              "history": [
+                {
+                  "affectedNodeId": "141",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T18:36:30.772Z",
+                  "docId": "NTCIP_1218",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T18:36:55.493Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T18:39:08.424Z"
+                },
+                {
+                  "addedComment": "<p>Should probably reference the Public Listing rather than the RA</p>",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T18:41:28.196Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-16T18:41:28.196Z"
                 }
               ]
             }
@@ -43450,7 +43768,7 @@
                   "id": "1599",
                   "guid": "c75421ef-d25e-4a34-8351-ee1aac4540f8",
                   "heading": "RSU Radio Type",
-                  "text": "&lt;Definition&gt; Indicates the type of V2X Radio. pC5 is LTE-V2X.<br>    &lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.18.1.2.1.4",
+                  "text": "<p>&lt;Definition&gt; Indicates the type of V2X Radio. pC5 is LTE-V2X.</p><p style=\"text-align: start;\">&lt;Format&gt;&nbsp;</p><p style=\"text-align: start;\">value &nbsp; &nbsp;meaning</p><p style=\"text-align: start;\">other &nbsp; &nbsp;The radio conforms to a format other than those specified in this enumeration</p><p style=\"text-align: start;\">dsrc &nbsp; &nbsp; &nbsp;The radio shall support DSRC communications as defined by IEEE 802.11 and the Federal Communications Commission</p><p style=\"text-align: start;\">pc5 &nbsp; &nbsp; &nbsp; The radio shall support DSRC communications as defined by ETSI TS 136 213, ETSI TS 136 321, and ETSI TS 136 322.</p><p>&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.18.1.2.1.4</p>",
                   "access": "read-only",
                   "name": "rsuRadioType",
                   "oid": "{ rsuRadioEntry 4 }",
@@ -43462,6 +43780,17 @@
                       "NTCIP_1218-775"
                     ]
                   },
+                  "discussion": [
+                    {
+                      "comment": "<p>Added format field to (1) conform to NTCIP 8004 and (2) make references normative</p>",
+                      "date": "2024-10-16T16:07:48.250Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
                   "history": [
                     {
                       "affectedNodeId": "16",
@@ -43487,6 +43816,32 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T20:31:28.611Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "&lt;Definition&gt; Indicates the type of V2X Radio. pC5 is LTE-V2X.<br>    &lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.18.1.2.1.4"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-16T16:05:31.720Z"
+                    },
+                    {
+                      "addedComment": "<p>Added format field to (1) conform to NTCIP 8004 and (2) make references normative</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-16T16:07:48.250Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-16T16:07:48.250Z"
                     }
                   ]
                 },

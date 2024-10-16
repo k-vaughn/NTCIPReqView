@@ -9,7 +9,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2024-09-10T14:15:17.346Z",
+  "lastChangedOn": "2024-10-16T15:29:58.820Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -9386,6 +9386,17 @@
               "guid": "a9146e3d-b606-4a8e-9eb7-737c473b2d56",
               "heading": "Condition-based Exception Reporting",
               "type": "un",
+              "discussion": [
+                {
+                  "comment": "<p>Need to add support for acknowledgements (NTCIP-5)</p>",
+                  "date": "2024-10-16T14:49:24.848Z",
+                  "author": {
+                    "name": "Kenneth Vaughn",
+                    "email": "kvaughn@trevilon.com",
+                    "company": "Trevilon"
+                  }
+                }
+              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -9397,6 +9408,21 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-18T16:42:25.011Z"
+                },
+                {
+                  "addedComment": "<p>Need to add support for acknowledgements (NTCIP-5)</p>",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T14:49:24.848Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-16T14:49:24.848Z"
                 }
               ],
               "children": [
@@ -22341,6 +22367,17 @@
                                   "NTCIP_1218-307"
                                 ]
                               },
+                              "discussion": [
+                                {
+                                  "comment": "<p>allowing different channels to be specified for different rows (store and repeat/forward message) could create conflict. &nbsp;This isn’t a new item for this version of the proposed standard. &nbsp;Obviously, each vendor will have to handle any such configuration items according to their best judgement, but given the minimal spectrum allocated for RSU/OBU communications in the US and the need for most C-V2X/PC5 applications to use a 20 MHz channel, it may be worthwhile to consider tightening the guidelines for channel usage across the different message types. (NTCIPv01.44b-15)</p>",
+                                  "date": "2024-10-16T15:27:58.282Z",
+                                  "author": {
+                                    "name": "Kenneth Vaughn",
+                                    "email": "kvaughn@trevilon.com",
+                                    "company": "Trevilon"
+                                  }
+                                }
+                              ],
                               "history": [
                                 {
                                   "attributesChanged": {
@@ -22366,6 +22403,21 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-24T15:13:32.047Z"
+                                },
+                                {
+                                  "addedComment": "<p>allowing different channels to be specified for different rows (store and repeat/forward message) could create conflict. &nbsp;This isn’t a new item for this version of the proposed standard. &nbsp;Obviously, each vendor will have to handle any such configuration items according to their best judgement, but given the minimal spectrum allocated for RSU/OBU communications in the US and the need for most C-V2X/PC5 applications to use a 20 MHz channel, it may be worthwhile to consider tightening the guidelines for channel usage across the different message types. (NTCIPv01.44b-15)</p>",
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-10-16T15:27:58.282Z",
+                                  "commentAuthor": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "commentDate": "2024-10-16T15:27:58.282Z"
                                 }
                               ],
                               "children": [
@@ -29628,6 +29680,17 @@
                           "NTCIP_1218-350"
                         ]
                       },
+                      "discussion": [
+                        {
+                          "comment": "<p>Does this address the \"timeout performance requirement\" mentioned in NTCIP-8?</p>",
+                          "date": "2024-10-16T14:54:50.465Z",
+                          "author": {
+                            "name": "Kenneth Vaughn",
+                            "email": "kvaughn@trevilon.com",
+                            "company": "Trevilon"
+                          }
+                        }
+                      ],
                       "history": [
                         {
                           "attributesChanged": {
@@ -29653,6 +29716,21 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-24T15:13:32.047Z"
+                        },
+                        {
+                          "addedComment": "<p>Does this address the \"timeout performance requirement\" mentioned in NTCIP-8?</p>",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-16T14:54:50.465Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-10-16T14:54:50.465Z"
                         }
                       ],
                       "children": [
@@ -47581,6 +47659,16 @@
                         "company": "Trevilon"
                       },
                       "updatedOn": "2024-08-09T17:35:38.251Z"
+                    },
+                    {
+                      "comment": "<p>Wouldn't it be better to specify \"~/\" as the user's home directory? (NTCIP-9)</p>",
+                      "date": "2024-10-16T15:03:27.058Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      },
+                      "updatedOn": "2024-10-16T15:04:05.564Z"
                     }
                   ],
                   "history": [
@@ -47640,6 +47728,37 @@
                       "commentDate": "2024-08-09T17:35:21.944Z",
                       "commentIndex": 0,
                       "editLastComment": "<p>Change to SnmpAdminString. <span style=\"text-align: start;\">Do we really need to keep the 127 char limit rather than the default 255?</span></p>"
+                    },
+                    {
+                      "addedComment": "<p>Wouldn't it be better to specify \"~/\" as the user's home directory?</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-16T15:03:27.058Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-16T15:03:27.058Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-16T15:04:05.564Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-16T15:03:27.058Z",
+                      "commentIndex": 1,
+                      "editLastComment": "<p>Wouldn't it be better to specify \"~/\" as the user's home directory?</p>"
                     }
                   ]
                 },
@@ -61326,6 +61445,17 @@
                       "NTCIP_1218-1018"
                     ]
                   },
+                  "discussion": [
+                    {
+                      "comment": "<p>rows are populated with system services and applications. Their entries only permit users to modify, but never “create or destroy”. A manager cannot “add an application” to the RSU simply by adding a row to the rsuAppConfigTable. So, our implementation won’t provide this RowStatus and don’t think this is necessary as in other dynamic tables. (NTCIPv01.44b-14)</p>",
+                      "date": "2024-10-16T15:25:23.925Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
                   "history": [
                     {
                       "affectedNodeId": "349",
@@ -61351,6 +61481,21 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T20:31:28.611Z"
+                    },
+                    {
+                      "addedComment": "<p>rows are populated with system services and applications. Their entries only permit users to modify, but never “create or destroy”. A manager cannot “add an application” to the RSU simply by adding a row to the rsuAppConfigTable. So, our implementation won’t provide this RowStatus and don’t think this is necessary as in other dynamic tables. (NTCIPv01.44b-14)</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-16T15:25:23.925Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-16T15:25:23.925Z"
                     }
                   ]
                 }
@@ -62199,6 +62344,17 @@
               "status": "current",
               "syntax": "SEQUENCE OF RsuSignalStatusEntry",
               "type": "ot",
+              "discussion": [
+                {
+                  "comment": "<p>while clearly a step forward to describe the objects needed to facilitate exchange of intersection state information between TSC and RSU in this amendment, use of SNMP may hamper the timeliness of SPaT messages as compared to the traditional (and unsecure) TSCBM via UDP. &nbsp;It may be a negligible overall delta, but unpacking the PDU, as received through an SNMP agent, and then doing whatever vendor specific magic is required for transmitting the SPaT message seems to be a little more processing intensive. (NTCIPv01.44b-17)</p>",
+                  "date": "2024-10-16T15:29:58.820Z",
+                  "author": {
+                    "name": "Kenneth Vaughn",
+                    "email": "kvaughn@trevilon.com",
+                    "company": "Trevilon"
+                  }
+                }
+              ],
               "history": [
                 {
                   "affectedNodeId": "369",
@@ -62210,6 +62366,21 @@
                   "changedOn": "2024-07-22T14:27:41.019Z",
                   "docId": "NTCIP_1218_MIB",
                   "structureAction": "Copy"
+                },
+                {
+                  "addedComment": "<p>while clearly a step forward to describe the objects needed to facilitate exchange of intersection state information between TSC and RSU in this amendment, use of SNMP may hamper the timeliness of SPaT messages as compared to the traditional (and unsecure) TSCBM via UDP. &nbsp;It may be a negligible overall delta, but unpacking the PDU, as received through an SNMP agent, and then doing whatever vendor specific magic is required for transmitting the SPaT message seems to be a little more processing intensive. (NTCIPv01.44b-17)</p>",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T15:29:58.820Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-16T15:29:58.820Z"
                 }
               ],
               "children": [
@@ -63710,6 +63881,15 @@
             "email": "kvaughn@trevilon.com",
             "company": "Trevilon"
           }
+        },
+        {
+          "comment": "<p>For a new 5.23</p><p>rsuZoneEventSubscrEventType is defined as a DisplayString (SIZE(0..32)). Other zone events include ZoneCrossed, and probable \"stopped In Zone\" event &nbsp;(NTCIP-81)</p>",
+          "date": "2024-10-16T15:14:04.286Z",
+          "author": {
+            "name": "Kenneth Vaughn",
+            "email": "kvaughn@trevilon.com",
+            "company": "Trevilon"
+          }
         }
       ],
       "history": [
@@ -63738,6 +63918,21 @@
             "name": "Kenneth Vaughn"
           },
           "commentDate": "2024-08-08T02:30:52.709Z"
+        },
+        {
+          "addedComment": "<p>For a new 5.23</p><p>rsuZoneEventSubscrEventType is defined as a DisplayString (SIZE(0..32)). Other zone events include ZoneCrossed, and probable \"stopped In Zone\" event &nbsp;(NTCIP-81)</p>",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-10-16T15:14:04.286Z",
+          "commentAuthor": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "commentDate": "2024-10-16T15:14:04.286Z"
         }
       ],
       "children": [
@@ -64467,6 +64662,17 @@
               "guid": "c8175d68-38f0-4b4e-84b3-14a4b696bcb1",
               "text": "<p>Collect BSM-related information.</p>",
               "type": "l1",
+              "discussion": [
+                {
+                  "comment": "<p>Do we need to support BSM filtering (NTCIP-23)?</p>",
+                  "date": "2024-10-16T15:08:55.848Z",
+                  "author": {
+                    "name": "Kenneth Vaughn",
+                    "email": "kvaughn@trevilon.com",
+                    "company": "Trevilon"
+                  }
+                }
+              ],
               "history": [
                 {
                   "affectedNodeId": "1271",
@@ -64500,6 +64706,21 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-18T19:10:02.267Z"
+                },
+                {
+                  "addedComment": "<p>Do we need to support BSM filtering (NTCIP-23)?</p>",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T15:08:55.848Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-16T15:08:55.848Z"
                 }
               ]
             },
@@ -66755,6 +66976,18 @@
               "guid": "eb2eb338-2276-42b4-b0a7-ea749613870b",
               "text": "<p>The NTCIP RSU WG considered a requirement to prevent more than one V2X radio from broadcasting on a communications channel. It was also noted that it is possible for V2X radios to operate in different frequencies. However, this requirement was determined to belong in a future RSU specification (or standard) and was not included in NTCIP 1218 v01.</p>",
               "type": "text",
+              "discussion": [
+                {
+                  "comment": "<p>Do we want to address this now? See 2.5.1.3.1(NTCIP-4)</p>",
+                  "date": "2024-10-16T14:52:27.982Z",
+                  "author": {
+                    "name": "Kenneth Vaughn",
+                    "email": "kvaughn@trevilon.com",
+                    "company": "Trevilon"
+                  },
+                  "updatedOn": "2024-10-16T14:53:27.441Z"
+                }
+              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -66766,6 +66999,37 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-18T19:14:34.814Z"
+                },
+                {
+                  "addedComment": "<p>Do we want to address this now?(NTCIP-4)</p>",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T14:52:27.982Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-16T14:52:27.982Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-16T14:53:27.441Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-16T14:52:27.982Z",
+                  "commentIndex": 0,
+                  "editLastComment": "<p>Do we want to address this now?(NTCIP-4)</p>"
                 }
               ]
             }

@@ -9,7 +9,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2024-07-24T20:47:47.135Z",
+  "lastChangedOn": "2024-10-18T11:12:51.616Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -1037,8 +1037,8 @@
       "syntax": "Integer32 (0..65535)",
       "type": "ot",
       "links": {
-        "satisfiesWithNote": [
-          "NTCIP_1218-920"
+        "satisfies": [
+          "Notes-23"
         ]
       },
       "history": [
@@ -1055,6 +1055,34 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-07-24T20:47:47.135Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "Notes-23"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-10-18T11:12:12.428Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-10-18T11:12:51.616Z",
+          "removedLink": {
+            "target": [
+              "NTCIP_1218-920"
+            ],
+            "type": "satisfiesWithNote"
+          }
         }
       ]
     },
@@ -1332,10 +1360,10 @@
       "syntax": "Integer32 (0..3)",
       "type": "ot",
       "links": {
-        "satisfiesWithNote": [
-          "NTCIP_1218-914",
-          "NTCIP_1218-916",
-          "NTCIP_1218-918"
+        "satisfies": [
+          "Notes-20",
+          "Notes-21",
+          "Notes-22"
         ]
       },
       "history": [
@@ -1354,6 +1382,64 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-07-24T20:47:47.135Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "Notes-20",
+              "Notes-21",
+              "Notes-22"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-10-18T11:08:31.013Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-10-18T11:09:07.434Z",
+          "removedLink": {
+            "target": [
+              "NTCIP_1218-914"
+            ],
+            "type": "satisfiesWithNote"
+          }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-10-18T11:09:56.810Z",
+          "removedLink": {
+            "target": [
+              "NTCIP_1218-916"
+            ],
+            "type": "satisfiesWithNote"
+          }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-10-18T11:11:08.177Z",
+          "removedLink": {
+            "target": [
+              "NTCIP_1218-918"
+            ],
+            "type": "satisfiesWithNote"
+          }
         }
       ]
     },

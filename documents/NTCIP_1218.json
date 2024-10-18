@@ -2,14 +2,14 @@
   "id": "NTCIP_1218",
   "guid": "b408b184-03fb-44d0-8fe2-be731124a4ab",
   "name": "NTCIP 1218",
-  "lastId": 1998,
+  "lastId": 2006,
   "createdOn": "2024-07-18T15:17:24.557Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2024-10-16T18:41:28.196Z",
+  "lastChangedOn": "2024-10-18T14:06:38.018Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -1005,21 +1005,54 @@
                   ]
                 },
                 {
+                  "id": "2005",
+                  "guid": "013d1933-ff75-4145-ba34-0a2b1ee8c561",
+                  "heading": "ISO 26048-1",
+                  "text": "<p><span style=\"text-align: start; text-decoration: none;\">Intelligent transport systems — Field device Simple Network Management Protocol (SNMP) data interface — Part 1: Global objects</span></p>",
+                  "history": [
+                    {
+                      "affectedNodeId": "16",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:33:49.718Z",
+                      "docId": "NTCIP_1218",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:34:06.231Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:34:52.786Z"
+                    }
+                  ]
+                },
+                {
                   "id": "29",
                   "guid": "c25ecfc1-b3f3-4042-b8ee-69bf74bea5c7",
                   "heading": "Libpcap",
                   "text": "<p>libpcap v1.9.0</p><p>Note: See <a href=\"https://www.tcpdump.org/\"><span style=\"color:windowtext;\">https://www.tcpdump.org/</span></a></p>",
                   "type": "list_table_row",
                   "discussion": [
-                    {
-                      "comment": "<p>For RTM item 3.6.4.1, it is unclear if the parenthetical statement is intended to be normative.</p>",
-                      "date": "2024-08-09T16:10:08.269Z",
-                      "author": {
-                        "name": "Kenneth Vaughn",
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon"
-                      }
-                    }
+
                   ],
                   "history": [
                     {
@@ -1070,6 +1103,38 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T16:10:08.269Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-17T16:55:46.850Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:10:08.269Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p>For RTM item 3.6.4.1, it is unclear if the parenthetical statement is intended to be normative.</p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:29:00.572Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:10:08.269Z",
+                      "commentIndex": 0,
+                      "deleteLastComment": "<p>This seems to only relate to 3.6.4.1. The requirement does not mention libpcap; the RTM does, but only as a parenthetical comment and only as applicable to Linux systems and the text also calls out v1.1.1 rather than 1.9.0 as mentioned here.&nbsp;</p><p>Recommendation: (1) Revise the text of 3.6.4.1 to state the requirement to use libpcap or WinPcap in the body of the text. (2) Update the text to simply reference libpcap and WinPcap (i.e., document versions should be cited once in the references), and (3) add WinPcap to the normative list of references.</p>"
                     }
                   ]
                 },
@@ -1119,18 +1184,20 @@
                 {
                   "id": "33",
                   "guid": "a0d411ea-5e47-49dc-bc3d-22a8bbbb64aa",
+                  "deleted": true,
                   "heading": "NIST FIPS PUB 197",
                   "text": "<p>Federal Information Processing Standards Publication 197, Advanced Encryption Standard (AES), National Institute of Standards and Technology (NIST), November 26, 2001.</p>",
                   "type": "list_table_row",
                   "discussion": [
                     {
-                      "comment": "<p>Can be removed if 3.6.1.2.3 is removed</p>",
+                      "comment": "<p>At best this is an informative reference as there is no normative statement including it. Further, this is really a ISO 15784-2 issue rather than this document. Delete.</p>",
                       "date": "2024-08-09T16:11:38.226Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
-                      }
+                      },
+                      "updatedOn": "2024-10-18T13:33:25.524Z"
                     }
                   ],
                   "history": [
@@ -1171,12 +1238,62 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T16:11:38.226Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:32:32.271Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": true
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:32:33.812Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:33:25.524Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:11:38.226Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p>Can be removed if 3.6.1.2.3 is removed</p>"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:33:29.406Z"
                     }
                   ]
                 },
                 {
                   "id": "34",
                   "guid": "ab7c8357-ec6a-4f8b-a363-f42da39619f4",
+                  "deleted": true,
                   "heading": "NTCIP 1103 v03",
                   "text": "<p>Transportation Management Protocols (TMP), AASHTO / ITE / NEMA, published December 2016.</p>",
                   "type": "list_table_row",
@@ -1240,12 +1357,24 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T16:11:51.035Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:35:01.628Z"
                     }
                   ]
                 },
                 {
                   "id": "36",
                   "guid": "cb1e8a16-28df-44c4-8632-79d11e5ddb9a",
+                  "deleted": true,
                   "heading": "NTCIP 1201 v03",
                   "text": "<p>Global Object (GO) Definitions, AASHTO / ITE / NEMA, published March 2011.</p><p>Note: Referred to as ‘1201v03’ in Annex A.3.</p>",
                   "type": "list_table_row",
@@ -1320,6 +1449,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T16:12:02.566Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:35:06.511Z"
                     }
                   ]
                 },
@@ -1331,13 +1471,14 @@
                   "type": "list_table_row",
                   "discussion": [
                     {
-                      "comment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>",
+                      "comment": "<p><span style=\"text-align: start;\">Not used in a normative statement. Do we want to change the \"is\" in the last sentence of 3.5.1.4.3 subclauses to \"shall be\" or should this be moved to other references?</span></p>",
                       "date": "2024-08-09T16:17:36.835Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
-                      }
+                      },
+                      "updatedOn": "2024-10-18T13:40:26.727Z"
                     }
                   ],
                   "history": [
@@ -1378,12 +1519,29 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T16:17:36.835Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:40:26.727Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:17:36.835Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>"
                     }
                   ]
                 },
                 {
                   "id": "40",
                   "guid": "100e5b10-0dac-45aa-ac43-330c5785b00d",
+                  "deleted": true,
                   "heading": "NTCIP 2103 v02",
                   "text": "<p>Point-to-Point Protocol over RS-232 Subnetwork Profile, AASHTO / ITE / NEMA, published December 2008.</p><p>Note: Referred to as 2103v02 in Annex A.3.</p>",
                   "type": "list_table_row",
@@ -1464,25 +1622,28 @@
                       "commentDate": "2024-08-09T16:19:40.339Z",
                       "commentIndex": 0,
                       "editLastComment": "<p>Replace reference to the actual source MIB (RFC 2863)</p>"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:46:02.297Z"
                     }
                   ]
                 },
                 {
                   "id": "42",
                   "guid": "1d8a63f1-a030-4654-a1a4-96d4ca02d2e5",
-                  "heading": "NTCIP 8004 v02",
-                  "text": "<p>Structure and Identification of Management Information (SMI), AASHTO / ITE / NEMA, published June 2010.</p>",
+                  "heading": "NTCIP 8004 v03",
+                  "text": "<p>Structure and Identification of Management Information (SMI), AASHTO / ITE / NEMA,<span style=\"background-color: rgb(247, 218, 100);\">&nbsp;under development</span>.</p>",
                   "type": "list_table_row",
                   "discussion": [
-                    {
-                      "comment": "<p>Update to v03</p>",
-                      "date": "2024-08-09T16:22:12.767Z",
-                      "author": {
-                        "name": "Kenneth Vaughn",
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon"
-                      }
-                    }
+
                   ],
                   "history": [
                     {
@@ -1522,6 +1683,34 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T16:22:12.767Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": "NTCIP 8004 v02",
+                        "text": "<p>Structure and Identification of Management Information (SMI), AASHTO / ITE / NEMA, published June 2010.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:46:41.165Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:47:22.747Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:22:12.767Z",
+                      "commentIndex": 0,
+                      "deleteLastComment": "<p>Update to v03</p>"
                     }
                   ]
                 },
@@ -1561,7 +1750,7 @@
                   "id": "44",
                   "guid": "025e1d03-f1f5-4e67-86b5-7cc7a2b13071",
                   "heading": "RFC 2579",
-                  "text": "<p>Textual Conventions for SMIv2 (IETF). April 1999.</p>",
+                  "text": "<p>Textual Conventions for SMIv2, Internet Engineering Task Force (IETF), April 1999.</p>",
                   "type": "list_table_row",
                   "history": [
                     {
@@ -1586,6 +1775,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T15:52:53.427Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>Textual Conventions for SMIv2 (IETF). April 1999.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:45:00.783Z"
                     }
                   ]
                 },
@@ -1648,79 +1848,74 @@
                   ]
                 },
                 {
-                  "id": "46",
-                  "guid": "16dd6ff4-79db-4783-83e2-3c563ae7ec48",
-                  "heading": "RFC 3164",
-                  "text": "<p>The BSD syslog Protocol (IETF), August 2001.</p>",
-                  "type": "list_table_row",
-                  "discussion": [
-                    {
-                      "comment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>",
-                      "date": "2024-08-09T16:27:50.628Z",
-                      "author": {
-                        "name": "Kenneth Vaughn",
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon"
-                      }
-                    }
-                  ],
+                  "id": "2006",
+                  "guid": "58ab46e6-a4b6-41d5-97c6-c378b3d36b74",
+                  "heading": "RFC 2863",
+                  "text": "<p>The Interfaces Group MIB, Internet Engineering Task Force (IETF), June 2000.</p>",
                   "history": [
                     {
-                      "attributesChanged": {
-                        "type": null
-                      },
+                      "affectedNodeId": "16",
                       "changedBy": {
                         "company": "Trevilon",
                         "email": "kvaughn@trevilon.com",
                         "name": "Kenneth Vaughn"
                       },
-                      "changedOn": "2024-07-18T15:46:44.140Z"
+                      "changedOn": "2024-10-18T13:43:19.464Z",
+                      "docId": "NTCIP_1218",
+                      "structureAction": "Create"
                     },
                     {
                       "attributesChanged": {
-                        "heading": null,
-                        "text": "<p>RFC 3164|The BSD syslog Protocol (IETF), August 2001.</p>"
+                        "heading": null
                       },
                       "changedBy": {
                         "company": "Trevilon",
                         "email": "kvaughn@trevilon.com",
                         "name": "Kenneth Vaughn"
                       },
-                      "changedOn": "2024-07-18T15:53:25.329Z"
+                      "changedOn": "2024-10-18T13:43:29.823Z"
                     },
                     {
-                      "addedComment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>",
+                      "attributesChanged": {
+                        "text": null
+                      },
                       "changedBy": {
                         "company": "Trevilon",
                         "email": "kvaughn@trevilon.com",
                         "name": "Kenneth Vaughn"
                       },
-                      "changedOn": "2024-08-09T16:27:50.628Z",
-                      "commentAuthor": {
+                      "changedOn": "2024-10-18T13:44:26.397Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The Interfaces Group MIB, June 2000.</p>"
+                      },
+                      "changedBy": {
                         "company": "Trevilon",
                         "email": "kvaughn@trevilon.com",
                         "name": "Kenneth Vaughn"
                       },
-                      "commentDate": "2024-08-09T16:27:50.628Z"
+                      "changedOn": "2024-10-18T13:45:13.620Z"
                     }
                   ]
                 },
                 {
                   "id": "47",
                   "guid": "1a7d6b93-0aea-43de-a9ca-2a38d8daed8a",
+                  "deleted": true,
                   "heading": "RFC 3411",
                   "text": "<p>An Architecture for Describing Simple Network Management Protocol (SNMP) Management Frameworks, Internet Engineering Task Force (IETF), December 2002.</p>",
                   "type": "list_table_row",
                   "discussion": [
                     {
-                      "comment": "<p><span style=\"text-align: start;\">Not used in a normative statement and where it is used, 3416 would be a betted example)</span></p>",
+                      "comment": "<p><span style=\"text-align: start;\">Not used in a normative statement and where it is used (3.6.2), 3416 would be a betted example)</span></p>",
                       "date": "2024-08-09T16:28:42.427Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
                       },
-                      "updatedOn": "2024-08-09T16:29:18.633Z"
+                      "updatedOn": "2024-10-18T13:52:51.459Z"
                     }
                   ],
                   "history": [
@@ -1777,6 +1972,33 @@
                       "commentDate": "2024-08-09T16:28:42.427Z",
                       "commentIndex": 0,
                       "editLastComment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:52:51.459Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:28:42.427Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p><span style=\"text-align: start;\">Not used in a normative statement and where it is used, 3416 would be a betted example)</span></p>"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:53:00.500Z"
                     }
                   ]
                 },
@@ -1809,139 +2031,6 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T15:53:44.076Z"
-                    }
-                  ]
-                },
-                {
-                  "id": "49",
-                  "guid": "04b78aa6-7573-4027-8b23-de0430304c3b",
-                  "heading": "RFC 3414",
-                  "text": "<p>User-based Security Model (USM) for version 3 of the Simple Network Management Protocol (SNMPv3), Internet Engineering Task Force (IETF), December 2002.</p>",
-                  "type": "list_table_row",
-                  "discussion": [
-                    {
-                      "comment": "<p>Can be moved to other references if 3.6.1.2.1 is deleted</p>",
-                      "date": "2024-08-09T16:30:35.567Z",
-                      "author": {
-                        "name": "Kenneth Vaughn",
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon"
-                      },
-                      "updatedOn": "2024-08-09T16:33:29.219Z"
-                    }
-                  ],
-                  "history": [
-                    {
-                      "attributesChanged": {
-                        "type": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-18T15:46:44.140Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "heading": null,
-                        "text": "<p>RFC 3414|User-based Security Model (USM) for version 3 of the Simple Network Management Protocol (SNMPv3), Internet Engineering Task Force (IETF), December 2002.</p>"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-18T15:53:51.772Z"
-                    },
-                    {
-                      "addedComment": "<p>Can be deleted if 3.6.1.2.1 is deleted</p>",
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-08-09T16:30:35.567Z",
-                      "commentAuthor": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "commentDate": "2024-08-09T16:30:35.567Z"
-                    },
-                    {
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-08-09T16:33:29.219Z",
-                      "commentAuthor": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "commentDate": "2024-08-09T16:30:35.567Z",
-                      "commentIndex": 0,
-                      "editLastComment": "<p>Can be deleted if 3.6.1.2.1 is deleted</p>"
-                    }
-                  ]
-                },
-                {
-                  "id": "50",
-                  "guid": "f9e386c2-77ea-49c5-8e9c-7000ecfa4fb3",
-                  "heading": "RFC 3416",
-                  "text": "<p>Version 2 of the Protocol Operations for the Simple Network Management Protocol (SNMP), Internet Engineering Task Force (IETF), December 2002.</p>",
-                  "type": "list_table_row",
-                  "discussion": [
-                    {
-                      "comment": "<p>Can be moved to other references if Annex G is deleted</p>",
-                      "date": "2024-08-09T16:33:40.122Z",
-                      "author": {
-                        "name": "Kenneth Vaughn",
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon"
-                      }
-                    }
-                  ],
-                  "history": [
-                    {
-                      "attributesChanged": {
-                        "type": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-18T15:46:44.140Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "heading": null,
-                        "text": "<p>RFC 3416|Version 2 of the Protocol Operations for the Simple Network Management Protocol (SNMP), Internet Engineering Task Force (IETF), December 2002.</p>"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-18T15:54:00.286Z"
-                    },
-                    {
-                      "addedComment": "<p>Can be moved to other references if Annex G is deleted</p>",
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-08-09T16:33:40.122Z",
-                      "commentAuthor": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "commentDate": "2024-08-09T16:33:40.122Z"
                     }
                   ]
                 },
@@ -2016,15 +2105,7 @@
                   "text": "<p>A DNS Resource Record (RR) for Encoding Dynamic Host Configuration Protocol (DHCP) Information (DHCID RR), Internet Engineering Task Force (IETF), October 2006.</p>",
                   "type": "list_table_row",
                   "discussion": [
-                    {
-                      "comment": "<p><span style=\"text-align: start;\">Not used in a normative statement</span></p>",
-                      "date": "2024-08-09T16:35:00.426Z",
-                      "author": {
-                        "name": "Kenneth Vaughn",
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon"
-                      }
-                    }
+
                   ],
                   "history": [
                     {
@@ -2064,6 +2145,22 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T16:35:00.426Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T14:01:55.893Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:35:00.426Z",
+                      "commentIndex": 0,
+                      "deleteLastComment": "<p><span style=\"text-align: start;\">Not used in a normative statement</span></p>"
                     }
                   ]
                 },
@@ -2102,6 +2199,7 @@
                 {
                   "id": "55",
                   "guid": "fc6fb1ae-83a5-447a-a42c-aee6f553d666",
+                  "deleted": true,
                   "heading": "RFC 5590",
                   "text": "<p>Transport Subsystem for the Simple Network Management Protocol (SNMP), Internet Engineering Task Force (IETF), June 2009.</p>",
                   "type": "list_table_row",
@@ -2154,12 +2252,24 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T16:36:16.501Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T14:02:59.447Z"
                     }
                   ]
                 },
                 {
                   "id": "56",
                   "guid": "b2c0cad9-7440-4585-b559-5ce6c1f1c883",
+                  "deleted": true,
                   "heading": "RFC 5591",
                   "text": "<p>Transport Security Model for the Simple Network Management Protocol (SNMP), Internet Engineering Task Force (IETF), June 2009.</p>",
                   "type": "list_table_row",
@@ -2212,6 +2322,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T16:36:57.761Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T14:02:59.447Z"
                     }
                   ]
                 },
@@ -2316,6 +2437,7 @@
                 {
                   "id": "59",
                   "guid": "bca63370-0cfe-4c67-957d-ebdcb88b1f67",
+                  "deleted": true,
                   "heading": "RFC 6353",
                   "text": "<p>Transport Layer Security (TLS) Transport Model for the Simple Network Management Protocol (SNMP), Internet Engineering Task Force (IETF), July 2011.</p>",
                   "type": "list_table_row",
@@ -2368,6 +2490,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T16:39:27.071Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T14:06:11.446Z"
                     }
                   ]
                 },
@@ -2379,13 +2512,14 @@
                   "type": "list_table_row",
                   "discussion": [
                     {
-                      "comment": "<p>The MIB is not directly reference buy the standard is. remove \"MIB\" from the name.</p>",
+                      "comment": "<p>The MIB is not directly reference but the standard is. remove \"MIB\" from the name.</p>",
                       "date": "2024-08-09T16:42:37.505Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
-                      }
+                      },
+                      "updatedOn": "2024-10-18T14:06:38.018Z"
                     }
                   ],
                   "history": [
@@ -2426,6 +2560,22 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T16:42:37.505Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T14:06:38.018Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:42:37.505Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p>The MIB is not directly reference buy the standard is. remove \"MIB\" from the name.</p>"
                     }
                   ]
                 },
@@ -2516,6 +2666,106 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T16:44:10.871Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "2001",
+                  "guid": "3294a71e-7058-4cba-a2cb-9c3580a020cf",
+                  "heading": "WinPcap",
+                  "text": "<p>WinPcap version 4.1.2, the WinPcap Team,&nbsp;<a data-fr-linked=\"true\" href=\"https://www.winpcap.org/docs/docs_412/html/main.html\">https://www.winpcap.org/docs/docs_412/html/main.html</a></p>",
+                  "discussion": [
+                    {
+                      "comment": "<p>Added formal reference</p>",
+                      "date": "2024-10-18T10:14:32.389Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
+                  "history": [
+                    {
+                      "affectedNodeId": "16",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:07:30.519Z",
+                      "docId": "NTCIP_1218",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:07:44.323Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:12:32.574Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>WinPcap</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:12:54.456Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>WinPcap version 4.1.2</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:13:30.854Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>WinPcap version 4.1.2, the WinPcap Team,&nbsp;</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:13:40.347Z"
+                    },
+                    {
+                      "addedComment": "<p>Added formal reference</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:14:32.389Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T10:14:32.389Z"
                     }
                   ]
                 }
@@ -3041,6 +3291,117 @@
                   ]
                 },
                 {
+                  "id": "46",
+                  "guid": "16dd6ff4-79db-4783-83e2-3c563ae7ec48",
+                  "heading": "RFC 3164",
+                  "text": "<p>The BSD syslog Protocol, Internet Engineering Task Force (IETF), August 2001.</p>",
+                  "type": "list_table_row",
+                  "discussion": [
+                    {
+                      "comment": "<p>The only reference is in E.15.5, which is in an Informative annex - so even though the text is written in a normative manner, it is technically still informative.</p>",
+                      "date": "2024-10-18T13:50:46.331Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-18T15:46:44.140Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null,
+                        "text": "<p>RFC 3164|The BSD syslog Protocol (IETF), August 2001.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-18T15:53:25.329Z"
+                    },
+                    {
+                      "addedComment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-09T16:27:50.628Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:27:50.628Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The BSD syslog Protocol (IETF), August 2001.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:45:23.893Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:48:36.463Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:27:50.628Z",
+                      "commentIndex": 0,
+                      "deleteLastComment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>"
+                    },
+                    {
+                      "addedComment": "<p>The only reference is in E.15.5, which is in an Informative annex - so even though the text is written in a normative manner, it is technically still informative.</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:50:46.331Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T13:50:46.331Z"
+                    },
+                    {
+                      "affectedNodeId": "16",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:51:28.227Z",
+                      "docId": "NTCIP_1218",
+                      "structureAction": "Cut"
+                    }
+                  ]
+                },
+                {
                   "id": "83",
                   "guid": "31615e8a-c5c4-4cf5-a4d2-710d72179141",
                   "heading": "RFC 3410",
@@ -3101,6 +3462,161 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T16:00:33.441Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "49",
+                  "guid": "04b78aa6-7573-4027-8b23-de0430304c3b",
+                  "heading": "RFC 3414",
+                  "text": "<p>User-based Security Model (USM) for version 3 of the Simple Network Management Protocol (SNMPv3), Internet Engineering Task Force (IETF), December 2002.</p>",
+                  "type": "list_table_row",
+                  "discussion": [
+                    {
+                      "comment": "<p>Can be moved to other references if 3.6.1.2.1 is deleted</p>",
+                      "date": "2024-08-09T16:30:35.567Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      },
+                      "updatedOn": "2024-08-09T16:33:29.219Z"
+                    }
+                  ],
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-18T15:46:44.140Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null,
+                        "text": "<p>RFC 3414|User-based Security Model (USM) for version 3 of the Simple Network Management Protocol (SNMPv3), Internet Engineering Task Force (IETF), December 2002.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-18T15:53:51.772Z"
+                    },
+                    {
+                      "addedComment": "<p>Can be deleted if 3.6.1.2.1 is deleted</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-09T16:30:35.567Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:30:35.567Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-09T16:33:29.219Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:30:35.567Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p>Can be deleted if 3.6.1.2.1 is deleted</p>"
+                    },
+                    {
+                      "affectedNodeId": "16",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:56:16.345Z",
+                      "docId": "NTCIP_1218",
+                      "structureAction": "Cut"
+                    }
+                  ]
+                },
+                {
+                  "id": "50",
+                  "guid": "f9e386c2-77ea-49c5-8e9c-7000ecfa4fb3",
+                  "heading": "RFC 3416",
+                  "text": "<p>Version 2 of the Protocol Operations for the Simple Network Management Protocol (SNMP), Internet Engineering Task Force (IETF), December 2002.</p>",
+                  "type": "list_table_row",
+                  "discussion": [
+                    {
+                      "comment": "<p>Can be moved to other references if Annex G is deleted</p>",
+                      "date": "2024-08-09T16:33:40.122Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-18T15:46:44.140Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null,
+                        "text": "<p>RFC 3416|Version 2 of the Protocol Operations for the Simple Network Management Protocol (SNMP), Internet Engineering Task Force (IETF), December 2002.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-18T15:54:00.286Z"
+                    },
+                    {
+                      "addedComment": "<p>Can be moved to other references if Annex G is deleted</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-09T16:33:40.122Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:33:40.122Z"
+                    },
+                    {
+                      "affectedNodeId": "16",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:56:51.982Z",
+                      "docId": "NTCIP_1218",
+                      "structureAction": "Cut"
                     }
                   ]
                 },
@@ -18269,7 +18785,7 @@
                             {
                               "id": "540",
                               "guid": "facfd22c-9427-4c10-912d-80f5fe18699a",
-                              "text": "<p>Upon request from a management station, the RSU shall store the offset in elevation, in centimeters, between the antenna used by a GNSS or similar geopositioning device and the base of the structure that the RSU is mounted on. An RSU determines its geographic location based on data from a GNSS or similar geopositioning device. The geographic position provided by a GNSS (or similar) device is usually based on the location of antenna - the longitude and latitude of the antenna is generally the same location of the RSU, but the height of the antenna is normally higher than the base of the structure. This requirement allows the GNSS data to be adjusted for the height differential.</p>",
+                              "text": "<p>Upon request from a management station, the RSU shall store the offset in elevation, in centimeters, between the antenna used by a GNSS or similar geopositioning device and the base of the structure that the RSU is mounted on. An RSU determines its geographic location based on data from a GNSS or similar geopositioning device. The geographic position provided by a GNSS (or similar) device is usually based on the location of antenna - the longitude and latitude of the antenna is generally the same location of the RSU, but the height of the antenna is normally higher than the base of the structure. This requirement allows the GNSS data to be adjusted for the height differential.</p><p>NOTE — This requirement assumes that there is only one GNSS antenna.</p>",
                               "type": "text",
                               "history": [
                                 {
@@ -18282,6 +18798,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:33:27.336Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "text": "<p>Upon request from a management station, the RSU shall store the offset in elevation, in centimeters, between the antenna used by a GNSS or similar geopositioning device and the base of the structure that the RSU is mounted on. An RSU determines its geographic location based on data from a GNSS or similar geopositioning device. The geographic position provided by a GNSS (or similar) device is usually based on the location of antenna - the longitude and latitude of the antenna is generally the same location of the RSU, but the height of the antenna is normally higher than the base of the structure. This requirement allows the GNSS data to be adjusted for the height differential.</p>"
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-10-18T10:21:00.464Z"
                                 }
                               ]
                             }
@@ -26689,7 +27216,7 @@
                                 {
                                   "id": "816",
                                   "guid": "d51000af-bd7d-4657-813f-25184935f1ea",
-                                  "text": "<p>Upon request from a management station, the RSU shall report the Fully Qualified Domain Name (FQDN) URL from which to request updated certificate revocation lists. See RFC 4701 for the definition of a FQDN.</p>",
+                                  "text": "<p>Upon request from a management station, the RSU shall report the Fully Qualified Domain Name (FQDN) URL, in the format defined by RFC 4701, from which to request updated certificate revocation lists.</p>",
                                   "type": "text",
                                   "history": [
                                     {
@@ -26702,6 +27229,17 @@
                                         "name": "Kenneth Vaughn"
                                       },
                                       "changedOn": "2024-07-18T18:07:42.258Z"
+                                    },
+                                    {
+                                      "attributesChanged": {
+                                        "text": "<p>Upon request from a management station, the RSU shall report the Fully Qualified Domain Name (FQDN) URL from which to request updated certificate revocation lists. See RFC 4701 for the definition of a FQDN.</p>"
+                                      },
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "changedOn": "2024-10-18T14:01:44.009Z"
                                     }
                                   ]
                                 }
@@ -33837,6 +34375,7 @@
                     {
                       "id": "1073",
                       "guid": "f36316cb-c47c-4672-a88f-7c0d0f323277",
+                      "deleted": true,
                       "heading": "NTCIP 1218 v01 - Support SHA-1",
                       "type": "d_req",
                       "links": {
@@ -33869,12 +34408,24 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-24T15:13:32.047Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T11:26:19.733Z"
                         }
                       ],
                       "children": [
                         {
                           "id": "1074",
                           "guid": "7e24d445-c9d2-4056-a8ce-a24720492281",
+                          "deleted": true,
                           "text": "<p>The RSU shall support the use of SHA-1 hash function (SHA) used in HMAC-SHA-96.</p>",
                           "type": "text",
                           "history": [
@@ -33888,12 +34439,24 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T18:30:50.496Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:26:19.733Z"
                             }
                           ]
                         },
                         {
                           "id": "1075",
                           "guid": "d97b282a-4637-4d08-9ddf-0ced43c35847",
+                          "deleted": true,
                           "text": "<p>Note: NIST has disallowed the use of SHA-1 for digital signature generation (as provided in NIST FIPS 186-4) except where specifically allowed by NIST protocol-specific guidance.</p>",
                           "type": "n",
                           "history": [
@@ -33907,6 +34470,17 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T18:30:53.802Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:26:19.733Z"
                             }
                           ]
                         }
@@ -33915,6 +34489,7 @@
                     {
                       "id": "1076",
                       "guid": "fa32d8d7-28af-4104-9271-7c3a73fc1907",
+                      "deleted": true,
                       "heading": "NTCIP 1218 v01 - Support SHA-2",
                       "type": "d_req",
                       "links": {
@@ -33947,12 +34522,24 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-24T15:13:32.047Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T11:26:16.966Z"
                         }
                       ],
                       "children": [
                         {
                           "id": "1077",
                           "guid": "6a102508-44d6-482d-96d4-132e35b97a98",
+                          "deleted": true,
                           "text": "<p>The RSU shall support the use of SHA-2 hash function (SHA) authentication protocol. The PRL in Table 6 specifies which authentication protocol to use.</p>",
                           "type": "text",
                           "history": [
@@ -33966,6 +34553,17 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T18:30:50.496Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:26:16.966Z"
                             }
                           ]
                         }
@@ -33974,6 +34572,7 @@
                     {
                       "id": "1078",
                       "guid": "8fb19c84-ad87-4f4d-b0b3-21113f2e2643",
+                      "deleted": true,
                       "heading": "NTCIP 1218 v01 - Support DTLS",
                       "type": "d_req",
                       "links": {
@@ -34006,12 +34605,24 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-24T15:13:32.047Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T11:26:14.136Z"
                         }
                       ],
                       "children": [
                         {
                           "id": "1079",
                           "guid": "3ac3d5cf-5943-4020-b480-02d56050bac5",
+                          "deleted": true,
                           "text": "<p>The RSU shall support the use of the Datagram Transportation Layer Security (DTLS) Protocol as a transport model following RFC 6353.</p>",
                           "type": "text",
                           "history": [
@@ -34025,6 +34636,17 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T18:30:50.496Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:26:14.136Z"
                             }
                           ]
                         }
@@ -34033,6 +34655,7 @@
                     {
                       "id": "1080",
                       "guid": "0ed2ea17-1a02-43df-b2be-cfb136abeaf5",
+                      "deleted": true,
                       "heading": "NTCIP 1218 v01 – Support Configure Table Row",
                       "type": "d_req",
                       "history": [
@@ -34046,12 +34669,24 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T18:30:22.311Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T11:26:04.370Z"
                         }
                       ],
                       "children": [
                         {
                           "id": "1081",
                           "guid": "45729266-17ce-4198-85fe-44bd8fc9fced",
+                          "deleted": true,
                           "text": "<p>NTCIP 1218 v01 erroneously did not define a separate dialog for configuring a row in a dynamic table, particularly if the specified row did not exist. NTCIP 1218 v01A corrects this oversight by adding a new dialog, 4.2.8, Generic Configure Table Row Dialog – Dynamic Table. NTCIP 1218 v01A updates all requirements that configures a row in a dynamic table to point to the dialog 4.2.8 instead of dialog 4.2.3. In addition, NTCIP 1218 v01A adds support for a new object definition, rsuVerifyError, as part of dialog 4.2.8.</p>",
                           "type": "text",
                           "history": [
@@ -34065,6 +34700,17 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T18:30:50.496Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:26:04.370Z"
                             }
                           ]
                         }
@@ -34193,6 +34839,7 @@
                     {
                       "id": "1088",
                       "guid": "1fa630aa-87f0-4e42-97c7-d464afe719fe",
+                      "deleted": true,
                       "heading": "Support SHA-1 [Deprecated]",
                       "type": "s_req",
                       "discussion": [
@@ -34232,12 +34879,24 @@
                             "name": "Kenneth Vaughn"
                           },
                           "commentDate": "2024-08-08T02:09:40.132Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T11:29:18.837Z"
                         }
                       ],
                       "children": [
                         {
                           "id": "1089",
                           "guid": "b48be740-bebd-4361-be4f-50fe5db8d6b1",
+                          "deleted": true,
                           "text": "<p>The RSU shall support the use of SHA-1 hash function (SHA) used in HMAC-SHA-96.</p>",
                           "type": "text",
                           "discussion": [
@@ -34285,12 +34944,24 @@
                               "commentDate": "2024-07-22T22:07:02.509Z",
                               "commentIndex": 0,
                               "deleteLastComment": "<p>This should be considered obsolete and we might consider removing the requirement from the standard. Better yet, this and the next requirement should be rewritten to require the use of SHA-2 or the latest replacement of SHA-2 per CISA.&nbsp;</p>"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:29:18.837Z"
                             }
                           ]
                         },
                         {
                           "id": "1090",
                           "guid": "cca8d429-3312-4582-ae37-893ced5e85c9",
+                          "deleted": true,
                           "text": "<p>Note: NIST has disallowed the use of SHA-1 for digital signature generation (as provided in NIST FIPS 186-4) except where specifically allowed by NIST protocol-specific guidance.</p>",
                           "type": "n",
                           "discussion": [
@@ -34391,12 +35062,24 @@
                               "commentDate": "2024-07-22T22:03:52.106Z",
                               "commentIndex": 0,
                               "deleteLastComment": "<p>SHA-1 does not generate a digital signature as this text potentially implies, it would be better to reword as \"use of SHA-1 in the process of digital signature...\"</p>"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:29:18.837Z"
                             }
                           ]
                         },
                         {
                           "id": "1091",
                           "guid": "37990569-58e9-4e0c-b18a-c93cd405b4da",
+                          "deleted": true,
                           "text": "<p>Note: This requirement was deprecated in NTCIP 1218 v01A. See Annex D.1.3 for more information.</p>",
                           "type": "n",
                           "history": [
@@ -34410,6 +35093,17 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T18:31:39.802Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:29:18.837Z"
                             }
                           ]
                         }
@@ -34418,6 +35112,7 @@
                     {
                       "id": "1092",
                       "guid": "1e910c69-04cf-4731-9cbc-8b56b095dabf",
+                      "deleted": true,
                       "heading": "Support SHA-2 [Deprecated]",
                       "type": "s_req",
                       "discussion": [
@@ -34488,12 +35183,24 @@
                             "name": "Kenneth Vaughn"
                           },
                           "commentDate": "2024-08-08T02:08:36.466Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T11:29:15.213Z"
                         }
                       ],
                       "children": [
                         {
                           "id": "1093",
                           "guid": "53de5bc3-6dbd-40cb-9aae-a0054ab5ce6b",
+                          "deleted": true,
                           "text": "<p>The RSU shall support the use of SHA-2 hash function (SHA) authentication protocol. The PRL in Table 6 specifies which authentication protocol to use.</p>",
                           "type": "text",
                           "history": [
@@ -34507,12 +35214,24 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T18:31:49.495Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:29:15.213Z"
                             }
                           ]
                         },
                         {
                           "id": "1094",
                           "guid": "0735efe7-1e86-41e2-85d6-8947417c0084",
+                          "deleted": true,
                           "text": "<p>Note: This requirement was deprecated in NTCIP 1218 v01A. See Annex D.1.3 for more information.</p>",
                           "type": "n",
                           "history": [
@@ -34526,6 +35245,17 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T18:31:54.468Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:29:15.213Z"
                             }
                           ]
                         }
@@ -34574,6 +35304,7 @@
                     {
                       "id": "1097",
                       "guid": "ca2df3ae-0e46-44ae-8ba5-98e6e978463c",
+                      "deleted": true,
                       "heading": "Access RSU - USM",
                       "type": "s_req",
                       "links": {
@@ -34608,12 +35339,24 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-24T15:13:32.047Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T11:30:45.005Z"
                         }
                       ],
                       "children": [
                         {
                           "id": "1098",
                           "guid": "15df2850-f6ad-4097-ab03-d9524b8b1f60",
+                          "deleted": true,
                           "text": "<p>The RSU shall support the use of the User-based Security Model (USM) for SNMPv3 in accordance with RFC 3414.</p>",
                           "type": "text",
                           "discussion": [
@@ -34670,6 +35413,17 @@
                               "commentDate": "2024-08-08T02:00:50.688Z",
                               "commentIndex": 0,
                               "editLastComment": "<p>This is redundant and less precise than ISO 15784-2. Specifically, ISO 15784-2 encourages limiting access via USM due to limitations in its security and high maintenance requirements</p>"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:30:45.005Z"
                             }
                           ]
                         }
@@ -34678,6 +35432,7 @@
                     {
                       "id": "1099",
                       "guid": "ac732ae4-08a0-4280-9c27-c6aabcf32ff4",
+                      "deleted": true,
                       "heading": "Access RSU - TSM",
                       "type": "s_req",
                       "links": {
@@ -34710,12 +35465,24 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-24T15:13:32.047Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T11:30:48.935Z"
                         }
                       ],
                       "children": [
                         {
                           "id": "1100",
                           "guid": "0d385958-e37f-4f5d-810b-f3a4cf8c1b91",
+                          "deleted": true,
                           "text": "<p>The RSU shall support the use of the Transport Security Model (TSM) for SNMPv3 in accordance with RFC 5591, implementing DTLS (RFC 6353) at a minimum.</p>",
                           "type": "text",
                           "discussion": [
@@ -34772,6 +35539,17 @@
                               "commentDate": "2024-08-08T02:01:10.988Z",
                               "commentIndex": 0,
                               "editLastComment": "<p>Redundant with ISO 15784-2</p>"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:30:48.935Z"
                             }
                           ]
                         }
@@ -34780,6 +35558,7 @@
                     {
                       "id": "1101",
                       "guid": "cdf65353-c541-4320-8f61-f7bb26c88f88",
+                      "deleted": true,
                       "heading": "Support AES-256 Encryption",
                       "type": "s_req",
                       "links": {
@@ -34812,12 +35591,24 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-24T15:13:32.047Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T11:30:52.705Z"
                         }
                       ],
                       "children": [
                         {
                           "id": "1102",
                           "guid": "c289fed2-df1b-40aa-a170-2448c6935a01",
+                          "deleted": true,
                           "text": "<p>The RSU shall support the use of Advanced Encryption Standard 256-bit (AES-256) keys for encryption.</p>",
                           "type": "text",
                           "discussion": [
@@ -34857,6 +35648,17 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "commentDate": "2024-08-08T02:05:26.550Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:30:52.705Z"
                             }
                           ]
                         }
@@ -34865,6 +35667,7 @@
                     {
                       "id": "1103",
                       "guid": "2e04fe5e-de79-42b0-82b5-240fb8c282e3",
+                      "deleted": true,
                       "heading": "Support DTLS [Deprecated]",
                       "type": "s_req",
                       "history": [
@@ -34878,12 +35681,24 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T18:32:12.262Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T11:30:58.008Z"
                         }
                       ],
                       "children": [
                         {
                           "id": "1104",
                           "guid": "54f33446-8897-4561-aa12-471201187672",
+                          "deleted": true,
                           "text": "<p>The RSU shall support the use of the Datagram Transportation Layer Security (DTLS) Protocol as a transport model following RFC 6353.</p>",
                           "type": "text",
                           "history": [
@@ -34897,12 +35712,24 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T18:32:25.169Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:30:58.008Z"
                             }
                           ]
                         },
                         {
                           "id": "1105",
                           "guid": "3ea3ffff-0b45-4e08-a5c1-78458ae91788",
+                          "deleted": true,
                           "text": "<p>Note: This requirement was deprecated in NTCIP 1218 v01A. <a>See Annex&nbsp;</a>D.1.4 for more information.</p>",
                           "type": "n",
                           "history": [
@@ -34916,6 +35743,17 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T18:32:28.659Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-18T11:30:58.008Z"
                             }
                           ]
                         }
@@ -34968,7 +35806,7 @@
                 {
                   "id": "1107",
                   "guid": "5955d797-aed1-438a-9952-f0701089a272",
-                  "text": "<p>The RSU shall process all requests in accordance with all of the rules of the referenced standards (e.g., RFC 3411), including decrypting and uncompressing the request; processing certificates, updating the value in the database; and encrypting, compressing, and initiating the transmission of the appropriate response (assuming that the RSU has permission to transmit) within the Response Time. If the specification does not indicate the Response Time, the Response Time shall be less than 1,000 milliseconds. The Response Time is measured as the time between the receiving of the last byte of the request and the transmission of the first byte of the response.</p>",
+                  "text": "<p>The RSU shall process all requests in accordance with all of the rules of the referenced standards (e.g., RFC 3416), including decrypting and uncompressing the request; processing certificates, updating the value in the database; and encrypting, compressing, and initiating the transmission of the appropriate response (assuming that the RSU has permission to transmit) within the Response Time. If the specification does not indicate the Response Time, the Response Time shall be less than 1,000 milliseconds. The Response Time is measured as the time between the receiving of the last byte of the request and the transmission of the first byte of the response.</p>",
                   "type": "text",
                   "history": [
                     {
@@ -34981,6 +35819,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T18:32:25.169Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The RSU shall process all requests in accordance with all of the rules of the referenced standards (e.g., RFC 3411), including decrypting and uncompressing the request; processing certificates, updating the value in the database; and encrypting, compressing, and initiating the transmission of the appropriate response (assuming that the RSU has permission to transmit) within the Response Time. If the specification does not indicate the Response Time, the Response Time shall be less than 1,000 milliseconds. The Response Time is measured as the time between the receiving of the last byte of the request and the transmission of the first byte of the response.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:53:23.296Z"
                     }
                   ]
                 },
@@ -35254,6 +36103,18 @@
                       "NTCIP_1218-276"
                     ]
                   },
+                  "discussion": [
+                    {
+                      "comment": "<p>Delete all object references as this is not a data exchange requirement (i.e., NTCIP should not attempt to identify internal storage, just the external interface and the functionality).</p><p>Make sure that the bulleted list of parameters (i.e., logical parameters not specific objects) to be recorded identifies all of the fields to be recorded (i.e., define all or none; defining a partial list implies the remainder are optional).</p><p>Move the list of parameters to a separate section that details the system log rather than identifying the list multiple times.</p><p>Update text to refer to system log rather than event log.</p>",
+                      "date": "2024-10-18T11:38:40.100Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      },
+                      "updatedOn": "2024-10-18T11:45:48.312Z"
+                    }
+                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -35279,6 +36140,53 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T15:13:32.047Z"
+                    },
+                    {
+                      "addedComment": "<p>Delete all object references as this is not a data exchange requirement.</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:38:40.100Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T11:38:40.100Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:41:16.425Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T11:38:40.100Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p>Delete all object references as this is not a data exchange requirement.</p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:45:48.312Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T11:38:40.100Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p>Delete all object references as this is not a data exchange requirement but make sure bulleted list identifies all of the fields to be recorded (i.e., define all or none; defining a partial list implies the remainder are optional).</p><p>Update text to refer to system log rather than event log.</p>"
                     }
                   ],
                   "children": [
@@ -35414,6 +36322,18 @@
                       "NTCIP_1218-276"
                     ]
                   },
+                  "discussion": [
+                    {
+                      "comment": "<p>Delete all object references as this is not a data exchange requirement (i.e., NTCIP should not attempt to identify internal storage, just the external interface and the functionality).</p><p>Make sure that the bulleted list of parameters (i.e., logical parameters not specific objects) to be recorded identifies all of the fields to be recorded (i.e., define all or none; defining a partial list implies the remainder are optional).</p><p>Move the list of parameters to a separate section that details the system log rather than identifying the list multiple times.</p><p>Update text to refer to system log rather than event log.</p>",
+                      "date": "2024-10-18T11:38:46.466Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      },
+                      "updatedOn": "2024-10-18T11:46:06.915Z"
+                    }
+                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -35439,6 +36359,53 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T15:13:32.047Z"
+                    },
+                    {
+                      "addedComment": "<p>Delete all object references as this is not a data exchange requirement.</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:38:46.466Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T11:38:46.466Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:42:09.880Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T11:38:46.466Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p>Delete all object references as this is not a data exchange requirement.</p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:46:06.915Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T11:38:46.466Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p>Delete all object references as this is not a data exchange requirement but make sure bulleted list identifies all of the fields to be recorded (i.e., define all or none; defining a partial list implies the remainder are optional).</p><p>Update text to refer to system log rather than event log.</p>"
                     }
                   ],
                   "children": [
@@ -35607,6 +36574,17 @@
                       "NTCIP_1218-276"
                     ]
                   },
+                  "discussion": [
+                    {
+                      "comment": "<p>Delete all object references as this is not a data exchange requirement (i.e., NTCIP should not attempt to identify internal storage, just the external interface and the functionality).</p><p>Make sure that the bulleted list of parameters (i.e., logical parameters not specific objects) to be recorded identifies all of the fields to be recorded (i.e., define all or none; defining a partial list implies the remainder are optional).</p><p>Move the list of parameters to a separate section that details the system log rather than identifying the list multiple times.</p><p>Update text to refer to system log rather than event log.</p>",
+                      "date": "2024-10-18T11:46:17.109Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -35632,6 +36610,21 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T15:13:32.047Z"
+                    },
+                    {
+                      "addedComment": "<p>Delete all object references as this is not a data exchange requirement (i.e., NTCIP should not attempt to identify internal storage, just the external interface and the functionality).</p><p>Make sure that the bulleted list of parameters (i.e., logical parameters not specific objects) to be recorded identifies all of the fields to be recorded (i.e., define all or none; defining a partial list implies the remainder are optional).</p><p>Move the list of parameters to a separate section that details the system log rather than identifying the list multiple times.</p><p>Update text to refer to system log rather than event log.</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:46:17.109Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T11:46:17.109Z"
                     }
                   ],
                   "children": [
@@ -35800,6 +36793,17 @@
                       "NTCIP_1218-276"
                     ]
                   },
+                  "discussion": [
+                    {
+                      "comment": "<p>Delete all object references as this is not a data exchange requirement (i.e., NTCIP should not attempt to identify internal storage, just the external interface and the functionality).</p><p>Make sure that the bulleted list of parameters (i.e., logical parameters not specific objects) to be recorded identifies all of the fields to be recorded (i.e., define all or none; defining a partial list implies the remainder are optional).</p><p>Move the list of parameters to a separate section that details the system log rather than identifying the list multiple times.</p><p>Update text to refer to system log rather than event log.</p>",
+                      "date": "2024-10-18T11:47:04.483Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -35825,6 +36829,21 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T15:13:32.047Z"
+                    },
+                    {
+                      "addedComment": "<p>Delete all object references as this is not a data exchange requirement (i.e., NTCIP should not attempt to identify internal storage, just the external interface and the functionality).</p><p>Make sure that the bulleted list of parameters (i.e., logical parameters not specific objects) to be recorded identifies all of the fields to be recorded (i.e., define all or none; defining a partial list implies the remainder are optional).</p><p>Move the list of parameters to a separate section that details the system log rather than identifying the list multiple times.</p><p>Update text to refer to system log rather than event log.</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:47:04.483Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T11:47:04.483Z"
                     }
                   ],
                   "children": [
@@ -36034,6 +37053,17 @@
                       "NTCIP_1218-276"
                     ]
                   },
+                  "discussion": [
+                    {
+                      "comment": "<p>Delete all object references as this is not a data exchange requirement (i.e., NTCIP should not attempt to identify internal storage, just the external interface and the functionality).</p><p>Make sure that the bulleted list of parameters (i.e., logical parameters not specific objects) to be recorded identifies all of the fields to be recorded (i.e., define all or none; defining a partial list implies the remainder are optional).</p><p>Move the list of parameters to a separate section that details the system log rather than identifying the list multiple times.</p><p>Update text to refer to system log rather than event log.</p>",
+                      "date": "2024-10-18T11:47:11.503Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -36059,6 +37089,21 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T15:13:32.047Z"
+                    },
+                    {
+                      "addedComment": "<p>Delete all object references as this is not a data exchange requirement (i.e., NTCIP should not attempt to identify internal storage, just the external interface and the functionality).</p><p>Make sure that the bulleted list of parameters (i.e., logical parameters not specific objects) to be recorded identifies all of the fields to be recorded (i.e., define all or none; defining a partial list implies the remainder are optional).</p><p>Move the list of parameters to a separate section that details the system log rather than identifying the list multiple times.</p><p>Update text to refer to system log rather than event log.</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:47:11.503Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T11:47:11.503Z"
                     }
                   ],
                   "children": [
@@ -36312,6 +37357,17 @@
                       "NTCIP_1218-276"
                     ]
                   },
+                  "discussion": [
+                    {
+                      "comment": "<p>Delete all object references as this is not a data exchange requirement (i.e., NTCIP should not attempt to identify internal storage, just the external interface and the functionality).</p><p>Make sure that the bulleted list of parameters (i.e., logical parameters not specific objects) to be recorded identifies all of the fields to be recorded (i.e., define all or none; defining a partial list implies the remainder are optional).</p><p>Move the list of parameters to a separate section that details the system log rather than identifying the list multiple times.</p><p>Update text to refer to system log rather than event log.</p>",
+                      "date": "2024-10-18T11:47:19.014Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -36337,6 +37393,21 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T15:13:32.047Z"
+                    },
+                    {
+                      "addedComment": "<p>Delete all object references as this is not a data exchange requirement (i.e., NTCIP should not attempt to identify internal storage, just the external interface and the functionality).</p><p>Make sure that the bulleted list of parameters (i.e., logical parameters not specific objects) to be recorded identifies all of the fields to be recorded (i.e., define all or none; defining a partial list implies the remainder are optional).</p><p>Move the list of parameters to a separate section that details the system log rather than identifying the list multiple times.</p><p>Update text to refer to system log rather than event log.</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:47:19.014Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T11:47:19.014Z"
                     }
                   ],
                   "children": [
@@ -36617,6 +37688,7 @@
                     {
                       "id": "1134",
                       "guid": "eebff697-28f2-44c5-b031-64eaafdd02f7",
+                      "heading": "PCAP Format",
                       "text": "<p>Upon request from a management station, the RSU shall log interface data packets across a specified interface in the packet capture (pcap) format.</p>",
                       "type": "text",
                       "history": [
@@ -36630,6 +37702,168 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T18:38:23.823Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-17T18:10:08.567Z"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "1999",
+                      "guid": "6369b601-4493-49fa-85d1-e6591313d62a",
+                      "heading": "Libpcap for Linux",
+                      "text": "<p>Unix-based systems shall use libpcap for logging interface data packets.</p>",
+                      "discussion": [
+                        {
+                          "comment": "<p>Added normative reference to libpcap. NOTE: Do we want to reference 1.9.0 or 1.1.1 (v01A1 referenced 1.9.0 in the norm ref but 1.1.1 in the text)</p>",
+                          "date": "2024-10-18T10:06:55.036Z",
+                          "author": {
+                            "name": "Kenneth Vaughn",
+                            "email": "kvaughn@trevilon.com",
+                            "company": "Trevilon"
+                          },
+                          "updatedOn": "2024-10-18T13:30:28.085Z"
+                        }
+                      ],
+                      "history": [
+                        {
+                          "affectedNodeId": "1133",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-17T18:10:11.952Z",
+                          "docId": "NTCIP_1218",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-17T18:10:27.512Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T10:04:13.878Z"
+                        },
+                        {
+                          "addedComment": "<p>Added normative reference to libpcap</p>",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T10:06:55.036Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-10-18T10:06:55.036Z"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T13:30:28.085Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-10-18T10:06:55.036Z",
+                          "commentIndex": 0,
+                          "editLastComment": "<p>Added normative reference to libpcap</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "2000",
+                      "guid": "d4de7719-3b8e-482e-9c3b-54995f701787",
+                      "heading": "WinPcap for Windows",
+                      "text": "<p>Microsoft Windows-based systems shall use WinPcap for logging interface data packets.</p>",
+                      "discussion": [
+                        {
+                          "comment": "<p>Added normative reference to WinPcap</p>",
+                          "date": "2024-10-18T10:07:08.888Z",
+                          "author": {
+                            "name": "Kenneth Vaughn",
+                            "email": "kvaughn@trevilon.com",
+                            "company": "Trevilon"
+                          }
+                        }
+                      ],
+                      "history": [
+                        {
+                          "affectedNodeId": "1133",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-17T18:10:30.353Z",
+                          "docId": "NTCIP_1218",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-17T18:10:41.344Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T10:05:38.733Z"
+                        },
+                        {
+                          "addedComment": "<p>Added normative reference to WinPcap</p>",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T10:07:08.888Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-10-18T10:07:08.888Z"
                         }
                       ]
                     }
@@ -36917,6 +38151,17 @@
                           "NTCIP_1218-315"
                         ]
                       },
+                      "discussion": [
+                        {
+                          "comment": "<p>No need for object reference as this is not a dialog.</p>",
+                          "date": "2024-10-18T11:53:43.676Z",
+                          "author": {
+                            "name": "Kenneth Vaughn",
+                            "email": "kvaughn@trevilon.com",
+                            "company": "Trevilon"
+                          }
+                        }
+                      ],
                       "history": [
                         {
                           "attributesChanged": {
@@ -36942,6 +38187,21 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-24T15:13:32.047Z"
+                        },
+                        {
+                          "addedComment": "<p>No need for object reference as this is not a dialog.</p>",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T11:53:43.676Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-10-18T11:53:43.676Z"
                         }
                       ],
                       "children": [
@@ -36976,6 +38236,17 @@
                           "NTCIP_1218-315"
                         ]
                       },
+                      "discussion": [
+                        {
+                          "comment": "<p>No need for object reference as this is not a dialog.</p>",
+                          "date": "2024-10-18T11:53:49.129Z",
+                          "author": {
+                            "name": "Kenneth Vaughn",
+                            "email": "kvaughn@trevilon.com",
+                            "company": "Trevilon"
+                          }
+                        }
+                      ],
                       "history": [
                         {
                           "attributesChanged": {
@@ -37001,6 +38272,21 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-24T15:13:32.047Z"
+                        },
+                        {
+                          "addedComment": "<p>No need for object reference as this is not a dialog.</p>",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T11:53:49.129Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-10-18T11:53:49.129Z"
                         }
                       ],
                       "children": [
@@ -37035,6 +38321,17 @@
                           "NTCIP_1218-315"
                         ]
                       },
+                      "discussion": [
+                        {
+                          "comment": "<p>No need for object reference as this is not a dialog.</p>",
+                          "date": "2024-10-18T11:53:54.762Z",
+                          "author": {
+                            "name": "Kenneth Vaughn",
+                            "email": "kvaughn@trevilon.com",
+                            "company": "Trevilon"
+                          }
+                        }
+                      ],
                       "history": [
                         {
                           "attributesChanged": {
@@ -37060,6 +38357,21 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-24T15:13:32.047Z"
+                        },
+                        {
+                          "addedComment": "<p>No need for object reference as this is not a dialog.</p>",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T11:53:54.762Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-10-18T11:53:54.762Z"
                         }
                       ],
                       "children": [
@@ -37094,6 +38406,17 @@
                           "NTCIP_1218-315"
                         ]
                       },
+                      "discussion": [
+                        {
+                          "comment": "<p>No need for object reference as this is not a dialog.</p>",
+                          "date": "2024-10-18T11:54:00.483Z",
+                          "author": {
+                            "name": "Kenneth Vaughn",
+                            "email": "kvaughn@trevilon.com",
+                            "company": "Trevilon"
+                          }
+                        }
+                      ],
                       "history": [
                         {
                           "attributesChanged": {
@@ -37119,6 +38442,21 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-24T15:13:32.047Z"
+                        },
+                        {
+                          "addedComment": "<p>No need for object reference as this is not a dialog.</p>",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-18T11:54:00.483Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-10-18T11:54:00.483Z"
                         }
                       ],
                       "children": [
@@ -37155,6 +38493,26 @@
                       "NTCIP_1218-315"
                     ]
                   },
+                  "discussion": [
+                    {
+                      "comment": "<p>No need for object reference as this is not a dialog.</p>",
+                      "date": "2024-10-18T11:55:13.461Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    },
+                    {
+                      "comment": "<p>This should not be an option in the PRL; rather it should be part of an option group where the user either selects:</p><p>Log Interface Data Regardless of Operational Mode or</p><p>Log Interface Data Only When Operational Mode is Active</p><p>(i.e., currently, there is a note, which is informative, that attempts to impose a normative requirement)</p>",
+                      "date": "2024-10-18T11:57:57.312Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -37180,6 +38538,36 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T15:13:32.047Z"
+                    },
+                    {
+                      "addedComment": "<p>No need for object reference as this is not a dialog.</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:55:13.461Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T11:55:13.461Z"
+                    },
+                    {
+                      "addedComment": "<p>This should not be an option in the PRL; rather it should be part of an option group where the user either selects:</p><p>Log Interface Data Regardless of Operational Mode or</p><p>Log Interface Data Only When Operational Mode is Active</p><p>(i.e., currently, there is a note, which is informative, that attempts to impose a normative requirement)</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:57:57.312Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T11:57:57.312Z"
                     }
                   ],
                   "children": [
@@ -37233,6 +38621,17 @@
                       "NTCIP_1218-315"
                     ]
                   },
+                  "discussion": [
+                    {
+                      "comment": "<p>No need for object reference as this is not a dialog.</p>",
+                      "date": "2024-10-18T13:15:17.405Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -37258,6 +38657,21 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T15:13:32.047Z"
+                    },
+                    {
+                      "addedComment": "<p>No need for object reference as this is not a dialog.</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T13:15:17.405Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T13:15:17.405Z"
                     }
                   ],
                   "children": [
@@ -37298,6 +38712,18 @@
                   "NTCIP_1218-337"
                 ]
               },
+              "discussion": [
+                {
+                  "comment": "<p>Should be SFTP as is being used by ESS and others and provide more than just copy functionality. SFTP is also an open spec rather than a specific implementation of software, which is no longer supported and the developers recommend SFTP</p>",
+                  "date": "2024-10-18T13:21:22.083Z",
+                  "author": {
+                    "name": "Kenneth Vaughn",
+                    "email": "kvaughn@trevilon.com",
+                    "company": "Trevilon"
+                  },
+                  "updatedOn": "2024-10-18T13:24:28.668Z"
+                }
+              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -37327,6 +38753,53 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-24T15:13:32.047Z"
+                },
+                {
+                  "addedComment": "<p>Should be SFTP as is being used by ESS and others and provide more than just copy functionality</p>",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-18T13:21:22.083Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-18T13:21:22.083Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-18T13:22:22.646Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-18T13:21:22.083Z",
+                  "commentIndex": 0,
+                  "editLastComment": "<p>Should be SFTP as is being used by ESS and others and provide more than just copy functionality</p>"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-18T13:24:28.668Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-18T13:21:22.083Z",
+                  "commentIndex": 0,
+                  "editLastComment": "<p>Should be SFTP as is being used by ESS and others and provide more than just copy functionality. SFTP is also an open spec rather than a specific implementation of software</p>"
                 }
               ],
               "children": [
@@ -45145,10 +46618,10 @@
                   "syntax": "<pre>BITS { bypass(0),<br>                 secure(1),<br>                 shortTerm(2),<br>                 longTerm(3) }</pre>",
                   "type": "ot",
                   "links": {
-                    "satisfiesWithNote": [
-                      "NTCIP_1218-579",
-                      "NTCIP_1218-581",
-                      "NTCIP_1218-688"
+                    "satisfies": [
+                      "Notes-5",
+                      "Notes-6",
+                      "Notes-7"
                     ]
                   },
                   "discussion": [
@@ -45204,6 +46677,105 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T18:46:54.118Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "Notes-5"
+                        ],
+                        "type": "satisfies"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:30:48.858Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "Notes-6"
+                        ],
+                        "type": "satisfiesWithNote"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:32:35.163Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedLink": {
+                        "newType": "satisfies",
+                        "oldTargets": [
+                          "Notes-6"
+                        ],
+                        "oldType": "satisfiesWithNote"
+                      },
+                      "changedOn": "2024-10-18T10:32:44.085Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:34:02.587Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-579"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:34:08.399Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-581"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "Notes-7"
+                        ],
+                        "type": "satisfies"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:35:50.883Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:36:15.349Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-688"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
                     }
                   ]
                 },
@@ -45902,10 +47474,10 @@
                   "syntax": "<pre>BITS { bypass(0),<br>                 secure(1),<br>                 shortTerm(2),<br>                 longTerm(3) }</pre>",
                   "type": "ot",
                   "links": {
-                    "satisfiesWithNote": [
-                      "NTCIP_1218-583",
-                      "NTCIP_1218-585",
-                      "NTCIP_1218-709"
+                    "satisfies": [
+                      "Notes-8",
+                      "Notes-9",
+                      "Notes-10"
                     ]
                   },
                   "discussion": [
@@ -45978,6 +47550,77 @@
                       "commentDate": "2024-08-09T19:02:54.654Z",
                       "commentIndex": 0,
                       "editLastComment": "<p>If we are not talking about application layer broadcasting, it is unclear what Bits 2 and 3 mean</p>"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "Notes-8"
+                        ],
+                        "type": "satisfies"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:38:15.955Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "Notes-9",
+                          "Notes-10"
+                        ],
+                        "type": "satisfies"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:38:47.485Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:39:22.714Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-583"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:39:48.276Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-585"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:40:14.609Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-709"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
                     }
                   ]
                 },
@@ -48284,9 +49927,9 @@
                   "syntax": "<pre>BITS { diskFull(0),<br>                 deleteEntry(1) }</pre>",
                   "type": "ot",
                   "links": {
-                    "satisfiesWithNote": [
-                      "NTCIP_1218-765",
-                      "NTCIP_1218-767"
+                    "satisfies": [
+                      "Notes-11",
+                      "Notes-12"
                     ]
                   },
                   "history": [
@@ -48315,6 +49958,49 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T20:31:28.611Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "Notes-11",
+                          "Notes-12"
+                        ],
+                        "type": "satisfies"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:47:43.642Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:48:11.309Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-765"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T10:48:15.939Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-767"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
                     }
                   ]
                 },
@@ -50572,7 +52258,8 @@
                   "links": {
                     "satisfies": [
                       "NTCIP_1218-837",
-                      "NTCIP_1218-1071"
+                      "NTCIP_1218-1071",
+                      "Notes-19"
                     ],
                     "satisfiesWithNote": [
                       "NTCIP_1218-853"
@@ -50629,6 +52316,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T20:31:28.611Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "Notes-19"
+                        ],
+                        "type": "satisfies"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:05:34.877Z"
                     }
                   ]
                 },
@@ -51470,12 +53171,12 @@
               "syntax": "<pre>BITS { secured (0),<br>                 wra (1),<br>                 repeatRate (2),<br>                 twoDLocation (3),<br>                 threeDLocation (4) }</pre>",
               "type": "ot",
               "links": {
-                "satisfiesWithNote": [
-                  "NTCIP_1218-842",
-                  "NTCIP_1218-845",
-                  "NTCIP_1218-847",
-                  "NTCIP_1218-849",
-                  "NTCIP_1218-851"
+                "satisfies": [
+                  "Notes-14",
+                  "Notes-15",
+                  "Notes-16",
+                  "Notes-17",
+                  "Notes-18"
                 ]
               },
               "history": [
@@ -51518,6 +53219,169 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-24T20:31:28.611Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "Notes-14",
+                      "Notes-15",
+                      "Notes-16",
+                      "Notes-17",
+                      "Notes-18"
+                    ],
+                    "type": "satisfiesWithNote"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-18T10:52:53.840Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedLink": {
+                    "newType": "satisfies",
+                    "oldTargets": [
+                      "Notes-14"
+                    ],
+                    "oldType": "satisfiesWithNote"
+                  },
+                  "changedOn": "2024-10-18T10:54:49.345Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedLink": {
+                    "newType": "satisfies",
+                    "oldTargets": [
+                      "Notes-15"
+                    ],
+                    "oldType": "satisfiesWithNote"
+                  },
+                  "changedOn": "2024-10-18T10:54:56.910Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedLink": {
+                    "newType": "satisfies",
+                    "oldTargets": [
+                      "Notes-16"
+                    ],
+                    "oldType": "satisfiesWithNote"
+                  },
+                  "changedOn": "2024-10-18T10:55:02.713Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedLink": {
+                    "newType": "satisfies",
+                    "oldTargets": [
+                      "Notes-17"
+                    ],
+                    "oldType": "satisfiesWithNote"
+                  },
+                  "changedOn": "2024-10-18T10:55:08.075Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedLink": {
+                    "newType": "satisfies",
+                    "oldTargets": [
+                      "Notes-18"
+                    ],
+                    "oldType": "satisfiesWithNote"
+                  },
+                  "changedOn": "2024-10-18T10:55:14.944Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-18T10:56:47.544Z",
+                  "removedLink": {
+                    "target": [
+                      "NTCIP_1218-845"
+                    ],
+                    "type": "satisfiesWithNote"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-18T10:56:53.772Z",
+                  "removedLink": {
+                    "target": [
+                      "NTCIP_1218-842"
+                    ],
+                    "type": "satisfiesWithNote"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-18T10:57:42.339Z",
+                  "removedLink": {
+                    "target": [
+                      "NTCIP_1218-847"
+                    ],
+                    "type": "satisfiesWithNote"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-18T10:58:27.408Z",
+                  "removedLink": {
+                    "target": [
+                      "NTCIP_1218-849"
+                    ],
+                    "type": "satisfiesWithNote"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-18T10:59:12.141Z",
+                  "removedLink": {
+                    "target": [
+                      "NTCIP_1218-851"
+                    ],
+                    "type": "satisfiesWithNote"
+                  }
                 }
               ]
             },
@@ -61391,20 +63255,18 @@
                     "satisfies": [
                       "NTCIP_1218-1018",
                       "NTCIP_1218-1020",
-                      "NTCIP_1218-1022"
-                    ],
-                    "satisfiesWithNote": [
-                      "NTCIP_1218-998",
-                      "NTCIP_1218-1000",
-                      "NTCIP_1218-1002",
-                      "NTCIP_1218-1004",
-                      "NTCIP_1218-1006",
-                      "NTCIP_1218-1008",
-                      "NTCIP_1218-1010",
-                      "NTCIP_1218-1012",
-                      "NTCIP_1218-1014",
-                      "NTCIP_1218-1016",
-                      "NTCIP_1218-1024"
+                      "NTCIP_1218-1022",
+                      "Notes-24",
+                      "Notes-25",
+                      "Notes-26",
+                      "Notes-27",
+                      "Notes-28",
+                      "Notes-29",
+                      "Notes-30",
+                      "Notes-31",
+                      "Notes-32",
+                      "Notes-33",
+                      "Notes-34"
                     ]
                   },
                   "discussion": [
@@ -61484,6 +63346,184 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T14:02:32.796Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "Notes-24",
+                          "Notes-25",
+                          "Notes-26",
+                          "Notes-27",
+                          "Notes-28",
+                          "Notes-29",
+                          "Notes-30",
+                          "Notes-31",
+                          "Notes-32",
+                          "Notes-33",
+                          "Notes-34"
+                        ],
+                        "type": "satisfies"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:16:00.956Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:17:20.467Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-998"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:17:26.254Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-1000"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:17:57.835Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-1002"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:18:26.435Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-1004"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:19:01.854Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-1006"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:19:40.654Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-1008"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:20:10.955Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-1010"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:20:42.125Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-1012"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:21:12.921Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-1014"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:21:43.058Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-1016"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-18T11:22:18.391Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-1024"
+                        ],
+                        "type": "satisfiesWithNote"
+                      }
                     }
                   ]
                 },

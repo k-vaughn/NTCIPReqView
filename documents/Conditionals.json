@@ -8,7 +8,7 @@
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-08-23T16:35:51.560Z",
+  "lastChangedOn": "2024-10-29T19:21:31.242Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -1377,7 +1377,8 @@
           "26048_1-598"
         ],
         "conditional": [
-          "NTCIP_1204-3208"
+          "NTCIP_1204-3208",
+          "NTCIP_1218-2107"
         ]
       },
       "history": [
@@ -1452,6 +1453,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:10:34.096Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-2107"
+            ],
+            "type": "conditional"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-10-29T19:21:31.242Z"
         }
       ]
     }

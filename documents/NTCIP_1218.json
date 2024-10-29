@@ -2,14 +2,14 @@
   "id": "NTCIP_1218",
   "guid": "b408b184-03fb-44d0-8fe2-be731124a4ab",
   "name": "NTCIP 1218",
-  "lastId": 2006,
+  "lastId": 2107,
   "createdOn": "2024-07-18T15:17:24.557Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2024-10-18T14:06:38.018Z",
+  "lastChangedOn": "2024-10-29T19:58:48.052Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -792,89 +792,21 @@
                   ]
                 },
                 {
-                  "id": "26",
-                  "guid": "d3c37fcb-08d0-4513-aff7-a260536a885a",
-                  "heading": "IEEE 1609.4",
-                  "text": "<p>IEEE Standard for Wireless Access in Vehicular Environments (WAVE) -- Multi-Channel Operation, IEEE, 2016.</p>",
-                  "type": "list_table_row",
-                  "discussion": [
-                    {
-                      "comment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>",
-                      "date": "2024-08-09T16:05:36.851Z",
-                      "author": {
-                        "name": "Kenneth Vaughn",
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon"
-                      }
-                    }
-                  ],
-                  "history": [
-                    {
-                      "attributesChanged": {
-                        "type": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-18T15:46:44.140Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "heading": null,
-                        "text": "<p>IEEE 1609.4|IEEE Standard for Wireless Access in Vehicular Environments (WAVE) -- Multi-Channel Operation, IEEE, 2016.</p>"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-18T15:48:12.991Z"
-                    },
-                    {
-                      "addedComment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>",
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-08-09T16:05:36.851Z",
-                      "commentAuthor": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "commentDate": "2024-08-09T16:05:36.851Z"
-                    }
-                  ]
-                },
-                {
                   "id": "27",
                   "guid": "1cb974b4-8739-472a-b9bb-8243142ef063",
-                  "heading": "IEEE Provider Service Identifier (PSID) Registration Authority",
+                  "heading": "IEEE Provider Service Identifier (PSID) Public Listing",
                   "text": "<p>IEEE Provider Service Identifier (PSID) Registration Authority</p><p>Note: See <a href=\"https://standards.ieee.org/products-services/regauth/psid/public/\"><span style=\"color:windowtext;\">https://standards.ieee.org/products-services/regauth/psid/public/</span></a></p>",
                   "type": "list_table_row",
                   "discussion": [
                     {
-                      "comment": "<p><span style=\"text-align: start;\">Not used in a normative statement. Added 1.3.5, but this should really be a refrence to the PSID Public Listing as opposed to the Registration Authority (i.e., the RA maintains the PL)</span></p>",
+                      "comment": "<p><span style=\"text-align: start;\">Added 1.3.5 to use reference in normative statement. Changed to PSID Public Listing as opposed to the Registration Authority (i.e., the RA maintains the PL). Changed \"Identified\" to \"Identifier\".</span></p>",
                       "date": "2024-08-09T16:07:33.456Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
                       },
-                      "updatedOn": "2024-10-16T18:40:48.702Z"
-                    },
-                    {
-                      "comment": "<p>Changed \"Identified\" to \"Identifier\"&nbsp;</p>",
-                      "date": "2024-08-09T16:07:45.989Z",
-                      "author": {
-                        "name": "Kenneth Vaughn",
-                        "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon"
-                      },
-                      "updatedOn": "2024-10-16T16:14:34.745Z"
+                      "updatedOn": "2024-10-29T18:54:53.383Z"
                     }
                   ],
                   "history": [
@@ -1001,6 +933,81 @@
                       "commentDate": "2024-08-09T16:07:33.456Z",
                       "commentIndex": 0,
                       "editLastComment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T13:40:50.457Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:07:33.456Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p><span style=\"text-align: start;\">Not used in a normative statement. Added 1.3.5, but this should really be a refrence to the PSID Public Listing as opposed to the Registration Authority (i.e., the RA maintains the PL)</span></p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T13:41:17.568Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:07:45.989Z",
+                      "commentIndex": 1,
+                      "editLastComment": "<p>Changed \"Identified\" to \"Identifier\"&nbsp;</p>"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": "IEEE Provider Service Identifier (PSID) Registration Authority"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T13:41:28.939Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T18:54:53.383Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:07:33.456Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p><span style=\"text-align: start;\">Not used in a normative statement. This should really be a reference to the PSID Public Listing as opposed to the Registration Authority (i.e., the RA maintains the PL)</span></p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T18:55:00.158Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:07:45.989Z",
+                      "commentIndex": 1,
+                      "deleteLastComment": "<p>Changed \"Identified\" to \"Identifier\"; changed RA to PL; <span style=\"text-align: start;\">Added 1.3.5</span></p>"
                     }
                   ]
                 },
@@ -1471,14 +1478,14 @@
                   "type": "list_table_row",
                   "discussion": [
                     {
-                      "comment": "<p><span style=\"text-align: start;\">Not used in a normative statement. Do we want to change the \"is\" in the last sentence of 3.5.1.4.3 subclauses to \"shall be\" or should this be moved to other references?</span></p>",
+                      "comment": "<p><span style=\"text-align: start;\">Was not used in a normative statement. Change the \"is\" in the last sentence of 3.5.1.4.3 subclauses to \"shall be\" to make normative.</span></p>",
                       "date": "2024-08-09T16:17:36.835Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
                       },
-                      "updatedOn": "2024-10-18T13:40:26.727Z"
+                      "updatedOn": "2024-10-29T18:57:43.096Z"
                     }
                   ],
                   "history": [
@@ -1535,6 +1542,22 @@
                       "commentDate": "2024-08-09T16:17:36.835Z",
                       "commentIndex": 0,
                       "editLastComment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T18:57:43.096Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:17:36.835Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p><span style=\"text-align: start;\">Not used in a normative statement. Do we want to change the \"is\" in the last sentence of 3.5.1.4.3 subclauses to \"shall be\" or should this be moved to other references?</span></p>"
                     }
                   ]
                 },
@@ -2507,19 +2530,19 @@
                 {
                   "id": "60",
                   "guid": "8d5293fc-ae61-444c-bea3-032f582ac24f",
-                  "heading": "SAE J2735_202309 MIB",
+                  "heading": "SAE J2735_202309",
                   "text": "<p>V2X Communications Message Set Dictionary™, SAE International, September 2023.</p>",
                   "type": "list_table_row",
                   "discussion": [
                     {
-                      "comment": "<p>The MIB is not directly reference but the standard is. remove \"MIB\" from the name.</p>",
+                      "comment": "<p>The MIB is not directly referenced but the standard is; removed \"MIB\" from the end of the name.</p>",
                       "date": "2024-08-09T16:42:37.505Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
                       },
-                      "updatedOn": "2024-10-18T14:06:38.018Z"
+                      "updatedOn": "2024-10-29T18:58:57.394Z"
                     }
                   ],
                   "history": [
@@ -2576,6 +2599,64 @@
                       "commentDate": "2024-08-09T16:42:37.505Z",
                       "commentIndex": 0,
                       "editLastComment": "<p>The MIB is not directly reference buy the standard is. remove \"MIB\" from the name.</p>"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": "SAE J2735_202309 MIB"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T13:53:17.654Z"
+                    },
+                    {
+                      "addedComment": "<p>Done</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T13:53:28.017Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-29T13:53:28.017Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T18:58:57.394Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:42:37.505Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p>The MIB is not directly reference but the standard is. remove \"MIB\" from the name.</p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T18:59:04.244Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-29T13:53:28.017Z",
+                      "commentIndex": 1,
+                      "deleteLastComment": "<p>Done</p>"
                     }
                   ]
                 },
@@ -2614,6 +2695,7 @@
                 {
                   "id": "62",
                   "guid": "861091ae-2487-48de-accc-65266ece67cf",
+                  "deleted": true,
                   "heading": "SAE J3268_202303",
                   "text": "<p>Listing of Provider Service Identifiers and Associated Application Technical Reports, SAE, March 2023.</p>",
                   "type": "list_table_row",
@@ -2666,6 +2748,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-08-09T16:44:10.871Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T13:53:58.582Z"
                     }
                   ]
                 },
@@ -2977,6 +3070,123 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T15:57:42.305Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "26",
+                  "guid": "d3c37fcb-08d0-4513-aff7-a260536a885a",
+                  "heading": "IEEE 1609.4",
+                  "text": "<p>IEEE Standard for Wireless Access in Vehicular Environments (WAVE) -- Multi-Channel Operation, IEEE, 2016.</p>",
+                  "type": "list_table_row",
+                  "discussion": [
+                    {
+                      "comment": "<p><span style=\"text-align: start;\">Not used in a normative statement. Moved to Other References</span></p>",
+                      "date": "2024-08-09T16:05:36.851Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      },
+                      "updatedOn": "2024-10-29T18:59:37.178Z"
+                    }
+                  ],
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-18T15:46:44.140Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null,
+                        "text": "<p>IEEE 1609.4|IEEE Standard for Wireless Access in Vehicular Environments (WAVE) -- Multi-Channel Operation, IEEE, 2016.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-07-18T15:48:12.991Z"
+                    },
+                    {
+                      "addedComment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-08-09T16:05:36.851Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:05:36.851Z"
+                    },
+                    {
+                      "addedComment": "<p>Moved to Other References</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T13:46:48.030Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-29T13:46:48.030Z"
+                    },
+                    {
+                      "affectedNodeId": "16",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T13:47:03.126Z",
+                      "docId": "NTCIP_1218",
+                      "structureAction": "Cut"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T18:59:27.722Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-29T13:46:48.030Z",
+                      "commentIndex": 1,
+                      "deleteLastComment": "<p>Moved to Other References</p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T18:59:37.178Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:05:36.851Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p><span style=\"text-align: start;\">Not used in a normative statement.</span></p>"
                     }
                   ]
                 },
@@ -3298,13 +3508,14 @@
                   "type": "list_table_row",
                   "discussion": [
                     {
-                      "comment": "<p>The only reference is in E.15.5, which is in an Informative annex - so even though the text is written in a normative manner, it is technically still informative.</p>",
+                      "comment": "<p>Moved to other refereneces. The only reference is in E.15.5, which is in an Informative annex - so even though the text is written in a normative manner, it is technically still informative.</p>",
                       "date": "2024-10-18T13:50:46.331Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
-                      }
+                      },
+                      "updatedOn": "2024-10-29T19:00:17.687Z"
                     }
                   ],
                   "history": [
@@ -3398,6 +3609,53 @@
                       "changedOn": "2024-10-18T13:51:28.227Z",
                       "docId": "NTCIP_1218",
                       "structureAction": "Cut"
+                    },
+                    {
+                      "addedComment": "<p>Done</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T18:46:53.316Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-29T18:46:53.316Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T18:59:53.356Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-29T18:46:53.316Z",
+                      "commentIndex": 1,
+                      "deleteLastComment": "<p>Done</p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:00:17.687Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-18T13:50:46.331Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p>The only reference is in E.15.5, which is in an Informative annex - so even though the text is written in a normative manner, it is technically still informative.</p>"
                     }
                   ]
                 },
@@ -3473,14 +3731,14 @@
                   "type": "list_table_row",
                   "discussion": [
                     {
-                      "comment": "<p>Can be moved to other references if 3.6.1.2.1 is deleted</p>",
+                      "comment": "<p>With deletion of 3.6.1.2.1, this was moved to other references.</p>",
                       "date": "2024-08-09T16:30:35.567Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
                       },
-                      "updatedOn": "2024-08-09T16:33:29.219Z"
+                      "updatedOn": "2024-10-29T19:01:01.225Z"
                     }
                   ],
                   "history": [
@@ -3548,6 +3806,53 @@
                       "changedOn": "2024-10-18T13:56:16.345Z",
                       "docId": "NTCIP_1218",
                       "structureAction": "Cut"
+                    },
+                    {
+                      "addedComment": "<p>Done</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T18:46:36.130Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-29T18:46:36.130Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:01:01.225Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:30:35.567Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p>Can be moved to other references if 3.6.1.2.1 is deleted</p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:01:38.114Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-29T18:46:36.130Z",
+                      "commentIndex": 1,
+                      "deleteLastComment": "<p>Done</p>"
                     }
                   ]
                 },
@@ -3559,13 +3864,14 @@
                   "type": "list_table_row",
                   "discussion": [
                     {
-                      "comment": "<p>Can be moved to other references if Annex G is deleted</p>",
+                      "comment": "<p>With deletion of Annex G, this was moved to other references.</p>",
                       "date": "2024-08-09T16:33:40.122Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
-                      }
+                      },
+                      "updatedOn": "2024-10-29T19:01:25.921Z"
                     }
                   ],
                   "history": [
@@ -3617,6 +3923,53 @@
                       "changedOn": "2024-10-18T13:56:51.982Z",
                       "docId": "NTCIP_1218",
                       "structureAction": "Cut"
+                    },
+                    {
+                      "addedComment": "<p>Done</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T18:46:42.025Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-29T18:46:42.025Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:01:25.921Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-08-09T16:33:40.122Z",
+                      "commentIndex": 0,
+                      "editLastComment": "<p>Can be moved to other references if Annex G is deleted</p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:01:31.813Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-29T18:46:42.025Z",
+                      "commentIndex": 1,
+                      "deleteLastComment": "<p>Done</p>"
                     }
                   ]
                 },
@@ -4861,16 +5214,17 @@
               "id": "1998",
               "guid": "902edd77-9d27-4e13-92aa-a72de62c5b4d",
               "heading": "PSID Values",
-              "text": "<p>All PSID values referenced in this document and used within a device conforming to this document shall be interpreted according to the IEEE Provider Service Identifier (PSID) Registration Authority.</p>",
+              "text": "<p>All PSID values referenced in this document and used within a device conforming to this document shall be interpreted according to the IEEE Provider Service Identifier (PSID) Public Listing.</p>",
               "discussion": [
                 {
-                  "comment": "<p>Should probably reference the Public Listing rather than the RA</p>",
+                  "comment": "<p>Revised to reference the Public Listing rather than the RA</p>",
                   "date": "2024-10-16T18:41:28.196Z",
                   "author": {
                     "name": "Kenneth Vaughn",
                     "email": "kvaughn@trevilon.com",
                     "company": "Trevilon"
-                  }
+                  },
+                  "updatedOn": "2024-10-29T19:02:05.714Z"
                 }
               ],
               "history": [
@@ -4921,6 +5275,64 @@
                     "name": "Kenneth Vaughn"
                   },
                   "commentDate": "2024-10-16T18:41:28.196Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>All PSID values referenced in this document and used within a device conforming to this document shall be interpreted according to the IEEE Provider Service Identifier (PSID) Registration Authority.</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T18:47:22.927Z"
+                },
+                {
+                  "addedComment": "<p>Done</p>",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T18:47:32.025Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-29T18:47:32.025Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T19:02:05.714Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-16T18:41:28.196Z",
+                  "commentIndex": 0,
+                  "editLastComment": "<p>Should probably reference the Public Listing rather than the RA</p>"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T19:02:12.611Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-29T18:47:32.025Z",
+                  "commentIndex": 1,
+                  "deleteLastComment": "<p>Done</p>"
                 }
               ]
             }
@@ -6640,21 +7052,70 @@
               ]
             },
             {
-              "id": "189",
-              "guid": "ffe505b0-cc27-46c1-bdca-e82f4f250449",
-              "heading": "OID",
-              "text": "<p>Object Identifier</p>",
-              "type": "a",
+              "id": "2007",
+              "guid": "48ad1860-63ac-41d4-82a6-f195021ba3c0",
+              "heading": "OER",
+              "text": "<p>Octet Encoding Rules</p>",
               "discussion": [
                 {
-                  "comment": "<p>Add OER</p>",
-                  "date": "2024-08-08T00:21:30.870Z",
+                  "comment": "<p>Added</p>",
+                  "date": "2024-10-29T18:53:07.597Z",
                   "author": {
                     "name": "Kenneth Vaughn",
                     "email": "kvaughn@trevilon.com",
                     "company": "Trevilon"
                   }
                 }
+              ],
+              "history": [
+                {
+                  "affectedNodeId": "164",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T18:47:44.420Z",
+                  "docId": "NTCIP_1218",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T18:47:54.310Z"
+                },
+                {
+                  "addedComment": "<p>Added</p>",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T18:53:07.597Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-29T18:53:07.597Z"
+                }
+              ]
+            },
+            {
+              "id": "189",
+              "guid": "ffe505b0-cc27-46c1-bdca-e82f4f250449",
+              "heading": "OID",
+              "text": "<p>Object Identifier</p>",
+              "type": "a",
+              "discussion": [
+
               ],
               "history": [
                 {
@@ -6705,6 +7166,53 @@
                     "name": "Kenneth Vaughn"
                   },
                   "commentDate": "2024-08-08T00:21:30.870Z"
+                },
+                {
+                  "addedComment": "<p>Added</p>",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T18:48:02.478Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-29T18:48:02.478Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T18:53:13.845Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-29T18:48:02.478Z",
+                  "commentIndex": 1,
+                  "deleteLastComment": "<p>Added</p>"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T18:53:19.044Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-08-08T00:21:30.870Z",
+                  "commentIndex": 0,
+                  "deleteLastComment": "<p>Add OER</p>"
                 }
               ]
             },
@@ -10006,6 +10514,7 @@
         {
           "id": "269",
           "guid": "50404227-086c-49f4-a2a4-3ac28e944d71",
+          "deleted": true,
           "heading": "Architectural Needs",
           "type": "unp",
           "discussion": [
@@ -10056,12 +10565,24 @@
                 "name": "Kenneth Vaughn"
               },
               "commentDate": "2024-08-08T02:26:00.813Z"
+            },
+            {
+              "attributesChanged": {
+                "deleted": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-10-29T19:12:43.754Z"
             }
           ],
           "children": [
             {
               "id": "270",
               "guid": "0b7fd536-3227-4cde-ab47-537d4ef93204",
+              "deleted": true,
               "text": "<p>NTCIP 1218 addresses the interface between an RSU and one or more management stations (e.g., central computers, laptops, etc.). The management station may also need to retrieve data that has been collected by the RSU and manage applications on the RSU. After the management station has retrieved the data of interest, a manager can use the retrieved data to make decisions and initiate other events (such as changes to the traveler information messages) to better manage the transportation system.</p>",
               "type": "text",
               "history": [
@@ -10075,12 +10596,24 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-18T16:41:50.736Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T19:12:43.754Z"
                 }
               ]
             },
             {
               "id": "271",
               "guid": "534b8cd0-ed4d-4823-8c21-0d555903b7db",
+              "deleted": true,
               "text": "<p>To fulfill these needs, the transportation system manager needs to establish a communication system that links the RSU with a management station. For some systems, the resources required for communications may be minimal; other systems may require significant resources for communicating with the RSU and as such, the system may be designed to minimize data exchanges. When deploying an RSU, the system designer needs to consider which of the following operational environments need to be supported.</p>",
               "type": "text",
               "history": [
@@ -10094,12 +10627,24 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-18T16:41:50.736Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T19:12:43.754Z"
                 }
               ]
             },
             {
               "id": "272",
               "guid": "a7d090da-e6fd-40f2-8921-068db1002927",
+              "deleted": true,
               "text": "<p>The RSU acts as an intermediary between the management station and the connected devices, such as OBUs. The RSU provides support functions in that role, such as firmware updates, data retrieval, and process management. The RSU also needs to support the exchange of data from connected devices for road network monitoring, safety, and other applications.</p>",
               "type": "text",
               "history": [
@@ -10113,12 +10658,24 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-18T16:41:50.736Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T19:12:43.754Z"
                 }
               ]
             },
             {
               "id": "273",
               "guid": "7dd61095-f6e9-4e49-abe7-8069dc28eb4e",
+              "deleted": true,
               "text": "<p>An RSU is expected to operate in the communications environment defined as follows.</p>",
               "type": "text",
               "history": [
@@ -10132,12 +10689,24 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-18T16:41:50.736Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T19:12:43.754Z"
                 }
               ]
             },
             {
               "id": "274",
               "guid": "7f7d06e7-7abd-4014-b3fc-ad891d47fa13",
+              "deleted": true,
               "heading": "Configure, Monitor, and Control the RSU",
               "type": "un",
               "history": [
@@ -10151,12 +10720,24 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-18T16:42:25.011Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T19:12:43.754Z"
                 }
               ],
               "children": [
                 {
                   "id": "275",
                   "guid": "7502bca0-ee98-44c4-982e-190808615d48",
+                  "deleted": true,
                   "text": "<p>A transportation manager and transportation operator need to retrieve data and control the RSU by issuing requests (e.g., requests to access information, alter information, or control the device). In this environment, the RSU responds to requests from the management station (e.g., through the provision of live data, success/failure notice of information alteration, or success/failure of the command).</p>",
                   "type": "text",
                   "history": [
@@ -10170,6 +10751,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T16:43:17.745Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:12:43.754Z"
                     }
                   ]
                 }
@@ -10178,6 +10770,7 @@
             {
               "id": "276",
               "guid": "a50cd312-8388-411b-9c2a-b54720dcdc4c",
+              "deleted": true,
               "heading": "Provide for Log Data Local Storage and Retrieval",
               "type": "un",
               "history": [
@@ -10191,12 +10784,24 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-18T16:42:25.011Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T19:12:43.754Z"
                 }
               ],
               "children": [
                 {
                   "id": "277",
                   "guid": "4a145f2e-b8a4-423e-81e2-86105b755083",
+                  "deleted": true,
                   "text": "<p>In a typical operational environment, a transportation operator needs logged data from the RSU for diagnostic purposes, and for operational environments (e.g., dial-up links) that do not have always-on connections. For example, logged data may include the time when the communications connectivity is broken.</p>",
                   "type": "text",
                   "history": [
@@ -10210,6 +10815,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T16:43:17.745Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:12:43.754Z"
                     }
                   ]
                 }
@@ -10218,6 +10834,7 @@
             {
               "id": "278",
               "guid": "a9146e3d-b606-4a8e-9eb7-737c473b2d56",
+              "deleted": true,
               "heading": "Condition-based Exception Reporting",
               "type": "un",
               "discussion": [
@@ -10257,12 +10874,24 @@
                     "name": "Kenneth Vaughn"
                   },
                   "commentDate": "2024-10-16T14:49:24.848Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T19:12:43.754Z"
                 }
               ],
               "children": [
                 {
                   "id": "279",
                   "guid": "c68a3149-b9ab-42c2-94c2-52a1ab285635",
+                  "deleted": true,
                   "text": "<p>In some operational environments, a transportation operator needs to have the RSU automatically transmit data to the management station when certain conditions occur. Under this scenario, a transportation manager can program the information to be automatically reported to the management station when a specified condition occurs. An example is a manager wants to know when an RSU enclosure door is opened, a power failure is detected, or an attempt to potentially hijack the device is detected; these conditions can be programmed to cause the transmission of the alarm objects thus providing the management station with information regarding the change of state at the RSU cabinet.</p>",
                   "type": "text",
                   "history": [
@@ -10276,8 +10905,1113 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T16:43:17.745Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:12:43.754Z"
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2058",
+          "guid": "9599a9fe-645e-41e6-a672-b34b5af9df00",
+          "heading": "Architectural Needs",
+          "type": "text",
+          "discussion": [
+            {
+              "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Added replacement clause; duplicated from NTCIP 1204, but we should discuss conformance for NTCIP 1218</span></p>",
+              "date": "2024-10-29T19:22:42.202Z",
+              "author": {
+                "name": "Kenneth Vaughn",
+                "email": "kvaughn@trevilon.com",
+                "company": "Trevilon"
+              },
+              "updatedOn": "2024-10-29T19:24:13.885Z"
+            }
+          ],
+          "history": [
+            {
+              "affectedNodeId": "471",
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-10-29T19:21:31.242Z",
+              "docId": "NTCIP_1204",
+              "structureAction": "Copy"
+            },
+            {
+              "addedComment": "<p>Added replacement clause; duplicated from NTCIP 1204, but we should discuss conformance for NTCIP 1218</p>",
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-10-29T19:22:42.202Z",
+              "commentAuthor": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "commentDate": "2024-10-29T19:22:42.202Z"
+            },
+            {
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-10-29T19:24:13.885Z",
+              "commentAuthor": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "commentDate": "2024-10-29T19:22:42.202Z",
+              "commentIndex": 0,
+              "editLastComment": "<p>Added replacement clause; duplicated from NTCIP 1204, but we should discuss conformance for NTCIP 1218</p>"
+            }
+          ],
+          "children": [
+            {
+              "id": "2059",
+              "guid": "0bd324ff-474a-4b82-8129-ecfc7407a6c4",
+              "heading": "ISO 26048-1 Needs Included",
+              "text": "<p>All the architectural needs are defined within the user needs of ISO 26048-1. Commonly used architectural needs within the scope of a ESS are listed in the PRL with references to the relevant ISO 26048-1 clauses and include the following:</p>",
+              "type": "text",
+              "history": [
+                {
+                  "affectedNodeId": "2059",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T19:21:31.242Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "2060",
+                  "guid": "b3b9bf54-6d72-4ff4-9570-c6cb9eb513f0",
+                  "heading": "Authenticate users",
+                  "text": "<p>allows users to ensure that all communications with the device are with authenticated users.</p>",
+                  "conformance": "M",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2062",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2061",
+                  "guid": "a739479f-d9ba-48f2-94e0-1f271745255e",
+                  "heading": "Control access to data",
+                  "text": "<p>allows administrators to configure the detailed access privileges that are granted to each authenticated user.</p>",
+                  "conformance": "M",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "475",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2062",
+                  "guid": "5f4a0614-3f0d-4944-a55c-c8025da925e8",
+                  "heading": "Monitor failed access to the field device",
+                  "text": "<p>allows administrators to discover when unauthorized attempts are made to access the device.</p>",
+                  "conformance": "M",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2063",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2063",
+                  "guid": "c770d28e-0d3c-4c60-a870-40fa749b4120",
+                  "heading": "Manage the field device",
+                  "text": "<p>allows a user to remotely reset the controller and configure and monitor basic information about the field device, such as its:</p>",
+                  "conformance": "M",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2064",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2064",
+                  "guid": "cbe15249-2c02-4eb7-82ee-6dff77927c73",
+                  "text": "<p>Identity,</p>",
+                  "type": "l2",
+                  "history": [
+                    {
+                      "affectedNodeId": "2678",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2065",
+                  "guid": "ee30ab07-0ae1-4e85-a9ca-43f78649a9b1",
+                  "text": "<p>Location,</p>",
+                  "type": "l2",
+                  "history": [
+                    {
+                      "affectedNodeId": "2679",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2066",
+                  "guid": "49458fe3-f10a-452a-8707-494de4d4bd15",
+                  "text": "<p>Power source,</p>",
+                  "type": "l2",
+                  "history": [
+                    {
+                      "affectedNodeId": "2680",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2067",
+                  "guid": "05a79edb-0e43-4149-ae55-f90532e83f55",
+                  "text": "<p>Default language,</p>",
+                  "type": "l2",
+                  "history": [
+                    {
+                      "affectedNodeId": "2681",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2068",
+                  "guid": "a9d23904-fbb1-46af-907c-b8e3a94f5398",
+                  "text": "<p>Capabilities (e.g., which objects are supported, maximum message size),</p>",
+                  "type": "l2",
+                  "history": [
+                    {
+                      "affectedNodeId": "2682",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2069",
+                  "guid": "1bb3e8f5-3190-4b74-aa90-22d4f3137a59",
+                  "text": "<p>Status, and</p>",
+                  "type": "l2",
+                  "history": [
+                    {
+                      "affectedNodeId": "2683",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2070",
+                  "guid": "798fb531-efe8-431f-acf5-3cd8f08f053f",
+                  "text": "<p>Configuration identifier.</p>",
+                  "type": "l2",
+                  "history": [
+                    {
+                      "affectedNodeId": "2684",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2071",
+                  "guid": "95f1e210-19ec-4f3c-9bae-060195cf65f6",
+                  "heading": "Monitor field device components",
+                  "type": "text",
+                  "history": [
+                    {
+                      "affectedNodeId": "2069",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "2072",
+                      "guid": "da164fd8-e58d-413b-8b26-e4a5d66f3a75",
+                      "heading": "Monitor field device enclosure",
+                      "text": "<p>allows a user to monitor the device environment and enclosure(s), including:</p>",
+                      "type": "text",
+                      "history": [
+                        {
+                          "affectedNodeId": "2074",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:21:31.242Z",
+                          "docId": "NTCIP_1204",
+                          "structureAction": "Copy"
+                        }
+                      ],
+                      "children": [
+                        {
+                          "id": "2073",
+                          "guid": "0021eb50-1539-45ae-adad-8528d22b2f6f",
+                          "heading": "Monitor field device doors",
+                          "conformance": "M",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2075",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "2074",
+                          "guid": "4ada0e62-9a2b-4cc0-b6b4-b4d941e67639",
+                          "heading": "Monitor field device enclosure air temperature",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2076",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "2075",
+                          "guid": "afe90637-a99d-48db-a9c6-77b950c38bca",
+                          "heading": "Monitor field device processor temperature",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2077",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "2076",
+                          "guid": "6924f246-2051-441c-8d3b-68bc70df3c18",
+                          "heading": "Monitor field device enclosure humidity",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2078",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "2077",
+                      "guid": "728f3f1d-29de-4a11-89b6-f469cc50221e",
+                      "heading": "Manage enclosure climate control components",
+                      "text": "<p>allows a user to monitor and control climate control components, including:</p>",
+                      "type": "text",
+                      "history": [
+                        {
+                          "affectedNodeId": "2079",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:21:31.242Z",
+                          "docId": "NTCIP_1204",
+                          "structureAction": "Copy"
+                        }
+                      ],
+                      "children": [
+                        {
+                          "id": "2078",
+                          "guid": "80c84e37-0039-45a9-ac9a-30c8bd90c83f",
+                          "heading": "Manage field device fans",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2080",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "2079",
+                          "guid": "de3c5f98-46b5-4604-8979-4859b2844d04",
+                          "heading": "Manage field device heaters",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2081",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "2080",
+                          "guid": "2b15ffc8-a3c9-4e1e-bbfc-2ce85c8e1ed8",
+                          "heading": "Manage field device dehumidifiers",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2082",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "2081",
+                          "guid": "5a73f79d-5c5d-47eb-9730-197d15b5c31c",
+                          "heading": "Manage field device air conditioners",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2083",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "2082",
+                          "guid": "558f99ca-6a1e-4ae3-8a94-b54ccebe78c8",
+                          "heading": "Manage field device thermostat",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2084",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "2083",
+                      "guid": "7619583f-4a84-4bd2-ab0e-1ed875605c30",
+                      "heading": "Monitor field device power",
+                      "text": "<p>allows a user to monitor and control power equipment, including:</p>",
+                      "type": "text",
+                      "history": [
+                        {
+                          "affectedNodeId": "2085",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:21:31.242Z",
+                          "docId": "NTCIP_1204",
+                          "structureAction": "Copy"
+                        }
+                      ],
+                      "children": [
+                        {
+                          "id": "2084",
+                          "guid": "599067c5-193d-4379-b2a8-c2e50ac4af99",
+                          "heading": "Monitor field device power supplies",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2086",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "2085",
+                          "guid": "57846550-d0b5-4321-b528-7f2bfe0571f5",
+                          "heading": "Monitor field device mains power",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2087",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "2086",
+                          "guid": "f1424ba7-5595-4df9-8c17-5498da78080c",
+                          "heading": "Monitor field device battery power",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2088",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "2087",
+                          "guid": "a587fe2a-a739-4438-985a-3e3ea2f2d957",
+                          "heading": "Monitor field device generator power",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2089",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "2088",
+                          "guid": "329a6f70-8289-42e6-a254-bdc7236c7b30",
+                          "heading": "Monitor field device solar power",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2090",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "2089",
+                          "guid": "de185d98-e00b-4758-b837-943caa640b31",
+                          "heading": "Monitor field device wind power",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2091",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "2090",
+                      "guid": "5df369a3-6597-4821-9614-9ea90d65530e",
+                      "heading": "Manage auxiliary ports",
+                      "text": "<p>allows a user to monitor and control support equipment, including:</p>",
+                      "type": "text",
+                      "history": [
+                        {
+                          "affectedNodeId": "2092",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:21:31.242Z",
+                          "docId": "NTCIP_1204",
+                          "structureAction": "Copy"
+                        }
+                      ],
+                      "children": [
+                        {
+                          "id": "2091",
+                          "guid": "cab200c2-7ca2-4df2-92c2-cb196dd825dc",
+                          "heading": "Manage field device auxiliary bi-directional ports",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2093",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "2092",
+                          "guid": "94bbac0f-889c-4897-b42b-d6424f623cfd",
+                          "heading": "Monitor field device auxiliary inputs",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2094",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "2093",
+                          "guid": "efaeacc7-7775-4c86-b127-2c98614e072e",
+                          "heading": "Manage field device auxiliary outputs",
+                          "conformance": "O",
+                          "status": "current",
+                          "type": "unr",
+                          "history": [
+                            {
+                              "affectedNodeId": "2095",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:21:31.242Z",
+                              "docId": "NTCIP_1204",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "2094",
+                  "guid": "04276134-5310-4233-a8bf-6ff37df9347e",
+                  "heading": "Receive notification of triggers firing",
+                  "text": "<p>allows a user to define trigger conditions (e.g., an object value exceeding a defined value) and to automatically receive an SNMP notification when the trigger condition occurs.</p>",
+                  "conformance": "O.2 (1..*)",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2096",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2095",
+                  "guid": "fe59dfab-a1fd-4d67-8a0c-4de9f1486cf7",
+                  "heading": "Manage device-specific notifications",
+                  "text": "<p>allows the user to configure all supported notifications to use notification channels, which prevent notifications from flooding the communications channel.</p>",
+                  "conformance": "deviceNotifications:M",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2103",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2096",
+                  "guid": "1a4eed3a-df75-4a7c-9b74-92485190131c",
+                  "heading": "Log system events",
+                  "text": "<p>allows the device to record information about internal events that can be of interest during forensic analysis, e.g., for debugging purposes.</p>",
+                  "conformance": "M",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2102",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2097",
+                  "guid": "6eab393a-635e-4475-a2a1-b79e83b277a9",
+                  "heading": "Log user-defined data snapshots",
+                  "text": "<p>allows a user to define trigger conditions (e.g., an object value exceeding a defined value) and to automatically log information when the trigger condition occurs.</p>",
+                  "conformance": "O.2 (1..*)",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2099",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2098",
+                  "guid": "e9d728eb-b229-4cc5-a308-261ffababea7",
+                  "heading": "Issue trigger-based commands",
+                  "text": "<p>allows a user to define trigger conditions (e.g., an object value exceeding a defined value) and to automatically send another device an SNMP set request when the trigger condition occurs. For example, when ice is detected by a pavement sensor, command an attached gate to close (however, this example is discouraged as a gate closure should include verification mechanisms not offered by this feature to ensure safe operations).</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2104",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2099",
+              "guid": "c1ff76d9-7ae5-49a0-9f87-10a972d391b0",
+              "heading": "ISO 26048-1 Needs Omitted due to Duplication",
+              "type": "text",
+              "history": [
+                {
+                  "affectedNodeId": "2060",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T19:21:31.242Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "2100",
+                  "guid": "0b459f72-7f93-4f3b-bb22-6b147a1fa492",
+                  "heading": "Monitor ambient air temperature",
+                  "text": "<p>The body of this document provides a more robust way to monitor ambient air temperature (2.5.2.1.3) that predates the design contained in ISO 26048-1.</p>",
+                  "status": "silent",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2071",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2101",
+                  "guid": "b4f440dc-d9c3-47a2-8d6e-443989780fde",
+                  "heading": "Monitor ambient relative humidity",
+                  "text": "<p>The body of this document provides a more robust way to monitor ambient relative humidity (2.5.2.1.4) that predates the design contained in ISO 26048-1.</p>",
+                  "status": "silent",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2072",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2102",
+              "guid": "ff789c99-25d1-47ba-b236-dd1a6db49497",
+              "heading": "ISO 26048-1 Needs not Envisioned for ESS",
+              "type": "text",
+              "history": [
+                {
+                  "affectedNodeId": "2061",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T19:21:31.242Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "2103",
+                  "guid": "9e18b7c3-1ae6-46bd-b377-e1a4112c0a11",
+                  "heading": "Monitor ambient light",
+                  "text": "<p>allows the device to measure ambient light levels (e.g., from the sun).</p>",
+                  "status": "silent",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2073",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2104",
+                  "guid": "93abdae3-1906-4dd6-9d08-263bb3c38734",
+                  "heading": "Record a series of data snapshots",
+                  "text": "<p>allows a user to define trigger conditions (e.g., an object value exceeding a defined value) and to automatically log a series of snapshots based on the trigger condition occurring. For example, when the cabinet door opens, record the cabinet temperature once a second for 60 seconds.</p>",
+                  "status": "silent",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2109",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2105",
+                  "guid": "b86cf353-84c3-4da5-a213-7d4714f20be8",
+                  "heading": "Configure a complex device",
+                  "text": "<p>allows a user to buffer changes to a large number of inter-related configuration parameters so that the proposed changes can be validated as a whole prior to ensure a safe configuration prior to implementation.&nbsp;</p>",
+                  "status": "silent",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2111",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "2106",
+                  "guid": "af916e6f-b6dd-4313-9bbc-4e1174ea8f38",
+                  "heading": "Efficient exchange of data",
+                  "text": "<p>allows a management station to define dynamic objects that can be used for frequent requests to reduce communications overhead. For example, rather than monitoring 15 discreet status objects, the 15 objects can be placed into a dynamic object and retrieved as a single entity. This can be useful when a management station frequently exchanges a large number of integer values with the device.</p>",
+                  "status": "silent",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2107",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:21:31.242Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2107",
+              "guid": "85aff625-e4ee-4368-8193-bd8c5e8076cb",
+              "heading": "Responsive Device",
+              "text": "<p>A transportation system operator needs the device to be responsive to conditions without causing unnecessary communication delays.</p>",
+              "conformance": "M",
+              "status": "current",
+              "type": "un",
+              "history": [
+                {
+                  "affectedNodeId": "3208",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T19:21:31.242Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Copy"
                 }
               ]
             }
@@ -10376,7 +12110,7 @@
                 {
                   "id": "282",
                   "guid": "7ef269ce-a2b1-4908-baea-1dfb4a3d2156",
-                  "text": "<p><a>The features that allow</a> a transportation manager to manage the configuration of the RSU follow.</p>",
+                  "text": "<p>The features that allow a transportation manager to manage the configuration of the RSU follow.</p>",
                   "type": "text",
                   "history": [
                     {
@@ -10389,6 +12123,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T16:43:17.745Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p><a>The features that allow</a> a transportation manager to manage the configuration of the RSU follow.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T19:27:44.290Z"
                     }
                   ]
                 },
@@ -10414,7 +12159,7 @@
                     {
                       "id": "284",
                       "guid": "48050701-9d52-443d-ab02-a72a428a4e36",
-                      "text": "<p><a>The features that allow</a> a transportation manager to manage the RSU device follow.</p>",
+                      "text": "<p>The features that allow a transportation manager to manage the RSU device follow.</p>",
                       "type": "text",
                       "history": [
                         {
@@ -10427,6 +12172,17 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T16:43:17.745Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p><a>The features that allow</a> a transportation manager to manage the RSU device follow.</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:27:34.866Z"
                         }
                       ]
                     },
@@ -10437,14 +12193,14 @@
                       "type": "un",
                       "discussion": [
                         {
-                          "comment": "<p>Everything except rsuID is addressed by ISO 26048-1 and we should consider recommending rsuID as a global object.</p><p>Component information is handled by the ENTITY-MIB (RFC 6433) ISO 26048-1, 8.8.2.1.6</p><p>Supported standards and MIB version is better addressed by sysORID (RFC 3418) required by ISO 26048-1, 8.5.2.7</p><p>System name is handled by the same object along with sysContact and sysLocation as a part of RFC 3418, as required by ISO 26048-1, 8.5.2.1, 8.5.2.3</p><p>Deprecate or modify to be only rsuID</p>",
+                          "comment": "<p>Everything except rsuID is addressed by ISO 26048-1. Component information is handled by the ENTITY-MIB (RFC 6933) ISO 26048-1, 8.8.2.1.6. Supported standards and MIB version are better addressed by sysORID (RFC 3418) required by ISO 26048-1, 8.5.2.7. System name is handled by the same object along with sysContact and sysLocation as a part of RFC 3418, as required by ISO 26048-1, 8.5.2.1, 8.5.2.3.</p><p><span style=\"background-color: rgb(247, 218, 100);\">What is the intended difference between rsuID and sysName? NOTE: This user need alludes to an identifier \"as provided by the manufacturer\" however, both rsuID and sysName are read-write. However, RFC 6933 defines entPhysicalName that should satisfy this need.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Perhaps we delete this user need? Perhaps we need supplemental requirements to clearly define what \"components\" must have entries in the physical entity table?</span></p>",
                           "date": "2024-08-09T20:21:54.143Z",
                           "author": {
                             "name": "Kenneth Vaughn",
                             "email": "kvaughn@trevilon.com",
                             "company": "Trevilon"
                           },
-                          "updatedOn": "2024-08-09T20:25:07.641Z"
+                          "updatedOn": "2024-10-29T19:43:33.003Z"
                         }
                       ],
                       "history": [
@@ -10489,6 +12245,38 @@
                           "commentDate": "2024-08-09T20:21:54.143Z",
                           "commentIndex": 0,
                           "editLastComment": "<p>Everything except rsuID is addressed by ISO 26048-1 and we should consider recommending rsuID as a global object.</p><p>Component information is handled by ISO 26048-1, 8.8.2.1.6</p><p>System name is handled by the same object along with sysContact and sysLocation as a part of ISO 26048-1, 8.5.2.1, 8.5.2.3</p><p>Deprecate or modify to be only rsuID</p>"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:33:37.603Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-08-09T20:21:54.143Z",
+                          "commentIndex": 0,
+                          "editLastComment": "<p>Everything except rsuID is addressed by ISO 26048-1 and we should consider recommending rsuID as a global object.</p><p>Component information is handled by the ENTITY-MIB (RFC 6433) ISO 26048-1, 8.8.2.1.6</p><p>Supported standards and MIB version is better addressed by sysORID (RFC 3418) required by ISO 26048-1, 8.5.2.7</p><p>System name is handled by the same object along with sysContact and sysLocation as a part of RFC 3418, as required by ISO 26048-1, 8.5.2.1, 8.5.2.3</p><p>Deprecate or modify to be only rsuID</p>"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:43:33.003Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-08-09T20:21:54.143Z",
+                          "commentIndex": 0,
+                          "editLastComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Everything except rsuID is addressed by ISO 26048-1; What is the intended difference between rsuID and sysName? Perhaps we delete this user need?</span></p><p>Component information is handled by the ENTITY-MIB (RFC 6433) ISO 26048-1, 8.8.2.1.6</p><p>Supported standards and MIB version is better addressed by sysORID (RFC 3418) required by ISO 26048-1, 8.5.2.7</p><p>System name is handled by the same object along with sysContact and sysLocation as a part of RFC 3418, as required by ISO 26048-1, 8.5.2.1, 8.5.2.3</p><p>Deprecate or modify to be only rsuID</p>"
                         }
                       ],
                       "children": [
@@ -10516,17 +12304,19 @@
                     {
                       "id": "287",
                       "guid": "f132d3d7-8595-4133-9d68-108a33ea0ba3",
+                      "deleted": true,
                       "heading": "Retrieve Configuration Version of the RSU",
                       "type": "un",
                       "discussion": [
                         {
-                          "comment": "<p>Deprecate and supersede with fdConfigurationID (8.5.2.1.4)</p>",
+                          "comment": "<p>Deprecate and supersede with fdConfigurationID (8.5.2.14)</p>",
                           "date": "2024-08-09T20:26:46.475Z",
                           "author": {
                             "name": "Kenneth Vaughn",
                             "email": "kvaughn@trevilon.com",
                             "company": "Trevilon"
-                          }
+                          },
+                          "updatedOn": "2024-10-29T19:49:11.050Z"
                         }
                       ],
                       "history": [
@@ -10555,13 +12345,85 @@
                             "name": "Kenneth Vaughn"
                           },
                           "commentDate": "2024-08-09T20:26:46.475Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:45:58.114Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": true
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:46:01.141Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:46:48.987Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": true
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:49:01.477Z"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:49:11.050Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-08-09T20:26:46.475Z",
+                          "commentIndex": 0,
+                          "editLastComment": "<p>Deprecate and supersede with fdConfigurationID (8.5.2.1.4)</p>"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:50:23.019Z"
                         }
                       ],
                       "children": [
                         {
                           "id": "288",
                           "guid": "2c4e953f-5546-4fb7-8200-79893e1c9321",
-                          "text": "<p>A transportation manager needs to determine the version of the configuration parameters for the RSU. This feature allows a manager to determine if the RSU has the correct and expected values of the configuration parameters. The configuration version identifier changes whenever a value of a configurable parameter changes. <a>For example, a manager can check the current version identifier of an RSU and if the value of the version identifier is different than expected by the manager, the difference indicates that configuration of the RSU has changed.</a></p>",
+                          "deleted": true,
+                          "text": "<p>A transportation manager needs to determine the version of the configuration parameters for the RSU. This feature allows a manager to determine if the RSU has the correct and expected values of the configuration parameters. The configuration version identifier changes whenever a value of a configurable parameter changes. For example, a manager can check the current version identifier of an RSU and if the value of the version identifier is different than expected by the manager, the difference indicates that configuration of the RSU has changed.</p>",
                           "type": "text",
                           "history": [
                             {
@@ -10574,6 +12436,72 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T16:43:17.745Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<p>A transportation manager needs to determine the version of the configuration parameters for the RSU. This feature allows a manager to determine if the RSU has the correct and expected values of the configuration parameters. The configuration version identifier changes whenever a value of a configurable parameter changes. <a>For example, a manager can check the current version identifier of an RSU and if the value of the version identifier is different than expected by the manager, the difference indicates that configuration of the RSU has changed.</a></p>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:27:05.652Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:45:58.114Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": true
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:46:01.141Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:46:48.987Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": true
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:49:01.477Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-10-29T19:50:23.019Z"
                             }
                           ]
                         }
@@ -10586,23 +12514,24 @@
                       "type": "un",
                       "discussion": [
                         {
-                          "comment": "<p>Consider ISO 26048-1 location objects and how they relate. (e.g., fdConfiguredLatitude and fdGnssLatitude) and whether we want to submit any comments on this topic</p>",
+                          "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Consider ISO 26048-1 location objects and how they relate. (e.g., fdConfiguredLatitude and fdGnssLatitude) and whether we want to submit any comments on this topic</span></p>",
                           "date": "2024-08-09T20:35:01.978Z",
                           "author": {
                             "name": "Kenneth Vaughn",
                             "email": "kvaughn@trevilon.com",
                             "company": "Trevilon"
                           },
-                          "updatedOn": "2024-08-09T20:36:03.214Z"
+                          "updatedOn": "2024-10-29T19:52:21.655Z"
                         },
                         {
-                          "comment": "<p>If we decide to keep, update the conditional links to conform to the required pattern</p>",
+                          "comment": "<p><span style=\"background-color: rgb(147, 101, 184); color: rgb(255, 255, 255);\">If we decide to keep, update the conditional links to conform to the required pattern</span></p>",
                           "date": "2024-08-09T20:38:05.376Z",
                           "author": {
                             "name": "Kenneth Vaughn",
                             "email": "kvaughn@trevilon.com",
                             "company": "Trevilon"
-                          }
+                          },
+                          "updatedOn": "2024-10-29T19:53:42.957Z"
                         }
                       ],
                       "history": [
@@ -10662,6 +12591,54 @@
                             "name": "Kenneth Vaughn"
                           },
                           "commentDate": "2024-08-09T20:38:05.376Z"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:52:21.655Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-08-09T20:35:01.978Z",
+                          "commentIndex": 0,
+                          "editLastComment": "<p>Consider ISO 26048-1 location objects and how they relate. (e.g., fdConfiguredLatitude and fdGnssLatitude) and whether we want to submit any comments on this topic</p>"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:53:00.701Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-08-09T20:38:05.376Z",
+                          "commentIndex": 1,
+                          "editLastComment": "<p>If we decide to keep, update the conditional links to conform to the required pattern</p>"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:53:42.957Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-08-09T20:38:05.376Z",
+                          "commentIndex": 1,
+                          "editLastComment": "<p><span style=\"background-color: rgb(44, 130, 201);\">If we decide to keep, update the conditional links to conform to the required pattern</span></p>"
                         }
                       ],
                       "children": [
@@ -10693,13 +12670,14 @@
                       "type": "un",
                       "discussion": [
                         {
-                          "comment": "<p>Traces to Configure Startup Retries and Retrieve Startup Retry Period should be deleted as they are already addressed by ISO 26048-1, 8.17.2.</p><p>The other items should be retained under this user need with an explanation that this is an extension of the ISO 26048-1 functionality (unless we want to make these other items global)</p>",
+                          "comment": "<p>Traces to Configure Startup Retries (3.5.1.1.4.4, O) and Retrieve Startup Retry Period (3.5.1.1.4.5, StartupFault:M) have been replaced with links to ISO 26048-1, 8.17.2.</p><p>Note added to explain that this is an extension to the base ISO 26048-1 functionality.</p>",
                           "date": "2024-08-09T20:45:09.457Z",
                           "author": {
                             "name": "Kenneth Vaughn",
                             "email": "kvaughn@trevilon.com",
                             "company": "Trevilon"
-                          }
+                          },
+                          "updatedOn": "2024-10-29T19:58:48.052Z"
                         }
                       ],
                       "history": [
@@ -10728,6 +12706,22 @@
                             "name": "Kenneth Vaughn"
                           },
                           "commentDate": "2024-08-09T20:45:09.457Z"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-29T19:58:48.052Z",
+                          "commentAuthor": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "commentDate": "2024-08-09T20:45:09.457Z",
+                          "commentIndex": 0,
+                          "editLastComment": "<p>Traces to Configure Startup Retries and Retrieve Startup Retry Period should be deleted as they are already addressed by ISO 26048-1, 8.17.2.</p><p>The other items should be retained under this user need with an explanation that this is an extension of the ISO 26048-1 functionality (unless we want to make these other items global)</p>"
                         }
                       ],
                       "children": [
@@ -29339,7 +31333,7 @@
                             {
                               "id": "893",
                               "guid": "d2dce1fe-efec-4214-9b54-3de469336c44",
-                              "text": "<p>Upon request from a traffic signal controller, the RSU shall store movement maneuver assist information for a signalized intersection. The movement maneuver assist information from the traffic signal controller consists of the signal group identifier the assist information is for, the vehicle queue length for that movement maneuver, and if any conflicting pedestrians or bicyclists are detected for that movement maneuver through the intersection. The movement maneuver assist information is provided in a format defined by NTCIP 1202 v03B.</p>",
+                              "text": "<p>Upon request from a traffic signal controller, the RSU shall store movement maneuver assist information for a signalized intersection. The movement maneuver assist information from the traffic signal controller consists of the signal group identifier the assist information is for, the vehicle queue length for that movement maneuver, and if any conflicting pedestrians or bicyclists are detected for that movement maneuver through the intersection. The movement maneuver assist information shall be provided in a format defined by NTCIP 1202 v03B.</p>",
                               "type": "text",
                               "history": [
                                 {
@@ -29352,6 +31346,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T18:17:15.027Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "text": "<p>Upon request from a traffic signal controller, the RSU shall store movement maneuver assist information for a signalized intersection. The movement maneuver assist information from the traffic signal controller consists of the signal group identifier the assist information is for, the vehicle queue length for that movement maneuver, and if any conflicting pedestrians or bicyclists are detected for that movement maneuver through the intersection. The movement maneuver assist information is provided in a format defined by NTCIP 1202 v03B.</p>"
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-10-29T13:48:57.147Z"
                                 }
                               ]
                             }
@@ -29400,7 +31405,7 @@
                             {
                               "id": "895",
                               "guid": "92f73ee5-61e1-4d66-b08e-649b57f4c8d1",
-                              "text": "<p>Upon request from a traffic signal controller, the RSU shall store speed advisories for a signalized intersection. The speed advisory information from the traffic signal controller consists of the signal group identifier the advisory is for, the advisory speed, the advisory speed type, the distance from the stop bar the advisory speed is effective for, and the vehicle types the speed advisory is intended for. The speed advisory information is provided in a format defined by NTCIP 1202 v03B.</p>",
+                              "text": "<p>Upon request from a traffic signal controller, the RSU shall store speed advisories for a signalized intersection. The speed advisory information from the traffic signal controller consists of the signal group identifier the advisory is for, the advisory speed, the advisory speed type, the distance from the stop bar the advisory speed is effective for, and the vehicle types the speed advisory is intended for. The speed advisory information shall be provided in a format defined by NTCIP 1202 v03B.</p>",
                               "type": "text",
                               "history": [
                                 {
@@ -29413,6 +31418,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T18:17:15.027Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "text": "<p>Upon request from a traffic signal controller, the RSU shall store speed advisories for a signalized intersection. The speed advisory information from the traffic signal controller consists of the signal group identifier the advisory is for, the advisory speed, the advisory speed type, the distance from the stop bar the advisory speed is effective for, and the vehicle types the speed advisory is intended for. The speed advisory information is provided in a format defined by NTCIP 1202 v03B.</p>"
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-10-29T13:49:09.193Z"
                                 }
                               ]
                             }
@@ -29461,7 +31477,7 @@
                             {
                               "id": "897",
                               "guid": "a12c277d-0752-4774-ae59-649e38b9f676",
-                              "text": "<p>Upon request from a traffic signal controller, the RSU shall store SPaT information for a signalized intersection. The SPaT information from the traffic signal controllers consists of the intersection status, the enabled lanes in effect, and movement data for the intersection containing what vehicle (or pedestrian) movements are permitted and when. The SPaT information is provided in a format defined by NTCIP 1202 v03B.</p>",
+                              "text": "<p>Upon request from a traffic signal controller, the RSU shall store SPaT information for a signalized intersection. The SPaT information from the traffic signal controllers consists of the intersection status, the enabled lanes in effect, and movement data for the intersection containing what vehicle (or pedestrian) movements are permitted and when. The SPaT information shall be provided in a format defined by NTCIP 1202 v03B.</p>",
                               "type": "text",
                               "history": [
                                 {
@@ -29474,6 +31490,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T18:17:15.027Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "text": "<p>Upon request from a traffic signal controller, the RSU shall store SPaT information for a signalized intersection. The SPaT information from the traffic signal controllers consists of the intersection status, the enabled lanes in effect, and movement data for the intersection containing what vehicle (or pedestrian) movements are permitted and when. The SPaT information is provided in a format defined by NTCIP 1202 v03B.</p>"
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-10-29T13:49:37.638Z"
                                 }
                               ]
                             }
@@ -44431,6 +46458,15 @@
                 "company": "Trevilon"
               },
               "updatedOn": "2024-08-08T02:41:49.981Z"
+            },
+            {
+              "comment": "<p>Update OerString to ITSOerString</p>",
+              "date": "2024-10-29T18:52:23.283Z",
+              "author": {
+                "name": "Kenneth Vaughn",
+                "email": "kvaughn@trevilon.com",
+                "company": "Trevilon"
+              }
             }
           ],
           "history": [
@@ -44505,6 +46541,21 @@
               "commentDate": "2024-08-08T02:40:14.132Z",
               "commentIndex": 2,
               "editLastComment": "<p>Update to latest NTCIP 8004 and import rsu rather than devices</p>"
+            },
+            {
+              "addedComment": "<p>Update OerString to ITSOerString</p>",
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-10-29T18:52:23.283Z",
+              "commentAuthor": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "commentDate": "2024-10-29T18:52:23.283Z"
             }
           ],
           "children": [
@@ -56522,13 +58573,14 @@
               },
               "discussion": [
                 {
-                  "comment": "<p>Should we propose making this an ISO 26048-1 object. Change to SnmpAdminString</p>",
+                  "comment": "<p>Is this really different than sysName: DisplayString (SIZE(0..255));&nbsp;</p><pre style=\"text-align: start; text-decoration: none;\">An administratively-assigned name for this managed\nnode.  By convention, this is the node's fully-qualified\ndomain name.  If the name is unknown, the value is\nthe zero-length string.</pre>",
                   "date": "2024-08-09T17:24:44.728Z",
                   "author": {
                     "name": "Kenneth Vaughn",
                     "email": "kvaughn@trevilon.com",
                     "company": "Trevilon"
-                  }
+                  },
+                  "updatedOn": "2024-10-29T19:31:34.523Z"
                 }
               ],
               "history": [
@@ -56571,6 +58623,22 @@
                     "name": "Kenneth Vaughn"
                   },
                   "commentDate": "2024-08-09T17:24:44.728Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-10-29T19:31:34.523Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-08-09T17:24:44.728Z",
+                  "commentIndex": 0,
+                  "editLastComment": "<p>Should we propose making this an ISO 26048-1 object. Change to SnmpAdminString</p>"
                 }
               ]
             },
@@ -66221,13 +68289,24 @@
                   "name": "rsuSignalStatusBlock",
                   "oid": "{ rsuSpatEntry 3 }",
                   "status": "current",
-                  "syntax": "OerString",
+                  "syntax": "<p>ITSOerString</p>",
                   "type": "ot",
                   "links": {
                     "satisfies": [
                       "NTCIP_1218-896"
                     ]
                   },
+                  "discussion": [
+                    {
+                      "comment": "<p>Updated syntax from OerString to ITSOerString</p>",
+                      "date": "2024-10-29T18:51:17.011Z",
+                      "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
                   "history": [
                     {
                       "affectedNodeId": "412",
@@ -66253,6 +68332,32 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T20:31:28.611Z"
+                    },
+                    {
+                      "addedComment": "<p>Updated syntax from OerString to ITSOerString</p>",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T18:51:17.011Z",
+                      "commentAuthor": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "commentDate": "2024-10-29T18:51:17.011Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "syntax": "OerString"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-29T18:51:23.686Z"
                     }
                   ]
                 }

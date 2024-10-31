@@ -9,7 +9,7 @@
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-10-29T19:21:31.242Z",
+  "lastChangedOn": "2024-10-30T01:18:58.358Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -682,6 +682,7 @@
               "type": "l1",
               "discussion": [
                 {
+                  "guid": "6ce1457d-010a-4bfe-8b54-6fa53ba13bc5",
                   "comment": "<p>Should we rename \"feature\" to \"package\" to better align with UML terminology (i.e., a package of requirements)</p>",
                   "date": "2023-07-01T21:36:41.673Z",
                   "author": {
@@ -2171,6 +2172,7 @@
               "type": "t",
               "discussion": [
                 {
+                  "guid": "e9c76b95-a1d0-4d00-a29b-ac24bb6a5d7a",
                   "comment": "<p>Should we change \"sample\" to \"snapshot\" to be more consistent in our terminology?</p>",
                   "date": "2023-07-02T19:52:58.533Z",
                   "author": {
@@ -2201,6 +2203,7 @@
               "type": "t",
               "discussion": [
                 {
+                  "guid": "5528ff75-0a2c-490a-99fc-9b13549e2d33",
                   "comment": "<p>Should we change this to command factory rather than command to be more descriptive?</p>",
                   "date": "2023-07-02T19:52:26.945Z",
                   "author": {
@@ -2431,6 +2434,7 @@
                   },
                   "discussion": [
                     {
+                      "guid": "b2323079-3b30-4e54-a968-d1591e3fbb82",
                       "comment": "<p>Should feature-specific augmentations of the owner table be editable while the row is active or should changes require disabling the owner row. Based on unintended consequences of disabling a row along with perhaps a desire to allow some administrators to configure feature-specific details but not deleting an owner, the current draft has assumed that changes can be made while an owner is active.</p>",
                       "date": "2023-06-16T13:44:36.920Z",
                       "author": {
@@ -5073,10 +5077,29 @@
                       "status": "current",
                       "type": "d_req",
                       "links": {
+                        "fulfil": [
+                          "NTCIP_1218-293"
+                        ],
                         "refine": [
                           "26048_1-345"
                         ]
-                      }
+                      },
+                      "history": [
+                        {
+                          "addedLink": {
+                            "target": [
+                              "NTCIP_1218-293"
+                            ],
+                            "type": "fulfil"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-10-30T01:18:58.358Z"
+                        }
+                      ]
                     },
                     {
                       "id": "1283",
@@ -8780,10 +8803,29 @@
                   "status": "current",
                   "type": "d_req",
                   "links": {
+                    "fulfil_opt": [
+                      "NTCIP_1218-291"
+                    ],
                     "refine": [
                       "26048_1-1259"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1218-291"
+                        ],
+                        "type": "fulfil_opt"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-30T01:11:39.831Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1263",
@@ -8792,10 +8834,29 @@
                   "status": "current",
                   "type": "d_req",
                   "links": {
+                    "fulfil_opt": [
+                      "NTCIP_1218-291"
+                    ],
                     "refine": [
                       "26048_1-1259"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1218-291"
+                        ],
+                        "type": "fulfil_opt"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-30T01:11:39.831Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1264",
@@ -8804,10 +8865,29 @@
                   "status": "current",
                   "type": "d_req",
                   "links": {
+                    "fulfil": [
+                      "Conditionals-91"
+                    ],
                     "refine": [
                       "26048_1-1259"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "addedLink": {
+                        "target": [
+                          "Conditionals-91"
+                        ],
+                        "type": "fulfil"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-10-30T01:09:17.095Z"
+                    }
+                  ]
                 }
               ]
             }
@@ -10853,6 +10933,7 @@
                   "type": "t",
                   "discussion": [
                     {
+                      "guid": "f59877a0-b2af-49fb-a9a9-158ecbc2c610",
                       "comment": "<p>What do we want to happen if the agent does not receive an acknowledgement?</p>",
                       "date": "2023-07-02T18:31:27.901Z",
                       "author": {
@@ -11773,6 +11854,6 @@
     }
   },
   "metadata": {
-    "format": "2.17"
+    "format": "2.20"
   }
 }

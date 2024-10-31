@@ -1,14 +1,14 @@
 {
   "id": "Conditionals",
   "guid": "f7d13c73-e6c9-45a0-b6d2-d4c8dba55085",
-  "lastId": 90,
+  "lastId": 91,
   "createdOn": "2023-04-25T18:11:32.430Z",
   "createdBy": {
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-10-29T19:21:31.242Z",
+  "lastChangedOn": "2024-10-30T01:07:22.493Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -1469,6 +1469,65 @@
           "changedOn": "2024-10-29T19:21:31.242Z"
         }
       ]
+    },
+    {
+      "id": "91",
+      "guid": "c660a829-96f1-44ff-b86a-0bea812aa955",
+      "heading": "Retrieve Startup Retry Period",
+      "links": {
+        "conditional": [
+          "NTCIP_1218-291"
+        ]
+      },
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-10-30T00:59:18.708Z",
+          "docId": "Conditionals",
+          "structureAction": "Create"
+        },
+        {
+          "attributesChanged": {
+            "heading": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-10-30T00:59:22.751Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-291"
+            ],
+            "type": "conditional"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-10-30T00:59:45.467Z"
+        },
+        {
+          "attributesChanged": {
+            "heading": "Manage RSU Startup Functions"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-10-30T01:07:22.493Z"
+        }
+      ]
     }
   ],
   "attributes": {
@@ -1495,6 +1554,6 @@
     }
   },
   "metadata": {
-    "format": "2.17"
+    "format": "2.20"
   }
 }

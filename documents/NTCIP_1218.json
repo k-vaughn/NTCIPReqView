@@ -9,7 +9,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2024-10-30T02:10:37.013Z",
+  "lastChangedOn": "2024-11-12T15:52:23.077Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -1491,14 +1491,14 @@
                   "discussion": [
                     {
                       "guid": "aef18343-4f72-48f5-a0a1-b506a928c0a6",
-                      "comment": "<p><span style=\"text-align: start;\">Was not used in a normative statement. Change the \"is\" in the last sentence of 3.5.1.4.3 subclauses to \"shall be\" to make normative.</span></p>",
+                      "comment": "<p><span style=\"text-align: start;\">Was not used in a normative statement. Changed the \"is\" in the last sentence of 3.5.1.4.3 subclauses to \"shall be\" to make normative.</span></p>",
                       "date": "2024-08-09T16:17:36.835Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
                       },
-                      "updatedOn": "2024-10-29T18:57:43.096Z"
+                      "updatedOn": "2024-11-12T15:23:13.149Z"
                     }
                   ],
                   "history": [
@@ -1591,6 +1591,16 @@
                       "changedOn": "2024-10-30T00:52:33.319Z",
                       "commentGuid": "aef18343-4f72-48f5-a0a1-b506a928c0a6",
                       "resolvedComment": true
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-11-12T15:23:13.149Z",
+                      "commentGuid": "aef18343-4f72-48f5-a0a1-b506a928c0a6",
+                      "updatedComment": "<p><span style=\"text-align: start;\">Was not used in a normative statement. Change the \"is\" in the last sentence of 3.5.1.4.3 subclauses to \"shall be\" to make normative.</span></p>"
                     }
                   ]
                 },
@@ -15631,13 +15641,14 @@
               "discussion": [
                 {
                   "guid": "32aec4da-857c-4484-b2b0-31077c50d7bd",
-                  "comment": "<p>Added requirement</p>",
+                  "comment": "<p>Added user need for standard security</p>",
                   "date": "2024-10-30T01:51:54.838Z",
                   "author": {
                     "name": "Kenneth Vaughn",
                     "email": "kvaughn@trevilon.com",
                     "company": "Trevilon"
-                  }
+                  },
+                  "updatedOn": "2024-11-12T15:29:43.027Z"
                 }
               ],
               "history": [
@@ -15705,6 +15716,16 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-10-30T02:10:37.013Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-12T15:29:43.027Z",
+                  "commentGuid": "32aec4da-857c-4484-b2b0-31077c50d7bd",
+                  "updatedComment": "<p>Added requirement</p>"
                 }
               ],
               "children": [
@@ -19493,18 +19514,20 @@
         {
           "id": "489",
           "guid": "75020a89-044d-4dc7-b2d9-79b7450b04d3",
-          "heading": "Architectural Requirements",
+          "heading": "Common Requirements",
+          "text": "<p>Requirements for common NTCIP capabilities are provided in ISO 26048-1.&nbsp;</p>",
           "type": "text",
           "discussion": [
             {
               "guid": "2f3d5210-ed3d-4de3-adf4-65c4d408284d",
-              "comment": "<p>Rename to common requirements and replace text with reference to ISO 26048-1</p>",
+              "comment": "<p>Renamed from Architectural Requirements to common requirements and replace text with reference to ISO 26048-1</p>",
               "date": "2024-08-09T19:22:52.705Z",
               "author": {
                 "name": "Kenneth Vaughn",
                 "email": "kvaughn@trevilon.com",
                 "company": "Trevilon"
-              }
+              },
+              "updatedOn": "2024-11-12T15:31:42.787Z"
             }
           ],
           "history": [
@@ -19533,14 +19556,46 @@
                 "name": "Kenneth Vaughn"
               },
               "commentDate": "2024-08-09T19:22:52.705Z"
+            },
+            {
+              "attributesChanged": {
+                "heading": "Architectural Requirements"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-11-12T15:31:19.869Z"
+            },
+            {
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-11-12T15:31:42.787Z",
+              "commentGuid": "2f3d5210-ed3d-4de3-adf4-65c4d408284d",
+              "updatedComment": "<p>Rename to common requirements and replace text with reference to ISO 26048-1</p>"
+            },
+            {
+              "attributesChanged": {
+                "text": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Kenneth Vaughn"
+              },
+              "changedOn": "2024-11-12T15:32:19.689Z"
             }
           ],
           "children": [
             {
               "id": "490",
               "guid": "48d80040-d0b9-4f7b-a158-e44b57e8331b",
-              "text": "<p>Requirements for communication capabilities follow.</p>",
-              "type": "text",
+              "text": "<p>This subsection is primarily present so that all other requirements can maintain numbering consistency with prior versions.</p>",
+              "type": "n",
               "history": [
                 {
                   "attributesChanged": {
@@ -19552,12 +19607,35 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-18T17:23:29.574Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>Requirements for communication capabilities follow.</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-12T15:32:33.823Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": "text"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-12T15:32:46.945Z"
                 }
               ]
             },
             {
               "id": "491",
               "guid": "e9661924-545a-4715-9d73-25dee8b1663f",
+              "deleted": true,
               "heading": "Support Basic Communications Requirements",
               "type": "text",
               "history": [
@@ -19571,12 +19649,24 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-18T17:23:29.574Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-12T15:33:01.548Z"
                 }
               ],
               "children": [
                 {
                   "id": "492",
                   "guid": "b62896ba-0e9b-4002-9bca-30d6c1a883b5",
+                  "deleted": true,
                   "text": "<p>Requirements for a transportation manager and transportation operator to make requests to an RSU follow.</p>",
                   "type": "text",
                   "history": [
@@ -19590,12 +19680,24 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T17:23:29.574Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-11-12T15:33:01.548Z"
                     }
                   ]
                 },
                 {
                   "id": "493",
                   "guid": "596a6f4f-ed87-440c-be1b-ccbcbab821ed",
+                  "deleted": true,
                   "heading": "Retrieve Data",
                   "type": "d_req",
                   "links": {
@@ -19628,12 +19730,24 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T15:13:32.047Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-11-12T15:33:01.548Z"
                     }
                   ],
                   "children": [
                     {
                       "id": "494",
                       "guid": "c53519b3-f355-4fa7-8ad6-fa112cf255a0",
+                      "deleted": true,
                       "text": "<p>Upon request from a management station, the RSU shall provide the data requested. This is a high-level requirement. The exact detailed requirements for the RSU to provide the specific values of data requested are defined by numerous functional requirements found in Section 3.5, Data Exchange and Operational Environment Requirements.</p>",
                       "type": "text",
                       "history": [
@@ -19647,6 +19761,17 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T17:28:03.441Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-11-12T15:33:01.548Z"
                         }
                       ]
                     }
@@ -19655,6 +19780,7 @@
                 {
                   "id": "495",
                   "guid": "64621383-7dab-429c-9200-3e76aad30d3f",
+                  "deleted": true,
                   "heading": "Deliver Data",
                   "type": "d_req",
                   "links": {
@@ -19687,12 +19813,24 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T15:13:32.047Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-11-12T15:33:01.548Z"
                     }
                   ],
                   "children": [
                     {
                       "id": "496",
                       "guid": "787de9f5-9284-4a83-a377-c4c46f626b70",
+                      "deleted": true,
                       "text": "<p>Upon request from a management station, the RSU shall receive the data (e.g., configuration data, commands, etc.) provided. This is a high-level requirement. The exact detailed requirements to store the specific values of data requested are defined by numerous functional requirements found in Section 3.5, Data Exchange and Operational Environment Requirements.</p>",
                       "type": "text",
                       "history": [
@@ -19706,6 +19844,17 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T17:28:03.441Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-11-12T15:33:01.548Z"
                         }
                       ]
                     }
@@ -19714,6 +19863,7 @@
                 {
                   "id": "497",
                   "guid": "b1f49bed-bde8-46c2-983f-04837e7b7bfe",
+                  "deleted": true,
                   "heading": "Explore Data",
                   "type": "d_req",
                   "links": {
@@ -19746,12 +19896,24 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T15:13:32.047Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-11-12T15:33:01.548Z"
                     }
                   ],
                   "children": [
                     {
                       "id": "498",
                       "guid": "a2c45c2c-7d4d-486d-bb18-735f9ed984fd",
+                      "deleted": true,
                       "text": "<p>Upon request from a management station, the RSU shall allow dynamic discovery of the data concepts and data instances supported by the RSU. This requirement allows a management station to \"walk\" a MIB. This is a high-level requirement. The exact detailed requirements to report the data and data values supported are defined by numerous functional requirements found in Section 3.5, Data Exchange and Operational Environment Requirements.</p>",
                       "type": "text",
                       "history": [
@@ -19765,6 +19927,17 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T17:28:03.441Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-11-12T15:33:01.548Z"
                         }
                       ]
                     }
@@ -19775,6 +19948,7 @@
             {
               "id": "499",
               "guid": "b356fff8-df1e-4b6a-a065-352228fedd5c",
+              "deleted": true,
               "heading": "Log Data Local Storage and Retrieval Requirements",
               "type": "text",
               "discussion": [
@@ -19832,12 +20006,24 @@
                   "commentDate": "2024-08-09T19:25:28.701Z",
                   "commentIndex": 0,
                   "editLastComment": "<p>Replaced with fdCondTrigger and fdLog</p>"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-12T15:33:11.696Z"
                 }
               ],
               "children": [
                 {
                   "id": "500",
                   "guid": "cd940318-3d88-415b-97bf-2ce8f95008cf",
+                  "deleted": true,
                   "text": "<p>Requirements for a transportation manager and transportation operator to configure and retrieve logged data from the RSU follow. The logged data contain information about the RSU and events that occur on the RSU.</p>",
                   "type": "text",
                   "history": [
@@ -19851,12 +20037,24 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T17:28:03.441Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-11-12T15:33:11.696Z"
                     }
                   ]
                 },
                 {
                   "id": "501",
                   "guid": "f4c9b7dd-ed3b-4fe5-a0d6-3b68c16f056d",
+                  "deleted": true,
                   "heading": "Configure Priority Level for Events",
                   "type": "d_req",
                   "links": {
@@ -19889,12 +20087,24 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T15:13:32.047Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-11-12T15:33:11.696Z"
                     }
                   ],
                   "children": [
                     {
                       "id": "502",
                       "guid": "a75ca225-3959-4096-98bc-ee9fcd601d6e",
+                      "deleted": true,
                       "text": "<p>Upon request from a management station, the RSU shall store the priority level of events that can be recorded for the event logging service. The valid priority levels are defined in Table 2 in RFC 5424. This requirement allows a manager to define the priority level of events recorded by the RSU.</p>",
                       "type": "text",
                       "history": [
@@ -19908,6 +20118,17 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T17:28:03.441Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-11-12T15:33:11.696Z"
                         }
                       ]
                     }
@@ -19916,6 +20137,7 @@
                 {
                   "id": "503",
                   "guid": "6ab45dc4-218b-403b-adb9-08486d91afc5",
+                  "deleted": true,
                   "heading": "Close an Active Event Log File",
                   "type": "d_req",
                   "links": {
@@ -19948,12 +20170,24 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T15:13:32.047Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-11-12T15:33:11.696Z"
                     }
                   ],
                   "children": [
                     {
                       "id": "504",
                       "guid": "b2879f54-cdc9-4c77-8a48-704654e0bf1b",
+                      "deleted": true,
                       "text": "<p>Upon request from a management station, the RSU shall command the open (active) event log file that the RSU is currently storing logged events to close, at the earliest convenient time.</p>",
                       "type": "text",
                       "history": [
@@ -19967,12 +20201,24 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T17:28:03.441Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-11-12T15:33:11.696Z"
                         }
                       ]
                     },
                     {
                       "id": "505",
                       "guid": "320b57c4-8cf9-4e19-94a8-28f76e59e359",
+                      "deleted": true,
                       "text": "<p>Note: Some event log implementations automatically close open event log files, and thus may not support this requirement.</p>",
                       "type": "n",
                       "history": [
@@ -19986,6 +20232,17 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T17:28:08.755Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-11-12T15:33:11.696Z"
                         }
                       ]
                     }
@@ -19994,6 +20251,7 @@
                 {
                   "id": "506",
                   "guid": "8b94b9e8-ba77-446c-a23d-1d352737f2cd",
+                  "deleted": true,
                   "heading": "Retrieve Event Logged Data",
                   "type": "d_req",
                   "links": {
@@ -20057,12 +20315,24 @@
                       "commentDate": "2024-08-09T19:26:34.641Z",
                       "commentIndex": 0,
                       "deleteLastComment": "<p>Supersede with fdSyslog</p>"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-11-12T15:33:11.696Z"
                     }
                   ],
                   "children": [
                     {
                       "id": "507",
                       "guid": "1ebe23f7-13a2-4833-a057-ba74ea28c032",
+                      "deleted": true,
                       "text": "<p>Upon request from a management station, the RSU shall return the logged data from its event log. This requirement allows the management station to filter the logged data based on start and end times and by priority level.</p>",
                       "type": "text",
                       "history": [
@@ -20076,6 +20346,17 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T17:28:03.441Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-11-12T15:33:11.696Z"
                         }
                       ]
                     }
@@ -20086,6 +20367,7 @@
             {
               "id": "508",
               "guid": "19a0d54a-e2f8-4209-8198-8542c8dda6af",
+              "deleted": true,
               "heading": "Condition-based Exception Reporting",
               "type": "d_req",
               "links": {
@@ -20145,12 +20427,24 @@
                     "name": "Kenneth Vaughn"
                   },
                   "commentDate": "2024-08-09T19:25:55.879Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-12T15:33:46.525Z"
                 }
               ],
               "children": [
                 {
                   "id": "509",
                   "guid": "064d926e-dc8c-4caf-a9ad-c61585cc64f9",
+                  "deleted": true,
                   "text": "<p>Upon detection of specified events, the RSU shall transmit a notification to a specified management station of the event occurrence. This is a high-level requirement. The exact detailed requirements to report the data and data values supported are defined by numerous functional requirements found in Section 3.5.1.1.7, Manage Notification Requirements.</p>",
                   "type": "text",
                   "history": [
@@ -20186,6 +20480,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T17:30:15.717Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-11-12T15:33:46.525Z"
                     }
                   ]
                 }
@@ -20380,13 +20685,14 @@
                           "discussion": [
                             {
                               "guid": "1a3ea067-ebd7-4390-9cc8-15f955df4fc2",
-                              "comment": "<p>Consider moving to ISO 26048-1</p>",
+                              "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">How is this different than sysName?</span></p>",
                               "date": "2024-08-09T20:28:19.634Z",
                               "author": {
                                 "name": "Kenneth Vaughn",
                                 "email": "kvaughn@trevilon.com",
                                 "company": "Trevilon"
-                              }
+                              },
+                              "updatedOn": "2024-11-12T15:34:36.130Z"
                             }
                           ],
                           "history": [
@@ -20429,6 +20735,16 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "commentDate": "2024-08-09T20:28:19.634Z"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:34:36.130Z",
+                              "commentGuid": "1a3ea067-ebd7-4390-9cc8-15f955df4fc2",
+                              "updatedComment": "<p>Consider moving to ISO 26048-1</p>"
                             }
                           ],
                           "children": [
@@ -20456,6 +20772,7 @@
                         {
                           "id": "520",
                           "guid": "e6f7e97d-1575-4ad7-8dcf-086de6518b49",
+                          "deleted": true,
                           "heading": "Report RSU Component Information",
                           "type": "d_req",
                           "links": {
@@ -20515,12 +20832,24 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "commentDate": "2024-08-09T20:29:19.011Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:35:39.702Z"
                             }
                           ],
                           "children": [
                             {
                               "id": "521",
                               "guid": "7f069a64-5100-4005-926e-6068fae2bd10",
+                              "deleted": true,
                               "text": "<p>Upon request from a management station, the RSU shall report the identification information for each module contained in the RSU. The identification information consists of:</p>",
                               "type": "text",
                               "history": [
@@ -20545,12 +20874,24 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:30:51.954Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "deleted": null
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-11-12T15:35:39.702Z"
                                 }
                               ]
                             },
                             {
                               "id": "1473",
                               "guid": "b9ec9fcf-4b58-47cc-a25c-0532b8d235a2",
+                              "deleted": true,
                               "text": "<p>The manufacturer of the module.</p>",
                               "type": "l1",
                               "history": [
@@ -20586,12 +20927,24 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:31:23.148Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "deleted": null
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-11-12T15:35:39.702Z"
                                 }
                               ]
                             },
                             {
                               "id": "1474",
                               "guid": "a286bcc1-0167-4be2-969c-4948e958e4df",
+                              "deleted": true,
                               "text": "<p>The model number or firmware reference of the module.</p>",
                               "type": "l1",
                               "history": [
@@ -20627,12 +20980,24 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:31:23.148Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "deleted": null
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-11-12T15:35:39.702Z"
                                 }
                               ]
                             },
                             {
                               "id": "1475",
                               "guid": "3a69820a-8a5e-4d90-8bd8-6dfcb1205d34",
+                              "deleted": true,
                               "text": "<p>The version of the module.</p>",
                               "type": "l1",
                               "history": [
@@ -20668,12 +21033,24 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:31:23.148Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "deleted": null
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-11-12T15:35:39.702Z"
                                 }
                               ]
                             },
                             {
                               "id": "1476",
                               "guid": "9f503b98-7dd1-4f12-9de7-1a64eb3bb780",
+                              "deleted": true,
                               "text": "<p>An indication of whether it is a software or hardware module.</p>",
                               "type": "l1",
                               "history": [
@@ -20709,6 +21086,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:31:23.148Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "deleted": null
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-11-12T15:35:39.702Z"
                                 }
                               ]
                             }
@@ -20717,6 +21105,7 @@
                         {
                           "id": "522",
                           "guid": "6f4e764f-ecd6-4829-af27-fa9e6c972301",
+                          "deleted": true,
                           "heading": "Report Supported Standards",
                           "type": "d_req",
                           "links": {
@@ -20776,12 +21165,24 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "commentDate": "2024-08-09T20:30:44.117Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:35:49.067Z"
                             }
                           ],
                           "children": [
                             {
                               "id": "523",
                               "guid": "72e08ea6-4ba2-4281-9138-c70f6618c0bd",
+                              "deleted": true,
                               "text": "<p>Upon request from a management station, the RSU shall report the communications standards (and versions) supported by the RSU, with each communication standard indicator separated by a comma. The description consists of a text field up to 255 characters in length.</p>",
                               "type": "text",
                               "history": [
@@ -20795,6 +21196,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:30:34.007Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "deleted": null
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-11-12T15:35:49.067Z"
                                 }
                               ]
                             }
@@ -20803,6 +21215,7 @@
                         {
                           "id": "524",
                           "guid": "0f100cba-0aca-4d02-9ac7-fc35cf212edf",
+                          "deleted": true,
                           "heading": "Report RSU System Name",
                           "type": "d_req",
                           "links": {
@@ -20862,12 +21275,24 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "commentDate": "2024-08-09T20:30:05.366Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:35:55.150Z"
                             }
                           ],
                           "children": [
                             {
                               "id": "525",
                               "guid": "a984c1bf-534d-43ca-848a-1f17202bec4d",
+                              "deleted": true,
                               "text": "<p>Upon request from a management station, the RSU shall report the unique system name of the RSU. This system name could be any unique value such as a serial number up to 255 characters in length.</p>",
                               "type": "text",
                               "history": [
@@ -20881,6 +21306,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:30:34.007Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "deleted": null
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-11-12T15:35:55.150Z"
                                 }
                               ]
                             }
@@ -20889,6 +21325,7 @@
                         {
                           "id": "526",
                           "guid": "80113f9a-bdb7-4b09-8a0d-8156268f5ecc",
+                          "deleted": true,
                           "heading": "Report RSU MIB Version",
                           "type": "d_req",
                           "links": {
@@ -20948,12 +21385,24 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "commentDate": "2024-08-09T20:27:49.209Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:36:17.199Z"
                             }
                           ],
                           "children": [
                             {
                               "id": "527",
                               "guid": "f59a8ee1-c19f-4dcc-950a-1626b7c286b6",
+                              "deleted": true,
                               "text": "<p>Upon request from a management station, the RSU shall report the identity and version of the MIB(s) in use. The module identity allows the manager to identify what version of a standard, as well as the standards and specifications it references; and what version of private objects are supported and referenced. The module identity is assigned by the manufacturer.</p>",
                               "type": "text",
                               "history": [
@@ -20967,6 +21416,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:30:34.007Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "deleted": null
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-11-12T15:36:17.199Z"
                                 }
                               ]
                             }
@@ -20977,6 +21437,7 @@
                     {
                       "id": "528",
                       "guid": "d851ec7c-ea1d-453f-8f00-dd0befa22443",
+                      "deleted": true,
                       "heading": "Report Deployment Configuration Identifier",
                       "type": "d_req",
                       "links": {
@@ -21036,12 +21497,24 @@
                             "name": "Kenneth Vaughn"
                           },
                           "commentDate": "2024-08-09T20:32:47.763Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-11-12T15:36:29.467Z"
                         }
                       ],
                       "children": [
                         {
                           "id": "529",
                           "guid": "0a1ecc4d-0ee5-4289-92c7-c16d9675f02f",
+                          "deleted": true,
                           "text": "<p>Upon request from a management station, the RSU shall report the unique identifier created using a checksum-creation-like algorithm across all configuration parameters contained in the RSU database. The RSU creates the identifier at powerup and is updated whenever changes are made to any of the RSU configuration parameters.</p>",
                           "type": "text",
                           "history": [
@@ -21055,12 +21528,24 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T17:32:03.836Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:36:29.467Z"
                             }
                           ]
                         },
                         {
                           "id": "530",
                           "guid": "13d31dc8-e29b-4216-8a57-f81b5208e824",
+                          "deleted": true,
                           "text": "<p>The management station may use this unique identifier to determine if the current configuration of the RSU is as expected. If the reported unique identifier is different, then the configuration of the RSU may have changed, possibly as a result of a change initiated by another management station, such as a maintenance worker in the field.</p>",
                           "type": "text",
                           "history": [
@@ -21074,12 +21559,24 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T17:32:03.836Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:36:29.467Z"
                             }
                           ]
                         },
                         {
                           "id": "531",
                           "guid": "d76509d3-228e-4de6-ad69-35824960a740",
+                          "deleted": true,
                           "text": "<p>Note: For NTCIP 1218, how the unique identifier is generated is allowed to be vendor-specific. This allows the vendor to include other parameters, which may be stored in vendor-specific (private) object identifiers or not stored in an object identifier, as part of the algorithm to generate the unique identifier. Any changes to a configuration (static) parameter should result in a change in the unique identifier.</p>",
                           "type": "n",
                           "history": [
@@ -21104,6 +21601,17 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-18T17:32:09.250Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:36:29.467Z"
                             }
                           ]
                         }
@@ -21216,6 +21724,19 @@
                               "NTCIP_1218-289"
                             ]
                           },
+                          "discussion": [
+                            {
+                              "guid": "3565d2b4-57b7-4ab1-af21-b8ddf0cb7c94",
+                              "comment": "<p><span style=\"color: rgb(0, 0, 0); background-color: rgb(247, 218, 100);\">Should this be replaced with the ISO 26048-1 location objects?</span></p>",
+                              "date": "2024-11-12T15:40:00.018Z",
+                              "author": {
+                                "name": "Kenneth Vaughn",
+                                "email": "kvaughn@trevilon.com",
+                                "company": "Trevilon"
+                              },
+                              "updatedOn": "2024-11-12T15:40:19.589Z"
+                            }
+                          ],
                           "history": [
                             {
                               "attributesChanged": {
@@ -21241,6 +21762,26 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-24T15:13:32.047Z"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:40:00.018Z",
+                              "commentGuid": "3565d2b4-57b7-4ab1-af21-b8ddf0cb7c94",
+                              "updatedComment": null
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:40:19.589Z",
+                              "commentGuid": "3565d2b4-57b7-4ab1-af21-b8ddf0cb7c94",
+                              "updatedComment": "<p><span style=\"color: rgb(247, 218, 100);\">Should this be replaced with the ISO 26048-1 location objects?</span></p>"
                             }
                           ],
                           "children": [
@@ -21575,6 +22116,18 @@
                                   "guid": "5f5547c9-3caa-41ec-93c7-b1ef566f56a8",
                                   "text": "<p>Upon request from a management station, the RSU shall store the network destination that the RSU forwards the GNSS data from an external GNSS or similar geopositioning device to. The network destination consists of the udp port number, IP address, and a text description of the interface.</p>",
                                   "type": "text",
+                                  "discussion": [
+                                    {
+                                      "guid": "172cd645-2408-41c3-b334-48bf7f8934bc",
+                                      "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">How is the GNSS data formatted?</span></p>",
+                                      "date": "2024-11-12T15:45:32.103Z",
+                                      "author": {
+                                        "name": "Kenneth Vaughn",
+                                        "email": "kvaughn@trevilon.com",
+                                        "company": "Trevilon"
+                                      }
+                                    }
+                                  ],
                                   "history": [
                                     {
                                       "attributesChanged": {
@@ -21586,6 +22139,16 @@
                                         "name": "Kenneth Vaughn"
                                       },
                                       "changedOn": "2024-07-18T17:33:27.336Z"
+                                    },
+                                    {
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Kenneth Vaughn"
+                                      },
+                                      "changedOn": "2024-11-12T15:45:32.103Z",
+                                      "commentGuid": "172cd645-2408-41c3-b334-48bf7f8934bc",
+                                      "updatedComment": null
                                     }
                                   ]
                                 }
@@ -21953,6 +22516,7 @@
                         {
                           "id": "561",
                           "guid": "998c84fd-2ddb-423b-b926-33fba8c46d94",
+                          "deleted": true,
                           "heading": "Configure Startup Retries",
                           "type": "d_req",
                           "discussion": [
@@ -22016,12 +22580,24 @@
                                 ],
                                 "type": "fulfil_opt"
                               }
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:46:16.773Z"
                             }
                           ],
                           "children": [
                             {
                               "id": "562",
                               "guid": "fc706f11-cb10-41e3-b5b7-9f48f2d5ff52",
+                              "deleted": true,
                               "text": "<p>Upon request from a management station, the RSU shall store the allowable number of attempts within a user-defined period to properly reboot an RSU before the RSU enters the 'fault' operating mode. An attempt may be a result of a power up, a reboot, or a watchdog reboot. An RSU fails to properly reboot if the firmware, operating system, or drivers do not load properly during its startup. The 'fault' operating mode (e.g., safe mode) allows the RSU to only load sufficient functionality for a transportation manager to download and install the correct firmware, operating system, drivers and applications without any operational impacts. A value of 0 indicates this feature is disabled (the RSU cannot enter the 'fault' operating mode).</p>",
                               "type": "text",
                               "history": [
@@ -22035,6 +22611,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:34:39.507Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "deleted": null
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-11-12T15:46:16.773Z"
                                 }
                               ]
                             }
@@ -22043,6 +22630,7 @@
                         {
                           "id": "563",
                           "guid": "2bb4a70f-4cd8-4b7b-aa34-df41bbeb0ae4",
+                          "deleted": true,
                           "heading": "Retrieve Startup Retry Period",
                           "type": "d_req",
                           "discussion": [
@@ -22134,12 +22722,24 @@
                                 ],
                                 "type": "fulfil"
                               }
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:46:22.678Z"
                             }
                           ],
                           "children": [
                             {
                               "id": "564",
                               "guid": "f1a9025d-2202-4aa8-85fa-66d61fba0d6e",
+                              "deleted": true,
                               "text": "<p>Upon request from a management station, the RSU shall retrieve the defined period, in minutes, that an RSU is allowed to attempt reboots before the RSU enters the 'fault' operating mode. The 'fault' operating mode (e.g., safe mode) allows the RSU to only load sufficient functionality for a transportation manager to download and install the correct firmware, operating system, drivers and applications without any operational impacts. The startup retry period is defined by the vendor in consideration of the period of time needed for the RSU to properly start all its required processes.</p>",
                               "type": "text",
                               "history": [
@@ -22153,6 +22753,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:34:39.507Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "deleted": null
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-11-12T15:46:22.678Z"
                                 }
                               ]
                             }
@@ -22201,8 +22812,21 @@
                         {
                           "id": "567",
                           "guid": "6b97bcf0-c378-4c18-8b28-20eed85e319a",
+                          "deleted": true,
                           "heading": "Report the RSU Firmware Version",
                           "type": "d_req",
+                          "discussion": [
+                            {
+                              "guid": "3e2de39c-1cf7-43ae-b1fb-6c8a97ae3068",
+                              "comment": "<p>Addressed by RFC 6933</p>",
+                              "date": "2024-11-12T15:47:19.499Z",
+                              "author": {
+                                "name": "Kenneth Vaughn",
+                                "email": "kvaughn@trevilon.com",
+                                "company": "Trevilon"
+                              }
+                            }
+                          ],
                           "history": [
                             {
                               "attributesChanged": {
@@ -22242,12 +22866,34 @@
                                 ],
                                 "type": "fulfil"
                               }
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:47:19.499Z",
+                              "commentGuid": "3e2de39c-1cf7-43ae-b1fb-6c8a97ae3068",
+                              "updatedComment": null
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:47:23.441Z"
                             }
                           ],
                           "children": [
                             {
                               "id": "568",
                               "guid": "299f57e1-0fb7-4ef3-b2a7-faeb35af1d82",
+                              "deleted": true,
                               "text": "<p>Upon request from a management station, the RSU shall report the firmware version currently in use by the RSU.</p>",
                               "type": "text",
                               "history": [
@@ -22261,6 +22907,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:34:39.507Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "deleted": null
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-11-12T15:47:23.441Z"
                                 }
                               ]
                             }
@@ -22276,18 +22933,6 @@
                               "NTCIP_1218-293"
                             ]
                           },
-                          "discussion": [
-                            {
-                              "guid": "0f5bae3e-2b3d-41e9-91b8-33fe3b819889",
-                              "comment": "<p>Do we want to propose this to be a ISO 26048-1 feature?</p>",
-                              "date": "2024-08-09T17:18:59.040Z",
-                              "author": {
-                                "name": "Kenneth Vaughn",
-                                "email": "kvaughn@trevilon.com",
-                                "company": "Trevilon"
-                              }
-                            }
-                          ],
                           "history": [
                             {
                               "attributesChanged": {
@@ -22328,6 +22973,32 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "commentDate": "2024-08-09T17:18:59.040Z"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:47:55.474Z",
+                              "commentGuid": "0f5bae3e-2b3d-41e9-91b8-33fe3b819889",
+                              "updatedComment": "<p>Do we want to propose this to be a ISO 26048-1 feature?</p>"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:48:15.553Z",
+                              "commentAuthor": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "commentDate": "2024-08-09T17:18:59.040Z",
+                              "commentGuid": "0f5bae3e-2b3d-41e9-91b8-33fe3b819889",
+                              "removedComment": "<p>Replaced with ISO 26048-1 feature (RFC 6933)</p>"
                             }
                           ],
                           "children": [
@@ -22970,13 +23641,14 @@
                       "discussion": [
                         {
                           "guid": "a44e9c25-1af7-4121-92dd-27cdbfc1e133",
-                          "comment": "<p>Add a requirement to use the independent notification feature defined in ISO 26048-1</p>",
+                          "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Do we want to keep these as independent events or define as conditional triggers?</span></p><p><span style=\"background-color: rgb(44, 130, 201); color: rgb(255, 255, 255);\">If keeping, add a requirement to use the independent notification feature defined in ISO 26048-1</span></p>",
                           "date": "2024-07-22T22:17:21.112Z",
                           "author": {
                             "name": "Kenneth Vaughn",
                             "email": "kvaughn@trevilon.com",
                             "company": "Trevilon"
-                          }
+                          },
+                          "updatedOn": "2024-11-12T15:51:10.477Z"
                         }
                       ],
                       "history": [
@@ -23005,6 +23677,26 @@
                             "name": "Kenneth Vaughn"
                           },
                           "commentDate": "2024-07-22T22:17:21.112Z"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-11-12T15:50:53.472Z",
+                          "commentGuid": "a44e9c25-1af7-4121-92dd-27cdbfc1e133",
+                          "updatedComment": "<p>Add a requirement to use the independent notification feature defined in ISO 26048-1</p>"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Kenneth Vaughn"
+                          },
+                          "changedOn": "2024-11-12T15:51:10.477Z",
+                          "commentGuid": "a44e9c25-1af7-4121-92dd-27cdbfc1e133",
+                          "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Do we want to keep these as independent events or define as conditional triggers?</span></p><p><span style=\"background-color: rgb(44, 130, 201);\">If keeping, add a requirement to use the independent notification feature defined in ISO 26048-1</span></p>"
                         }
                       ],
                       "children": [
@@ -23030,6 +23722,7 @@
                         {
                           "id": "591",
                           "guid": "d020684e-6344-4203-8c43-cc8b562e81a3",
+                          "deleted": true,
                           "heading": "Store Notification Destination Address",
                           "type": "d_req",
                           "links": {
@@ -23106,12 +23799,24 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-24T15:13:32.047Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:51:26.921Z"
                             }
                           ],
                           "children": [
                             {
                               "id": "592",
                               "guid": "0ac525ad-fa8c-4173-b0f0-73868b3eb5b0",
+                              "deleted": true,
                               "text": "<p>Upon request from a management station, the RSU shall store the destination network address for all notifications generated by the RSU.</p>",
                               "type": "text",
                               "history": [
@@ -23125,6 +23830,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:46:21.649Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "deleted": null
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-11-12T15:51:26.921Z"
                                 }
                               ]
                             }
@@ -23133,6 +23849,7 @@
                         {
                           "id": "593",
                           "guid": "aac121e3-d7f6-4f3f-a99b-582879e180aa",
+                          "deleted": true,
                           "heading": "Store Notification Destination Port",
                           "type": "d_req",
                           "links": {
@@ -23192,12 +23909,24 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "changedOn": "2024-07-24T15:13:32.047Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "deleted": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:51:32.134Z"
                             }
                           ],
                           "children": [
                             {
                               "id": "594",
                               "guid": "ecd77374-4db4-45f9-994f-f0604df0a7bf",
+                              "deleted": true,
                               "text": "<p>Upon request from a management station, the RSU shall store the destination port number for all notifications generated by the RSU.</p>",
                               "type": "text",
                               "history": [
@@ -23211,6 +23940,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:46:21.649Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "deleted": null
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "changedOn": "2024-11-12T15:51:32.134Z"
                                 }
                               ]
                             }
@@ -23224,23 +23964,25 @@
                           "discussion": [
                             {
                               "guid": "b389600c-d759-48f2-a830-08aa74c3dae2",
-                              "comment": "<p>Update all requirements to refer to the configuration of Independent Notifications per ISO 26048-1 rather than \"destination network address and port number\"</p>",
+                              "comment": "<p><span style=\"background-color: rgb(44, 130, 201); color: rgb(255, 255, 255);\">Update all requirements to refer to the configuration of Independent Notifications per ISO 26048-1 rather than \"destination network address and port number\"</span></p>",
                               "date": "2024-07-22T22:20:25.334Z",
                               "author": {
                                 "name": "Kenneth Vaughn",
                                 "email": "kvaughn@trevilon.com",
                                 "company": "Trevilon"
-                              }
+                              },
+                              "updatedOn": "2024-11-12T15:52:04.013Z"
                             },
                             {
                               "guid": "2ab515dd-1158-4d37-a06e-4b9acc57174b",
-                              "comment": "<p>Rather than defining unique, independent notifications, it may be better to define counters and similar parameters that can be configured to use the standard notification scheme or be logged, etc.</p>",
+                              "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Rather than defining unique, independent notifications, it may be better to define counters and similar parameters that can be configured to use the standard notification scheme or be logged, etc.</span></p>",
                               "date": "2024-07-22T22:26:07.353Z",
                               "author": {
                                 "name": "Kenneth Vaughn",
                                 "email": "kvaughn@trevilon.com",
                                 "company": "Trevilon"
-                              }
+                              },
+                              "updatedOn": "2024-11-12T15:52:23.077Z"
                             }
                           ],
                           "history": [
@@ -23284,6 +24026,26 @@
                                 "name": "Kenneth Vaughn"
                               },
                               "commentDate": "2024-07-22T22:26:07.353Z"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:52:04.013Z",
+                              "commentGuid": "b389600c-d759-48f2-a830-08aa74c3dae2",
+                              "updatedComment": "<p>Update all requirements to refer to the configuration of Independent Notifications per ISO 26048-1 rather than \"destination network address and port number\"</p>"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Kenneth Vaughn"
+                              },
+                              "changedOn": "2024-11-12T15:52:23.077Z",
+                              "commentGuid": "2ab515dd-1158-4d37-a06e-4b9acc57174b",
+                              "updatedComment": "<p>Rather than defining unique, independent notifications, it may be better to define counters and similar parameters that can be configured to use the standard notification scheme or be logged, etc.</p>"
                             }
                           ],
                           "children": [

@@ -1,1 +1,589 @@
-{"id":"Owner-MIB","guid":"0C0BF88C-BF55-4283-AF1B-904A5AACD66D","heading":"ISO26048-1-Owner","lastId":18,"createdOn":"2023-06-21T12:04:29","createdBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"lastChangedOn":"2024-03-26T02:08:27.712Z","lastChangedBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"data":[{"id":"1","guid":"05A72BB8-7291-4665-80C6-B420E7C3C38F","text":"","heading":"ISO26048-1-Owner","type":"mib"},{"id":"2","guid":"A48D4BD3-BE70-4C94-9395-24362D75842D","text":"","contact":"<p>name: ISO TC 204 Committee Manager email: jennifer.collins@sae.org website: https://www.iso.org/committee/54706.html</p>","heading":"fdOwnerMIB","oid":"fdAdminGlobalAdmin 1","org":"ISO TC 204 WG 9","type":"mi","updated":"202211190107Z"},{"id":"3","guid":"0307D66F-60A2-45B1-AD92-155C1084A6C1","text":"","heading":"comment","type":"comment"},{"id":"4","guid":"DC1D51A8-A1AF-4155-BECE-4CD408760416","heading":"fdOwnerTable","text":"","access":"not-accessible","type":"ot","oid":"fdOwnerMIB 1","status":"current","syntax":"SEQUENCE OF FdOwnerEntry"},{"id":"5","guid":"42E336F1-C826-4BC7-AFAA-83CA7502021F","text":"","access":"not-accessible","index":"fdOwnerIndex","heading":"fdOwnerEntry","oid":"fdOwnerTable 1","status":"current","syntax":"FdOwnerEntry","type":"ot"},{"id":"6","guid":"00637ED8-1510-409D-AE01-C3659C987B46","heading":"FdOwnerEntry","syntax":"{ fdOwnerIndex ITSPositive8,<br> fdOwnerName SnmpAdminString,<br> fdOwnerTimeStamp TimeStamp,<br> fdOwnerRowStatus RowStatus }","type":"row"},{"id":"7","guid":"25CA33F2-4C70-42A9-8639-0E34A18EE6FE","heading":"fdOwnerIndex","text":"","access":"not-accessible","type":"ot","oid":"fdOwnerEntry 1","status":"current","syntax":"ITSPositive8"},{"id":"8","guid":"C2EBCFF4-4DE9-447A-A5EA-F94BA57DA425","heading":"fdOwnerName","text":"","access":"read-create","links":{"satisfies":["26048_1-1098","26048_1-1097"]},"oid":"fdOwnerEntry 2","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"9","guid":"5B503225-DB59-48A0-8B21-B6269A9D2DFA","heading":"fdOwnerTimeStamp","text":"","access":"read-only","links":{"satisfies":["26048_1-555","26048_1-573","26048_1-813","26048_1-776","26048_1-1015","26048_1-536"]},"oid":"fdOwnerEntry 3","status":"current","syntax":"TimeStamp","type":"ot"},{"id":"10","guid":"83889A31-13F1-4ECA-9E2B-7E147C6714CC","heading":"fdOwnerRowStatus","text":"","access":"read-create","links":{"satisfies":["26048_1-554","26048_1-572","26048_1-900","26048_1-775","26048_1-635","26048_1-1098","26048_1-1097","26048_1-1087","26048_1-812","26048_1-1100","26048_1-535","26048_1-1140"]},"oid":"fdOwnerEntry 4","status":"current","syntax":"RowStatus","type":"ot"},{"id":"11","guid":"90C11243-919A-4E1E-A9D9-5A4EED28AD1E","text":"","heading":"comment","type":"comment"},{"id":"12","guid":"64A7B6AC-D155-41DD-8D11-A42D445E7EE7","text":"","heading":"fdOwnerConformance","oid":"fdAdminConformance 1","status":"current","type":"oi"},{"id":"13","guid":"9763EC98-F09A-4416-A9CF-B7FEC1B38487","text":"","heading":"fdOwnerCompliances","oid":"fdOwnerConformance 1","status":"current","type":"oi"},{"id":"14","guid":"15C50ED8-2838-4565-97BC-054ECE946663","text":"","heading":"fdOwnerGroups","oid":"fdOwnerConformance 2","status":"current","type":"oi"},{"id":"15","guid":"7EBD9A9E-CD62-4761-AAD4-8104C6957499","text":"","heading":"fdOwnerMIBCompliance","oid":"fdOwnerCompliances 1","status":"current","syntax":"{ fdOwnerGroupV1<br> }","type":"mc"},{"id":"16","guid":"CF1FBC6F-DDDA-4585-B702-EC54DB471CD8","text":"","heading":"fdOwnerGroupV1","oid":"fdOwnerGroups 1","status":"current","syntax":"{ fdOwnerName,<br> fdOwnerTimeStamp,<br> fdOwnerRowStatus<br> }","type":"og"},{"id":"17","guid":"B9289E40-475C-4061-AF07-DDFCCB4B5DB1","heading":"end","type":"end"}],"attributes":{"access":{"heading":"Access","type":"enum","values":[{"key":"read-only"},{"key":"read-write"},{"key":"read-create"},{"key":"not-accessible"},{"key":"accessible-for-notify"}]},"augments":{"heading":"Augments","type":"string"},"comment":{"heading":"Comment","type":"xhtml"},"contact":{"heading":"Contact","type":"xhtml"},"defval":{"heading":"Default Value","type":"string"},"index":{"heading":"Index","type":"string"},"name":{"heading":"Name","type":"string"},"oid":{"heading":"OID","type":"string"},"org":{"heading":"Organization","type":"string"},"part":{"heading":"Part","type":"string"},"status":{"heading":"Status","type":"enum","values":[{"key":"current"},{"key":"deprecated"},{"key":"obsolete"}]},"syntax":{"heading":"Syntax","type":"xhtml"},"type":{"heading":"Type","type":"enum","values":[{"key":"comment"},{"key":"end"},{"key":"mc","label":"module-compliance"},{"key":"mi","label":"module-identity"},{"key":"mib"},{"key":"ng","label":"notification-group"},{"key":"nt","label":"notification-type"},{"key":"og","label":"object-group"},{"key":"oi","label":"object-identity"},{"key":"ot","label":"object-type"},{"key":"ref","label":"reference"},{"key":"rev","label":"revision"},{"key":"row"},{"key":"text_conv"}]},"units":{"heading":"Units","type":"string"},"updated":{"heading":"Updated","type":"string"}},"templateColumns":{"93eb17d4-606b-4305-b98d-cf6cdffcc906":{"label":"Errors","template":"{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-only\") (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\"))) (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies link\" link</div>\n  {{/if}}\n{{/if}}"}},"views":{"Primary":{"columns":[{"columnId":"id","width":74},{"columnId":"type","width":114},{"columnId":"name","width":113},{"columnId":"description","width":572},{"columnId":"links","width":343},{"columnId":"access","width":172}],"default":true}},"metadata":{"format":"2.17"}}
+{
+  "id": "Owner-MIB",
+  "guid": "0C0BF88C-BF55-4283-AF1B-904A5AACD66D",
+  "lastId": 18,
+  "createdOn": "2023-06-21T12:04:29",
+  "createdBy": {
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon",
+    "heading": "Kenneth Vaughn"
+  },
+  "lastChangedOn": "2024-11-14T16:42:38.834Z",
+  "lastChangedBy": {
+    "name": "Kenneth Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "data": [
+    {
+      "id": "1",
+      "guid": "05A72BB8-7291-4665-80C6-B420E7C3C38F",
+      "heading": "ISO26048-1-Owner",
+      "type": "mib"
+    },
+    {
+      "id": "2",
+      "guid": "A48D4BD3-BE70-4C94-9395-24362D75842D",
+      "heading": "fdOwnerMIB",
+      "contact": "<p>name: ISO TC 204 Committee Manager email: jennifer.collins@sae.org website: https://www.iso.org/committee/54706.html</p>",
+      "oid": "fdAdminGlobalAdmin 1",
+      "org": "ISO TC 204 WG 9",
+      "type": "mi",
+      "updated": "202211190107Z"
+    },
+    {
+      "id": "3",
+      "guid": "0307D66F-60A2-45B1-AD92-155C1084A6C1",
+      "heading": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "4",
+      "guid": "DC1D51A8-A1AF-4155-BECE-4CD408760416",
+      "heading": "fdOwnerTable",
+      "access": "not-accessible",
+      "oid": "fdOwnerMIB 1",
+      "status": "current",
+      "syntax": "SEQUENCE OF FdOwnerEntry",
+      "type": "ot"
+    },
+    {
+      "id": "5",
+      "guid": "42E336F1-C826-4BC7-AFAA-83CA7502021F",
+      "heading": "fdOwnerEntry",
+      "access": "not-accessible",
+      "index": "fdOwnerIndex",
+      "oid": "fdOwnerTable 1",
+      "status": "current",
+      "syntax": "FdOwnerEntry",
+      "type": "ot"
+    },
+    {
+      "id": "6",
+      "guid": "00637ED8-1510-409D-AE01-C3659C987B46",
+      "heading": "FdOwnerEntry",
+      "syntax": "{ fdOwnerIndex ITSPositive8,<br> fdOwnerName SnmpAdminString,<br> fdOwnerTimeStamp TimeStamp,<br> fdOwnerRowStatus RowStatus }",
+      "type": "row"
+    },
+    {
+      "id": "7",
+      "guid": "25CA33F2-4C70-42A9-8639-0E34A18EE6FE",
+      "heading": "fdOwnerIndex",
+      "access": "not-accessible",
+      "oid": "fdOwnerEntry 1",
+      "status": "current",
+      "syntax": "ITSPositive8",
+      "type": "ot"
+    },
+    {
+      "id": "8",
+      "guid": "C2EBCFF4-4DE9-447A-A5EA-F94BA57DA425",
+      "heading": "fdOwnerName",
+      "access": "read-create",
+      "oid": "fdOwnerEntry 2",
+      "status": "current",
+      "syntax": "SnmpAdminString",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-1098",
+          "26048_1-1097"
+        ]
+      }
+    },
+    {
+      "id": "9",
+      "guid": "5B503225-DB59-48A0-8B21-B6269A9D2DFA",
+      "heading": "fdOwnerTimeStamp",
+      "access": "read-only",
+      "oid": "fdOwnerEntry 3",
+      "status": "current",
+      "syntax": "TimeStamp",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-555",
+          "26048_1-573",
+          "26048_1-813",
+          "26048_1-776",
+          "26048_1-1015",
+          "26048_1-536"
+        ]
+      }
+    },
+    {
+      "id": "10",
+      "guid": "83889A31-13F1-4ECA-9E2B-7E147C6714CC",
+      "heading": "fdOwnerRowStatus",
+      "access": "read-create",
+      "oid": "fdOwnerEntry 4",
+      "status": "current",
+      "syntax": "RowStatus",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-554",
+          "26048_1-572",
+          "26048_1-900",
+          "26048_1-775",
+          "26048_1-635",
+          "26048_1-1098",
+          "26048_1-1087",
+          "26048_1-812",
+          "26048_1-1100",
+          "26048_1-535",
+          "26048_1-1140"
+        ]
+      },
+      "history": [
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-553"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T15:23:56.470Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-811"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T15:57:32.038Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-777"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T16:02:32.834Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T16:04:26.763Z",
+          "removedLink": {
+            "target": [
+              "26048_1-777"
+            ],
+            "type": "satisfies"
+          }
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-634"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T16:06:27.775Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-534"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T16:08:12.620Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-1003"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T16:08:27.421Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-1005"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T16:08:38.655Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T16:08:51.833Z",
+          "removedLink": {
+            "target": [
+              "26048_1-1005"
+            ],
+            "type": "satisfies"
+          }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T16:14:27.897Z",
+          "removedLink": {
+            "target": [
+              "26048_1-811"
+            ],
+            "type": "satisfies"
+          }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T16:25:34.227Z",
+          "removedLink": {
+            "target": [
+              "26048_1-634"
+            ],
+            "type": "satisfies"
+          }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T16:26:52.918Z",
+          "removedLink": {
+            "target": [
+              "26048_1-1003"
+            ],
+            "type": "satisfies"
+          }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T16:33:42.224Z",
+          "removedLink": {
+            "target": [
+              "26048_1-534"
+            ],
+            "type": "satisfies"
+          }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T16:38:45.994Z",
+          "removedLink": {
+            "target": [
+              "26048_1-553"
+            ],
+            "type": "satisfies"
+          }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T16:42:38.834Z",
+          "removedLink": {
+            "target": [
+              "26048_1-1097"
+            ],
+            "type": "satisfies"
+          }
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "guid": "90C11243-919A-4E1E-A9D9-5A4EED28AD1E",
+      "heading": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "12",
+      "guid": "64A7B6AC-D155-41DD-8D11-A42D445E7EE7",
+      "heading": "fdOwnerConformance",
+      "oid": "fdAdminConformance 1",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "13",
+      "guid": "9763EC98-F09A-4416-A9CF-B7FEC1B38487",
+      "heading": "fdOwnerCompliances",
+      "oid": "fdOwnerConformance 1",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "14",
+      "guid": "15C50ED8-2838-4565-97BC-054ECE946663",
+      "heading": "fdOwnerGroups",
+      "oid": "fdOwnerConformance 2",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "15",
+      "guid": "7EBD9A9E-CD62-4761-AAD4-8104C6957499",
+      "heading": "fdOwnerMIBCompliance",
+      "oid": "fdOwnerCompliances 1",
+      "status": "current",
+      "syntax": "{ fdOwnerGroupV1<br> }",
+      "type": "mc"
+    },
+    {
+      "id": "16",
+      "guid": "CF1FBC6F-DDDA-4585-B702-EC54DB471CD8",
+      "heading": "fdOwnerGroupV1",
+      "oid": "fdOwnerGroups 1",
+      "status": "current",
+      "syntax": "{ fdOwnerName,<br> fdOwnerTimeStamp,<br> fdOwnerRowStatus<br> }",
+      "type": "og"
+    },
+    {
+      "id": "17",
+      "guid": "B9289E40-475C-4061-AF07-DDFCCB4B5DB1",
+      "heading": "end",
+      "type": "end"
+    }
+  ],
+  "attributes": {
+    "access": {
+      "heading": "Access",
+      "type": "enum",
+      "values": [
+        {
+          "key": "read-only"
+        },
+        {
+          "key": "read-write"
+        },
+        {
+          "key": "read-create"
+        },
+        {
+          "key": "not-accessible"
+        },
+        {
+          "key": "accessible-for-notify"
+        }
+      ]
+    },
+    "augments": {
+      "heading": "Augments",
+      "type": "string"
+    },
+    "comment": {
+      "heading": "Comment",
+      "type": "xhtml"
+    },
+    "contact": {
+      "heading": "Contact",
+      "type": "xhtml"
+    },
+    "defval": {
+      "heading": "Default Value",
+      "type": "string"
+    },
+    "index": {
+      "heading": "Index",
+      "type": "string"
+    },
+    "name": {
+      "heading": "Name",
+      "type": "string"
+    },
+    "oid": {
+      "heading": "OID",
+      "type": "string"
+    },
+    "org": {
+      "heading": "Organization",
+      "type": "string"
+    },
+    "part": {
+      "heading": "Part",
+      "type": "string"
+    },
+    "status": {
+      "heading": "Status",
+      "type": "enum",
+      "values": [
+        {
+          "key": "current"
+        },
+        {
+          "key": "deprecated"
+        },
+        {
+          "key": "obsolete"
+        }
+      ]
+    },
+    "syntax": {
+      "heading": "Syntax",
+      "type": "xhtml"
+    },
+    "type": {
+      "heading": "Type",
+      "type": "enum",
+      "values": [
+        {
+          "key": "comment"
+        },
+        {
+          "key": "end"
+        },
+        {
+          "key": "mc",
+          "label": "module-compliance"
+        },
+        {
+          "key": "mi",
+          "label": "module-identity"
+        },
+        {
+          "key": "mib"
+        },
+        {
+          "key": "ng",
+          "label": "notification-group"
+        },
+        {
+          "key": "nt",
+          "label": "notification-type"
+        },
+        {
+          "key": "og",
+          "label": "object-group"
+        },
+        {
+          "key": "oi",
+          "label": "object-identity"
+        },
+        {
+          "key": "ot",
+          "label": "object-type"
+        },
+        {
+          "key": "ref",
+          "label": "reference"
+        },
+        {
+          "key": "rev",
+          "label": "revision"
+        },
+        {
+          "key": "row"
+        },
+        {
+          "key": "text_conv"
+        }
+      ]
+    },
+    "units": {
+      "heading": "Units",
+      "type": "string"
+    },
+    "updated": {
+      "heading": "Updated",
+      "type": "string"
+    }
+  },
+  "templateColumns": {
+    "93eb17d4-606b-4305-b98d-cf6cdffcc906": {
+      "label": "Errors",
+      "template": "{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-only\") (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\"))) (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies link\" link</div>\n  {{/if}}\n{{/if}}"
+    }
+  },
+  "views": {
+    "Primary": {
+      "columns": [
+        {
+          "columnId": "id",
+          "width": 74
+        },
+        {
+          "columnId": "type",
+          "width": 114
+        },
+        {
+          "columnId": "name",
+          "width": 113
+        },
+        {
+          "columnId": "description",
+          "width": 572
+        },
+        {
+          "columnId": "links",
+          "width": 343
+        },
+        {
+          "columnId": "access",
+          "width": 172
+        }
+      ],
+      "default": true
+    }
+  },
+  "metadata": {
+    "format": "2.20"
+  }
+}

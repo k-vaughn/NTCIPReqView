@@ -2,14 +2,14 @@
   "id": "26048_1",
   "guid": "8955569e-5f64-45a6-a339-9c8989efaeea",
   "name": "ISO 26048-1",
-  "lastId": 1421,
+  "lastId": 1422,
   "createdOn": "2023-05-20T15:16:21.812Z",
   "createdBy": {
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon",
     "heading": "Kenneth Vaughn"
   },
-  "lastChangedOn": "2024-10-30T01:18:58.358Z",
+  "lastChangedOn": "2024-11-14T22:27:58.494Z",
   "lastChangedBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -2640,6 +2640,54 @@
                   }
                 }
               ]
+            },
+            {
+              "id": "1422",
+              "guid": "191011df-6168-4178-bd9c-b498e456bf92",
+              "heading": "Action feature performance requirement",
+              "links": {
+                "refine": [
+                  "26048_1-540"
+                ]
+              },
+              "history": [
+                {
+                  "affectedNodeId": "540",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T15:15:41.463Z",
+                  "docId": "26048_1",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T15:16:01.090Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-540"
+                    ],
+                    "type": "refine"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T15:16:18.411Z"
+                }
+              ]
             }
           ]
         },
@@ -3989,13 +4037,38 @@
                   "id": "309",
                   "guid": "dcd16a3d-8adb-4811-bea7-8f932c473614",
                   "heading": "Configure the default language",
+                  "additional": "<p>The field device shall support the following languages: &lt;to be specified by procurement&gt;</p><p>The field device shall support the following character codes for all SnmpAdminStrings: NVT-ASCII, &lt;others to be specified by procurement&gt;</p>",
                   "status": "current",
                   "type": "d_req",
                   "links": {
                     "refine": [
                       "26048_1-283"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "additional": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-11-14T17:25:27.972Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "additional": "<p>The field device shall support the following languages:&nbsp;</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedOn": "2024-11-14T17:27:50.920Z"
+                    }
+                  ]
                 },
                 {
                   "id": "296",
@@ -8493,10 +8566,27 @@
                   "status": "current",
                   "type": "s_req",
                   "links": {
-                    "refine_opt": [
+                    "refine": [
                       "OptionGroups-19"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedLink": {
+                        "newType": "refine",
+                        "oldTargets": [
+                          "OptionGroups-19"
+                        ],
+                        "oldType": "refine_opt"
+                      },
+                      "changedOn": "2024-11-14T22:27:35.863Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1298",
@@ -8505,10 +8595,27 @@
                   "status": "current",
                   "type": "s_req",
                   "links": {
-                    "refine_opt": [
+                    "refine": [
                       "OptionGroups-19"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedLink": {
+                        "newType": "refine",
+                        "oldTargets": [
+                          "OptionGroups-19"
+                        ],
+                        "oldType": "refine_opt"
+                      },
+                      "changedOn": "2024-11-14T22:27:43.250Z"
+                    }
+                  ]
                 }
               ]
             },
@@ -8526,10 +8633,27 @@
                   "status": "current",
                   "type": "s_req",
                   "links": {
-                    "refine_opt": [
+                    "refine": [
                       "OptionGroups-20"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedLink": {
+                        "newType": "refine",
+                        "oldTargets": [
+                          "OptionGroups-20"
+                        ],
+                        "oldType": "refine_opt"
+                      },
+                      "changedOn": "2024-11-14T22:27:53.650Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1301",
@@ -8538,10 +8662,27 @@
                   "status": "current",
                   "type": "s_req",
                   "links": {
-                    "refine_opt": [
+                    "refine": [
                       "OptionGroups-20"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Kenneth Vaughn"
+                      },
+                      "changedLink": {
+                        "newType": "refine",
+                        "oldTargets": [
+                          "OptionGroups-20"
+                        ],
+                        "oldType": "refine_opt"
+                      },
+                      "changedOn": "2024-11-14T22:27:58.494Z"
+                    }
+                  ]
                 }
               ]
             }
@@ -10315,7 +10456,19 @@
                   "26048_1-1375",
                   "NTCIP_1203-184",
                   "NTCIP_1203-1283",
-                  "NTCIP_1204-2299"
+                  "NTCIP_1204-2299",
+                  "26048_1-811",
+                  "26048_1-899",
+                  "26048_1-774",
+                  "26048_1-772",
+                  "26048_1-777",
+                  "26048_1-634",
+                  "26048_1-1003",
+                  "26048_1-534",
+                  "26048_1-1097",
+                  "26048_1-571",
+                  "26048_1-553",
+                  "26048_1-658"
                 ]
               },
               "history": [
@@ -10341,6 +10494,174 @@
                     ],
                     "type": "implement"
                   }
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-811"
+                    ],
+                    "type": "implement"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:19:58.414Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-899"
+                    ],
+                    "type": "implement"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:20:48.429Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-774"
+                    ],
+                    "type": "implement"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:21:27.746Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-772"
+                    ],
+                    "type": "implement"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:22:12.945Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-777"
+                    ],
+                    "type": "implement"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:22:22.597Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-634"
+                    ],
+                    "type": "implement"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:25:20.200Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-1003"
+                    ],
+                    "type": "implement"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:26:37.649Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-534"
+                    ],
+                    "type": "implement"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:33:22.835Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-1097"
+                    ],
+                    "type": "implement"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:42:47.953Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-571"
+                    ],
+                    "type": "implement"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:44:37.932Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-553"
+                    ],
+                    "type": "implement"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:44:59.577Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-658"
+                    ],
+                    "type": "implement"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:52:29.726Z"
                 }
               ],
               "children": [
@@ -10641,29 +10962,18 @@
                   "26048_1-513",
                   "26048_1-518",
                   "26048_1-527",
-                  "26048_1-534",
                   "26048_1-544",
-                  "26048_1-553",
                   "26048_1-564",
-                  "26048_1-571",
                   "26048_1-621",
-                  "26048_1-634",
                   "26048_1-651",
                   "26048_1-755",
-                  "26048_1-772",
-                  "26048_1-774",
-                  "26048_1-777",
                   "26048_1-783",
                   "26048_1-804",
-                  "26048_1-811",
                   "26048_1-854",
                   "26048_1-881",
-                  "26048_1-899",
                   "26048_1-1077",
                   "26048_1-888",
                   "26048_1-1088",
-                  "26048_1-1097",
-                  "26048_1-1003",
                   "26048_1-1005",
                   "26048_1-1007",
                   "26048_1-1309",
@@ -10673,6 +10983,190 @@
                   "NTCIP_1203-1263"
                 ]
               },
+              "history": [
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-658"
+                    ],
+                    "type": "implement"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T15:53:03.977Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:20:03.438Z",
+                  "removedLink": {
+                    "target": [
+                      "26048_1-811"
+                    ],
+                    "type": "implement"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:20:53.091Z",
+                  "removedLink": {
+                    "target": [
+                      "26048_1-899"
+                    ],
+                    "type": "implement"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:21:31.976Z",
+                  "removedLink": {
+                    "target": [
+                      "26048_1-774"
+                    ],
+                    "type": "implement"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:22:18.235Z",
+                  "removedLink": {
+                    "target": [
+                      "26048_1-772"
+                    ],
+                    "type": "implement"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:22:27.224Z",
+                  "removedLink": {
+                    "target": [
+                      "26048_1-777"
+                    ],
+                    "type": "implement"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:25:25.130Z",
+                  "removedLink": {
+                    "target": [
+                      "26048_1-634"
+                    ],
+                    "type": "implement"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:26:42.879Z",
+                  "removedLink": {
+                    "target": [
+                      "26048_1-1003"
+                    ],
+                    "type": "implement"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:33:27.549Z",
+                  "removedLink": {
+                    "target": [
+                      "26048_1-534"
+                    ],
+                    "type": "implement"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:42:53.435Z",
+                  "removedLink": {
+                    "target": [
+                      "26048_1-1097"
+                    ],
+                    "type": "implement"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:44:43.731Z",
+                  "removedLink": {
+                    "target": [
+                      "26048_1-571"
+                    ],
+                    "type": "implement"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:45:04.809Z",
+                  "removedLink": {
+                    "target": [
+                      "26048_1-553"
+                    ],
+                    "type": "implement"
+                  }
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "changedOn": "2024-11-14T16:52:34.774Z",
+                  "removedLink": {
+                    "target": [
+                      "26048_1-658"
+                    ],
+                    "type": "implement"
+                  }
+                }
+              ],
               "children": [
                 {
                   "id": "166",

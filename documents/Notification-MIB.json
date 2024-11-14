@@ -1,1 +1,1316 @@
-{"id":"Notification-MIB","guid":"BC680DFD-FB19-4B5C-9FB5-FA9BC81A0636","heading":"ISO26048-1-Notification","lastId":94,"createdOn":"2023-06-21T12:04:22","createdBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"lastChangedOn":"2024-04-16T21:03:40.951Z","lastChangedBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"data":[{"id":"1","guid":"3F86254F-9FDD-47A0-AB55-AD096D1E4A24","text":"","heading":"comment","type":"comment"},{"id":"2","guid":"14CE5DF3-459C-4F64-9FDA-7C269D99555C","text":"","heading":"ISO26048-1-Notification","type":"mib"},{"id":"3","guid":"8768E6CE-B82A-4F45-A3A8-27DF69CA6BCB","text":"","contact":"<p>name: ISO TC 204 Committee Manager email: jennifer.collins@sae.org website: https://www.iso.org/committee/54706.html</p>","heading":"fdNotifyMIB","oid":"fdGlobalMIB 17","org":"ISO TC 204 WG 9","type":"mi","updated":"202001052026Z"},{"id":"4","guid":"4F2919AE-954B-475F-B74E-FE403332DA61","text":"","heading":"comment","type":"comment"},{"id":"5","guid":"923E20E3-FA60-4D28-8248-41A12A211989","text":"","heading":"fdAdminNotifyObjects","oid":"fdAdminGlobal 17","status":"current","type":"oi"},{"id":"6","guid":"47AB3FDB-471C-45E5-AC10-52DD38736CDB","heading":"fdAdminNotifyEnabled","text":"","access":"read-write","links":{"satisfies":["26048_1-663"]},"oid":"fdAdminNotifyObjects 1","status":"current","syntax":"TruthValue","type":"ot"},{"id":"7","guid":"31DFA900-55CF-4A9F-A24A-3890091809FC","heading":"fdAdminNotifyTotalSnapshots","text":"","access":"read-only","links":{"satisfies":["26048_1-633"]},"oid":"fdAdminNotifyObjects 2","status":"current","syntax":"ITSCounter32","type":"ot","units":"notification snapshots"},{"id":"8","guid":"AC932CE1-1856-47BD-B37B-8ABE0985AC00","heading":"fdAdminNotifyTotalPackets","text":"","access":"read-only","links":{"satisfies":["26048_1-633"]},"oid":"fdAdminNotifyObjects 3","status":"current","syntax":"ITSCounter32","type":"ot","units":"notification packets"},{"id":"84","guid":"3a4a8fcb-7304-41e1-9b3f-9284a6bd56b6","heading":"fdAdminNotifyTotalIndependents","access":"read-only","links":{"satisfies":["26048_1-633"]},"type":"ot"},{"id":"9","guid":"E932FFA1-07C2-472E-A7F7-5205824C8113","heading":"fdAdminNotifyTotalDrops","text":"","access":"read-only","links":{"satisfies":["26048_1-633"]},"oid":"fdAdminNotifyObjects 4","status":"current","syntax":"ITSCounter32","type":"ot"},{"id":"10","guid":"C2F010B1-5FED-4B59-803C-9FD5C07FD086","heading":"fdAdminNotifyTotalFailures","text":"","access":"read-only","links":{"satisfies":["26048_1-633"]},"oid":"fdAdminNotifyObjects 5","status":"current","syntax":"ITSCounter32","type":"ot"},{"id":"11","guid":"FA7C35D9-5D5E-404B-8341-2665EB8FA5A2","heading":"fdOwnerNotifyTable","text":"","access":"not-accessible","type":"ot","oid":"fdAdminNotifyObjects 6","status":"current","syntax":"SEQUENCE OF FdOwnerNotifyEntry"},{"id":"12","guid":"F84418B4-D910-495F-9009-C0884854CE86","text":"","access":"not-accessible","augments":"fdOwnerEntry","heading":"fdOwnerNotifyEntry","oid":"fdOwnerNotifyTable 1","status":"current","syntax":"FdOwnerNotifyEntry","type":"ot"},{"id":"13","guid":"04FC2AE2-6B46-46BE-84D9-02909D584E64","heading":"FdOwnerNotifyEntry","syntax":"<p>{ fdOwnerNotifyMaxFactories ITSUnsigned8,</p><p>fdOwnerNotifyMaxChannels ITSUnsigned8,</p><p>fdOwnerNotifySnapshots ITSCounter32,</p><p>fdOwnerNotifyPackets ITSCounter32,</p><p>fdOwnerNotifyDrops ITSCounter32,</p><p>fdOwnerNotifyFailures ITSCounter32</p><p>}</p>","type":"row"},{"id":"14","guid":"4C064075-ECBB-4718-BFBD-3928719E655B","heading":"fdOwnerNotifyMaxFactories","text":"","access":"read-create","defval":"0","links":{"satisfies":["26048_1-634","26048_1-635"]},"oid":"fdOwnerNotifyEntry 1","status":"current","syntax":"ITSUnsigned8","type":"ot"},{"id":"15","guid":"0380A5C8-E188-4CA7-A1D4-D6DDA8B37950","heading":"fdOwnerNotifyMaxChannels","text":"","access":"read-create","defval":"0","links":{"satisfies":["26048_1-634","26048_1-635"]},"oid":"fdOwnerNotifyEntry 2","status":"current","syntax":"ITSUnsigned8","type":"ot"},{"id":"16","guid":"33684B27-5928-4E49-9640-6B07321E8EC0","heading":"fdOwnerNotifySnapshots","text":"","access":"read-only","links":{"satisfies":["26048_1-636"]},"oid":"fdOwnerNotifyEntry 3","status":"current","syntax":"ITSCounter32","type":"ot"},{"id":"17","guid":"71A1CB99-5FC7-404E-A44A-E77320C0D599","heading":"fdOwnerNotifyPackets","text":"","access":"read-only","links":{"satisfies":["26048_1-636"]},"oid":"fdOwnerNotifyEntry 4","status":"current","syntax":"ITSCounter32","type":"ot"},{"id":"85","guid":"10f1b5ba-1150-4f04-92f1-df17deaa9e7c","heading":"fdOwnerNotifyIndependents","access":"read-only","links":{"satisfies":["26048_1-636"]},"type":"ot"},{"id":"18","guid":"7B4FF5B4-B8B6-413D-8ECB-3FC2F7EAC895","heading":"fdOwnerNotifyDrops","text":"","access":"read-only","links":{"satisfies":["26048_1-636"]},"oid":"fdOwnerNotifyEntry 5","status":"current","syntax":"ITSCounter32","type":"ot"},{"id":"19","guid":"C8AA21B9-4704-4C49-8BC3-607B3B26269B","heading":"fdOwnerNotifyFailures","text":"","access":"read-only","links":{"satisfies":["26048_1-636"]},"oid":"fdOwnerNotifyEntry 6","status":"current","syntax":"ITSCounter32","type":"ot"},{"id":"20","guid":"2DACAB94-F611-49B8-8383-DD5BEF5228EF","text":"","heading":"comment","type":"comment"},{"id":"21","guid":"AE084164-227A-4E3F-AA67-90B3FE24C358","heading":"fdNotifiesModeSupport","text":"","access":"read-only","links":{"satisfies":["26048_1-618"]},"oid":"fdNotifyMIB 1","status":"current","syntax":"BITS { queueing (0), acknowledgements (1), aggregation (2) }","type":"ot"},{"id":"22","guid":"5EC1DB22-ED59-4111-9A90-59D78C2A4530","heading":"fdNotifiesMaxSize","text":"","access":"read-only","links":{"satisfies":["26048_1-618"]},"oid":"fdNotifyMIB 2","status":"current","syntax":"Unsigned32","type":"ot","units":"octets"},{"id":"23","guid":"4BAF58D3-1AC6-498E-B54D-51EF60F85F37","heading":"fdNotifyFactoryTable","text":"","access":"not-accessible","type":"ot","oid":"fdNotifyMIB 3","status":"current","syntax":"SEQUENCE OF FdNotifyFactoryEntry"},{"id":"24","guid":"183BA031-F088-4A4E-82A2-8360051985EE","text":"","access":"not-accessible","index":"fdOwnerIndex, fdNotifyFactoryIndex","heading":"fdNotifyFactoryEntry","oid":"fdNotifyFactoryTable 1","status":"current","syntax":"FdNotifyFactoryEntry","type":"ot"},{"id":"25","guid":"3B64DC17-1C50-4A49-BAC3-C0166D50120A","heading":"FdNotifyFactoryEntry","syntax":"<p>{ fdNotifyFactoryIndex ITSPositive16,</p><p>fdNotifyFactoryDescription SnmpAdminString,</p><p>fdNotifyFactoryObjectContext SnmpAdminString,</p><p>fdNotifyFactoryObjectID VariablePointer,</p><p>fdNotifyFactoryAggMaxSnapshots ITSPositive8,</p><p>fdNotifyFactoryAggregationTime ITSUnsigned16,</p><p>fdNotifyFactoryQueueEnabled TruthValue,</p><p>fdNotifyFactoryAckEnabled TruthValue,</p><p>fdNotifyFactoryChannel ITSRelativeRowPointer,</p><p>fdNotifyFactorySnapshots ITSCounter32,</p><p>fdNotifyFactoryTimeStamp TimeStamp,</p><p>fdNotifyFactorySecurityModel SnmpSecurityModel,</p><p>fdNotifyFactorySecurityLevel SnmpSecurityLevel,</p><p>fdNotifyFactorySecurityName SnmpAdminString,</p><p>fdNotifyFactoryStorageType StorageType,</p><p>fdNotifyFactoryRowStatus RowStatus }</p>","type":"row"},{"id":"26","guid":"578C6654-AA02-4021-BE2A-FF8B720EDDA5","heading":"fdNotifyFactoryIndex","text":"","access":"not-accessible","type":"ot","oid":"fdNotifyFactoryEntry 1","status":"current","syntax":"ITSPositive16"},{"id":"27","guid":"8FE59E51-07B3-4024-A0D5-A0D4909FCA9E","heading":"fdNotifyFactoryDescription","text":"","access":"read-create","links":{"satisfies":["26048_1-621","26048_1-628"]},"oid":"fdNotifyFactoryEntry 2","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"28","guid":"941927A5-3C13-4844-85DB-6C07BBF6F6E2","heading":"fdNotifyFactoryObjectContext","text":"","access":"read-create","links":{"satisfies":["26048_1-621","26048_1-628"]},"oid":"fdNotifyFactoryEntry 3","status":"current","syntax":"SnmpAdminString (SIZE(1..32))","type":"ot"},{"id":"29","guid":"154B9DC3-4836-405F-9149-F47E8BE3CB42","heading":"fdNotifyFactoryObjectID","text":"","access":"read-create","links":{"satisfies":["26048_1-621","26048_1-628"]},"oid":"fdNotifyFactoryEntry 4","status":"current","syntax":"VariablePointer","type":"ot"},{"id":"30","guid":"1A45A39E-EAB1-4256-884F-8B7AC8CEF54B","heading":"fdNotifyFactoryMode","access":"read-create","links":{"satisfies":["26048_1-621","26048_1-628"]},"oid":"fdNotifyFactoryEntry 5","status":"current","syntax":"ITSPositive8","type":"ot","units":"seconds"},{"id":"31","guid":"BEBF5E06-0A1A-499C-AF21-948501E15A43","heading":"fdNotifyFactoryAggregationTime","text":"","access":"read-create","links":{"satisfies":["26048_1-621","26048_1-628"]},"oid":"fdNotifyFactoryEntry 6","status":"current","syntax":"ITSUnsigned16","type":"ot","units":"seconds"},{"id":"34","guid":"D67252EF-7A16-49D1-8D95-1528D64BEE4D","heading":"fdNotifyFactoryChannel","text":"","access":"read-create","links":{"satisfies":["26048_1-621","26048_1-628"]},"oid":"fdNotifyFactoryEntry 9","status":"current","syntax":"ITSRelativeRowPointer","type":"ot"},{"id":"35","guid":"B52239EA-1841-42A4-B812-7A7660240174","heading":"fdNotifyFactorySnapshots","text":"","access":"read-only","links":{"satisfies":["26048_1-629"]},"oid":"fdNotifyFactoryEntry 10","status":"current","syntax":"ITSCounter32","type":"ot","units":"notification snapshots"},{"id":"36","guid":"13A41BA2-7D34-4524-B43B-2E9C91969578","heading":"fdNotifyFactoryTimeStamp","text":"","access":"read-only","links":{"satisfies":["26048_1-629"]},"oid":"fdNotifyFactoryEntry 11","status":"current","syntax":"TimeStamp","type":"ot"},{"id":"37","guid":"5F0AD41C-F428-494E-94A7-EA039B540819","heading":"fdNotifyFactorySecurityModel","text":"","access":"not-accessible","type":"ot","oid":"fdNotifyFactoryEntry 12","status":"current","syntax":"SnmpSecurityModel"},{"id":"38","guid":"C92FC875-6FF6-493C-97CB-7D50A869253C","heading":"fdNotifyFactorySecurityLevel","text":"","access":"not-accessible","type":"ot","oid":"fdNotifyFactoryEntry 13","status":"current","syntax":"SnmpSecurityLevel"},{"id":"39","guid":"917CD69C-4B19-440C-92FC-C5B6FBAAB885","heading":"fdNotifyFactorySecurityName","text":"","access":"not-accessible","type":"ot","oid":"fdNotifyFactoryEntry 14","status":"current","syntax":"SnmpAdminString"},{"id":"40","guid":"67F58D30-3243-4E89-A3E4-AB0692DE8C07","heading":"fdNotifyFactoryStorageType","text":"","access":"read-create","links":{"satisfies":["26048_1-621","26048_1-628"]},"oid":"fdNotifyFactoryEntry 15","status":"current","syntax":"StorageType","type":"ot"},{"id":"41","guid":"41584C91-88A1-4431-818D-7F74E74B1D00","heading":"fdNotifyFactoryRowStatus","text":"","access":"read-create","links":{"satisfies":["26048_1-631","26048_1-621","26048_1-628","26048_1-632"]},"oid":"fdNotifyFactoryEntry 16","status":"current","syntax":"RowStatus","type":"ot"},{"id":"42","guid":"95A50B05-A368-4555-8216-8E6DA4270348","heading":"fdNotifyChannelTable","text":"","access":"not-accessible","type":"ot","oid":"fdNotifyMIB 4","status":"current","syntax":"SEQUENCE OF FdNotifyChannelEntry"},{"id":"43","guid":"19233D20-EE88-407F-A416-9E830DFBC2DC","text":"","access":"not-accessible","index":"fdOwnerIndex, fdNotifyChannelIndex","heading":"fdNotifyChannelEntry","oid":"fdNotifyChannelTable 1","status":"current","syntax":"FdNotifyChannelEntry","type":"ot"},{"id":"44","guid":"BE695CA2-D542-4F94-9771-335905627C11","heading":"FdNotifyChannelEntry","syntax":"{ fdNotifyChannelIndex ITSPositive8, <br> fdNotifyChannelDescription SnmpAdminString,<br> fdNotifyChannelTarget SnmpAdminString, <br> fdNotifyChannelQueueDepth Unsigned32, <br> fdNotifyChannelAntiStreamRate Unsigned32, <br> fdNotifyChannelMaxSize Unsigned32, <br> fdNotifyChannelPackets ITSCounter32, <br> fdNotifyChannelDrops ITSCounter32, <br> fdNotifyChannelFailures ITSCounter32, <br> fdNotifyChannelTimeStamp TimeStamp,<br> fdNotifyChannelClearQueue TruthValue, <br> fdNotifyChannelStorageType StorageType, <br> fdNotifyChannelRowStatus RowStatus }","type":"row"},{"id":"45","guid":"31034171-48A1-47E2-B3AF-EE413EBF24CA","heading":"fdNotifyChannelIndex","text":"","access":"not-accessible","type":"ot","oid":"fdNotifyChannelEntry 1","status":"current","syntax":"ITSPositive8"},{"id":"46","guid":"4E3A5A0D-2E17-488D-9508-808A8720DB70","heading":"fdNotifyChannelDescription","text":"","access":"read-create","links":{"satisfies":["26048_1-651","26048_1-657"]},"oid":"fdNotifyChannelEntry 2","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"47","guid":"C1929EFD-58A9-4188-B7CC-FBF26ED1CEF8","heading":"fdNotifyChannelTarget","text":"","access":"read-create","links":{"satisfies":["26048_1-651","26048_1-657"]},"oid":"fdNotifyChannelEntry 3","status":"current","syntax":"SnmpAdminString (SIZE(1..32))","type":"ot"},{"id":"87","guid":"91c5c383-4b22-4793-900a-7758a66ff418","heading":"fdNotifyChannelMaxRetries","links":{"satisfies":["26048_1-651","26048_1-657"]}},{"id":"88","guid":"2593cad3-4275-486a-8667-d65a48869514","heading":"fdNotifyChannelRetryInterval","links":{"satisfies":["26048_1-651","26048_1-657"]}},{"id":"89","guid":"108da1c6-6b08-48e4-a1be-d973e60ad9e4","heading":"fdNotifyChannelRetryDelta","links":{"satisfies":["26048_1-651","26048_1-657"]}},{"id":"48","guid":"371507A6-220E-4AF8-9976-23F274ECBF27","heading":"fdNotifyChannelQueueDepth","text":"","access":"read-create","links":{"satisfies":["26048_1-651","26048_1-657"]},"oid":"fdNotifyChannelEntry 4","status":"current","syntax":"Unsigned32","type":"ot","units":"notification packets"},{"id":"49","guid":"92F07FA8-2152-4471-8D5F-66BD08D8F225","heading":"fdNotifyChannelAntiStreamRate","text":"","access":"read-create","links":{"satisfies":["26048_1-651","26048_1-657"]},"oid":"fdNotifyChannelEntry 5","status":"current","syntax":"Unsigned32","type":"ot","units":"notification packets per minute"},{"id":"50","guid":"3C68095F-F9FF-4752-9522-51FDD3522E8E","heading":"fdNotifyChannelMaxSize","text":"","access":"read-create","links":{"satisfies":["26048_1-651","26048_1-657"]},"oid":"fdNotifyChannelEntry 6","status":"current","syntax":"Unsigned32","type":"ot","units":"octets"},{"id":"51","guid":"759CE2A8-C794-4610-9161-0042BD393B49","heading":"fdNotifyChannelPackets","text":"","access":"read-only","links":{"satisfies":["26048_1-659"]},"oid":"fdNotifyChannelEntry 7","status":"current","syntax":"ITSCounter32","type":"ot","units":"notification packets"},{"id":"86","guid":"e63a5e18-1e24-4a6b-8a35-20f668b452a9","heading":"fdNotifyChannelIndependents","access":"read-only","links":{"satisfies":["26048_1-659"]},"type":"ot"},{"id":"52","guid":"7E2EED38-0B06-4F56-A10A-AE4548A6707F","heading":"fdNotifyChannelDrops","text":"","access":"read-only","links":{"satisfies":["26048_1-659"]},"oid":"fdNotifyChannelEntry 8","status":"current","syntax":"ITSCounter32","type":"ot","units":"notification packets"},{"id":"53","guid":"06DE3C2D-402C-4022-82A2-4CAF3D06F055","heading":"fdNotifyChannelFailures","text":"","access":"read-only","links":{"satisfies":["26048_1-659"]},"oid":"fdNotifyChannelEntry 9","status":"current","syntax":"ITSCounter32","type":"ot","units":"notification packets"},{"id":"54","guid":"6BD9D862-4727-4061-9FE4-54CD46C4715E","heading":"fdNotifyChannelTimeStamp","text":"","access":"read-only","links":{"satisfies":["26048_1-659"]},"oid":"fdNotifyChannelEntry 10","status":"current","syntax":"TimeStamp","type":"ot"},{"id":"55","guid":"A9E68849-75E0-4E9D-8847-18F02BF6C8F5","heading":"fdNotifyChannelClearQueue","text":"","access":"read-create","links":{"satisfies":["26048_1-658"]},"oid":"fdNotifyChannelEntry 11","status":"current","syntax":"TruthValue","type":"ot"},{"id":"90","guid":"a0fcc7c7-aa52-4e76-9a7a-66bcc31df32b","heading":"fdNotifyChannelGuaranteeStatus","links":{"satisfies":["26048_1-1377"]}},{"id":"91","guid":"2015d607-36c9-44b7-94f9-5c3a5f3d1b22","heading":"fdNotifyChannelGuaranteeNum","links":{"satisfies":["26048_1-1376"]}},{"id":"92","guid":"6c4126ae-2d71-4c1a-9728-b3f81ceb336c","heading":"fdNotifyChannelGuaranteeNumAck","links":{"satisfies":["26048_1-1375"]}},{"id":"94","guid":"dabd923c-9893-44ec-a050-ae80faf46a11","heading":"fdNotifyChannelGuaranteeData","links":{"satisfies":["26048_1-1379"]}},{"id":"93","guid":"0e1db043-8679-43ec-9ca3-34213568e7d6","heading":"fdNotifyChannelErrorStatus","links":{"satisfies":["26048_1-1378"]}},{"id":"56","guid":"4FC7C711-7F12-4BEA-84CE-B3692FB3F90F","heading":"fdNotifyChannelStorageType","text":"","access":"read-create","links":{"satisfies":["26048_1-651","26048_1-657"]},"oid":"fdNotifyChannelEntry 12","status":"current","syntax":"StorageType","type":"ot"},{"id":"57","guid":"E1897947-2D37-4C59-9779-D0C85A731A3C","heading":"fdNotifyChannelRowStatus","text":"","access":"read-create","links":{"satisfies":["26048_1-651","26048_1-657","26048_1-662","26048_1-1376","26048_1-1377","26048_1-1378","26048_1-1379"]},"oid":"fdNotifyChannelEntry 13","status":"current","syntax":"RowStatus","type":"ot"},{"id":"73","guid":"e6ad16a5-9572-4617-a7e1-60016f4bdaae","heading":"fdNotifyIndependentTable","access":"not-accessible","type":"ot"},{"id":"74","guid":"7278d196-ec5e-4f4e-b5ff-9e224548224f","heading":"fdNotifyIndependentEntry","access":"not-accessible","type":"ot"},{"id":"75","guid":"e4bd0f9f-67ed-4464-b6bc-a0a021a888d5","heading":"fdNotifyIndependentIndex","access":"not-accessible","type":"ot"},{"id":"76","guid":"0e3cb872-f8a3-4a5b-9035-5ea1d3df3613","heading":"fdNotifyIndependentOID","access":"read-only","links":{"satisfies":["26048_1-1319"]},"type":"ot"},{"id":"77","guid":"fa9e1bcf-bec6-4283-b1f0-ad54cc1fd131","heading":"fdNotifyIndependentMapTable","access":"not-accessible","type":"ot"},{"id":"78","guid":"8de1aba3-1e20-439d-b62b-eb85cbcd86fe","heading":"fdNotifyIndependentMapEntry","access":"not-accessible","type":"ot"},{"id":"79","guid":"273163ef-99f9-4bdc-8d51-daf42bff57be","heading":"fdNotifyIndependentMapMode","access":"read-create","links":{"satisfies":["26048_1-1290","26048_1-1291"]},"type":"ot"},{"id":"80","guid":"31c59bd3-8e0a-4b2a-8153-d1593237b9ea","heading":"fdNotifyIndependentMapStorageType","access":"read-create","links":{"satisfies":["26048_1-1290","26048_1-1291"]},"type":"ot"},{"id":"81","guid":"1f938f3c-eb4a-47a0-8bf2-ce9a06b301b9","heading":"fdNotifyIndependentMapRowStatus","access":"read-create","links":{"satisfies":["26048_1-1290","26048_1-1291","26048_1-1292"]},"type":"ot"},{"id":"58","guid":"83BCAA63-F374-48A7-A3F2-762850273B65","text":"","heading":"comment","type":"comment"},{"id":"59","guid":"590D5E6F-9988-4C55-B8CD-27FD334EDC50","heading":"fdNotifyData","text":"","access":"read-only","links":{"satisfies":["26048_1-698"]},"oid":"fdNotifyMIB 5","status":"current","syntax":"ITSOerString","type":"ot"},{"id":"60","guid":"30DA423D-66BC-4BB9-9117-5DED550724BD","text":"","heading":"fdNotifyNotifications","oid":"fdNotifyMIB 0","status":"current","type":"oi"},{"id":"61","guid":"0DBE0155-FA3E-44CD-A5C8-0C8450688138","heading":"fdNotifyPacket","text":"","links":{"satisfies":["26048_1-664"]},"oid":"fdNotifyNotifications 1","status":"current","type":"nt","updated":"fdNotifyData"},{"id":"62","guid":"1E94FB7C-C875-47DF-8642-1F4E85CE122D","text":"","heading":"comment","type":"comment"},{"id":"63","guid":"6523EEA6-7491-40AC-9A29-E415FF22913C","text":"","heading":"fdNotifyConformance","oid":"fdGlobalConformance 17","status":"current","type":"oi"},{"id":"64","guid":"4E2498D2-E194-43ED-8BDC-39078DF1BFAF","text":"","heading":"fdNotifyCompliances","oid":"fdNotifyConformance 1","status":"current","type":"oi"},{"id":"65","guid":"4BD5E164-83D0-4919-8BF8-F39099D79490","text":"","heading":"fdNotifyGroups","oid":"fdNotifyConformance 2","status":"current","type":"oi"},{"id":"66","guid":"9A37822F-FEF5-4C7F-8511-36A866BC08B0","text":"","heading":"fdNotifyMIBCompliance","oid":"fdNotifyCompliances 1","status":"current","syntax":"{ fdNotifyAdminGroupV1,<br> fdNotifyFactoryGroupV1,<br> fdNotifyChannelGroupV1,<br> fdNotifyDataGroupV1,<br> fdNotifyGroupV1<br> }","type":"mc"},{"id":"67","guid":"EA9B7F2F-6645-4D04-937C-76C4D9A1573E","text":"","heading":"fdNotifyAdminGroupV1","oid":"fdNotifyGroups 1","status":"current","syntax":"<p>{ fdAdminNotifyEnabled,</p><p>fdAdminNotifyTotalSnapshots,</p><p>fdAdminNotifyTotalPackets,</p><p>fdAdminNotifyTotalDrops,</p><p>fdAdminNotifyTotalFailures,</p><p>fdOwnerNotifyMaxFactories,</p><p>fdOwnerNotifyMaxChannels,</p><p>fdOwnerNotifySnapshots,</p><p>fdOwnerNotifyPackets,</p><p>fdOwnerNotifyDrops,</p><p>fdOwnerNotifyFailures</p><p>}</p>","type":"og"},{"id":"68","guid":"44273908-5D6A-406D-B3EB-F39561CB6568","text":"","heading":"fdNotifyFactoryGroupV1","oid":"fdNotifyGroups 2","status":"current","syntax":"<p>{ fdNotifiesModeSupport,</p><p>fdNotifiesMaxSize,</p><p>fdNotifyFactoryDescription,</p><p>fdNotifyFactoryObjectContext,</p><p>fdNotifyFactoryObjectID,</p><p>fdNotifyFactoryAggMaxSnapshots,</p><p>fdNotifyFactoryAggregationTime,</p><p>fdNotifyFactoryQueueEnabled,</p><p>fdNotifyFactoryAckEnabled,</p><p>fdNotifyFactoryChannel,</p><p>fdNotifyFactoryStorageType,</p><p>fdNotifyFactorySnapshots,</p><p>fdNotifyFactoryTimeStamp,</p><p>fdNotifyFactoryRowStatus</p><p>}</p>","type":"og"},{"id":"69","guid":"7B074A41-F089-4223-96B2-E9A81997E4D9","text":"","heading":"fdNotifyChannelGroupV1","oid":"fdNotifyGroups 3","status":"current","syntax":"{ fdNotifyChannelDescription,<br> fdNotifyChannelTarget,<br> fdNotifyChannelQueueDepth,<br> fdNotifyChannelAntiStreamRate,<br> fdNotifyChannelMaxSize,<br> fdNotifyChannelPackets,<br> fdNotifyChannelDrops,<br> fdNotifyChannelFailures,<br> fdNotifyChannelTimeStamp,<br> fdNotifyChannelClearQueue,<br> fdNotifyChannelStorageType,<br> fdNotifyChannelRowStatus<br> }","type":"og"},{"id":"70","guid":"237DB842-1839-405D-9742-F63479E55C97","text":"","heading":"fdNotifyDataGroupV1","oid":"fdNotifyGroups 4","status":"current","syntax":"{ fdNotifyData<br> }","type":"og"},{"id":"71","guid":"26652370-7191-4348-8C15-FBE3D2337D5D","heading":"end","type":"end"}],"attributes":{"access":{"heading":"Access","type":"enum","values":[{"key":"read-only"},{"key":"read-write"},{"key":"read-create"},{"key":"not-accessible"},{"key":"accessible-for-notify"}]},"augments":{"heading":"Augments","type":"string"},"comment":{"heading":"Comment","type":"xhtml"},"contact":{"heading":"Contact","type":"xhtml"},"defval":{"heading":"Default Value","type":"string"},"index":{"heading":"Index","type":"string"},"name":{"heading":"Name","type":"string"},"oid":{"heading":"OID","type":"string"},"org":{"heading":"Organization","type":"string"},"part":{"heading":"Part","type":"string"},"status":{"heading":"Status","type":"enum","values":[{"key":"current"},{"key":"deprecated"},{"key":"obsolete"}]},"syntax":{"heading":"Syntax","type":"xhtml"},"type":{"heading":"Type","type":"enum","values":[{"key":"comment"},{"key":"end"},{"key":"mc","label":"module-compliance"},{"key":"mi","label":"module-identity"},{"key":"mib"},{"key":"ng","label":"notification-group"},{"key":"nt","label":"notification-type"},{"key":"og","label":"object-group"},{"key":"oi","label":"object-identity"},{"key":"ot","label":"object-type"},{"key":"ref","label":"reference"},{"key":"rev","label":"revision"},{"key":"row"},{"key":"text_conv"}]},"units":{"heading":"Units","type":"string"},"updated":{"heading":"Updated","type":"string"}},"templateColumns":{"2112b8ee-ce16-468f-9082-4f496f71857f":{"label":"Errors","template":"{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-only\") (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\"))) (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies link\" link</div>\n  {{/if}}\n{{/if}}"}},"views":{"Primary":{"columns":[{"columnId":"id","width":74},{"columnId":"type","width":106},{"columnId":"name","width":256},{"columnId":"description","width":685},{"columnId":"links","width":281},{"columnId":"access","width":172}],"default":true}},"metadata":{"format":"2.17"}}
+{
+  "id": "Notification-MIB",
+  "guid": "BC680DFD-FB19-4B5C-9FB5-FA9BC81A0636",
+  "lastId": 94,
+  "createdOn": "2023-06-21T12:04:22",
+  "createdBy": {
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon",
+    "heading": "Kenneth Vaughn"
+  },
+  "lastChangedOn": "2024-11-14T16:52:14.167Z",
+  "lastChangedBy": {
+    "name": "Kenneth Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "data": [
+    {
+      "id": "1",
+      "guid": "3F86254F-9FDD-47A0-AB55-AD096D1E4A24",
+      "heading": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "2",
+      "guid": "14CE5DF3-459C-4F64-9FDA-7C269D99555C",
+      "heading": "ISO26048-1-Notification",
+      "type": "mib"
+    },
+    {
+      "id": "3",
+      "guid": "8768E6CE-B82A-4F45-A3A8-27DF69CA6BCB",
+      "heading": "fdNotifyMIB",
+      "contact": "<p>name: ISO TC 204 Committee Manager email: jennifer.collins@sae.org website: https://www.iso.org/committee/54706.html</p>",
+      "oid": "fdGlobalMIB 17",
+      "org": "ISO TC 204 WG 9",
+      "type": "mi",
+      "updated": "202001052026Z"
+    },
+    {
+      "id": "4",
+      "guid": "4F2919AE-954B-475F-B74E-FE403332DA61",
+      "heading": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "5",
+      "guid": "923E20E3-FA60-4D28-8248-41A12A211989",
+      "heading": "fdAdminNotifyObjects",
+      "oid": "fdAdminGlobal 17",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "6",
+      "guid": "47AB3FDB-471C-45E5-AC10-52DD38736CDB",
+      "heading": "fdAdminNotifyEnabled",
+      "access": "read-write",
+      "oid": "fdAdminNotifyObjects 1",
+      "status": "current",
+      "syntax": "TruthValue",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-663"
+        ]
+      }
+    },
+    {
+      "id": "7",
+      "guid": "31DFA900-55CF-4A9F-A24A-3890091809FC",
+      "heading": "fdAdminNotifyTotalSnapshots",
+      "access": "read-only",
+      "oid": "fdAdminNotifyObjects 2",
+      "status": "current",
+      "syntax": "ITSCounter32",
+      "type": "ot",
+      "units": "notification snapshots",
+      "links": {
+        "satisfies": [
+          "26048_1-633"
+        ]
+      }
+    },
+    {
+      "id": "8",
+      "guid": "AC932CE1-1856-47BD-B37B-8ABE0985AC00",
+      "heading": "fdAdminNotifyTotalPackets",
+      "access": "read-only",
+      "oid": "fdAdminNotifyObjects 3",
+      "status": "current",
+      "syntax": "ITSCounter32",
+      "type": "ot",
+      "units": "notification packets",
+      "links": {
+        "satisfies": [
+          "26048_1-633"
+        ]
+      }
+    },
+    {
+      "id": "84",
+      "guid": "3a4a8fcb-7304-41e1-9b3f-9284a6bd56b6",
+      "heading": "fdAdminNotifyTotalIndependents",
+      "access": "read-only",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-633"
+        ]
+      }
+    },
+    {
+      "id": "9",
+      "guid": "E932FFA1-07C2-472E-A7F7-5205824C8113",
+      "heading": "fdAdminNotifyTotalDrops",
+      "access": "read-only",
+      "oid": "fdAdminNotifyObjects 4",
+      "status": "current",
+      "syntax": "ITSCounter32",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-633"
+        ]
+      }
+    },
+    {
+      "id": "10",
+      "guid": "C2F010B1-5FED-4B59-803C-9FD5C07FD086",
+      "heading": "fdAdminNotifyTotalFailures",
+      "access": "read-only",
+      "oid": "fdAdminNotifyObjects 5",
+      "status": "current",
+      "syntax": "ITSCounter32",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-633"
+        ]
+      }
+    },
+    {
+      "id": "11",
+      "guid": "FA7C35D9-5D5E-404B-8341-2665EB8FA5A2",
+      "heading": "fdOwnerNotifyTable",
+      "access": "not-accessible",
+      "oid": "fdAdminNotifyObjects 6",
+      "status": "current",
+      "syntax": "SEQUENCE OF FdOwnerNotifyEntry",
+      "type": "ot"
+    },
+    {
+      "id": "12",
+      "guid": "F84418B4-D910-495F-9009-C0884854CE86",
+      "heading": "fdOwnerNotifyEntry",
+      "access": "not-accessible",
+      "augments": "fdOwnerEntry",
+      "oid": "fdOwnerNotifyTable 1",
+      "status": "current",
+      "syntax": "FdOwnerNotifyEntry",
+      "type": "ot"
+    },
+    {
+      "id": "13",
+      "guid": "04FC2AE2-6B46-46BE-84D9-02909D584E64",
+      "heading": "FdOwnerNotifyEntry",
+      "syntax": "<p>{ fdOwnerNotifyMaxFactories ITSUnsigned8,</p><p>fdOwnerNotifyMaxChannels ITSUnsigned8,</p><p>fdOwnerNotifySnapshots ITSCounter32,</p><p>fdOwnerNotifyPackets ITSCounter32,</p><p>fdOwnerNotifyDrops ITSCounter32,</p><p>fdOwnerNotifyFailures ITSCounter32</p><p>}</p>",
+      "type": "row"
+    },
+    {
+      "id": "14",
+      "guid": "4C064075-ECBB-4718-BFBD-3928719E655B",
+      "heading": "fdOwnerNotifyMaxFactories",
+      "access": "read-create",
+      "defval": "0",
+      "oid": "fdOwnerNotifyEntry 1",
+      "status": "current",
+      "syntax": "ITSUnsigned8",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-634",
+          "26048_1-635"
+        ]
+      }
+    },
+    {
+      "id": "15",
+      "guid": "0380A5C8-E188-4CA7-A1D4-D6DDA8B37950",
+      "heading": "fdOwnerNotifyMaxChannels",
+      "access": "read-create",
+      "defval": "0",
+      "oid": "fdOwnerNotifyEntry 2",
+      "status": "current",
+      "syntax": "ITSUnsigned8",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-634",
+          "26048_1-635"
+        ]
+      }
+    },
+    {
+      "id": "16",
+      "guid": "33684B27-5928-4E49-9640-6B07321E8EC0",
+      "heading": "fdOwnerNotifySnapshots",
+      "access": "read-only",
+      "oid": "fdOwnerNotifyEntry 3",
+      "status": "current",
+      "syntax": "ITSCounter32",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-636"
+        ]
+      }
+    },
+    {
+      "id": "17",
+      "guid": "71A1CB99-5FC7-404E-A44A-E77320C0D599",
+      "heading": "fdOwnerNotifyPackets",
+      "access": "read-only",
+      "oid": "fdOwnerNotifyEntry 4",
+      "status": "current",
+      "syntax": "ITSCounter32",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-636"
+        ]
+      }
+    },
+    {
+      "id": "85",
+      "guid": "10f1b5ba-1150-4f04-92f1-df17deaa9e7c",
+      "heading": "fdOwnerNotifyIndependents",
+      "access": "read-only",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-636"
+        ]
+      }
+    },
+    {
+      "id": "18",
+      "guid": "7B4FF5B4-B8B6-413D-8ECB-3FC2F7EAC895",
+      "heading": "fdOwnerNotifyDrops",
+      "access": "read-only",
+      "oid": "fdOwnerNotifyEntry 5",
+      "status": "current",
+      "syntax": "ITSCounter32",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-636"
+        ]
+      }
+    },
+    {
+      "id": "19",
+      "guid": "C8AA21B9-4704-4C49-8BC3-607B3B26269B",
+      "heading": "fdOwnerNotifyFailures",
+      "access": "read-only",
+      "oid": "fdOwnerNotifyEntry 6",
+      "status": "current",
+      "syntax": "ITSCounter32",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-636"
+        ]
+      }
+    },
+    {
+      "id": "20",
+      "guid": "2DACAB94-F611-49B8-8383-DD5BEF5228EF",
+      "heading": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "21",
+      "guid": "AE084164-227A-4E3F-AA67-90B3FE24C358",
+      "heading": "fdNotifiesModeSupport",
+      "access": "read-only",
+      "oid": "fdNotifyMIB 1",
+      "status": "current",
+      "syntax": "BITS { queueing (0), acknowledgements (1), aggregation (2) }",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-618"
+        ]
+      }
+    },
+    {
+      "id": "22",
+      "guid": "5EC1DB22-ED59-4111-9A90-59D78C2A4530",
+      "heading": "fdNotifiesMaxSize",
+      "access": "read-only",
+      "oid": "fdNotifyMIB 2",
+      "status": "current",
+      "syntax": "Unsigned32",
+      "type": "ot",
+      "units": "octets",
+      "links": {
+        "satisfies": [
+          "26048_1-618"
+        ]
+      }
+    },
+    {
+      "id": "23",
+      "guid": "4BAF58D3-1AC6-498E-B54D-51EF60F85F37",
+      "heading": "fdNotifyFactoryTable",
+      "access": "not-accessible",
+      "oid": "fdNotifyMIB 3",
+      "status": "current",
+      "syntax": "SEQUENCE OF FdNotifyFactoryEntry",
+      "type": "ot"
+    },
+    {
+      "id": "24",
+      "guid": "183BA031-F088-4A4E-82A2-8360051985EE",
+      "heading": "fdNotifyFactoryEntry",
+      "access": "not-accessible",
+      "index": "fdOwnerIndex, fdNotifyFactoryIndex",
+      "oid": "fdNotifyFactoryTable 1",
+      "status": "current",
+      "syntax": "FdNotifyFactoryEntry",
+      "type": "ot"
+    },
+    {
+      "id": "25",
+      "guid": "3B64DC17-1C50-4A49-BAC3-C0166D50120A",
+      "heading": "FdNotifyFactoryEntry",
+      "syntax": "<p>{ fdNotifyFactoryIndex ITSPositive16,</p><p>fdNotifyFactoryDescription SnmpAdminString,</p><p>fdNotifyFactoryObjectContext SnmpAdminString,</p><p>fdNotifyFactoryObjectID VariablePointer,</p><p>fdNotifyFactoryAggMaxSnapshots ITSPositive8,</p><p>fdNotifyFactoryAggregationTime ITSUnsigned16,</p><p>fdNotifyFactoryQueueEnabled TruthValue,</p><p>fdNotifyFactoryAckEnabled TruthValue,</p><p>fdNotifyFactoryChannel ITSRelativeRowPointer,</p><p>fdNotifyFactorySnapshots ITSCounter32,</p><p>fdNotifyFactoryTimeStamp TimeStamp,</p><p>fdNotifyFactorySecurityModel SnmpSecurityModel,</p><p>fdNotifyFactorySecurityLevel SnmpSecurityLevel,</p><p>fdNotifyFactorySecurityName SnmpAdminString,</p><p>fdNotifyFactoryStorageType StorageType,</p><p>fdNotifyFactoryRowStatus RowStatus }</p>",
+      "type": "row"
+    },
+    {
+      "id": "26",
+      "guid": "578C6654-AA02-4021-BE2A-FF8B720EDDA5",
+      "heading": "fdNotifyFactoryIndex",
+      "access": "not-accessible",
+      "oid": "fdNotifyFactoryEntry 1",
+      "status": "current",
+      "syntax": "ITSPositive16",
+      "type": "ot"
+    },
+    {
+      "id": "27",
+      "guid": "8FE59E51-07B3-4024-A0D5-A0D4909FCA9E",
+      "heading": "fdNotifyFactoryDescription",
+      "access": "read-create",
+      "oid": "fdNotifyFactoryEntry 2",
+      "status": "current",
+      "syntax": "SnmpAdminString",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-621",
+          "26048_1-628"
+        ]
+      }
+    },
+    {
+      "id": "28",
+      "guid": "941927A5-3C13-4844-85DB-6C07BBF6F6E2",
+      "heading": "fdNotifyFactoryObjectContext",
+      "access": "read-create",
+      "oid": "fdNotifyFactoryEntry 3",
+      "status": "current",
+      "syntax": "SnmpAdminString (SIZE(1..32))",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-621",
+          "26048_1-628"
+        ]
+      }
+    },
+    {
+      "id": "29",
+      "guid": "154B9DC3-4836-405F-9149-F47E8BE3CB42",
+      "heading": "fdNotifyFactoryObjectID",
+      "access": "read-create",
+      "oid": "fdNotifyFactoryEntry 4",
+      "status": "current",
+      "syntax": "VariablePointer",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-621",
+          "26048_1-628"
+        ]
+      }
+    },
+    {
+      "id": "30",
+      "guid": "1A45A39E-EAB1-4256-884F-8B7AC8CEF54B",
+      "heading": "fdNotifyFactoryMode",
+      "access": "read-create",
+      "oid": "fdNotifyFactoryEntry 5",
+      "status": "current",
+      "syntax": "ITSPositive8",
+      "type": "ot",
+      "units": "seconds",
+      "links": {
+        "satisfies": [
+          "26048_1-621",
+          "26048_1-628"
+        ]
+      }
+    },
+    {
+      "id": "31",
+      "guid": "BEBF5E06-0A1A-499C-AF21-948501E15A43",
+      "heading": "fdNotifyFactoryAggregationTime",
+      "access": "read-create",
+      "oid": "fdNotifyFactoryEntry 6",
+      "status": "current",
+      "syntax": "ITSUnsigned16",
+      "type": "ot",
+      "units": "seconds",
+      "links": {
+        "satisfies": [
+          "26048_1-621",
+          "26048_1-628"
+        ]
+      }
+    },
+    {
+      "id": "34",
+      "guid": "D67252EF-7A16-49D1-8D95-1528D64BEE4D",
+      "heading": "fdNotifyFactoryChannel",
+      "access": "read-create",
+      "oid": "fdNotifyFactoryEntry 9",
+      "status": "current",
+      "syntax": "ITSRelativeRowPointer",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-621",
+          "26048_1-628"
+        ]
+      }
+    },
+    {
+      "id": "35",
+      "guid": "B52239EA-1841-42A4-B812-7A7660240174",
+      "heading": "fdNotifyFactorySnapshots",
+      "access": "read-only",
+      "oid": "fdNotifyFactoryEntry 10",
+      "status": "current",
+      "syntax": "ITSCounter32",
+      "type": "ot",
+      "units": "notification snapshots",
+      "links": {
+        "satisfies": [
+          "26048_1-629"
+        ]
+      }
+    },
+    {
+      "id": "36",
+      "guid": "13A41BA2-7D34-4524-B43B-2E9C91969578",
+      "heading": "fdNotifyFactoryTimeStamp",
+      "access": "read-only",
+      "oid": "fdNotifyFactoryEntry 11",
+      "status": "current",
+      "syntax": "TimeStamp",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-629"
+        ]
+      }
+    },
+    {
+      "id": "37",
+      "guid": "5F0AD41C-F428-494E-94A7-EA039B540819",
+      "heading": "fdNotifyFactorySecurityModel",
+      "access": "not-accessible",
+      "oid": "fdNotifyFactoryEntry 12",
+      "status": "current",
+      "syntax": "SnmpSecurityModel",
+      "type": "ot"
+    },
+    {
+      "id": "38",
+      "guid": "C92FC875-6FF6-493C-97CB-7D50A869253C",
+      "heading": "fdNotifyFactorySecurityLevel",
+      "access": "not-accessible",
+      "oid": "fdNotifyFactoryEntry 13",
+      "status": "current",
+      "syntax": "SnmpSecurityLevel",
+      "type": "ot"
+    },
+    {
+      "id": "39",
+      "guid": "917CD69C-4B19-440C-92FC-C5B6FBAAB885",
+      "heading": "fdNotifyFactorySecurityName",
+      "access": "not-accessible",
+      "oid": "fdNotifyFactoryEntry 14",
+      "status": "current",
+      "syntax": "SnmpAdminString",
+      "type": "ot"
+    },
+    {
+      "id": "40",
+      "guid": "67F58D30-3243-4E89-A3E4-AB0692DE8C07",
+      "heading": "fdNotifyFactoryStorageType",
+      "access": "read-create",
+      "oid": "fdNotifyFactoryEntry 15",
+      "status": "current",
+      "syntax": "StorageType",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-621",
+          "26048_1-628"
+        ]
+      }
+    },
+    {
+      "id": "41",
+      "guid": "41584C91-88A1-4431-818D-7F74E74B1D00",
+      "heading": "fdNotifyFactoryRowStatus",
+      "access": "read-create",
+      "oid": "fdNotifyFactoryEntry 16",
+      "status": "current",
+      "syntax": "RowStatus",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-631",
+          "26048_1-621",
+          "26048_1-628",
+          "26048_1-632"
+        ]
+      }
+    },
+    {
+      "id": "42",
+      "guid": "95A50B05-A368-4555-8216-8E6DA4270348",
+      "heading": "fdNotifyChannelTable",
+      "access": "not-accessible",
+      "oid": "fdNotifyMIB 4",
+      "status": "current",
+      "syntax": "SEQUENCE OF FdNotifyChannelEntry",
+      "type": "ot"
+    },
+    {
+      "id": "43",
+      "guid": "19233D20-EE88-407F-A416-9E830DFBC2DC",
+      "heading": "fdNotifyChannelEntry",
+      "access": "not-accessible",
+      "index": "fdOwnerIndex, fdNotifyChannelIndex",
+      "oid": "fdNotifyChannelTable 1",
+      "status": "current",
+      "syntax": "FdNotifyChannelEntry",
+      "type": "ot"
+    },
+    {
+      "id": "44",
+      "guid": "BE695CA2-D542-4F94-9771-335905627C11",
+      "heading": "FdNotifyChannelEntry",
+      "syntax": "{ fdNotifyChannelIndex ITSPositive8, <br> fdNotifyChannelDescription SnmpAdminString,<br> fdNotifyChannelTarget SnmpAdminString, <br> fdNotifyChannelQueueDepth Unsigned32, <br> fdNotifyChannelAntiStreamRate Unsigned32, <br> fdNotifyChannelMaxSize Unsigned32, <br> fdNotifyChannelPackets ITSCounter32, <br> fdNotifyChannelDrops ITSCounter32, <br> fdNotifyChannelFailures ITSCounter32, <br> fdNotifyChannelTimeStamp TimeStamp,<br> fdNotifyChannelClearQueue TruthValue, <br> fdNotifyChannelStorageType StorageType, <br> fdNotifyChannelRowStatus RowStatus }",
+      "type": "row"
+    },
+    {
+      "id": "45",
+      "guid": "31034171-48A1-47E2-B3AF-EE413EBF24CA",
+      "heading": "fdNotifyChannelIndex",
+      "access": "not-accessible",
+      "oid": "fdNotifyChannelEntry 1",
+      "status": "current",
+      "syntax": "ITSPositive8",
+      "type": "ot"
+    },
+    {
+      "id": "46",
+      "guid": "4E3A5A0D-2E17-488D-9508-808A8720DB70",
+      "heading": "fdNotifyChannelDescription",
+      "access": "read-create",
+      "oid": "fdNotifyChannelEntry 2",
+      "status": "current",
+      "syntax": "SnmpAdminString",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-651",
+          "26048_1-657"
+        ]
+      }
+    },
+    {
+      "id": "47",
+      "guid": "C1929EFD-58A9-4188-B7CC-FBF26ED1CEF8",
+      "heading": "fdNotifyChannelTarget",
+      "access": "read-create",
+      "oid": "fdNotifyChannelEntry 3",
+      "status": "current",
+      "syntax": "SnmpAdminString (SIZE(1..32))",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-651",
+          "26048_1-657"
+        ]
+      }
+    },
+    {
+      "id": "87",
+      "guid": "91c5c383-4b22-4793-900a-7758a66ff418",
+      "heading": "fdNotifyChannelMaxRetries",
+      "links": {
+        "satisfies": [
+          "26048_1-651",
+          "26048_1-657"
+        ]
+      }
+    },
+    {
+      "id": "88",
+      "guid": "2593cad3-4275-486a-8667-d65a48869514",
+      "heading": "fdNotifyChannelRetryInterval",
+      "links": {
+        "satisfies": [
+          "26048_1-651",
+          "26048_1-657"
+        ]
+      }
+    },
+    {
+      "id": "89",
+      "guid": "108da1c6-6b08-48e4-a1be-d973e60ad9e4",
+      "heading": "fdNotifyChannelRetryDelta",
+      "links": {
+        "satisfies": [
+          "26048_1-651",
+          "26048_1-657"
+        ]
+      }
+    },
+    {
+      "id": "48",
+      "guid": "371507A6-220E-4AF8-9976-23F274ECBF27",
+      "heading": "fdNotifyChannelQueueDepth",
+      "access": "read-create",
+      "oid": "fdNotifyChannelEntry 4",
+      "status": "current",
+      "syntax": "Unsigned32",
+      "type": "ot",
+      "units": "notification packets",
+      "links": {
+        "satisfies": [
+          "26048_1-651",
+          "26048_1-657"
+        ]
+      }
+    },
+    {
+      "id": "49",
+      "guid": "92F07FA8-2152-4471-8D5F-66BD08D8F225",
+      "heading": "fdNotifyChannelAntiStreamRate",
+      "access": "read-create",
+      "oid": "fdNotifyChannelEntry 5",
+      "status": "current",
+      "syntax": "Unsigned32",
+      "type": "ot",
+      "units": "notification packets per minute",
+      "links": {
+        "satisfies": [
+          "26048_1-651",
+          "26048_1-657"
+        ]
+      }
+    },
+    {
+      "id": "50",
+      "guid": "3C68095F-F9FF-4752-9522-51FDD3522E8E",
+      "heading": "fdNotifyChannelMaxSize",
+      "access": "read-create",
+      "oid": "fdNotifyChannelEntry 6",
+      "status": "current",
+      "syntax": "Unsigned32",
+      "type": "ot",
+      "units": "octets",
+      "links": {
+        "satisfies": [
+          "26048_1-651",
+          "26048_1-657"
+        ]
+      }
+    },
+    {
+      "id": "51",
+      "guid": "759CE2A8-C794-4610-9161-0042BD393B49",
+      "heading": "fdNotifyChannelPackets",
+      "access": "read-only",
+      "oid": "fdNotifyChannelEntry 7",
+      "status": "current",
+      "syntax": "ITSCounter32",
+      "type": "ot",
+      "units": "notification packets",
+      "links": {
+        "satisfies": [
+          "26048_1-659"
+        ]
+      }
+    },
+    {
+      "id": "86",
+      "guid": "e63a5e18-1e24-4a6b-8a35-20f668b452a9",
+      "heading": "fdNotifyChannelIndependents",
+      "access": "read-only",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-659"
+        ]
+      }
+    },
+    {
+      "id": "52",
+      "guid": "7E2EED38-0B06-4F56-A10A-AE4548A6707F",
+      "heading": "fdNotifyChannelDrops",
+      "access": "read-only",
+      "oid": "fdNotifyChannelEntry 8",
+      "status": "current",
+      "syntax": "ITSCounter32",
+      "type": "ot",
+      "units": "notification packets",
+      "links": {
+        "satisfies": [
+          "26048_1-659"
+        ]
+      }
+    },
+    {
+      "id": "53",
+      "guid": "06DE3C2D-402C-4022-82A2-4CAF3D06F055",
+      "heading": "fdNotifyChannelFailures",
+      "access": "read-only",
+      "oid": "fdNotifyChannelEntry 9",
+      "status": "current",
+      "syntax": "ITSCounter32",
+      "type": "ot",
+      "units": "notification packets",
+      "links": {
+        "satisfies": [
+          "26048_1-659"
+        ]
+      }
+    },
+    {
+      "id": "54",
+      "guid": "6BD9D862-4727-4061-9FE4-54CD46C4715E",
+      "heading": "fdNotifyChannelTimeStamp",
+      "access": "read-only",
+      "oid": "fdNotifyChannelEntry 10",
+      "status": "current",
+      "syntax": "TimeStamp",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-659"
+        ]
+      }
+    },
+    {
+      "id": "55",
+      "guid": "A9E68849-75E0-4E9D-8847-18F02BF6C8F5",
+      "heading": "fdNotifyChannelClearQueue",
+      "access": "read-create",
+      "oid": "fdNotifyChannelEntry 11",
+      "status": "current",
+      "syntax": "TruthValue",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-658"
+        ]
+      }
+    },
+    {
+      "id": "90",
+      "guid": "a0fcc7c7-aa52-4e76-9a7a-66bcc31df32b",
+      "heading": "fdNotifyChannelGuaranteeStatus",
+      "links": {
+        "satisfies": [
+          "26048_1-1377"
+        ]
+      }
+    },
+    {
+      "id": "91",
+      "guid": "2015d607-36c9-44b7-94f9-5c3a5f3d1b22",
+      "heading": "fdNotifyChannelGuaranteeNum",
+      "links": {
+        "satisfies": [
+          "26048_1-1376"
+        ]
+      }
+    },
+    {
+      "id": "92",
+      "guid": "6c4126ae-2d71-4c1a-9728-b3f81ceb336c",
+      "heading": "fdNotifyChannelGuaranteeNumAck",
+      "links": {
+        "satisfies": [
+          "26048_1-1375"
+        ]
+      }
+    },
+    {
+      "id": "94",
+      "guid": "dabd923c-9893-44ec-a050-ae80faf46a11",
+      "heading": "fdNotifyChannelGuaranteeData",
+      "links": {
+        "satisfies": [
+          "26048_1-1379"
+        ]
+      }
+    },
+    {
+      "id": "93",
+      "guid": "0e1db043-8679-43ec-9ca3-34213568e7d6",
+      "heading": "fdNotifyChannelErrorStatus",
+      "links": {
+        "satisfies": [
+          "26048_1-1378"
+        ]
+      }
+    },
+    {
+      "id": "56",
+      "guid": "4FC7C711-7F12-4BEA-84CE-B3692FB3F90F",
+      "heading": "fdNotifyChannelStorageType",
+      "access": "read-create",
+      "oid": "fdNotifyChannelEntry 12",
+      "status": "current",
+      "syntax": "StorageType",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-651",
+          "26048_1-657"
+        ]
+      }
+    },
+    {
+      "id": "57",
+      "guid": "E1897947-2D37-4C59-9779-D0C85A731A3C",
+      "heading": "fdNotifyChannelRowStatus",
+      "access": "read-create",
+      "oid": "fdNotifyChannelEntry 13",
+      "status": "current",
+      "syntax": "RowStatus",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-651",
+          "26048_1-657",
+          "26048_1-662",
+          "26048_1-1376",
+          "26048_1-1377",
+          "26048_1-1378",
+          "26048_1-1379"
+        ]
+      },
+      "history": [
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-658"
+            ],
+            "type": "implement"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T15:54:06.540Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedLink": {
+            "newType": "satisfies",
+            "oldTargets": [
+              "26048_1-658"
+            ],
+            "oldType": "implement"
+          },
+          "changedOn": "2024-11-14T15:54:16.860Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Kenneth Vaughn"
+          },
+          "changedOn": "2024-11-14T16:52:14.167Z",
+          "removedLink": {
+            "target": [
+              "26048_1-658"
+            ],
+            "type": "satisfies"
+          }
+        }
+      ]
+    },
+    {
+      "id": "73",
+      "guid": "e6ad16a5-9572-4617-a7e1-60016f4bdaae",
+      "heading": "fdNotifyIndependentTable",
+      "access": "not-accessible",
+      "type": "ot"
+    },
+    {
+      "id": "74",
+      "guid": "7278d196-ec5e-4f4e-b5ff-9e224548224f",
+      "heading": "fdNotifyIndependentEntry",
+      "access": "not-accessible",
+      "type": "ot"
+    },
+    {
+      "id": "75",
+      "guid": "e4bd0f9f-67ed-4464-b6bc-a0a021a888d5",
+      "heading": "fdNotifyIndependentIndex",
+      "access": "not-accessible",
+      "type": "ot"
+    },
+    {
+      "id": "76",
+      "guid": "0e3cb872-f8a3-4a5b-9035-5ea1d3df3613",
+      "heading": "fdNotifyIndependentOID",
+      "access": "read-only",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-1319"
+        ]
+      }
+    },
+    {
+      "id": "77",
+      "guid": "fa9e1bcf-bec6-4283-b1f0-ad54cc1fd131",
+      "heading": "fdNotifyIndependentMapTable",
+      "access": "not-accessible",
+      "type": "ot"
+    },
+    {
+      "id": "78",
+      "guid": "8de1aba3-1e20-439d-b62b-eb85cbcd86fe",
+      "heading": "fdNotifyIndependentMapEntry",
+      "access": "not-accessible",
+      "type": "ot"
+    },
+    {
+      "id": "79",
+      "guid": "273163ef-99f9-4bdc-8d51-daf42bff57be",
+      "heading": "fdNotifyIndependentMapMode",
+      "access": "read-create",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-1290",
+          "26048_1-1291"
+        ]
+      }
+    },
+    {
+      "id": "80",
+      "guid": "31c59bd3-8e0a-4b2a-8153-d1593237b9ea",
+      "heading": "fdNotifyIndependentMapStorageType",
+      "access": "read-create",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-1290",
+          "26048_1-1291"
+        ]
+      }
+    },
+    {
+      "id": "81",
+      "guid": "1f938f3c-eb4a-47a0-8bf2-ce9a06b301b9",
+      "heading": "fdNotifyIndependentMapRowStatus",
+      "access": "read-create",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-1290",
+          "26048_1-1291",
+          "26048_1-1292"
+        ]
+      }
+    },
+    {
+      "id": "58",
+      "guid": "83BCAA63-F374-48A7-A3F2-762850273B65",
+      "heading": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "59",
+      "guid": "590D5E6F-9988-4C55-B8CD-27FD334EDC50",
+      "heading": "fdNotifyData",
+      "access": "read-only",
+      "oid": "fdNotifyMIB 5",
+      "status": "current",
+      "syntax": "ITSOerString",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-698"
+        ]
+      }
+    },
+    {
+      "id": "60",
+      "guid": "30DA423D-66BC-4BB9-9117-5DED550724BD",
+      "heading": "fdNotifyNotifications",
+      "oid": "fdNotifyMIB 0",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "61",
+      "guid": "0DBE0155-FA3E-44CD-A5C8-0C8450688138",
+      "heading": "fdNotifyPacket",
+      "oid": "fdNotifyNotifications 1",
+      "status": "current",
+      "type": "nt",
+      "updated": "fdNotifyData",
+      "links": {
+        "satisfies": [
+          "26048_1-664"
+        ]
+      }
+    },
+    {
+      "id": "62",
+      "guid": "1E94FB7C-C875-47DF-8642-1F4E85CE122D",
+      "heading": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "63",
+      "guid": "6523EEA6-7491-40AC-9A29-E415FF22913C",
+      "heading": "fdNotifyConformance",
+      "oid": "fdGlobalConformance 17",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "64",
+      "guid": "4E2498D2-E194-43ED-8BDC-39078DF1BFAF",
+      "heading": "fdNotifyCompliances",
+      "oid": "fdNotifyConformance 1",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "65",
+      "guid": "4BD5E164-83D0-4919-8BF8-F39099D79490",
+      "heading": "fdNotifyGroups",
+      "oid": "fdNotifyConformance 2",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "66",
+      "guid": "9A37822F-FEF5-4C7F-8511-36A866BC08B0",
+      "heading": "fdNotifyMIBCompliance",
+      "oid": "fdNotifyCompliances 1",
+      "status": "current",
+      "syntax": "{ fdNotifyAdminGroupV1,<br> fdNotifyFactoryGroupV1,<br> fdNotifyChannelGroupV1,<br> fdNotifyDataGroupV1,<br> fdNotifyGroupV1<br> }",
+      "type": "mc"
+    },
+    {
+      "id": "67",
+      "guid": "EA9B7F2F-6645-4D04-937C-76C4D9A1573E",
+      "heading": "fdNotifyAdminGroupV1",
+      "oid": "fdNotifyGroups 1",
+      "status": "current",
+      "syntax": "<p>{ fdAdminNotifyEnabled,</p><p>fdAdminNotifyTotalSnapshots,</p><p>fdAdminNotifyTotalPackets,</p><p>fdAdminNotifyTotalDrops,</p><p>fdAdminNotifyTotalFailures,</p><p>fdOwnerNotifyMaxFactories,</p><p>fdOwnerNotifyMaxChannels,</p><p>fdOwnerNotifySnapshots,</p><p>fdOwnerNotifyPackets,</p><p>fdOwnerNotifyDrops,</p><p>fdOwnerNotifyFailures</p><p>}</p>",
+      "type": "og"
+    },
+    {
+      "id": "68",
+      "guid": "44273908-5D6A-406D-B3EB-F39561CB6568",
+      "heading": "fdNotifyFactoryGroupV1",
+      "oid": "fdNotifyGroups 2",
+      "status": "current",
+      "syntax": "<p>{ fdNotifiesModeSupport,</p><p>fdNotifiesMaxSize,</p><p>fdNotifyFactoryDescription,</p><p>fdNotifyFactoryObjectContext,</p><p>fdNotifyFactoryObjectID,</p><p>fdNotifyFactoryAggMaxSnapshots,</p><p>fdNotifyFactoryAggregationTime,</p><p>fdNotifyFactoryQueueEnabled,</p><p>fdNotifyFactoryAckEnabled,</p><p>fdNotifyFactoryChannel,</p><p>fdNotifyFactoryStorageType,</p><p>fdNotifyFactorySnapshots,</p><p>fdNotifyFactoryTimeStamp,</p><p>fdNotifyFactoryRowStatus</p><p>}</p>",
+      "type": "og"
+    },
+    {
+      "id": "69",
+      "guid": "7B074A41-F089-4223-96B2-E9A81997E4D9",
+      "heading": "fdNotifyChannelGroupV1",
+      "oid": "fdNotifyGroups 3",
+      "status": "current",
+      "syntax": "{ fdNotifyChannelDescription,<br> fdNotifyChannelTarget,<br> fdNotifyChannelQueueDepth,<br> fdNotifyChannelAntiStreamRate,<br> fdNotifyChannelMaxSize,<br> fdNotifyChannelPackets,<br> fdNotifyChannelDrops,<br> fdNotifyChannelFailures,<br> fdNotifyChannelTimeStamp,<br> fdNotifyChannelClearQueue,<br> fdNotifyChannelStorageType,<br> fdNotifyChannelRowStatus<br> }",
+      "type": "og"
+    },
+    {
+      "id": "70",
+      "guid": "237DB842-1839-405D-9742-F63479E55C97",
+      "heading": "fdNotifyDataGroupV1",
+      "oid": "fdNotifyGroups 4",
+      "status": "current",
+      "syntax": "{ fdNotifyData<br> }",
+      "type": "og"
+    },
+    {
+      "id": "71",
+      "guid": "26652370-7191-4348-8C15-FBE3D2337D5D",
+      "heading": "end",
+      "type": "end"
+    }
+  ],
+  "attributes": {
+    "access": {
+      "heading": "Access",
+      "type": "enum",
+      "values": [
+        {
+          "key": "read-only"
+        },
+        {
+          "key": "read-write"
+        },
+        {
+          "key": "read-create"
+        },
+        {
+          "key": "not-accessible"
+        },
+        {
+          "key": "accessible-for-notify"
+        }
+      ]
+    },
+    "augments": {
+      "heading": "Augments",
+      "type": "string"
+    },
+    "comment": {
+      "heading": "Comment",
+      "type": "xhtml"
+    },
+    "contact": {
+      "heading": "Contact",
+      "type": "xhtml"
+    },
+    "defval": {
+      "heading": "Default Value",
+      "type": "string"
+    },
+    "index": {
+      "heading": "Index",
+      "type": "string"
+    },
+    "name": {
+      "heading": "Name",
+      "type": "string"
+    },
+    "oid": {
+      "heading": "OID",
+      "type": "string"
+    },
+    "org": {
+      "heading": "Organization",
+      "type": "string"
+    },
+    "part": {
+      "heading": "Part",
+      "type": "string"
+    },
+    "status": {
+      "heading": "Status",
+      "type": "enum",
+      "values": [
+        {
+          "key": "current"
+        },
+        {
+          "key": "deprecated"
+        },
+        {
+          "key": "obsolete"
+        }
+      ]
+    },
+    "syntax": {
+      "heading": "Syntax",
+      "type": "xhtml"
+    },
+    "type": {
+      "heading": "Type",
+      "type": "enum",
+      "values": [
+        {
+          "key": "comment"
+        },
+        {
+          "key": "end"
+        },
+        {
+          "key": "mc",
+          "label": "module-compliance"
+        },
+        {
+          "key": "mi",
+          "label": "module-identity"
+        },
+        {
+          "key": "mib"
+        },
+        {
+          "key": "ng",
+          "label": "notification-group"
+        },
+        {
+          "key": "nt",
+          "label": "notification-type"
+        },
+        {
+          "key": "og",
+          "label": "object-group"
+        },
+        {
+          "key": "oi",
+          "label": "object-identity"
+        },
+        {
+          "key": "ot",
+          "label": "object-type"
+        },
+        {
+          "key": "ref",
+          "label": "reference"
+        },
+        {
+          "key": "rev",
+          "label": "revision"
+        },
+        {
+          "key": "row"
+        },
+        {
+          "key": "text_conv"
+        }
+      ]
+    },
+    "units": {
+      "heading": "Units",
+      "type": "string"
+    },
+    "updated": {
+      "heading": "Updated",
+      "type": "string"
+    }
+  },
+  "templateColumns": {
+    "2112b8ee-ce16-468f-9082-4f496f71857f": {
+      "label": "Errors",
+      "template": "{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-only\") (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\"))) (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies link\" link</div>\n  {{/if}}\n{{/if}}"
+    }
+  },
+  "views": {
+    "Primary": {
+      "columns": [
+        {
+          "columnId": "id",
+          "width": 74
+        },
+        {
+          "columnId": "type",
+          "width": 106
+        },
+        {
+          "columnId": "name",
+          "width": 256
+        },
+        {
+          "columnId": "description",
+          "width": 685
+        },
+        {
+          "columnId": "links",
+          "width": 281
+        },
+        {
+          "columnId": "access",
+          "width": 172
+        }
+      ],
+      "default": true
+    }
+  },
+  "metadata": {
+    "format": "2.20"
+  }
+}

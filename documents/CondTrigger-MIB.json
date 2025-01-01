@@ -1,1 +1,947 @@
-{"id":"CondTrigger-MIB","guid":"700FBDDC-EEFA-435F-A9FE-90328C1F8B6A","heading":"ISO26048-1-CondTrigger","lastId":57,"createdOn":"2023-06-21T12:03:08","createdBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"lastChangedOn":"2024-03-26T13:31:14.376Z","lastChangedBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"data":[{"id":"1","guid":"AEC125C0-D138-4BEE-A6CA-A350B77DE60B","text":"","heading":"comment","type":"comment"},{"id":"2","guid":"141DE918-07CC-44B0-8072-0A182BBFF8FE","text":"","heading":"ISO26048-1-CondTrigger","type":"mib"},{"id":"3","guid":"D353A0FB-B42B-4E2E-B545-C6DD1E2E3480","text":"","contact":"<p>name: ISO TC 204 Committee Manager email: jennifer.collins@sae.org website: https://www.iso.org/committee/54706.html</p>","heading":"fdCondTriggerMIB","oid":"fdGlobalMIB 11","org":"ISO TC 204 WG 9","type":"mi","updated":"201912302026Z"},{"id":"4","guid":"588F4982-5B7D-41B2-BDF1-45ED876F248A","text":"","heading":"comment","type":"comment"},{"id":"5","guid":"730E2435-9BA4-4192-9BAB-56BBD926A05D","text":"","heading":"fdAdminCondTrigger","oid":"fdAdminGlobal 11","status":"current","type":"oi"},{"id":"6","guid":"733C57AC-200A-4147-9255-05CDEBC55059","heading":"fdAdminCondTriggersTotalEvalErrs","text":"","access":"read-only","links":{"satisfies":["26048_1-568"]},"oid":"fdAdminCondTrigger 1","status":"current","syntax":"ITSCounter32","type":"ot"},{"id":"7","guid":"2C202B6D-6912-4AA7-A139-A1D78002F061","heading":"fdAdminCondTriggersTotalFires","text":"","access":"read-only","links":{"satisfies":["26048_1-568"]},"oid":"fdAdminCondTrigger 2","status":"current","syntax":"ITSCounter32","type":"ot"},{"id":"8","guid":"D597A361-ACDB-4274-915C-F144DEDFA328","heading":"fdAdminCondTriggersTotalCallErrs","text":"","access":"read-only","links":{"satisfies":["26048_1-568"]},"oid":"fdAdminCondTrigger 3","status":"current","syntax":"ITSCounter32","type":"ot"},{"id":"9","guid":"A9F3D676-2FE0-4C47-94E4-04FD7AA9DDE8","heading":"fdOwnerCondTriggerTable","text":"","access":"not-accessible","type":"ot","oid":"fdAdminCondTrigger 4","status":"current","syntax":"SEQUENCE OF FdOwnerCondTriggerEntry"},{"id":"10","guid":"B77FBAD5-8049-47E9-8461-F669D3168874","text":"","access":"not-accessible","augments":"fdOwnerEntry","heading":"fdOwnerCondTriggerEntry","oid":"fdOwnerCondTriggerTable 1","status":"current","syntax":"FdOwnerCondTriggerEntry","type":"ot"},{"id":"11","guid":"6C289594-F9F1-4D33-B781-FB9CD3C7571A","heading":"FdOwnerCondTriggerEntry","syntax":"{ fdOwnerCondTriggerMaxRows ITSUnsigned8,<br> fdOwnerCondTriggerEvalErrs ITSCounter16,<br> fdOwnerCondTriggerFires ITSCounter16,<br> fdOwnerCondTriggerCallErrs ITSCounter16 }","type":"row"},{"id":"12","guid":"40110C1C-063B-4EF8-99DE-470885F46EF8","heading":"fdOwnerCondTriggerMaxRows","text":"","access":"read-create","defval":"0","links":{"satisfies":["26048_1-571","26048_1-572"]},"oid":"fdOwnerCondTriggerEntry 1","status":"current","syntax":"ITSUnsigned8","type":"ot"},{"id":"13","guid":"E043E2A0-CE28-449A-8A4D-D52299A881BB","heading":"fdOwnerCondTriggerEvalErrs","text":"","access":"read-only","links":{"satisfies":["26048_1-573"]},"oid":"fdOwnerCondTriggerEntry 2","status":"current","syntax":"ITSCounter16","type":"ot"},{"id":"14","guid":"6EAEA685-9251-4B42-8596-5F98D4CE483D","heading":"fdOwnerCondTriggerFires","text":"","access":"read-only","links":{"satisfies":["26048_1-573"]},"oid":"fdOwnerCondTriggerEntry 3","status":"current","syntax":"ITSCounter16","type":"ot"},{"id":"15","guid":"3BB79831-76BC-4A1D-92BE-248BBF7D6EBD","heading":"fdOwnerCondTriggerCallErrs","text":"","access":"read-only","links":{"satisfies":["26048_1-573"]},"oid":"fdOwnerCondTriggerEntry 4","status":"current","syntax":"ITSCounter16","type":"ot"},{"id":"16","guid":"A5F973E3-0C49-4595-A5B5-00B49FEA5D7D","text":"","heading":"comment","type":"comment"},{"id":"17","guid":"758F7B4A-4B30-4A25-8447-0840C7CFEAE5","heading":"fdCondTriggersSupport","text":"","access":"read-only","links":{"satisfies":["26048_1-563"]},"oid":"fdCondTriggerMIB 1","status":"current","syntax":"BITS {<br> current (0), <br> delta (1), <br> onChange (2), <br> greaterThan (3), <br> lessThan (4), <br> hysteresis (5), <br> periodic (6), <br> andedWithValue (7), <br> equal (8), <br> notEqual (9), <br> creation (10), <br> deletion (11),<br> bitwiseAnd (12) }","type":"ot"},{"id":"18","guid":"8C8CC1DC-1AD4-4B21-8B96-BC715BC6BD9D","heading":"fdCondTriggersFrequencyLimit","text":"","access":"read-only","links":{"satisfies":["26048_1-563"]},"oid":"fdCondTriggerMIB 2","status":"current","syntax":"Unsigned32","type":"ot"},{"id":"19","guid":"B45EA195-1651-4F56-B515-2BC132793350","heading":"fdCondTriggersFrequencyNotes","text":"","access":"read-only","links":{"satisfies":["26048_1-563"]},"oid":"fdCondTriggerMIB 3","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"20","guid":"C0D850F9-AFD6-4CEB-9780-022E89E19E08","heading":"fdCondTriggerTable","text":"","access":"not-accessible","type":"ot","oid":"fdCondTriggerMIB 4","status":"current","syntax":"SEQUENCE OF FdCondTriggerEntry"},{"id":"21","guid":"6B5B6768-3B13-4597-BBBA-057C28B5964C","text":"","access":"not-accessible","index":"fdOwnerIndex, fdCondTriggerIndex","heading":"fdCondTriggerEntry","oid":"fdCondTriggerTable 1","status":"current","syntax":"FdCondTriggerEntry","type":"ot"},{"id":"22","guid":"F7247A78-A956-47BC-AA26-99CB00103DB9","heading":"FdCondTriggerEntry","syntax":"<p>{ fdCondTriggerIndex ITSPositive8,<br>fdCondTriggerDescription SnmpAdminString,<br>fdCondTriggerMode INTEGER,<br>fdCondTriggerSampleType INTEGER,<br>fdCondTriggerValue ITSBerString,<br>fdCondTriggerValue2 ITSBerString,<br>fdCondTriggerObject VariablePointer,<br>fdCondTriggerWildcard TruthValue,<br>fdCondTriggerObjectTarget SnmpAdminString,<br>fdCondTriggerObjectContext SnmpAdminString,<br>fdCondTriggerObjectFrequency Unsigned32,<br>fdCondTriggerTruthDuration Unsigned32,<br>fdCondTriggerStartup TruthValue,<br>fdCondTriggerStartup2 TruthValue,<br>fdCondTriggerActions ITSRelativeRowPointer,<br>fdCondTriggerActions2 ITSRelativeRowPointer,<br>fdCondTriggerCfgMessage SnmpAdminString,<br>fdCondTriggerEvalErrs ITSCounter32,<br>fdCondTriggerFires ITSCounter32,<br>fdCondTriggerCallErrs ITSCounter32,<br>fdCondTriggerTimeStamp TimeStamp,<br>fdCondTriggerSecurityModel SnmpSecurityModel,<br>fdCondTriggerSecurityLevel SnmpSecurityLevel,<br>fdCondTriggerSecurityName SnmpAdminString,<br>fdCondTriggerStorageType StorageType,<br>fdCondTriggerRowStatus RowStatus }</p>","type":"row"},{"id":"23","guid":"04FF389E-2A53-4EB0-9309-967FA7FD24A0","heading":"fdCondTriggerIndex","text":"","access":"not-accessible","type":"ot","oid":"fdCondTriggerEntry 1","status":"current","syntax":"ITSPositive8"},{"id":"24","guid":"432FE7F2-D29F-4B0F-8244-4360B4F5007B","heading":"fdCondTriggerDescription","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565","26048_1-1309"]},"oid":"fdCondTriggerEntry 2","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"25","guid":"B27CE378-A10B-4A74-A955-0B1C49904181","heading":"fdCondTriggerMode","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565"]},"oid":"fdCondTriggerEntry 3","status":"current","syntax":"INTEGER {<br> other (1), <br> onChange (2), <br> greaterThan (3), <br> lessThan (4), <br> hysteresis (5), <br> periodic (6), <br> equal (7), <br> notEqual (8), <br> creation (9), <br> deletion (10),<br> bitwiseAnd (11) }","type":"ot"},{"id":"26","guid":"7C967BB5-9ACD-4D87-8361-60183E6B2ECF","heading":"fdCondTriggerSampleType","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565"]},"oid":"fdCondTriggerEntry 4","status":"current","syntax":"INTEGER { other (1), current (2), delta (3) }","type":"ot"},{"id":"27","guid":"CEB3A62B-E85B-46CC-BE99-3E779CCD9477","heading":"fdCondTriggerValue","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565"]},"oid":"fdCondTriggerEntry 5","status":"current","syntax":"ITSBerString","type":"ot"},{"id":"28","guid":"A365CB05-073F-4E32-A1F6-84D8194FDFFB","heading":"fdCondTriggerValue2","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565"]},"oid":"fdCondTriggerEntry 6","status":"current","syntax":"ITSBerString","type":"ot"},{"id":"29","guid":"F97978E4-7A18-4227-92D8-D4F225174CFC","heading":"fdCondTriggerObject","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565"]},"oid":"fdCondTriggerEntry 7","status":"current","syntax":"VariablePointer","type":"ot"},{"id":"30","guid":"232EA256-5667-4640-ACA6-7538777B8413","heading":"fdCondTriggerWildcard","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565"]},"oid":"fdCondTriggerEntry 8","status":"current","syntax":"TruthValue","type":"ot"},{"id":"31","guid":"2EDD5CB1-4CA2-42E8-B0A3-F8C88854D93F","heading":"fdCondTriggerObjectTarget","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565"]},"oid":"fdCondTriggerEntry 9","status":"current","syntax":"SnmpAdminString (SIZE(0..32))","type":"ot"},{"id":"32","guid":"61853DB4-FB21-41C8-B2E6-601196A986E4","heading":"fdCondTriggerObjectContext","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565"]},"oid":"fdCondTriggerEntry 10","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"33","guid":"AD3E8425-EAED-4CBB-A8C2-DBD2EB94B0F9","heading":"fdCondTriggerObjectFrequency","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565","26048_1-1309"]},"oid":"fdCondTriggerEntry 11","status":"current","syntax":"Unsigned32","type":"ot","units":"seconds"},{"id":"34","guid":"F3B4561D-84FC-4B41-BFC3-E68D74ABC421","heading":"fdCondTriggerTruthDuration","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565"]},"oid":"fdCondTriggerEntry 12","status":"current","syntax":"Unsigned32","type":"ot"},{"id":"35","guid":"4F5F8DC5-B0C7-403F-9B75-737BF1B8DC04","heading":"fdCondTriggerStartup","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565"]},"oid":"fdCondTriggerEntry 13","status":"current","syntax":"TruthValue","type":"ot"},{"id":"36","guid":"9DE38BBE-144A-411D-ABCD-F0BCAB004D21","heading":"fdCondTriggerStartup2","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565"]},"oid":"fdCondTriggerEntry 14","status":"current","syntax":"TruthValue","type":"ot"},{"id":"37","guid":"4691865E-575B-4E3B-A513-BD6592DF176C","heading":"fdCondTriggerActionGroup","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565","26048_1-1309"]},"oid":"fdCondTriggerEntry 15","status":"current","syntax":"ITSRelativeRowPointer","type":"ot"},{"id":"38","guid":"DC7B695E-341D-4240-B179-BB76C3CBC7F8","heading":"fdCondTriggerActionGroup2","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565"]},"oid":"fdCondTriggerEntry 16","status":"current","syntax":"ITSRelativeRowPointer","type":"ot"},{"id":"39","guid":"ECB04C32-8929-42D9-BD8F-7EC489D7F9E5","heading":"fdCondTriggerCfgMessage","text":"","access":"read-only","links":{"satisfies":["26048_1-565"]},"oid":"fdCondTriggerEntry 17","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"40","guid":"EC13249F-B83A-4C86-8B9B-93B523FAAF6D","heading":"fdCondTriggerEvalErrs","text":"","access":"read-only","links":{"satisfies":["26048_1-567"]},"oid":"fdCondTriggerEntry 18","status":"current","syntax":"ITSCounter32","type":"ot"},{"id":"41","guid":"D428BDF6-74C5-4DBB-B085-816B89F68A3D","heading":"fdCondTriggerFires","text":"","access":"read-only","links":{"satisfies":["26048_1-567"]},"oid":"fdCondTriggerEntry 19","status":"current","syntax":"ITSCounter32","type":"ot"},{"id":"42","guid":"272AE404-40A5-4F6F-97D6-F5C865B5792E","heading":"fdCondTriggerCallErrs","text":"","access":"read-only","links":{"satisfies":["26048_1-567"]},"oid":"fdCondTriggerEntry 20","status":"current","syntax":"ITSCounter32","type":"ot"},{"id":"43","guid":"078FE8A4-D9DC-4102-90C7-4CBE0D30A691","heading":"fdCondTriggerTimeStamp","text":"","access":"read-only","links":{"satisfies":["26048_1-567"]},"oid":"fdCondTriggerEntry 21","status":"current","syntax":"TimeStamp","type":"ot"},{"id":"44","guid":"875BD0ED-43DE-49F0-8A49-F550131AA0AD","heading":"fdCondTriggerSecurityModel","text":"","access":"not-accessible","type":"ot","oid":"fdCondTriggerEntry 22","status":"current","syntax":"SnmpSecurityModel"},{"id":"45","guid":"E83FEA1F-E6E4-4582-BEB7-A5CC0F6547F1","heading":"fdCondTriggerSecurityLevel","text":"","access":"not-accessible","type":"ot","oid":"fdCondTriggerEntry 23","status":"current","syntax":"SnmpSecurityLevel"},{"id":"46","guid":"1B654589-D348-46C0-9072-86EFC20DD780","heading":"fdCondTriggerSecurityName","text":"","access":"not-accessible","type":"ot","oid":"fdCondTriggerEntry 24","status":"current","syntax":"SnmpAdminString"},{"id":"47","guid":"024E254E-B288-4FB2-ADE2-F02234CD8FEA","heading":"fdCondTriggerStorageType","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565"]},"oid":"fdCondTriggerEntry 25","status":"current","syntax":"StorageType","type":"ot"},{"id":"48","guid":"4E445EA2-D8C6-4FBA-8D14-04A55DCB6DF4","heading":"fdCondTriggerRowStatus","text":"","access":"read-create","links":{"satisfies":["26048_1-564","26048_1-565","26048_1-566","26048_1-569","26048_1-1309"]},"oid":"fdCondTriggerEntry 26","status":"current","syntax":"RowStatus","type":"ot"},{"id":"49","guid":"3430E053-0846-448B-A01C-6B6BC53DAE3F","text":"","heading":"comment","type":"comment"},{"id":"50","guid":"2B6F78DC-7178-4F38-8BB7-254D5C92FC24","text":"","heading":"fdCondTriggerConformance","oid":"fdGlobalConformance 11","status":"current","type":"oi"},{"id":"51","guid":"240C050C-E568-474A-9823-A2154E277F34","text":"","heading":"fdCondTriggerCompliances","oid":"fdCondTriggerConformance 1","status":"current","type":"oi"},{"id":"52","guid":"A66E3D1E-6E13-4993-8AA2-D861FC402A26","text":"","heading":"fdCondTriggerGroups","oid":"fdCondTriggerConformance 2","status":"current","type":"oi"},{"id":"53","guid":"C5C1981B-FA2E-4EC4-94BB-A42C257C41A0","text":"","heading":"fdCondTriggerComplianceV1","oid":"fdCondTriggerCompliances 1","status":"current","syntax":"{ fdCondTriggerAdminGroupV1,<br> fdCondTriggerGroupV1<br> }","type":"mc"},{"id":"54","guid":"7631820B-543A-4862-89F7-31C992BD76BE","text":"","heading":"fdCondTriggerAdminGroupV1","oid":"fdCondTriggerGroups 1","status":"current","syntax":"{ fdAdminCondTriggersTotalEvalErrs,<br> fdAdminCondTriggersTotalFires,<br> fdAdminCondTriggersTotalCallErrs,<br> fdOwnerCondTriggerMaxRows,<br> fdOwnerCondTriggerEvalErrs,<br> fdOwnerCondTriggerFires,<br> fdOwnerCondTriggerCallErrs<br> }","type":"og"},{"id":"55","guid":"F9B44FAA-D763-4D67-A5B0-9622CC7B55B4","text":"","heading":"fdCondTriggerGroupV1","oid":"fdCondTriggerGroups 2","status":"current","syntax":"<p>{ fdCondTriggersSupport,</p><p>fdCondTriggersFrequencyLimit,</p><p>fdCondTriggersFrequencyNotes,</p><p>fdCondTriggerDescription,</p><p>fdCondTriggerMode,</p><p>fdCondTriggerSampleType,</p><p>fdCondTriggerValue,</p><p>fdCondTriggerValue2,</p><p>fdCondTriggerObject,</p><p>fdCondTriggerWildcard,</p><p>fdCondTriggerObjectTarget,</p><p>fdCondTriggerObjectContext,</p><p>fdCondTriggerObjectFrequency,</p><p>fdCondTriggerTruthDuration,</p><p>fdCondTriggerStartup,</p><p>fdCondTriggerStartup2,</p><p>fdCondTriggerActions,</p><p>fdCondTriggerActions2,</p><p>fdCondTriggerCfgMessage,</p><p>fdCondTriggerEvalErrs,</p><p>fdCondTriggerFires,</p><p>fdCondTriggerCallErrs,</p><p>fdCondTriggerTimeStamp,</p><p>fdCondTriggerStorageType,</p><p>fdCondTriggerRowStatus</p><p>}</p>","type":"og"},{"id":"56","guid":"E47D8622-E41B-4FAE-87DD-E68F40B61103","heading":"end","type":"end"}],"attributes":{"access":{"heading":"Access","type":"enum","values":[{"key":"read-only"},{"key":"read-write"},{"key":"read-create"},{"key":"not-accessible"},{"key":"accessible-for-notify"}]},"augments":{"heading":"Augments","type":"string"},"comment":{"heading":"Comment","type":"xhtml"},"contact":{"heading":"Contact","type":"xhtml"},"defval":{"heading":"Default Value","type":"string"},"index":{"heading":"Index","type":"string"},"name":{"heading":"Name","type":"string"},"oid":{"heading":"OID","type":"string"},"org":{"heading":"Organization","type":"string"},"part":{"heading":"Part","type":"string"},"status":{"heading":"Status","type":"enum","values":[{"key":"current"},{"key":"deprecated"},{"key":"obsolete"}]},"syntax":{"heading":"Syntax","type":"xhtml"},"type":{"heading":"Type","type":"enum","values":[{"key":"comment"},{"key":"end"},{"key":"mc","label":"module-compliance"},{"key":"mi","label":"module-identity"},{"key":"mib"},{"key":"ng","label":"notification-group"},{"key":"nt","label":"notification-type"},{"key":"og","label":"object-group"},{"key":"oi","label":"object-identity"},{"key":"ot","label":"object-type"},{"key":"ref","label":"reference"},{"key":"rev","label":"revision"},{"key":"row"},{"key":"text_conv"}]},"units":{"heading":"Units","type":"string"},"updated":{"heading":"Updated","type":"string"}},"templateColumns":{"54f0f73b-4135-4673-8863-07eccf1ff778":{"label":"Errors","template":"{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (eval access \"==\" \"read-only\") (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies\" link</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\")) (eval (countOutlinks \"satisfies\") \"<\" 2))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Should have at least two \"satisfies\" links</div>\n  {{/if}}\n{{/if}}"}},"views":{"Primary":{"columns":[{"columnId":"id","width":65},{"columnId":"description","width":500}],"default":true}},"metadata":{"format":"2.17"}}
+{
+    "id": "CondTrigger-MIB",
+    "guid": "700FBDDC-EEFA-435F-A9FE-90328C1F8B6A",
+    "heading": "ISO26048-1-CondTrigger",
+    "lastId": 57,
+    "createdOn": "2023-06-21T12:03:08",
+    "createdBy": {
+        "name": "Kenneth Vaughn",
+        "email": "kvaughn@trevilon.com",
+        "company": "Trevilon"
+    },
+    "lastChangedOn": "2024-03-26T13:31:14.376Z",
+    "lastChangedBy": {
+        "name": "Kenneth Vaughn",
+        "email": "kvaughn@trevilon.com",
+        "company": "Trevilon"
+    },
+    "data": [
+        {
+            "id": "1",
+            "guid": "AEC125C0-D138-4BEE-A6CA-A350B77DE60B",
+            "text": "",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "2",
+            "guid": "141DE918-07CC-44B0-8072-0A182BBFF8FE",
+            "text": "",
+            "heading": "ISO26048-1-CondTrigger",
+            "type": "mib"
+        },
+        {
+            "id": "3",
+            "guid": "D353A0FB-B42B-4E2E-B545-C6DD1E2E3480",
+            "text": "",
+            "contact": "<p>name: ISO TC 204 Committee Manager email: jennifer.collins@sae.org website: https://www.iso.org/committee/54706.html</p>",
+            "heading": "fdCondTriggerMIB",
+            "oid": "fdGlobalMIB 11",
+            "org": "ISO TC 204 WG 9",
+            "type": "mi",
+            "updated": "201912302026Z"
+        },
+        {
+            "id": "4",
+            "guid": "588F4982-5B7D-41B2-BDF1-45ED876F248A",
+            "text": "",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "5",
+            "guid": "730E2435-9BA4-4192-9BAB-56BBD926A05D",
+            "text": "",
+            "heading": "fdAdminCondTrigger",
+            "oid": "fdAdminGlobal 11",
+            "status": "current",
+            "type": "oi"
+        },
+        {
+            "id": "6",
+            "guid": "733C57AC-200A-4147-9255-05CDEBC55059",
+            "heading": "fdAdminCondTriggersTotalEvalErrs",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-568"
+                ]
+            },
+            "oid": "fdAdminCondTrigger 1",
+            "status": "current",
+            "syntax": "ITSCounter32",
+            "type": "ot"
+        },
+        {
+            "id": "7",
+            "guid": "2C202B6D-6912-4AA7-A139-A1D78002F061",
+            "heading": "fdAdminCondTriggersTotalFires",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-568"
+                ]
+            },
+            "oid": "fdAdminCondTrigger 2",
+            "status": "current",
+            "syntax": "ITSCounter32",
+            "type": "ot"
+        },
+        {
+            "id": "8",
+            "guid": "D597A361-ACDB-4274-915C-F144DEDFA328",
+            "heading": "fdAdminCondTriggersTotalCallErrs",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-568"
+                ]
+            },
+            "oid": "fdAdminCondTrigger 3",
+            "status": "current",
+            "syntax": "ITSCounter32",
+            "type": "ot"
+        },
+        {
+            "id": "9",
+            "guid": "A9F3D676-2FE0-4C47-94E4-04FD7AA9DDE8",
+            "heading": "fdOwnerCondTriggerTable",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdAdminCondTrigger 4",
+            "status": "current",
+            "syntax": "SEQUENCE OF FdOwnerCondTriggerEntry"
+        },
+        {
+            "id": "10",
+            "guid": "B77FBAD5-8049-47E9-8461-F669D3168874",
+            "text": "",
+            "access": "not-accessible",
+            "augments": "fdOwnerEntry",
+            "heading": "fdOwnerCondTriggerEntry",
+            "oid": "fdOwnerCondTriggerTable 1",
+            "status": "current",
+            "syntax": "FdOwnerCondTriggerEntry",
+            "type": "ot"
+        },
+        {
+            "id": "11",
+            "guid": "6C289594-F9F1-4D33-B781-FB9CD3C7571A",
+            "heading": "FdOwnerCondTriggerEntry",
+            "syntax": "{ fdOwnerCondTriggerMaxRows ITSUnsigned8,<br> fdOwnerCondTriggerEvalErrs ITSCounter16,<br> fdOwnerCondTriggerFires ITSCounter16,<br> fdOwnerCondTriggerCallErrs ITSCounter16 }",
+            "type": "row"
+        },
+        {
+            "id": "12",
+            "guid": "40110C1C-063B-4EF8-99DE-470885F46EF8",
+            "heading": "fdOwnerCondTriggerMaxRows",
+            "text": "",
+            "access": "read-create",
+            "defval": "0",
+            "links": {
+                "satisfies": [
+                    "26048_1-571",
+                    "26048_1-572"
+                ]
+            },
+            "oid": "fdOwnerCondTriggerEntry 1",
+            "status": "current",
+            "syntax": "ITSUnsigned8",
+            "type": "ot"
+        },
+        {
+            "id": "13",
+            "guid": "E043E2A0-CE28-449A-8A4D-D52299A881BB",
+            "heading": "fdOwnerCondTriggerEvalErrs",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-573"
+                ]
+            },
+            "oid": "fdOwnerCondTriggerEntry 2",
+            "status": "current",
+            "syntax": "ITSCounter16",
+            "type": "ot"
+        },
+        {
+            "id": "14",
+            "guid": "6EAEA685-9251-4B42-8596-5F98D4CE483D",
+            "heading": "fdOwnerCondTriggerFires",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-573"
+                ]
+            },
+            "oid": "fdOwnerCondTriggerEntry 3",
+            "status": "current",
+            "syntax": "ITSCounter16",
+            "type": "ot"
+        },
+        {
+            "id": "15",
+            "guid": "3BB79831-76BC-4A1D-92BE-248BBF7D6EBD",
+            "heading": "fdOwnerCondTriggerCallErrs",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-573"
+                ]
+            },
+            "oid": "fdOwnerCondTriggerEntry 4",
+            "status": "current",
+            "syntax": "ITSCounter16",
+            "type": "ot"
+        },
+        {
+            "id": "16",
+            "guid": "A5F973E3-0C49-4595-A5B5-00B49FEA5D7D",
+            "text": "",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "17",
+            "guid": "758F7B4A-4B30-4A25-8447-0840C7CFEAE5",
+            "heading": "fdCondTriggersSupport",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-563"
+                ]
+            },
+            "oid": "fdCondTriggerMIB 1",
+            "status": "current",
+            "syntax": "BITS {<br> current (0), <br> delta (1), <br> onChange (2), <br> greaterThan (3), <br> lessThan (4), <br> hysteresis (5), <br> periodic (6), <br> andedWithValue (7), <br> equal (8), <br> notEqual (9), <br> creation (10), <br> deletion (11),<br> bitwiseAnd (12) }",
+            "type": "ot"
+        },
+        {
+            "id": "18",
+            "guid": "8C8CC1DC-1AD4-4B21-8B96-BC715BC6BD9D",
+            "heading": "fdCondTriggersFrequencyLimit",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-563"
+                ]
+            },
+            "oid": "fdCondTriggerMIB 2",
+            "status": "current",
+            "syntax": "Unsigned32",
+            "type": "ot"
+        },
+        {
+            "id": "19",
+            "guid": "B45EA195-1651-4F56-B515-2BC132793350",
+            "heading": "fdCondTriggersFrequencyNotes",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-563"
+                ]
+            },
+            "oid": "fdCondTriggerMIB 3",
+            "status": "current",
+            "syntax": "SnmpAdminString",
+            "type": "ot"
+        },
+        {
+            "id": "20",
+            "guid": "C0D850F9-AFD6-4CEB-9780-022E89E19E08",
+            "heading": "fdCondTriggerTable",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdCondTriggerMIB 4",
+            "status": "current",
+            "syntax": "SEQUENCE OF FdCondTriggerEntry"
+        },
+        {
+            "id": "21",
+            "guid": "6B5B6768-3B13-4597-BBBA-057C28B5964C",
+            "text": "",
+            "access": "not-accessible",
+            "index": "fdOwnerIndex, fdCondTriggerIndex",
+            "heading": "fdCondTriggerEntry",
+            "oid": "fdCondTriggerTable 1",
+            "status": "current",
+            "syntax": "FdCondTriggerEntry",
+            "type": "ot"
+        },
+        {
+            "id": "22",
+            "guid": "F7247A78-A956-47BC-AA26-99CB00103DB9",
+            "heading": "FdCondTriggerEntry",
+            "syntax": "<p>{ fdCondTriggerIndex ITSPositive8,<br>fdCondTriggerDescription SnmpAdminString,<br>fdCondTriggerMode INTEGER,<br>fdCondTriggerSampleType INTEGER,<br>fdCondTriggerValue ITSBerString,<br>fdCondTriggerValue2 ITSBerString,<br>fdCondTriggerObject VariablePointer,<br>fdCondTriggerWildcard TruthValue,<br>fdCondTriggerObjectTarget SnmpAdminString,<br>fdCondTriggerObjectContext SnmpAdminString,<br>fdCondTriggerObjectFrequency Unsigned32,<br>fdCondTriggerTruthDuration Unsigned32,<br>fdCondTriggerStartup TruthValue,<br>fdCondTriggerStartup2 TruthValue,<br>fdCondTriggerActions ITSRelativeRowPointer,<br>fdCondTriggerActions2 ITSRelativeRowPointer,<br>fdCondTriggerCfgMessage SnmpAdminString,<br>fdCondTriggerEvalErrs ITSCounter32,<br>fdCondTriggerFires ITSCounter32,<br>fdCondTriggerCallErrs ITSCounter32,<br>fdCondTriggerTimeStamp TimeStamp,<br>fdCondTriggerSecurityModel SnmpSecurityModel,<br>fdCondTriggerSecurityLevel SnmpSecurityLevel,<br>fdCondTriggerSecurityName SnmpAdminString,<br>fdCondTriggerStorageType StorageType,<br>fdCondTriggerRowStatus RowStatus }</p>",
+            "type": "row"
+        },
+        {
+            "id": "23",
+            "guid": "04FF389E-2A53-4EB0-9309-967FA7FD24A0",
+            "heading": "fdCondTriggerIndex",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdCondTriggerEntry 1",
+            "status": "current",
+            "syntax": "ITSPositive8"
+        },
+        {
+            "id": "24",
+            "guid": "432FE7F2-D29F-4B0F-8244-4360B4F5007B",
+            "heading": "fdCondTriggerDescription",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565",
+                    "26048_1-1309"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 2",
+            "status": "current",
+            "syntax": "SnmpAdminString",
+            "type": "ot"
+        },
+        {
+            "id": "25",
+            "guid": "B27CE378-A10B-4A74-A955-0B1C49904181",
+            "heading": "fdCondTriggerMode",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 3",
+            "status": "current",
+            "syntax": "INTEGER {<br> other (1), <br> onChange (2), <br> greaterThan (3), <br> lessThan (4), <br> hysteresis (5), <br> periodic (6), <br> equal (7), <br> notEqual (8), <br> creation (9), <br> deletion (10),<br> bitwiseAnd (11) }",
+            "type": "ot"
+        },
+        {
+            "id": "26",
+            "guid": "7C967BB5-9ACD-4D87-8361-60183E6B2ECF",
+            "heading": "fdCondTriggerSampleType",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 4",
+            "status": "current",
+            "syntax": "INTEGER { other (1), current (2), delta (3) }",
+            "type": "ot"
+        },
+        {
+            "id": "27",
+            "guid": "CEB3A62B-E85B-46CC-BE99-3E779CCD9477",
+            "heading": "fdCondTriggerValue",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 5",
+            "status": "current",
+            "syntax": "ITSBerString",
+            "type": "ot"
+        },
+        {
+            "id": "28",
+            "guid": "A365CB05-073F-4E32-A1F6-84D8194FDFFB",
+            "heading": "fdCondTriggerValue2",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 6",
+            "status": "current",
+            "syntax": "ITSBerString",
+            "type": "ot"
+        },
+        {
+            "id": "29",
+            "guid": "F97978E4-7A18-4227-92D8-D4F225174CFC",
+            "heading": "fdCondTriggerObject",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 7",
+            "status": "current",
+            "syntax": "VariablePointer",
+            "type": "ot"
+        },
+        {
+            "id": "30",
+            "guid": "232EA256-5667-4640-ACA6-7538777B8413",
+            "heading": "fdCondTriggerWildcard",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 8",
+            "status": "current",
+            "syntax": "TruthValue",
+            "type": "ot"
+        },
+        {
+            "id": "31",
+            "guid": "2EDD5CB1-4CA2-42E8-B0A3-F8C88854D93F",
+            "heading": "fdCondTriggerObjectTarget",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 9",
+            "status": "current",
+            "syntax": "SnmpAdminString (SIZE(0..32))",
+            "type": "ot"
+        },
+        {
+            "id": "32",
+            "guid": "61853DB4-FB21-41C8-B2E6-601196A986E4",
+            "heading": "fdCondTriggerObjectContext",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 10",
+            "status": "current",
+            "syntax": "SnmpAdminString",
+            "type": "ot"
+        },
+        {
+            "id": "33",
+            "guid": "AD3E8425-EAED-4CBB-A8C2-DBD2EB94B0F9",
+            "heading": "fdCondTriggerObjectFrequency",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565",
+                    "26048_1-1309"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 11",
+            "status": "current",
+            "syntax": "Unsigned32",
+            "type": "ot",
+            "units": "seconds"
+        },
+        {
+            "id": "34",
+            "guid": "F3B4561D-84FC-4B41-BFC3-E68D74ABC421",
+            "heading": "fdCondTriggerTruthDuration",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 12",
+            "status": "current",
+            "syntax": "Unsigned32",
+            "type": "ot"
+        },
+        {
+            "id": "35",
+            "guid": "4F5F8DC5-B0C7-403F-9B75-737BF1B8DC04",
+            "heading": "fdCondTriggerStartup",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 13",
+            "status": "current",
+            "syntax": "TruthValue",
+            "type": "ot"
+        },
+        {
+            "id": "36",
+            "guid": "9DE38BBE-144A-411D-ABCD-F0BCAB004D21",
+            "heading": "fdCondTriggerStartup2",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 14",
+            "status": "current",
+            "syntax": "TruthValue",
+            "type": "ot"
+        },
+        {
+            "id": "37",
+            "guid": "4691865E-575B-4E3B-A513-BD6592DF176C",
+            "heading": "fdCondTriggerActionGroup",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565",
+                    "26048_1-1309"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 15",
+            "status": "current",
+            "syntax": "ITSRelativeRowPointer",
+            "type": "ot"
+        },
+        {
+            "id": "38",
+            "guid": "DC7B695E-341D-4240-B179-BB76C3CBC7F8",
+            "heading": "fdCondTriggerActionGroup2",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 16",
+            "status": "current",
+            "syntax": "ITSRelativeRowPointer",
+            "type": "ot"
+        },
+        {
+            "id": "39",
+            "guid": "ECB04C32-8929-42D9-BD8F-7EC489D7F9E5",
+            "heading": "fdCondTriggerCfgMessage",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-565"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 17",
+            "status": "current",
+            "syntax": "SnmpAdminString",
+            "type": "ot"
+        },
+        {
+            "id": "40",
+            "guid": "EC13249F-B83A-4C86-8B9B-93B523FAAF6D",
+            "heading": "fdCondTriggerEvalErrs",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-567"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 18",
+            "status": "current",
+            "syntax": "ITSCounter32",
+            "type": "ot"
+        },
+        {
+            "id": "41",
+            "guid": "D428BDF6-74C5-4DBB-B085-816B89F68A3D",
+            "heading": "fdCondTriggerFires",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-567"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 19",
+            "status": "current",
+            "syntax": "ITSCounter32",
+            "type": "ot"
+        },
+        {
+            "id": "42",
+            "guid": "272AE404-40A5-4F6F-97D6-F5C865B5792E",
+            "heading": "fdCondTriggerCallErrs",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-567"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 20",
+            "status": "current",
+            "syntax": "ITSCounter32",
+            "type": "ot"
+        },
+        {
+            "id": "43",
+            "guid": "078FE8A4-D9DC-4102-90C7-4CBE0D30A691",
+            "heading": "fdCondTriggerTimeStamp",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-567"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 21",
+            "status": "current",
+            "syntax": "TimeStamp",
+            "type": "ot"
+        },
+        {
+            "id": "44",
+            "guid": "875BD0ED-43DE-49F0-8A49-F550131AA0AD",
+            "heading": "fdCondTriggerSecurityModel",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdCondTriggerEntry 22",
+            "status": "current",
+            "syntax": "SnmpSecurityModel"
+        },
+        {
+            "id": "45",
+            "guid": "E83FEA1F-E6E4-4582-BEB7-A5CC0F6547F1",
+            "heading": "fdCondTriggerSecurityLevel",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdCondTriggerEntry 23",
+            "status": "current",
+            "syntax": "SnmpSecurityLevel"
+        },
+        {
+            "id": "46",
+            "guid": "1B654589-D348-46C0-9072-86EFC20DD780",
+            "heading": "fdCondTriggerSecurityName",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdCondTriggerEntry 24",
+            "status": "current",
+            "syntax": "SnmpAdminString"
+        },
+        {
+            "id": "47",
+            "guid": "024E254E-B288-4FB2-ADE2-F02234CD8FEA",
+            "heading": "fdCondTriggerStorageType",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 25",
+            "status": "current",
+            "syntax": "StorageType",
+            "type": "ot"
+        },
+        {
+            "id": "48",
+            "guid": "4E445EA2-D8C6-4FBA-8D14-04A55DCB6DF4",
+            "heading": "fdCondTriggerRowStatus",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-564",
+                    "26048_1-565",
+                    "26048_1-566",
+                    "26048_1-569",
+                    "26048_1-1309"
+                ]
+            },
+            "oid": "fdCondTriggerEntry 26",
+            "status": "current",
+            "syntax": "RowStatus",
+            "type": "ot"
+        },
+        {
+            "id": "49",
+            "guid": "3430E053-0846-448B-A01C-6B6BC53DAE3F",
+            "text": "",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "50",
+            "guid": "2B6F78DC-7178-4F38-8BB7-254D5C92FC24",
+            "text": "",
+            "heading": "fdCondTriggerConformance",
+            "oid": "fdGlobalConformance 11",
+            "status": "current",
+            "type": "oi"
+        },
+        {
+            "id": "51",
+            "guid": "240C050C-E568-474A-9823-A2154E277F34",
+            "text": "",
+            "heading": "fdCondTriggerCompliances",
+            "oid": "fdCondTriggerConformance 1",
+            "status": "current",
+            "type": "oi"
+        },
+        {
+            "id": "52",
+            "guid": "A66E3D1E-6E13-4993-8AA2-D861FC402A26",
+            "text": "",
+            "heading": "fdCondTriggerGroups",
+            "oid": "fdCondTriggerConformance 2",
+            "status": "current",
+            "type": "oi"
+        },
+        {
+            "id": "53",
+            "guid": "C5C1981B-FA2E-4EC4-94BB-A42C257C41A0",
+            "text": "",
+            "heading": "fdCondTriggerComplianceV1",
+            "oid": "fdCondTriggerCompliances 1",
+            "status": "current",
+            "syntax": "{ fdCondTriggerAdminGroupV1,<br> fdCondTriggerGroupV1<br> }",
+            "type": "mc"
+        },
+        {
+            "id": "54",
+            "guid": "7631820B-543A-4862-89F7-31C992BD76BE",
+            "text": "",
+            "heading": "fdCondTriggerAdminGroupV1",
+            "oid": "fdCondTriggerGroups 1",
+            "status": "current",
+            "syntax": "{ fdAdminCondTriggersTotalEvalErrs,<br> fdAdminCondTriggersTotalFires,<br> fdAdminCondTriggersTotalCallErrs,<br> fdOwnerCondTriggerMaxRows,<br> fdOwnerCondTriggerEvalErrs,<br> fdOwnerCondTriggerFires,<br> fdOwnerCondTriggerCallErrs<br> }",
+            "type": "og"
+        },
+        {
+            "id": "55",
+            "guid": "F9B44FAA-D763-4D67-A5B0-9622CC7B55B4",
+            "text": "",
+            "heading": "fdCondTriggerGroupV1",
+            "oid": "fdCondTriggerGroups 2",
+            "status": "current",
+            "syntax": "<p>{ fdCondTriggersSupport,</p><p>fdCondTriggersFrequencyLimit,</p><p>fdCondTriggersFrequencyNotes,</p><p>fdCondTriggerDescription,</p><p>fdCondTriggerMode,</p><p>fdCondTriggerSampleType,</p><p>fdCondTriggerValue,</p><p>fdCondTriggerValue2,</p><p>fdCondTriggerObject,</p><p>fdCondTriggerWildcard,</p><p>fdCondTriggerObjectTarget,</p><p>fdCondTriggerObjectContext,</p><p>fdCondTriggerObjectFrequency,</p><p>fdCondTriggerTruthDuration,</p><p>fdCondTriggerStartup,</p><p>fdCondTriggerStartup2,</p><p>fdCondTriggerActions,</p><p>fdCondTriggerActions2,</p><p>fdCondTriggerCfgMessage,</p><p>fdCondTriggerEvalErrs,</p><p>fdCondTriggerFires,</p><p>fdCondTriggerCallErrs,</p><p>fdCondTriggerTimeStamp,</p><p>fdCondTriggerStorageType,</p><p>fdCondTriggerRowStatus</p><p>}</p>",
+            "type": "og"
+        },
+        {
+            "id": "56",
+            "guid": "E47D8622-E41B-4FAE-87DD-E68F40B61103",
+            "heading": "end",
+            "type": "end"
+        }
+    ],
+    "attributes": {
+        "access": {
+            "heading": "Access",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "read-only"
+                },
+                {
+                    "key": "read-write"
+                },
+                {
+                    "key": "read-create"
+                },
+                {
+                    "key": "not-accessible"
+                },
+                {
+                    "key": "accessible-for-notify"
+                }
+            ]
+        },
+        "augments": {
+            "heading": "Augments",
+            "type": "string"
+        },
+        "comment": {
+            "heading": "Comment",
+            "type": "xhtml"
+        },
+        "contact": {
+            "heading": "Contact",
+            "type": "xhtml"
+        },
+        "defval": {
+            "heading": "Default Value",
+            "type": "string"
+        },
+        "index": {
+            "heading": "Index",
+            "type": "string"
+        },
+        "name": {
+            "heading": "Name",
+            "type": "string"
+        },
+        "oid": {
+            "heading": "OID",
+            "type": "string"
+        },
+        "org": {
+            "heading": "Organization",
+            "type": "string"
+        },
+        "part": {
+            "heading": "Part",
+            "type": "string"
+        },
+        "status": {
+            "heading": "Status",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "current"
+                },
+                {
+                    "key": "deprecated"
+                },
+                {
+                    "key": "obsolete"
+                }
+            ]
+        },
+        "syntax": {
+            "heading": "Syntax",
+            "type": "xhtml"
+        },
+        "type": {
+            "heading": "Type",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "comment"
+                },
+                {
+                    "key": "end"
+                },
+                {
+                    "key": "mc",
+                    "label": "module-compliance"
+                },
+                {
+                    "key": "mi",
+                    "label": "module-identity"
+                },
+                {
+                    "key": "mib"
+                },
+                {
+                    "key": "ng",
+                    "label": "notification-group"
+                },
+                {
+                    "key": "nt",
+                    "label": "notification-type"
+                },
+                {
+                    "key": "og",
+                    "label": "object-group"
+                },
+                {
+                    "key": "oi",
+                    "label": "object-identity"
+                },
+                {
+                    "key": "ot",
+                    "label": "object-type"
+                },
+                {
+                    "key": "ref",
+                    "label": "reference"
+                },
+                {
+                    "key": "rev",
+                    "label": "revision"
+                },
+                {
+                    "key": "row"
+                },
+                {
+                    "key": "text_conv"
+                }
+            ]
+        },
+        "units": {
+            "heading": "Units",
+            "type": "string"
+        },
+        "updated": {
+            "heading": "Updated",
+            "type": "string"
+        }
+    },
+    "templateColumns": {
+        "54f0f73b-4135-4673-8863-07eccf1ff778": {
+            "label": "Errors",
+            "template": "{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (eval access \"==\" \"read-only\") (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies\" link</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\")) (eval (countOutlinks \"satisfies\") \"<\" 2))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Should have at least two \"satisfies\" links</div>\n  {{/if}}\n{{/if}}"
+        }
+    },
+    "views": {
+        "Primary": {
+            "columns": [
+                {
+                    "columnId": "id",
+                    "width": 65
+                },
+                {
+                    "columnId": "description",
+                    "width": 500
+                }
+            ],
+            "default": true
+        }
+    },
+    "metadata": {
+        "format": "2.17"
+    }
+}

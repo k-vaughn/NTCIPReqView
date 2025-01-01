@@ -1,1 +1,1289 @@
-{"id":"Recording-MIB","guid":"C0C173ED-90B2-4FCC-B94C-48A747EC1CD9","heading":"ISO26048-1-Recording","lastId":135,"createdOn":"2023-06-21T12:04:36","createdBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"lastChangedOn":"2024-03-26T13:54:18.773Z","lastChangedBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"data":[{"id":"1","guid":"65A9EE43-7677-4A1F-B782-1FBB80E5EE18","text":"","heading":"comment","type":"comment"},{"id":"2","guid":"A2F0B395-45DC-4018-9A0C-137506FFE227","text":"","heading":"ISO26048-1-Recording","type":"mib"},{"id":"3","guid":"A02B2A00-D911-4C27-BCDF-5EB7B2FC91D1","text":"","contact":"<p>name: ISO TC 204 Committee Manager email: jennifer.collins@sae.org website: https://www.iso.org/committee/54706.html</p>","heading":"fdRecordingMIB","oid":"fdGlobalMIB 18","org":"ISO TC 204 WG 9","type":"mi","updated":"202306150000Z"},{"id":"4","guid":"00DE113E-A986-420E-BA89-289BA1437A7D","text":"","heading":"comment","type":"comment"},{"id":"5","guid":"A5BF736D-FDCE-4296-8DE3-CE18770E163E","text":"","heading":"fdAdminRecording","oid":"fdAdminGlobal 18","status":"current","type":"oi"},{"id":"7","guid":"1CEF3963-1F93-4D6D-BBD3-36014167912B","heading":"fdAdminRecordingEntries","text":"","access":"read-only","links":{"satisfies":["26048_1-1013"]},"oid":"fdAdminRecording 1","status":"current","syntax":"Unsigned32","type":"ot","units":"recordings"},{"id":"9","guid":"0576EE82-C480-4D23-BCA4-7D7566F61D03","heading":"fdAdminRecordingCompletes","text":"","access":"read-only","links":{"satisfies":["26048_1-1013"]},"oid":"fdAdminRecording 2","status":"current","syntax":"ITSCounter16","type":"ot","units":"recordings"},{"id":"11","guid":"9FCC0332-BD6B-496A-BB15-DB4DC2735769","heading":"fdAdminRecordingClearAll","text":"","access":"read-write","links":{"satisfies":["26048_1-1027"]},"oid":"fdAdminRecording 3","status":"current","syntax":"ITSClear","type":"ot"},{"id":"13","guid":"D50A3350-1F4A-4803-8C34-9CFF477BA558","heading":"fdAdminRecordingClearAllClasses","text":"","access":"read-write","links":{"satisfies":["26048_1-1025"]},"oid":"fdAdminRecording 4","status":"current","syntax":"ITSClear","type":"ot"},{"id":"15","guid":"5C50CE61-F62F-4527-A81C-DB23C14F6E85","heading":"fdAdminRecordingClearAllFactories","text":"","access":"read-write","links":{"satisfies":["26048_1-1023"]},"oid":"fdAdminRecording 5","status":"current","syntax":"ITSClear","type":"ot"},{"id":"17","guid":"5D27F41D-08B7-4E85-AD21-7D3DAB04D84C","heading":"fdAdminRecordingClearAllRecordings","text":"","access":"read-write","links":{"satisfies":["26048_1-1320"]},"oid":"fdAdminRecording 6","status":"current","syntax":"ITSClear","type":"ot"},{"id":"19","guid":"456EC562-06E5-4C53-ADEB-4F504A19B800","heading":"fdOwnerRecordingTable","text":"","access":"not-accessible","type":"ot","oid":"fdAdminRecording 7","status":"current","syntax":"SEQUENCE OF FdOwnerRecordingEntry"},{"id":"20","guid":"DED7FD60-BF5F-4C6C-A868-97AD3DBB7EA4","text":"","access":"not-accessible","augments":"fdOwnerEntry","heading":"fdOwnerRecordingEntry","oid":"fdOwnerRecordingTable 1","status":"current","syntax":"FdOwnerRecordingEntry","type":"ot"},{"id":"21","guid":"18FA486D-6C84-4321-B901-8FEABCD56382","heading":"FdOwnerRecordingEntry","syntax":"{ fdOwnerRecordingMaxFactories ITSUnsigned8,<br> fdOwnerRecordingMaxClasses ITSUnsigned8,<br> fdOwnerRecordingMaxClassEntries ITSUnsigned8,<br> fdOwnerRecordingMaxStorage Unsigned32,<br> fdOwnerRecordingEntries ITSUnsigned16,<br> fdOwnerRecordingCompletes ITSCounter16,<br> fdOwnerRecordingClearAll ITSClear,<br> fdOwnerRecordingClearAllClasses ITSClear,<br> fdOwnerRecordingClearAllFactories ITSClear,<br> fdOwnerRecordingClearAllRecordings ITSClear }","type":"row"},{"id":"22","guid":"7E4142D2-88DE-4BE3-A05B-81D44115C825","heading":"fdOwnerRecordingMaxFactories","text":"","access":"read-create","defval":"0","links":{"satisfies":["26048_1-1003","26048_1-1100"]},"oid":"fdOwnerRecordingEntry 1","status":"current","syntax":"ITSUnsigned8","type":"ot","units":"rows"},{"id":"23","guid":"194584E7-18FE-47CC-B9D1-19D725AD8D5E","heading":"fdOwnerRecordingMaxClasses","text":"","access":"read-create","defval":"0","links":{"satisfies":["26048_1-1003","26048_1-1100"]},"oid":"fdOwnerRecordingEntry 2","status":"current","syntax":"ITSUnsigned8","type":"ot","units":"rows"},{"id":"24","guid":"C25E4FA9-DBA1-4961-9903-C8D61F2E190F","heading":"fdOwnerRecordingMaxClassEntries","text":"","access":"read-create","defval":"0","links":{"satisfies":["26048_1-1003","26048_1-1100"]},"oid":"fdOwnerRecordingEntry 3","status":"current","syntax":"ITSUnsigned8","type":"ot","units":"rows"},{"id":"25","guid":"407DBB57-5CF5-44F0-96F3-986687DA1536","heading":"fdOwnerRecordingMaxStorage","text":"","access":"read-create","defval":"0","links":{"satisfies":["26048_1-1003","26048_1-1100"]},"oid":"fdOwnerRecordingEntry 4","status":"current","syntax":"Unsigned32","type":"ot","units":"octets"},{"id":"27","guid":"52A00835-BFF0-4790-A38E-D4F6E31883C2","heading":"fdOwnerRecordingEntries","text":"","access":"read-only","links":{"satisfies":["26048_1-1015"]},"oid":"fdOwnerRecordingEntry 5","status":"current","syntax":"ITSUnsigned16","type":"ot","units":"recordings"},{"id":"29","guid":"E716D110-8AF7-4C4D-886D-3D43AFA81651","heading":"fdOwnerRecordingCompletes","text":"","access":"read-only","links":{"satisfies":["26048_1-1015"]},"oid":"fdOwnerRecordingEntry 6","status":"current","syntax":"ITSCounter16","type":"ot","units":"recordings"},{"id":"135","guid":"71a727c9-b41c-4651-aa17-3d4d9a486e51","heading":"fdOwnerRecordingClearAll"},{"id":"33","guid":"39CEFD13-92EE-40A4-8D2A-9548A54E27F3","heading":"fdOwnerRecordingClearAllClasses","text":"","access":"read-write","links":{"satisfies":["26048_1-1031"]},"oid":"fdOwnerRecordingEntry 8","status":"current","syntax":"ITSClear","type":"ot"},{"id":"35","guid":"C0DE75D3-0099-4E6A-9126-286C3746AEEC","heading":"fdOwnerRecordingClearAllFactories","text":"","access":"read-write","links":{"satisfies":["26048_1-1029"]},"oid":"fdOwnerRecordingEntry 9","status":"current","syntax":"ITSClear","type":"ot"},{"id":"37","guid":"A838C7F0-8C25-495A-8221-59828ADE686A","heading":"fdOwnerRecordingClearAllRecordings","text":"","access":"read-write","links":{"satisfies":["26048_1-1033"]},"oid":"fdOwnerRecordingEntry 10","status":"current","syntax":"ITSClear","type":"ot"},{"id":"39","guid":"DD5DB450-DBB5-4F15-AA33-45F236C2E0C0","heading":"fdRecordingClassTable","text":"","access":"not-accessible","type":"ot","oid":"fdRecordingMIB 1","status":"current","syntax":"SEQUENCE OF FdRecordingClassEntry"},{"id":"40","guid":"B5888D6D-4BD2-460F-B422-D5CD52286981","text":"","access":"not-accessible","index":"fdOwnerIndex, fdRecordingClassIndex","heading":"fdRecordingClassEntry","oid":"fdRecordingClassTable 1","status":"current","syntax":"FdRecordingClassEntry","type":"ot"},{"id":"41","guid":"DBEE38C5-786B-4D66-9F3C-43B3C4F4AF07","heading":"FdRecordingClassEntry","syntax":"{ fdRecordingClassIndex ITSPositive8,<br> fdRecordingClassDescription SnmpAdminString,<br> fdRecordingClassSizeLimit Unsigned32,<br> fdRecordingClassClearDate ITSDateStamp,<br> fdRecordingClassClearTime ITSDailyTimeStamp,<br> fdRecordingClassEntries ITSUnsigned8,<br> fdRecordingClassCompletes ITSCounter16,<br> fdRecordingClassStorageType StorageType,<br> fdRecordingClassRowStatus RowStatus }","type":"row"},{"id":"43","guid":"5161D27D-6AD3-42A6-9DE3-DF0EFD0B8E18","heading":"fdRecordingClassIndex","text":"","access":"not-accessible","type":"ot","oid":"fdRecordingClassEntry 1","status":"current","syntax":"ITSPositive8"},{"id":"45","guid":"87422529-00BA-47F2-B465-11E1B5CAAFAC","heading":"fdRecordingClassDescription","text":"","access":"read-create","links":{"satisfies":["26048_1-1005","26048_1-1101"]},"oid":"fdRecordingClassEntry 2","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"47","guid":"6D93B37F-65C9-4800-BE3E-22F2FBED4E1A","heading":"fdRecordingClassSizeLimit","text":"","access":"read-create","links":{"satisfies":["26048_1-1005","26048_1-1101"]},"oid":"fdRecordingClassEntry 3","status":"current","syntax":"Unsigned32","type":"ot","units":"octets"},{"id":"49","guid":"2B51D3CE-9D76-4AA9-8499-E5E792DE233A","heading":"fdRecordingClassClearDate","text":"","access":"read-create","links":{"satisfies":["26048_1-1035"]},"oid":"fdRecordingClassEntry 4","status":"current","syntax":"ITSDateStamp","type":"ot"},{"id":"51","guid":"D3038D44-9E30-45E2-BADF-85D8179CF500","heading":"fdRecordingClassClearTime","text":"","access":"read-create","links":{"satisfies":["26048_1-1035"]},"oid":"fdRecordingClassEntry 5","status":"current","syntax":"ITSDailyTimeStamp","type":"ot"},{"id":"53","guid":"F0CB762D-9ADA-45F6-AE40-A8276EE16039","heading":"fdRecordingClassEntries","text":"","access":"read-only","links":{"satisfies":["26048_1-1019"]},"oid":"fdRecordingClassEntry 6","status":"current","syntax":"ITSUnsigned8","type":"ot","units":"recording"},{"id":"55","guid":"0E5D81E5-C455-4159-99F1-19F20C678D8A","heading":"fdRecordingClassCompletes","text":"","access":"read-only","links":{"satisfies":["26048_1-1019"]},"oid":"fdRecordingClassEntry 7","status":"current","syntax":"ITSCounter16","type":"ot","units":"recording"},{"id":"134","guid":"972b4d2e-7bf9-4334-aaa1-9bef331d3b42","heading":"fdRecordingClassTimestamp","text":"","links":{"satisfies":["26048_1-1019"]}},{"id":"57","guid":"5D01DA43-484E-4109-AE7A-072E6413B190","heading":"fdRecordingClassStorageType","text":"","access":"read-create","links":{"satisfies":["26048_1-1005","26048_1-1101"]},"oid":"fdRecordingClassEntry 8","status":"current","syntax":"StorageType","type":"ot"},{"id":"59","guid":"7C3CED9E-E297-4B1D-999B-34F4207C51A3","heading":"fdRecordingClassRowStatus","text":"","access":"read-create","links":{"satisfies":["26048_1-1005","26048_1-1101"]},"oid":"fdRecordingClassEntry 9","status":"current","syntax":"RowStatus","type":"ot"},{"id":"61","guid":"B1FD8466-86D1-4404-B3AE-743EB60177C3","heading":"fdRecordingFactoryTable","text":"","access":"not-accessible","type":"ot","oid":"fdRecordingMIB 2","status":"current","syntax":"SEQUENCE OF FdRecordingFactoryEntry"},{"id":"62","guid":"10E6BB12-94A2-408D-95E1-CE414C85D8CE","text":"","access":"not-accessible","index":"fdOwnerIndex, fdRecordingClassIndex, fdRecordingFactoryIndex","heading":"fdRecordingFactoryEntry","oid":"fdRecordingFactoryTable 1","status":"current","syntax":"FdRecordingFactoryEntry","type":"ot"},{"id":"63","guid":"BB179658-F325-4BDC-8173-393B9BE05A71","heading":"FdRecordingFactoryEntry","syntax":"{ fdRecordingFactoryIndex ITSPositive8,<br> fdRecordingFactorySecurityModel SnmpSecurityModel,<br> fdRecordingFactorySecurityLevel SnmpSecurityLevel,<br> fdRecordingFactorySecurityName SnmpAdminString,<br> fdRecordingFactorySampleContext SnmpAdminString,<br> fdRecordingFactorySampleOID VariablePointer,<br> fdRecordingFactoryPreSamples ITSPercent,<br> fdRecordingFactorySamplePeriod ITSUnsigned16,<br> fdRecordingFactoryMonitorContext SnmpAdminString,<br> fdRecordingFactoryMonitorOID VariablePointer,<br> fdRecordingFactorySampleLimit ITSUnsigned16,<br> fdRecordingFactoryStorageType StorageType,<br> fdRecordingFactoryRowStatus RowStatus }","type":"row"},{"id":"65","guid":"3D96DA46-3E6E-43BE-B8F6-9C98CF267D89","heading":"fdRecordingFactoryIndex","text":"","access":"not-accessible","type":"ot","oid":"fdRecordingFactoryEntry 1","status":"current","syntax":"ITSPositive8"},{"id":"67","guid":"0786E455-65F8-437C-8A52-F75C1CFE8D4B","heading":"fdRecordingFactorySecurityModel","text":"","access":"not-accessible","type":"ot","oid":"fdRecordingFactoryEntry 2","status":"current","syntax":"SnmpSecurityModel"},{"id":"69","guid":"772740CF-EF85-45E4-930D-2AC5FA9BBF67","heading":"fdRecordingFactorySecurityLevel","text":"","access":"not-accessible","type":"ot","oid":"fdRecordingFactoryEntry 3","status":"current","syntax":"SnmpSecurityLevel"},{"id":"71","guid":"9903C899-E836-4A36-8035-E4B49A6C0A9B","heading":"fdRecordingFactorySecurityName","text":"","access":"not-accessible","type":"ot","oid":"fdRecordingFactoryEntry 4","status":"current","syntax":"SnmpAdminString (SIZE (0..32))"},{"id":"73","guid":"878DC13C-AA7D-4268-AD24-77C63D4A4EB2","heading":"fdRecordingFactorySampleContext","text":"","access":"read-create","links":{"satisfies":["26048_1-1007","26048_1-1102"]},"oid":"fdRecordingFactoryEntry 5","status":"current","syntax":"SnmpAdminString (SIZE (0..32))","type":"ot"},{"id":"75","guid":"F3E6DD53-639A-492B-A7AA-F5A872406ABE","heading":"fdRecordingFactorySampleOID","text":"","access":"read-create","links":{"satisfies":["26048_1-1007","26048_1-1102"]},"oid":"fdRecordingFactoryEntry 6","status":"current","syntax":"VariablePointer","type":"ot"},{"id":"77","guid":"5D12225A-89F4-4EEA-9DE0-FA8A7ABB1149","heading":"fdRecordingFactoryPreSamples","text":"","access":"read-create","links":{"satisfies":["26048_1-1007","26048_1-1102"]},"oid":"fdRecordingFactoryEntry 7","status":"current","syntax":"ITSPercent","type":"ot"},{"id":"79","guid":"03ADAC56-AFB5-47C5-B8AA-FD9CFBC7753B","heading":"fdRecordingFactorySamplePeriod","text":"","access":"read-create","links":{"satisfies":["26048_1-1007","26048_1-1102"]},"oid":"fdRecordingFactoryEntry 8","status":"current","syntax":"ITSUnsigned16","type":"ot","units":"0.1 milliseconds"},{"id":"81","guid":"7521A63A-348B-4169-8C8E-E852DF5B76D6","heading":"fdRecordingFactoryMonitorContext","text":"","access":"read-create","links":{"satisfies":["26048_1-1007","26048_1-1102"]},"oid":"fdRecordingFactoryEntry 9","status":"current","syntax":"SnmpAdminString (SIZE (0..32))","type":"ot"},{"id":"83","guid":"26F1EDE1-03CC-4980-B808-9161CD9847BF","heading":"fdRecordingFactoryMonitorOID","text":"","access":"read-create","links":{"satisfies":["26048_1-1007","26048_1-1102"]},"oid":"fdRecordingFactoryEntry 10","status":"current","syntax":"VariablePointer","type":"ot"},{"id":"85","guid":"6CB2AC2D-4FA4-4E7B-B241-8D066E541D4A","heading":"fdRecordingFactorySampleLimit","text":"","access":"read-create","units":"samples","oid":"fdRecordingFactoryEntry 11","status":"current","syntax":"ITSUnsigned16","type":"ot"},{"id":"87","guid":"947EE37D-D377-414F-8CE2-5518164804D5","heading":"fdRecordingFactoryStorageType","text":"","access":"read-create","links":{"satisfies":["26048_1-1007","26048_1-1102"]},"oid":"fdRecordingFactoryEntry 12","status":"current","syntax":"StorageType","type":"ot"},{"id":"89","guid":"558BE7F0-E9E2-475E-8D0A-753586647BDB","heading":"fdRecordingFactoryRowStatus","text":"","access":"read-create","links":{"satisfies":["26048_1-1007","26048_1-1102"]},"oid":"fdRecordingFactoryEntry 13","status":"current","syntax":"RowStatus","type":"ot"},{"id":"91","guid":"DC161101-CD95-4281-9C4F-7E81F9430DE0","heading":"fdRecordingTable","text":"","access":"not-accessible","type":"ot","oid":"fdRecordingMIB 3","status":"current","syntax":"SEQUENCE OF FdRecordingEntry"},{"id":"92","guid":"73C8C308-AC0C-442F-A00C-2D1DAED93B53","text":"","access":"not-accessible","index":"fdOwnerIndex, fdRecordingClassIndex, fdRecordingIndex","heading":"fdRecordingEntry","oid":"fdRecordingTable 1","status":"current","syntax":"FdRecordingEntry","type":"ot"},{"id":"93","guid":"DF4D74C8-F88C-4A9A-80AB-A4C688C14C8C","heading":"FdRecordingEntry","syntax":"{ fdRecordingIndex ITSPositive8,<br> fdRecordingTrigger RowPointer,<br> fdRecordingTriggerDate ITSDateStamp,<br> fdRecordingTriggerTime ITSDailyTimeStamp,<br> fdRecordingStatus INTEGER,<br> fdRecordingTriggerSample ITSUnsigned16,<br> fdRecordingNumSamples ITSUnsigned16,<br> fdRecordingDelete TruthValue }","type":"row"},{"id":"95","guid":"CC12539F-88A0-4E43-B227-E5F21176C4AE","heading":"fdRecordingIndex","text":"","access":"not-accessible","type":"ot","oid":"fdRecordingEntry 1","status":"current","syntax":"ITSPositive8"},{"id":"97","guid":"0BF63001-A082-4F32-A217-FC9692FE37CE","heading":"fdRecordingTrigger","text":"","access":"read-only","links":{"satisfies":["26048_1-1021"]},"oid":"fdRecordingEntry 2","status":"current","syntax":"RowPointer","type":"ot"},{"id":"99","guid":"5C15F47C-A2B6-4D70-9B20-8D845D8EA2A6","heading":"fdRecordingTriggerDate","text":"","access":"read-only","links":{"satisfies":["26048_1-1021"]},"oid":"fdRecordingEntry 3","status":"current","syntax":"ITSDateStamp","type":"ot"},{"id":"101","guid":"70679449-E458-4065-938D-31C627D38C27","heading":"fdRecordingTriggerTime","text":"","access":"read-only","links":{"satisfies":["26048_1-1021"]},"oid":"fdRecordingEntry 4","status":"current","syntax":"ITSDailyTimeStamp","type":"ot"},{"id":"103","guid":"C6717105-73B3-482F-A365-D1808F65E9E2","heading":"fdRecordingStatus","text":"","access":"read-only","links":{"satisfies":["26048_1-1021"]},"oid":"fdRecordingEntry 5","status":"current","syntax":"INTEGER { available (1),<br> pretrigger (2), <br> triggered (3), <br> complete (4)}","type":"ot"},{"id":"105","guid":"90F43481-0102-43EA-BB72-E8F6FD96691C","heading":"fdRecordingTriggerSample","text":"","access":"read-only","links":{"satisfies":["26048_1-1021"]},"oid":"fdRecordingEntry 6","status":"current","syntax":"ITSUnsigned16","type":"ot","units":"samples"},{"id":"107","guid":"6AE97F31-2975-4F83-A6D5-FEEDA96DEC4E","heading":"fdRecordingNumSamples","text":"","access":"read-only","links":{"satisfies":["26048_1-1021"]},"oid":"fdRecordingEntry 7","status":"current","syntax":"ITSUnsigned16","type":"ot","units":"samples"},{"id":"109","guid":"1307D796-48F8-4448-9F85-C533E50ACCD7","heading":"fdRecordingDelete","text":"","access":"read-write","type":"ot","oid":"fdRecordingEntry 8","status":"current","syntax":"TruthValue"},{"id":"111","guid":"F112240C-CD8C-4B6A-9C7A-D77C5A3EDBED","heading":"fdRecordingSampleTable","text":"","access":"not-accessible","type":"ot","oid":"fdRecordingMIB 4","status":"current","syntax":"SEQUENCE OF FdRecordingSampleEntry"},{"id":"112","guid":"E0213AF3-FB86-42C4-8BDF-55A5342FA9A9","text":"","access":"not-accessible","index":"fdOwnerIndex, fdRecordingClassIndex, fdRecordingIndex, fdRecordingSampleIndex","heading":"fdRecordingSampleEntry","oid":"fdRecordingSampleTable 1","status":"current","syntax":"FdRecordingSampleEntry","type":"ot"},{"id":"113","guid":"1B9EF5E2-4C28-46E7-B552-BFA2B9D0B5F5","heading":"FdRecordingSampleEntry::=","syntax":"{ fdRecordingSampleIndex ITSPositive16,<br> fdRecordingSampleTime ITSDailyTimeStamp,<br> fdRecordingSampleValue ITSOerString }","type":"row"},{"id":"115","guid":"6776E74D-AA4D-4700-B917-F7AB509184F5","heading":"fdRecordingSampleIndex","text":"","access":"not-accessible","type":"ot","oid":"fdRecordingSampleEntry 1","status":"current","syntax":"ITSPositive16"},{"id":"117","guid":"28B9A3C1-D144-4A91-84CC-52BB57F1D23F","heading":"fdRecordingSampleTime","text":"","access":"read-only","discussion":[{"comment":"<p>Should we also include a date object?</p>","date":"2023-06-25T18:16:39.966Z","author":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"}}],"oid":"fdRecordingSampleEntry 2","status":"current","syntax":"ITSDailyTimeStamp","type":"ot","links":{"satisfies":["26048_1-1099"]}},{"id":"119","guid":"EA1C8C3B-DC73-4020-8E1A-CEAF321D0F82","heading":"fdRecordingSampleValue","text":"","access":"read-only","links":{"satisfies":["26048_1-1099"]},"oid":"fdRecordingSampleEntry 3","status":"current","syntax":"ITSOerString","type":"ot"},{"id":"120","guid":"E187E686-5106-4858-933C-62A3E52BB842","heading":"comment","type":"comment"},{"id":"121","guid":"9E3EAC56-A0B0-4C86-9706-ECE4ABB27762","heading":"fdRecordingMinSamplePeriod","text":"","access":"read-only","units":"0.1 milliseconds","oid":"fdRecordingMIB 5","status":"current","syntax":"ITSPositive16","type":"ot"},{"id":"123","guid":"B5FC44FF-00DC-4B00-A279-57BA7D2A7AC1","heading":"fdRecordingMaxSamplePeriod","text":"","access":"read-only","units":"0.1 milliseconds","oid":"fdRecordingMIB 6","status":"current","syntax":"ITSPositive16","type":"ot"},{"id":"125","guid":"E0091EAA-2293-4B0F-B8AD-76112B8E3843","heading":"fdRecordingSamplePeriodResolution","text":"","access":"read-only","links":{"satisfies":["26048_1-1011"]},"oid":"fdRecordingMIB 7","status":"current","syntax":"Unsigned32 (1..50)","type":"ot","units":"0.1 milliseconds"},{"id":"126","guid":"5AF37BC7-3D90-41B3-8288-3BC4AECD4FEC","heading":"comment","type":"comment"},{"id":"127","guid":"D5207E06-9596-4C2C-9911-5FDCDDC1DF6C","text":"","heading":"fdRecordingConformance","oid":"fdGlobalConformance 18","status":"current","type":"oi"},{"id":"128","guid":"546DA19E-9015-47F7-A5FD-B8CE36E1A53C","text":"","heading":"fdRecordingCompliances","oid":"fdRecordingConformance 1","status":"current","type":"oi"},{"id":"129","guid":"A713D33F-9F49-454C-AFB6-E0D2513467D9","text":"","heading":"fdRecordingGroups","oid":"fdRecordingConformance 2","status":"current","type":"oi"},{"id":"130","guid":"3060FD8F-4A02-423B-AE23-A41B3541E79E","text":"","heading":"fdRecordingComplianceV1","oid":"fdRecordingCompliances 1","status":"current","syntax":"{ fdRecordingGroupV1<br> }","type":"mc"},{"id":"131","guid":"E56EBA02-B867-4336-9FC1-AF8C8644DC3D","text":"","heading":"fdRecordingGroupV1","oid":"fdRecordingGroups 1","status":"current","syntax":"{ fdAdminRecordingEntries, fdAdminRecordingCompletes,<br> fdAdminRecordingClearAll,<br> fdAdminRecordingClearAllClasses,<br> fdAdminRecordingClearAllFactories,<br> fdAdminRecordingClearAllRecordings, <br> fdOwnerRecordingMaxFactories,<br> fdOwnerRecordingMaxClasses,<br> fdOwnerRecordingMaxClassEntries,<br> fdOwnerRecordingMaxStorage,<br> fdOwnerRecordingEntries,<br> fdOwnerRecordingCompletes,<br> fdOwnerRecordingClearAll,<br> fdOwnerRecordingClearAllClasses,<br> fdOwnerRecordingClearAllFactories,<br> fdOwnerRecordingClearAllRecordings, <br> fdRecordingClassDescription,<br> fdRecordingClassSizeLimit,<br> fdRecordingClassClearDate,<br> fdRecordingClassClearTime,<br> fdRecordingClassEntries,<br> fdRecordingClassCompletes,<br> fdRecordingClassStorageType, <br> fdRecordingClassRowStatus,<br> fdRecordingFactorySampleContext,<br> fdRecordingFactorySampleOID,<br> fdRecordingFactoryPreSamples,<br> fdRecordingFactorySamplePeriod,<br> fdRecordingFactoryMonitorContext,<br> fdRecordingFactoryMonitorOID,<br> fdRecordingFactorySampleLimit,<br> fdRecordingFactoryStorageType, <br> fdRecordingFactoryRowStatus, <br> fdRecordingTrigger,<br> fdRecordingTriggerDate,<br> fdRecordingTriggerTime,<br> fdRecordingStatus,<br> fdRecordingTriggerSample,<br> fdRecordingNumSamples,<br> fdRecordingDelete, <br> fdRecordingSampleTime,<br> fdRecordingSampleValue,<br> fdRecordingMinSamplePeriod,<br> fdRecordingMaxSamplePeriod,<br> fdRecordingSamplePeriodResolution<br> }","type":"og"},{"id":"132","guid":"A4B69F00-0D3A-4BA9-8788-77337C3FD7B9","heading":"end","type":"end"}],"attributes":{"access":{"heading":"Access","type":"enum","values":[{"key":"read-only"},{"key":"read-write"},{"key":"read-create"},{"key":"not-accessible"},{"key":"accessible-for-notify"}]},"augments":{"heading":"Augments","type":"string"},"comment":{"heading":"Comment","type":"xhtml"},"contact":{"heading":"Contact","type":"xhtml"},"defval":{"heading":"Default Value","type":"string"},"index":{"heading":"Index","type":"string"},"name":{"heading":"Name","type":"string"},"oid":{"heading":"OID","type":"string"},"org":{"heading":"Organization","type":"string"},"part":{"heading":"Part","type":"string"},"status":{"heading":"Status","type":"enum","values":[{"key":"current"},{"key":"deprecated"},{"key":"obsolete"}]},"syntax":{"heading":"Syntax","type":"xhtml"},"type":{"heading":"Type","type":"enum","values":[{"key":"comment"},{"key":"end"},{"key":"mc","label":"module-compliance"},{"key":"mi","label":"module-identity"},{"key":"mib"},{"key":"ng","label":"notification-group"},{"key":"nt","label":"notification-type"},{"key":"og","label":"object-group"},{"key":"oi","label":"object-identity"},{"key":"ot","label":"object-type"},{"key":"ref","label":"reference"},{"key":"rev","label":"revision"},{"key":"row"},{"key":"text_conv"}]},"units":{"heading":"Units","type":"string"},"updated":{"heading":"Updated","type":"string"}},"templateColumns":{"fd2eb1f6-ba83-45a4-b7ac-240e3d190634":{"label":"Errors","template":"{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-only\") (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\"))) (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies link\" link</div>\n  {{/if}}\n{{/if}}"}},"views":{"Primary":{"columns":[{"columnId":"id","width":65},{"columnId":"type","width":92},{"columnId":"name","width":233},{"columnId":"description","width":500},{"columnId":"links","width":214},{"columnId":"access","width":150},{"columnId":"discussion","width":300}],"default":true}},"metadata":{"format":"2.17"}}
+{
+    "id": "Recording-MIB",
+    "guid": "C0C173ED-90B2-4FCC-B94C-48A747EC1CD9",
+    "heading": "ISO26048-1-Recording",
+    "lastId": 135,
+    "createdOn": "2023-06-21T12:04:36",
+    "createdBy": {
+        "name": "Kenneth Vaughn",
+        "email": "kvaughn@trevilon.com",
+        "company": "Trevilon"
+    },
+    "lastChangedOn": "2024-03-26T13:54:18.773Z",
+    "lastChangedBy": {
+        "name": "Kenneth Vaughn",
+        "email": "kvaughn@trevilon.com",
+        "company": "Trevilon"
+    },
+    "data": [
+        {
+            "id": "1",
+            "guid": "65A9EE43-7677-4A1F-B782-1FBB80E5EE18",
+            "text": "",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "2",
+            "guid": "A2F0B395-45DC-4018-9A0C-137506FFE227",
+            "text": "",
+            "heading": "ISO26048-1-Recording",
+            "type": "mib"
+        },
+        {
+            "id": "3",
+            "guid": "A02B2A00-D911-4C27-BCDF-5EB7B2FC91D1",
+            "text": "",
+            "contact": "<p>name: ISO TC 204 Committee Manager email: jennifer.collins@sae.org website: https://www.iso.org/committee/54706.html</p>",
+            "heading": "fdRecordingMIB",
+            "oid": "fdGlobalMIB 18",
+            "org": "ISO TC 204 WG 9",
+            "type": "mi",
+            "updated": "202306150000Z"
+        },
+        {
+            "id": "4",
+            "guid": "00DE113E-A986-420E-BA89-289BA1437A7D",
+            "text": "",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "5",
+            "guid": "A5BF736D-FDCE-4296-8DE3-CE18770E163E",
+            "text": "",
+            "heading": "fdAdminRecording",
+            "oid": "fdAdminGlobal 18",
+            "status": "current",
+            "type": "oi"
+        },
+        {
+            "id": "7",
+            "guid": "1CEF3963-1F93-4D6D-BBD3-36014167912B",
+            "heading": "fdAdminRecordingEntries",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-1013"
+                ]
+            },
+            "oid": "fdAdminRecording 1",
+            "status": "current",
+            "syntax": "Unsigned32",
+            "type": "ot",
+            "units": "recordings"
+        },
+        {
+            "id": "9",
+            "guid": "0576EE82-C480-4D23-BCA4-7D7566F61D03",
+            "heading": "fdAdminRecordingCompletes",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-1013"
+                ]
+            },
+            "oid": "fdAdminRecording 2",
+            "status": "current",
+            "syntax": "ITSCounter16",
+            "type": "ot",
+            "units": "recordings"
+        },
+        {
+            "id": "11",
+            "guid": "9FCC0332-BD6B-496A-BB15-DB4DC2735769",
+            "heading": "fdAdminRecordingClearAll",
+            "text": "",
+            "access": "read-write",
+            "links": {
+                "satisfies": [
+                    "26048_1-1027"
+                ]
+            },
+            "oid": "fdAdminRecording 3",
+            "status": "current",
+            "syntax": "ITSClear",
+            "type": "ot"
+        },
+        {
+            "id": "13",
+            "guid": "D50A3350-1F4A-4803-8C34-9CFF477BA558",
+            "heading": "fdAdminRecordingClearAllClasses",
+            "text": "",
+            "access": "read-write",
+            "links": {
+                "satisfies": [
+                    "26048_1-1025"
+                ]
+            },
+            "oid": "fdAdminRecording 4",
+            "status": "current",
+            "syntax": "ITSClear",
+            "type": "ot"
+        },
+        {
+            "id": "15",
+            "guid": "5C50CE61-F62F-4527-A81C-DB23C14F6E85",
+            "heading": "fdAdminRecordingClearAllFactories",
+            "text": "",
+            "access": "read-write",
+            "links": {
+                "satisfies": [
+                    "26048_1-1023"
+                ]
+            },
+            "oid": "fdAdminRecording 5",
+            "status": "current",
+            "syntax": "ITSClear",
+            "type": "ot"
+        },
+        {
+            "id": "17",
+            "guid": "5D27F41D-08B7-4E85-AD21-7D3DAB04D84C",
+            "heading": "fdAdminRecordingClearAllRecordings",
+            "text": "",
+            "access": "read-write",
+            "links": {
+                "satisfies": [
+                    "26048_1-1320"
+                ]
+            },
+            "oid": "fdAdminRecording 6",
+            "status": "current",
+            "syntax": "ITSClear",
+            "type": "ot"
+        },
+        {
+            "id": "19",
+            "guid": "456EC562-06E5-4C53-ADEB-4F504A19B800",
+            "heading": "fdOwnerRecordingTable",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdAdminRecording 7",
+            "status": "current",
+            "syntax": "SEQUENCE OF FdOwnerRecordingEntry"
+        },
+        {
+            "id": "20",
+            "guid": "DED7FD60-BF5F-4C6C-A868-97AD3DBB7EA4",
+            "text": "",
+            "access": "not-accessible",
+            "augments": "fdOwnerEntry",
+            "heading": "fdOwnerRecordingEntry",
+            "oid": "fdOwnerRecordingTable 1",
+            "status": "current",
+            "syntax": "FdOwnerRecordingEntry",
+            "type": "ot"
+        },
+        {
+            "id": "21",
+            "guid": "18FA486D-6C84-4321-B901-8FEABCD56382",
+            "heading": "FdOwnerRecordingEntry",
+            "syntax": "{ fdOwnerRecordingMaxFactories ITSUnsigned8,<br> fdOwnerRecordingMaxClasses ITSUnsigned8,<br> fdOwnerRecordingMaxClassEntries ITSUnsigned8,<br> fdOwnerRecordingMaxStorage Unsigned32,<br> fdOwnerRecordingEntries ITSUnsigned16,<br> fdOwnerRecordingCompletes ITSCounter16,<br> fdOwnerRecordingClearAll ITSClear,<br> fdOwnerRecordingClearAllClasses ITSClear,<br> fdOwnerRecordingClearAllFactories ITSClear,<br> fdOwnerRecordingClearAllRecordings ITSClear }",
+            "type": "row"
+        },
+        {
+            "id": "22",
+            "guid": "7E4142D2-88DE-4BE3-A05B-81D44115C825",
+            "heading": "fdOwnerRecordingMaxFactories",
+            "text": "",
+            "access": "read-create",
+            "defval": "0",
+            "links": {
+                "satisfies": [
+                    "26048_1-1003",
+                    "26048_1-1100"
+                ]
+            },
+            "oid": "fdOwnerRecordingEntry 1",
+            "status": "current",
+            "syntax": "ITSUnsigned8",
+            "type": "ot",
+            "units": "rows"
+        },
+        {
+            "id": "23",
+            "guid": "194584E7-18FE-47CC-B9D1-19D725AD8D5E",
+            "heading": "fdOwnerRecordingMaxClasses",
+            "text": "",
+            "access": "read-create",
+            "defval": "0",
+            "links": {
+                "satisfies": [
+                    "26048_1-1003",
+                    "26048_1-1100"
+                ]
+            },
+            "oid": "fdOwnerRecordingEntry 2",
+            "status": "current",
+            "syntax": "ITSUnsigned8",
+            "type": "ot",
+            "units": "rows"
+        },
+        {
+            "id": "24",
+            "guid": "C25E4FA9-DBA1-4961-9903-C8D61F2E190F",
+            "heading": "fdOwnerRecordingMaxClassEntries",
+            "text": "",
+            "access": "read-create",
+            "defval": "0",
+            "links": {
+                "satisfies": [
+                    "26048_1-1003",
+                    "26048_1-1100"
+                ]
+            },
+            "oid": "fdOwnerRecordingEntry 3",
+            "status": "current",
+            "syntax": "ITSUnsigned8",
+            "type": "ot",
+            "units": "rows"
+        },
+        {
+            "id": "25",
+            "guid": "407DBB57-5CF5-44F0-96F3-986687DA1536",
+            "heading": "fdOwnerRecordingMaxStorage",
+            "text": "",
+            "access": "read-create",
+            "defval": "0",
+            "links": {
+                "satisfies": [
+                    "26048_1-1003",
+                    "26048_1-1100"
+                ]
+            },
+            "oid": "fdOwnerRecordingEntry 4",
+            "status": "current",
+            "syntax": "Unsigned32",
+            "type": "ot",
+            "units": "octets"
+        },
+        {
+            "id": "27",
+            "guid": "52A00835-BFF0-4790-A38E-D4F6E31883C2",
+            "heading": "fdOwnerRecordingEntries",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-1015"
+                ]
+            },
+            "oid": "fdOwnerRecordingEntry 5",
+            "status": "current",
+            "syntax": "ITSUnsigned16",
+            "type": "ot",
+            "units": "recordings"
+        },
+        {
+            "id": "29",
+            "guid": "E716D110-8AF7-4C4D-886D-3D43AFA81651",
+            "heading": "fdOwnerRecordingCompletes",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-1015"
+                ]
+            },
+            "oid": "fdOwnerRecordingEntry 6",
+            "status": "current",
+            "syntax": "ITSCounter16",
+            "type": "ot",
+            "units": "recordings"
+        },
+        {
+            "id": "135",
+            "guid": "71a727c9-b41c-4651-aa17-3d4d9a486e51",
+            "heading": "fdOwnerRecordingClearAll"
+        },
+        {
+            "id": "33",
+            "guid": "39CEFD13-92EE-40A4-8D2A-9548A54E27F3",
+            "heading": "fdOwnerRecordingClearAllClasses",
+            "text": "",
+            "access": "read-write",
+            "links": {
+                "satisfies": [
+                    "26048_1-1031"
+                ]
+            },
+            "oid": "fdOwnerRecordingEntry 8",
+            "status": "current",
+            "syntax": "ITSClear",
+            "type": "ot"
+        },
+        {
+            "id": "35",
+            "guid": "C0DE75D3-0099-4E6A-9126-286C3746AEEC",
+            "heading": "fdOwnerRecordingClearAllFactories",
+            "text": "",
+            "access": "read-write",
+            "links": {
+                "satisfies": [
+                    "26048_1-1029"
+                ]
+            },
+            "oid": "fdOwnerRecordingEntry 9",
+            "status": "current",
+            "syntax": "ITSClear",
+            "type": "ot"
+        },
+        {
+            "id": "37",
+            "guid": "A838C7F0-8C25-495A-8221-59828ADE686A",
+            "heading": "fdOwnerRecordingClearAllRecordings",
+            "text": "",
+            "access": "read-write",
+            "links": {
+                "satisfies": [
+                    "26048_1-1033"
+                ]
+            },
+            "oid": "fdOwnerRecordingEntry 10",
+            "status": "current",
+            "syntax": "ITSClear",
+            "type": "ot"
+        },
+        {
+            "id": "39",
+            "guid": "DD5DB450-DBB5-4F15-AA33-45F236C2E0C0",
+            "heading": "fdRecordingClassTable",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdRecordingMIB 1",
+            "status": "current",
+            "syntax": "SEQUENCE OF FdRecordingClassEntry"
+        },
+        {
+            "id": "40",
+            "guid": "B5888D6D-4BD2-460F-B422-D5CD52286981",
+            "text": "",
+            "access": "not-accessible",
+            "index": "fdOwnerIndex, fdRecordingClassIndex",
+            "heading": "fdRecordingClassEntry",
+            "oid": "fdRecordingClassTable 1",
+            "status": "current",
+            "syntax": "FdRecordingClassEntry",
+            "type": "ot"
+        },
+        {
+            "id": "41",
+            "guid": "DBEE38C5-786B-4D66-9F3C-43B3C4F4AF07",
+            "heading": "FdRecordingClassEntry",
+            "syntax": "{ fdRecordingClassIndex ITSPositive8,<br> fdRecordingClassDescription SnmpAdminString,<br> fdRecordingClassSizeLimit Unsigned32,<br> fdRecordingClassClearDate ITSDateStamp,<br> fdRecordingClassClearTime ITSDailyTimeStamp,<br> fdRecordingClassEntries ITSUnsigned8,<br> fdRecordingClassCompletes ITSCounter16,<br> fdRecordingClassStorageType StorageType,<br> fdRecordingClassRowStatus RowStatus }",
+            "type": "row"
+        },
+        {
+            "id": "43",
+            "guid": "5161D27D-6AD3-42A6-9DE3-DF0EFD0B8E18",
+            "heading": "fdRecordingClassIndex",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdRecordingClassEntry 1",
+            "status": "current",
+            "syntax": "ITSPositive8"
+        },
+        {
+            "id": "45",
+            "guid": "87422529-00BA-47F2-B465-11E1B5CAAFAC",
+            "heading": "fdRecordingClassDescription",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-1005",
+                    "26048_1-1101"
+                ]
+            },
+            "oid": "fdRecordingClassEntry 2",
+            "status": "current",
+            "syntax": "SnmpAdminString",
+            "type": "ot"
+        },
+        {
+            "id": "47",
+            "guid": "6D93B37F-65C9-4800-BE3E-22F2FBED4E1A",
+            "heading": "fdRecordingClassSizeLimit",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-1005",
+                    "26048_1-1101"
+                ]
+            },
+            "oid": "fdRecordingClassEntry 3",
+            "status": "current",
+            "syntax": "Unsigned32",
+            "type": "ot",
+            "units": "octets"
+        },
+        {
+            "id": "49",
+            "guid": "2B51D3CE-9D76-4AA9-8499-E5E792DE233A",
+            "heading": "fdRecordingClassClearDate",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-1035"
+                ]
+            },
+            "oid": "fdRecordingClassEntry 4",
+            "status": "current",
+            "syntax": "ITSDateStamp",
+            "type": "ot"
+        },
+        {
+            "id": "51",
+            "guid": "D3038D44-9E30-45E2-BADF-85D8179CF500",
+            "heading": "fdRecordingClassClearTime",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-1035"
+                ]
+            },
+            "oid": "fdRecordingClassEntry 5",
+            "status": "current",
+            "syntax": "ITSDailyTimeStamp",
+            "type": "ot"
+        },
+        {
+            "id": "53",
+            "guid": "F0CB762D-9ADA-45F6-AE40-A8276EE16039",
+            "heading": "fdRecordingClassEntries",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-1019"
+                ]
+            },
+            "oid": "fdRecordingClassEntry 6",
+            "status": "current",
+            "syntax": "ITSUnsigned8",
+            "type": "ot",
+            "units": "recording"
+        },
+        {
+            "id": "55",
+            "guid": "0E5D81E5-C455-4159-99F1-19F20C678D8A",
+            "heading": "fdRecordingClassCompletes",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-1019"
+                ]
+            },
+            "oid": "fdRecordingClassEntry 7",
+            "status": "current",
+            "syntax": "ITSCounter16",
+            "type": "ot",
+            "units": "recording"
+        },
+        {
+            "id": "134",
+            "guid": "972b4d2e-7bf9-4334-aaa1-9bef331d3b42",
+            "heading": "fdRecordingClassTimestamp",
+            "text": "",
+            "links": {
+                "satisfies": [
+                    "26048_1-1019"
+                ]
+            }
+        },
+        {
+            "id": "57",
+            "guid": "5D01DA43-484E-4109-AE7A-072E6413B190",
+            "heading": "fdRecordingClassStorageType",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-1005",
+                    "26048_1-1101"
+                ]
+            },
+            "oid": "fdRecordingClassEntry 8",
+            "status": "current",
+            "syntax": "StorageType",
+            "type": "ot"
+        },
+        {
+            "id": "59",
+            "guid": "7C3CED9E-E297-4B1D-999B-34F4207C51A3",
+            "heading": "fdRecordingClassRowStatus",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-1005",
+                    "26048_1-1101"
+                ]
+            },
+            "oid": "fdRecordingClassEntry 9",
+            "status": "current",
+            "syntax": "RowStatus",
+            "type": "ot"
+        },
+        {
+            "id": "61",
+            "guid": "B1FD8466-86D1-4404-B3AE-743EB60177C3",
+            "heading": "fdRecordingFactoryTable",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdRecordingMIB 2",
+            "status": "current",
+            "syntax": "SEQUENCE OF FdRecordingFactoryEntry"
+        },
+        {
+            "id": "62",
+            "guid": "10E6BB12-94A2-408D-95E1-CE414C85D8CE",
+            "text": "",
+            "access": "not-accessible",
+            "index": "fdOwnerIndex, fdRecordingClassIndex, fdRecordingFactoryIndex",
+            "heading": "fdRecordingFactoryEntry",
+            "oid": "fdRecordingFactoryTable 1",
+            "status": "current",
+            "syntax": "FdRecordingFactoryEntry",
+            "type": "ot"
+        },
+        {
+            "id": "63",
+            "guid": "BB179658-F325-4BDC-8173-393B9BE05A71",
+            "heading": "FdRecordingFactoryEntry",
+            "syntax": "{ fdRecordingFactoryIndex ITSPositive8,<br> fdRecordingFactorySecurityModel SnmpSecurityModel,<br> fdRecordingFactorySecurityLevel SnmpSecurityLevel,<br> fdRecordingFactorySecurityName SnmpAdminString,<br> fdRecordingFactorySampleContext SnmpAdminString,<br> fdRecordingFactorySampleOID VariablePointer,<br> fdRecordingFactoryPreSamples ITSPercent,<br> fdRecordingFactorySamplePeriod ITSUnsigned16,<br> fdRecordingFactoryMonitorContext SnmpAdminString,<br> fdRecordingFactoryMonitorOID VariablePointer,<br> fdRecordingFactorySampleLimit ITSUnsigned16,<br> fdRecordingFactoryStorageType StorageType,<br> fdRecordingFactoryRowStatus RowStatus }",
+            "type": "row"
+        },
+        {
+            "id": "65",
+            "guid": "3D96DA46-3E6E-43BE-B8F6-9C98CF267D89",
+            "heading": "fdRecordingFactoryIndex",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdRecordingFactoryEntry 1",
+            "status": "current",
+            "syntax": "ITSPositive8"
+        },
+        {
+            "id": "67",
+            "guid": "0786E455-65F8-437C-8A52-F75C1CFE8D4B",
+            "heading": "fdRecordingFactorySecurityModel",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdRecordingFactoryEntry 2",
+            "status": "current",
+            "syntax": "SnmpSecurityModel"
+        },
+        {
+            "id": "69",
+            "guid": "772740CF-EF85-45E4-930D-2AC5FA9BBF67",
+            "heading": "fdRecordingFactorySecurityLevel",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdRecordingFactoryEntry 3",
+            "status": "current",
+            "syntax": "SnmpSecurityLevel"
+        },
+        {
+            "id": "71",
+            "guid": "9903C899-E836-4A36-8035-E4B49A6C0A9B",
+            "heading": "fdRecordingFactorySecurityName",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdRecordingFactoryEntry 4",
+            "status": "current",
+            "syntax": "SnmpAdminString (SIZE (0..32))"
+        },
+        {
+            "id": "73",
+            "guid": "878DC13C-AA7D-4268-AD24-77C63D4A4EB2",
+            "heading": "fdRecordingFactorySampleContext",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-1007",
+                    "26048_1-1102"
+                ]
+            },
+            "oid": "fdRecordingFactoryEntry 5",
+            "status": "current",
+            "syntax": "SnmpAdminString (SIZE (0..32))",
+            "type": "ot"
+        },
+        {
+            "id": "75",
+            "guid": "F3E6DD53-639A-492B-A7AA-F5A872406ABE",
+            "heading": "fdRecordingFactorySampleOID",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-1007",
+                    "26048_1-1102"
+                ]
+            },
+            "oid": "fdRecordingFactoryEntry 6",
+            "status": "current",
+            "syntax": "VariablePointer",
+            "type": "ot"
+        },
+        {
+            "id": "77",
+            "guid": "5D12225A-89F4-4EEA-9DE0-FA8A7ABB1149",
+            "heading": "fdRecordingFactoryPreSamples",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-1007",
+                    "26048_1-1102"
+                ]
+            },
+            "oid": "fdRecordingFactoryEntry 7",
+            "status": "current",
+            "syntax": "ITSPercent",
+            "type": "ot"
+        },
+        {
+            "id": "79",
+            "guid": "03ADAC56-AFB5-47C5-B8AA-FD9CFBC7753B",
+            "heading": "fdRecordingFactorySamplePeriod",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-1007",
+                    "26048_1-1102"
+                ]
+            },
+            "oid": "fdRecordingFactoryEntry 8",
+            "status": "current",
+            "syntax": "ITSUnsigned16",
+            "type": "ot",
+            "units": "0.1 milliseconds"
+        },
+        {
+            "id": "81",
+            "guid": "7521A63A-348B-4169-8C8E-E852DF5B76D6",
+            "heading": "fdRecordingFactoryMonitorContext",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-1007",
+                    "26048_1-1102"
+                ]
+            },
+            "oid": "fdRecordingFactoryEntry 9",
+            "status": "current",
+            "syntax": "SnmpAdminString (SIZE (0..32))",
+            "type": "ot"
+        },
+        {
+            "id": "83",
+            "guid": "26F1EDE1-03CC-4980-B808-9161CD9847BF",
+            "heading": "fdRecordingFactoryMonitorOID",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-1007",
+                    "26048_1-1102"
+                ]
+            },
+            "oid": "fdRecordingFactoryEntry 10",
+            "status": "current",
+            "syntax": "VariablePointer",
+            "type": "ot"
+        },
+        {
+            "id": "85",
+            "guid": "6CB2AC2D-4FA4-4E7B-B241-8D066E541D4A",
+            "heading": "fdRecordingFactorySampleLimit",
+            "text": "",
+            "access": "read-create",
+            "units": "samples",
+            "oid": "fdRecordingFactoryEntry 11",
+            "status": "current",
+            "syntax": "ITSUnsigned16",
+            "type": "ot"
+        },
+        {
+            "id": "87",
+            "guid": "947EE37D-D377-414F-8CE2-5518164804D5",
+            "heading": "fdRecordingFactoryStorageType",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-1007",
+                    "26048_1-1102"
+                ]
+            },
+            "oid": "fdRecordingFactoryEntry 12",
+            "status": "current",
+            "syntax": "StorageType",
+            "type": "ot"
+        },
+        {
+            "id": "89",
+            "guid": "558BE7F0-E9E2-475E-8D0A-753586647BDB",
+            "heading": "fdRecordingFactoryRowStatus",
+            "text": "",
+            "access": "read-create",
+            "links": {
+                "satisfies": [
+                    "26048_1-1007",
+                    "26048_1-1102"
+                ]
+            },
+            "oid": "fdRecordingFactoryEntry 13",
+            "status": "current",
+            "syntax": "RowStatus",
+            "type": "ot"
+        },
+        {
+            "id": "91",
+            "guid": "DC161101-CD95-4281-9C4F-7E81F9430DE0",
+            "heading": "fdRecordingTable",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdRecordingMIB 3",
+            "status": "current",
+            "syntax": "SEQUENCE OF FdRecordingEntry"
+        },
+        {
+            "id": "92",
+            "guid": "73C8C308-AC0C-442F-A00C-2D1DAED93B53",
+            "text": "",
+            "access": "not-accessible",
+            "index": "fdOwnerIndex, fdRecordingClassIndex, fdRecordingIndex",
+            "heading": "fdRecordingEntry",
+            "oid": "fdRecordingTable 1",
+            "status": "current",
+            "syntax": "FdRecordingEntry",
+            "type": "ot"
+        },
+        {
+            "id": "93",
+            "guid": "DF4D74C8-F88C-4A9A-80AB-A4C688C14C8C",
+            "heading": "FdRecordingEntry",
+            "syntax": "{ fdRecordingIndex ITSPositive8,<br> fdRecordingTrigger RowPointer,<br> fdRecordingTriggerDate ITSDateStamp,<br> fdRecordingTriggerTime ITSDailyTimeStamp,<br> fdRecordingStatus INTEGER,<br> fdRecordingTriggerSample ITSUnsigned16,<br> fdRecordingNumSamples ITSUnsigned16,<br> fdRecordingDelete TruthValue }",
+            "type": "row"
+        },
+        {
+            "id": "95",
+            "guid": "CC12539F-88A0-4E43-B227-E5F21176C4AE",
+            "heading": "fdRecordingIndex",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdRecordingEntry 1",
+            "status": "current",
+            "syntax": "ITSPositive8"
+        },
+        {
+            "id": "97",
+            "guid": "0BF63001-A082-4F32-A217-FC9692FE37CE",
+            "heading": "fdRecordingTrigger",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-1021"
+                ]
+            },
+            "oid": "fdRecordingEntry 2",
+            "status": "current",
+            "syntax": "RowPointer",
+            "type": "ot"
+        },
+        {
+            "id": "99",
+            "guid": "5C15F47C-A2B6-4D70-9B20-8D845D8EA2A6",
+            "heading": "fdRecordingTriggerDate",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-1021"
+                ]
+            },
+            "oid": "fdRecordingEntry 3",
+            "status": "current",
+            "syntax": "ITSDateStamp",
+            "type": "ot"
+        },
+        {
+            "id": "101",
+            "guid": "70679449-E458-4065-938D-31C627D38C27",
+            "heading": "fdRecordingTriggerTime",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-1021"
+                ]
+            },
+            "oid": "fdRecordingEntry 4",
+            "status": "current",
+            "syntax": "ITSDailyTimeStamp",
+            "type": "ot"
+        },
+        {
+            "id": "103",
+            "guid": "C6717105-73B3-482F-A365-D1808F65E9E2",
+            "heading": "fdRecordingStatus",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-1021"
+                ]
+            },
+            "oid": "fdRecordingEntry 5",
+            "status": "current",
+            "syntax": "INTEGER { available (1),<br> pretrigger (2), <br> triggered (3), <br> complete (4)}",
+            "type": "ot"
+        },
+        {
+            "id": "105",
+            "guid": "90F43481-0102-43EA-BB72-E8F6FD96691C",
+            "heading": "fdRecordingTriggerSample",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-1021"
+                ]
+            },
+            "oid": "fdRecordingEntry 6",
+            "status": "current",
+            "syntax": "ITSUnsigned16",
+            "type": "ot",
+            "units": "samples"
+        },
+        {
+            "id": "107",
+            "guid": "6AE97F31-2975-4F83-A6D5-FEEDA96DEC4E",
+            "heading": "fdRecordingNumSamples",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-1021"
+                ]
+            },
+            "oid": "fdRecordingEntry 7",
+            "status": "current",
+            "syntax": "ITSUnsigned16",
+            "type": "ot",
+            "units": "samples"
+        },
+        {
+            "id": "109",
+            "guid": "1307D796-48F8-4448-9F85-C533E50ACCD7",
+            "heading": "fdRecordingDelete",
+            "text": "",
+            "access": "read-write",
+            "type": "ot",
+            "oid": "fdRecordingEntry 8",
+            "status": "current",
+            "syntax": "TruthValue"
+        },
+        {
+            "id": "111",
+            "guid": "F112240C-CD8C-4B6A-9C7A-D77C5A3EDBED",
+            "heading": "fdRecordingSampleTable",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdRecordingMIB 4",
+            "status": "current",
+            "syntax": "SEQUENCE OF FdRecordingSampleEntry"
+        },
+        {
+            "id": "112",
+            "guid": "E0213AF3-FB86-42C4-8BDF-55A5342FA9A9",
+            "text": "",
+            "access": "not-accessible",
+            "index": "fdOwnerIndex, fdRecordingClassIndex, fdRecordingIndex, fdRecordingSampleIndex",
+            "heading": "fdRecordingSampleEntry",
+            "oid": "fdRecordingSampleTable 1",
+            "status": "current",
+            "syntax": "FdRecordingSampleEntry",
+            "type": "ot"
+        },
+        {
+            "id": "113",
+            "guid": "1B9EF5E2-4C28-46E7-B552-BFA2B9D0B5F5",
+            "heading": "FdRecordingSampleEntry::=",
+            "syntax": "{ fdRecordingSampleIndex ITSPositive16,<br> fdRecordingSampleTime ITSDailyTimeStamp,<br> fdRecordingSampleValue ITSOerString }",
+            "type": "row"
+        },
+        {
+            "id": "115",
+            "guid": "6776E74D-AA4D-4700-B917-F7AB509184F5",
+            "heading": "fdRecordingSampleIndex",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "fdRecordingSampleEntry 1",
+            "status": "current",
+            "syntax": "ITSPositive16"
+        },
+        {
+            "id": "117",
+            "guid": "28B9A3C1-D144-4A91-84CC-52BB57F1D23F",
+            "heading": "fdRecordingSampleTime",
+            "text": "",
+            "access": "read-only",
+            "discussion": [
+                {
+                    "comment": "<p>Should we also include a date object?</p>",
+                    "date": "2023-06-25T18:16:39.966Z",
+                    "author": {
+                        "name": "Kenneth Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                    }
+                }
+            ],
+            "oid": "fdRecordingSampleEntry 2",
+            "status": "current",
+            "syntax": "ITSDailyTimeStamp",
+            "type": "ot",
+            "links": {
+                "satisfies": [
+                    "26048_1-1099"
+                ]
+            }
+        },
+        {
+            "id": "119",
+            "guid": "EA1C8C3B-DC73-4020-8E1A-CEAF321D0F82",
+            "heading": "fdRecordingSampleValue",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-1099"
+                ]
+            },
+            "oid": "fdRecordingSampleEntry 3",
+            "status": "current",
+            "syntax": "ITSOerString",
+            "type": "ot"
+        },
+        {
+            "id": "120",
+            "guid": "E187E686-5106-4858-933C-62A3E52BB842",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "121",
+            "guid": "9E3EAC56-A0B0-4C86-9706-ECE4ABB27762",
+            "heading": "fdRecordingMinSamplePeriod",
+            "text": "",
+            "access": "read-only",
+            "units": "0.1 milliseconds",
+            "oid": "fdRecordingMIB 5",
+            "status": "current",
+            "syntax": "ITSPositive16",
+            "type": "ot"
+        },
+        {
+            "id": "123",
+            "guid": "B5FC44FF-00DC-4B00-A279-57BA7D2A7AC1",
+            "heading": "fdRecordingMaxSamplePeriod",
+            "text": "",
+            "access": "read-only",
+            "units": "0.1 milliseconds",
+            "oid": "fdRecordingMIB 6",
+            "status": "current",
+            "syntax": "ITSPositive16",
+            "type": "ot"
+        },
+        {
+            "id": "125",
+            "guid": "E0091EAA-2293-4B0F-B8AD-76112B8E3843",
+            "heading": "fdRecordingSamplePeriodResolution",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-1011"
+                ]
+            },
+            "oid": "fdRecordingMIB 7",
+            "status": "current",
+            "syntax": "Unsigned32 (1..50)",
+            "type": "ot",
+            "units": "0.1 milliseconds"
+        },
+        {
+            "id": "126",
+            "guid": "5AF37BC7-3D90-41B3-8288-3BC4AECD4FEC",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "127",
+            "guid": "D5207E06-9596-4C2C-9911-5FDCDDC1DF6C",
+            "text": "",
+            "heading": "fdRecordingConformance",
+            "oid": "fdGlobalConformance 18",
+            "status": "current",
+            "type": "oi"
+        },
+        {
+            "id": "128",
+            "guid": "546DA19E-9015-47F7-A5FD-B8CE36E1A53C",
+            "text": "",
+            "heading": "fdRecordingCompliances",
+            "oid": "fdRecordingConformance 1",
+            "status": "current",
+            "type": "oi"
+        },
+        {
+            "id": "129",
+            "guid": "A713D33F-9F49-454C-AFB6-E0D2513467D9",
+            "text": "",
+            "heading": "fdRecordingGroups",
+            "oid": "fdRecordingConformance 2",
+            "status": "current",
+            "type": "oi"
+        },
+        {
+            "id": "130",
+            "guid": "3060FD8F-4A02-423B-AE23-A41B3541E79E",
+            "text": "",
+            "heading": "fdRecordingComplianceV1",
+            "oid": "fdRecordingCompliances 1",
+            "status": "current",
+            "syntax": "{ fdRecordingGroupV1<br> }",
+            "type": "mc"
+        },
+        {
+            "id": "131",
+            "guid": "E56EBA02-B867-4336-9FC1-AF8C8644DC3D",
+            "text": "",
+            "heading": "fdRecordingGroupV1",
+            "oid": "fdRecordingGroups 1",
+            "status": "current",
+            "syntax": "{ fdAdminRecordingEntries, fdAdminRecordingCompletes,<br> fdAdminRecordingClearAll,<br> fdAdminRecordingClearAllClasses,<br> fdAdminRecordingClearAllFactories,<br> fdAdminRecordingClearAllRecordings, <br> fdOwnerRecordingMaxFactories,<br> fdOwnerRecordingMaxClasses,<br> fdOwnerRecordingMaxClassEntries,<br> fdOwnerRecordingMaxStorage,<br> fdOwnerRecordingEntries,<br> fdOwnerRecordingCompletes,<br> fdOwnerRecordingClearAll,<br> fdOwnerRecordingClearAllClasses,<br> fdOwnerRecordingClearAllFactories,<br> fdOwnerRecordingClearAllRecordings, <br> fdRecordingClassDescription,<br> fdRecordingClassSizeLimit,<br> fdRecordingClassClearDate,<br> fdRecordingClassClearTime,<br> fdRecordingClassEntries,<br> fdRecordingClassCompletes,<br> fdRecordingClassStorageType, <br> fdRecordingClassRowStatus,<br> fdRecordingFactorySampleContext,<br> fdRecordingFactorySampleOID,<br> fdRecordingFactoryPreSamples,<br> fdRecordingFactorySamplePeriod,<br> fdRecordingFactoryMonitorContext,<br> fdRecordingFactoryMonitorOID,<br> fdRecordingFactorySampleLimit,<br> fdRecordingFactoryStorageType, <br> fdRecordingFactoryRowStatus, <br> fdRecordingTrigger,<br> fdRecordingTriggerDate,<br> fdRecordingTriggerTime,<br> fdRecordingStatus,<br> fdRecordingTriggerSample,<br> fdRecordingNumSamples,<br> fdRecordingDelete, <br> fdRecordingSampleTime,<br> fdRecordingSampleValue,<br> fdRecordingMinSamplePeriod,<br> fdRecordingMaxSamplePeriod,<br> fdRecordingSamplePeriodResolution<br> }",
+            "type": "og"
+        },
+        {
+            "id": "132",
+            "guid": "A4B69F00-0D3A-4BA9-8788-77337C3FD7B9",
+            "heading": "end",
+            "type": "end"
+        }
+    ],
+    "attributes": {
+        "access": {
+            "heading": "Access",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "read-only"
+                },
+                {
+                    "key": "read-write"
+                },
+                {
+                    "key": "read-create"
+                },
+                {
+                    "key": "not-accessible"
+                },
+                {
+                    "key": "accessible-for-notify"
+                }
+            ]
+        },
+        "augments": {
+            "heading": "Augments",
+            "type": "string"
+        },
+        "comment": {
+            "heading": "Comment",
+            "type": "xhtml"
+        },
+        "contact": {
+            "heading": "Contact",
+            "type": "xhtml"
+        },
+        "defval": {
+            "heading": "Default Value",
+            "type": "string"
+        },
+        "index": {
+            "heading": "Index",
+            "type": "string"
+        },
+        "name": {
+            "heading": "Name",
+            "type": "string"
+        },
+        "oid": {
+            "heading": "OID",
+            "type": "string"
+        },
+        "org": {
+            "heading": "Organization",
+            "type": "string"
+        },
+        "part": {
+            "heading": "Part",
+            "type": "string"
+        },
+        "status": {
+            "heading": "Status",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "current"
+                },
+                {
+                    "key": "deprecated"
+                },
+                {
+                    "key": "obsolete"
+                }
+            ]
+        },
+        "syntax": {
+            "heading": "Syntax",
+            "type": "xhtml"
+        },
+        "type": {
+            "heading": "Type",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "comment"
+                },
+                {
+                    "key": "end"
+                },
+                {
+                    "key": "mc",
+                    "label": "module-compliance"
+                },
+                {
+                    "key": "mi",
+                    "label": "module-identity"
+                },
+                {
+                    "key": "mib"
+                },
+                {
+                    "key": "ng",
+                    "label": "notification-group"
+                },
+                {
+                    "key": "nt",
+                    "label": "notification-type"
+                },
+                {
+                    "key": "og",
+                    "label": "object-group"
+                },
+                {
+                    "key": "oi",
+                    "label": "object-identity"
+                },
+                {
+                    "key": "ot",
+                    "label": "object-type"
+                },
+                {
+                    "key": "ref",
+                    "label": "reference"
+                },
+                {
+                    "key": "rev",
+                    "label": "revision"
+                },
+                {
+                    "key": "row"
+                },
+                {
+                    "key": "text_conv"
+                }
+            ]
+        },
+        "units": {
+            "heading": "Units",
+            "type": "string"
+        },
+        "updated": {
+            "heading": "Updated",
+            "type": "string"
+        }
+    },
+    "templateColumns": {
+        "fd2eb1f6-ba83-45a4-b7ac-240e3d190634": {
+            "label": "Errors",
+            "template": "{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-only\") (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\"))) (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies link\" link</div>\n  {{/if}}\n{{/if}}"
+        }
+    },
+    "views": {
+        "Primary": {
+            "columns": [
+                {
+                    "columnId": "id",
+                    "width": 65
+                },
+                {
+                    "columnId": "type",
+                    "width": 92
+                },
+                {
+                    "columnId": "name",
+                    "width": 233
+                },
+                {
+                    "columnId": "description",
+                    "width": 500
+                },
+                {
+                    "columnId": "links",
+                    "width": 214
+                },
+                {
+                    "columnId": "access",
+                    "width": 150
+                },
+                {
+                    "columnId": "discussion",
+                    "width": 300
+                }
+            ],
+            "default": true
+        }
+    },
+    "metadata": {
+        "format": "2.17"
+    }
+}

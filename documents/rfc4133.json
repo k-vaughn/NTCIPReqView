@@ -1,1 +1,913 @@
-{"id":"rfc4133","guid":"72A9931B-1274-4959-83B5-BD68355043B3","heading":"ENTITY-MIB","lastId":67,"createdOn":"2023-06-21T16:23:59","createdBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"lastChangedOn":"2023-06-21T20:30:54.406Z","lastChangedBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"data":[{"id":"1","guid":"2BE61A5F-7FEB-4844-BF3E-925AB90EC645","text":"","heading":"ENTITY-MIB","type":"mib"},{"id":"2","guid":"368D2729-09DF-4F25-96A0-E3312B452082","text":"","contact":"<p>WG E-mail: entmib@ietf.org Mailing list subscription info: http://www.ietf.org/mailman/listinfo/entmib Andy Bierman ietf@andybierman.com Keith McCloghrie Cisco Systems Inc. 170 West Tasman Drive San Jose, CA 95134 +1 408-526-5260 kzm@cisco.com</p>","heading":"entityMIB","oid":"mib-2 47","org":"IETF ENTMIB Working Group","type":"mi","updated":"200508100000Z"},{"id":"3","guid":"03D3A030-7E28-4473-A5F3-2AF7B8DBB902","text":"","heading":"comment","type":"comment"},{"id":"4","guid":"6DF075B6-75C2-4A3E-A757-7F702F1F5BD4","heading":"entPhysicalTable","text":"","access":"not-accessible","type":"ot","oid":"entityPhysical 1","status":"current","syntax":"SEQUENCE OF EntPhysicalEntry"},{"id":"5","guid":"111472EC-3E83-4F41-85BB-CE02FBCCD4F4","heading":"entPhysicalEntry","text":"","access":"not-accessible","index":"entPhysicalIndex","type":"ot","oid":"entPhysicalTable 1","status":"current","syntax":"EntPhysicalEntry"},{"id":"6","guid":"B9A9F016-9969-49EB-8649-03D6955E0D71","heading":"EntPhysicalEntry","syntax":"{ entPhysicalIndex PhysicalIndex,<br> entPhysicalDescr SnmpAdminString,<br> entPhysicalVendorType AutonomousType,<br> entPhysicalContainedIn PhysicalIndexOrZero,<br> entPhysicalClass PhysicalClass,<br> entPhysicalParentRelPos Integer32,<br> entPhysicalName SnmpAdminString,<br> entPhysicalHardwareRev SnmpAdminString,<br> entPhysicalFirmwareRev SnmpAdminString,<br> entPhysicalSoftwareRev SnmpAdminString,<br> entPhysicalSerialNum SnmpAdminString,<br> entPhysicalMfgName SnmpAdminString,<br> entPhysicalModelName SnmpAdminString,<br> entPhysicalAlias SnmpAdminString,<br> entPhysicalAssetID SnmpAdminString,<br> entPhysicalIsFRU TruthValue,<br> entPhysicalMfgDate DateAndTime,<br> entPhysicalUris OCTET STRING<br><br>}","type":"row"},{"id":"7","guid":"A55DC06E-8947-483F-BD52-AF395306074B","heading":"entPhysicalIndex","text":"","access":"not-accessible","type":"ot","oid":"entPhysicalEntry 1","status":"current","syntax":"PhysicalIndex"},{"id":"8","guid":"97750EF5-EA0A-4105-B520-E5B46BF13090","heading":"entPhysicalDescr","text":"","access":"read-only","links":{"satisfies":["26048_1-349"]},"oid":"entPhysicalEntry 2","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"9","guid":"992E6271-FA6B-485F-875D-D1ABFEFDF142","heading":"entPhysicalVendorType","text":"","access":"read-only","links":{"satisfies":["26048_1-349"]},"oid":"entPhysicalEntry 3","status":"current","syntax":"AutonomousType","type":"ot"},{"id":"10","guid":"AA11CCC8-9AD2-46AC-8C2E-92C3A0377D3E","heading":"entPhysicalContainedIn","text":"","access":"read-only","links":{"satisfies":["26048_1-349"]},"oid":"entPhysicalEntry 4","status":"current","syntax":"PhysicalIndexOrZero","type":"ot"},{"id":"11","guid":"46917DFE-DA15-41A1-ACDB-FCD01D4AC948","heading":"entPhysicalClass","text":"","access":"read-only","links":{"satisfies":["26048_1-349"]},"oid":"entPhysicalEntry 5","status":"current","syntax":"PhysicalClass","type":"ot"},{"id":"12","guid":"F5E49FC4-E3DE-4916-8E43-AD688AF2B25F","heading":"entPhysicalParentRelPos","text":"","access":"read-only","links":{"satisfies":["26048_1-349"]},"oid":"entPhysicalEntry 6","status":"current","syntax":"Integer32 (-1..2147483647)","type":"ot"},{"id":"13","guid":"365A5FF5-ADE8-4F4C-A526-03D15055EB63","heading":"entPhysicalName","text":"","access":"read-only","links":{"satisfies":["26048_1-349"]},"oid":"entPhysicalEntry 7","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"14","guid":"4F023A6D-57C2-4561-945D-6E2C704C5151","heading":"entPhysicalFirmwareRev","text":"","access":"read-only","links":{"satisfies":["26048_1-349"]},"oid":"entPhysicalEntry 9","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"15","guid":"57004B0A-D036-47C3-83C0-63410F2A2F8F","heading":"entPhysicalSoftwareRev","text":"","access":"read-only","links":{"satisfies":["26048_1-349"]},"oid":"entPhysicalEntry 10","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"16","guid":"7923F1AD-489D-469F-AE06-BEA61331A22D","heading":"entPhysicalSerialNum","text":"","access":"read-write","links":{"satisfies":["26048_1-349"]},"oid":"entPhysicalEntry 11","status":"current","syntax":"SnmpAdminString (SIZE (0..32))","type":"ot"},{"id":"17","guid":"DEC75273-6DD9-4AFF-9895-4F4CB5F5A734","heading":"entPhysicalMfgName","text":"","access":"read-only","links":{"satisfies":["26048_1-349"]},"oid":"entPhysicalEntry 12","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"18","guid":"AF44053A-F24D-463B-AC12-CEE2D8C75CF1","heading":"entPhysicalModelName","text":"","access":"read-only","links":{"satisfies":["26048_1-349"]},"oid":"entPhysicalEntry 13","status":"current","syntax":"SnmpAdminString","type":"ot"},{"id":"19","guid":"DC907A8E-85C3-4D68-BA5F-15ECFDB5926D","heading":"entPhysicalAlias","text":"","access":"read-write","links":{"satisfies":["26048_1-348","26048_1-349"]},"oid":"entPhysicalEntry 14","status":"current","syntax":"SnmpAdminString (SIZE (0..32))","type":"ot"},{"id":"20","guid":"09AF604E-87DD-43D9-BA8C-1EC899C259F8","heading":"entPhysicalAssetID","text":"","access":"read-write","links":{"satisfies":["26048_1-348","26048_1-349"]},"oid":"entPhysicalEntry 15","status":"current","syntax":"SnmpAdminString (SIZE (0..32))","type":"ot"},{"id":"21","guid":"A8342E24-A020-47F3-BAA8-55653548AFAC","heading":"entPhysicalIsFRU","text":"","access":"read-only","links":{"satisfies":["26048_1-349"]},"oid":"entPhysicalEntry 16","status":"current","syntax":"TruthValue","type":"ot"},{"id":"22","guid":"5C19F977-5E7E-471F-A49A-633F1D786E05","heading":"entPhysicalMfgDate","text":"","access":"read-only","type":"ot","oid":"entPhysicalEntry 17","status":"current","syntax":"DateAndTime"},{"id":"23","guid":"844707F5-7E28-40EA-962A-FCD437CA39AE","heading":"entPhysicalUris","text":"","access":"read-write","type":"ot","oid":"entPhysicalEntry 18","status":"current","syntax":"OCTET STRING"},{"id":"24","guid":"7E4114FF-E55E-4225-847A-B5B4187CF32C","text":"","heading":"comment","type":"comment"},{"id":"25","guid":"FC1D1453-4BF6-4E22-90EA-92B922B6F794","heading":"entLogicalTable","text":"","access":"not-accessible","type":"ot","oid":"entityLogical 1","status":"current","syntax":"SEQUENCE OF EntLogicalEntry"},{"id":"26","guid":"C6D43442-BB5A-400E-99AD-89F0EC349D40","heading":"entLogicalEntry","text":"","access":"not-accessible","index":"entLogicalIndex","type":"ot","oid":"entLogicalTable 1","status":"current","syntax":"EntLogicalEntry"},{"id":"27","guid":"AE498FAE-B1FC-47E8-990B-F12C0CD180DB","heading":"EntLogicalEntry","syntax":"{ entLogicalIndex Integer32,<br> entLogicalDescr SnmpAdminString,<br> entLogicalType AutonomousType,<br> entLogicalCommunity OCTET STRING,<br> entLogicalTAddress TAddress,<br> entLogicalTDomain TDomain,<br> entLogicalContextEngineID SnmpEngineIdOrNone,<br> entLogicalContextName SnmpAdminString<br>}","type":"row"},{"id":"28","guid":"CB300E8E-75D5-4A58-A40E-86C352731F9F","heading":"entLogicalIndex","text":"","access":"not-accessible","type":"ot","oid":"entLogicalEntry 1","status":"current","syntax":"Integer32 (1..2147483647)"},{"id":"29","guid":"E1DB85E2-5C98-4995-BB1B-DCC5A194DE8D","heading":"entLogicalDescr","text":"","access":"read-only","type":"ot","oid":"entLogicalEntry 2","status":"current","syntax":"SnmpAdminString"},{"id":"30","guid":"8C8E4C39-E38F-43EF-8E42-941D0DDEEF88","heading":"entLogicalType","text":"","access":"read-only","type":"ot","oid":"entLogicalEntry 3","status":"current","syntax":"AutonomousType"},{"id":"31","guid":"2385480C-139E-4CB6-A615-DF841DE789B8","heading":"entLogicalCommunity","text":"","access":"read-only","type":"ot","oid":"entLogicalEntry 4","status":"deprecated","syntax":"OCTET STRING (SIZE (0..255))"},{"id":"32","guid":"52E5305E-F2EE-4D28-9FBA-42DD0C41A7BE","heading":"entLogicalTAddress","text":"","access":"read-only","type":"ot","oid":"entLogicalEntry 5","status":"current","syntax":"TAddress"},{"id":"33","guid":"3AAB56CC-BBAC-4A2B-A187-453D4611CB2E","heading":"entLogicalTDomain","text":"","access":"read-only","type":"ot","oid":"entLogicalEntry 6","status":"current","syntax":"TDomain"},{"id":"34","guid":"CC4CB719-938E-4323-8E9E-4041DEB3812E","heading":"entLogicalContextEngineID","text":"","access":"read-only","type":"ot","oid":"entLogicalEntry 7","status":"current","syntax":"SnmpEngineIdOrNone"},{"id":"35","guid":"CBFD8756-A7BE-4BBA-86B3-68407CC66D51","heading":"entLogicalContextName","text":"","access":"read-only","type":"ot","oid":"entLogicalEntry 8","status":"current","syntax":"SnmpAdminString"},{"id":"36","guid":"C916DCCD-07D4-4B60-8477-794E9C9F22AD","heading":"entLPMappingTable","text":"","access":"not-accessible","type":"ot","oid":"entityMapping 1","status":"current","syntax":"SEQUENCE OF EntLPMappingEntry"},{"id":"37","guid":"433E546F-9452-4C5B-917D-85EE16AECF91","heading":"entLPMappingEntry","text":"","access":"not-accessible","index":"entLogicalIndex, entLPPhysicalIndex","type":"ot","oid":"entLPMappingTable 1","status":"current","syntax":"EntLPMappingEntry"},{"id":"38","guid":"EC7776EE-8D88-44FF-8FA5-2B54502E8FDF","heading":"EntLPMappingEntry","syntax":"{ entLPPhysicalIndex PhysicalIndex<br>}","type":"row"},{"id":"39","guid":"9F6F9DB8-D222-401C-A39D-D2C304C98E08","heading":"entLPPhysicalIndex","text":"","access":"read-only","type":"ot","oid":"entLPMappingEntry 1","status":"current","syntax":"PhysicalIndex"},{"id":"40","guid":"BAA93D6C-E09D-44B0-A8BF-1278711980A6","text":"","heading":"comment","type":"comment"},{"id":"41","guid":"109FB810-ED6D-426C-A55A-A41C304B0AD2","heading":"entAliasMappingTable","text":"","access":"not-accessible","type":"ot","oid":"entityMapping 2","status":"current","syntax":"SEQUENCE OF EntAliasMappingEntry"},{"id":"42","guid":"F2940958-24FE-42E8-96F4-A862DB6B6471","heading":"entAliasMappingEntry","text":"","access":"not-accessible","index":"entPhysicalIndex, entAliasLogicalIndexOrZero","type":"ot","oid":"entAliasMappingTable 1","status":"current","syntax":"EntAliasMappingEntry"},{"id":"43","guid":"8F6F44E1-C792-4492-9EBD-EFABF4C5B2E2","heading":"EntAliasMappingEntry","syntax":"{ entAliasLogicalIndexOrZero Integer32,<br> entAliasMappingIdentifier RowPointer<br>}","type":"row"},{"id":"44","guid":"4FFBABAE-9BA9-4C66-9902-661F047B308D","heading":"entAliasLogicalIndexOrZero","text":"","access":"not-accessible","type":"ot","oid":"entAliasMappingEntry 1","status":"current","syntax":"Integer32 (0..2147483647)"},{"id":"45","guid":"4E16E8EC-37EF-44A7-AF59-46BC7F500CA1","heading":"entAliasMappingIdentifier","text":"","access":"read-only","type":"ot","oid":"entAliasMappingEntry 2","status":"current","syntax":"RowPointer"},{"id":"46","guid":"93104FA8-E287-4FE0-80ED-806CEB594239","text":"","heading":"comment","type":"comment"},{"id":"47","guid":"7FDDC350-DB64-4304-AB23-480A4ADB9923","heading":"entPhysicalContainsTable","text":"","access":"not-accessible","type":"ot","oid":"entityMapping 3","status":"current","syntax":"SEQUENCE OF EntPhysicalContainsEntry"},{"id":"48","guid":"032F2722-9DA5-41A7-9150-A8C1A7D31272","heading":"entPhysicalContainsEntry","text":"","access":"not-accessible","index":"entPhysicalIndex, entPhysicalChildIndex","type":"ot","oid":"entPhysicalContainsTable 1","status":"current","syntax":"EntPhysicalContainsEntry"},{"id":"49","guid":"8DFCB84F-41A5-4C91-98D6-97313344BA74","heading":"EntPhysicalContainsEntry","syntax":"{ entPhysicalChildIndex PhysicalIndex<br>}","type":"row"},{"id":"50","guid":"A624BAA6-7242-4896-A2D3-624DA7F393DD","heading":"entPhysicalChildIndex","text":"","access":"read-only","type":"ot","oid":"entPhysicalContainsEntry 1","status":"current","syntax":"PhysicalIndex"},{"id":"51","guid":"CDD7BAAC-D6F5-44F2-B33A-22D3C732B033","text":"","heading":"comment","type":"comment"},{"id":"52","guid":"C61548A0-D8AA-424C-A1AC-C56253C5DF0E","heading":"entLastChangeTime","text":"","access":"read-only","type":"ot","oid":"entityGeneral 1","status":"current","syntax":"TimeStamp"},{"id":"53","guid":"0C3AF66B-E650-48F5-B3A1-7B4A61DEEA36","text":"","heading":"comment","type":"comment"},{"id":"54","guid":"54446487-7E49-4B96-BE7C-0572417E89F0","text":"","heading":"entConfigChange","oid":"entityMIBTrapPrefix 1","status":"current","type":"nt"},{"id":"55","guid":"20857624-D583-4941-8D43-BD07DADA43A2","text":"","heading":"comment","type":"comment"},{"id":"56","guid":"A1BFB7EF-C772-43D7-88BD-C280EEEDE296","text":"","heading":"entityCompliance","oid":"entityCompliances 1","status":"deprecated","syntax":"{ entityPhysicalGroup,<br> entityLogicalGroup,<br> entityMappingGroup,<br> entityGeneralGroup,<br> entityNotificationsGroup<br> }","type":"mc"},{"id":"57","guid":"02D5FFF1-9F00-4D7C-A873-DB9DCDC64E8F","text":"","heading":"entity2Compliance","oid":"entityCompliances 2","status":"deprecated","syntax":"{ entityPhysicalGroup,<br> entityPhysical2Group,<br> entityGeneralGroup,<br> entityNotificationsGroup<br> }","type":"mc"},{"id":"58","guid":"F35631A1-4543-4A49-8678-304CD37E6E64","text":"","heading":"comment","type":"comment"},{"id":"59","guid":"51A4EB3A-20DE-4B0B-9B42-84D608CD7232","text":"","heading":"entityPhysicalGroup","oid":"entityGroups 1","status":"current","syntax":"{ entPhysicalDescr,<br> entPhysicalVendorType,<br> entPhysicalContainedIn,<br> entPhysicalClass,<br> entPhysicalParentRelPos,<br> entPhysicalName<br> }","type":"og"},{"id":"60","guid":"A5478FCB-C353-478A-8BDA-78E93E8AC7F0","text":"","heading":"entityLogicalGroup","oid":"entityGroups 2","status":"deprecated","syntax":"{ entLogicalDescr,<br> entLogicalType,<br> entLogicalCommunity,<br> entLogicalTAddress,<br> entLogicalTDomain<br> }","type":"og"},{"id":"61","guid":"4F314944-DAD8-4A96-9564-3E7619B06AA7","text":"","heading":"entityMappingGroup","oid":"entityGroups 3","status":"current","syntax":"{ entLPPhysicalIndex,<br> entAliasMappingIdentifier,<br> entPhysicalChildIndex<br> }","type":"og"},{"id":"62","guid":"375F9C8A-B868-483F-A0A1-4A3A4E7FC378","text":"","heading":"entityGeneralGroup","oid":"entityGroups 4","status":"current","syntax":"{ entLastChangeTime<br> }","type":"og"},{"id":"63","guid":"91A57E55-8A36-4785-BA23-60B993AD2A70","text":"","heading":"entityPhysical2Group","oid":"entityGroups 6","status":"current","syntax":"{ entPhysicalHardwareRev,<br> entPhysicalFirmwareRev,<br> entPhysicalSoftwareRev,<br> entPhysicalSerialNum,<br> entPhysicalMfgName,<br> entPhysicalModelName,<br> entPhysicalAlias,<br> entPhysicalAssetID,<br> entPhysicalIsFRU<br> }","type":"og"},{"id":"64","guid":"84E05841-BAEE-4A26-909D-9DAF289AEF89","text":"","heading":"entityLogical2Group","oid":"entityGroups 7","status":"current","syntax":"{ entLogicalDescr,<br> entLogicalType,<br> entLogicalTAddress,<br> entLogicalTDomain,<br> entLogicalContextEngineID,<br> entLogicalContextName<br> }","type":"og"},{"id":"65","guid":"FDEDC6BE-99EE-41F1-8843-07EF2CDED6E3","text":"","heading":"entityPhysical3Group","oid":"entityGroups 8","status":"current","syntax":"{ entPhysicalMfgDate,<br> entPhysicalUris<br> }","type":"og"},{"id":"66","guid":"6E5F3FF7-5978-4628-9070-536AF6A8168A","heading":"end","type":"end"}],"attributes":{"access":{"heading":"Access","type":"enum","values":[{"key":"read-only"},{"key":"read-write"},{"key":"read-create"},{"key":"not-accessible"},{"key":"accessible-for-notify"}]},"augments":{"heading":"Augments","type":"string"},"comment":{"heading":"Comment","type":"xhtml"},"contact":{"heading":"Contact","type":"xhtml"},"defval":{"heading":"Default Value","type":"string"},"index":{"heading":"Index","type":"string"},"name":{"heading":"Name","type":"string"},"oid":{"heading":"OID","type":"string"},"org":{"heading":"Organization","type":"string"},"part":{"heading":"Part","type":"string"},"status":{"heading":"Status","type":"enum","values":[{"key":"current"},{"key":"deprecated"},{"key":"obsolete"}]},"syntax":{"heading":"Syntax","type":"xhtml"},"type":{"heading":"Type","type":"enum","values":[{"key":"comment"},{"key":"end"},{"key":"mc","label":"module-compliance"},{"key":"mi","label":"module-identity"},{"key":"mib"},{"key":"ng","label":"notification-group"},{"key":"nt","label":"notification-type"},{"key":"og","label":"object-group"},{"key":"oi","label":"object-identity"},{"key":"ot","label":"object-type"},{"key":"ref","label":"reference"},{"key":"rev","label":"revision"},{"key":"row"},{"key":"text_conv"}]},"units":{"heading":"Units","type":"string"},"updated":{"heading":"Updated","type":"string"}},"templateColumns":{},"views":{"Primary":{"columns":[{"columnId":"id","width":65},{"columnId":"description","width":500}],"default":true}},"metadata":{"format":"2.17"}}
+{
+    "id": "rfc4133",
+    "guid": "72A9931B-1274-4959-83B5-BD68355043B3",
+    "heading": "ENTITY-MIB",
+    "lastId": 67,
+    "createdOn": "2023-06-21T16:23:59",
+    "createdBy": {
+        "name": "Kenneth Vaughn",
+        "email": "kvaughn@trevilon.com",
+        "company": "Trevilon"
+    },
+    "lastChangedOn": "2023-06-21T20:30:54.406Z",
+    "lastChangedBy": {
+        "name": "Kenneth Vaughn",
+        "email": "kvaughn@trevilon.com",
+        "company": "Trevilon"
+    },
+    "data": [
+        {
+            "id": "1",
+            "guid": "2BE61A5F-7FEB-4844-BF3E-925AB90EC645",
+            "text": "",
+            "heading": "ENTITY-MIB",
+            "type": "mib"
+        },
+        {
+            "id": "2",
+            "guid": "368D2729-09DF-4F25-96A0-E3312B452082",
+            "text": "",
+            "contact": "<p>WG E-mail: entmib@ietf.org Mailing list subscription info: http://www.ietf.org/mailman/listinfo/entmib Andy Bierman ietf@andybierman.com Keith McCloghrie Cisco Systems Inc. 170 West Tasman Drive San Jose, CA 95134 +1 408-526-5260 kzm@cisco.com</p>",
+            "heading": "entityMIB",
+            "oid": "mib-2 47",
+            "org": "IETF ENTMIB Working Group",
+            "type": "mi",
+            "updated": "200508100000Z"
+        },
+        {
+            "id": "3",
+            "guid": "03D3A030-7E28-4473-A5F3-2AF7B8DBB902",
+            "text": "",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "4",
+            "guid": "6DF075B6-75C2-4A3E-A757-7F702F1F5BD4",
+            "heading": "entPhysicalTable",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "entityPhysical 1",
+            "status": "current",
+            "syntax": "SEQUENCE OF EntPhysicalEntry"
+        },
+        {
+            "id": "5",
+            "guid": "111472EC-3E83-4F41-85BB-CE02FBCCD4F4",
+            "heading": "entPhysicalEntry",
+            "text": "",
+            "access": "not-accessible",
+            "index": "entPhysicalIndex",
+            "type": "ot",
+            "oid": "entPhysicalTable 1",
+            "status": "current",
+            "syntax": "EntPhysicalEntry"
+        },
+        {
+            "id": "6",
+            "guid": "B9A9F016-9969-49EB-8649-03D6955E0D71",
+            "heading": "EntPhysicalEntry",
+            "syntax": "{ entPhysicalIndex PhysicalIndex,<br> entPhysicalDescr SnmpAdminString,<br> entPhysicalVendorType AutonomousType,<br> entPhysicalContainedIn PhysicalIndexOrZero,<br> entPhysicalClass PhysicalClass,<br> entPhysicalParentRelPos Integer32,<br> entPhysicalName SnmpAdminString,<br> entPhysicalHardwareRev SnmpAdminString,<br> entPhysicalFirmwareRev SnmpAdminString,<br> entPhysicalSoftwareRev SnmpAdminString,<br> entPhysicalSerialNum SnmpAdminString,<br> entPhysicalMfgName SnmpAdminString,<br> entPhysicalModelName SnmpAdminString,<br> entPhysicalAlias SnmpAdminString,<br> entPhysicalAssetID SnmpAdminString,<br> entPhysicalIsFRU TruthValue,<br> entPhysicalMfgDate DateAndTime,<br> entPhysicalUris OCTET STRING<br><br>}",
+            "type": "row"
+        },
+        {
+            "id": "7",
+            "guid": "A55DC06E-8947-483F-BD52-AF395306074B",
+            "heading": "entPhysicalIndex",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "entPhysicalEntry 1",
+            "status": "current",
+            "syntax": "PhysicalIndex"
+        },
+        {
+            "id": "8",
+            "guid": "97750EF5-EA0A-4105-B520-E5B46BF13090",
+            "heading": "entPhysicalDescr",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-349"
+                ]
+            },
+            "oid": "entPhysicalEntry 2",
+            "status": "current",
+            "syntax": "SnmpAdminString",
+            "type": "ot"
+        },
+        {
+            "id": "9",
+            "guid": "992E6271-FA6B-485F-875D-D1ABFEFDF142",
+            "heading": "entPhysicalVendorType",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-349"
+                ]
+            },
+            "oid": "entPhysicalEntry 3",
+            "status": "current",
+            "syntax": "AutonomousType",
+            "type": "ot"
+        },
+        {
+            "id": "10",
+            "guid": "AA11CCC8-9AD2-46AC-8C2E-92C3A0377D3E",
+            "heading": "entPhysicalContainedIn",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-349"
+                ]
+            },
+            "oid": "entPhysicalEntry 4",
+            "status": "current",
+            "syntax": "PhysicalIndexOrZero",
+            "type": "ot"
+        },
+        {
+            "id": "11",
+            "guid": "46917DFE-DA15-41A1-ACDB-FCD01D4AC948",
+            "heading": "entPhysicalClass",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-349"
+                ]
+            },
+            "oid": "entPhysicalEntry 5",
+            "status": "current",
+            "syntax": "PhysicalClass",
+            "type": "ot"
+        },
+        {
+            "id": "12",
+            "guid": "F5E49FC4-E3DE-4916-8E43-AD688AF2B25F",
+            "heading": "entPhysicalParentRelPos",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-349"
+                ]
+            },
+            "oid": "entPhysicalEntry 6",
+            "status": "current",
+            "syntax": "Integer32 (-1..2147483647)",
+            "type": "ot"
+        },
+        {
+            "id": "13",
+            "guid": "365A5FF5-ADE8-4F4C-A526-03D15055EB63",
+            "heading": "entPhysicalName",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-349"
+                ]
+            },
+            "oid": "entPhysicalEntry 7",
+            "status": "current",
+            "syntax": "SnmpAdminString",
+            "type": "ot"
+        },
+        {
+            "id": "14",
+            "guid": "4F023A6D-57C2-4561-945D-6E2C704C5151",
+            "heading": "entPhysicalFirmwareRev",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-349"
+                ]
+            },
+            "oid": "entPhysicalEntry 9",
+            "status": "current",
+            "syntax": "SnmpAdminString",
+            "type": "ot"
+        },
+        {
+            "id": "15",
+            "guid": "57004B0A-D036-47C3-83C0-63410F2A2F8F",
+            "heading": "entPhysicalSoftwareRev",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-349"
+                ]
+            },
+            "oid": "entPhysicalEntry 10",
+            "status": "current",
+            "syntax": "SnmpAdminString",
+            "type": "ot"
+        },
+        {
+            "id": "16",
+            "guid": "7923F1AD-489D-469F-AE06-BEA61331A22D",
+            "heading": "entPhysicalSerialNum",
+            "text": "",
+            "access": "read-write",
+            "links": {
+                "satisfies": [
+                    "26048_1-349"
+                ]
+            },
+            "oid": "entPhysicalEntry 11",
+            "status": "current",
+            "syntax": "SnmpAdminString (SIZE (0..32))",
+            "type": "ot"
+        },
+        {
+            "id": "17",
+            "guid": "DEC75273-6DD9-4AFF-9895-4F4CB5F5A734",
+            "heading": "entPhysicalMfgName",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-349"
+                ]
+            },
+            "oid": "entPhysicalEntry 12",
+            "status": "current",
+            "syntax": "SnmpAdminString",
+            "type": "ot"
+        },
+        {
+            "id": "18",
+            "guid": "AF44053A-F24D-463B-AC12-CEE2D8C75CF1",
+            "heading": "entPhysicalModelName",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-349"
+                ]
+            },
+            "oid": "entPhysicalEntry 13",
+            "status": "current",
+            "syntax": "SnmpAdminString",
+            "type": "ot"
+        },
+        {
+            "id": "19",
+            "guid": "DC907A8E-85C3-4D68-BA5F-15ECFDB5926D",
+            "heading": "entPhysicalAlias",
+            "text": "",
+            "access": "read-write",
+            "links": {
+                "satisfies": [
+                    "26048_1-348",
+                    "26048_1-349"
+                ]
+            },
+            "oid": "entPhysicalEntry 14",
+            "status": "current",
+            "syntax": "SnmpAdminString (SIZE (0..32))",
+            "type": "ot"
+        },
+        {
+            "id": "20",
+            "guid": "09AF604E-87DD-43D9-BA8C-1EC899C259F8",
+            "heading": "entPhysicalAssetID",
+            "text": "",
+            "access": "read-write",
+            "links": {
+                "satisfies": [
+                    "26048_1-348",
+                    "26048_1-349"
+                ]
+            },
+            "oid": "entPhysicalEntry 15",
+            "status": "current",
+            "syntax": "SnmpAdminString (SIZE (0..32))",
+            "type": "ot"
+        },
+        {
+            "id": "21",
+            "guid": "A8342E24-A020-47F3-BAA8-55653548AFAC",
+            "heading": "entPhysicalIsFRU",
+            "text": "",
+            "access": "read-only",
+            "links": {
+                "satisfies": [
+                    "26048_1-349"
+                ]
+            },
+            "oid": "entPhysicalEntry 16",
+            "status": "current",
+            "syntax": "TruthValue",
+            "type": "ot"
+        },
+        {
+            "id": "22",
+            "guid": "5C19F977-5E7E-471F-A49A-633F1D786E05",
+            "heading": "entPhysicalMfgDate",
+            "text": "",
+            "access": "read-only",
+            "type": "ot",
+            "oid": "entPhysicalEntry 17",
+            "status": "current",
+            "syntax": "DateAndTime"
+        },
+        {
+            "id": "23",
+            "guid": "844707F5-7E28-40EA-962A-FCD437CA39AE",
+            "heading": "entPhysicalUris",
+            "text": "",
+            "access": "read-write",
+            "type": "ot",
+            "oid": "entPhysicalEntry 18",
+            "status": "current",
+            "syntax": "OCTET STRING"
+        },
+        {
+            "id": "24",
+            "guid": "7E4114FF-E55E-4225-847A-B5B4187CF32C",
+            "text": "",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "25",
+            "guid": "FC1D1453-4BF6-4E22-90EA-92B922B6F794",
+            "heading": "entLogicalTable",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "entityLogical 1",
+            "status": "current",
+            "syntax": "SEQUENCE OF EntLogicalEntry"
+        },
+        {
+            "id": "26",
+            "guid": "C6D43442-BB5A-400E-99AD-89F0EC349D40",
+            "heading": "entLogicalEntry",
+            "text": "",
+            "access": "not-accessible",
+            "index": "entLogicalIndex",
+            "type": "ot",
+            "oid": "entLogicalTable 1",
+            "status": "current",
+            "syntax": "EntLogicalEntry"
+        },
+        {
+            "id": "27",
+            "guid": "AE498FAE-B1FC-47E8-990B-F12C0CD180DB",
+            "heading": "EntLogicalEntry",
+            "syntax": "{ entLogicalIndex Integer32,<br> entLogicalDescr SnmpAdminString,<br> entLogicalType AutonomousType,<br> entLogicalCommunity OCTET STRING,<br> entLogicalTAddress TAddress,<br> entLogicalTDomain TDomain,<br> entLogicalContextEngineID SnmpEngineIdOrNone,<br> entLogicalContextName SnmpAdminString<br>}",
+            "type": "row"
+        },
+        {
+            "id": "28",
+            "guid": "CB300E8E-75D5-4A58-A40E-86C352731F9F",
+            "heading": "entLogicalIndex",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "entLogicalEntry 1",
+            "status": "current",
+            "syntax": "Integer32 (1..2147483647)"
+        },
+        {
+            "id": "29",
+            "guid": "E1DB85E2-5C98-4995-BB1B-DCC5A194DE8D",
+            "heading": "entLogicalDescr",
+            "text": "",
+            "access": "read-only",
+            "type": "ot",
+            "oid": "entLogicalEntry 2",
+            "status": "current",
+            "syntax": "SnmpAdminString"
+        },
+        {
+            "id": "30",
+            "guid": "8C8E4C39-E38F-43EF-8E42-941D0DDEEF88",
+            "heading": "entLogicalType",
+            "text": "",
+            "access": "read-only",
+            "type": "ot",
+            "oid": "entLogicalEntry 3",
+            "status": "current",
+            "syntax": "AutonomousType"
+        },
+        {
+            "id": "31",
+            "guid": "2385480C-139E-4CB6-A615-DF841DE789B8",
+            "heading": "entLogicalCommunity",
+            "text": "",
+            "access": "read-only",
+            "type": "ot",
+            "oid": "entLogicalEntry 4",
+            "status": "deprecated",
+            "syntax": "OCTET STRING (SIZE (0..255))"
+        },
+        {
+            "id": "32",
+            "guid": "52E5305E-F2EE-4D28-9FBA-42DD0C41A7BE",
+            "heading": "entLogicalTAddress",
+            "text": "",
+            "access": "read-only",
+            "type": "ot",
+            "oid": "entLogicalEntry 5",
+            "status": "current",
+            "syntax": "TAddress"
+        },
+        {
+            "id": "33",
+            "guid": "3AAB56CC-BBAC-4A2B-A187-453D4611CB2E",
+            "heading": "entLogicalTDomain",
+            "text": "",
+            "access": "read-only",
+            "type": "ot",
+            "oid": "entLogicalEntry 6",
+            "status": "current",
+            "syntax": "TDomain"
+        },
+        {
+            "id": "34",
+            "guid": "CC4CB719-938E-4323-8E9E-4041DEB3812E",
+            "heading": "entLogicalContextEngineID",
+            "text": "",
+            "access": "read-only",
+            "type": "ot",
+            "oid": "entLogicalEntry 7",
+            "status": "current",
+            "syntax": "SnmpEngineIdOrNone"
+        },
+        {
+            "id": "35",
+            "guid": "CBFD8756-A7BE-4BBA-86B3-68407CC66D51",
+            "heading": "entLogicalContextName",
+            "text": "",
+            "access": "read-only",
+            "type": "ot",
+            "oid": "entLogicalEntry 8",
+            "status": "current",
+            "syntax": "SnmpAdminString"
+        },
+        {
+            "id": "36",
+            "guid": "C916DCCD-07D4-4B60-8477-794E9C9F22AD",
+            "heading": "entLPMappingTable",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "entityMapping 1",
+            "status": "current",
+            "syntax": "SEQUENCE OF EntLPMappingEntry"
+        },
+        {
+            "id": "37",
+            "guid": "433E546F-9452-4C5B-917D-85EE16AECF91",
+            "heading": "entLPMappingEntry",
+            "text": "",
+            "access": "not-accessible",
+            "index": "entLogicalIndex, entLPPhysicalIndex",
+            "type": "ot",
+            "oid": "entLPMappingTable 1",
+            "status": "current",
+            "syntax": "EntLPMappingEntry"
+        },
+        {
+            "id": "38",
+            "guid": "EC7776EE-8D88-44FF-8FA5-2B54502E8FDF",
+            "heading": "EntLPMappingEntry",
+            "syntax": "{ entLPPhysicalIndex PhysicalIndex<br>}",
+            "type": "row"
+        },
+        {
+            "id": "39",
+            "guid": "9F6F9DB8-D222-401C-A39D-D2C304C98E08",
+            "heading": "entLPPhysicalIndex",
+            "text": "",
+            "access": "read-only",
+            "type": "ot",
+            "oid": "entLPMappingEntry 1",
+            "status": "current",
+            "syntax": "PhysicalIndex"
+        },
+        {
+            "id": "40",
+            "guid": "BAA93D6C-E09D-44B0-A8BF-1278711980A6",
+            "text": "",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "41",
+            "guid": "109FB810-ED6D-426C-A55A-A41C304B0AD2",
+            "heading": "entAliasMappingTable",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "entityMapping 2",
+            "status": "current",
+            "syntax": "SEQUENCE OF EntAliasMappingEntry"
+        },
+        {
+            "id": "42",
+            "guid": "F2940958-24FE-42E8-96F4-A862DB6B6471",
+            "heading": "entAliasMappingEntry",
+            "text": "",
+            "access": "not-accessible",
+            "index": "entPhysicalIndex, entAliasLogicalIndexOrZero",
+            "type": "ot",
+            "oid": "entAliasMappingTable 1",
+            "status": "current",
+            "syntax": "EntAliasMappingEntry"
+        },
+        {
+            "id": "43",
+            "guid": "8F6F44E1-C792-4492-9EBD-EFABF4C5B2E2",
+            "heading": "EntAliasMappingEntry",
+            "syntax": "{ entAliasLogicalIndexOrZero Integer32,<br> entAliasMappingIdentifier RowPointer<br>}",
+            "type": "row"
+        },
+        {
+            "id": "44",
+            "guid": "4FFBABAE-9BA9-4C66-9902-661F047B308D",
+            "heading": "entAliasLogicalIndexOrZero",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "entAliasMappingEntry 1",
+            "status": "current",
+            "syntax": "Integer32 (0..2147483647)"
+        },
+        {
+            "id": "45",
+            "guid": "4E16E8EC-37EF-44A7-AF59-46BC7F500CA1",
+            "heading": "entAliasMappingIdentifier",
+            "text": "",
+            "access": "read-only",
+            "type": "ot",
+            "oid": "entAliasMappingEntry 2",
+            "status": "current",
+            "syntax": "RowPointer"
+        },
+        {
+            "id": "46",
+            "guid": "93104FA8-E287-4FE0-80ED-806CEB594239",
+            "text": "",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "47",
+            "guid": "7FDDC350-DB64-4304-AB23-480A4ADB9923",
+            "heading": "entPhysicalContainsTable",
+            "text": "",
+            "access": "not-accessible",
+            "type": "ot",
+            "oid": "entityMapping 3",
+            "status": "current",
+            "syntax": "SEQUENCE OF EntPhysicalContainsEntry"
+        },
+        {
+            "id": "48",
+            "guid": "032F2722-9DA5-41A7-9150-A8C1A7D31272",
+            "heading": "entPhysicalContainsEntry",
+            "text": "",
+            "access": "not-accessible",
+            "index": "entPhysicalIndex, entPhysicalChildIndex",
+            "type": "ot",
+            "oid": "entPhysicalContainsTable 1",
+            "status": "current",
+            "syntax": "EntPhysicalContainsEntry"
+        },
+        {
+            "id": "49",
+            "guid": "8DFCB84F-41A5-4C91-98D6-97313344BA74",
+            "heading": "EntPhysicalContainsEntry",
+            "syntax": "{ entPhysicalChildIndex PhysicalIndex<br>}",
+            "type": "row"
+        },
+        {
+            "id": "50",
+            "guid": "A624BAA6-7242-4896-A2D3-624DA7F393DD",
+            "heading": "entPhysicalChildIndex",
+            "text": "",
+            "access": "read-only",
+            "type": "ot",
+            "oid": "entPhysicalContainsEntry 1",
+            "status": "current",
+            "syntax": "PhysicalIndex"
+        },
+        {
+            "id": "51",
+            "guid": "CDD7BAAC-D6F5-44F2-B33A-22D3C732B033",
+            "text": "",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "52",
+            "guid": "C61548A0-D8AA-424C-A1AC-C56253C5DF0E",
+            "heading": "entLastChangeTime",
+            "text": "",
+            "access": "read-only",
+            "type": "ot",
+            "oid": "entityGeneral 1",
+            "status": "current",
+            "syntax": "TimeStamp"
+        },
+        {
+            "id": "53",
+            "guid": "0C3AF66B-E650-48F5-B3A1-7B4A61DEEA36",
+            "text": "",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "54",
+            "guid": "54446487-7E49-4B96-BE7C-0572417E89F0",
+            "text": "",
+            "heading": "entConfigChange",
+            "oid": "entityMIBTrapPrefix 1",
+            "status": "current",
+            "type": "nt"
+        },
+        {
+            "id": "55",
+            "guid": "20857624-D583-4941-8D43-BD07DADA43A2",
+            "text": "",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "56",
+            "guid": "A1BFB7EF-C772-43D7-88BD-C280EEEDE296",
+            "text": "",
+            "heading": "entityCompliance",
+            "oid": "entityCompliances 1",
+            "status": "deprecated",
+            "syntax": "{ entityPhysicalGroup,<br> entityLogicalGroup,<br> entityMappingGroup,<br> entityGeneralGroup,<br> entityNotificationsGroup<br> }",
+            "type": "mc"
+        },
+        {
+            "id": "57",
+            "guid": "02D5FFF1-9F00-4D7C-A873-DB9DCDC64E8F",
+            "text": "",
+            "heading": "entity2Compliance",
+            "oid": "entityCompliances 2",
+            "status": "deprecated",
+            "syntax": "{ entityPhysicalGroup,<br> entityPhysical2Group,<br> entityGeneralGroup,<br> entityNotificationsGroup<br> }",
+            "type": "mc"
+        },
+        {
+            "id": "58",
+            "guid": "F35631A1-4543-4A49-8678-304CD37E6E64",
+            "text": "",
+            "heading": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "59",
+            "guid": "51A4EB3A-20DE-4B0B-9B42-84D608CD7232",
+            "text": "",
+            "heading": "entityPhysicalGroup",
+            "oid": "entityGroups 1",
+            "status": "current",
+            "syntax": "{ entPhysicalDescr,<br> entPhysicalVendorType,<br> entPhysicalContainedIn,<br> entPhysicalClass,<br> entPhysicalParentRelPos,<br> entPhysicalName<br> }",
+            "type": "og"
+        },
+        {
+            "id": "60",
+            "guid": "A5478FCB-C353-478A-8BDA-78E93E8AC7F0",
+            "text": "",
+            "heading": "entityLogicalGroup",
+            "oid": "entityGroups 2",
+            "status": "deprecated",
+            "syntax": "{ entLogicalDescr,<br> entLogicalType,<br> entLogicalCommunity,<br> entLogicalTAddress,<br> entLogicalTDomain<br> }",
+            "type": "og"
+        },
+        {
+            "id": "61",
+            "guid": "4F314944-DAD8-4A96-9564-3E7619B06AA7",
+            "text": "",
+            "heading": "entityMappingGroup",
+            "oid": "entityGroups 3",
+            "status": "current",
+            "syntax": "{ entLPPhysicalIndex,<br> entAliasMappingIdentifier,<br> entPhysicalChildIndex<br> }",
+            "type": "og"
+        },
+        {
+            "id": "62",
+            "guid": "375F9C8A-B868-483F-A0A1-4A3A4E7FC378",
+            "text": "",
+            "heading": "entityGeneralGroup",
+            "oid": "entityGroups 4",
+            "status": "current",
+            "syntax": "{ entLastChangeTime<br> }",
+            "type": "og"
+        },
+        {
+            "id": "63",
+            "guid": "91A57E55-8A36-4785-BA23-60B993AD2A70",
+            "text": "",
+            "heading": "entityPhysical2Group",
+            "oid": "entityGroups 6",
+            "status": "current",
+            "syntax": "{ entPhysicalHardwareRev,<br> entPhysicalFirmwareRev,<br> entPhysicalSoftwareRev,<br> entPhysicalSerialNum,<br> entPhysicalMfgName,<br> entPhysicalModelName,<br> entPhysicalAlias,<br> entPhysicalAssetID,<br> entPhysicalIsFRU<br> }",
+            "type": "og"
+        },
+        {
+            "id": "64",
+            "guid": "84E05841-BAEE-4A26-909D-9DAF289AEF89",
+            "text": "",
+            "heading": "entityLogical2Group",
+            "oid": "entityGroups 7",
+            "status": "current",
+            "syntax": "{ entLogicalDescr,<br> entLogicalType,<br> entLogicalTAddress,<br> entLogicalTDomain,<br> entLogicalContextEngineID,<br> entLogicalContextName<br> }",
+            "type": "og"
+        },
+        {
+            "id": "65",
+            "guid": "FDEDC6BE-99EE-41F1-8843-07EF2CDED6E3",
+            "text": "",
+            "heading": "entityPhysical3Group",
+            "oid": "entityGroups 8",
+            "status": "current",
+            "syntax": "{ entPhysicalMfgDate,<br> entPhysicalUris<br> }",
+            "type": "og"
+        },
+        {
+            "id": "66",
+            "guid": "6E5F3FF7-5978-4628-9070-536AF6A8168A",
+            "heading": "end",
+            "type": "end"
+        }
+    ],
+    "attributes": {
+        "access": {
+            "heading": "Access",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "read-only"
+                },
+                {
+                    "key": "read-write"
+                },
+                {
+                    "key": "read-create"
+                },
+                {
+                    "key": "not-accessible"
+                },
+                {
+                    "key": "accessible-for-notify"
+                }
+            ]
+        },
+        "augments": {
+            "heading": "Augments",
+            "type": "string"
+        },
+        "comment": {
+            "heading": "Comment",
+            "type": "xhtml"
+        },
+        "contact": {
+            "heading": "Contact",
+            "type": "xhtml"
+        },
+        "defval": {
+            "heading": "Default Value",
+            "type": "string"
+        },
+        "index": {
+            "heading": "Index",
+            "type": "string"
+        },
+        "name": {
+            "heading": "Name",
+            "type": "string"
+        },
+        "oid": {
+            "heading": "OID",
+            "type": "string"
+        },
+        "org": {
+            "heading": "Organization",
+            "type": "string"
+        },
+        "part": {
+            "heading": "Part",
+            "type": "string"
+        },
+        "status": {
+            "heading": "Status",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "current"
+                },
+                {
+                    "key": "deprecated"
+                },
+                {
+                    "key": "obsolete"
+                }
+            ]
+        },
+        "syntax": {
+            "heading": "Syntax",
+            "type": "xhtml"
+        },
+        "type": {
+            "heading": "Type",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "comment"
+                },
+                {
+                    "key": "end"
+                },
+                {
+                    "key": "mc",
+                    "label": "module-compliance"
+                },
+                {
+                    "key": "mi",
+                    "label": "module-identity"
+                },
+                {
+                    "key": "mib"
+                },
+                {
+                    "key": "ng",
+                    "label": "notification-group"
+                },
+                {
+                    "key": "nt",
+                    "label": "notification-type"
+                },
+                {
+                    "key": "og",
+                    "label": "object-group"
+                },
+                {
+                    "key": "oi",
+                    "label": "object-identity"
+                },
+                {
+                    "key": "ot",
+                    "label": "object-type"
+                },
+                {
+                    "key": "ref",
+                    "label": "reference"
+                },
+                {
+                    "key": "rev",
+                    "label": "revision"
+                },
+                {
+                    "key": "row"
+                },
+                {
+                    "key": "text_conv"
+                }
+            ]
+        },
+        "units": {
+            "heading": "Units",
+            "type": "string"
+        },
+        "updated": {
+            "heading": "Updated",
+            "type": "string"
+        }
+    },
+    "templateColumns": {},
+    "views": {
+        "Primary": {
+            "columns": [
+                {
+                    "columnId": "id",
+                    "width": 65
+                },
+                {
+                    "columnId": "description",
+                    "width": 500
+                }
+            ],
+            "default": true
+        }
+    },
+    "metadata": {
+        "format": "2.17"
+    }
+}

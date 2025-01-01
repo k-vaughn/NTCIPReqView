@@ -1,1 +1,239 @@
-{"id":"OptionGroups","guid":"2394869a-08ca-4a91-9ecd-9a843af88608","heading":"OptionGroups","lastId":28,"createdOn":"2023-04-25T18:11:51.363Z","createdBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"lastChangedOn":"2024-06-11T22:27:43.954Z","lastChangedBy":{"heading":"Kenneth Vaughn","email":"kvaughn@trevilon.com","company":"Trevilon"},"data":[{"id":"9","guid":"47c869c9-b959-483b-a434-5ec05e4beb54","heading":"Trigger Options (1..*)","text":"","links":{"opt_group":["26048_1-730","26048_1-787","26048_1-1047","26048_1-598"]}},{"id":"4","guid":"1910019d-4a81-492b-a934-05c33c7cebf6","heading":"Power sources (1..*)","text":"","links":{"opt_group":["26048_1-345"]}},{"id":"10","guid":"7892eeb8-58c6-4b3f-9a6c-c2aabe78efca","deleted":true,"heading":"Remote Target (2)","text":""},{"id":"11","guid":"eba874df-789e-43ab-b02d-288ccea65840","heading":"Conditional Trigger Modes (1..*)","text":"","links":{"opt_group":["26048_1-557"]}},{"id":"12","guid":"0593316a-d8d3-4fbf-b692-618e33c97ea8","heading":"Time Sources (1..*)","text":"","links":{"opt_group":["26048_1-819"]}},{"id":"13","guid":"de91dac9-faf0-421c-a035-1705a1ef70c9","heading":"Time Keeping Options (1..*)","text":"","links":{"opt_group":["26048_1-819"]}},{"id":"14","guid":"230d08d4-469e-4a0d-8fb7-da1e05040f11","heading":"SchedTrigger Options","text":"","links":{"opt_group":["26048_1-524"]}},{"id":"15","guid":"8ce135c9-81ed-4b18-8255-ac30fbac8955","heading":"Memory Types","text":"","links":{"opt_group":["26048_1-283"]}},{"id":"16","guid":"c0a4ca67-9f8b-42be-96ad-6512201c5ebc","heading":"Event Modes","text":""},{"id":"17","guid":"d1f8ba4a-b68c-4bdf-8fec-5efd94102868","heading":"Trigger Modes","text":""},{"id":"18","guid":"10ca4ad7-fb64-4101-aeb4-1a817548e4ba","heading":"SRSA Type","text":"","links":{"opt_group":["26048_1-324"]}},{"id":"19","guid":"05074347-de89-484e-bfc0-98562929a18d","heading":"Secure communications","text":"","links":{"opt_group":["26048_1-1294"]}},{"id":"20","guid":"8c8fa8b4-a9ae-4d05-875d-ac32f9a65c4a","heading":"Conformance","text":"","links":{"opt_group":["26048_1-1294"]}},{"id":"21","guid":"c733b71b-597b-4b36-b182-1775a2304612","heading":"Reporting","text":"","links":{"opt_group":["26048_1-1273"]}},{"id":"22","guid":"842414c3-3e5e-48db-9a82-fa559153a346","heading":"DMS Scheduling","text":"","links":{"opt_group":["NTCIP_1203-68"]}},{"id":"23","guid":"0d636294-8390-4893-b891-d3fbc9a3118c","heading":"DMS Internal Events","text":""},{"id":"25","guid":"a15c231d-eab4-4404-8980-a55c11f4c550","heading":"DMS Auto Bright Control","text":"","links":{"opt_group":["NTCIP_1203-72"]}},{"id":"26","guid":"f5a2b931-3f26-4d49-b4e6-0a0261b02a7b","heading":"DMS Fields","text":""},{"id":"27","guid":"3d026d38-ea13-428d-9c32-6f9b642d97a4","heading":"Ice Detection","text":"","links":{"opt_group":["NTCIP_1204-552"]}},{"id":"28","guid":"4a24a0ec-ae34-437c-9f59-e21f4181efc3","heading":"Air Quality Parameters","text":"","links":{"opt_group":["NTCIP_1204-565"]}}],"attributes":{},"templateColumns":{},"views":{"Primary":{"columns":[{"columnId":"id","width":65},{"columnId":"description","width":500}],"default":true}},"metadata":{"format":"2.17"}}
+{
+    "id": "OptionGroups",
+    "guid": "2394869a-08ca-4a91-9ecd-9a843af88608",
+    "heading": "OptionGroups",
+    "lastId": 28,
+    "createdOn": "2023-04-25T18:11:51.363Z",
+    "createdBy": {
+        "name": "Kenneth Vaughn",
+        "email": "kvaughn@trevilon.com",
+        "company": "Trevilon"
+    },
+    "lastChangedOn": "2024-06-11T22:27:43.954Z",
+    "lastChangedBy": {
+        "name": "Kenneth Vaughn",
+        "email": "kvaughn@trevilon.com",
+        "company": "Trevilon"
+    },
+    "data": [
+        {
+            "id": "9",
+            "guid": "47c869c9-b959-483b-a434-5ec05e4beb54",
+            "heading": "Trigger Options (1..*)",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "26048_1-730",
+                    "26048_1-787",
+                    "26048_1-1047",
+                    "26048_1-598"
+                ]
+            }
+        },
+        {
+            "id": "4",
+            "guid": "1910019d-4a81-492b-a934-05c33c7cebf6",
+            "heading": "Power sources (1..*)",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "26048_1-345"
+                ]
+            }
+        },
+        {
+            "id": "10",
+            "guid": "7892eeb8-58c6-4b3f-9a6c-c2aabe78efca",
+            "deleted": true,
+            "heading": "Remote Target (2)",
+            "text": ""
+        },
+        {
+            "id": "11",
+            "guid": "eba874df-789e-43ab-b02d-288ccea65840",
+            "heading": "Conditional Trigger Modes (1..*)",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "26048_1-557"
+                ]
+            }
+        },
+        {
+            "id": "12",
+            "guid": "0593316a-d8d3-4fbf-b692-618e33c97ea8",
+            "heading": "Time Sources (1..*)",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "26048_1-819"
+                ]
+            }
+        },
+        {
+            "id": "13",
+            "guid": "de91dac9-faf0-421c-a035-1705a1ef70c9",
+            "heading": "Time Keeping Options (1..*)",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "26048_1-819"
+                ]
+            }
+        },
+        {
+            "id": "14",
+            "guid": "230d08d4-469e-4a0d-8fb7-da1e05040f11",
+            "heading": "SchedTrigger Options",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "26048_1-524"
+                ]
+            }
+        },
+        {
+            "id": "15",
+            "guid": "8ce135c9-81ed-4b18-8255-ac30fbac8955",
+            "heading": "Memory Types",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "26048_1-283"
+                ]
+            }
+        },
+        {
+            "id": "16",
+            "guid": "c0a4ca67-9f8b-42be-96ad-6512201c5ebc",
+            "heading": "Event Modes",
+            "text": ""
+        },
+        {
+            "id": "17",
+            "guid": "d1f8ba4a-b68c-4bdf-8fec-5efd94102868",
+            "heading": "Trigger Modes",
+            "text": ""
+        },
+        {
+            "id": "18",
+            "guid": "10ca4ad7-fb64-4101-aeb4-1a817548e4ba",
+            "heading": "SRSA Type",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "26048_1-324"
+                ]
+            }
+        },
+        {
+            "id": "19",
+            "guid": "05074347-de89-484e-bfc0-98562929a18d",
+            "heading": "Secure communications",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "26048_1-1294"
+                ]
+            }
+        },
+        {
+            "id": "20",
+            "guid": "8c8fa8b4-a9ae-4d05-875d-ac32f9a65c4a",
+            "heading": "Conformance",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "26048_1-1294"
+                ]
+            }
+        },
+        {
+            "id": "21",
+            "guid": "c733b71b-597b-4b36-b182-1775a2304612",
+            "heading": "Reporting",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "26048_1-1273"
+                ]
+            }
+        },
+        {
+            "id": "22",
+            "guid": "842414c3-3e5e-48db-9a82-fa559153a346",
+            "heading": "DMS Scheduling",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "NTCIP_1203-68"
+                ]
+            }
+        },
+        {
+            "id": "23",
+            "guid": "0d636294-8390-4893-b891-d3fbc9a3118c",
+            "heading": "DMS Internal Events",
+            "text": ""
+        },
+        {
+            "id": "25",
+            "guid": "a15c231d-eab4-4404-8980-a55c11f4c550",
+            "heading": "DMS Auto Bright Control",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "NTCIP_1203-72"
+                ]
+            }
+        },
+        {
+            "id": "26",
+            "guid": "f5a2b931-3f26-4d49-b4e6-0a0261b02a7b",
+            "heading": "DMS Fields",
+            "text": ""
+        },
+        {
+            "id": "27",
+            "guid": "3d026d38-ea13-428d-9c32-6f9b642d97a4",
+            "heading": "Ice Detection",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "NTCIP_1204-552"
+                ]
+            }
+        },
+        {
+            "id": "28",
+            "guid": "4a24a0ec-ae34-437c-9f59-e21f4181efc3",
+            "heading": "Air Quality Parameters",
+            "text": "",
+            "links": {
+                "opt_group": [
+                    "NTCIP_1204-565"
+                ]
+            }
+        }
+    ],
+    "attributes": {},
+    "templateColumns": {},
+    "views": {
+        "Primary": {
+            "columns": [
+                {
+                    "columnId": "id",
+                    "width": 65
+                },
+                {
+                    "columnId": "description",
+                    "width": 500
+                }
+            ],
+            "default": true
+        }
+    },
+    "metadata": {
+        "format": "2.17"
+    }
+}

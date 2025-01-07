@@ -1,16 +1,16 @@
 {
   "id": "Notes",
   "guid": "2dccb7ed-0091-4344-9677-9a2297f736aa",
-  "lastId": 34,
+  "lastId": 36,
   "createdOn": "2024-06-27T14:58:19.930Z",
   "createdBy": {
-    "email": "kvaughn@trevilon.com",
-    "company": "Trevilon",
-    "name": "Kenneth Vaughn"
-  },
-  "lastChangedOn": "2024-10-18T11:22:29.688Z",
-  "lastChangedBy": {
     "name": "Kenneth Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "lastChangedOn": "2025-01-01T21:17:07.756Z",
+  "lastChangedBy": {
+    "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
@@ -1906,6 +1906,175 @@
           "changedOn": "2024-10-18T11:22:29.688Z"
         }
       ]
+    },
+    {
+      "id": "35",
+      "guid": "442af107-a97d-4e6e-860d-d2ea79e5b538",
+      "heading": "Copy GNSS Location",
+      "text": "<p>value = 3</p>",
+      "links": {
+        "satisfiesWithNote": [
+          "26048_1-1281"
+        ]
+      },
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-01T21:13:48.262Z",
+          "docId": "Notes",
+          "structureAction": "Create"
+        },
+        {
+          "attributesChanged": {
+            "heading": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-01T21:14:07.924Z"
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-01T21:14:28.876Z"
+        },
+        {
+          "attributesChanged": {
+            "text": "<p>fdConfiguredLocation.0 = 3</p>"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-01T21:15:31.579Z"
+        },
+        {
+          "attributesChanged": {
+            "text": "<p>= 3</p>"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-01T21:15:48.235Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-1281"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-01T21:16:18.025Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedLink": {
+            "newType": "satisfiesWithNote",
+            "oldTargets": [
+              "26048_1-1281"
+            ],
+            "oldType": "satisfies"
+          },
+          "changedOn": "2025-01-01T21:16:49.610Z"
+        }
+      ]
+    },
+    {
+      "id": "36",
+      "guid": "b7d4768e-d952-41da-a9f6-ac00d33a79b3",
+      "heading": "Track GNSS Location",
+      "text": "<p>value = 4</p>",
+      "links": {
+        "satisfiesWithNote": [
+          "26048_1-1282"
+        ]
+      },
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-01T21:14:38.244Z",
+          "docId": "Notes",
+          "structureAction": "Create"
+        },
+        {
+          "attributesChanged": {
+            "heading": null,
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-01T21:15:02.713Z"
+        },
+        {
+          "attributesChanged": {
+            "text": "<p>fdConfiguredLocation.0 = 4</p>"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-01T21:15:37.767Z"
+        },
+        {
+          "attributesChanged": {
+            "text": "<p>= 4</p>"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-01T21:15:54.748Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-1282"
+            ],
+            "type": "satisfiesWithNote"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-01T21:17:07.756Z"
+        }
+      ]
     }
   ],
   "attributes": {
@@ -1928,6 +2097,6 @@
     }
   },
   "metadata": {
-    "format": "2.17"
+    "format": "2.20"
   }
 }

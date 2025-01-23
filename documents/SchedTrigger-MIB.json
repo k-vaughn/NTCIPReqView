@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-23T22:27:44.656Z",
+  "lastChangedOn": "2025-01-23T22:44:57.442Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -608,36 +608,6 @@
       "type": "ot"
     },
     {
-      "id": "33",
-      "guid": "612DA792-F9F5-46CA-B19E-8DEB1AEA9AF8",
-      "deleted": true,
-      "heading": "fdSchedTriggerStorageType",
-      "access": "read-create",
-      "oid": "fdSchedTriggerEntry 16",
-      "status": "current",
-      "syntax": "StorageType",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-527",
-          "26048_1-528"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T22:27:06.144Z"
-        }
-      ]
-    },
-    {
       "id": "34",
       "guid": "C770FA03-0132-4D07-8F4A-BDEDE2EC5424",
       "heading": "fdSchedTriggerRowStatus",
@@ -693,29 +663,6 @@
       "status": "current",
       "syntax": "{ fdSchedTriggerAdministrativeGroup,<br> fdSchedTriggerBasicGroup<br> }",
       "type": "mc"
-    },
-    {
-      "id": "40",
-      "guid": "E1DB900B-AAE7-4981-9ABA-1ABF5E90AAA5",
-      "deleted": true,
-      "heading": "fdSchedTriggerAdministrativeGroup",
-      "oid": "fdSchedTriggerGroups 1",
-      "status": "current",
-      "syntax": "{ fdAdminSchedTriggerTotalFires,<br> fdAdminSchedTriggerTotalCallErrs,<br> fdOwnerSchedTriggerMaxRows,<br> fdOwnerSchedTriggerFires,<br> fdOwnerSchedTriggerCallErrs<br> }",
-      "type": "og",
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T22:27:28.788Z"
-        }
-      ]
     },
     {
       "id": "41",

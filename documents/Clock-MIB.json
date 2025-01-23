@@ -1,1006 +1,1083 @@
 {
-    "id": "Clock-MIB",
-    "guid": "D47AB079-2AB9-4EEC-B54A-2881AD48B7EB",
-    "heading": "ISO26048-1-Clock",
-    "lastId": 59,
-    "createdOn": "2023-06-21T12:02:48",
-    "createdBy": {
-        "name": "Kenneth Vaughn",
-        "email": "kvaughn@trevilon.com",
-        "company": "Trevilon"
+  "id": "Clock-MIB",
+  "guid": "D47AB079-2AB9-4EEC-B54A-2881AD48B7EB",
+  "lastId": 59,
+  "createdOn": "2023-06-21T12:02:48",
+  "createdBy": {
+    "name": "Kenneth Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "lastChangedOn": "2025-01-23T20:50:03.337Z",
+  "lastChangedBy": {
+    "name": "Ken Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "data": [
+    {
+      "id": "1",
+      "guid": "6ED6BC07-4F8D-44D1-9469-B618471B15AB",
+      "heading": "comment",
+      "type": "comment"
     },
-    "lastChangedOn": "2024-06-12T21:52:59.033Z",
-    "lastChangedBy": {
-        "name": "Kenneth Vaughn",
-        "email": "kvaughn@trevilon.com",
-        "company": "Trevilon"
+    {
+      "id": "2",
+      "guid": "B87C2304-9B8F-4AFC-9D58-32FD5AB37DEB",
+      "heading": "ISO26048-1-Clock",
+      "type": "mib"
     },
-    "data": [
+    {
+      "id": "3",
+      "guid": "577D2E70-555D-4674-9B2A-2C6B0FA1C47D",
+      "heading": "fdClockMIB",
+      "contact": "<p>name: ISO TC 204 Committee Manager email: jennifer.collins@sae.org website: https://www.iso.org/committee/54706.html</p>",
+      "oid": "fdGlobalMIB 3",
+      "org": "ISO TC 204 WG 9",
+      "type": "mi",
+      "updated": "202001082121Z"
+    },
+    {
+      "id": "4",
+      "guid": "AB33D517-FE85-4F2F-91B6-951D53F88D9C",
+      "heading": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "5",
+      "guid": "71FC0AAA-E734-494C-B379-6A9E6737180C",
+      "heading": "fdClockUtc",
+      "oid": "fdClockMIB 1",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "6",
+      "guid": "91871A70-069E-4AF6-A990-413277DB6476",
+      "heading": "fdClockUtcTime",
+      "access": "read-write",
+      "defval": "0",
+      "oid": "fdClockUtc 1",
+      "status": "current",
+      "syntax": "ITSDailyTimeStamp",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-827",
+          "26048_1-829"
+        ]
+      }
+    },
+    {
+      "id": "7",
+      "guid": "AAEA3215-CF81-406B-88B8-455089B9A2AC",
+      "deleted": true,
+      "heading": "fdClockUtcDate",
+      "access": "read-write",
+      "defval": "'07D00101'H",
+      "oid": "fdClockUtc 2",
+      "status": "current",
+      "syntax": "ITSDateStamp",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-827",
+          "26048_1-829"
+        ]
+      },
+      "history": [
         {
-            "id": "1",
-            "guid": "6ED6BC07-4F8D-44D1-9469-B618471B15AB",
-            "text": "",
-            "heading": "comment",
-            "type": "comment"
-        },
-        {
-            "id": "2",
-            "guid": "B87C2304-9B8F-4AFC-9D58-32FD5AB37DEB",
-            "text": "",
-            "heading": "ISO26048-1-Clock",
-            "type": "mib"
-        },
-        {
-            "id": "3",
-            "guid": "577D2E70-555D-4674-9B2A-2C6B0FA1C47D",
-            "text": "",
-            "contact": "<p>name: ISO TC 204 Committee Manager email: jennifer.collins@sae.org website: https://www.iso.org/committee/54706.html</p>",
-            "heading": "fdClockMIB",
-            "oid": "fdGlobalMIB 3",
-            "org": "ISO TC 204 WG 9",
-            "type": "mi",
-            "updated": "202001082121Z"
-        },
-        {
-            "id": "4",
-            "guid": "AB33D517-FE85-4F2F-91B6-951D53F88D9C",
-            "text": "",
-            "heading": "comment",
-            "type": "comment"
-        },
-        {
-            "id": "5",
-            "guid": "71FC0AAA-E734-494C-B379-6A9E6737180C",
-            "text": "",
-            "heading": "fdClockUtc",
-            "oid": "fdClockMIB 1",
-            "status": "current",
-            "type": "oi"
-        },
-        {
-            "id": "6",
-            "guid": "91871A70-069E-4AF6-A990-413277DB6476",
-            "heading": "fdClockUtcTime",
-            "text": "",
-            "access": "read-write",
-            "defval": "0",
-            "links": {
-                "satisfies": [
-                    "26048_1-827",
-                    "26048_1-829"
-                ]
-            },
-            "oid": "fdClockUtc 1",
-            "status": "current",
-            "syntax": "ITSDailyTimeStamp",
-            "type": "ot"
-        },
-        {
-            "id": "7",
-            "guid": "AAEA3215-CF81-406B-88B8-455089B9A2AC",
-            "heading": "fdClockUtcDate",
-            "text": "",
-            "access": "read-write",
-            "defval": "'07D00101'H",
-            "links": {
-                "satisfies": [
-                    "26048_1-827",
-                    "26048_1-829"
-                ]
-            },
-            "oid": "fdClockUtc 2",
-            "status": "current",
-            "syntax": "ITSDateStamp",
-            "type": "ot"
-        },
-        {
-            "id": "8",
-            "guid": "47DA6DDE-75D0-43E1-A436-BE8126F9C535",
-            "heading": "fdClockResolution",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-822"
-                ]
-            },
-            "oid": "fdClockUtc 3",
-            "status": "current",
-            "syntax": "Unsigned32 (1..1000)",
-            "type": "ot",
-            "units": "1 millisecond"
-        },
-        {
-            "id": "9",
-            "guid": "F24FB4D2-0B76-49CC-878C-07C1147C5BAB",
-            "heading": "fdClockSupportedSources",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-822"
-                ]
-            },
-            "oid": "fdClockUtc 4",
-            "status": "current",
-            "syntax": "BITS {other (0), snmp (1), network (2), radio (3), satellite (4)}",
-            "type": "ot"
-        },
-        {
-            "id": "10",
-            "guid": "968F94DE-8295-490F-8C3D-C8E05C61DD60",
-            "heading": "fdClockRequestedSource",
-            "text": "",
-            "access": "read-write",
-            "links": {
-                "satisfies": [
-                    "26048_1-823",
-                    "26048_1-824"
-                ]
-            },
-            "oid": "fdClockUtc 5",
-            "status": "current",
-            "syntax": "INTEGER { other (1), snmp (2), network (3),<br> radio (4), satellite (5), local (6) }",
-            "type": "ot"
-        },
-        {
-            "id": "11",
-            "guid": "44F82B6E-4006-4CCA-AE85-4D2E7F489125",
-            "heading": "fdClockSource",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-825"
-                ]
-            },
-            "oid": "fdClockUtc 6",
-            "status": "current",
-            "syntax": "INTEGER { unknown (0), other (1), snmp (2),<br> network (3), radio (4), satellite (5), local (6) }",
-            "type": "ot"
-        },
-        {
-            "id": "12",
-            "guid": "EE92FAE4-3D4A-442A-87AC-B51CAB9C8C0F",
-            "heading": "fdClockRequestedSourceStatus",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-826"
-                ]
-            },
-            "oid": "fdClockUtc 7",
-            "status": "current",
-            "syntax": "INTEGER { other (1), normal (2), dataError (3),<br> timeout (4), pending (5), discontinuity (6) }",
-            "type": "ot"
-        },
-        {
-            "id": "13",
-            "guid": "3DF24F2F-2603-4CEB-9552-AE9ED72C1501",
-            "heading": "fdClockSourceStatus",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-826"
-                ]
-            },
-            "oid": "fdClockUtc 8",
-            "status": "current",
-            "syntax": "INTEGER { other (1), normal (2), dataError (3),<br> timeout (4), pending (5), discontinuity (6) }",
-            "type": "ot"
-        },
-        {
-            "id": "14",
-            "guid": "5DD0F8DE-0355-4096-B69F-EBB950454CBE",
-            "heading": "fdClockSyncCycle",
-            "text": "",
-            "access": "read-write",
-            "defval": "day",
-            "links": {
-                "satisfies": [
-                    "26048_1-823",
-                    "26048_1-824"
-                ]
-            },
-            "oid": "fdClockUtc 9",
-            "status": "current",
-            "syntax": "INTEGER {<br> millisecond (1), <br> centisecond (2), <br> decisecond (3), <br> second (4), <br> tenseconds (5), <br> minute (6), <br> tenminutes (7), <br> hour (8), <br> sixhours (9), <br> day (10), <br> week (11), <br> month (12) }",
-            "type": "ot"
-        },
-        {
-            "id": "15",
-            "guid": "0221A832-6B4D-4BD4-B446-F027A2F116C1",
-            "heading": "fdClockLastSyncTime",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-825"
-                ]
-            },
-            "oid": "fdClockUtc 10",
-            "status": "current",
-            "syntax": "ITSDailyTimeStamp",
-            "type": "ot"
-        },
-        {
-            "id": "16",
-            "guid": "15208660-82E4-4B72-B105-1E6D927BC35E",
-            "heading": "fdClockLastSyncDate",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-825"
-                ]
-            },
-            "oid": "fdClockUtc 11",
-            "status": "current",
-            "syntax": "ITSDateStamp",
-            "type": "ot"
-        },
-        {
-            "id": "17",
-            "guid": "5724EDDD-9960-4683-AA2D-7B81F6E85208",
-            "heading": "fdClockSupportedTimeKeeping",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-822"
-                ]
-            },
-            "oid": "fdClockUtc 12",
-            "status": "current",
-            "syntax": "BITS { other (0), lineFrequency (1), rtcSqareWave (2),<br> crystal (3), external (4) }",
-            "type": "ot"
-        },
-        {
-            "id": "18",
-            "guid": "E72F9FC2-9A61-4156-9AAF-5C744F1F6CEB",
-            "heading": "fdClockRequestedTimeKeeping",
-            "text": "",
-            "access": "read-write",
-            "links": {
-                "satisfies": [
-                    "26048_1-823",
-                    "26048_1-824"
-                ]
-            },
-            "oid": "fdClockUtc 13",
-            "status": "current",
-            "syntax": "INTEGER { other (1), lineFrequency (2), rtcSqareWave (3),<br> crystal (4), external (5) }",
-            "type": "ot"
-        },
-        {
-            "id": "19",
-            "guid": "A94F08BB-E7EA-4C89-A1C9-EF768A57DC67",
-            "heading": "fdClockTimeKeeping",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-825"
-                ]
-            },
-            "oid": "fdClockUtc 14",
-            "status": "current",
-            "syntax": "INTEGER { unknown (0), other (1), lineFrequency (2),<br> rtcSqareWave (3), crystal (4), external (5) }",
-            "type": "ot"
-        },
-        {
-            "id": "20",
-            "guid": "FDF00BE4-4A9A-419C-9B14-EDDBDB886F19",
-            "heading": "fdClockDiscontinuitySource",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-831"
-                ]
-            },
-            "oid": "fdClockUtc 15",
-            "status": "current",
-            "syntax": "INTEGER {<br> unknown (0), other (1), <br> snmp (2), network (3), <br> radio (4), satellite (5), <br> local (6), changedUnknown (128), <br> changedOther (129), changedSnmp (130), <br> changedNetwork (131), changedRadio (132), <br> changedSatellite (133), changedLocal (134) }",
-            "type": "ot"
-        },
-        {
-            "id": "21",
-            "guid": "6EB0566D-F0D9-42A7-B276-CB60A8B24991",
-            "heading": "fdClockDiscontinuityDelta",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-831"
-                ]
-            },
-            "oid": "fdClockUtc 16",
-            "status": "current",
-            "syntax": "Integer32",
-            "type": "ot",
-            "units": "milliseconds"
-        },
-        {
-            "id": "22",
-            "guid": "E224449E-0AEE-4DC2-A335-DC48E2FA135A",
-            "heading": "fdClockDiscontinuityUpTime",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-831"
-                ]
-            },
-            "oid": "fdClockUtc 17",
-            "status": "current",
-            "syntax": "TimeTicks",
-            "type": "ot",
-            "units": "centiseconds"
-        },
-        {
-            "id": "23",
-            "guid": "F7C04680-11C7-4572-BADC-E1FCEEBD4B03",
-            "heading": "fdClockDiscontinuityMaxAdjustment",
-            "text": "",
-            "access": "read-write",
-            "links": {
-                "satisfies": [
-                    "26048_1-823",
-                    "26048_1-824"
-                ]
-            },
-            "oid": "fdClockUtc 18",
-            "status": "current",
-            "syntax": "ITSUnsigned16",
-            "type": "ot",
-            "units": "milliseconds"
-        },
-        {
-            "id": "24",
-            "guid": "DC86DC2E-66A8-4D12-A4CE-0B2EB3B2EA96",
-            "text": "",
-            "heading": "comment",
-            "type": "comment"
-        },
-        {
-            "id": "25",
-            "guid": "E5D508C2-6137-4C8E-9975-3F620DEE475B",
-            "text": "",
-            "heading": "fdClockLocal",
-            "oid": "fdClockMIB 2",
-            "status": "current",
-            "type": "oi"
-        },
-        {
-            "id": "26",
-            "guid": "1F93334F-ED83-43A8-A63C-B547FD675093",
-            "heading": "fdClockLocalStandardTimeZone",
-            "text": "",
-            "access": "read-write",
-            "defval": "0",
-            "links": {
-                "satisfies": [
-                    "26048_1-846",
-                    "26048_1-847"
-                ]
-            },
-            "oid": "fdClockLocal 1",
-            "status": "current",
-            "syntax": "Integer32 (-46800..46800)",
-            "type": "ot",
-            "units": "1 second"
-        },
-        {
-            "id": "27",
-            "guid": "E2B46DBB-4247-4C3E-BAFF-205DD24CA213",
-            "heading": "fdClockLocalTime",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-848"
-                ]
-            },
-            "oid": "fdClockLocal 2",
-            "status": "current",
-            "syntax": "ITSDailyTimeStamp",
-            "type": "ot",
-            "units": "milliseconds"
-        },
-        {
-            "id": "28",
-            "guid": "187B4875-8B6D-4F91-8CD7-EDAADFC66CF1",
-            "heading": "fdClockLocalDate",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-848"
-                ]
-            },
-            "oid": "fdClockLocal 3",
-            "status": "current",
-            "syntax": "ITSDateStamp",
-            "type": "ot"
-        },
-        {
-            "id": "29",
-            "guid": "CD906E66-2DA7-49E1-9A73-E5B4D0119896",
-            "heading": "fdClockLocalDstAdjustment",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-857"
-                ]
-            },
-            "oid": "fdClockLocal 4",
-            "status": "current",
-            "syntax": "ITSInteger16",
-            "type": "ot",
-            "units": "1 second"
-        },
-        {
-            "id": "30",
-            "guid": "DA71F7E2-CE84-4842-A45F-0052EFF78639",
-            "heading": "fdClockLocalDstMaxEntries",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-852"
-                ]
-            },
-            "oid": "fdClockLocal 5",
-            "status": "current",
-            "syntax": "Unsigned32",
-            "type": "ot"
-        },
-        {
-            "id": "31",
-            "guid": "616DCBF9-DCC4-491A-A687-8C3047B84EED",
-            "text": "",
-            "heading": "comment",
-            "type": "comment"
-        },
-        {
-            "id": "32",
-            "guid": "46D158A9-903E-43B9-9CB1-EF209F81D40D",
-            "heading": "fdClockDstTable",
-            "text": "",
-            "access": "not-accessible",
-            "type": "ot",
-            "oid": "fdClockMIB 3",
-            "status": "current",
-            "syntax": "SEQUENCE OF FdClockDstEntry"
-        },
-        {
-            "id": "33",
-            "guid": "E9A7FB63-EFE1-4B5B-A9B9-6E47A05FC923",
-            "text": "",
-            "access": "not-accessible",
-            "index": "fdClockDstIndex",
-            "heading": "fdClockDstEntry",
-            "oid": "fdClockDstTable 1",
-            "status": "current",
-            "syntax": "FdClockDstEntry",
-            "type": "ot"
-        },
-        {
-            "id": "34",
-            "guid": "CC23E1CF-13F9-4788-99FA-A0CD592816A0",
-            "heading": "FdClockDstEntry",
-            "syntax": "{ fdClockDstIndex ITSPositive8, <br> fdClockDstBeginMonth ITSMonth, <br> fdClockDstBeginOccurrences INTEGER, <br> fdClockDstBeginDayOfWeek ITSDayOfWeek, <br> fdClockDstBeginDayOfMonth ITSDayOfMonth, <br> fdClockDstBeginTime ITSDailyTimeStamp, <br> fdClockDstEndMonth ITSMonth, <br> fdClockDstEndOccurrences INTEGER, <br> fdClockDstEndDayOfWeek ITSDayOfWeek, <br> fdClockDstEndDayOfMonth ITSDayOfMonth, <br> fdClockDstEndTime ITSDailyTimeStamp, <br> fdClockDstOffset ITSInteger16, <br> fdClockDstApplied TruthValue, <br> fdClockDstStorageType StorageType, <br> fdClockDstRowStatus RowStatus }",
-            "type": "row"
-        },
-        {
-            "id": "35",
-            "guid": "83C7931C-A368-42F1-AEAA-F17BC1307A0B",
-            "heading": "fdClockDstIndex",
-            "text": "",
-            "access": "not-accessible",
-            "type": "ot",
-            "oid": "fdClockDstEntry 1",
-            "status": "current",
-            "syntax": "ITSPositive8"
-        },
-        {
-            "id": "36",
-            "guid": "BEFDEE31-00B1-491C-96A4-9751051EAEA5",
-            "heading": "fdClockDstBeginMonth",
-            "text": "",
-            "access": "read-create",
-            "links": {
-                "satisfies": [
-                    "26048_1-854",
-                    "26048_1-855"
-                ]
-            },
-            "oid": "fdClockDstEntry 2",
-            "status": "current",
-            "syntax": "ITSMonth",
-            "type": "ot"
-        },
-        {
-            "id": "37",
-            "guid": "F153854D-E87D-4C59-BE11-010C47FAEEFC",
-            "heading": "fdClockDstBeginOccurrences",
-            "text": "",
-            "access": "read-create",
-            "defval": "first",
-            "links": {
-                "satisfies": [
-                    "26048_1-854",
-                    "26048_1-855"
-                ]
-            },
-            "oid": "fdClockDstEntry 3",
-            "status": "current",
-            "syntax": "INTEGER {<br> first (1), second (2), <br> third (3), fourth (4), <br> last (5), secondToLast (6), <br> thirdToLast (7), fourthToLsat (8), <br> specificDayOfMonth (9) }",
-            "type": "ot"
-        },
-        {
-            "id": "38",
-            "guid": "87A44D63-DDB1-465A-BFF2-3FFA78D49C30",
-            "heading": "fdClockDstBeginDayOfWeek",
-            "text": "",
-            "access": "read-create",
-            "defval": "sunday",
-            "links": {
-                "satisfies": [
-                    "26048_1-854",
-                    "26048_1-855"
-                ]
-            },
-            "oid": "fdClockDstEntry 4",
-            "status": "current",
-            "syntax": "ITSDayOfWeek",
-            "type": "ot"
-        },
-        {
-            "id": "39",
-            "guid": "4FDEAA98-CD50-405C-A862-DF87CCD78503",
-            "heading": "fdClockDstBeginDayOfMonth",
-            "text": "",
-            "access": "read-create",
-            "defval": "1",
-            "links": {
-                "satisfies": [
-                    "26048_1-854",
-                    "26048_1-855"
-                ]
-            },
-            "oid": "fdClockDstEntry 5",
-            "status": "current",
-            "syntax": "ITSDayOfMonth",
-            "type": "ot"
-        },
-        {
-            "id": "40",
-            "guid": "A2338B9D-A774-49B7-A543-9DE427071674",
-            "heading": "fdClockDstBeginTime",
-            "text": "",
-            "access": "read-create",
-            "defval": "7200000",
-            "links": {
-                "satisfies": [
-                    "26048_1-854",
-                    "26048_1-855"
-                ]
-            },
-            "oid": "fdClockDstEntry 6",
-            "status": "current",
-            "syntax": "ITSDailyTimeStamp",
-            "type": "ot"
-        },
-        {
-            "id": "41",
-            "guid": "89755857-124E-453D-AD0D-5C07C89B5597",
-            "heading": "fdClockDstEndMonth",
-            "text": "",
-            "access": "read-create",
-            "defval": "january",
-            "links": {
-                "satisfies": [
-                    "26048_1-854",
-                    "26048_1-855"
-                ]
-            },
-            "oid": "fdClockDstEntry 7",
-            "status": "current",
-            "syntax": "ITSMonth",
-            "type": "ot"
-        },
-        {
-            "id": "42",
-            "guid": "F5C71048-3060-4B72-8DFF-253A737CA7AC",
-            "heading": "fdClockDstEndOccurrences",
-            "text": "",
-            "access": "read-create",
-            "defval": "first",
-            "links": {
-                "satisfies": [
-                    "26048_1-854",
-                    "26048_1-855"
-                ]
-            },
-            "oid": "fdClockDstEntry 8",
-            "status": "current",
-            "syntax": "INTEGER {<br> first (1), second (2), <br> third (3), fourth (4), <br> last (5), secondToLast (6), <br> thirdToLast (7), fourthToLast (8), <br> specificDayOfMonth (9) }",
-            "type": "ot"
-        },
-        {
-            "id": "43",
-            "guid": "F97FD109-609B-415D-B512-BBA3FB4D9F0F",
-            "heading": "fdClockDstEndDayOfWeek",
-            "text": "",
-            "access": "read-create",
-            "defval": "sunday",
-            "links": {
-                "satisfies": [
-                    "26048_1-854",
-                    "26048_1-855"
-                ]
-            },
-            "oid": "fdClockDstEntry 9",
-            "status": "current",
-            "syntax": "ITSDayOfWeek",
-            "type": "ot"
-        },
-        {
-            "id": "44",
-            "guid": "8C293A62-3D74-4284-85CA-1C354B1B1545",
-            "heading": "fdClockDstEndDayOfMonth",
-            "text": "",
-            "access": "read-create",
-            "defval": "1",
-            "links": {
-                "satisfies": [
-                    "26048_1-854",
-                    "26048_1-855"
-                ]
-            },
-            "oid": "fdClockDstEntry 10",
-            "status": "current",
-            "syntax": "ITSDayOfMonth",
-            "type": "ot"
-        },
-        {
-            "id": "45",
-            "guid": "371D6049-3101-4879-B668-211733A1A541",
-            "heading": "fdClockDstEndTime",
-            "text": "",
-            "access": "read-create",
-            "defval": "7200000",
-            "links": {
-                "satisfies": [
-                    "26048_1-854",
-                    "26048_1-855"
-                ]
-            },
-            "oid": "fdClockDstEntry 11",
-            "status": "current",
-            "syntax": "ITSDailyTimeStamp",
-            "type": "ot"
-        },
-        {
-            "id": "46",
-            "guid": "494371DE-EF92-4659-85E3-C0DAACF9E2E5",
-            "heading": "fdClockDstOffset",
-            "text": "",
-            "access": "read-create",
-            "defval": "0",
-            "links": {
-                "satisfies": [
-                    "26048_1-854",
-                    "26048_1-855"
-                ]
-            },
-            "oid": "fdClockDstEntry 12",
-            "status": "current",
-            "syntax": "ITSInteger16",
-            "type": "ot",
-            "units": "1 second"
-        },
-        {
-            "id": "47",
-            "guid": "5C2906B4-9F46-4064-8A63-1732205095A4",
-            "heading": "fdClockDstApplied",
-            "text": "",
-            "access": "read-only",
-            "links": {
-                "satisfies": [
-                    "26048_1-856"
-                ]
-            },
-            "oid": "fdClockDstEntry 13",
-            "status": "current",
-            "syntax": "TruthValue",
-            "type": "ot"
-        },
-        {
-            "id": "48",
-            "guid": "A69C4482-3155-4854-A543-EDD3A661583E",
-            "heading": "fdClockDstStorageType",
-            "text": "",
-            "access": "read-create",
-            "links": {
-                "satisfies": [
-                    "26048_1-854",
-                    "26048_1-855"
-                ]
-            },
-            "oid": "fdClockDstEntry 14",
-            "status": "current",
-            "syntax": "StorageType",
-            "type": "ot"
-        },
-        {
-            "id": "49",
-            "guid": "1C6ABB49-353E-4157-8CB1-C554C53B9DB7",
-            "heading": "fdClockDstRowStatus",
-            "text": "",
-            "access": "read-create",
-            "links": {
-                "satisfies": [
-                    "26048_1-854",
-                    "26048_1-855"
-                ]
-            },
-            "oid": "fdClockDstEntry 15",
-            "status": "current",
-            "syntax": "RowStatus",
-            "type": "ot"
-        },
-        {
-            "id": "50",
-            "guid": "9F930724-DB75-4383-8128-A0DD5183D78D",
-            "text": "",
-            "heading": "comment",
-            "type": "comment"
-        },
-        {
-            "id": "51",
-            "guid": "0FA3435E-34E8-414A-B186-D582D53E6703",
-            "text": "",
-            "heading": "fdClockConformance",
-            "oid": "fdGlobalConformance 3",
-            "status": "current",
-            "type": "oi"
-        },
-        {
-            "id": "52",
-            "guid": "DB62990D-9E7B-4BC2-BAC3-8E2B4C6DC388",
-            "text": "",
-            "heading": "fdClockCompliances",
-            "oid": "fdClockConformance 1",
-            "status": "current",
-            "type": "oi"
-        },
-        {
-            "id": "53",
-            "guid": "EB742F75-C071-4A09-9B73-68AC5E2BE94D",
-            "text": "",
-            "heading": "fdClockGroups",
-            "oid": "fdClockConformance 2",
-            "status": "current",
-            "type": "oi"
-        },
-        {
-            "id": "54",
-            "guid": "61A4FDAD-1971-439E-B515-36027D71E0BF",
-            "text": "",
-            "heading": "fdClockComplianceV1",
-            "oid": "fdClockCompliances 1",
-            "status": "current",
-            "syntax": "{ fdUtcClockGroupV1<br> }",
-            "type": "mc"
-        },
-        {
-            "id": "55",
-            "guid": "993651E6-ED79-465E-93FC-3672DB24B0E4",
-            "text": "",
-            "heading": "fdUtcClockGroupV1",
-            "oid": "fdClockGroups 1",
-            "status": "current",
-            "syntax": "{ fdClockResolution,<br> fdClockSupportedSources,<br> fdClockSupportedTimeKeeping,<br> fdClockRequestedSource,<br> fdClockSyncCycle,<br> fdClockRequestedTimeKeeping,<br> fdClockDiscontinuityMaxAdjustment,<br> fdClockSource,<br> fdClockLastSyncTime,<br> fdClockLastSyncDate,<br> fdClockTimeKeeping,<br> fdClockRequestedSourceStatus,<br> fdClockSourceStatus,<br> fdClockUtcTime,<br> fdClockUtcDate,<br> fdClockDiscontinuitySource,<br> fdClockDiscontinuityDelta,<br> fdClockDiscontinuityUpTime<br> }",
-            "type": "og"
-        },
-        {
-            "id": "56",
-            "guid": "94FBAB2F-21E5-43B2-B4F5-C1CDABA93EF2",
-            "text": "",
-            "heading": "fdLocalClockGroupV1",
-            "oid": "fdClockGroups 2",
-            "status": "current",
-            "syntax": "{ fdClockLocalStandardTimeZone,<br> fdClockLocalTime,<br> fdClockLocalDate<br> }",
-            "type": "og"
-        },
-        {
-            "id": "57",
-            "guid": "04015761-A7BF-4C98-9A85-09F0A0566814",
-            "text": "",
-            "heading": "fdDstClockGroupV1",
-            "oid": "fdClockGroups 3",
-            "status": "current",
-            "syntax": "{ fdClockDstBeginMonth,<br> fdClockDstBeginOccurrences,<br> fdClockDstBeginDayOfWeek,<br> fdClockDstBeginDayOfMonth,<br> fdClockDstBeginTime,<br> fdClockDstEndMonth,<br> fdClockDstEndOccurrences,<br> fdClockDstEndDayOfWeek,<br> fdClockDstEndDayOfMonth,<br> fdClockDstEndTime,<br> fdClockDstOffset,<br> fdClockDstStorageType,<br> fdClockDstRowStatus,<br> fdClockDstApplied,<br> fdClockLocalDstAdjustment,<br> fdClockLocalDstMaxEntries<br> }",
-            "type": "og"
-        },
-        {
-            "id": "58",
-            "guid": "DA59DFBB-655E-4A3C-BD72-8C330F22BDD4",
-            "heading": "end",
-            "type": "end"
+          "attributesChanged": {
+            "deleted": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-23T20:44:03.117Z"
         }
-    ],
-    "attributes": {
-        "access": {
-            "heading": "Access",
-            "type": "enum",
-            "values": [
-                {
-                    "key": "read-only"
-                },
-                {
-                    "key": "read-write"
-                },
-                {
-                    "key": "read-create"
-                },
-                {
-                    "key": "not-accessible"
-                },
-                {
-                    "key": "accessible-for-notify"
-                }
-            ]
-        },
-        "augments": {
-            "heading": "Augments",
-            "type": "string"
-        },
-        "comment": {
-            "heading": "Comment",
-            "type": "xhtml"
-        },
-        "contact": {
-            "heading": "Contact",
-            "type": "xhtml"
-        },
-        "defval": {
-            "heading": "Default Value",
-            "type": "string"
-        },
-        "index": {
-            "heading": "Index",
-            "type": "string"
-        },
-        "name": {
-            "heading": "Name",
-            "type": "string"
-        },
-        "oid": {
-            "heading": "OID",
-            "type": "string"
-        },
-        "org": {
-            "heading": "Organization",
-            "type": "string"
-        },
-        "part": {
-            "heading": "Part",
-            "type": "string"
-        },
-        "status": {
-            "heading": "Status",
-            "type": "enum",
-            "values": [
-                {
-                    "key": "current"
-                },
-                {
-                    "key": "deprecated"
-                },
-                {
-                    "key": "obsolete"
-                }
-            ]
-        },
-        "syntax": {
-            "heading": "Syntax",
-            "type": "xhtml"
-        },
-        "type": {
-            "heading": "Type",
-            "type": "enum",
-            "values": [
-                {
-                    "key": "comment"
-                },
-                {
-                    "key": "end"
-                },
-                {
-                    "key": "mc",
-                    "label": "module-compliance"
-                },
-                {
-                    "key": "mi",
-                    "label": "module-identity"
-                },
-                {
-                    "key": "mib"
-                },
-                {
-                    "key": "ng",
-                    "label": "notification-group"
-                },
-                {
-                    "key": "nt",
-                    "label": "notification-type"
-                },
-                {
-                    "key": "og",
-                    "label": "object-group"
-                },
-                {
-                    "key": "oi",
-                    "label": "object-identity"
-                },
-                {
-                    "key": "ot",
-                    "label": "object-type"
-                },
-                {
-                    "key": "ref",
-                    "label": "reference"
-                },
-                {
-                    "key": "rev",
-                    "label": "revision"
-                },
-                {
-                    "key": "row"
-                },
-                {
-                    "key": "text_conv"
-                }
-            ]
-        },
-        "units": {
-            "heading": "Units",
-            "type": "string"
-        },
-        "updated": {
-            "heading": "Updated",
-            "type": "string"
-        }
+      ]
     },
-    "templateColumns": {
-        "93ecf22e-8470-4722-9504-eb06d7ed4fc8": {
-            "label": "Errors",
-            "template": "{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-only\") (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\"))) (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies link\" link</div>\n  {{/if}}\n{{/if}}"
-        }
+    {
+      "id": "8",
+      "guid": "47DA6DDE-75D0-43E1-A436-BE8126F9C535",
+      "heading": "fdClockResolution",
+      "access": "read-only",
+      "oid": "fdClockUtc 3",
+      "status": "current",
+      "syntax": "Unsigned32 (1..1000)",
+      "type": "ot",
+      "units": "1 millisecond",
+      "links": {
+        "satisfies": [
+          "26048_1-822"
+        ]
+      }
     },
-    "views": {
-        "Primary": {
-            "columns": [
-                {
-                    "columnId": "id",
-                    "width": 65
-                },
-                {
-                    "columnId": "description",
-                    "width": 500
-                }
-            ],
-            "default": true
-        }
+    {
+      "id": "9",
+      "guid": "F24FB4D2-0B76-49CC-878C-07C1147C5BAB",
+      "heading": "fdClockSupportedSources",
+      "access": "read-only",
+      "oid": "fdClockUtc 4",
+      "status": "current",
+      "syntax": "BITS {other (0), snmp (1), network (2), radio (3), satellite (4)}",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-822"
+        ]
+      }
     },
-    "metadata": {
-        "format": "2.17"
+    {
+      "id": "10",
+      "guid": "968F94DE-8295-490F-8C3D-C8E05C61DD60",
+      "heading": "fdClockRequestedSource",
+      "access": "read-write",
+      "oid": "fdClockUtc 5",
+      "status": "current",
+      "syntax": "INTEGER { other (1), snmp (2), network (3),<br> radio (4), satellite (5), local (6) }",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-823",
+          "26048_1-824"
+        ]
+      }
+    },
+    {
+      "id": "11",
+      "guid": "44F82B6E-4006-4CCA-AE85-4D2E7F489125",
+      "heading": "fdClockSource",
+      "access": "read-only",
+      "oid": "fdClockUtc 6",
+      "status": "current",
+      "syntax": "INTEGER { unknown (0), other (1), snmp (2),<br> network (3), radio (4), satellite (5), local (6) }",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-825"
+        ]
+      }
+    },
+    {
+      "id": "12",
+      "guid": "EE92FAE4-3D4A-442A-87AC-B51CAB9C8C0F",
+      "heading": "fdClockRequestedSourceStatus",
+      "access": "read-only",
+      "oid": "fdClockUtc 7",
+      "status": "current",
+      "syntax": "INTEGER { other (1), normal (2), dataError (3),<br> timeout (4), pending (5), discontinuity (6) }",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-826"
+        ]
+      }
+    },
+    {
+      "id": "13",
+      "guid": "3DF24F2F-2603-4CEB-9552-AE9ED72C1501",
+      "heading": "fdClockSourceStatus",
+      "access": "read-only",
+      "oid": "fdClockUtc 8",
+      "status": "current",
+      "syntax": "INTEGER { other (1), normal (2), dataError (3),<br> timeout (4), pending (5), discontinuity (6) }",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-826"
+        ]
+      }
+    },
+    {
+      "id": "14",
+      "guid": "5DD0F8DE-0355-4096-B69F-EBB950454CBE",
+      "heading": "fdClockSyncCycle",
+      "access": "read-write",
+      "defval": "day",
+      "oid": "fdClockUtc 9",
+      "status": "current",
+      "syntax": "INTEGER {<br> millisecond (1), <br> centisecond (2), <br> decisecond (3), <br> second (4), <br> tenseconds (5), <br> minute (6), <br> tenminutes (7), <br> hour (8), <br> sixhours (9), <br> day (10), <br> week (11), <br> month (12) }",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-823",
+          "26048_1-824"
+        ]
+      }
+    },
+    {
+      "id": "15",
+      "guid": "0221A832-6B4D-4BD4-B446-F027A2F116C1",
+      "heading": "fdClockLastSyncTime",
+      "access": "read-only",
+      "oid": "fdClockUtc 10",
+      "status": "current",
+      "syntax": "ITSDailyTimeStamp",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-825"
+        ]
+      }
+    },
+    {
+      "id": "16",
+      "guid": "15208660-82E4-4B72-B105-1E6D927BC35E",
+      "deleted": true,
+      "heading": "fdClockLastSyncDate",
+      "access": "read-only",
+      "oid": "fdClockUtc 11",
+      "status": "current",
+      "syntax": "ITSDateStamp",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-825"
+        ]
+      },
+      "history": [
+        {
+          "attributesChanged": {
+            "deleted": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-23T20:44:55.790Z"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "guid": "5724EDDD-9960-4683-AA2D-7B81F6E85208",
+      "heading": "fdClockSupportedTimeKeeping",
+      "access": "read-only",
+      "oid": "fdClockUtc 12",
+      "status": "current",
+      "syntax": "BITS { other (0), lineFrequency (1), rtcSqareWave (2),<br> crystal (3), external (4) }",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-822"
+        ]
+      }
+    },
+    {
+      "id": "18",
+      "guid": "E72F9FC2-9A61-4156-9AAF-5C744F1F6CEB",
+      "heading": "fdClockRequestedTimeKeeping",
+      "access": "read-write",
+      "oid": "fdClockUtc 13",
+      "status": "current",
+      "syntax": "INTEGER { other (1), lineFrequency (2), rtcSqareWave (3),<br> crystal (4), external (5) }",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-823",
+          "26048_1-824"
+        ]
+      }
+    },
+    {
+      "id": "19",
+      "guid": "A94F08BB-E7EA-4C89-A1C9-EF768A57DC67",
+      "heading": "fdClockTimeKeeping",
+      "access": "read-only",
+      "oid": "fdClockUtc 14",
+      "status": "current",
+      "syntax": "INTEGER { unknown (0), other (1), lineFrequency (2),<br> rtcSqareWave (3), crystal (4), external (5) }",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-825"
+        ]
+      }
+    },
+    {
+      "id": "20",
+      "guid": "FDF00BE4-4A9A-419C-9B14-EDDBDB886F19",
+      "heading": "fdClockDiscontinuitySource",
+      "access": "read-only",
+      "oid": "fdClockUtc 15",
+      "status": "current",
+      "syntax": "INTEGER {<br> unknown (0), other (1), <br> snmp (2), network (3), <br> radio (4), satellite (5), <br> local (6), changedUnknown (128), <br> changedOther (129), changedSnmp (130), <br> changedNetwork (131), changedRadio (132), <br> changedSatellite (133), changedLocal (134) }",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-831"
+        ]
+      }
+    },
+    {
+      "id": "21",
+      "guid": "6EB0566D-F0D9-42A7-B276-CB60A8B24991",
+      "heading": "fdClockDiscontinuityDelta",
+      "access": "read-only",
+      "oid": "fdClockUtc 16",
+      "status": "current",
+      "syntax": "Integer32",
+      "type": "ot",
+      "units": "milliseconds",
+      "links": {
+        "satisfies": [
+          "26048_1-831"
+        ]
+      }
+    },
+    {
+      "id": "22",
+      "guid": "E224449E-0AEE-4DC2-A335-DC48E2FA135A",
+      "heading": "fdClockDiscontinuityUpTime",
+      "access": "read-only",
+      "oid": "fdClockUtc 17",
+      "status": "current",
+      "syntax": "TimeTicks",
+      "type": "ot",
+      "units": "centiseconds",
+      "links": {
+        "satisfies": [
+          "26048_1-831"
+        ]
+      }
+    },
+    {
+      "id": "23",
+      "guid": "F7C04680-11C7-4572-BADC-E1FCEEBD4B03",
+      "heading": "fdClockDiscontinuityMaxAdjustment",
+      "access": "read-write",
+      "oid": "fdClockUtc 18",
+      "status": "current",
+      "syntax": "ITSUnsigned16",
+      "type": "ot",
+      "units": "milliseconds",
+      "links": {
+        "satisfies": [
+          "26048_1-823",
+          "26048_1-824"
+        ]
+      }
+    },
+    {
+      "id": "24",
+      "guid": "DC86DC2E-66A8-4D12-A4CE-0B2EB3B2EA96",
+      "heading": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "25",
+      "guid": "E5D508C2-6137-4C8E-9975-3F620DEE475B",
+      "heading": "fdClockLocal",
+      "oid": "fdClockMIB 2",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "27",
+      "guid": "E2B46DBB-4247-4C3E-BAFF-205DD24CA213",
+      "heading": "fdClockLocalTime",
+      "access": "read-only",
+      "oid": "fdClockLocal 2",
+      "status": "current",
+      "syntax": "ITSDailyTimeStamp",
+      "type": "ot",
+      "units": "milliseconds",
+      "links": {
+        "satisfies": [
+          "26048_1-848"
+        ]
+      },
+      "history": [
+        {
+          "affectedNodeId": "26",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-23T20:45:42.951Z",
+          "docId": "Clock-MIB",
+          "structureAction": "SwapUp"
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "guid": "1F93334F-ED83-43A8-A63C-B547FD675093",
+      "heading": "fdClockLocalStandardTimeZone",
+      "access": "read-write",
+      "defval": "0",
+      "oid": "fdClockLocal 1",
+      "status": "current",
+      "syntax": "Integer32 (-46800..46800)",
+      "type": "ot",
+      "units": "1 second",
+      "links": {
+        "satisfies": [
+          "26048_1-846",
+          "26048_1-847"
+        ]
+      }
+    },
+    {
+      "id": "28",
+      "guid": "187B4875-8B6D-4F91-8CD7-EDAADFC66CF1",
+      "deleted": true,
+      "heading": "fdClockLocalDate",
+      "access": "read-only",
+      "oid": "fdClockLocal 3",
+      "status": "current",
+      "syntax": "ITSDateStamp",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-848"
+        ]
+      },
+      "history": [
+        {
+          "attributesChanged": {
+            "deleted": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-23T20:45:49.575Z"
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "guid": "CD906E66-2DA7-49E1-9A73-E5B4D0119896",
+      "heading": "fdClockDstAdjustment",
+      "access": "read-only",
+      "oid": "fdClockLocal 4",
+      "status": "current",
+      "syntax": "ITSInteger16",
+      "type": "ot",
+      "units": "1 second",
+      "links": {
+        "satisfies": [
+          "26048_1-857"
+        ]
+      },
+      "history": [
+        {
+          "attributesChanged": {
+            "heading": "fdClockLocalDstAdjustment"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-23T20:47:17.398Z"
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "guid": "DA71F7E2-CE84-4842-A45F-0052EFF78639",
+      "heading": "fdClockDstTableMaxRows",
+      "access": "read-only",
+      "oid": "fdClockLocal 5",
+      "status": "current",
+      "syntax": "Unsigned32",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-852"
+        ]
+      },
+      "history": [
+        {
+          "attributesChanged": {
+            "heading": "fdClockLocalDstMaxEntries"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-23T20:47:11.528Z"
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "guid": "616DCBF9-DCC4-491A-A687-8C3047B84EED",
+      "heading": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "32",
+      "guid": "46D158A9-903E-43B9-9CB1-EF209F81D40D",
+      "heading": "fdClockDstTable",
+      "access": "not-accessible",
+      "oid": "fdClockMIB 3",
+      "status": "current",
+      "syntax": "SEQUENCE OF FdClockDstEntry",
+      "type": "ot"
+    },
+    {
+      "id": "33",
+      "guid": "E9A7FB63-EFE1-4B5B-A9B9-6E47A05FC923",
+      "heading": "fdClockDstEntry",
+      "access": "not-accessible",
+      "index": "fdClockDstIndex",
+      "oid": "fdClockDstTable 1",
+      "status": "current",
+      "syntax": "FdClockDstEntry",
+      "type": "ot"
+    },
+    {
+      "id": "34",
+      "guid": "CC23E1CF-13F9-4788-99FA-A0CD592816A0",
+      "heading": "FdClockDstEntry",
+      "syntax": "{ fdClockDstIndex ITSPositive8, <br> fdClockDstBeginMonth ITSMonth, <br> fdClockDstBeginOccurrences INTEGER, <br> fdClockDstBeginDayOfWeek ITSDayOfWeek, <br> fdClockDstBeginDayOfMonth ITSDayOfMonth, <br> fdClockDstBeginTime ITSDailyTimeStamp, <br> fdClockDstEndMonth ITSMonth, <br> fdClockDstEndOccurrences INTEGER, <br> fdClockDstEndDayOfWeek ITSDayOfWeek, <br> fdClockDstEndDayOfMonth ITSDayOfMonth, <br> fdClockDstEndTime ITSDailyTimeStamp, <br> fdClockDstOffset ITSInteger16, <br> fdClockDstApplied TruthValue, <br> fdClockDstStorageType StorageType, <br> fdClockDstRowStatus RowStatus }",
+      "type": "row"
+    },
+    {
+      "id": "35",
+      "guid": "83C7931C-A368-42F1-AEAA-F17BC1307A0B",
+      "heading": "fdClockDstIndex",
+      "access": "not-accessible",
+      "oid": "fdClockDstEntry 1",
+      "status": "current",
+      "syntax": "ITSPositive8",
+      "type": "ot"
+    },
+    {
+      "id": "36",
+      "guid": "BEFDEE31-00B1-491C-96A4-9751051EAEA5",
+      "heading": "fdClockDstBeginMonth",
+      "access": "read-create",
+      "oid": "fdClockDstEntry 2",
+      "status": "current",
+      "syntax": "ITSMonth",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-854",
+          "26048_1-855"
+        ]
+      }
+    },
+    {
+      "id": "37",
+      "guid": "F153854D-E87D-4C59-BE11-010C47FAEEFC",
+      "heading": "fdClockDstBeginOccurrences",
+      "access": "read-create",
+      "defval": "first",
+      "oid": "fdClockDstEntry 3",
+      "status": "current",
+      "syntax": "INTEGER {<br> first (1), second (2), <br> third (3), fourth (4), <br> last (5), secondToLast (6), <br> thirdToLast (7), fourthToLsat (8), <br> specificDayOfMonth (9) }",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-854",
+          "26048_1-855"
+        ]
+      }
+    },
+    {
+      "id": "38",
+      "guid": "87A44D63-DDB1-465A-BFF2-3FFA78D49C30",
+      "heading": "fdClockDstBeginDayOfWeek",
+      "access": "read-create",
+      "defval": "sunday",
+      "oid": "fdClockDstEntry 4",
+      "status": "current",
+      "syntax": "ITSDayOfWeek",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-854",
+          "26048_1-855"
+        ]
+      }
+    },
+    {
+      "id": "39",
+      "guid": "4FDEAA98-CD50-405C-A862-DF87CCD78503",
+      "heading": "fdClockDstBeginDayOfMonth",
+      "access": "read-create",
+      "defval": "1",
+      "oid": "fdClockDstEntry 5",
+      "status": "current",
+      "syntax": "ITSDayOfMonth",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-854",
+          "26048_1-855"
+        ]
+      }
+    },
+    {
+      "id": "40",
+      "guid": "A2338B9D-A774-49B7-A543-9DE427071674",
+      "heading": "fdClockDstBeginTime",
+      "access": "read-create",
+      "defval": "7200000",
+      "oid": "fdClockDstEntry 6",
+      "status": "current",
+      "syntax": "ITSDailyTimeStamp",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-854",
+          "26048_1-855"
+        ]
+      }
+    },
+    {
+      "id": "41",
+      "guid": "89755857-124E-453D-AD0D-5C07C89B5597",
+      "heading": "fdClockDstEndMonth",
+      "access": "read-create",
+      "defval": "january",
+      "oid": "fdClockDstEntry 7",
+      "status": "current",
+      "syntax": "ITSMonth",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-854",
+          "26048_1-855"
+        ]
+      }
+    },
+    {
+      "id": "42",
+      "guid": "F5C71048-3060-4B72-8DFF-253A737CA7AC",
+      "heading": "fdClockDstEndOccurrences",
+      "access": "read-create",
+      "defval": "first",
+      "oid": "fdClockDstEntry 8",
+      "status": "current",
+      "syntax": "INTEGER {<br> first (1), second (2), <br> third (3), fourth (4), <br> last (5), secondToLast (6), <br> thirdToLast (7), fourthToLast (8), <br> specificDayOfMonth (9) }",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-854",
+          "26048_1-855"
+        ]
+      }
+    },
+    {
+      "id": "43",
+      "guid": "F97FD109-609B-415D-B512-BBA3FB4D9F0F",
+      "heading": "fdClockDstEndDayOfWeek",
+      "access": "read-create",
+      "defval": "sunday",
+      "oid": "fdClockDstEntry 9",
+      "status": "current",
+      "syntax": "ITSDayOfWeek",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-854",
+          "26048_1-855"
+        ]
+      }
+    },
+    {
+      "id": "44",
+      "guid": "8C293A62-3D74-4284-85CA-1C354B1B1545",
+      "heading": "fdClockDstEndDayOfMonth",
+      "access": "read-create",
+      "defval": "1",
+      "oid": "fdClockDstEntry 10",
+      "status": "current",
+      "syntax": "ITSDayOfMonth",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-854",
+          "26048_1-855"
+        ]
+      }
+    },
+    {
+      "id": "45",
+      "guid": "371D6049-3101-4879-B668-211733A1A541",
+      "heading": "fdClockDstEndTime",
+      "access": "read-create",
+      "defval": "7200000",
+      "oid": "fdClockDstEntry 11",
+      "status": "current",
+      "syntax": "ITSDailyTimeStamp",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-854",
+          "26048_1-855"
+        ]
+      }
+    },
+    {
+      "id": "46",
+      "guid": "494371DE-EF92-4659-85E3-C0DAACF9E2E5",
+      "heading": "fdClockDstOffset",
+      "access": "read-create",
+      "defval": "0",
+      "oid": "fdClockDstEntry 12",
+      "status": "current",
+      "syntax": "ITSInteger16",
+      "type": "ot",
+      "units": "1 second",
+      "links": {
+        "satisfies": [
+          "26048_1-854",
+          "26048_1-855"
+        ]
+      }
+    },
+    {
+      "id": "47",
+      "guid": "5C2906B4-9F46-4064-8A63-1732205095A4",
+      "heading": "fdClockDstApplied",
+      "access": "read-only",
+      "oid": "fdClockDstEntry 13",
+      "status": "current",
+      "syntax": "TruthValue",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-856"
+        ]
+      }
+    },
+    {
+      "id": "48",
+      "guid": "A69C4482-3155-4854-A543-EDD3A661583E",
+      "deleted": true,
+      "heading": "fdClockDstStorageType",
+      "access": "read-create",
+      "oid": "fdClockDstEntry 14",
+      "status": "current",
+      "syntax": "StorageType",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-854",
+          "26048_1-855"
+        ]
+      },
+      "history": [
+        {
+          "attributesChanged": {
+            "deleted": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-23T20:48:47.401Z"
+        }
+      ]
+    },
+    {
+      "id": "49",
+      "guid": "1C6ABB49-353E-4157-8CB1-C554C53B9DB7",
+      "heading": "fdClockDstRowStatus",
+      "access": "read-create",
+      "oid": "fdClockDstEntry 15",
+      "status": "current",
+      "syntax": "RowStatus",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-854",
+          "26048_1-855"
+        ]
+      }
+    },
+    {
+      "id": "50",
+      "guid": "9F930724-DB75-4383-8128-A0DD5183D78D",
+      "heading": "comment",
+      "type": "comment"
+    },
+    {
+      "id": "51",
+      "guid": "0FA3435E-34E8-414A-B186-D582D53E6703",
+      "heading": "fdClockConformance",
+      "oid": "fdGlobalConformance 3",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "52",
+      "guid": "DB62990D-9E7B-4BC2-BAC3-8E2B4C6DC388",
+      "heading": "fdClockCompliances",
+      "oid": "fdClockConformance 1",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "53",
+      "guid": "EB742F75-C071-4A09-9B73-68AC5E2BE94D",
+      "heading": "fdClockGroups",
+      "oid": "fdClockConformance 2",
+      "status": "current",
+      "type": "oi"
+    },
+    {
+      "id": "54",
+      "guid": "61A4FDAD-1971-439E-B515-36027D71E0BF",
+      "heading": "fdClockComplianceV1",
+      "oid": "fdClockCompliances 1",
+      "status": "current",
+      "syntax": "{ fdUtcClockGroupV1<br> }",
+      "type": "mc"
+    },
+    {
+      "id": "55",
+      "guid": "993651E6-ED79-465E-93FC-3672DB24B0E4",
+      "heading": "fdClockUtcGroupV1",
+      "oid": "fdClockGroups 1",
+      "status": "current",
+      "syntax": "{ fdClockResolution,<br> fdClockSupportedSources,<br> fdClockSupportedTimeKeeping,<br> fdClockRequestedSource,<br> fdClockSyncCycle,<br> fdClockRequestedTimeKeeping,<br> fdClockDiscontinuityMaxAdjustment,<br> fdClockSource,<br> fdClockLastSyncTime,<br> fdClockLastSyncDate,<br> fdClockTimeKeeping,<br> fdClockRequestedSourceStatus,<br> fdClockSourceStatus,<br> fdClockUtcTime,<br> fdClockUtcDate,<br> fdClockDiscontinuitySource,<br> fdClockDiscontinuityDelta,<br> fdClockDiscontinuityUpTime<br> }",
+      "type": "og",
+      "history": [
+        {
+          "attributesChanged": {
+            "heading": "fdUtcClockGroupV1"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-23T20:49:43.431Z"
+        }
+      ]
+    },
+    {
+      "id": "56",
+      "guid": "94FBAB2F-21E5-43B2-B4F5-C1CDABA93EF2",
+      "heading": "fdClockLocalGroupV1",
+      "oid": "fdClockGroups 2",
+      "status": "current",
+      "syntax": "{ fdClockLocalStandardTimeZone,<br> fdClockLocalTime,<br> fdClockLocalDate<br> }",
+      "type": "og",
+      "history": [
+        {
+          "attributesChanged": {
+            "heading": "fdLocalClockGroupV1"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-23T20:50:03.337Z"
+        }
+      ]
+    },
+    {
+      "id": "57",
+      "guid": "04015761-A7BF-4C98-9A85-09F0A0566814",
+      "heading": "fdClockDstGroupV1",
+      "oid": "fdClockGroups 3",
+      "status": "current",
+      "syntax": "{ fdClockDstBeginMonth,<br> fdClockDstBeginOccurrences,<br> fdClockDstBeginDayOfWeek,<br> fdClockDstBeginDayOfMonth,<br> fdClockDstBeginTime,<br> fdClockDstEndMonth,<br> fdClockDstEndOccurrences,<br> fdClockDstEndDayOfWeek,<br> fdClockDstEndDayOfMonth,<br> fdClockDstEndTime,<br> fdClockDstOffset,<br> fdClockDstStorageType,<br> fdClockDstRowStatus,<br> fdClockDstApplied,<br> fdClockLocalDstAdjustment,<br> fdClockLocalDstMaxEntries<br> }",
+      "type": "og",
+      "history": [
+        {
+          "attributesChanged": {
+            "heading": "fdDstClockGroupV1"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-23T20:49:55.923Z"
+        }
+      ]
+    },
+    {
+      "id": "58",
+      "guid": "DA59DFBB-655E-4A3C-BD72-8C330F22BDD4",
+      "heading": "end",
+      "type": "end"
     }
+  ],
+  "attributes": {
+    "access": {
+      "heading": "Access",
+      "type": "enum",
+      "values": [
+        {
+          "key": "read-only"
+        },
+        {
+          "key": "read-write"
+        },
+        {
+          "key": "read-create"
+        },
+        {
+          "key": "not-accessible"
+        },
+        {
+          "key": "accessible-for-notify"
+        }
+      ]
+    },
+    "augments": {
+      "heading": "Augments",
+      "type": "string"
+    },
+    "comment": {
+      "heading": "Comment",
+      "type": "xhtml"
+    },
+    "contact": {
+      "heading": "Contact",
+      "type": "xhtml"
+    },
+    "defval": {
+      "heading": "Default Value",
+      "type": "string"
+    },
+    "index": {
+      "heading": "Index",
+      "type": "string"
+    },
+    "name": {
+      "heading": "Name",
+      "type": "string"
+    },
+    "oid": {
+      "heading": "OID",
+      "type": "string"
+    },
+    "org": {
+      "heading": "Organization",
+      "type": "string"
+    },
+    "part": {
+      "heading": "Part",
+      "type": "string"
+    },
+    "status": {
+      "heading": "Status",
+      "type": "enum",
+      "values": [
+        {
+          "key": "current"
+        },
+        {
+          "key": "deprecated"
+        },
+        {
+          "key": "obsolete"
+        }
+      ]
+    },
+    "syntax": {
+      "heading": "Syntax",
+      "type": "xhtml"
+    },
+    "type": {
+      "heading": "Type",
+      "type": "enum",
+      "values": [
+        {
+          "key": "comment"
+        },
+        {
+          "key": "end"
+        },
+        {
+          "key": "mc",
+          "label": "module-compliance"
+        },
+        {
+          "key": "mi",
+          "label": "module-identity"
+        },
+        {
+          "key": "mib"
+        },
+        {
+          "key": "ng",
+          "label": "notification-group"
+        },
+        {
+          "key": "nt",
+          "label": "notification-type"
+        },
+        {
+          "key": "og",
+          "label": "object-group"
+        },
+        {
+          "key": "oi",
+          "label": "object-identity"
+        },
+        {
+          "key": "ot",
+          "label": "object-type"
+        },
+        {
+          "key": "ref",
+          "label": "reference"
+        },
+        {
+          "key": "rev",
+          "label": "revision"
+        },
+        {
+          "key": "row"
+        },
+        {
+          "key": "text_conv"
+        }
+      ]
+    },
+    "units": {
+      "heading": "Units",
+      "type": "string"
+    },
+    "updated": {
+      "heading": "Updated",
+      "type": "string"
+    }
+  },
+  "templateColumns": {
+    "93ecf22e-8470-4722-9504-eb06d7ed4fc8": {
+      "label": "Errors",
+      "template": "{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-only\") (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\"))) (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies link\" link</div>\n  {{/if}}\n{{/if}}"
+    }
+  },
+  "views": {
+    "Primary": {
+      "columns": [
+        {
+          "columnId": "id",
+          "width": 65
+        },
+        {
+          "columnId": "description",
+          "width": 500
+        }
+      ],
+      "default": true
+    }
+  },
+  "metadata": {
+    "format": "2.20"
+  }
 }

@@ -2,14 +2,14 @@
   "id": "26048_1",
   "guid": "8955569e-5f64-45a6-a339-9c8989efaeea",
   "name": "ISO 26048-1",
-  "lastId": 1426,
+  "lastId": 1434,
   "createdOn": "2023-05-20T15:16:21.812Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-06T22:35:06.511Z",
+  "lastChangedOn": "2025-01-23T20:30:39.901Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -518,7 +518,90 @@
             {
               "id": "83",
               "guid": "8397C612-53BB-496B-B97D-C2D22DD0BDC1",
-              "type": "t"
+              "heading": "MIB format",
+              "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:33:04.176Z"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": "MIB Format"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:33:21.195Z"
+                }
+              ]
+            },
+            {
+              "id": "1427",
+              "guid": "9b2aef19-b7cd-4c7d-a424-8676751d44b1",
+              "heading": "MIB access",
+              "history": [
+                {
+                  "affectedNodeId": "81",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:33:06.567Z",
+                  "docId": "26048_1",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:33:16.680Z"
+                }
+              ]
+            },
+            {
+              "id": "1428",
+              "guid": "5ffee9f7-caf5-4da3-b2f4-416d651f7d7d",
+              "heading": "MIB filenames",
+              "history": [
+                {
+                  "affectedNodeId": "81",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:33:22.613Z",
+                  "docId": "26048_1",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:33:28.181Z"
+                }
+              ]
             }
           ]
         },
@@ -531,8 +614,21 @@
         {
           "id": "940",
           "guid": "bad9fced-a484-4551-a0bf-896ca3c578ef",
-          "heading": "Conformance table",
+          "heading": "Conformance",
           "type": "t",
+          "history": [
+            {
+              "attributesChanged": {
+                "heading": "Conformance table"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-01-23T16:33:41.680Z"
+            }
+          ],
           "children": [
             {
               "id": "941",
@@ -574,8 +670,20 @@
                 {
                   "id": "90",
                   "guid": "94E1F591-B939-4325-A5E5-D6C5AE39655E",
-                  "heading": "Physical view of interface",
-                  "type": "f"
+                  "type": "f",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Physical view of interface"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T16:34:06.109Z"
+                    }
+                  ]
                 },
                 {
                   "id": "91",
@@ -613,8 +721,20 @@
                 {
                   "id": "97",
                   "guid": "D72B8D8A-4FF4-4386-A7F8-DDD04D89D7F0",
-                  "heading": "Typical communications stack",
-                  "type": "f"
+                  "type": "f",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Typical communications stack"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T16:34:17.056Z"
+                    }
+                  ]
                 },
                 {
                   "id": "98",
@@ -1155,7 +1275,7 @@
                 {
                   "id": "273",
                   "guid": "ab5c491e-df9c-46e3-a56b-a70f5e1e23c3",
-                  "heading": "Monitor field device enclosure humidity",
+                  "heading": "Monitor field device enclosure relative humidity",
                   "status": "current",
                   "type": "un",
                   "links": {
@@ -1178,6 +1298,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-10-29T19:21:31.242Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": "Monitor field device enclosure humidity"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T16:37:21.296Z"
                     }
                   ]
                 }
@@ -1924,6 +2055,64 @@
               "guid": "76f664be-6413-4b6f-9dd5-047f7f02632f",
               "heading": "Startup configuration",
               "type": "t"
+            },
+            {
+              "id": "1429",
+              "guid": "972959dc-e3e6-4dd3-8106-444e93d4bfd4",
+              "heading": "Configuration set management",
+              "history": [
+                {
+                  "affectedNodeId": "1275",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:39:13.793Z",
+                  "docId": "26048_1",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:39:23.002Z"
+                }
+              ]
+            },
+            {
+              "id": "1430",
+              "guid": "a2c7964b-250b-480d-a3c1-43f48493f43b",
+              "heading": "Sequence of constructs within dynamic objects",
+              "history": [
+                {
+                  "affectedNodeId": "1275",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:39:25.272Z",
+                  "docId": "26048_1",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:39:39.940Z"
+                }
+              ]
             }
           ]
         }
@@ -2039,68 +2228,221 @@
         {
           "id": "950",
           "guid": "a009e705-4348-4d97-b53d-f9684b4243d9",
-          "heading": "Monitor cabinet",
+          "heading": "Monitor field device components",
           "type": "t",
+          "history": [
+            {
+              "attributesChanged": {
+                "heading": "Monitor cabinet"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-01-23T16:41:04.671Z"
+            }
+          ],
           "children": [
             {
               "id": "951",
               "guid": "c5264fd3-70a2-4332-8f87-aa06b0276dec",
+              "deleted": true,
               "heading": "Monitor cabinet doors design overview",
-              "type": "t"
+              "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:42:14.128Z"
+                }
+              ]
             },
             {
               "id": "952",
               "guid": "f693e211-6667-474e-ac1c-5609e8f534b3",
+              "deleted": true,
               "heading": "Monitor and control cabinet fans design overview",
-              "type": "t"
+              "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:42:14.128Z"
+                }
+              ]
             },
             {
               "id": "953",
               "guid": "be56e1e5-a0ac-4806-88b4-eb87db4d786f",
+              "deleted": true,
               "heading": "Monitor and control cabinet heaters design overview",
-              "type": "t"
+              "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:42:14.128Z"
+                }
+              ]
             },
             {
               "id": "954",
               "guid": "707fa950-9231-4ef6-b956-92bbbecee712",
+              "deleted": true,
               "heading": "Monitor cabinet humidity design overview",
-              "type": "t"
+              "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:42:14.128Z"
+                }
+              ]
             },
             {
               "id": "955",
               "guid": "1dbf9227-3884-4329-9e17-ef81c1a3fc48",
+              "deleted": true,
               "heading": "Monitor cabinet temperature design overview",
-              "type": "t"
+              "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:42:14.128Z"
+                }
+              ]
             },
             {
               "id": "956",
               "guid": "b6da8292-51fa-43f3-bec7-5e9e16e98be6",
+              "deleted": true,
               "heading": "Monitor cabinet mains power design overview",
-              "type": "t"
+              "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:42:14.128Z"
+                }
+              ]
             },
             {
               "id": "957",
               "guid": "8234b039-27b1-4a4b-98f2-e43e5d3ce55a",
+              "deleted": true,
               "heading": "Monitor cabinet battery power design overview",
-              "type": "t"
+              "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:42:14.128Z"
+                }
+              ]
             },
             {
               "id": "958",
               "guid": "0be4f261-11b5-41b3-8969-0a77485e9ee0",
+              "deleted": true,
               "heading": "Monitor cabinet generator power design overview",
-              "type": "t"
+              "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:42:14.128Z"
+                }
+              ]
             },
             {
               "id": "959",
               "guid": "063a5194-b75c-4b2f-b8d5-5b0719b6e524",
+              "deleted": true,
               "heading": "Monitor cabinet solar power design overview",
-              "type": "t"
+              "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:42:14.128Z"
+                }
+              ]
             },
             {
               "id": "960",
               "guid": "3f6c583c-50f3-4bb0-b98a-2fb19457e1cb",
+              "deleted": true,
               "heading": "Monitor cabinet wind power design overview",
-              "type": "t"
+              "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:42:14.128Z"
+                }
+              ]
             }
           ]
         },
@@ -2113,13 +2455,127 @@
             {
               "id": "613",
               "guid": "295eac2a-fa8f-4e19-b8a7-dfef52cea5df",
-              "heading": "Conceptual overview of notifications",
-              "type": "f"
+              "heading": "General",
+              "type": "f",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "heading": "Conceptual overview of notifications"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:42:47.790Z"
+                }
+              ]
             },
             {
               "id": "614",
               "guid": "e3c26b42-0784-429e-9975-4451122d4f46",
-              "type": "t"
+              "heading": "Triggers",
+              "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:43:00.220Z"
+                }
+              ]
+            },
+            {
+              "id": "1431",
+              "guid": "df617920-1887-4297-bed2-0e88d56374f4",
+              "heading": "Action selection",
+              "history": [
+                {
+                  "affectedNodeId": "612",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:43:04.541Z",
+                  "docId": "26048_1",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:43:10.809Z"
+                }
+              ]
+            },
+            {
+              "id": "1432",
+              "guid": "f7bfb787-0723-49f7-9f8b-7ec06e692f80",
+              "heading": "Notification factory",
+              "history": [
+                {
+                  "affectedNodeId": "612",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:43:16.130Z",
+                  "docId": "26048_1",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:43:23.396Z"
+                }
+              ]
+            },
+            {
+              "id": "1433",
+              "guid": "acdbdf96-5d66-4738-8f24-c1e61bbd7253",
+              "heading": "Notification channel",
+              "history": [
+                {
+                  "affectedNodeId": "612",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:43:28.371Z",
+                  "docId": "26048_1",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:43:33.595Z"
+                }
+              ]
             }
           ]
         },
@@ -2138,14 +2594,39 @@
         {
           "id": "742",
           "guid": "1a2ad696-3c9e-4d7e-b90d-5734b8dc4916",
-          "heading": "Log user-defined snapshots design overview",
+          "heading": "Log user-defined data snapshots design overview",
           "type": "t",
+          "history": [
+            {
+              "attributesChanged": {
+                "heading": "Log user-defined snapshots design overview"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-01-23T16:44:13.668Z"
+            }
+          ],
           "children": [
             {
               "id": "743",
               "guid": "9e5e5c6d-25ad-46e8-b469-413f9f3d9b18",
-              "heading": "Conceptual overview of logging",
-              "type": "f"
+              "type": "f",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "heading": "Conceptual overview of logging"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:44:30.397Z"
+                }
+              ]
             },
             {
               "id": "744",
@@ -2157,14 +2638,39 @@
         {
           "id": "1051",
           "guid": "b5d6d0d6-3ab8-4e3d-bff2-fc8b6cb67880",
-          "heading": "Record a series of snapshots design overview",
+          "heading": "Record a series of data snapshots design overview",
           "type": "t",
+          "history": [
+            {
+              "attributesChanged": {
+                "heading": "Record a series of snapshots design overview"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-01-23T16:44:55.332Z"
+            }
+          ],
           "children": [
             {
               "id": "1053",
               "guid": "fe44ce5f-488f-4eff-bf92-aac0ba115ee2",
-              "heading": "Conceptual overview of recordings",
-              "type": "f"
+              "type": "f",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "heading": "Conceptual overview of recordings"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:45:04.531Z"
+                }
+              ]
             },
             {
               "id": "1054",
@@ -2194,8 +2700,20 @@
             {
               "id": "798",
               "guid": "3db06384-a33b-405e-8e0e-94fdb41bda79",
-              "heading": "Conceptual overview of commands",
-              "type": "f"
+              "type": "f",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "heading": "Conceptual overview of commands"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T16:45:20.461Z"
+                }
+              ]
             },
             {
               "id": "799",
@@ -2232,8 +2750,21 @@
         {
           "id": "961",
           "guid": "e7d93a89-22ec-4553-8dfc-ebbd2442a8fc",
-          "heading": "Efficient data exchange design overview",
-          "type": "t"
+          "heading": "Efficient exchange of data design overview",
+          "type": "t",
+          "history": [
+            {
+              "attributesChanged": {
+                "heading": "Efficient data exchange design overview"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-01-23T16:45:40.095Z"
+            }
+          ]
         },
         {
           "id": "1065",
@@ -2285,8 +2816,20 @@
                 {
                   "id": "472",
                   "guid": "edd2aa99-bec6-4ab9-b202-df39487eaaa4",
-                  "heading": "Schedule day plans",
-                  "type": "f"
+                  "type": "f",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Schedule day plans"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T16:46:02.754Z"
+                    }
+                  ]
                 },
                 {
                   "id": "473",
@@ -2304,8 +2847,20 @@
                 {
                   "id": "497",
                   "guid": "b720fd65-8825-42a2-9fdc-be9753d20a1c",
-                  "heading": "Condition-based triggers",
-                  "type": "f"
+                  "type": "f",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Condition-based triggers"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T16:46:08.484Z"
+                    }
+                  ]
                 },
                 {
                   "id": "498",
@@ -3820,14 +4375,27 @@
                     {
                       "id": "592",
                       "guid": "ab01097b-010c-49e5-bbdf-a32079310d78",
-                      "heading": "Support for on change wildcards",
+                      "heading": "Support for on-change wildcards",
                       "status": "current",
                       "type": "s_req",
                       "links": {
                         "refine_opt": [
                           "Conditionals-12"
                         ]
-                      }
+                      },
+                      "history": [
+                        {
+                          "attributesChanged": {
+                            "heading": "Support for on change wildcards"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-01-23T17:12:34.575Z"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -4099,14 +4667,27 @@
                 {
                   "id": "310",
                   "guid": "14c8da8d-e230-4fe8-93f3-efcf6bf75d92",
-                  "heading": "Confirm the current default language configuration",
+                  "heading": "Confirm the default language configuration",
                   "status": "current",
                   "type": "d_req",
                   "links": {
                     "refine": [
                       "26048_1-283"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Confirm the current default language configuration"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:17:52.435Z"
+                    }
+                  ]
                 },
                 {
                   "id": "308",
@@ -4809,18 +5390,54 @@
                 {
                   "id": "890",
                   "guid": "5d9d1163-5696-4f49-bf2e-8755816c5b5c",
-                  "heading": "Obtain dynamic object data in one step",
+                  "heading": "Obtain dynamic object data",
                   "status": "current",
                   "type": "d_req",
                   "links": {
                     "refine": [
                       "26048_1-884"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Obtain dynamic object data in one step"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:24:41.749Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:25:04.999Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": true
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:25:09.637Z"
+                    }
+                  ]
                 },
                 {
                   "id": "891",
                   "guid": "c07eb64b-937c-4968-a9c1-32d68f374279",
+                  "deleted": true,
                   "heading": "Obtain dynamic object data in two steps",
                   "status": "current",
                   "type": "d_req",
@@ -4828,7 +5445,20 @@
                     "refine": [
                       "Conditionals-6"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:25:14.223Z"
+                    }
+                  ]
                 },
                 {
                   "id": "894",
@@ -4845,18 +5475,32 @@
                 {
                   "id": "892",
                   "guid": "c78fdac9-9c2c-495b-813c-22930c49f34e",
-                  "heading": "Set new value for dynamic object in one step",
+                  "heading": "Set new value for dynamic object",
                   "status": "current",
                   "type": "d_req",
                   "links": {
                     "refine": [
                       "Conditionals-7"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Set new value for dynamic object in one step"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:25:47.723Z"
+                    }
+                  ]
                 },
                 {
                   "id": "893",
                   "guid": "6de935ac-6756-487f-a838-51e7dce050f6",
+                  "deleted": true,
                   "heading": "Set new value for dynamic object in two steps",
                   "status": "current",
                   "type": "d_req",
@@ -4864,16 +5508,42 @@
                     "refine": [
                       "Conditionals-8"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:26:10.644Z"
+                    }
+                  ]
                 }
               ]
             },
             {
               "id": "902",
               "guid": "921a351f-0573-4627-b3af-1bc227c274f1",
-              "heading": "Dynamic object feature capabilities",
+              "heading": "Dynamic object feature capability requirements",
               "status": "current",
               "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "heading": "Dynamic object feature capabilities"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T17:31:36.523Z"
+                }
+              ],
               "children": [
                 {
                   "id": "903",
@@ -4950,8 +5620,38 @@
                   }
                 },
                 {
+                  "id": "1434",
+                  "guid": "f11b934c-fa40-4962-8156-8c2e6e71bcfb",
+                  "heading": "Prohibit set operations on dynamic objects containing read-only objects",
+                  "history": [
+                    {
+                      "affectedNodeId": "902",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:35:10.225Z",
+                      "docId": "26048_1",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:35:36.941Z"
+                    }
+                  ]
+                },
+                {
                   "id": "910",
                   "guid": "ad6cc864-bac8-4374-b535-b4eb042d961d",
+                  "deleted": true,
                   "heading": "Support for dynamic objects that use a two-step process",
                   "status": "current",
                   "type": "s_req",
@@ -4959,7 +5659,20 @@
                     "refine_opt": [
                       "26048_1-884"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:36:00.175Z"
+                    }
+                  ]
                 },
                 {
                   "id": "911",
@@ -4970,7 +5683,7 @@
                 {
                   "id": "912",
                   "guid": "3356b67a-9548-4f88-bd83-4c4d93ae7b8c",
-                  "heading": "Dynamic object feature functional requirements",
+                  "heading": "Dynamic object feature functional requirement",
                   "status": "current",
                   "type": "s_req",
                   "links": {
@@ -4978,6 +5691,19 @@
                       "26048_1-884"
                     ]
                   },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Dynamic object feature functional requirements"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:42:00.237Z"
+                    }
+                  ],
                   "children": [
                     {
                       "id": "913",
@@ -4998,25 +5724,83 @@
             {
               "id": "1284",
               "guid": "943e0d4c-bd1f-4f5d-9c85-79bfd1bd480a",
-              "heading": "Dynamic object feature performance requirements",
+              "heading": "Dynamic object feature performance requirement",
               "status": "current",
               "type": "t",
+              "links": {
+                "refine": [
+                  "26048_1-884"
+                ]
+              },
+              "history": [
+                {
+                  "addedLink": {
+                    "target": [
+                      "26048_1-884"
+                    ],
+                    "type": "refine"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T17:39:29.487Z"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": "Dynamic object feature performance requirements"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T17:41:39.872Z"
+                }
+              ],
               "children": [
                 {
                   "id": "1285",
                   "guid": "c08abdd5-df20-45b0-8f97-54a2db4f6cfc",
-                  "heading": "Response time for one-step requests",
+                  "deleted": true,
+                  "heading": "Dynamic object response time",
                   "status": "current",
                   "type": "s_req",
                   "links": {
                     "refine": [
                       "26048_1-884"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Response time for one-step requests"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:38:27.562Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:39:40.851Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1286",
                   "guid": "569c4675-84de-42cb-a0c2-3eae7fb2375a",
+                  "deleted": true,
                   "heading": "Processing time for two-step requests",
                   "status": "current",
                   "type": "s_req",
@@ -5024,11 +5808,25 @@
                     "refine": [
                       "Conditionals-8"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:38:29.789Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1287",
                   "guid": "b46cbaae-24fa-49e6-bfcd-82a82fcea256",
+                  "deleted": true,
                   "heading": "Dynamic object processing time",
                   "status": "current",
                   "type": "s_req",
@@ -5036,7 +5834,20 @@
                     "refine": [
                       "26048_1-884"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:39:44.258Z"
+                    }
+                  ]
                 }
               ]
             }
@@ -5709,9 +6520,22 @@
                 {
                   "id": "1353",
                   "guid": "1ce08064-b098-41c0-a2ad-40552e7dc502",
-                  "heading": "Definition",
+                  "heading": "Auxiliary bi-directional port definition",
                   "status": "current",
-                  "type": "t"
+                  "type": "t",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Definition"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:48:52.492Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1354",
@@ -5743,9 +6567,22 @@
                 {
                   "id": "1355",
                   "guid": "7b9b3179-ca0e-4964-a454-7f6fce55dbec",
-                  "heading": "Definition",
+                  "heading": "Auxiliary input port definition",
                   "status": "current",
-                  "type": "t"
+                  "type": "t",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Definition"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:49:16.034Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1356",
@@ -5777,9 +6614,33 @@
                 {
                   "id": "1357",
                   "guid": "ced1c9f7-b074-4558-b214-75f602310d2f",
-                  "heading": "Definition",
+                  "heading": "Auxiliary output port definition",
                   "status": "current",
-                  "type": "t"
+                  "type": "t",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Definition"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:49:32.373Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": "Auxiliary output port Definition"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:49:39.341Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1358",
@@ -5947,9 +6808,22 @@
                 {
                   "id": "1359",
                   "guid": "38ea7abb-c6c7-4ae1-b9ba-e567c0e5e766",
-                  "heading": "Definition",
+                  "heading": "Field device dehumidifier definition",
                   "status": "current",
-                  "type": "t"
+                  "type": "t",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Definition"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:50:48.063Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1370",
@@ -6088,7 +6962,7 @@
                 {
                   "id": "373",
                   "guid": "eabddf39-16bb-4642-9071-a6f3c9503bd4",
-                  "heading": "Field device fan design constraints",
+                  "heading": "Field device fans managed through SRSA",
                   "additional": "<p>Requirements to support fans can be defined in a separate hardware specification.</p>",
                   "status": "current",
                   "type": "s_req",
@@ -6096,7 +6970,20 @@
                     "refine": [
                       "26048_1-366"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Field device fan design constraints"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:52:36.905Z"
+                    }
+                  ]
                 }
               ]
             },
@@ -6354,9 +7241,22 @@
                 {
                   "id": "1361",
                   "guid": "acdde222-a0d5-4e36-849b-81f602b39f41",
-                  "heading": "Definition",
+                  "heading": "Field device power supply definition",
                   "status": "current",
-                  "type": "t"
+                  "type": "t",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Definition"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:54:23.154Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1362",
@@ -6421,9 +7321,22 @@
                 {
                   "id": "1373",
                   "guid": "935c16d2-c9c3-43f1-a0a8-5553c99a78c7",
-                  "heading": "Definition",
+                  "heading": "Field device processor temperature definition",
                   "status": "current",
-                  "type": "t"
+                  "type": "t",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Definition"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:54:55.686Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1374",
@@ -6545,9 +7458,22 @@
                 {
                   "id": "1363",
                   "guid": "cbb9ec56-7e02-49df-af10-029eed4320b6",
-                  "heading": "Definition",
+                  "heading": "Field device thermostat definition",
                   "status": "current",
-                  "type": "t"
+                  "type": "t",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Definition"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:55:52.623Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1415",
@@ -6975,14 +7901,27 @@
                 {
                   "id": "776",
                   "guid": "e75cb7a7-2700-435f-8b14-08be28a259f5",
-                  "heading": "Monitor log statistics for an owner",
+                  "heading": "Monitor log statistics of an owner",
                   "status": "current",
                   "type": "d_req",
                   "links": {
                     "refine": [
                       "26048_1-745"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Monitor log statistics for an owner"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T17:58:23.105Z"
+                    }
+                  ]
                 },
                 {
                   "id": "761",
@@ -7443,14 +8382,27 @@
                         {
                           "id": "642",
                           "guid": "bbf91a4a-e2da-45fa-b8a2-6cacbe5ed909",
-                          "heading": "Support non-queueable notifications",
+                          "heading": "Support for non-queueable notifications",
                           "status": "current",
                           "type": "s_req",
                           "links": {
                             "refine": [
                               "26048_1-1070"
                             ]
-                          }
+                          },
+                          "history": [
+                            {
+                              "attributesChanged": {
+                                "heading": "Support non-queueable notifications"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-01-23T18:03:12.478Z"
+                            }
+                          ]
                         },
                         {
                           "id": "643",
@@ -7659,26 +8611,52 @@
                         {
                           "id": "1394",
                           "guid": "bd77f50e-d2c4-4a63-ad99-7afaa7363eca",
-                          "heading": "Process the next notification when 'pending'",
+                          "heading": "Identify the next notification when 'pending'",
                           "status": "current",
                           "type": "s_req",
                           "links": {
                             "refine": [
                               "26048_1-1070"
                             ]
-                          }
+                          },
+                          "history": [
+                            {
+                              "attributesChanged": {
+                                "heading": "Process the next notification when 'pending'"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-01-23T18:05:02.556Z"
+                            }
+                          ]
                         },
                         {
                           "id": "1395",
                           "guid": "66ac0f03-faa1-4634-a983-35a253ebca3f",
-                          "heading": "Process the next notification when 'error'",
+                          "heading": "Identify the next notification when 'error'",
                           "status": "current",
                           "type": "s_req",
                           "links": {
                             "refine": [
                               "26048_1-1070"
                             ]
-                          }
+                          },
+                          "history": [
+                            {
+                              "attributesChanged": {
+                                "heading": "Process the next notification when 'error'"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-01-23T18:05:14.900Z"
+                            }
+                          ]
                         },
                         {
                           "id": "1396",
@@ -9191,7 +10169,7 @@
         {
           "id": "1259",
           "guid": "b0431650-b494-4090-8de2-18e714ca0e7d",
-          "heading": "Startup feature",
+          "heading": "Start-up feature",
           "status": "current",
           "type": "feature",
           "links": {
@@ -9199,25 +10177,64 @@
               "26048_1-264"
             ]
           },
+          "history": [
+            {
+              "attributesChanged": {
+                "heading": "Startup feature"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-01-23T20:14:15.908Z"
+            }
+          ],
           "children": [
             {
               "id": "1260",
               "guid": "a17d0e4b-8395-45f4-bc48-6193bac9c990",
-              "heading": "Startup feature definition",
+              "heading": "Start-up feature definition",
               "status": "current",
-              "type": "t"
+              "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "heading": "Startup feature definition"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T20:14:21.232Z"
+                }
+              ]
             },
             {
               "id": "1261",
               "guid": "ac72ff55-76bb-4a7e-8d98-020d1ecc1b7c",
-              "heading": "Startup feature data exchange requirements",
+              "heading": "Start-up feature data exchange requirements",
               "status": "current",
               "type": "t",
+              "history": [
+                {
+                  "attributesChanged": {
+                    "heading": "Startup feature data exchange requirements"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T20:14:27.876Z"
+                }
+              ],
               "children": [
                 {
                   "id": "1262",
                   "guid": "8db7c5b7-1771-4040-b4d9-644d4a4a0328",
-                  "heading": "Configure startup retries",
+                  "heading": "Configure start-up retries",
                   "status": "current",
                   "type": "d_req",
                   "links": {
@@ -9242,13 +10259,24 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-10-30T01:11:39.831Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": "Configure startup retries"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:14:38.209Z"
                     }
                   ]
                 },
                 {
                   "id": "1263",
                   "guid": "cca93483-97c0-4de7-a60b-ec97d214c219",
-                  "heading": "Confirm startup retries",
+                  "heading": "Confirm start-up retries",
                   "status": "current",
                   "type": "d_req",
                   "links": {
@@ -9273,13 +10301,24 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-10-30T01:11:39.831Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": "Confirm startup retries"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:14:42.005Z"
                     }
                   ]
                 },
                 {
                   "id": "1264",
                   "guid": "fb247bf0-e408-489b-894d-578eba12de48",
-                  "heading": "Determine startup retry period",
+                  "heading": "Determine start-up retry period",
                   "status": "current",
                   "type": "d_req",
                   "links": {
@@ -9304,6 +10343,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-10-30T01:09:17.095Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": "Determine startup retry period"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:14:45.758Z"
                     }
                   ]
                 }
@@ -9845,13 +10895,27 @@
                   "id": "1241",
                   "guid": "9e3a1de1-77a7-443d-a458-32ee94fb5619",
                   "heading": "Number of system log entries",
+                  "additional": "<p>The field device shall support at least ____ log entries</p>",
                   "status": "current",
                   "type": "s_req",
                   "links": {
                     "refine": [
                       "Conditionals-27"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "additional": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T16:25:39.029Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1242",
@@ -10045,14 +11109,27 @@
                 {
                   "id": "1104",
                   "guid": "1d1a92f3-9d6c-4faa-be9d-e486ee65eddb",
-                  "heading": "Buffer parameter changes when in transaction",
+                  "heading": "Buffer parameter changes when in transaction mode",
                   "status": "current",
                   "type": "s_req",
                   "links": {
                     "refine": [
                       "26048_1-984"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Buffer parameter changes when in transaction"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:19:20.037Z"
+                    }
+                  ]
                 }
               ]
             }
@@ -10111,14 +11188,27 @@
                 {
                   "id": "453",
                   "guid": "4df94c30-5e87-4fba-8ae0-35af1387779c",
-                  "heading": "Configure access rights for group",
+                  "heading": "Configure access rights for a group",
                   "status": "current",
                   "type": "d_req",
                   "links": {
                     "refine": [
                       "26048_1-979"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Configure access rights for group"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:19:53.063Z"
+                    }
+                  ]
                 },
                 {
                   "id": "452",
@@ -10147,14 +11237,27 @@
                 {
                   "id": "454",
                   "guid": "4e880014-e49e-46fa-a024-26be87820607",
-                  "heading": "Confirm access rights configuration for group",
+                  "heading": "Confirm access rights configuration for a group",
                   "status": "current",
                   "type": "d_req",
                   "links": {
                     "refine": [
                       "26048_1-979"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "heading": "Confirm access rights configuration for group"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:20:12.132Z"
+                    }
+                  ]
                 },
                 {
                   "id": "450",
@@ -11631,7 +12734,7 @@
             {
               "id": "1091",
               "guid": "9159a991-be20-40ad-935e-69354e994c3f",
-              "heading": "Retrieve dynamic object data in one step",
+              "heading": "Retrieve dynamic object data",
               "status": "current",
               "type": "dia",
               "links": {
@@ -11639,6 +12742,19 @@
                   "26048_1-890"
                 ]
               },
+              "history": [
+                {
+                  "attributesChanged": {
+                    "heading": "Retrieve dynamic object data in one step"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T20:21:43.098Z"
+                }
+              ],
               "children": [
                 {
                   "id": "1171",
@@ -11655,6 +12771,7 @@
             {
               "id": "1092",
               "guid": "cc5386ec-2b44-42c5-862b-d5ea609e151f",
+              "deleted": true,
               "heading": "Retrieve dynamic object data in two steps",
               "status": "current",
               "type": "dia",
@@ -11663,68 +12780,235 @@
                   "26048_1-891"
                 ]
               },
+              "history": [
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T20:22:07.217Z"
+                }
+              ],
               "children": [
                 {
                   "id": "1174",
                   "guid": "9f21cd29-bdd5-4d59-8034-e830acd532bf",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:07.217Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1177",
                   "guid": "661809c3-8f6a-4f20-b6b1-e5381b1b6596",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:07.217Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1178",
                   "guid": "e7139d5a-7709-4177-ae77-1bfa4c1090ab",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:07.217Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1179",
                   "guid": "979d6b9a-6e1c-4206-a8f4-75e8d6224a85",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:07.217Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1180",
                   "guid": "96821726-26e7-4f30-afce-1b4e52fe4357",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:07.217Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1199",
                   "guid": "0d1fa14e-bc97-4196-aa57-8e0d71ccffa2",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:07.217Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1200",
                   "guid": "3015f337-a2db-4744-8687-6ef035414b2f",
-                  "type": "l2"
+                  "deleted": true,
+                  "type": "l2",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:07.217Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1201",
                   "guid": "765cc6e4-f62e-44b0-bbcd-3ca9ce1badfe",
-                  "type": "l2"
+                  "deleted": true,
+                  "type": "l2",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:07.217Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1202",
                   "guid": "188f32db-bb1a-4178-9c4e-c38d2c562ce3",
-                  "type": "l2"
+                  "deleted": true,
+                  "type": "l2",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:07.217Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1203",
                   "guid": "53585047-67cc-4f90-b307-2d6d0012e3fd",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:07.217Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1175",
                   "guid": "38ffe613-62c4-419d-8cf2-d98805888817",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:07.217Z"
+                    }
+                  ]
                 }
               ]
             },
             {
               "id": "1093",
               "guid": "6132e0c4-f9ae-49a6-bfa5-e2dda20a3c2a",
-              "heading": "Set dynamic object data in one step",
+              "heading": "Set dynamic object data",
               "status": "current",
               "type": "dia",
               "links": {
@@ -11732,6 +13016,19 @@
                   "26048_1-892"
                 ]
               },
+              "history": [
+                {
+                  "attributesChanged": {
+                    "heading": "Set dynamic object data in one step"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T20:22:22.477Z"
+                }
+              ],
               "children": [
                 {
                   "id": "1176",
@@ -11768,6 +13065,7 @@
             {
               "id": "1094",
               "guid": "242fb865-4217-42ee-b079-bc1317ecebf1",
+              "deleted": true,
               "heading": "Set dynamic object data in two steps",
               "status": "current",
               "type": "dia",
@@ -11776,76 +13074,285 @@
                   "26048_1-893"
                 ]
               },
+              "history": [
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-23T20:22:25.469Z"
+                }
+              ],
               "children": [
                 {
                   "id": "1173",
                   "guid": "3321f735-5708-4a75-93b8-ef4926f38faf",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:25.469Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1183",
                   "guid": "7686a311-c64a-4341-8679-1a933ae34a4f",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:25.469Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1185",
                   "guid": "9f7c6dfe-4003-41c5-b309-92a2d4cb048d",
-                  "type": "l2"
+                  "deleted": true,
+                  "type": "l2",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:25.469Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1186",
                   "guid": "d9d66443-6c1a-4bf8-9600-48d0ddca1746",
-                  "type": "l2"
+                  "deleted": true,
+                  "type": "l2",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:25.469Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1184",
                   "guid": "596d5671-f960-4143-8f74-ef35d971fd9b",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:25.469Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1182",
                   "guid": "5d664118-2f92-4c59-b15c-9619e7365d33",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:25.469Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1192",
                   "guid": "df6b7a0d-e5b2-4ec9-8986-bda1aeb9f0bf",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:25.469Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1193",
                   "guid": "4cf81538-68cb-4c33-9797-f1e7de015a3b",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:25.469Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1194",
                   "guid": "5ef9d573-6f63-4af0-b7c2-909835f4e472",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:25.469Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1187",
                   "guid": "dee0c5f9-6259-480e-9782-7ddbfd90e2aa",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:25.469Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1195",
                   "guid": "4eecedcd-33c7-4626-bc17-29356f2922a4",
-                  "type": "l2"
+                  "deleted": true,
+                  "type": "l2",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:25.469Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1196",
                   "guid": "df15c47e-fa37-4227-9d66-0b56178ed47d",
-                  "type": "l2"
+                  "deleted": true,
+                  "type": "l2",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:25.469Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1197",
                   "guid": "239e633a-617f-44f6-a620-3dffa1a9c0d8",
-                  "type": "l2"
+                  "deleted": true,
+                  "type": "l2",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:25.469Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1198",
                   "guid": "7b191a9a-3287-41db-9e2d-3fce262a4d06",
-                  "type": "l1"
+                  "deleted": true,
+                  "type": "l1",
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-23T20:22:25.469Z"
+                    }
+                  ]
                 }
               ]
             },
@@ -11911,8 +13418,21 @@
         {
           "id": "204",
           "guid": "D4743D59-CB9D-4D80-B7EF-20F576CB9578",
-          "heading": "Security recommendation",
+          "heading": "Security recommendations",
           "type": "t",
+          "history": [
+            {
+              "attributesChanged": {
+                "heading": "Security recommendation"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-01-23T20:30:39.901Z"
+            }
+          ],
           "children": [
             {
               "id": "205",

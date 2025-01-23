@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-23T21:38:04.008Z",
+  "lastChangedOn": "2025-01-23T22:00:58.458Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -761,36 +761,6 @@
       "type": "ot"
     },
     {
-      "id": "35",
-      "guid": "BCD4189C-A9FE-4A3F-9284-D162199B852B",
-      "deleted": true,
-      "heading": "fdLogSnapshotFactoryStorageType",
-      "access": "read-create",
-      "oid": "fdLogSnapshotFactoryEntry 9",
-      "status": "current",
-      "syntax": "StorageType",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-783",
-          "26048_1-784"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:36:07.766Z"
-        }
-      ]
-    },
-    {
       "id": "36",
       "guid": "8A612308-1301-4C79-A4B6-0E165AA37E15",
       "heading": "fdLogSnapshotFactoryRowStatus",
@@ -896,35 +866,6 @@
       }
     },
     {
-      "id": "44",
-      "guid": "595EB57A-4F96-414A-B170-231A8B6CED70",
-      "deleted": true,
-      "heading": "fdLogClassClearDate",
-      "access": "read-create",
-      "oid": "fdLogClassEntry 5",
-      "status": "current",
-      "syntax": "ITSDateStamp",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-769"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:36:38.591Z"
-        }
-      ]
-    },
-    {
       "id": "45",
       "guid": "8A6CBEDD-5D2C-4622-80AA-8953FEFBF829",
       "heading": "fdLogClassClearTime",
@@ -983,36 +924,6 @@
           "26048_1-761"
         ]
       }
-    },
-    {
-      "id": "49",
-      "guid": "3A7426CD-8A30-4DAB-B8F9-65E95ECC4C6D",
-      "deleted": true,
-      "heading": "fdLogClassStorageType",
-      "access": "read-create",
-      "oid": "fdLogClassEntry 10",
-      "status": "current",
-      "syntax": "StorageType",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-755",
-          "26048_1-760"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:36:55.228Z"
-        }
-      ]
     },
     {
       "id": "50",
@@ -1102,35 +1013,6 @@
       }
     },
     {
-      "id": "57",
-      "guid": "70DA80BC-3119-4CFD-B846-9E14704C519F",
-      "deleted": true,
-      "heading": "fdLogEventDate",
-      "access": "read-only",
-      "oid": "fdLogEntry 4",
-      "status": "current",
-      "syntax": "ITSDateStamp",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-749"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:37:23.323Z"
-        }
-      ]
-    },
-    {
       "id": "58",
       "guid": "BA9483FB-6BAE-477F-ABF3-369EED3F2431",
       "heading": "fdLogEventTime",
@@ -1144,35 +1026,6 @@
           "26048_1-749"
         ]
       }
-    },
-    {
-      "id": "59",
-      "guid": "A454E840-466C-48D2-A9C2-AB7F93DC3904",
-      "deleted": true,
-      "heading": "fdLogDate",
-      "access": "read-only",
-      "oid": "fdLogEntry 6",
-      "status": "current",
-      "syntax": "ITSDateStamp",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-749"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:37:32.839Z"
-        }
-      ]
     },
     {
       "id": "60",
@@ -1245,29 +1098,6 @@
       "type": "mc"
     },
     {
-      "id": "67",
-      "guid": "DC3B8396-4789-4A4D-BDC8-2E541928FA1A",
-      "deleted": true,
-      "heading": "fdLogAdminGroupV1",
-      "oid": "fdLogGroups 1",
-      "status": "current",
-      "syntax": "{ fdAdminLogsTotalSnapshots,<br> fdAdminLogsTotalBumps,<br> fdAdminLogsDeleteAllConfiguration,<br> fdAdminLogsClearAllLogs,<br> fdOwnerLogMaxFactories,<br> fdOwnerLogMaxClasses,<br> fdOwnerLogMaxClassEntries,<br> fdOwnerLogMaxStorage,<br> fdOwnerLogSnapshots,<br> fdOwnerLogBumps,<br> fdOwnerLogDeleteConfigs,<br> fdOwnerLogClearLogs<br> }",
-      "type": "og",
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:37:56.345Z"
-        }
-      ]
-    },
-    {
       "id": "68",
       "guid": "CC737FD7-A0B3-4B7F-9E87-7D96D4026855",
       "heading": "fdLogConfigGroupV1",
@@ -1275,29 +1105,6 @@
       "status": "current",
       "syntax": "{ fdLogsRecordingLatency,<br> fdLogsMaxVariableSize,<br> fdLogSnapshotFactoryDescription,<br> fdLogSnapshotFactoryObjectContext,<br> fdLogSnapshotFactoryObjectID,<br> fdLogSnapshotFactoryLogClass,<br> fdLogSnapshotFactoryStorageType,<br> fdLogSnapshotFactoryRowStatus,<br> fdLogClassDescription,<br> fdLogClassSizeLimit,<br> fdLogClassEntryLimit,<br> fdLogClassClearDate,<br> fdLogClassClearTime,<br> fdLogClassSnapshots,<br> fdLogClassBumps,<br> fdLogClassTimeStamp,<br> fdLogClassStorageType,<br> fdLogClassRowStatus<br> }",
       "type": "og"
-    },
-    {
-      "id": "69",
-      "guid": "946BDF08-75EE-40EB-B49B-671568A938DB",
-      "deleted": true,
-      "heading": "fdLogRetrievalGroupV1",
-      "oid": "fdLogGroups 3",
-      "status": "current",
-      "syntax": "{ fdLogFactory,<br> fdLogValue,<br> fdLogEventDate,<br> fdLogEventTime,<br> fdLogDate,<br> fdLogTime,<br> fdLogDataLatency<br> }",
-      "type": "og",
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:38:04.008Z"
-        }
-      ]
     },
     {
       "id": "70",

@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-06T22:35:01.602Z",
+  "lastChangedOn": "2025-01-23T22:03:52.273Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -222,13 +222,26 @@
       "heading": "Two-Step DynObj (twoStep:)",
       "reference": "ISO 20684-7&sect;7.4.3.6",
       "links": {
-        "condRef": [
-          "26048_1-910"
-        ],
         "conditional": [
           "26048_1-884"
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-23T22:03:52.273Z",
+          "removedLink": {
+            "target": [
+              "26048_1-910"
+            ],
+            "type": "condRef"
+          }
+        }
+      ]
     },
     {
       "id": "8",
@@ -236,13 +249,28 @@
       "heading": "Two-Step Set DynObj",
       "links": {
         "condRef": [
-          "26048_1-909",
-          "26048_1-910"
+          "26048_1-909"
         ],
         "conditional": [
           "26048_1-884"
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-23T22:03:52.273Z",
+          "removedLink": {
+            "target": [
+              "26048_1-910"
+            ],
+            "type": "condRef"
+          }
+        }
+      ]
     },
     {
       "id": "27",

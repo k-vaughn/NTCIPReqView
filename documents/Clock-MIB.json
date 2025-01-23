@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-23T20:50:03.337Z",
+  "lastChangedOn": "2025-01-23T22:02:20.131Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -67,37 +67,6 @@
           "26048_1-829"
         ]
       }
-    },
-    {
-      "id": "7",
-      "guid": "AAEA3215-CF81-406B-88B8-455089B9A2AC",
-      "deleted": true,
-      "heading": "fdClockUtcDate",
-      "access": "read-write",
-      "defval": "'07D00101'H",
-      "oid": "fdClockUtc 2",
-      "status": "current",
-      "syntax": "ITSDateStamp",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-827",
-          "26048_1-829"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T20:44:03.117Z"
-        }
-      ]
     },
     {
       "id": "8",
@@ -222,35 +191,6 @@
           "26048_1-825"
         ]
       }
-    },
-    {
-      "id": "16",
-      "guid": "15208660-82E4-4B72-B105-1E6D927BC35E",
-      "deleted": true,
-      "heading": "fdClockLastSyncDate",
-      "access": "read-only",
-      "oid": "fdClockUtc 11",
-      "status": "current",
-      "syntax": "ITSDateStamp",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-825"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T20:44:55.790Z"
-        }
-      ]
     },
     {
       "id": "17",
@@ -422,35 +362,6 @@
           "26048_1-847"
         ]
       }
-    },
-    {
-      "id": "28",
-      "guid": "187B4875-8B6D-4F91-8CD7-EDAADFC66CF1",
-      "deleted": true,
-      "heading": "fdClockLocalDate",
-      "access": "read-only",
-      "oid": "fdClockLocal 3",
-      "status": "current",
-      "syntax": "ITSDateStamp",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-848"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T20:45:49.575Z"
-        }
-      ]
     },
     {
       "id": "29",
@@ -754,36 +665,6 @@
           "26048_1-856"
         ]
       }
-    },
-    {
-      "id": "48",
-      "guid": "A69C4482-3155-4854-A543-EDD3A661583E",
-      "deleted": true,
-      "heading": "fdClockDstStorageType",
-      "access": "read-create",
-      "oid": "fdClockDstEntry 14",
-      "status": "current",
-      "syntax": "StorageType",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-854",
-          "26048_1-855"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T20:48:47.401Z"
-        }
-      ]
     },
     {
       "id": "49",

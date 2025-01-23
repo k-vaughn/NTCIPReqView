@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-23T21:55:32.777Z",
+  "lastChangedOn": "2025-01-23T22:00:29.372Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -872,36 +872,6 @@
       "type": "ot"
     },
     {
-      "id": "40",
-      "guid": "67F58D30-3243-4E89-A3E4-AB0692DE8C07",
-      "deleted": true,
-      "heading": "fdNotifyFactoryStorageType",
-      "access": "read-create",
-      "oid": "fdNotifyFactoryEntry 15",
-      "status": "current",
-      "syntax": "StorageType",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-621",
-          "26048_1-628"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:44:54.021Z"
-        }
-      ]
-    },
-    {
       "id": "41",
       "guid": "41584C91-88A1-4431-818D-7F74E74B1D00",
       "heading": "fdNotifyFactoryRowStatus",
@@ -1440,36 +1410,6 @@
       ]
     },
     {
-      "id": "56",
-      "guid": "4FC7C711-7F12-4BEA-84CE-B3692FB3F90F",
-      "deleted": true,
-      "heading": "fdNotifyChannelStorageType",
-      "access": "read-create",
-      "oid": "fdNotifyChannelEntry 12",
-      "status": "current",
-      "syntax": "StorageType",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-651",
-          "26048_1-657"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:46:13.489Z"
-        }
-      ]
-    },
-    {
       "id": "57",
       "guid": "E1897947-2D37-4C59-9779-D0C85A731A3C",
       "heading": "fdNotifyChannelRowStatus",
@@ -1678,33 +1618,6 @@
       }
     },
     {
-      "id": "80",
-      "guid": "31c59bd3-8e0a-4b2a-8153-d1593237b9ea",
-      "deleted": true,
-      "heading": "fdNotifyIndependentMapStorageType",
-      "access": "read-create",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-1290",
-          "26048_1-1291"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:53:31.344Z"
-        }
-      ]
-    },
-    {
       "id": "81",
       "guid": "1f938f3c-eb4a-47a0-8bf2-ce9a06b301b9",
       "heading": "fdNotifyIndependentMapRowStatus",
@@ -1810,29 +1723,6 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:54:24.556Z"
-        }
-      ]
-    },
-    {
-      "id": "67",
-      "guid": "EA9B7F2F-6645-4D04-937C-76C4D9A1573E",
-      "deleted": true,
-      "heading": "fdNotifyAdminGroupV1",
-      "oid": "fdNotifyGroups 1",
-      "status": "current",
-      "syntax": "<p>{ fdAdminNotifyEnabled,</p><p>fdAdminNotifyTotalSnapshots,</p><p>fdAdminNotifyTotalPackets,</p><p>fdAdminNotifyTotalDrops,</p><p>fdAdminNotifyTotalFailures,</p><p>fdOwnerNotifyMaxFactories,</p><p>fdOwnerNotifyMaxChannels,</p><p>fdOwnerNotifySnapshots,</p><p>fdOwnerNotifyPackets,</p><p>fdOwnerNotifyDrops,</p><p>fdOwnerNotifyFailures</p><p>}</p>",
-      "type": "og",
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:54:39.400Z"
         }
       ]
     },

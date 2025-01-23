@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-23T21:07:56.154Z",
+  "lastChangedOn": "2025-01-23T22:01:51.304Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -960,29 +960,6 @@
       "status": "current",
       "syntax": "{ fdCondTriggerAdminGroupV1,<br> fdCondTriggerGroupV1<br> }",
       "type": "mc"
-    },
-    {
-      "id": "54",
-      "guid": "7631820B-543A-4862-89F7-31C992BD76BE",
-      "deleted": true,
-      "heading": "fdCondTriggerAdminGroupV1",
-      "oid": "fdCondTriggerGroups 1",
-      "status": "current",
-      "syntax": "{ fdAdminCondTriggersTotalEvalErrs,<br> fdAdminCondTriggersTotalFires,<br> fdAdminCondTriggersTotalCallErrs,<br> fdOwnerCondTriggerMaxRows,<br> fdOwnerCondTriggerEvalErrs,<br> fdOwnerCondTriggerFires,<br> fdOwnerCondTriggerCallErrs<br> }",
-      "type": "og",
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:07:56.154Z"
-        }
-      ]
     },
     {
       "id": "55",

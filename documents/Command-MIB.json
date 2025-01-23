@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-23T21:00:21.191Z",
+  "lastChangedOn": "2025-01-23T22:02:03.977Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -658,35 +658,6 @@
       }
     },
     {
-      "id": "35",
-      "guid": "A4483C51-80E7-498C-B339-56AC919F16AA",
-      "deleted": true,
-      "heading": "fdCommandLastAttemptDate",
-      "access": "read-only",
-      "oid": "fdCommandEntry 13",
-      "status": "current",
-      "syntax": "ITSDateStamp",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-806"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T20:56:49.185Z"
-        }
-      ]
-    },
-    {
       "id": "36",
       "guid": "372A79CB-DDBA-462C-B583-E58E5B157196",
       "heading": "fdCommandLastAttemptTime",
@@ -765,35 +736,6 @@
       }
     },
     {
-      "id": "41",
-      "guid": "B04DCE35-8B93-4081-A055-915D806C3989",
-      "deleted": true,
-      "heading": "fdCommandLastResponseDate",
-      "access": "read-only",
-      "oid": "fdCommandEntry 19",
-      "status": "current",
-      "syntax": "ITSDateStamp",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-806"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T20:57:35.168Z"
-        }
-      ]
-    },
-    {
       "id": "42",
       "guid": "AA0FACD3-4FF9-4F6E-BB62-A5C5EF8C3B24",
       "heading": "fdCommandLastResponseTime",
@@ -807,36 +749,6 @@
           "26048_1-806"
         ]
       }
-    },
-    {
-      "id": "43",
-      "guid": "F5A40627-4A2E-495D-A360-C42303CE9884",
-      "deleted": true,
-      "heading": "fdCommandStorageType",
-      "access": "read-create",
-      "oid": "fdCommandEntry 21",
-      "status": "current",
-      "syntax": "StorageType",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-804",
-          "26048_1-805"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T20:58:06.877Z"
-        }
-      ]
     },
     {
       "id": "44",
@@ -895,29 +807,6 @@
       "status": "current",
       "syntax": "{ fdCommandAdminGroupV1,<br> fdCommandGroupV1<br> }",
       "type": "mc"
-    },
-    {
-      "id": "50",
-      "guid": "B72F1BAA-A522-47C4-B5F8-C172D4EF21C0",
-      "deleted": true,
-      "heading": "fdCommandAdminGroupV1",
-      "oid": "fdCommandGroups 1",
-      "status": "current",
-      "syntax": "{ fdAdminCommandCalls,<br> fdAdminCommandAttempts,<br> fdAdminCommandResponses,<br> fdAdminCommandErrors,<br> fdOwnerCommandMaxRows,<br> fdOwnerCommandCalls,<br> fdOwnerCommandAttempts,<br> fdOwnerCommandResponses,<br> fdOwnerCommandErrors<br> }",
-      "type": "og",
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:00:21.191Z"
-        }
-      ]
     },
     {
       "id": "51",

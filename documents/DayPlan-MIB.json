@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-23T21:20:07.333Z",
+  "lastChangedOn": "2025-01-23T22:07:07.469Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -220,36 +220,6 @@
       }
     },
     {
-      "id": "14",
-      "guid": "1F315AB8-1BDC-475C-A054-4D536585792B",
-      "deleted": true,
-      "heading": "fdDayPlanScheduleStorageType",
-      "access": "read-create",
-      "oid": "fdDayPlanScheduleEntry 7",
-      "status": "current",
-      "syntax": "StorageType",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-505",
-          "26048_1-506"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:17:06.649Z"
-        }
-      ]
-    },
-    {
       "id": "15",
       "guid": "2A935BC3-55C5-46E6-BFFD-FB1D7624A53E",
       "heading": "fdDayPlanScheduleRowStatus",
@@ -454,36 +424,6 @@
           "26048_1-514"
         ]
       }
-    },
-    {
-      "id": "26",
-      "guid": "F696554E-B168-4287-A1FA-231F066EF3C9",
-      "deleted": true,
-      "heading": "fdDayPlanStorageType",
-      "access": "read-create",
-      "oid": "fdDayPlanEntry 3",
-      "status": "current",
-      "syntax": "StorageType",
-      "type": "ot",
-      "links": {
-        "satisfies": [
-          "26048_1-513",
-          "26048_1-514"
-        ]
-      },
-      "history": [
-        {
-          "attributesChanged": {
-            "deleted": null
-          },
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T21:18:29.521Z"
-        }
-      ]
     },
     {
       "id": "27",

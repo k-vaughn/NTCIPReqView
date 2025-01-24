@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-23T22:03:52.273Z",
+  "lastChangedOn": "2025-01-24T15:21:11.102Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -215,62 +215,6 @@
           "26048_1-819"
         ]
       }
-    },
-    {
-      "id": "6",
-      "guid": "dfb9a323-04f0-41e8-b8cc-cd97d892bc13",
-      "heading": "Two-Step DynObj (twoStep:)",
-      "reference": "ISO 20684-7&sect;7.4.3.6",
-      "links": {
-        "conditional": [
-          "26048_1-884"
-        ]
-      },
-      "history": [
-        {
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T22:03:52.273Z",
-          "removedLink": {
-            "target": [
-              "26048_1-910"
-            ],
-            "type": "condRef"
-          }
-        }
-      ]
-    },
-    {
-      "id": "8",
-      "guid": "68d9600d-4b5b-46a2-855d-232d49d699aa",
-      "heading": "Two-Step Set DynObj",
-      "links": {
-        "condRef": [
-          "26048_1-909"
-        ],
-        "conditional": [
-          "26048_1-884"
-        ]
-      },
-      "history": [
-        {
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-01-23T22:03:52.273Z",
-          "removedLink": {
-            "target": [
-              "26048_1-910"
-            ],
-            "type": "condRef"
-          }
-        }
-      ]
     },
     {
       "id": "27",

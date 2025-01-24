@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-23T22:00:29.372Z",
+  "lastChangedOn": "2025-01-24T16:23:56.628Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -68,6 +68,13 @@
       "id": "95",
       "guid": "7c594d17-d433-497b-941a-2646a6ec9f6e",
       "heading": "fdNotifyAdminMaxFactories",
+      "access": "read-only",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-1442"
+        ]
+      },
       "history": [
         {
           "affectedNodeId": "#",
@@ -90,6 +97,42 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:39:27.027Z"
+        },
+        {
+          "attributesChanged": {
+            "type": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:10:11.388Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:10:15.718Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-1442"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:13:18.874Z"
         }
       ]
     },
@@ -97,6 +140,13 @@
       "id": "96",
       "guid": "7befac96-b78d-4723-b661-434e6ef35dda",
       "heading": "fdNotifyAdminMaxChannels",
+      "access": "read-only",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-1442"
+        ]
+      },
       "history": [
         {
           "affectedNodeId": "#",
@@ -119,6 +169,42 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:39:35.698Z"
+        },
+        {
+          "attributesChanged": {
+            "type": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:10:11.388Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:10:15.718Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-1442"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:13:18.874Z"
         }
       ]
     },
@@ -126,6 +212,13 @@
       "id": "97",
       "guid": "b3be04ce-d0ae-4f7c-a8a8-b4a6b9516306",
       "heading": "fdNotifyAdminMaxIndependentMaps",
+      "access": "read-only",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-1442"
+        ]
+      },
       "history": [
         {
           "affectedNodeId": "#",
@@ -148,6 +241,42 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:39:46.218Z"
+        },
+        {
+          "attributesChanged": {
+            "type": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:10:11.388Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:10:15.718Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-1442"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:13:18.874Z"
         }
       ]
     },
@@ -162,7 +291,8 @@
       "type": "ot",
       "links": {
         "satisfies": [
-          "26048_1-663"
+          "26048_1-663",
+          "26048_1-1443"
         ]
       },
       "history": [
@@ -176,6 +306,20 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:40:12.797Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-1443"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:15:26.036Z"
         }
       ]
     },
@@ -449,6 +593,14 @@
       "id": "98",
       "guid": "0d26c3a7-d125-4749-bcbc-f3b07a3c70c4",
       "heading": "fdNotifyOwnerMaxIndependentMaps",
+      "access": "read-create",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-634",
+          "26048_1-635"
+        ]
+      },
       "history": [
         {
           "affectedNodeId": "#",
@@ -471,6 +623,43 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:43:47.490Z"
+        },
+        {
+          "attributesChanged": {
+            "type": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:16:18.754Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-634",
+              "26048_1-635"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:16:48.873Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:17:10.484Z"
         }
       ]
     },
@@ -963,34 +1152,112 @@
       "id": "87",
       "guid": "91c5c383-4b22-4793-900a-7758a66ff418",
       "heading": "fdNotifyChannelMaxRetries",
+      "access": "read-create",
+      "type": "ot",
       "links": {
         "satisfies": [
           "26048_1-651",
           "26048_1-657"
         ]
-      }
+      },
+      "history": [
+        {
+          "attributesChanged": {
+            "type": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:17:23.272Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:18:23.385Z"
+        }
+      ]
     },
     {
       "id": "88",
       "guid": "2593cad3-4275-486a-8667-d65a48869514",
       "heading": "fdNotifyChannelRetryInterval",
+      "access": "read-create",
+      "type": "ot",
       "links": {
         "satisfies": [
           "26048_1-651",
           "26048_1-657"
         ]
-      }
+      },
+      "history": [
+        {
+          "attributesChanged": {
+            "type": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:17:23.272Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:18:23.385Z"
+        }
+      ]
     },
     {
       "id": "89",
       "guid": "108da1c6-6b08-48e4-a1be-d973e60ad9e4",
       "heading": "fdNotifyChannelRetryDelta",
+      "access": "read-create",
+      "type": "ot",
       "links": {
         "satisfies": [
           "26048_1-651",
           "26048_1-657"
         ]
-      }
+      },
+      "history": [
+        {
+          "attributesChanged": {
+            "type": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:17:23.272Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:18:23.385Z"
+        }
+      ]
     },
     {
       "id": "48",
@@ -1047,7 +1314,14 @@
       "id": "99",
       "guid": "01c1d4f5-6b7a-4e04-a147-4c0182e8af44",
       "heading": "fdNotifyChannelTransmitSize",
+      "access": "read-create",
       "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-651",
+          "26048_1-657"
+        ]
+      },
       "history": [
         {
           "affectedNodeId": "#",
@@ -1092,6 +1366,32 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:50:31.921Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:18:53.204Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-651",
+              "26048_1-657"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:19:57.792Z"
         }
       ]
     },
@@ -1099,7 +1399,14 @@
       "id": "100",
       "guid": "d783fda9-7342-49d7-9439-16b45fc3c1cc",
       "heading": "fdNotifyChannelMaxAggCount",
+      "access": "read-create",
       "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-651",
+          "26048_1-657"
+        ]
+      },
       "history": [
         {
           "affectedNodeId": "#",
@@ -1144,6 +1451,32 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:50:31.921Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:18:53.204Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-651",
+              "26048_1-657"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:19:57.792Z"
         }
       ]
     },
@@ -1151,7 +1484,14 @@
       "id": "101",
       "guid": "38147364-bbb3-4876-b023-24ea99efa851",
       "heading": "fdNotifyChannelTransmitAggCount",
+      "access": "read-create",
       "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-651",
+          "26048_1-657"
+        ]
+      },
       "history": [
         {
           "affectedNodeId": "#",
@@ -1196,6 +1536,32 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:50:31.921Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:18:53.204Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-651",
+              "26048_1-657"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:19:57.792Z"
         }
       ]
     },
@@ -1293,6 +1659,7 @@
       "id": "90",
       "guid": "a0fcc7c7-aa52-4e76-9a7a-66bcc31df32b",
       "heading": "fdNotifyChannelGuaranteeStatus",
+      "access": "read-only",
       "type": "ot",
       "links": {
         "satisfies": [
@@ -1310,6 +1677,17 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:50:42.948Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:23:35.598Z"
         }
       ]
     },
@@ -1317,6 +1695,7 @@
       "id": "91",
       "guid": "2015d607-36c9-44b7-94f9-5c3a5f3d1b22",
       "heading": "fdNotifyChannelGuaranteeNum",
+      "access": "read-only",
       "type": "ot",
       "links": {
         "satisfies": [
@@ -1334,6 +1713,17 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:50:42.948Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:23:35.598Z"
         }
       ]
     },
@@ -1341,6 +1731,7 @@
       "id": "92",
       "guid": "6c4126ae-2d71-4c1a-9728-b3f81ceb336c",
       "heading": "fdNotifyChannelGuaranteeNumAck",
+      "access": "read-create",
       "type": "ot",
       "links": {
         "satisfies": [
@@ -1358,6 +1749,17 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:50:42.948Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:23:38.966Z"
         }
       ]
     },
@@ -1365,6 +1767,7 @@
       "id": "94",
       "guid": "dabd923c-9893-44ec-a050-ae80faf46a11",
       "heading": "fdNotifyChannelGuaranteeData",
+      "access": "read-only",
       "type": "ot",
       "links": {
         "satisfies": [
@@ -1382,6 +1785,17 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:50:42.948Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:23:56.628Z"
         }
       ]
     },
@@ -1389,6 +1803,7 @@
       "id": "93",
       "guid": "0e1db043-8679-43ec-9ca3-34213568e7d6",
       "heading": "fdNotifyChannelErrorStatus",
+      "access": "read-only",
       "type": "ot",
       "links": {
         "satisfies": [
@@ -1406,6 +1821,17 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:50:42.948Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T16:23:56.628Z"
         }
       ]
     },
@@ -1945,7 +2371,7 @@
   "templateColumns": {
     "2112b8ee-ce16-468f-9082-4f496f71857f": {
       "label": "Errors",
-      "template": "{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-only\") (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\"))) (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies link\" link</div>\n  {{/if}}\n{{/if}}"
+      "template": "{{#unless type}}\n  <li>Missing \"type\"</li>\n{{/unless}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#unless heading}}\n    <li>Missing \"heading\"</li>\n  {{/unless}} \n  {{#unless access}}\n    <li>Missing \"access\"</li>\n  {{/unless}}\n  {{#if (eval access \"!=\" \"not-accessible\")}}\n    {{#if (hasOutlinks \"satisfies\")}}\n      {{#unless (eval access \"==\" \"read-only\")}}{{#unless (eval (countOutlinks \"satisfies\") \">\" \"1\")}}\n        <li>Missing 2nd \"satisfies\" link</li>\n      {{/unless}}{{/unless}}\n    {{else}}\n      <li>Missing \"satisfies\" link</li>\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link</li>\n    {{/if}}\n  {{/if}}\n{{/if}}"
     }
   },
   "views": {

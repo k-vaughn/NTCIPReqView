@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-23T22:03:52.273Z",
+  "lastChangedOn": "2025-01-24T15:13:31.533Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -68,6 +68,13 @@
       "id": "53",
       "guid": "08538f8f-3fa9-4a26-81b0-aa8966fa979c",
       "heading": "fdDynObjAdminMaxDynObjs",
+      "access": "read-only",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-898"
+        ]
+      },
       "history": [
         {
           "affectedNodeId": "#",
@@ -90,6 +97,42 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:22:16.877Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T15:13:03.336Z"
+        },
+        {
+          "attributesChanged": {
+            "type": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T15:13:06.335Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-898"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T15:13:31.533Z"
         }
       ]
     },
@@ -918,7 +961,7 @@
   "templateColumns": {
     "a0a8251c-9f3e-430f-8e49-63f414758671": {
       "label": "Errors",
-      "template": "{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-only\") (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\"))) (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies link\" link</div>\n  {{/if}}\n{{/if}}"
+      "template": "{{#unless type}}\n  <li>Missing \"type\"</li>\n{{/unless}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#unless heading}}\n    <li>Missing \"heading\"</li>\n  {{/unless}} \n  {{#unless access}}\n    <li>Missing \"access\"</li>\n  {{/unless}}\n  {{#if (eval access \"!=\" \"not-accessible\")}}\n    {{#if (hasOutlinks \"satisfies\")}}\n      {{#unless (eval access \"==\" \"read-only\")}}{{#unless (eval (countOutlinks \"satisfies\") \">\" \"1\")}}\n        <li>Missing 2nd \"satisfies\" link</li>\n      {{/unless}}{{/unless}}\n    {{else}}\n      <li>Missing \"satisfies\" link</li>\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link</li>\n    {{/if}}\n  {{/if}}\n{{/if}}"
     }
   },
   "views": {

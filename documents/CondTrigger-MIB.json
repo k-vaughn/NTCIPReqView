@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-23T22:01:51.304Z",
+  "lastChangedOn": "2025-01-24T14:56:58.725Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -68,6 +68,13 @@
       "id": "58",
       "guid": "ef55fa52-4ecf-4620-b6de-9d49aad8b03c",
       "heading": "fdCondTriggerAdminMaxRows",
+      "access": "read-only",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-1438"
+        ]
+      },
       "history": [
         {
           "affectedNodeId": "#",
@@ -90,6 +97,42 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:01:51.953Z"
+        },
+        {
+          "attributesChanged": {
+            "type": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T14:46:04.822Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T14:46:39.630Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-1438"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T14:51:43.617Z"
         }
       ]
     },
@@ -97,6 +140,13 @@
       "id": "59",
       "guid": "f5b69c0f-5364-4d1a-94ad-a8df350a16de",
       "heading": "fdCondTriggerAdminNumRows",
+      "access": "read-only",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-568"
+        ]
+      },
       "history": [
         {
           "affectedNodeId": "#",
@@ -119,6 +169,42 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:01:39.861Z"
+        },
+        {
+          "attributesChanged": {
+            "type": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T14:46:04.822Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T14:46:39.630Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-568"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T14:52:02.919Z"
         }
       ]
     },
@@ -340,6 +426,13 @@
       "id": "60",
       "guid": "15a0220b-4e5c-42f2-ba79-f2643b15c00b",
       "heading": "fdCondTriggerOwnerNumRows",
+      "access": "read-only",
+      "type": "ot",
+      "links": {
+        "satisfies": [
+          "26048_1-573"
+        ]
+      },
       "history": [
         {
           "affectedNodeId": "#",
@@ -362,6 +455,42 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-01-23T21:05:42.659Z"
+        },
+        {
+          "attributesChanged": {
+            "access": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T14:56:35.823Z"
+        },
+        {
+          "attributesChanged": {
+            "type": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T14:56:40.321Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-573"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-24T14:56:58.725Z"
         }
       ]
     },
@@ -1123,7 +1252,7 @@
   "templateColumns": {
     "54f0f73b-4135-4673-8863-07eccf1ff778": {
       "label": "Errors",
-      "template": "{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#if (not name)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"name\" value</div>\n  {{/if}}\n  {{#if (or (not access) (eval access \"==\" \"\"))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"access\" value</div>\n  {{/if}}\n  {{#if (and (eval access \"==\" \"read-only\") (eval (hasOutlinks \"satisfies\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfies\" link</div>\n  {{/if}}\n  {{#if (and (or (eval access \"==\" \"read-write\") (eval access \"==\" \"read-create\")) (eval (countOutlinks \"satisfies\") \"<\" 2))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Should have at least two \"satisfies\" links</div>\n  {{/if}}\n{{/if}}"
+      "template": "{{#unless type}}\n  <li>Missing \"type\"</li>\n{{/unless}}\n{{#if (eval type \"==\" \"ot\")}}\n  {{#unless heading}}\n    <li>Missing \"heading\"</li>\n  {{/unless}} \n  {{#unless access}}\n    <li>Missing \"access\"</li>\n  {{/unless}}\n  {{#if (eval access \"!=\" \"not-accessible\")}}\n    {{#if (hasOutlinks \"satisfies\")}}\n      {{#unless (eval access \"==\" \"read-only\")}}{{#unless (eval (countOutlinks \"satisfies\") \">\" \"1\")}}\n        <li>Missing 2nd \"satisfies\" link</li>\n      {{/unless}}{{/unless}}\n    {{else}}\n      <li>Missing \"satisfies\" link</li>\n    {{/if}}\n  {{else}}\n    {{#if (hasOutlinks \"satisfies\")}}\n      <li>Invalid \"satisfies\" link</li>\n    {{/if}}\n  {{/if}}\n{{/if}}"
     }
   },
   "views": {

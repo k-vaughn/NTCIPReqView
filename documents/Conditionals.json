@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-24T15:21:11.102Z",
+  "lastChangedOn": "2025-01-26T22:57:55.563Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -219,28 +219,119 @@
     {
       "id": "27",
       "guid": "2a91897f-b671-4d75-bddb-b395639d0751",
-      "heading": "System Log Table",
+      "heading": "System Log Filtering",
       "links": {
         "condRef": [
-          "26048_1-1256"
+          "26048_1-1459"
         ],
         "conditional": [
           "26048_1-1228"
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-26T22:26:22.247Z",
+          "removedLink": {
+            "target": [
+              "26048_1-1256"
+            ],
+            "type": "condRef"
+          }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-26T22:30:41.402Z",
+          "removedLink": {
+            "target": [
+              "26048_1-1228"
+            ],
+            "type": "conditional"
+          }
+        },
+        {
+          "attributesChanged": {
+            "heading": "System Log Table"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-26T22:56:53.363Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-1228"
+            ],
+            "type": "conditional"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-26T22:57:23.603Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048_1-1459"
+            ],
+            "type": "condRef"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-26T22:57:55.563Z"
+        }
+      ]
     },
     {
       "id": "28",
       "guid": "002ad0c4-265f-4b06-b39f-893b665c3a0e",
       "heading": "System Log Notifications",
-      "links": {
-        "condRef": [
-          "26048_1-1242"
-        ],
-        "conditional": [
-          "26048_1-1228"
-        ]
-      }
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-26T22:26:22.247Z",
+          "removedLink": {
+            "target": [
+              "26048_1-1242"
+            ],
+            "type": "condRef"
+          }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-01-26T22:30:45.547Z",
+          "removedLink": {
+            "target": [
+              "26048_1-1228"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "29",

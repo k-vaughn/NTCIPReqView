@@ -4,13 +4,13 @@
   "lastId": 36,
   "createdOn": "2024-01-12T18:00:48.138Z",
   "createdBy": {
-    "email": "kvaughn@trevilon.com",
-    "company": "Trevilon",
-    "name": "Kenneth Vaughn"
-  },
-  "lastChangedOn": "2024-07-24T20:43:45.461Z",
-  "lastChangedBy": {
     "name": "Kenneth Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "lastChangedOn": "2025-01-26T22:04:34.642Z",
+  "lastChangedBy": {
+    "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
@@ -48,7 +48,6 @@
                   "heading": "syslogMsgTableMaxSize",
                   "links": {
                     "satisfies": [
-                      "NTCIP_1218-1112",
                       "NTCIP_1218-1116",
                       "NTCIP_1218-1120",
                       "NTCIP_1218-1123",
@@ -92,6 +91,20 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T20:43:45.461Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-26T22:04:34.642Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1218-1112"
+                        ],
+                        "type": "satisfies"
+                      }
                     }
                   ]
                 },
@@ -764,6 +777,6 @@
     }
   },
   "metadata": {
-    "format": "2.17"
+    "format": "2.20"
   }
 }

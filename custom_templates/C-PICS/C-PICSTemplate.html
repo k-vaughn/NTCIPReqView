@@ -168,7 +168,7 @@
 
 <body>
 	<h1>Consolidated Protocol Implementation Conformance Statement (C-PICS)</h1>
-	<p>The Consolidated Need to Feature (C-NTF) Traceability Table and Consolidated Feature to Requirement (CFTR) Traceability Table jointly define the Consolidated Protocol Implementation Conformance Statement (C-PICS) Proforma for the ISO 20684 series. This document provides a convenient way to specify what capabilities an implementation needs to provide in a relatively compact manner by removing all of the requirements that are mandatory in order to claim conformance to prior statements. This material can be useful for procuring entities to specify the capabilities that they need by making the appropriate selections in the Project Requirement and Additional Specification columns. Once the desired selections have been made, the document is called a completed C-PICS.</p>
+	<p>The Consolidated Need to Feature (C-NTF) Traceability Table and Consolidated Feature to Requirement (CFTR) Traceability Table jointly define the Consolidated Protocol Implementation Conformance Statement (C-PICS) Proforma for the ISO 20684 series. This document provides a convenient way to specify what capabilities an implementation needs to provide in a relatively compact manner by removing all of the requirements that are mandatory in order to claim conformance to prior statements. This material can be useful for procuring entities to specify the capabilities that they need by making the appropriate selections in the Project Requirement and Additional Specification columns. Once the desired selections have been made, the document is called a completed C-PICS. This document is provided as a convenience, but the information contained herein is informative. Actual conformance is defined in the NTFT, FTRT, and RTM files.</p>
 	<p>For an implementation to claim compliance with a completed PICS, it shall satisfy</p>
 	<ol>
 		<li>all mandatory requirements of mandatory user needs defined in the ISO 20684 series;</li>
@@ -198,7 +198,7 @@
 				</td>
 				{{set "conf" (formatString conformance)}}
 				<td class="newrow con-col">{{get "conf"}}</td>
-				<td class="newrow con-col">Yes {{#if (searchString (get "conf") "O")}}No{{/if}} {{#if (searchString (get "conf") ":")}}N/A{{/if}}</td>
+				<td class="newrow con-col">Yes {{#if (eval (get "conf") "==" "")}}No{{/if}}{{#if (searchString (get "conf") "O")}}No{{/if}} {{#if (searchString (get "conf") ":")}}N/A{{/if}}</td>
 				<td class="newrow con-col">{{{addl}}}</td>
 			</tr>
 			{{set "opt_constraint" ""}}

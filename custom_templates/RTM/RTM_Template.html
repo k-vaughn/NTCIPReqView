@@ -64,6 +64,7 @@
 {{var "opt_constraint" ""}}
 {{var "cond_constraint" ""}}
 {{var "code" ""}}
+{{var "note" ""}}
 
 {{#*inline "direct"}}
 	{{#ifHasInlinks "satisfies"}}{{#eachInlinkWith type="satisfies"}}
@@ -71,8 +72,23 @@
 			<td class="mib-col">&nbsp;</td>
 			<td class="mib-col">{{docName}}</td>
 			<td class="obj-col" colspan="2">{{heading}}</td>
+      <td class="obj-col">&nbsp;</td>
 		</tr>
     {{/eachInlinkWith}}{{/ifHasInlinks}}
+{{/inline}}
+
+{{#*inline "indirect"}}
+	{{#eachInlinkWith type="satisfiesWithNote"}}
+		{{set "note" text}}
+		{{#eachInlinkWith type="satisfies"}}
+			<tr>
+				<td class="mib-col">&nbsp;</td>
+				<td class="mib-col">{{docName}}</td>
+				<td class="obj-col" colspan="2">{{heading}}</td>
+				<td class="obj-col"> {{formatString (get "note")}}</td>
+			</tr>
+		{{/eachInlinkWith}}
+    {{/eachInlinkWith}}
 {{/inline}}
 
 <body>
@@ -83,6 +99,7 @@
           <th>MIB</th>
           <th>Object</th>
           <th>Dialogue</th>
+          <th>Notes</th>
         </tr>
       </thead>
       <tbody>
@@ -91,7 +108,7 @@
 				<td class="newrow req-col" colspan="3">
 					{{docName}}, {{sectionNumber}}: {{{heading}}}
 				</td>
-				<td class="newrow dia-col">
+				<td class="newrow dia-col" colspan="2">
 					{{#eachInlinkWith type="implement"}}
 					{{docName}}, {{{sectionNumber}}}: {{{heading}}}
 					{{/eachInlinkWith}}
@@ -100,6 +117,7 @@
 			{{set "opt_constraint" ""}}
 			{{set "cond_constraint" ""}}
 			{{> direct}}
+      {{> indirect}}
         {{/ifHasInlinks}}
         {{/eachDocumentObject}}
       </tbody>

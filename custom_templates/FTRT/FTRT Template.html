@@ -142,7 +142,7 @@
         </tr>
       </thead>
       <tbody>
-        {{#eachDocumentObject}}{{#ifHasInlinks "refine"}}
+        {{#eachDocumentObject}}{{#if (eval type "==" "feature")}}
         	<tr{{#if deleted}} class="deleted"{{/if}}>
 				<td class="newrow" colspan="4">
 					{{docName}}, {{{sectionNumber}}}: {{{heading}}}
@@ -152,7 +152,7 @@
 			{{set "cond_constraint" ""}}
 			{{> direct}}
 			{{> indirect}}
-        {{/ifHasInlinks}}
+        {{/if}}
         {{/eachDocumentObject}}
       </tbody>
     </table>

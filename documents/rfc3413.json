@@ -1,16 +1,17 @@
 {
   "id": "rfc3413",
   "guid": "0D7075AA-CB79-42D9-8A3F-4CCD21C1D6F1",
+  "name": "SNMP-TARGET-MIB",
   "lastId": 77,
   "createdOn": "2023-06-25T15:49:41",
   "createdBy": {
-    "email": "kvaughn@trevilon.com",
-    "company": "Trevilon",
-    "name": "Kenneth Vaughn"
-  },
-  "lastChangedOn": "2024-07-24T20:39:44.079Z",
-  "lastChangedBy": {
     "name": "Kenneth Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "lastChangedOn": "2025-01-27T01:48:07.826Z",
+  "lastChangedBy": {
+    "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
@@ -1185,6 +1186,6 @@
     }
   },
   "metadata": {
-    "format": "2.17"
+    "format": "2.20"
   }
 }

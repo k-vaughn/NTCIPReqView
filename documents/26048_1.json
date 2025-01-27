@@ -9,7 +9,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-01-26T23:00:23.738Z",
+  "lastChangedOn": "2025-01-27T01:24:27.361Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -3167,6 +3167,7 @@
               "id": "1422",
               "guid": "191011df-6168-4178-bd9c-b498e456bf92",
               "heading": "Action feature performance requirement",
+              "type": "s_req",
               "links": {
                 "refine": [
                   "26048_1-540"
@@ -3208,6 +3209,17 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-11-14T15:16:18.411Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-26T23:58:18.558Z"
                 }
               ]
             }
@@ -4158,9 +4170,39 @@
                   "type": "d_req",
                   "links": {
                     "refine": [
-                      "26048_1-597"
+                      "Conditionals-93"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "addedLink": {
+                        "target": [
+                          "Conditionals-93"
+                        ],
+                        "type": "refine"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-26T23:43:01.319Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-26T23:43:12.650Z",
+                      "removedLink": {
+                        "target": [
+                          "26048_1-597"
+                        ],
+                        "type": "refine"
+                      }
+                    }
+                  ]
                 },
                 {
                   "id": "572",
@@ -4203,6 +4245,7 @@
                   "id": "1438",
                   "guid": "30be9622-145b-4730-9d34-611c51955785",
                   "heading": "Determine administrative conditional trigger capabilities",
+                  "type": "d_req",
                   "links": {
                     "refine": [
                       "26048_1-557"
@@ -4266,6 +4309,17 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-01-24T15:59:27.606Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-26T23:58:56.534Z"
                     }
                   ]
                 },
@@ -4810,6 +4864,7 @@
                   "id": "1455",
                   "guid": "3d3a79d1-58fc-47c7-9e93-c8b9f3af3187",
                   "heading": "Configure the communications timeout",
+                  "type": "d_req",
                   "links": {
                     "refine": [
                       "26048_1-283"
@@ -4866,6 +4921,17 @@
                         "oldType": "satisfies"
                       },
                       "changedOn": "2025-01-26T20:41:48.905Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-26T23:59:06.833Z"
                     }
                   ]
                 },
@@ -4924,6 +4990,7 @@
                   "id": "1456",
                   "guid": "f40b28c4-983d-478f-bc5a-275577f069e6",
                   "heading": "Confirm the communications timeout configuration",
+                  "type": "d_req",
                   "links": {
                     "refine": [
                       "26048_1-283"
@@ -4976,6 +5043,17 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-01-26T20:50:28.643Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-26T23:59:15.119Z"
                     }
                   ]
                 },
@@ -6410,8 +6488,7 @@
                       "type": "d_req",
                       "links": {
                         "refine": [
-                          "26048_1-345",
-                          "Conditionals-92"
+                          "26048_1-345"
                         ]
                       },
                       "history": [
@@ -6475,6 +6552,20 @@
                             "name": "Ken Vaughn"
                           },
                           "changedOn": "2025-01-06T22:34:16.636Z"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-01-26T23:54:54.760Z",
+                          "removedLink": {
+                            "target": [
+                              "Conditionals-92"
+                            ],
+                            "type": "refine"
+                          }
                         }
                       ]
                     },
@@ -12159,6 +12250,7 @@
                   "id": "1457",
                   "guid": "8c544989-1332-4833-8497-9138bc0e7555",
                   "heading": "Generate the filtered system log file",
+                  "type": "d_req",
                   "links": {
                     "refine": [
                       "Conditionals-27"
@@ -12256,6 +12348,17 @@
                         ],
                         "type": "refine"
                       }
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-27T01:22:43.080Z"
                     }
                   ]
                 },
@@ -12318,6 +12421,7 @@
               "id": "1458",
               "guid": "8a9b74a8-5545-4057-a7f7-680cfb20af25",
               "heading": "System log feature capability requirements",
+              "type": "t",
               "history": [
                 {
                   "affectedNodeId": "1228",
@@ -12351,6 +12455,17 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-01-26T22:55:46.857Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-01-27T01:24:27.361Z"
                 }
               ],
               "children": [
@@ -12358,6 +12473,7 @@
                   "id": "1459",
                   "guid": "cdb2c84e-f15b-4093-bfac-69fd631e465f",
                   "heading": "Support filtering of the system log",
+                  "type": "s_req",
                   "links": {
                     "refine": [
                       "26048_1-1228"
@@ -12414,6 +12530,17 @@
                         "oldType": "implement"
                       },
                       "changedOn": "2025-01-26T22:58:00.130Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-01-27T01:23:07.770Z"
                     }
                   ]
                 }
@@ -12426,12 +12553,25 @@
           "guid": "dd6e2a29-27aa-4a97-8046-b69ef1e2b471",
           "heading": "Transaction feature",
           "status": "current",
-          "type": "t",
+          "type": "feature",
           "links": {
             "fulfil": [
               "26048_1-1049"
             ]
           },
+          "history": [
+            {
+              "attributesChanged": {
+                "type": "t"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-01-27T01:22:58.046Z"
+            }
+          ],
           "children": [
             {
               "id": "985",

@@ -1,16 +1,16 @@
 {
   "id": "NTCIP_1204",
   "guid": "0759092F-8D8C-4322-AAA5-017F0A4F46A1",
-  "lastId": 3304,
+  "lastId": 3305,
   "createdOn": "2023-08-03T09:58:29",
   "createdBy": {
-    "email": "kvaughn@trevilon.com",
-    "company": "Trevilon",
-    "name": "Kenneth Vaughn"
-  },
-  "lastChangedOn": "2024-08-23T19:13:02.416Z",
-  "lastChangedBy": {
     "name": "Kenneth Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "lastChangedOn": "2025-02-06T19:59:47.571Z",
+  "lastChangedBy": {
+    "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
@@ -731,9 +731,6 @@
                   "conformance": "M",
                   "status": "current",
                   "type": "unr",
-                  "discussion": [
-
-                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -2305,9 +2302,6 @@
                   "conformance": "M",
                   "status": "current",
                   "type": "un",
-                  "discussion": [
-
-                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -3239,9 +3233,6 @@
                   "conformance": "Mobile:O",
                   "status": "current",
                   "type": "un",
-                  "discussion": [
-
-                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -3709,9 +3700,6 @@
                       "NTCIP_1204-510"
                     ]
                   },
-                  "discussion": [
-
-                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -3741,12 +3729,13 @@
                   },
                   "discussion": [
                     {
+                      "guid": "25a3c3b3-90dd-4169-acc3-400c9e9bf0aa",
                       "comment": "<p>Comment pending to include these items in ISO 26048-1</p>",
                       "date": "2023-08-11T20:52:11.504Z",
                       "author": {
+                        "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon",
-                        "name": "Kenneth Vaughn"
+                        "company": "Trevilon"
                       },
                       "updatedOn": "2024-06-11T17:46:08.852Z"
                     }
@@ -4159,9 +4148,6 @@
                           "NTCIP_1204-532"
                         ]
                       },
-                      "discussion": [
-
-                      ],
                       "history": [
                         {
                           "addedComment": "<p>For deletion (i.e., on 7/25 we decided to make the EntityID objects read-only and that they should be configured using proprietary process when installing a sensor)</p>",
@@ -4241,9 +4227,6 @@
                           "NTCIP_1204-532"
                         ]
                       },
-                      "discussion": [
-
-                      ],
                       "history": [
                         {
                           "changedBy": {
@@ -4587,9 +4570,6 @@
                           "NTCIP_1204-546"
                         ]
                       },
-                      "discussion": [
-
-                      ],
                       "history": [
                         {
                           "changedBy": {
@@ -5374,9 +5354,6 @@
                           "NTCIP_1204-542"
                         ]
                       },
-                      "discussion": [
-
-                      ],
                       "history": [
                         {
                           "changedBy": {
@@ -5958,9 +5935,6 @@
                           "NTCIP_1204-550"
                         ]
                       },
-                      "discussion": [
-
-                      ],
                       "history": [
                         {
                           "changedBy": {
@@ -6076,9 +6050,6 @@
                           "NTCIP_1204-550"
                         ]
                       },
-                      "discussion": [
-
-                      ],
                       "history": [
                         {
                           "changedBy": {
@@ -6109,10 +6080,7 @@
                         "fulfil_opt": [
                           "NTCIP_1204-550"
                         ]
-                      },
-                      "discussion": [
-
-                      ]
+                      }
                     },
                     {
                       "id": "1107",
@@ -6125,10 +6093,7 @@
                         "fulfil_opt": [
                           "NTCIP_1204-550"
                         ]
-                      },
-                      "discussion": [
-
-                      ]
+                      }
                     }
                   ]
                 },
@@ -7722,6 +7687,7 @@
                       },
                       "discussion": [
                         {
+                          "guid": "642fda14-dec7-4351-aabe-f65021a49c11",
                           "comment": "<p>Requirement does not mention signal duration but the object is traced to this requirement</p>",
                           "date": "2024-08-12T13:43:00.290Z",
                           "author": {
@@ -9247,12 +9213,13 @@
               },
               "discussion": [
                 {
+                  "guid": "90e9c989-c11c-42f9-9688-fb1b605df352",
                   "comment": "<p>Comment submitted to ISO 26048-1 to include</p>",
                   "date": "2024-06-11T20:56:44.907Z",
                   "author": {
+                    "name": "Kenneth Vaughn",
                     "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon",
-                    "name": "Kenneth Vaughn"
+                    "company": "Trevilon"
                   }
                 }
               ],
@@ -9518,9 +9485,6 @@
                   "NTCIP_1204-1177"
                 ]
               },
-              "discussion": [
-
-              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -10356,9 +10320,6 @@
           "oid": "{ess 1}",
           "status": "current",
           "type": "oi",
-          "discussion": [
-
-          ],
           "history": [
             {
               "attributesChanged": {
@@ -10618,9 +10579,6 @@
                   "NTCIP_1204-3203"
                 ]
               },
-              "discussion": [
-
-              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -12657,9 +12615,6 @@
                   "NTCIP_1204-3289"
                 ]
               },
-              "discussion": [
-
-              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -12908,9 +12863,6 @@
                   "NTCIP_1204-3203"
                 ]
               },
-              "discussion": [
-
-              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -13815,9 +13767,6 @@
                   "NTCIP_1204-3203"
                 ]
               },
-              "discussion": [
-
-              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -16059,9 +16008,6 @@
                       "NTCIP_1204-781"
                     ]
                   },
-                  "discussion": [
-
-                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -28955,12 +28901,13 @@
                   },
                   "discussion": [
                     {
+                      "guid": "f6ee4a32-7608-435b-a1fb-d9b88a4acca6",
                       "comment": "<p>Should this be a precip sensor object or a pavement sensor object?</p>",
                       "date": "2023-08-08T22:49:13.636Z",
                       "author": {
+                        "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon",
-                        "name": "Kenneth Vaughn"
+                        "company": "Trevilon"
                       }
                     }
                   ],
@@ -29073,12 +29020,13 @@
                   },
                   "discussion": [
                     {
+                      "guid": "cf94c679-b676-4484-b783-e226c5e03dc1",
                       "comment": "<p>Should this be a precip sensor object or a pavement sensor object?</p>",
                       "date": "2023-08-08T22:49:22.943Z",
                       "author": {
+                        "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon",
-                        "name": "Kenneth Vaughn"
+                        "company": "Trevilon"
                       }
                     }
                   ],
@@ -29202,12 +29150,13 @@
                   },
                   "discussion": [
                     {
+                      "guid": "881c45a3-dc70-4c0c-9cf2-78c1d126dfa5",
                       "comment": "<p>Should this be a precip sensor object or a pavement sensor object?</p>",
                       "date": "2023-08-08T22:49:29.373Z",
                       "author": {
+                        "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon",
-                        "name": "Kenneth Vaughn"
+                        "company": "Trevilon"
                       }
                     }
                   ],
@@ -29914,9 +29863,6 @@
                       "NTCIP_1204-2358"
                     ]
                   },
-                  "discussion": [
-
-                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -31087,131 +31033,6 @@
                   ]
                 },
                 {
-                  "id": "2036",
-                  "guid": "d32b7cc4-32e3-4f4e-904d-8442fb049f71",
-                  "heading": "Precipitation Start Date",
-                  "text": "<p>The UTC date on which the most recent precipitation event began. The precipitation event begins when 0.254 mm of liquid water equivalent is detected.</p>",
-                  "access": "read-only",
-                  "action": "added",
-                  "defval": "{ '00000000'H }",
-                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14.1.24",
-                  "name": "precipitationSensorPrecipStartDate",
-                  "oid": "{ precipitationSensorEntry 24 }",
-                  "param_type": "status",
-                  "status": "current",
-                  "syntax": "<p>ITSDateStamp</p>",
-                  "type": "ot",
-                  "links": {
-                    "group": [
-                      "NTCIP_1204-2356"
-                    ],
-                    "satisfies": [
-                      "NTCIP_1204-989"
-                    ]
-                  },
-                  "discussion": [
-
-                  ],
-                  "history": [
-                    {
-                      "attributesChanged": {
-                        "contact": null,
-                        "defval": null,
-                        "heading": "precipitationSensorPrecipStartDate",
-                        "name": null,
-                        "oid": null,
-                        "syntax": null,
-                        "text": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-25T22:22:03.004Z"
-                    },
-                    {
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-26T15:18:56.891Z",
-                      "removedLink": {
-                        "target": [
-                          "NTCIP_1204-2271"
-                        ],
-                        "type": "group"
-                      }
-                    },
-                    {
-                      "addedLink": {
-                        "target": [
-                          "NTCIP_1204-2356"
-                        ],
-                        "type": "group"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-26T17:51:21.105Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "dotted_oid": null,
-                        "param_type": null,
-                        "text": "<p>&lt;Definition&gt;The UTC date on which the most recent precipitation event began. The precipitation event begins when 0.01 inches of liquid water equivalent is detected.&lt;DescriptiveName&gt;PrecipitationSensor.precipitationStartDate:quantity&lt;Data Concept Type&gt;Data Element&lt;Parameter Type&gt;Status&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.5.2.6.14.1.24</p>"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-27T03:11:47.256Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "param_type": "configuration"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-28T23:20:15.931Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "text": "<p>The UTC date on which the most recent precipitation event began. The precipitation event begins when 0.01 inches of liquid water equivalent is detected.</p>"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-08-13T14:16:13.724Z"
-                    },
-                    {
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-08-13T22:28:04.214Z",
-                      "commentAuthor": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "commentDate": "2023-08-11T19:58:51.408Z",
-                      "commentIndex": 0,
-                      "deleteLastComment": "<p>\"inches\" really? Shouldn't this be based on SI units</p>"
-                    }
-                  ]
-                },
-                {
                   "id": "2037",
                   "guid": "b7e2e668-3a12-4704-99db-b3e10d1f3263",
                   "heading": "Precipitation Start Time Version 05",
@@ -31314,112 +31135,6 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-13T14:16:29.827Z"
-                    }
-                  ]
-                },
-                {
-                  "id": "2038",
-                  "guid": "6d6caab5-edd8-49a1-9986-8c180a7297bc",
-                  "heading": "Precipitation End Date",
-                  "text": "<p>The UTC date on which the most recently completed precipitation event ended.</p>",
-                  "access": "read-only",
-                  "action": "added",
-                  "defval": "{ '00000000'H }",
-                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.6.14.1.26",
-                  "name": "precipitationSensorPrecipEndDate",
-                  "oid": "{ precipitationSensorEntry 26 }",
-                  "param_type": "status",
-                  "status": "current",
-                  "syntax": "<p>ITSDateStamp</p>",
-                  "type": "ot",
-                  "links": {
-                    "group": [
-                      "NTCIP_1204-2356"
-                    ],
-                    "satisfies": [
-                      "NTCIP_1204-989"
-                    ]
-                  },
-                  "history": [
-                    {
-                      "attributesChanged": {
-                        "contact": null,
-                        "defval": null,
-                        "heading": "precipitationSensorPrecipEndDate",
-                        "name": null,
-                        "oid": null,
-                        "syntax": null,
-                        "text": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-25T22:22:03.004Z"
-                    },
-                    {
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-26T15:18:56.891Z",
-                      "removedLink": {
-                        "target": [
-                          "NTCIP_1204-2271"
-                        ],
-                        "type": "group"
-                      }
-                    },
-                    {
-                      "addedLink": {
-                        "target": [
-                          "NTCIP_1204-2356"
-                        ],
-                        "type": "group"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-26T17:51:21.105Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "dotted_oid": null,
-                        "param_type": null,
-                        "text": "<p>&lt;Definition&gt;The UTC date on which the most recently completed precipitation event ended. &lt;DescriptiveName&gt;PrecipitationSensor.precipitationEndTime:quantity&lt;Data Concept Type&gt;Data Element&lt;Parameter Type&gt;Status&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.5.2.6.14.1.26</p>"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-27T03:11:47.256Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "param_type": "configuration"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-07-28T23:20:15.931Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "text": "<pre>The UTC date on which the most recently completed precipitation event ended. </pre>"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Kenneth Vaughn"
-                      },
-                      "changedOn": "2024-08-01T18:27:54.500Z"
                     }
                   ]
                 },
@@ -34560,9 +34275,6 @@
                   "NTCIP_1204-3232"
                 ]
               },
-              "discussion": [
-
-              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -36816,9 +36528,6 @@
                       "NTCIP_1204-1023"
                     ]
                   },
-                  "discussion": [
-
-                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -37799,9 +37508,6 @@
                   "NTCIP_1204-2317"
                 ]
               },
-              "discussion": [
-
-              ],
               "history": [
                 {
                   "affectedNodeId": "42",
@@ -44433,9 +44139,6 @@
                       "NTCIP_1204-1099"
                     ]
                   },
-                  "discussion": [
-
-                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -44917,12 +44620,13 @@
                   },
                   "discussion": [
                     {
+                      "guid": "34d4ce7e-5229-4472-91b7-81c5a34f2166",
                       "comment": "<p>In v04 this only traced to Retrieve Sensor Profile with Mobile Sources (which was deleted in preference for the dynamic objects of ISO 26048-1). Should this be:</p><p>- traced to an existing requirement (e.g., 3.5.2.8.17 Retrieve Roadway Ice Thickness),</p><p>- traced to a new requirement, or</p><p>- deprecated</p>",
                       "date": "2024-06-12T23:48:59.448Z",
                       "author": {
+                        "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
-                        "company": "Trevilon",
-                        "name": "Kenneth Vaughn"
+                        "company": "Trevilon"
                       },
                       "updatedOn": "2024-08-13T22:39:00.440Z"
                     }
@@ -45278,6 +44982,119 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-13T14:30:13.967Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "3305",
+                  "guid": "e324004c-e676-4100-9961-4bc10effa546",
+                  "heading": "Pavement Monitor Area",
+                  "access": "read-only",
+                  "name": "essPavementMonitorArea",
+                  "status": "current",
+                  "type": "ot",
+                  "links": {
+                    "group": [
+                      "NTCIP_1204-2305"
+                    ],
+                    "satisfies": [
+                      "NTCIP_1204-870"
+                    ]
+                  },
+                  "history": [
+                    {
+                      "affectedNodeId": "242",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-06T19:55:55.617Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-06T19:56:06.034Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-06T19:56:22.147Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-06T19:56:51.620Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "status": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-06T19:57:02.127Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1204-2305"
+                        ],
+                        "type": "group"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-06T19:57:45.004Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1204-870"
+                        ],
+                        "type": "satisfies"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-06T19:58:18.981Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "access": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-06T19:58:37.913Z"
                     }
                   ]
                 },
@@ -47858,9 +47675,6 @@
                   "NTCIP_1204-3245"
                 ]
               },
-              "discussion": [
-
-              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -48165,9 +47979,6 @@
           "oid": "{essNtcip 10}",
           "status": "current",
           "type": "oi",
-          "discussion": [
-
-          ],
           "history": [
             {
               "attributesChanged": {
@@ -50289,9 +50100,6 @@
                   "NTCIP_1204-3239"
                 ]
               },
-              "discussion": [
-
-              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -50463,9 +50271,6 @@
                   "NTCIP_1204-3239"
                 ]
               },
-              "discussion": [
-
-              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -50855,9 +50660,6 @@
                   "NTCIP_1204-1256"
                 ]
               },
-              "discussion": [
-
-              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -51000,9 +50802,6 @@
                   "NTCIP_1204-3238"
                 ]
               },
-              "discussion": [
-
-              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -51164,9 +50963,6 @@
                   "NTCIP_1204-1256"
                 ]
               },
-              "discussion": [
-
-              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -51294,9 +51090,6 @@
                   "NTCIP_1204-1256"
                 ]
               },
-              "discussion": [
-
-              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -52766,111 +52559,6 @@
               ]
             },
             {
-              "id": "2040",
-              "guid": "f22f4136-aa88-4c97-bf56-39c11138175f",
-              "heading": "PTS Last Signal Event Date",
-              "text": "<p>The UTC date of the last signal event.</p>",
-              "access": "read-only",
-              "action": "added",
-              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.24",
-              "name": "ptsLastSignalEventDate",
-              "oid": "{ essNtcipTreatment 24}",
-              "param_type": "status",
-              "status": "current",
-              "syntax": "<p>ITSDateStamp</p>",
-              "type": "ot",
-              "links": {
-                "group": [
-                  "NTCIP_1204-2409"
-                ],
-                "satisfies": [
-                  "NTCIP_1204-1256"
-                ]
-              },
-              "history": [
-                {
-                  "attributesChanged": {
-                    "contact": null,
-                    "heading": "ptsLastSignalEventDate",
-                    "name": null,
-                    "oid": "essNtcipTreatment 11",
-                    "syntax": "Unsigned32",
-                    "text": null,
-                    "units": "seconds"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-25T22:22:03.004Z"
-                },
-                {
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-26T15:18:56.891Z",
-                  "removedLink": {
-                    "target": [
-                      "NTCIP_1204-2259"
-                    ],
-                    "type": "group"
-                  }
-                },
-                {
-                  "addedLink": {
-                    "target": [
-                      "NTCIP_1204-2409"
-                    ],
-                    "type": "group"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-26T19:11:46.389Z"
-                },
-                {
-                  "attributesChanged": {
-                    "dotted_oid": null,
-                    "param_type": null,
-                    "text": "<p>&lt;Definition&gt; The UTC date of the last signal event.&lt;DescriptiveName&gt;PTS.lastSignalEventDate:code&lt;Data Concept Type&gt;Data Element&lt;Parameter Type&gt;Status&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.5.2.11.24</p>"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-27T03:11:47.256Z"
-                },
-                {
-                  "attributesChanged": {
-                    "param_type": "configuration"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-28T23:20:15.931Z"
-                },
-                {
-                  "attributesChanged": {
-                    "text": "<pre>The UTC date of the last signal event.</pre>"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-08-15T15:22:54.825Z"
-                }
-              ]
-            },
-            {
               "id": "2043",
               "guid": "20a30455-8d89-4766-907b-6efb760e1ca6",
               "heading": "PTS Last Signal Event Time",
@@ -52965,111 +52653,6 @@
               ]
             },
             {
-              "id": "2041",
-              "guid": "97597b11-1b18-4ab5-926d-414d4c77985e",
-              "heading": "PTS Last Active Event Date",
-              "text": "<p>The UTC date of the last active event.</p>",
-              "access": "read-only",
-              "action": "added",
-              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.26",
-              "name": "ptsLastActiveEventDate",
-              "oid": "{ essNtcipTreatment 26 }",
-              "param_type": "status",
-              "status": "current",
-              "syntax": "<p>ITSDateStamp</p>",
-              "type": "ot",
-              "links": {
-                "group": [
-                  "NTCIP_1204-2409"
-                ],
-                "satisfies": [
-                  "NTCIP_1204-1256"
-                ]
-              },
-              "history": [
-                {
-                  "attributesChanged": {
-                    "contact": null,
-                    "heading": "ptsLastActiveEventDate",
-                    "name": null,
-                    "oid": "essNtcipTreatment 14",
-                    "syntax": "Unsigned32",
-                    "text": null,
-                    "units": "seconds"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-25T22:22:03.004Z"
-                },
-                {
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-26T15:18:56.891Z",
-                  "removedLink": {
-                    "target": [
-                      "NTCIP_1204-2259"
-                    ],
-                    "type": "group"
-                  }
-                },
-                {
-                  "addedLink": {
-                    "target": [
-                      "NTCIP_1204-2409"
-                    ],
-                    "type": "group"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-26T19:11:46.389Z"
-                },
-                {
-                  "attributesChanged": {
-                    "dotted_oid": null,
-                    "param_type": null,
-                    "text": "<p>&lt;Definition&gt; The UTC date of the last active event.&lt;DescriptiveName&gt;PTS.lastActiveEventDate:code&lt;Data Concept Type&gt;Data Element&lt;Parameter Type&gt;Status&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.5.2.11.26</p>"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-27T03:11:47.256Z"
-                },
-                {
-                  "attributesChanged": {
-                    "param_type": "configuration"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-28T23:20:15.931Z"
-                },
-                {
-                  "attributesChanged": {
-                    "text": "<pre>The UTC date of the last active event.</pre>"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-08-15T15:23:03.095Z"
-                }
-              ]
-            },
-            {
               "id": "2044",
               "guid": "5bfd8ff0-0a65-4fd3-a3c9-7291db6a2a2f",
               "heading": "PTS Last Active Event Time",
@@ -53160,111 +52743,6 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-28T23:20:15.931Z"
-                }
-              ]
-            },
-            {
-              "id": "2045",
-              "guid": "91302af7-a586-468a-8998-087922c58162",
-              "heading": "PTS Last Inactive Event Date",
-              "text": "<p>The UTC date of the last inactive event.</p>",
-              "access": "read-only",
-              "action": "added",
-              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.28",
-              "name": "ptsLastInactiveEventDate",
-              "oid": "{ essNtcipTreatment 28 }",
-              "param_type": "status",
-              "status": "current",
-              "syntax": "<p>ITSDateStamp</p>",
-              "type": "ot",
-              "links": {
-                "group": [
-                  "NTCIP_1204-2409"
-                ],
-                "satisfies": [
-                  "NTCIP_1204-1256"
-                ]
-              },
-              "history": [
-                {
-                  "attributesChanged": {
-                    "contact": null,
-                    "heading": "ptsLastInactiveEventDate",
-                    "name": null,
-                    "oid": "essNtcipTreatment 15",
-                    "syntax": "Counter32",
-                    "text": null,
-                    "units": "seconds"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-25T22:22:03.004Z"
-                },
-                {
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-26T15:18:56.891Z",
-                  "removedLink": {
-                    "target": [
-                      "NTCIP_1204-2259"
-                    ],
-                    "type": "group"
-                  }
-                },
-                {
-                  "addedLink": {
-                    "target": [
-                      "NTCIP_1204-2409"
-                    ],
-                    "type": "group"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-26T19:11:46.389Z"
-                },
-                {
-                  "attributesChanged": {
-                    "dotted_oid": null,
-                    "param_type": null,
-                    "text": "<p>&lt;Definition&gt; The UTC date of the last inactive event.&lt;DescriptiveName&gt;PTS.lastInactiveEventDate:code&lt;Data Concept Type&gt;Data Element&lt;Parameter Type&gt;Status&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.5.2.11.28</p>"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-27T03:11:47.256Z"
-                },
-                {
-                  "attributesChanged": {
-                    "param_type": "configuration"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-07-28T23:20:15.931Z"
-                },
-                {
-                  "attributesChanged": {
-                    "text": "<pre>The UTC date of the last inactive event.</pre>"
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Kenneth Vaughn"
-                  },
-                  "changedOn": "2024-08-15T15:23:10.926Z"
                 }
               ]
             },
@@ -57758,9 +57236,6 @@
                       "NTCIP_1204-1179"
                     ]
                   },
-                  "discussion": [
-
-                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -58168,9 +57643,6 @@
                       "NTCIP_1204-3240"
                     ]
                   },
-                  "discussion": [
-
-                  ],
                   "history": [
                     {
                       "attributesChanged": {
@@ -73449,6 +72921,34 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-08-15T17:26:04.856Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1204-3305"
+                        ],
+                        "type": "group"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-06T19:57:34.280Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-06T19:57:45.004Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1204-3305"
+                        ],
+                        "type": "group"
+                      }
                     }
                   ]
                 },
@@ -82041,6 +81541,6 @@
     }
   },
   "metadata": {
-    "format": "2.17"
+    "format": "2.20"
   }
 }

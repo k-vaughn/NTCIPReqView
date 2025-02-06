@@ -9,7 +9,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-02-06T18:58:35.466Z",
+  "lastChangedOn": "2025-02-06T19:28:05.146Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -26772,6 +26772,10 @@
     "3b71e4b4-3ffc-48ed-8780-4b1a60d3bc47": {
       "label": "Errors",
       "template": "{{var \"found\"0}}\n{{#if (or (not type) (eval type \"==\" \"\"))}}\n  <div style=\"margin-top: 6px;\">◾&nbsp;Missing \"type\" value</div>\n{{/if}}\n{{#if (eval type \"==\" \"feature\")}}\n  {{#if (and (eval (hasOutlinks \"fulfil\") \"==\" false) (eval (hasOutlinks \"fulfil_opt\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"fulfill\" link</div>\n  {{/if}}\n  {{#if (and (eval (hasInlinks \"refine\") \"==\" false) (eval (hasInlinks \"refine_opt\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"refine\" link</div>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"d_req\")}}\n  {{#if (and (eval (hasOutlinks \"refine\") \"==\" false) (eval (hasOutlinks \"refine_opt\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"refine\" link</div>\n  {{else}}\n    {{set \"found\" 0}}\n    {{#eachOutlinkWith type=\"refine\"}}\n      {{#if (or (eval docId \"==\" \"26048_1\") (or (eval docId \"==\" \"Conditionals\") (eval docId \"==\" \"OptionGroups\")))}}\n        {{set \"found\" 1}}\n      {{/if}}\n    {{/eachOutlinkWith}}\n    {{#eachOutlinkWith type=\"refine_opt\"}}\n      {{#if (or (eval docId \"==\" \"26048_1\") (or (eval docId \"==\" \"Conditionals\") (eval docId \"==\" \"OptionGroups\")))}}\n        {{set \"found\" 1}}\n      {{/if}}\n    {{/eachOutlinkWith}}\n    {{#if (eval (get \"found\") \"==\" 0)}}\n      <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"refine\" link for ISO 26048-1</div>      \n    {{/if}}\n  {{/if}}\n  {{#if (eval (hasInlinks \"implement\") \"==\" false)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing an \"implement\" link</div>\n  {{/if}}\n  {{#if (eval (hasInlinks \"satisfies\") \"==\" false)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"satisfy\" link</div>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"dia\")}}\n  {{#if (eval (hasOutlinks \"implement\") \"==\" false)}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing an \"implement\" link</div>\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"s_req\")}}\n  {{#if (and (eval (hasOutlinks \"refine\") \"==\" false) (eval (hasOutlinks \"refine_opt\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"refine\" link</div>\n  {{else}}\n    {{set \"found\" 0}}\n    {{set \"found\" 0}}\n    {{#eachOutlinkWith type=\"refine\"}}\n      {{#if (or (eval docId \"==\" \"26048_1\") (or (eval docId \"==\" \"Conditionals\") (eval docId \"==\" \"OptionGroups\")))}}\n        {{set \"found\" 1}}\n      {{/if}}\n    {{/eachOutlinkWith}}\n    {{#eachOutlinkWith type=\"refine_opt\"}}\n      {{#if (or (eval docId \"==\" \"26048_1\") (or (eval docId \"==\" \"Conditionals\") (eval docId \"==\" \"OptionGroups\")))}}\n        {{set \"found\" 1}}\n      {{/if}}\n    {{/eachOutlinkWith}}\n    {{#if (eval (get \"found\") \"==\" 0)}}\n      <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"refine\" link for ISO 26048-1</div>      \n    {{/if}}\n  {{/if}}\n{{/if}}\n{{#if (eval type \"==\" \"un\")}}\n  {{#if (and (eval (hasInlinks \"fulfil\") \"==\" false) (eval (hasInlinks \"fulfil_opt\") \"==\" false))}}\n    <div style=\"margin-top: 6px;\">◾&nbsp;Missing a \"fulfill\" link</div>\n  {{/if}}\n{{/if}}\n"
+    },
+    "5fe56eea-d6d9-48ac-a8db-43b2e244486f": {
+      "label": "Outgoing Links",
+      "template": "{{#eachOutlinkType}}\n  {{#eachLink}}\n    <div>{{docObjId}}</div>\n  {{/eachLink}}\n{{/eachOutlinkType}}"
     }
   },
   "views": {

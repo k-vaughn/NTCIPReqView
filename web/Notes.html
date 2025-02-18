@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+      Notes
+  </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <style>
+    /* Customization of standard HTML styles */
+    p {
+      margin-top: 0em;
+      margin-bottom: 0.5em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0em;
+      margin-bottom: 0.25em;
+      unicode-bidi: plaintext;
+      text-align: start;
+    }
+    table {
+      border-spacing: 1em;
+    }
+    th {
+      text-align: center;
+    }
+    ul, ol {
+      margin-bottom: 0;
+      padding-inline-start: 20px;
+      padding-inline-end: 20px;
+    }
+    pre {
+      background-color: #efefef;
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+    math {
+      font-family: "Latin Modern Math", "Cambria Math", "STIX Two Math", "STIX Math", "DejaVu Math TeX Gyre", math;
+    }
+
+    /* Customization of ReqView styles */
+    .doc {
+      margin-bottom: 5em;
+    }
+    .heading {
+      margin: 1em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+    .filter {
+      text-align: right;
+      margin: 1em;
+    }
+    .reqviewTable {
+      margin: 1em;
+    }
+    .reqviewTable h1 {
+      font-size: 1.6rem;
+    }
+    .reqviewTable h2 {
+      font-size: 1.4rem;
+    }
+    .reqviewTable h3 {
+      font-size: 1.3rem;
+    }
+    .reqviewTable h4 {
+      font-size: 1.2rem;
+    }
+    .reqviewTable h5 {
+      font-size: 1.1rem;
+    }
+    .reqviewTable h6 {
+      font-size: 1rem;
+    }
+    .reqviewTable > table > thead > tr > th {
+      text-align: left;
+    }
+    /* Customization of our styles */
+    .id-col {
+      min-width: 5em;
+      vertical-align: top;
+    }
+    .description-col {
+      min-width: 30em;
+      vertical-align: top;
+    }
+    .discussion-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .links-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .custom-col {
+      min-width: 10em;
+      vertical-align: top;
+    }
+    .comment-text {
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+    .attachment {
+      font-style: italic;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    .attachment img {
+      max-width: 90%;
+      height: auto;
+      display: block;
+    }
+    .links-type-name {
+      font-style: italic;
+    }
+    .link {
+      margin-left: 16px;
+    }
+    td.custom-col div.htmlContent {
+      min-width: 15em;
+    }
+    .deleted {
+      color: #666;
+    }
+    .deleted .id-col,
+    .deleted .description-col,
+    .link.deleted {
+      text-decoration: line-through;
+    }
+    .deleted a {
+      color: gray;
+    }
+    .deleted img {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+    .htmlContent table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: auto;
+    }
+    .htmlContent th, .htmlContent td {
+      border: 1px solid #b5bcc7;
+      vertical-align: top;
+      padding: 3px 7px 2px 7px;
+    }
+    .htmlContent th {
+      padding-top: 5px;
+      padding-bottom: 4px;
+      background: silver;
+      border-bottom: none !important;
+    }
+    .mathml {
+      text-align: center;
+      font-size: 1.1em;
+    }
+    /** Override Bootstrap print */
+    @media print {
+      @page {
+        size: initial;
+      }
+      body {
+        min-width: unset !important;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="doc">
+  <div class="heading">
+    <h1 class="display-4">Notes</h1>
+  </div>
+  <div class="reqviewTable table-responsive-md">
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="description-col"><i class="fas fa-align-left"></i> Description</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col"><a id="Notes-1"></a>Notes-1</td>
+          <td class="description-col">
+            <h1>1&nbsp;Manually Direct-Control Brightness</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-2"></a>Notes-2</td>
+          <td class="description-col">
+            <h1>2&nbsp;Manually Index-Control Brightness </h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-3"></a>Notes-3</td>
+          <td class="description-col">
+            <h1>3&nbsp;Determine Current Composite Photocell Value</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-4"></a>Notes-4</td>
+          <td class="description-col">
+            <h1>4&nbsp;Determine Maximum Number of Light Sensor Levels</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-5"></a>Notes-5</td>
+          <td class="description-col">
+            <h1>5&nbsp;Configure Short-Term Communications Event for Stored Messages</h1>
+            <div class="htmlContent"><p>Bit = 2</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-6"></a>Notes-6</td>
+          <td class="description-col">
+            <h1>6&nbsp;Configure Long-Term Communications Event for Stored Messages</h1>
+            <div class="htmlContent"><p>Bit = 3</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-7"></a>Notes-7</td>
+          <td class="description-col">
+            <h1>7&nbsp;Store if a Message is to be Signed</h1>
+            <div class="htmlContent"><p>Bits = 0&amp;1</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-8"></a>Notes-8</td>
+          <td class="description-col">
+            <h1>8&nbsp;Configure Short-Term Communications Event for Immediate Forward Messages</h1>
+            <div class="htmlContent"><p>Bit = 2</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-9"></a>Notes-9</td>
+          <td class="description-col">
+            <h1>9&nbsp;Configure Long-Term Communications Event for Immediate Forward Messages</h1>
+            <div class="htmlContent"><p>Bit = 3</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-10"></a>Notes-10</td>
+          <td class="description-col">
+            <h1>10&nbsp;Store if a Received Message for Forwarding to the V2X Interface is Signed</h1>
+            <div class="htmlContent"><p>Bits = 0&amp;1</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-11"></a>Notes-11</td>
+          <td class="description-col">
+            <h1>11&nbsp;Store Interface Data Log Option - Disk Full</h1>
+            <div class="htmlContent"><p>Bit = 0</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-12"></a>Notes-12</td>
+          <td class="description-col">
+            <h1>12&nbsp;Store Interface Data Log Option - Entry Deletion</h1>
+            <div class="htmlContent"><p>Bit = 1</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-13"></a>Notes-13</td>
+          <td class="description-col">
+            <h1>13&nbsp;Determine Operating Class</h1>
+            <div class="htmlContent"><p>If queried, return the behavior limit for the corresponding class for ITS operations.</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-14"></a>Notes-14</td>
+          <td class="description-col">
+            <h1>14&nbsp;Store WSA Configuration – Secure V2</h1>
+            <div class="htmlContent"><p>Bit = 0</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-15"></a>Notes-15</td>
+          <td class="description-col">
+            <h1>15&nbsp;Store WSA Configuration – WAVE Routing Advertisement</h1>
+            <div class="htmlContent"><p>Bit = 1</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-16"></a>Notes-16</td>
+          <td class="description-col">
+            <h1>16&nbsp;Store WSA Configuration – Repeat Rate</h1>
+            <div class="htmlContent"><p>Bit = 2</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-17"></a>Notes-17</td>
+          <td class="description-col">
+            <h1>17&nbsp;Store WSA Configuration – 2D Location</h1>
+            <div class="htmlContent"><p>Bit = 3</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-18"></a>Notes-18</td>
+          <td class="description-col">
+            <h1>18&nbsp;Store WSA Configuration – 3D Location</h1>
+            <div class="htmlContent"><p>Bit = 4</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-19"></a>Notes-19</td>
+          <td class="description-col">
+            <h1>19&nbsp;Store WSA Configuration – RCPI Threshold</h1>
+            <div class="htmlContent"><p>Bit = 5</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-20"></a>Notes-20</td>
+          <td class="description-col">
+            <h1>20&nbsp;Report CPU Load Average - 15 Minutes</h1>
+            <div class="htmlContent"><p>Row = 3</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-21"></a>Notes-21</td>
+          <td class="description-col">
+            <h1>21&nbsp;Report CPU Load Average - 5 Minutes</h1>
+            <div class="htmlContent"><p>Row = 2</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-22"></a>Notes-22</td>
+          <td class="description-col">
+            <h1>22&nbsp;Report CPU Load Average - 1 Minute</h1>
+            <div class="htmlContent"><p>Row = 1</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-23"></a>Notes-23</td>
+          <td class="description-col">
+            <h1>23&nbsp;Report Storage Space Available</h1>
+            <div class="htmlContent"><p>Row = 1</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-24"></a>Notes-24</td>
+          <td class="description-col">
+            <h1>24&nbsp;Report RSU System Services Status</h1>
+            <div class="htmlContent"><p>Row = 1</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-25"></a>Notes-25</td>
+          <td class="description-col">
+            <h1>25&nbsp;Report GNSS Service Status</h1>
+            <div class="htmlContent"><p>Row = 2</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-26"></a>Notes-26</td>
+          <td class="description-col">
+            <h1>26&nbsp;Report Time Service Status</h1>
+            <div class="htmlContent"><p>Row = 3</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-27"></a>Notes-27</td>
+          <td class="description-col">
+            <h1>27&nbsp;Report Storage Service Status</h1>
+            <div class="htmlContent"><p>Row = 4</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-28"></a>Notes-28</td>
+          <td class="description-col">
+            <h1>28&nbsp;Report Access Control Service Status</h1>
+            <div class="htmlContent"><p>Row = 5</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-29"></a>Notes-29</td>
+          <td class="description-col">
+            <h1>29&nbsp;Report Network Service Status</h1>
+            <div class="htmlContent"><p>Row = 6</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-30"></a>Notes-30</td>
+          <td class="description-col">
+            <h1>30&nbsp;Report Radio Access Service Status</h1>
+            <div class="htmlContent"><p>Row = 7</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-31"></a>Notes-31</td>
+          <td class="description-col">
+            <h1>31&nbsp;Report V2X Radio Networking Services Status</h1>
+            <div class="htmlContent"><p>Row = 8</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-32"></a>Notes-32</td>
+          <td class="description-col">
+            <h1>32&nbsp;Report IEEE 1609.2 Status</h1>
+            <div class="htmlContent"><p>Row = 9</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-33"></a>Notes-33</td>
+          <td class="description-col">
+            <h1>33&nbsp;Report SCMS Service Status</h1>
+            <div class="htmlContent"><p>Row = 10</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-34"></a>Notes-34</td>
+          <td class="description-col">
+            <h1>34&nbsp;Report NTP Server Service Status</h1>
+            <div class="htmlContent"><p>Row = 11</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-35"></a>Notes-35</td>
+          <td class="description-col">
+            <h1>35&nbsp;Copy GNSS Location</h1>
+            <div class="htmlContent"><p>value = 3</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-36"></a>Notes-36</td>
+          <td class="description-col">
+            <h1>36&nbsp;Track GNSS Location</h1>
+            <div class="htmlContent"><p>value = 4</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Notes-37"></a>Notes-37</td>
+          <td class="description-col">
+            <h1>37&nbsp;Call a Command</h1>
+            <div class="htmlContent"><p>value = 4</p></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr>
+  <div class="float-right mr-4"><em>Last modified by <a href="mailto:kvaughn@trevilon.com">Ken Vaughn, Trevilon</a> on 2025-02-06 14:43</em></div>
+  </div>
+</body>
+</html>

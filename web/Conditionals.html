@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+      Conditionals
+  </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <style>
+    /* Customization of standard HTML styles */
+    p {
+      margin-top: 0em;
+      margin-bottom: 0.5em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0em;
+      margin-bottom: 0.25em;
+      unicode-bidi: plaintext;
+      text-align: start;
+    }
+    table {
+      border-spacing: 1em;
+    }
+    th {
+      text-align: center;
+    }
+    ul, ol {
+      margin-bottom: 0;
+      padding-inline-start: 20px;
+      padding-inline-end: 20px;
+    }
+    pre {
+      background-color: #efefef;
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+    math {
+      font-family: "Latin Modern Math", "Cambria Math", "STIX Two Math", "STIX Math", "DejaVu Math TeX Gyre", math;
+    }
+
+    /* Customization of ReqView styles */
+    .doc {
+      margin-bottom: 5em;
+    }
+    .heading {
+      margin: 1em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+    .filter {
+      text-align: right;
+      margin: 1em;
+    }
+    .reqviewTable {
+      margin: 1em;
+    }
+    .reqviewTable h1 {
+      font-size: 1.6rem;
+    }
+    .reqviewTable h2 {
+      font-size: 1.4rem;
+    }
+    .reqviewTable h3 {
+      font-size: 1.3rem;
+    }
+    .reqviewTable h4 {
+      font-size: 1.2rem;
+    }
+    .reqviewTable h5 {
+      font-size: 1.1rem;
+    }
+    .reqviewTable h6 {
+      font-size: 1rem;
+    }
+    .reqviewTable > table > thead > tr > th {
+      text-align: left;
+    }
+    /* Customization of our styles */
+    .id-col {
+      min-width: 5em;
+      vertical-align: top;
+    }
+    .description-col {
+      min-width: 30em;
+      vertical-align: top;
+    }
+    .discussion-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .links-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .custom-col {
+      min-width: 10em;
+      vertical-align: top;
+    }
+    .comment-text {
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+    .attachment {
+      font-style: italic;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    .attachment img {
+      max-width: 90%;
+      height: auto;
+      display: block;
+    }
+    .links-type-name {
+      font-style: italic;
+    }
+    .link {
+      margin-left: 16px;
+    }
+    td.custom-col div.htmlContent {
+      min-width: 15em;
+    }
+    .deleted {
+      color: #666;
+    }
+    .deleted .id-col,
+    .deleted .description-col,
+    .link.deleted {
+      text-decoration: line-through;
+    }
+    .deleted a {
+      color: gray;
+    }
+    .deleted img {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+    .htmlContent table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: auto;
+    }
+    .htmlContent th, .htmlContent td {
+      border: 1px solid #b5bcc7;
+      vertical-align: top;
+      padding: 3px 7px 2px 7px;
+    }
+    .htmlContent th {
+      padding-top: 5px;
+      padding-bottom: 4px;
+      background: silver;
+      border-bottom: none !important;
+    }
+    .mathml {
+      text-align: center;
+      font-size: 1.1em;
+    }
+    /** Override Bootstrap print */
+    @media print {
+      @page {
+        size: initial;
+      }
+      body {
+        min-width: unset !important;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="doc">
+  <div class="heading">
+    <h1 class="display-4">Conditionals</h1>
+  </div>
+  <div class="reqviewTable table-responsive-md">
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col"><i class="fas fa-asterisk"></i> ID</th>
+          <th class="description-col"><i class="fas fa-align-left"></i> Description</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col"><a id="Conditionals-23"></a>Conditionals-23</td>
+          <td class="description-col">
+            <h1>1&nbsp;Conditional Trigger</h1>
+            <div class="htmlContent"><p>condTrigger:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-10"></a>Conditionals-10</td>
+          <td class="description-col">
+            <h1>2&nbsp;Creation CondTrigger</h1>
+            <div class="htmlContent"><p>creationTrigger:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-25"></a>Conditionals-25</td>
+          <td class="description-col">
+            <h1>3&nbsp;Day Plan Triggers</h1>
+            <div class="htmlContent"><p>dayPlan:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-11"></a>Conditionals-11</td>
+          <td class="description-col">
+            <h1>4&nbsp;Deletion CondTrigger</h1>
+            <div class="htmlContent"><p>deletionTrigger:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-15"></a>Conditionals-15</td>
+          <td class="description-col">
+            <h1>5&nbsp;DST</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-19"></a>Conditionals-19</td>
+          <td class="description-col">
+            <h1>6&nbsp;Event Report Block</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-21"></a>Conditionals-21</td>
+          <td class="description-col">
+            <h1>7&nbsp;Event Watch Block</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-26"></a>Conditionals-26</td>
+          <td class="description-col">
+            <h1>8&nbsp;Input</h1>
+            <div class="htmlContent"><p>input:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-17"></a>Conditionals-17</td>
+          <td class="description-col">
+            <h1>9&nbsp;NTCIP 1203 v01</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-12"></a>Conditionals-12</td>
+          <td class="description-col">
+            <h1>10&nbsp;OnChange CondTrigger</h1>
+            <div class="htmlContent"><p>onChnageTrigger:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-18"></a>Conditionals-18</td>
+          <td class="description-col">
+            <h1>11&nbsp;Output</h1>
+            <div class="htmlContent"><p>output:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-9"></a>Conditionals-9</td>
+          <td class="description-col">
+            <h1>12&nbsp;Notification Queue</h1>
+            <div class="htmlContent"><p>queue:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-20"></a>Conditionals-20</td>
+          <td class="description-col">
+            <h1>13&nbsp;Recording Report Block</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-22"></a>Conditionals-22</td>
+          <td class="description-col">
+            <h1>14&nbsp;Recording Watch Block</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-4"></a>Conditionals-4</td>
+          <td class="description-col">
+            <h1>15&nbsp;remote: Target Info</h1>
+            <div class="htmlContent"><p>remote:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-24"></a>Conditionals-24</td>
+          <td class="description-col">
+            <h1>16&nbsp;Scheduled Triggers</h1>
+            <div class="htmlContent"><p>schedTrigger:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-7"></a>Conditionals-7</td>
+          <td class="description-col">
+            <h1>17&nbsp;Set DynObj Option</h1>
+            <div class="htmlContent"><p>setDynObj:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-5"></a>Conditionals-5</td>
+          <td class="description-col">
+            <h1>18&nbsp;snmpTime</h1>
+            <div class="htmlContent"><p>snmpTime:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-27"></a>Conditionals-27</td>
+          <td class="description-col">
+            <h1>19&nbsp;System Log Filtering</h1>
+            <div class="htmlContent"><p>syslogFilter:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-28"></a>Conditionals-28</td>
+          <td class="description-col">
+            <h1>20&nbsp;System Log Notifications</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-29"></a>Conditionals-29</td>
+          <td class="description-col">
+            <h1>21&nbsp;Notification Aggregation</h1>
+            <div class="htmlContent"><p>notifyAgg:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-30"></a>Conditionals-30</td>
+          <td class="description-col">
+            <h1>22&nbsp;Independent Notifications</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-31"></a>Conditionals-31</td>
+          <td class="description-col">
+            <h1>23&nbsp;GNSS</h1>
+            <div class="htmlContent"><p>gnss:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-32"></a>Conditionals-32</td>
+          <td class="description-col">
+            <h1>24&nbsp;Notification Packets</h1>
+            <div class="htmlContent"><p>notificationPkts:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-34"></a>Conditionals-34</td>
+          <td class="description-col">
+            <h1>25&nbsp;SRSA Activation</h1>
+            <div class="htmlContent"><p>srsaTestAct:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-35"></a>Conditionals-35</td>
+          <td class="description-col">
+            <h1>26&nbsp;Matrix</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-36"></a>Conditionals-36</td>
+          <td class="description-col">
+            <h1>27&nbsp;VMS</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-37"></a>Conditionals-37</td>
+          <td class="description-col">
+            <h1>28&nbsp;Fonts</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-38"></a>Conditionals-38</td>
+          <td class="description-col">
+            <h1>29&nbsp;Graphics</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-39"></a>Conditionals-39</td>
+          <td class="description-col">
+            <h1>30&nbsp;Fields</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-40"></a>Conditionals-40</td>
+          <td class="description-col">
+            <h1>31&nbsp;Drum</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-41"></a>Conditionals-41</td>
+          <td class="description-col">
+            <h1>32&nbsp;Prioritize VMS</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-42"></a>Conditionals-42</td>
+          <td class="description-col">
+            <h1>33&nbsp;LocalTime</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-43"></a>Conditionals-43</td>
+          <td class="description-col">
+            <h1>34&nbsp;Supplemental Fonts</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-44"></a>Conditionals-44</td>
+          <td class="description-col">
+            <h1>35&nbsp;Supplemental Graphics</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-45"></a>Conditionals-45</td>
+          <td class="description-col">
+            <h1>36&nbsp;DMS Flip or Drum</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-46"></a>Conditionals-46</td>
+          <td class="description-col">
+            <h1>37&nbsp;DMS AutoBright</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-47"></a>Conditionals-47</td>
+          <td class="description-col">
+            <h1>38&nbsp;DMS Matrix Testing</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-48"></a>Conditionals-48</td>
+          <td class="description-col">
+            <h1>39&nbsp;DMS Lamp Testing</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-49"></a>Conditionals-49</td>
+          <td class="description-col">
+            <h1>40&nbsp;VMS Definition</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-50"></a>Conditionals-50</td>
+          <td class="description-col">
+            <h1>41&nbsp;Pressure Sensor Location</h1>
+            <div class="htmlContent"><p>PressLoc</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-51"></a>Conditionals-51</td>
+          <td class="description-col">
+            <h1>42&nbsp;Wind Sensor Location</h1>
+            <div class="htmlContent"><p>windLoc</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-52"></a>Conditionals-52</td>
+          <td class="description-col">
+            <h1>43&nbsp;Air Temperature Sensor Location</h1>
+            <div class="htmlContent"><p>TempLoc</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-53"></a>Conditionals-53</td>
+          <td class="description-col">
+            <h1>44&nbsp;Humidity Sensor Location</h1>
+            <div class="htmlContent"><p>HumidityLoc</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-54"></a>Conditionals-54</td>
+          <td class="description-col">
+            <h1>45&nbsp;Precipitation Sensor Location</h1>
+            <div class="htmlContent"><p>PrecipLoc</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-55"></a>Conditionals-55</td>
+          <td class="description-col">
+            <h1>46&nbsp;Precipitation User-Specified Period</h1>
+            <div class="htmlContent"><p>PrecipPeriod</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-56"></a>Conditionals-56</td>
+          <td class="description-col">
+            <h1>47&nbsp;Precipitation Rates</h1>
+            <div class="htmlContent"><p>precipRates</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-58"></a>Conditionals-58</td>
+          <td class="description-col">
+            <h1>48&nbsp;Solar Radiation Location</h1>
+            <div class="htmlContent"><p>radLoc</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-57"></a>Conditionals-57</td>
+          <td class="description-col">
+            <h1>49&nbsp;Configure Visibility Sensor Location</h1>
+            <div class="htmlContent"><p>VisLoc</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-59"></a>Conditionals-59</td>
+          <td class="description-col">
+            <h1>50&nbsp;Configure Pavement Sensor</h1>
+            <div class="htmlContent"><p>PaveSensor</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-60"></a>Conditionals-60</td>
+          <td class="description-col">
+            <h1>51&nbsp;Pavement Sensor Location</h1>
+            <div class="htmlContent"><p>PaveLoc</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-61"></a>Conditionals-61</td>
+          <td class="description-col">
+            <h1>52&nbsp;Passive Ice Detection</h1>
+            <div class="htmlContent"><p>PassiveIceDetect</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-62"></a>Conditionals-62</td>
+          <td class="description-col">
+            <h1>53&nbsp;Active Ice Detection</h1>
+            <div class="htmlContent"><p>ActiveIceDetect</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-63"></a>Conditionals-63</td>
+          <td class="description-col">
+            <h1>54&nbsp;Configure Subsurface Sensor</h1>
+            <div class="htmlContent"><p>SubSurface</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-64"></a>Conditionals-64</td>
+          <td class="description-col">
+            <h1>55&nbsp;Subsurface Sensor Location</h1>
+            <div class="htmlContent"><p>SubSurfLoc</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-65"></a>Conditionals-65</td>
+          <td class="description-col">
+            <h1>56&nbsp;Configure Water Location</h1>
+            <div class="htmlContent"><p>WaterLoc</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-66"></a>Conditionals-66</td>
+          <td class="description-col">
+            <h1>57&nbsp;Configure Water Warning</h1>
+            <div class="htmlContent"><p>WaterWarn</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-67"></a>Conditionals-67</td>
+          <td class="description-col">
+            <h1>58&nbsp;Air Quality Sensor Location</h1>
+            <div class="htmlContent"><p>AQLoc</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-68"></a>Conditionals-68</td>
+          <td class="description-col">
+            <h1>59&nbsp;Number of Carbon Monoxide Sensors</h1>
+            <div class="htmlContent"><p>CO</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-69"></a>Conditionals-69</td>
+          <td class="description-col">
+            <h1>60&nbsp;Number of Carbon Dioxide Sensors</h1>
+            <div class="htmlContent"><p>CO2</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-70"></a>Conditionals-70</td>
+          <td class="description-col">
+            <h1>61&nbsp;Number of Nitric Oxide Sensors</h1>
+            <div class="htmlContent"><p>NO</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-71"></a>Conditionals-71</td>
+          <td class="description-col">
+            <h1>62&nbsp;Number of Nitrogen Dioxide Sensors</h1>
+            <div class="htmlContent"><p>NO2</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-72"></a>Conditionals-72</td>
+          <td class="description-col">
+            <h1>63&nbsp;Number of Sulfur Dioxide Sensors</h1>
+            <div class="htmlContent"><p>SO2</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-73"></a>Conditionals-73</td>
+          <td class="description-col">
+            <h1>64&nbsp;Number of Ozone Sensors</h1>
+            <div class="htmlContent"><p>O3</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-74"></a>Conditionals-74</td>
+          <td class="description-col">
+            <h1>65&nbsp;Number of PM10 Sensors</h1>
+            <div class="htmlContent"><p>PM10</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-75"></a>Conditionals-75</td>
+          <td class="description-col">
+            <h1>66&nbsp;Number of PM2.5 Sensors</h1>
+            <div class="htmlContent"><p>PM2.5</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-89"></a>Conditionals-89</td>
+          <td class="description-col">
+            <h1>67&nbsp;Number of PM1.0 Sensors</h1>
+            <div class="htmlContent"><p>PM1.0</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-76"></a>Conditionals-76</td>
+          <td class="description-col">
+            <h1>68&nbsp;PTS Location</h1>
+            <div class="htmlContent"><p>PtsLoc</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-90"></a>Conditionals-90</td>
+          <td class="description-col">
+            <h1>69&nbsp;Notifications</h1>
+            <div class="htmlContent"><p>notifications:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-91"></a>Conditionals-91</td>
+          <td class="description-col">
+            <h1>70&nbsp;Retrieve Startup Retry Period</h1>
+            <div class="htmlContent"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-92"></a>Conditionals-92</td>
+          <td class="description-col">
+            <h1>71&nbsp;Mobile</h1>
+            <div class="htmlContent"><p>mobile:</p></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="Conditionals-93"></a>Conditionals-93</td>
+          <td class="description-col">
+            <h1>72&nbsp;Permanent Trigger</h1>
+            <div class="htmlContent"><p>permTrigger:</p></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr>
+  <div class="float-right mr-4"><em>Last modified by <a href="mailto:kvaughn@trevilon.com">Ken Vaughn, Trevilon</a> on 2025-02-06 14:43</em></div>
+  </div>
+</body>
+</html>

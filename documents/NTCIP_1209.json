@@ -1,0 +1,41 @@
+{
+  "id": "NTCIP_1209",
+  "guid": "b6c50740-139f-40c4-a637-3737252e97e1",
+  "name": "NTCIP 1209",
+  "lastId": 0,
+  "createdOn": "2025-02-18T22:29:51.369Z",
+  "createdBy": {
+    "name": "Ken Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "lastChangedOn": "2025-02-18T22:29:51.369Z",
+  "lastChangedBy": {
+    "name": "Ken Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "data": [],
+  "attributes": {
+  },
+  "templateColumns": {
+  },
+  "views": {
+    "Primary": {
+      "columns": [
+        {
+          "columnId": "id",
+          "width": 65
+        },
+        {
+          "columnId": "description",
+          "width": 500
+        }
+      ],
+      "default": true
+    }
+  },
+  "metadata": {
+    "format": "2.20"
+  }
+}

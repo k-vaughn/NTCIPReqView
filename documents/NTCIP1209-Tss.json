@@ -2,20 +2,38 @@
   "id": "NTCIP1209-Tss",
   "guid": "af2571fa-4c8e-4ae2-ba6b-9ae5c84904e3",
   "name": "NTCIP1209-Tss",
-  "lastId": 0,
+  "lastId": 1,
   "createdOn": "2025-02-19T21:32:13.454Z",
   "createdBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-02-19T21:32:13.454Z",
+  "lastChangedOn": "2025-02-19T21:32:18.469Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "data": [],
+  "data": [
+    {
+      "id": "1",
+      "guid": "bfda4a59-8890-47fe-8bbd-2c228a119719",
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-19T21:32:18.469Z",
+          "docId": "NTCIP1209-Tss",
+          "structureAction": "Create"
+        }
+      ]
+    }
+  ],
   "attributes": {
   },
   "templateColumns": {

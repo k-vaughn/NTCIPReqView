@@ -2,14 +2,14 @@
   "id": "NTCIP_1209",
   "guid": "b6c50740-139f-40c4-a637-3737252e97e1",
   "name": "NTCIP 1209",
-  "lastId": 1057,
+  "lastId": 1224,
   "createdOn": "2025-02-18T22:29:51.369Z",
   "createdBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-02-18T23:02:43.145Z",
+  "lastChangedOn": "2025-02-19T22:08:14.820Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -20297,6 +20297,4204 @@
               "changedOn": "2025-02-18T22:51:43.212Z"
             }
           ]
+        },
+        {
+          "id": "1058",
+          "guid": "475c0201-9d4c-4d4d-a866-22586659ffa6",
+          "heading": "TRANSPORTATION SENSOR SYSTEM OBJECTS \r RFC 2578  \r RFC 2579\r RFC 2580\r RFC 3411\r",
+          "contact": "name: NTCIP Coordinator\n<br>    email: ntcip@nema.org\n<br>    postal: National Electrical Manufacturers Association\n<br>            1300 North 17th Street, Suite 1752\n<br>            Rosslyn, Virginia 22209-3801",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.4",
+          "name": "tss",
+          "oid": "{ devices 4 }",
+          "org": "NTCIP TSS WG",
+          "type": "mi",
+          "updated": "202401230500Z",
+          "history": [
+            {
+              "affectedNodeId": "1",
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-02-19T22:07:36.547Z",
+              "docId": "NTCIP1209-Tss",
+              "structureAction": "Copy"
+            }
+          ],
+          "children": [
+            {
+              "id": "1224",
+              "guid": "c97b3cb3-f250-42a2-baf5-48cc40d727ce",
+              "text": "<p>Additional textual conventions for v01 and v02 that have since been &nbsp;deprecated.</p>",
+              "type": "comment",
+              "history": [
+                {
+                  "affectedNodeId": "1058",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:49.757Z",
+                  "docId": "NTCIP_1209",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:08:02.802Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:08:14.820Z"
+                }
+              ]
+            },
+            {
+              "id": "1059",
+              "guid": "a840a9aa-8f7d-4cc4-a57f-949deb9f00ac",
+              "text": "<p>A 64-bit bitstring where bits are numbered from Bit 0 to Bit 7 of the first</p><p>octet followed by Bit 0 to Bit 7 of the second octet, and so on.</p>",
+              "name": "BITMAP64",
+              "status": "deprecated",
+              "syntax": "OCTET STRING (SIZE (8))",
+              "type": "text_conv",
+              "history": [
+                {
+                  "affectedNodeId": "5",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": "Additional textual conventions for v01 and v02 that have since been \r deprecated.\r",
+                    "text": "A 64-bit bitstring where bits are numbered from Bit 0 to Bit 7 of the first\n<br>    octet followed by Bit 0 to Bit 7 of the second octet, and so on."
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:08:10.638Z"
+                }
+              ]
+            },
+            {
+              "id": "1060",
+              "guid": "d1942d59-c630-4696-a7d1-455c97c8fe86",
+              "text": "A 96-bit bitstring where bits are numbered from Bit 0 to Bit 7 of the first\n<br>    octet followed by Bit 0 to Bit 7 of the second octet, and so on.",
+              "name": "BITMAP96",
+              "status": "deprecated",
+              "syntax": "OCTET STRING (SIZE (12))",
+              "type": "text_conv",
+              "history": [
+                {
+                  "affectedNodeId": "6",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1061",
+              "guid": "f7034d21-78ac-429b-93dd-2b337603bf13",
+              "text": "A 256-bit bitstring where bits are numbered from Bit 0 to Bit 7 of the\n<br>    first octet followed by Bit 0 to Bit 7 of the second octet, and so on.",
+              "name": "BITMAP256",
+              "status": "deprecated",
+              "syntax": "OCTET STRING (SIZE (32))",
+              "type": "text_conv",
+              "history": [
+                {
+                  "affectedNodeId": "7",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1062",
+          "guid": "062dc8a3-5b2e-419e-8fa9-95b5e06d25db",
+          "heading": "SENSOR CONFIGURATION AND CAPABILITY OBJECTS\r",
+          "text": "This node is an identifier used to group all objects for TSS sensor \n<br>configurations that are common to all TSS. \n<br>&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.4.1",
+          "name": "tssSystemSetup",
+          "oid": "{ tss 1 }",
+          "status": "current",
+          "type": "oi",
+          "history": [
+            {
+              "affectedNodeId": "8",
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-02-19T22:07:36.547Z",
+              "docId": "NTCIP1209-Tss",
+              "structureAction": "Copy"
+            }
+          ],
+          "children": [
+            {
+              "id": "1063",
+              "guid": "3af2cf73-97e7-4c64-8567-77f4877867d3",
+              "heading": "Sensor Reset, Resynchronization, and Diagnostics\r",
+              "access": "read-write",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.1",
+              "name": "sensorSystemReset",
+              "oid": "{ tssSystemSetup 1 }",
+              "status": "current",
+              "syntax": "<pre>INTEGER {\n<br>                  restart (1), -- deprecated\n<br>                  reinitializeUserSettings (2),\n<br>                  restoreFactoryDefaults (3),\n<br>                  retune (4),\n<br>                  resyncSamplingPeriods (5),\n<br>                  shortDiagnostics (6),\n<br>                  fullDiagnostics (7),\n<br>                  executePendingConfiguration (8),\n<br>                  abortPendingConfiguration (9),\n<br>                  validatePendingConfiguration (10),\n<br>                  noResetInProgress (11)}</pre>",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "9",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1064",
+              "guid": "ca95dbc2-2ed6-4206-856b-860616eb3d8b",
+              "heading": "Sensor System Status\r",
+              "access": "read-only",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.2",
+              "name": "sensorSystemStatus",
+              "oid": "{ tssSystemSetup 2 }",
+              "status": "current",
+              "syntax": "<pre>INTEGER {\n<br>                 other (1),\n<br>                 oK (2),\n<br>                 initializing (3),\n<br>                 pendingConfigurationChange (4),\n<br>                 validatingPendingConfiguration (5),\n<br>                 diagError (6),\n<br>                 activeConfigError (7),\n<br>                 pendingConfigError (8) }</pre>",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "10",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1065",
+              "guid": "c43c77ef-121d-44ed-be40-a83d58fc95fc",
+              "heading": "Sensor System Occupancy Type\r",
+              "access": "read-write",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.3",
+              "name": "sensorSystemOccupancyType",
+              "oid": "{ tssSystemSetup 3 }",
+              "status": "current",
+              "syntax": "<pre>INTEGER {\n<br>                  normalizedOtherOccupancy (1),\n<br>                  nonNormalizedOccupancy (2),\n<br>                  zoneOccupancy (3),\n<br>                  normalizedSixFootLoopOccupancy (4),\n<br>                  normalizedTwoMeterLoopOccupancy (5),\n<br>                  normalizedPointOccupancy (6)}</pre>",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "11",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1066",
+              "guid": "49ebf565-5eb6-40b6-af0a-85cb4e1572da",
+              "heading": "Maximum Number of Sensor Zones Parameter\r",
+              "access": "read-only",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.4",
+              "name": "maxSensorZones",
+              "oid": "{ tssSystemSetup 4 }",
+              "status": "current",
+              "syntax": "Integer32 (1..255)\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "12",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1067",
+              "guid": "bc90b64f-dc31-4d69-8900-c265534c5a25",
+              "heading": "Sensor Zone Table\r",
+              "access": "not-accessible",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5",
+              "name": "sensorZoneTable",
+              "oid": "{ tssSystemSetup 5}",
+              "status": "current",
+              "syntax": "SEQUENCE OF SensorZoneEntry\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "13",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "1068",
+                  "guid": "3f785d5f-9ad7-49b7-9797-62035c10509a",
+                  "access": "not-accessible",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1",
+                  "index": "{ sensorZoneNumber }",
+                  "name": "sensorZoneEntry",
+                  "oid": "{ sensorZoneTable 1 }",
+                  "status": "current",
+                  "syntax": "SensorZoneEntry\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "14",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1069",
+                  "guid": "14424193-98c4-4145-8929-2853cad98af3",
+                  "name": "SensorZoneEntry",
+                  "syntax": "<pre>{\n<br>      sensorZoneNumber                    Integer32,\n<br>      sensorZoneOptions                   ITSBitmap,\n<br>      sensorZoneOptionsStatus             ITSBitmap,\n<br>      sensorZoneSamplePeriod              Integer32,\n<br>      sensorZoneLabel                     SnmpAdminString,\n<br>      sensorZoneAndOperator               ITSUByteString,\n<br>      sensorZoneOrOperator                ITSUByteString,\n<br>      sensorZonePairedZone                Integer32,\n<br>      sensorZonePairedZoneOptions         ITSBitmap,\n<br>      sensorZonePairedZoneSpacing         Integer32,\n<br>      sensorZoneSpeedCorrectionFactor     Integer32,\n<br>      sensorZoneAvgVehicleLength          Integer32,\n<br>      sensorZoneLength                    Integer32,\n<br>      sensorZoneStatus                    INTEGER,\n<br>      sensorZoneNoActivityFaultTime       Integer32,\n<br>      sensorZoneMaxPresenceFaultTime      Integer32,\n<br>      sensorZoneErraticCountsFaultTime    Integer32,\n<br>      sensorZoneErraticCountsThreshold    Integer32,\n<br>      sensorZoneTechnology                INTEGER }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "15",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1070",
+                  "guid": "72ebb119-e0e6-409a-b76d-381830b89c9a",
+                  "heading": "Sensor Zone Number\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.1",
+                  "name": "sensorZoneNumber",
+                  "oid": "{ sensorZoneEntry 1 }",
+                  "status": "current",
+                  "syntax": "Integer32 (1..255)\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "16",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1071",
+                  "guid": "7d4cecbd-9232-446e-a482-75a1ce400da8",
+                  "heading": "Sensor Zone Options\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.2",
+                  "name": "sensorZoneOptions",
+                  "oid": "{ sensorZoneEntry 2 }",
+                  "status": "current",
+                  "syntax": "ITSBitmap (SIZE(1))\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "17",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1072",
+                  "guid": "01435d88-9b18-4a6d-9afe-4588e116e294",
+                  "heading": "Sensor Zone Options Status\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.3",
+                  "name": "sensorZoneOptionsStatus",
+                  "oid": "{ sensorZoneEntry 3 }",
+                  "status": "current",
+                  "syntax": "ITSBitmap (SIZE(1))\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "18",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1073",
+                  "guid": "ab626749-0c96-4bdb-97f0-dddecf57d9e2",
+                  "heading": "Sensor Zone Sample Period Parameter\r",
+                  "access": "read-write",
+                  "defval": "{ 0 }",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.4",
+                  "name": "sensorZoneSamplePeriod",
+                  "oid": "{ sensorZoneEntry 4 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "seconds",
+                  "history": [
+                    {
+                      "affectedNodeId": "19",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1074",
+                  "guid": "49b6de18-7cd6-44c4-9adf-3f51088c1091",
+                  "heading": "Sensor Zone Label\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.5",
+                  "name": "sensorZoneLabel",
+                  "oid": "{ sensorZoneEntry 5 }",
+                  "status": "current",
+                  "syntax": "SnmpAdminString\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "20",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1075",
+                  "guid": "23b41ed2-16a0-4248-b1b0-be82ba6d8017",
+                  "heading": "Sensor Zone Boolean AND Operator\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.6",
+                  "name": "sensorZoneAndOperator",
+                  "oid": "{ sensorZoneEntry 6 }",
+                  "status": "current",
+                  "syntax": "ITSUByteString (SIZE (8))\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "21",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1076",
+                  "guid": "3f2f8d0a-6c09-47ab-b817-885d22a0ffe7",
+                  "heading": "Sensor Zone Boolean OR Operator\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.7",
+                  "name": "sensorZoneOrOperator",
+                  "oid": "{ sensorZoneEntry 7 }",
+                  "status": "current",
+                  "syntax": "ITSUByteString (SIZE (8))\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "22",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1077",
+                  "guid": "44cc1198-8524-4e3d-987b-0b29dbed04fa",
+                  "heading": "Sensor Zone Paired Zone\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.8",
+                  "name": "sensorZonePairedZone",
+                  "oid": "{ sensorZoneEntry 8 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..255)\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "23",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1078",
+                  "guid": "82c49792-92ea-4221-a410-d581a6357073",
+                  "heading": "Sensor Zone Paired Zone Options\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.9",
+                  "name": "sensorZonePairedZoneOptions",
+                  "oid": "{ sensorZoneEntry 9 }",
+                  "status": "current",
+                  "syntax": "ITSBitmap (SIZE (1))\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "24",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1079",
+                  "guid": "fb013a0f-8656-443f-a51f-2383308caca4",
+                  "heading": "Sensor Zone Paired Zone Spacing\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.10",
+                  "name": "sensorZonePairedZoneSpacing",
+                  "oid": "{ sensorZoneEntry 10 }",
+                  "status": "current",
+                  "syntax": "Integer32 (1..255)\r",
+                  "type": "ot",
+                  "units": "centimeters",
+                  "history": [
+                    {
+                      "affectedNodeId": "25",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1080",
+                  "guid": "a7b46674-3ad2-4ecd-9354-7d93c7f74bba",
+                  "heading": "Sensor Zone Speed Correction Factor\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.11",
+                  "name": "sensorZoneSpeedCorrectionFactor",
+                  "oid": "{ sensorZoneEntry 11 }",
+                  "status": "current",
+                  "syntax": "Integer32 (1..20000)\r",
+                  "type": "ot",
+                  "units": "one-thousandth of a percent",
+                  "history": [
+                    {
+                      "affectedNodeId": "26",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1081",
+                  "guid": "41f3c289-0cc2-4235-8272-c7bde55e3dfb",
+                  "heading": "Sensor Zone Average Vehicle Length\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.12",
+                  "name": "sensorZoneAvgVehicleLength",
+                  "oid": "{ sensorZoneEntry 12}",
+                  "status": "current",
+                  "syntax": "Integer32 (1..4000)\r",
+                  "type": "ot",
+                  "units": "centimeters",
+                  "history": [
+                    {
+                      "affectedNodeId": "27",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1082",
+                  "guid": "703aa17e-c34f-4267-a561-ddcb6f787094",
+                  "heading": "Sensor Zone Length Parameter\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.13",
+                  "name": "sensorZoneLength",
+                  "oid": "{ sensorZoneEntry 13 }",
+                  "status": "current",
+                  "syntax": "Integer32 (1..4000 | 65535)\r",
+                  "type": "ot",
+                  "units": "centimeters",
+                  "history": [
+                    {
+                      "affectedNodeId": "28",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1083",
+                  "guid": "3468f245-38b1-488e-9a43-b22a18fae3a8",
+                  "heading": "Sensor Zone Status\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.14",
+                  "name": "sensorZoneStatus",
+                  "oid": "{ sensorZoneEntry 14 }",
+                  "status": "current",
+                  "syntax": "<pre>INTEGER {\n<br>                 other (1),\n<br>                 oK (2),\n<br>                 initializing (3),\n<br>                 noActivity (4),\n<br>                 maxPresence (5),\n<br>                 configurationError (6),\n<br>                 erraticCounts (7),\n<br>                 disabled (8),\n<br>                 overrideActive (9),\n<br>                 sensorFailure (10),\n<br>                 inputDataIntegrity (11),\n<br>                 poorContrast (12),\n<br>                 detectionAutoSuspended (13),\n<br>                 pairedZoneFault (14) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "29",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1084",
+                  "guid": "d71bbd69-2b85-4054-b7ac-ec065b6113fc",
+                  "heading": "Sensor Zone No Activity Fault Time\r",
+                  "access": "read-write",
+                  "defval": "{ 0 }",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.15",
+                  "name": "sensorZoneNoActivityFaultTime",
+                  "oid": "{ sensorZoneEntry 15 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "seconds",
+                  "history": [
+                    {
+                      "affectedNodeId": "30",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1085",
+                  "guid": "968b7031-515a-48e5-ad7f-e6233b79895b",
+                  "heading": "Sensor Zone Max Presence Fault Time\r",
+                  "access": "read-write",
+                  "defval": "{ 0 }",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.16",
+                  "name": "sensorZoneMaxPresenceFaultTime",
+                  "oid": "{ sensorZoneEntry 16 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "seconds",
+                  "history": [
+                    {
+                      "affectedNodeId": "31",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1086",
+                  "guid": "255305eb-1316-4aba-8c56-fc77540e13e7",
+                  "heading": "Sensor Zone Erratic Counts Fault Time\r",
+                  "access": "read-write",
+                  "defval": "{ 0 }",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.17",
+                  "name": "sensorZoneErraticCountsFaultTime",
+                  "oid": "{ sensorZoneEntry 17 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "seconds",
+                  "history": [
+                    {
+                      "affectedNodeId": "32",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1087",
+                  "guid": "3977690c-0799-4268-85e9-d3a70c0a2ac9",
+                  "heading": "Sensor Zone Erratic Counts Threshold\r",
+                  "access": "read-write",
+                  "defval": "{ 0 }",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.18",
+                  "name": "sensorZoneErraticCountsThreshold",
+                  "oid": "{ sensorZoneEntry 18 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "actuations",
+                  "history": [
+                    {
+                      "affectedNodeId": "33",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1088",
+                  "guid": "574c5645-5e11-4b23-89c4-ae4244398cc3",
+                  "heading": "Sensor Zone Technology\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.5.1.19",
+                  "name": "sensorZoneTechnology",
+                  "oid": "{ sensorZoneEntry 19 }",
+                  "status": "current",
+                  "syntax": "<pre>INTEGER {\n<br>                 other (1),\n<br>                 inductiveLoop (2),\n<br>                 machineVision (3) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "34",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1089",
+              "guid": "71a78539-7d9e-46c5-85e6-099eefb96ea3",
+              "heading": "Clock Available\r",
+              "access": "read-only",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.6",
+              "name": "clockAvailable",
+              "oid": "{ tssSystemSetup 6 }",
+              "status": "deprecated",
+              "syntax": "<pre>INTEGER {\n<br>                 clockYes (1),\n<br>                 clockNo (2) }</pre>",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "35",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1090",
+              "guid": "6a707208-998a-45e6-bc21-e7503948ecab",
+              "heading": "Sensor Technology\r",
+              "access": "read-only",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.7",
+              "name": "sensorTechnology",
+              "oid": "{ tssSystemSetup 7 }",
+              "status": "deprecated",
+              "syntax": "<pre>INTEGER {\n<br>                 other (1),\n<br>                 inductiveLoop (2),\n<br>                 machineVision (3) }</pre>",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "36",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1091",
+              "guid": "ca338d1e-2cc9-4d23-9adb-1df05715067f",
+              "heading": "Maximum Sample Data Entries\r",
+              "access": "read-only",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.8",
+              "name": "maxSampleDataEntries",
+              "oid": "{ tssSystemSetup 8 }",
+              "status": "current",
+              "syntax": "Integer32 (1..4)\r",
+              "type": "ot",
+              "units": "entries",
+              "history": [
+                {
+                  "affectedNodeId": "37",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1092",
+              "guid": "50cea4a7-985b-4214-9a79-453ec278b14b",
+              "heading": "Maximum Number of Characters\r",
+              "access": "read-only",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.9",
+              "name": "maxNumberOfCharacters",
+              "oid": "{ tssSystemSetup 9 }",
+              "status": "current",
+              "syntax": "Integer32 (8..255)\r",
+              "type": "ot",
+              "units": "octets",
+              "history": [
+                {
+                  "affectedNodeId": "38",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1093",
+              "guid": "77a20e4e-0144-4b05-8451-70c93ab70251",
+              "heading": "Functional Capabilities\r",
+              "access": "read-only",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.10",
+              "name": "functionalCapabilities",
+              "oid": "{ tssSystemSetup 10 }",
+              "status": "current",
+              "syntax": "ITSBitmap (SIZE (1))\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "39",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1094",
+              "guid": "f52e4ae3-d6b1-4f59-955c-95d1216b9e18",
+              "heading": "External Arming Inputs\r",
+              "access": "read-write",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.11",
+              "name": "externalArmingInputs",
+              "oid": "{ tssSystemSetup 11 }",
+              "status": "deprecated",
+              "syntax": "BITMAP64\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "40",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1095",
+              "guid": "835ffe08-be5d-4acf-a738-d4936ae16fe9",
+              "heading": "Output Conditioning Table\r The outputConditioningTable replaces the loopOutputConditioningTable that\r is used in NTCIP 1209:2005 version v01.\r",
+              "access": "not-accessible",
+              "name": "outputConditioningTable",
+              "oid": "{ tssSystemSetup 12 }",
+              "status": "current",
+              "syntax": "SEQUENCE OF OutputConditioningEntry\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "41",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "1096",
+                  "guid": "c182441a-5108-49da-b193-1979f0f2e3db",
+                  "access": "not-accessible",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.12.1",
+                  "index": "{ sensorZoneNumber }",
+                  "name": "outputConditioningEntry",
+                  "oid": "{ outputConditioningTable 1 }",
+                  "status": "current",
+                  "syntax": "OutputConditioningEntry\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "42",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1097",
+                  "guid": "0b7d3627-ee2d-410b-a9db-99f9d72ef999",
+                  "name": "OutputConditioningEntry",
+                  "syntax": "<pre>{\n<br>      sensorZoneOutputMode             INTEGER,\n<br>      sensorZoneMaxPresenceTime        Integer32,\n<br>      sensorZoneOutputDelayTime        Integer32,\n<br>      sensorZoneOutputDelayMode        INTEGER,\n<br>      sensorZoneOutputDelayEnables     BITMAP96,\n<br>      sensorZoneOutputExtendTime       Integer32,\n<br>      sensorZoneOutputExtendMode       INTEGER,\n<br>      sensorZoneOutputExtendEnables    BITMAP96,\n<br>      sensorZoneOutputSequenced        Integer32 }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "43",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1098",
+                  "guid": "e6c62113-de21-4765-8caf-2890342235ef",
+                  "heading": "Zone Output Mode\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.12.1.1",
+                  "name": "sensorZoneOutputMode",
+                  "oid": "{ outputConditioningEntry 1 }",
+                  "status": "current",
+                  "syntax": "<pre>INTEGER {\n<br>                 other (1),\n<br>                 pulse (2),\n<br>                 presence (3),\n<br>                 invalid (255)  }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "44",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1099",
+                  "guid": "2ee07068-dab5-4a5e-bc96-04dd6c1aa5b5",
+                  "heading": "Zone Maximum Presence Time\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.12.1.2",
+                  "name": "sensorZoneMaxPresenceTime",
+                  "oid": "{ outputConditioningEntry 2 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "seconds",
+                  "history": [
+                    {
+                      "affectedNodeId": "45",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1100",
+                  "guid": "5d867c46-2b40-4ce5-aa6a-7e9625e21861",
+                  "heading": "Zone Output Delay Time\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.12.1.3",
+                  "name": "sensorZoneOutputDelayTime",
+                  "oid": "{ outputConditioningEntry 3 }",
+                  "reference": "NEMA TS2 Clause 3.5.5.5.4.c and 6.5.2.24.1",
+                  "status": "current",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "deciseconds",
+                  "history": [
+                    {
+                      "affectedNodeId": "46",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1101",
+                  "guid": "b89ac2ab-b660-4591-b51b-90a075af058a",
+                  "heading": "Zone Output Delay Mode Parameter\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.12.1.4",
+                  "name": "sensorZoneOutputDelayMode",
+                  "oid": "{ outputConditioningEntry 4 }",
+                  "status": "current",
+                  "syntax": "<pre>INTEGER {\n<br>                 delayEnablesHaveNoEffect (1),\n<br>                 delayEnablesORedActive (2),\n<br>                 delayEnablesORedNotActive (3),\n<br>                 delayEnablesANDedActive (4),\n<br>                 delayEnablesANDedNotActive (5) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "47",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1102",
+                  "guid": "58aeec06-4687-472f-b0ee-3731eec42169",
+                  "heading": "Zone Output Delay Enables\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.12.1.5",
+                  "name": "sensorZoneOutputDelayEnables",
+                  "oid": "{ outputConditioningEntry 5 }",
+                  "status": "deprecated",
+                  "syntax": "BITMAP96\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "48",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1103",
+                  "guid": "ba3c7a05-064f-4fef-92a9-7d638aa46cc9",
+                  "heading": "Zone Output Extend Time\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.12.1.6",
+                  "name": "sensorZoneOutputExtendTime",
+                  "oid": "{ outputConditioningEntry 6 }",
+                  "reference": "NEMA TS2 Clause 3.5.5.5.4.d and 6.5.2.24.2",
+                  "status": "current",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "deciseconds",
+                  "history": [
+                    {
+                      "affectedNodeId": "49",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1104",
+                  "guid": "938f1f60-2172-4bb8-9745-fa333827e517",
+                  "heading": "Zone Output Extend Mode\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.12.1.7",
+                  "name": "sensorZoneOutputExtendMode",
+                  "oid": "{ outputConditioningEntry 7 }",
+                  "status": "current",
+                  "syntax": "<pre>INTEGER {\n<br>                 extendEnablesHaveNoEffect (1),\n<br>                 extendEnablesORedActive (2),\n<br>                 extendEnablesORedNotActive (3),\n<br>                 extendEnablesANDedActive (4),\n<br>                 extendEnablesANDedNotActive (5) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "50",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1105",
+                  "guid": "13acfc2d-7701-4581-a340-2ddea0f8850f",
+                  "heading": "Zone Output Extend Enables\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.12.1.8",
+                  "name": "sensorZoneOutputExtendEnables",
+                  "oid": "{ outputConditioningEntry 8 }",
+                  "status": "deprecated",
+                  "syntax": "BITMAP96\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "51",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1106",
+                  "guid": "156653db-7cc2-48ea-ac4f-ae87b1dbe1b5",
+                  "heading": "Zone Output Sequenced\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.12.1.9",
+                  "name": "sensorZoneOutputSequenced",
+                  "oid": "{ outputConditioningEntry 9 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..255)\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "52",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1107",
+              "guid": "96103479-ebc6-40b9-bd4e-41df5835c8ca",
+              "heading": "Pending Configuration File Name\r",
+              "access": "read-write",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.13",
+              "name": "pendingConfigurationFileName",
+              "oid": "{ tssSystemSetup 13}",
+              "status": "deprecated",
+              "syntax": "OCTET STRING (SIZE(8..32))\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "53",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1108",
+              "guid": "aa25fdc0-9f1d-4cc5-ae80-49325ee9e458",
+              "heading": "External Arming Inputs Version 3\r",
+              "access": "read-write",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.14",
+              "name": "externalArmingInputsV3",
+              "oid": "{ tssSystemSetup 14 }",
+              "status": "current",
+              "syntax": "ITSBitmap (SIZE(8))\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "54",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1109",
+              "guid": "e1a85c1a-6737-43f6-9d12-9d838bdf41b3",
+              "heading": "External Arming Bit Status\r",
+              "access": "read-only",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.15",
+              "name": "externalArmingBitStatus",
+              "oid": "{ tssSystemSetup 15 }",
+              "status": "current",
+              "syntax": "ITSBitmap (SIZE(4))\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "55",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1110",
+              "guid": "50117698-9785-40e7-ae79-b3a8e383b7bd",
+              "heading": "Maximum Restart Time\r",
+              "access": "read-only",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.1.16",
+              "name": "tssRestartTimeMax",
+              "oid": "{ tssSystemSetup 16 }",
+              "status": "current",
+              "syntax": "ITSUnsigned8\r",
+              "type": "ot",
+              "units": "seconds",
+              "history": [
+                {
+                  "affectedNodeId": "56",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1111",
+          "guid": "fa338be8-2609-47c6-bea8-0671eb66eac1",
+          "heading": "SENSOR CONTROL OBJECTS\r",
+          "text": "This node is an identifier used to group all objects for TSS output control data elements. A sensor zone can be mapped to any available output. Outputs report discrete activity states sensed within a zone combined with other logic. Output states should be refreshed upon change of actuation state for each associated detector or any other parameters associated with the logic.\n<br>&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.4.2",
+          "name": "tssControl",
+          "oid": "{ tss 2 }",
+          "status": "current",
+          "type": "oi",
+          "history": [
+            {
+              "affectedNodeId": "57",
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-02-19T22:07:36.547Z",
+              "docId": "NTCIP1209-Tss",
+              "structureAction": "Copy"
+            }
+          ],
+          "children": [
+            {
+              "id": "1112",
+              "guid": "08863db4-b26e-472c-a68e-b1ebf449d03d",
+              "heading": "Maximum Number of Outputs\r",
+              "access": "read-only",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.1",
+              "name": "maxOutputNumber",
+              "oid": "{ tssControl 1 }",
+              "status": "current",
+              "syntax": "Integer32 (1..255)\r",
+              "type": "ot",
+              "units": "outputs",
+              "history": [
+                {
+                  "affectedNodeId": "58",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1113",
+              "guid": "05ce21d5-eb0d-4f1d-a269-d8796758ac50",
+              "heading": "Output Configuration Table\r",
+              "text": "&lt;Description&gt; Table containing configuration data elements for each TSS physical output. The number of rows in this table is equal to the maxOutputNumber data element. Table rows are set by the manufacturer, and row creation/deletion is not supported.\n<br>&lt;TableType&gt; static\n<br>&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.4.2.2",
+              "access": "not-accessible",
+              "name": "outputConfigurationTable",
+              "oid": "{ tssControl 2 }",
+              "status": "current",
+              "syntax": "SEQUENCE OF OutputConfigurationEntry\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "59",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "1114",
+                  "guid": "ea079fdc-e8be-45f8-901d-bfec9e84fa5b",
+                  "access": "not-accessible",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.2.1",
+                  "index": "{ outputNumber }",
+                  "name": "outputConfigurationEntry",
+                  "oid": "{ outputConfigurationTable 1}",
+                  "status": "current",
+                  "syntax": "OutputConfigurationEntry\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "60",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1115",
+                  "guid": "fd27a249-3490-4392-b8e4-fe45ab8f4a02",
+                  "name": "OutputConfigurationEntry",
+                  "syntax": "<pre>{\n<br>      outputNumber                  Integer32,\n<br>      outputSensorZoneNumber        Integer32,\n<br>      outputFailsafeMode            INTEGER,\n<br>      outputModeStatus              NtcipOctetBitmap8,\n<br>      outputLabel                   SnmpAdminString,\n<br>      outputArmingEnables           BITMAP96,\n<br>      outputArmingMode              INTEGER,\n<br>      outputFailsafeModeV3          INTEGER,\n<br>      outputFailsafeReset           TruthValue,\n<br>      outputOverrideMode            INTEGER,\n<br>      outputModeStatusV3            BITS,\n<br>      outputArmingEnablesV3         BITS }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "61",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1116",
+                  "guid": "00d9c0c7-a579-4917-b24c-90a939a0baa3",
+                  "heading": "Output Number\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.2.1.1",
+                  "name": "outputNumber",
+                  "oid": "{ outputConfigurationEntry 1 }",
+                  "status": "current",
+                  "syntax": "Integer32 (1..255)\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "62",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1117",
+                  "guid": "94ce7c40-9a7c-49ae-b8a5-2e32f043ed64",
+                  "heading": "Output Sensor Zone Number\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.2.1.2",
+                  "name": "outputSensorZoneNumber",
+                  "oid": "{ outputConfigurationEntry 2}",
+                  "status": "current",
+                  "syntax": "Integer32 (0..255)\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "63",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1118",
+                  "guid": "5a5d1dfb-5125-4a37-b13f-ca342f587514",
+                  "heading": "Output Failsafe Mode\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.2.1.3",
+                  "name": "outputFailsafeMode",
+                  "oid": "{ outputConfigurationEntry 3 }",
+                  "status": "deprecated",
+                  "syntax": "<pre>INTEGER {\n<br>                 failsafeModeOn (1),\n<br>                 failsafeModeOff (2),\n<br>                 overrideCommandOn (3),\n<br>                 overrideCommandOff (4),\n<br>                 normal (5) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "64",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1119",
+                  "guid": "025f7aa1-421d-4c14-b406-55cf75082ce0",
+                  "heading": "Output Mode Status\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.2.1.4",
+                  "name": "outputModeStatus",
+                  "oid": "{ outputConfigurationEntry 4 }",
+                  "status": "deprecated",
+                  "syntax": "NtcipOctetBitmap8\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "65",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1120",
+                  "guid": "d5f93ac4-aa04-4a71-ad4e-bde2d6cd4c78",
+                  "heading": "Output Label\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.2.1.5",
+                  "name": "outputLabel",
+                  "oid": "{ outputConfigurationEntry 5 }",
+                  "status": "current",
+                  "syntax": "SnmpAdminString (SIZE (8..255))\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "66",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1121",
+                  "guid": "45372b38-c4a0-4b22-9ec5-f3f5cb6b8531",
+                  "heading": "Output Arming Enables\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.2.1.6",
+                  "name": "outputArmingEnables",
+                  "oid": "{ outputConfigurationEntry 6 }",
+                  "status": "deprecated",
+                  "syntax": "BITMAP96\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "67",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1122",
+                  "guid": "1ad2fec9-aed2-4eaf-bec3-c9d95a4e515b",
+                  "heading": "Output Arming Mode\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.2.1.7",
+                  "name": "outputArmingMode",
+                  "oid": "{ outputConfigurationEntry 7 }",
+                  "status": "current",
+                  "syntax": "<pre>INTEGER {\n<br>                 armingEnablesHaveNoEffect (1),\n<br>                 normOffArmingEnablesORedZone (2),\n<br>                 normOnArmingEnablesORedZone (3),\n<br>                 normZoneArmingEnablesORedOff (4),\n<br>                 normZoneArmingEnablesORedOn (5),\n<br>                 normOffArmingEnablesANDedZone (6),\n<br>                 normOnArmingEnablesANDedZone (7),\n<br>                 normZoneArmingEnablesANDedOff (8),\n<br>                 normZoneArmingEnablesANDedOn (9)}</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "68",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1123",
+                  "guid": "07eea486-e6f7-422e-917d-6c61fe456eb0",
+                  "heading": "Output Failsafe Mode Version 3\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.2.1.8",
+                  "name": "outputFailsafeModeV3",
+                  "oid": "{ outputConfigurationEntry 8 }",
+                  "status": "current",
+                  "syntax": "<pre>INTEGER {\n<br>                 failsafeModeOn (1),\n<br>                 failsafeModeOff (2) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "69",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1124",
+                  "guid": "557050fa-7eb4-4b75-a05f-343f4bf6836f",
+                  "heading": "Output Failsafe Reset\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.2.1.9",
+                  "name": "outputFailsafeReset",
+                  "oid": "{ outputConfigurationEntry 9 }",
+                  "status": "current",
+                  "syntax": "TruthValue\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "70",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1125",
+                  "guid": "fe41c9af-93e9-4a09-bf87-86190b836b96",
+                  "heading": "Output Override Mode\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.2.1.10",
+                  "name": "outputOverrideMode",
+                  "oid": "{ outputConfigurationEntry 10 }",
+                  "status": "current",
+                  "syntax": "<pre>INTEGER {\n<br>                 normal (1),\n<br>                 overrideCommandOn (2),\n<br>                 overrideCommandOff (3) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "71",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1126",
+                  "guid": "0e024188-0ac7-459b-9f90-ca5c2ba6eed1",
+                  "heading": "Output Mode Status Version 3\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.2.1.11",
+                  "name": "outputModeStatusV3",
+                  "oid": "{ outputConfigurationEntry 11 }",
+                  "status": "current",
+                  "syntax": "<pre>BITS { failsafeOn (0),\n<br>               failsafeOff (1),\n<br>               overrideOn (2),\n<br>               overrideOff (3) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "72",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1127",
+                  "guid": "bfaf036d-9c4f-4172-aa63-2aea3efcc787",
+                  "heading": "Output Arming Enables Version 3\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.2.1.12",
+                  "name": "outputArmingEnablesV3",
+                  "oid": "{ outputConfigurationEntry 12 }",
+                  "status": "current",
+                  "syntax": "<pre>BITS {pin1off(0),     pin2off(1),     pin3off(2),     pin4off(3),\n<br>              pin5off(4),     pin6off(5),     pin7off(6),     pin8off(7),\n<br>              pin9off(8),     pin10off(9),    pin11off(10),   pin12off(11),\n<br>              pin13off(12),   pin14off(13),   pin15off(14),   pin16off(15),\n<br>              pin1on(16),     pin2on(17),     pin3on(18),     pin4on(19),\n<br>              pin5on(20),     pin6on(21),     pin7on(22),     pin8on(23),\n<br>              pin9on(24),     pin10on(25),    pin11on(26),    pin12on(27),\n<br>              pin13on(28),    pin14on(29),    pin15on(30),    pin16on(31),\n<br>              input1off(32),  input2off(33),  input3off(34),  input4off(35),\n<br>              input5off(36),  input6off(37),  input7off(38),  input8off(39),\n<br>              input9off(40),  input10off(41), input11off(42), input12off(43),\n<br>              input13off(44), input14off(45), input15off(46), input16off(47),\n<br>              input17off(48), input18off(49), input19off(50), input20off(51),\n<br>              input21off(52), input22off(53), input23off(54), input24off(55),\n<br>              input25off(56), input26off(57), input27off(58), input28off(59),\n<br>              input29off(60), input30off(61), input31off(62), input32off(63),\n<br>              input1on(64),   input2on(65),   input3on(66),   input4on(67),\n<br>              input5on(68),   input6on(69),   input7on(70),   input8on(71),\n<br>              input9on(72),   input10on(73),  input11on(74),  input12on(75),\n<br>              input13on(76),  input14on(77),  input15on(78),  input16on(79),\n<br>              input17on(80),  input18on(81),  input19on(82),  input20on(83),\n<br>              input21on(84),  input22on(85),  input23on(86),  input24on(87),\n<br>              input25on(88),  input26on(89),  input27on(90),  input28on(91),\n<br>              input29on(92),  input30on(93),  input31on(94),  input32on(95)\n<br> }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "73",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1128",
+              "guid": "6286d05c-4cc4-44fd-9396-3b8bed9b1780",
+              "heading": "Maximum Number of Output Groups\r",
+              "access": "read-only",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.3",
+              "name": "maxOutputGroups",
+              "oid": "{ tssControl 3 }",
+              "status": "current",
+              "syntax": "Integer32 (1..32)\r",
+              "type": "ot",
+              "units": "output groups",
+              "history": [
+                {
+                  "affectedNodeId": "74",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1129",
+              "guid": "f5ce3370-e625-4e03-ac33-28a5d0fed4ce",
+              "heading": "Output Group Table\r",
+              "access": "not-accessible",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.4",
+              "name": "outputGroupTable",
+              "oid": "{ tssControl 4 }",
+              "status": "current",
+              "syntax": "SEQUENCE OF OutputGroupEntry\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "75",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "1130",
+                  "guid": "e851979f-be50-400e-87d0-f2b56bcb520e",
+                  "access": "not-accessible",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.4.1",
+                  "index": "{ outputGroupNumber }",
+                  "name": "outputGroupEntry",
+                  "oid": "{ outputGroupTable 1 }",
+                  "status": "current",
+                  "syntax": "OutputGroupEntry\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "76",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1131",
+                  "guid": "0c6c10bd-2e25-4775-8cad-f421e9df1aa0",
+                  "name": "OutputGroupEntry",
+                  "syntax": "<pre>{\n<br>            outputGroupNumber             Integer32,\n<br>            outputGroupOutputState        ITSBitmap }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "77",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1132",
+                  "guid": "303dc619-4c47-4a1f-8b50-d223989bf0f0",
+                  "heading": "Output Group Number\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.4.1.1",
+                  "name": "outputGroupNumber",
+                  "oid": "{ outputGroupEntry 1 }",
+                  "status": "current",
+                  "syntax": "Integer32 (1..32)\r",
+                  "type": "ot",
+                  "units": "outputs",
+                  "history": [
+                    {
+                      "affectedNodeId": "78",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1133",
+                  "guid": "5fd52d63-c75b-4f70-b8c9-988f5ae7e452",
+                  "heading": "Output Group Output State\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.2.4.1.2",
+                  "name": "outputGroupOutputState",
+                  "oid": "{ outputGroupEntry 2 }",
+                  "status": "current",
+                  "syntax": "ITSBitmap (SIZE (1))\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "79",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1134",
+          "guid": "3e6ad9c2-475a-41b4-859a-c0753a53b95c",
+          "heading": "TSS DATA COLLECTION OBJECTS\r",
+          "text": "This node is for data collection elements.\n<br>&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.4.3",
+          "name": "tssDataCollection",
+          "oid": "{ tss 3 }",
+          "status": "current",
+          "type": "oi",
+          "history": [
+            {
+              "affectedNodeId": "80",
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-02-19T22:07:36.547Z",
+              "docId": "NTCIP1209-Tss",
+              "structureAction": "Copy"
+            }
+          ],
+          "children": [
+            {
+              "id": "1135",
+              "guid": "89b0c26d-d176-4d59-ad0a-c722ceadf69c",
+              "heading": "Data Collection Table\r",
+              "access": "not-accessible",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.1",
+              "name": "dataCollectionTable",
+              "oid": "{ tssDataCollection 1 }",
+              "status": "deprecated",
+              "syntax": "SEQUENCE OF DataCollectionEntry\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "81",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "1136",
+                  "guid": "d3203dd4-276b-45dc-bed3-0cb7e628d818",
+                  "access": "not-accessible",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.1.1",
+                  "index": "{ sensorZoneNumber }",
+                  "name": "dataCollectionEntry",
+                  "oid": "{ dataCollectionTable 1 }",
+                  "status": "deprecated",
+                  "syntax": "DataCollectionEntry\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "82",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1137",
+                  "guid": "b30d0f76-ccff-4f88-94fb-be340a0f0c39",
+                  "name": "DataCollectionEntry",
+                  "syntax": "<pre>{\n<br>      endTime           Unsigned32,\n<br>      volumeData        Integer32,\n<br>      percentOccupancy  Integer32,\n<br>      speedData         Integer32,\n<br>      zoneStatus        INTEGER }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "83",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1138",
+                  "guid": "29420219-dcf8-4f4e-a577-55a51c2c6ee5",
+                  "heading": "End Time\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.1.1.1",
+                  "name": "endTime",
+                  "oid": "{ dataCollectionEntry 1 }",
+                  "status": "deprecated",
+                  "syntax": "Unsigned32\r",
+                  "type": "ot",
+                  "units": "seconds",
+                  "history": [
+                    {
+                      "affectedNodeId": "84",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1139",
+                  "guid": "74b9b7fa-5757-49b3-b606-5312e0ef8151",
+                  "heading": "Volume Data\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.1.1.2",
+                  "name": "volumeData",
+                  "oid": "{ dataCollectionEntry 2 }",
+                  "status": "deprecated",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "counts",
+                  "history": [
+                    {
+                      "affectedNodeId": "85",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1140",
+                  "guid": "417dcee2-ec90-42c5-b2ce-2e3eaa5213ae",
+                  "heading": "Percent Occupancy\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.1.1.3",
+                  "name": "percentOccupancy",
+                  "oid": "{ dataCollectionEntry 3 }",
+                  "status": "deprecated",
+                  "syntax": "Integer32 (0..1000 | 65535)\r",
+                  "type": "ot",
+                  "units": "decipercent",
+                  "history": [
+                    {
+                      "affectedNodeId": "86",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1141",
+                  "guid": "6a1491a5-d71a-4b60-8f44-80ed47373b2e",
+                  "heading": "Speed Data\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.1.1.4",
+                  "name": "speedData",
+                  "oid": "{ dataCollectionEntry 4 }",
+                  "status": "deprecated",
+                  "syntax": "Integer32 (0..2550 | 65535)\r",
+                  "type": "ot",
+                  "units": "tenths of km/h",
+                  "history": [
+                    {
+                      "affectedNodeId": "87",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1142",
+                  "guid": "7903a07e-58b9-4efc-b2c6-5d9b015919e6",
+                  "heading": "Zone Status\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.1.1.5",
+                  "name": "zoneStatus",
+                  "oid": "{ dataCollectionEntry 5 }",
+                  "status": "deprecated",
+                  "syntax": "<pre>INTEGER {\n<br>                 other (1),\n<br>                 oK (2),\n<br>                 initializing (3),\n<br>                 noActivity (4),\n<br>                 maxPresence (5),\n<br>                 configurationError (6),\n<br>                 erraticCounts (7),\n<br>                 disabled (8),\n<br>                 overrideActive (9),\n<br>                 sensorFailure (10) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "88",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1143",
+              "guid": "bc481323-242a-44d7-9a48-05d9991b59c3",
+              "heading": "Data Buffer Table\r",
+              "access": "not-accessible",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.2",
+              "name": "dataBufferTable",
+              "oid": "{ tssDataCollection 2 }",
+              "status": "deprecated",
+              "syntax": "SEQUENCE OF DataBufferEntry\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "89",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "1144",
+                  "guid": "17a45f16-8124-4795-8336-f6c1e377f0a5",
+                  "access": "not-accessible",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.2.1",
+                  "index": "{ sensorZoneNumber }",
+                  "name": "dataBufferEntry",
+                  "oid": "{ dataBufferTable 1 }",
+                  "status": "deprecated",
+                  "syntax": "DataBufferEntry\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "90",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1145",
+                  "guid": "cd96f002-9ba1-4a6a-a1bb-1cb966fe3ee0",
+                  "name": "DataBufferEntry",
+                  "syntax": "<pre>{\n<br>      endTimeBuffer           Unsigned32,\n<br>      volumeDataBuffer        Integer32,\n<br>      percentOccupancyBuffer  Integer32,\n<br>      speedDataBuffer         Integer32,\n<br>      zoneStatusBuffer        INTEGER }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "91",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1146",
+                  "guid": "e118e829-b2a4-4b90-b672-b9e2e3fcc003",
+                  "heading": "End Time Buffer\r",
+                  "access": "read-only",
+                  "name": "endTimeBuffer",
+                  "oid": "{ dataBufferEntry 1 }",
+                  "status": "deprecated",
+                  "syntax": "Unsigned32\r",
+                  "type": "ot",
+                  "units": "seconds",
+                  "history": [
+                    {
+                      "affectedNodeId": "92",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1147",
+                  "guid": "d55a9c8b-b21d-4513-8ed9-2e89ae7eeecd",
+                  "heading": "Volume Data Buffer\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.2.1.2",
+                  "name": "volumeDataBuffer",
+                  "oid": "{ dataBufferEntry 2 }",
+                  "status": "deprecated",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "counts",
+                  "history": [
+                    {
+                      "affectedNodeId": "93",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1148",
+                  "guid": "0826a640-d48a-43e7-86a8-83c435619eb9",
+                  "heading": "Percent Occupancy Buffer\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.2.1.3",
+                  "name": "percentOccupancyBuffer",
+                  "oid": "{ dataBufferEntry 3 }",
+                  "status": "deprecated",
+                  "syntax": "Integer32 (0..1000 | 65535)\r",
+                  "type": "ot",
+                  "units": "decipercent",
+                  "history": [
+                    {
+                      "affectedNodeId": "94",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1149",
+                  "guid": "e8aa3409-61ab-4400-a7ff-59bde01b7e4d",
+                  "heading": "Speed Data Buffer\r",
+                  "text": "&lt;Description&gt; Arithmetic mean of speeds collected over the sample period, with units of 1/10ths of km/hr, for the second most recently completed previous sample period. For a volume of zero during the sample period, the value of 65535 shall be returned to represent an invalid or missing value. A missing value is reported when the zoneStatusBuffer is anything other than OK for the entire sampling period. Values 2551 through 65534 are reserved for future use.\n<br>&lt;Parameter Type&gt; Status \n<br>&lt;Superseded by&gt; sampleSpeedData.x.3.1, where x = the sensorZoneNumber of this entry. If this object is supported, it must report the same value as the superceding object.\n<br>&lt;Informative&gt; This object was deprecated in NTCIP 1209 v02.\n<br>&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.4.3.2.1.4",
+                  "access": "read-only",
+                  "name": "speedDataBuffer",
+                  "oid": "{ dataBufferEntry 4 }",
+                  "status": "deprecated",
+                  "syntax": "Integer32 (0..2550 | 65535)\r",
+                  "type": "ot",
+                  "units": "tenths of km/h",
+                  "history": [
+                    {
+                      "affectedNodeId": "95",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1150",
+                  "guid": "e3563182-877b-490c-8e1f-bd09b0eb2bdd",
+                  "heading": "Zone Status Buffer\r",
+                  "text": "Detailed status returned as result of diagnostics, for the previous sample period, as follows:\n<br>      Value        Meaning\n<br>      Other - Indicates an error has occurred within the TSS for which\n<br>      there is no defined definition within this data element,\n<br>      oK - Indicates no other status values apply,\n<br>      initializing - Indicates an initialization or diagnostics procedure is\n<br>      in-progress,\n<br>      noActivity - Indicates no activity condition,\n<br>      maxPresence - Indicates max presence condition,\n<br>      configurationError - Indicates an error within the TSS configuration\n<br>      setup,\n<br>      erraticCounts - Indicates erratic counts,\n<br>      disabled - Indicates that the zone is disabled,\n<br>      overrideActive - Indicates an override is active,\n<br>      sensorFailure - Indicates a sensing element failure.\n<br>\n<br>If a condition occurs during the sample period, then that state remains for the duration of that sample period. If multiple conditions occur during a sample period, the last reported condition, other than OK, is retained.\n<br>&lt;Parameter Type&gt; Status \n<br>&lt;Superseded by&gt; sampleZoneStatus.x.3.1, where x = the sensorZoneNumber of this entry. If this object is supported, it must report the same value as the superceding object.\n<br>&lt;Informative&gt; This object was deprecated in NTCIP 1209 v02.\n<br>&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.4.3.2.1.5",
+                  "access": "read-only",
+                  "name": "zoneStatusBuffer",
+                  "oid": "{ dataBufferEntry 5 }",
+                  "status": "deprecated",
+                  "syntax": "<pre>INTEGER {\n<br>                 other (1),\n<br>                 oK (2),\n<br>                 initializing (3),\n<br>                 noActivity (4),\n<br>                 maxPresence (5),\n<br>                 configurationError (6),\n<br>                 erraticCounts (7),\n<br>                 disabled (8),\n<br>                 overrideActive (9),\n<br>                 sensorFailure (10)\n<br>                 }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "96",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1151",
+              "guid": "abeb5c01-8f43-401b-8aa0-877f3cddbafa",
+              "heading": "Zone Sequence Table\r",
+              "access": "not-accessible",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.3",
+              "name": "zoneSequenceTable",
+              "oid": "{ tssDataCollection 3 }",
+              "status": "current",
+              "syntax": "SEQUENCE OF ZoneSequenceTableEntry\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "97",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "1152",
+                  "guid": "ec78aff3-3c1c-4317-95a9-884f8a07cc9d",
+                  "access": "not-accessible",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.3.1",
+                  "index": "{ sensorZoneNumber }",
+                  "name": "zoneSequenceTableEntry",
+                  "oid": "{ zoneSequenceTable 1 }",
+                  "status": "current",
+                  "syntax": "ZoneSequenceTableEntry\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "98",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1153",
+                  "guid": "3ed0c5cd-546c-447a-bd9b-9c091e1be2fc",
+                  "name": "ZoneSequenceTableEntry",
+                  "syntax": "<pre>{\n<br>      numSampleDataEntries    Integer32,\n<br>      numSensorZoneClass      Integer32 }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "99",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1154",
+                  "guid": "12e882fc-9be9-40ce-8e34-9c55c784fdff",
+                  "heading": "Number of Sample Data Entries\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.3.1.1",
+                  "name": "numSampleDataEntries",
+                  "oid": "{ zoneSequenceTableEntry 1 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..5)\r",
+                  "type": "ot",
+                  "units": "entries",
+                  "history": [
+                    {
+                      "affectedNodeId": "100",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1155",
+                  "guid": "9e2f1a65-3832-4786-98de-ef8fd1b0a760",
+                  "heading": "Number of Sensor Zone Class\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.3.1.2",
+                  "name": "numSensorZoneClass",
+                  "oid": "{ zoneSequenceTableEntry 2 }",
+                  "status": "current",
+                  "syntax": "Integer32 (1..255)\r",
+                  "type": "ot",
+                  "units": "classes",
+                  "history": [
+                    {
+                      "affectedNodeId": "101",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1156",
+              "guid": "4e683ac8-d850-4ac4-93b0-f96522a8bdb0",
+              "heading": "Sample Data Table\r",
+              "access": "not-accessible",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.4",
+              "name": "sampleDataTable",
+              "oid": "{ tssDataCollection 4 }",
+              "status": "current",
+              "syntax": "SEQUENCE OF SampleDataEntry\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "102",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "1157",
+                  "guid": "178e1fd9-e770-471d-8146-f3c5dd3601b7",
+                  "access": "not-accessible",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.4.1",
+                  "index": "{ sensorZoneNumber, sampleEntryNum, sampleZoneClass }",
+                  "name": "sampleDataEntry",
+                  "oid": "{ sampleDataTable 1 }",
+                  "status": "current",
+                  "syntax": "SampleDataEntry\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "103",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1158",
+                  "guid": "e23b7d83-c366-4155-bc4d-fc28b0f26125",
+                  "name": "SampleDataEntry",
+                  "syntax": "<pre>{\n<br>      sampleEntryNum          Integer32,\n<br>      sampleZoneClass         Integer32,\n<br>      sampleEndTime           Unsigned32,\n<br>      sampleVolumeData        Integer32,\n<br>      samplePercentOccupancy  Integer32,\n<br>      sampleSpeedData         Integer32,\n<br>      sampleZoneStatus        INTEGER,\n<br>      sampleSequenceNumber    Integer32,\n<br>      sampleEndTimeStamp      ITSTimeStamp,\n<br>      sampleEndTimeTicks      TimeTicks }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "104",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1159",
+                  "guid": "bd39b4d2-ee24-4680-8c3e-5614d08a0cfc",
+                  "heading": "Sample Entry Number\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.4.1.1",
+                  "name": "sampleEntryNum",
+                  "oid": "{ sampleDataEntry 1 }",
+                  "status": "current",
+                  "syntax": "Integer32 (1..5)\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "105",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1160",
+                  "guid": "e9d26a9d-6351-49d3-a0c1-8ddece58326a",
+                  "heading": "Sample Zone Class\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.4.1.2",
+                  "name": "sampleZoneClass",
+                  "oid": "{ sampleDataEntry 2 }",
+                  "status": "current",
+                  "syntax": "Integer32 (1..255)\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "106",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1161",
+                  "guid": "9049ef7c-c5bc-4e75-92fe-5620c1c83535",
+                  "heading": "Sample End Time\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.4.1.3",
+                  "name": "sampleEndTime",
+                  "oid": "{ sampleDataEntry 3 }",
+                  "status": "deprecated",
+                  "syntax": "Unsigned32\r",
+                  "type": "ot",
+                  "units": "seconds",
+                  "history": [
+                    {
+                      "affectedNodeId": "107",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1162",
+                  "guid": "f5a13aee-04cf-4759-9002-cd9f2bf1ef50",
+                  "heading": "Sample Volume Data\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.4.1.4",
+                  "name": "sampleVolumeData",
+                  "oid": "{ sampleDataEntry 4 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "activations",
+                  "history": [
+                    {
+                      "affectedNodeId": "108",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1163",
+                  "guid": "fafc92b2-0bae-495d-b4c6-067631ae4733",
+                  "heading": "Sample Percent Occupancy\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.4.1.5",
+                  "name": "samplePercentOccupancy",
+                  "oid": "{ sampleDataEntry 5 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..1000 | 65535)\r",
+                  "type": "ot",
+                  "units": "decipercent",
+                  "history": [
+                    {
+                      "affectedNodeId": "109",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1164",
+                  "guid": "947d258f-1e2b-4033-b373-6f46e548a607",
+                  "heading": "Sample Speed Data\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.4.1.6",
+                  "name": "sampleSpeedData",
+                  "oid": "{ sampleDataEntry 6 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..2550 | 65535)\r",
+                  "type": "ot",
+                  "units": "tenths of km/h",
+                  "history": [
+                    {
+                      "affectedNodeId": "110",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1165",
+                  "guid": "397e325d-6a3b-4fef-9f61-e45d30a5e12a",
+                  "heading": "Sample Zone Status\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.4.1.7",
+                  "name": "sampleZoneStatus",
+                  "oid": "{ sampleDataEntry 7 }",
+                  "status": "current",
+                  "syntax": "<pre>INTEGER {\n<br>                 other (1),\n<br>                 oK (2),\n<br>                 initializing (3),\n<br>                 noActivity (4),\n<br>                 maxPresence (5),\n<br>                 configurationError (6),\n<br>                 erraticCounts (7),\n<br>                 disabled (8),\n<br>                 overrideActive (9),\n<br>                 sensorFailure (10),\n<br>                 inputDataIntegrity (11),\n<br>                 poorContrast (12),\n<br>                 detectionAutoSuspended (13),\n<br>                 pairedZoneFault (14) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "111",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1166",
+                  "guid": "7649c2cc-e4df-4a14-b3e3-6641ff4607d5",
+                  "heading": "Sample Sequence Number\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.4.1.8",
+                  "name": "sampleSequenceNumber",
+                  "oid": "{ sampleDataEntry 8 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "historic data entries",
+                  "history": [
+                    {
+                      "affectedNodeId": "112",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1167",
+                  "guid": "e9838360-3e1e-4faa-a69c-4bd9bc0b0fad",
+                  "heading": "Sample End Time Stamp\r",
+                  "access": "read-only",
+                  "defval": "{ '0000000000000000'H }",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.4.1.3",
+                  "name": "sampleEndTimeStamp",
+                  "oid": "{ sampleDataEntry 10 }",
+                  "status": "current",
+                  "syntax": "ITSTimeStamp\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "113",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1168",
+                  "guid": "cb7cee11-3847-4520-85ed-ec93037f2b31",
+                  "heading": "Sample End Time Ticks\r",
+                  "access": "read-only",
+                  "defval": "{ 0 }",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.4.1.3",
+                  "name": "sampleEndTimeTicks",
+                  "oid": "{ sampleDataEntry 11 }",
+                  "status": "current",
+                  "syntax": "TimeTicks\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "114",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1169",
+              "guid": "a3a5c770-2fb6-4b56-83e8-9f44e728e566",
+              "heading": "Zone Class Table\r",
+              "access": "not-accessible",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.5",
+              "name": "zoneClassTable",
+              "oid": "{ tssDataCollection 5 }",
+              "status": "current",
+              "syntax": "SEQUENCE OF ZoneClassTableEntry\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "115",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "1170",
+                  "guid": "53e14488-739e-41d4-b3a3-8b86f64711a9",
+                  "access": "not-accessible",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.5.1",
+                  "index": "{ sensorZoneNumber, sampleZoneClass }",
+                  "name": "zoneClassTableEntry",
+                  "oid": "{ zoneClassTable 1 }",
+                  "status": "current",
+                  "syntax": "ZoneClassTableEntry\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "116",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1171",
+                  "guid": "ee933fd8-9b83-4cbf-8d09-cda145b3a7bd",
+                  "name": "ZoneClassTableEntry",
+                  "syntax": "<pre>{\n<br>      zoneClassLabel      SnmpAdminString }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "117",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1172",
+                  "guid": "adea624b-8871-4132-bdf6-6d47eec15f82",
+                  "heading": "Zone Class Label\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.3.5.1.1",
+                  "name": "zoneClassLabel",
+                  "oid": "{ zoneClassTableEntry 1 }",
+                  "status": "current",
+                  "syntax": "SnmpAdminString\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "118",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1173",
+          "guid": "bb4a209b-645f-45ab-9e07-1cbf9148305c",
+          "heading": "INDUCTIVE LOOP DETECTOR OBJECTS\r",
+          "text": "This node contains the configuration objects specific to inductive loop detectors. These objects set up physical parameters on the detector that are controlled on a per output basis. These objects are only valid for the zones that map directly to an output on the detector. Zone 1 maps to output 1 and Zone 2 maps to output 2 on a two-channel sensor unit and Zone 3 maps to output 3, and Zone 4 maps to output 4 on a four-channel sensor unit. For inductive loop detectors, the term 'channel' is often used to refer to an 'output'.\n<br>&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.4.4",
+          "name": "tssInductiveLoop",
+          "oid": "{ tss 4 }",
+          "status": "current",
+          "type": "oi",
+          "history": [
+            {
+              "affectedNodeId": "119",
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-02-19T22:07:36.547Z",
+              "docId": "NTCIP1209-Tss",
+              "structureAction": "Copy"
+            }
+          ],
+          "children": [
+            {
+              "id": "1174",
+              "guid": "e6e48990-4475-4c6e-a479-ea6cdb2a096f",
+              "heading": "Loop System Setup Table\r",
+              "access": "not-accessible",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.1",
+              "name": "loopSensorSetupTable",
+              "oid": "{ tssInductiveLoop 1 }",
+              "status": "current",
+              "syntax": "SEQUENCE OF LoopSensorSetupEntry\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "120",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "1175",
+                  "guid": "1942510f-203c-4a70-9550-d015ede61813",
+                  "access": "not-accessible",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.1.1",
+                  "index": "{ sensorZoneNumber }",
+                  "name": "loopSensorSetupEntry",
+                  "oid": "{ loopSensorSetupTable 1 }",
+                  "status": "current",
+                  "syntax": "LoopSensorSetupEntry\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "121",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1176",
+                  "guid": "2bd66313-5cae-4a2e-bce2-00438f2f17aa",
+                  "name": "LoopSensorSetupEntry",
+                  "syntax": "<pre>{\n<br>      zoneSensitivityMode     INTEGER,\n<br>      zoneSensitivity         OCTET STRING,\n<br>      zoneFrequencyRange      ITSUByteString,\n<br>      sensorZoneLoopLayout    INTEGER }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "122",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1177",
+                  "guid": "3f391c49-2fa3-4f74-8296-535c206c3638",
+                  "heading": "Zone Sensitivity Mode\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.1.1.1",
+                  "name": "zoneSensitivityMode",
+                  "oid": "{ loopSensorSetupEntry 1 }",
+                  "status": "current",
+                  "syntax": "<pre>INTEGER { \n<br>                 deltaL (1),\n<br>                 deltaLOverSqrtL (2),\n<br>                 deltaLOverL (3) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "123",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1178",
+                  "guid": "386dfcf8-4c94-4be6-9f51-b0eefe636df7",
+                  "heading": "Zone Sensitivity\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.1.1.2",
+                  "name": "zoneSensitivity",
+                  "oid": "{ loopSensorSetupEntry 2 }",
+                  "status": "current",
+                  "syntax": "OCTET STRING (SIZE(2))\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "124",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1179",
+                  "guid": "47e4c73d-32f3-4669-9f93-13cdd82c02c8",
+                  "heading": "Zone Frequency Range\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.1.1.3",
+                  "name": "zoneFrequencyRange",
+                  "oid": "{ loopSensorSetupEntry 3 }",
+                  "status": "current",
+                  "syntax": "ITSUByteString (SIZE(1))\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "125",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1180",
+                  "guid": "8ddd44c2-9080-4e42-8009-ee40556f2ea9",
+                  "heading": "Sensor Zone Loop Layout\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.1.1.4",
+                  "name": "sensorZoneLoopLayout",
+                  "oid": "{ loopSensorSetupEntry 4 }",
+                  "status": "current",
+                  "syntax": "<pre>INTEGER {\n<br>                 other (1),\n<br>                 oneSixBySixLoopOneLane (2),\n<br>                 twoSixBySixLoopsOneLane (3),\n<br>                 threeSixBySixLoopsOneLane (4),\n<br>                 fourSixBySixLoopsOneLane (5),\n<br>                 oneLongLoopOneLane (6),\n<br>                 oneSixBySixLoopMultipleLanes (7) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "126",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1181",
+              "guid": "5eebae46-f346-4196-835c-2a9153c4782d",
+              "heading": "Loop Output Conditioning Table\r",
+              "access": "not-accessible",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.2",
+              "name": "loopOutputConditioningTable",
+              "oid": "{ tssInductiveLoop 2 }",
+              "status": "deprecated",
+              "syntax": "SEQUENCE OF LoopOutputConditioningEntry\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "127",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "1182",
+                  "guid": "d1675755-c1ae-4118-8673-4cae80317076",
+                  "access": "not-accessible",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.2.1",
+                  "index": "{ sensorZoneNumber }",
+                  "name": "loopOutputConditioningEntry",
+                  "oid": "{ loopOutputConditioningTable 1 }",
+                  "status": "deprecated",
+                  "syntax": "LoopOutputConditioningEntry\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "128",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1183",
+                  "guid": "f7d2eda3-8f1c-4392-8cfa-8217028fd604",
+                  "name": "LoopOutputConditioningEntry",
+                  "syntax": "<pre>{\n<br>      zoneOutputMode         INTEGER,\n<br>      zoneMaxPresenceTime    Integer32,\n<br>      zoneOutputDelayTime    Integer32,\n<br>      zoneOutputExtendTime    Integer32,\n<br>      zoneOutputExtendEnable    OCTET STRING,\n<br>      zoneOutputDelayEnable     OCTET STRING }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "129",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1184",
+                  "guid": "b8d3f1cf-d5c1-4821-86b0-bd8da77a24f8",
+                  "heading": "Zone Output Mode\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.2.1.1",
+                  "name": "zoneOutputMode",
+                  "oid": "{ loopOutputConditioningEntry 1 }",
+                  "status": "deprecated",
+                  "syntax": "<pre>INTEGER {\n<br>                 other (1),\n<br>                 pulse (2),\n<br>                 presence (3) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "130",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1185",
+                  "guid": "8210bc34-3629-4957-9534-66296d589848",
+                  "heading": "Zone Max Presence Feature Time\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.2.1.2",
+                  "name": "zoneMaxPresenceTime",
+                  "oid": "{ loopOutputConditioningEntry 2 }",
+                  "status": "deprecated",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "seconds",
+                  "history": [
+                    {
+                      "affectedNodeId": "131",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1186",
+                  "guid": "5514174b-8126-4f42-adf3-aa9ef12d3725",
+                  "heading": "Zone Output Delay Time\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.2.1.3",
+                  "name": "zoneOutputDelayTime",
+                  "oid": "{ loopOutputConditioningEntry 3 }",
+                  "reference": "NEMA TS2 Clause 3.5.5.5.4.c and 6.5.2.24.1",
+                  "status": "deprecated",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "deciseconds",
+                  "history": [
+                    {
+                      "affectedNodeId": "132",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1187",
+                  "guid": "18b3d937-9ea3-4add-8e4b-f20de19086a1",
+                  "heading": "Zone Output Extend Time\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.2.1.4",
+                  "name": "zoneOutputExtendTime",
+                  "oid": "{ loopOutputConditioningEntry 4 }",
+                  "reference": "NEMA TS2 Clause 3.5.5.5.4.d and 6.5.2.24.2",
+                  "status": "deprecated",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "deciseconds",
+                  "history": [
+                    {
+                      "affectedNodeId": "133",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1188",
+                  "guid": "5f6ea383-3a12-483f-80bb-bb1c2308f131",
+                  "heading": "Zone Output Extend Enable\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.2.1.5",
+                  "name": "zoneOutputExtendEnable",
+                  "oid": "{ loopOutputConditioningEntry 5 }",
+                  "reference": "NEMA TS2 Clause 6.5.2.8.7, 6.5.2.24 and 6.5.2.25.6",
+                  "status": "deprecated",
+                  "syntax": "OCTET STRING (SIZE(1))\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "134",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1189",
+                  "guid": "54de0c07-175e-423d-9568-e8507ce74ad3",
+                  "heading": "Zone Output Delay Enabled\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.2.1.6",
+                  "name": "zoneOutputDelayEnable",
+                  "oid": "{ loopOutputConditioningEntry 6 }",
+                  "reference": "NEMA TS2 Clause 6.5.2.8.7, 6.5.2.24 and 6.5.2.25.6",
+                  "status": "deprecated",
+                  "syntax": "OCTET STRING (SIZE(1))\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "135",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1190",
+              "guid": "2cd38115-185b-414a-81ba-6d5e5e5dfdbb",
+              "heading": "Loop System Status Table\r",
+              "access": "not-accessible",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.3",
+              "name": "loopSystemStatusTable",
+              "oid": "{ tssInductiveLoop 3 }",
+              "status": "current",
+              "syntax": "SEQUENCE OF LoopSystemStatusEntry\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "136",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "1191",
+                  "guid": "027b0364-8e50-4e98-a8c5-0568ab7470a6",
+                  "access": "not-accessible",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.3.1",
+                  "index": "{ sensorZoneNumber }",
+                  "name": "loopSystemStatusEntry",
+                  "oid": "{ loopSystemStatusTable 1 }",
+                  "status": "current",
+                  "syntax": "LoopSystemStatusEntry\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "137",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1192",
+                  "guid": "75b42df5-4c36-4575-9491-736a921c7856",
+                  "name": "LoopSystemStatusEntry",
+                  "syntax": "<pre>{\n<br>      zoneInductance                Integer32,\n<br>      zoneFrequency                 Integer32,\n<br>      zoneInductanceChange          Integer32,\n<br>      zoneFaultHistory              ITSBitmap,\n<br>      zoneFaultCount                Integer32,\n<br>      zonePercentInductanceChange   Integer32 }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "138",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1193",
+                  "guid": "37a2da27-b308-4828-b202-ad16a8a911ea",
+                  "heading": "Zone Inductance\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.3.1.1",
+                  "name": "zoneInductance",
+                  "oid": "{ loopSystemStatusEntry 1 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..65535)\r",
+                  "type": "ot",
+                  "units": "tenths of microhenry",
+                  "history": [
+                    {
+                      "affectedNodeId": "139",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1194",
+                  "guid": "3d4c9fe3-7f37-4db6-a19f-04a572e8482a",
+                  "heading": "Zone Frequency\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.3.1.2",
+                  "name": "zoneFrequency",
+                  "oid": "{ loopSystemStatusEntry 2 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..16777216)\r",
+                  "type": "ot",
+                  "units": "tenths of hertz",
+                  "history": [
+                    {
+                      "affectedNodeId": "140",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1195",
+                  "guid": "fc25dc71-043e-41a3-9cd2-6b3d8d4633d9",
+                  "heading": "Zone Inductance Change\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.3.1.3",
+                  "name": "zoneInductanceChange",
+                  "oid": "{ loopSystemStatusEntry 3 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..8388608)\r",
+                  "type": "ot",
+                  "units": "nanohenry",
+                  "history": [
+                    {
+                      "affectedNodeId": "141",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1196",
+                  "guid": "c0b6d184-5d3a-4973-b03b-766f84f6da5e",
+                  "heading": "Zone Fault History\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.3.1.4",
+                  "name": "zoneFaultHistory",
+                  "oid": "{ loopSystemStatusEntry 4 }",
+                  "status": "current",
+                  "syntax": "ITSBitmap (SIZE (1))\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "142",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1197",
+                  "guid": "46a32d92-5b6f-4462-af88-2da79b997808",
+                  "heading": "Zone Fault Count\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.3.1.5",
+                  "name": "zoneFaultCount",
+                  "oid": "{ loopSystemStatusEntry 5 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..255)\r",
+                  "type": "ot",
+                  "units": "faults",
+                  "history": [
+                    {
+                      "affectedNodeId": "143",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1198",
+                  "guid": "c6d298cc-4abc-4de1-9751-43866faefd50",
+                  "heading": "Zone Percent Inductance Change\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.4.3.1.6",
+                  "name": "zonePercentInductanceChange",
+                  "oid": "{ loopSystemStatusEntry 6 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..100000)\r",
+                  "type": "ot",
+                  "units": "millipercent",
+                  "history": [
+                    {
+                      "affectedNodeId": "144",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1199",
+          "guid": "8ca41590-a7b2-4894-b2fd-c0bd8f252de1",
+          "heading": "MACHINE VISION OBJECTS\r",
+          "text": "This node contains the configuration objects specific to machine vision detectors.\n<br>&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.4.5",
+          "name": "tssMachineVision",
+          "oid": "{tss 5}",
+          "status": "current",
+          "type": "oi",
+          "history": [
+            {
+              "affectedNodeId": "145",
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-02-19T22:07:36.547Z",
+              "docId": "NTCIP1209-Tss",
+              "structureAction": "Copy"
+            }
+          ],
+          "children": [
+            {
+              "id": "1200",
+              "guid": "d36e3335-6e7a-4ee3-b685-8a6d30491416",
+              "heading": "Maximum Camera Count\r",
+              "access": "read-only",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.1",
+              "name": "maxCameraCount",
+              "oid": "{ tssMachineVision 1 }",
+              "status": "current",
+              "syntax": "Integer32 (1..255)\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "146",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1201",
+              "guid": "1a50c276-f5e4-4d1b-a00b-b0bde9ea26d3",
+              "heading": "Machine Vision Camera Table\r",
+              "access": "not-accessible",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.2",
+              "name": "machineVisionCameraTable",
+              "oid": "{ tssMachineVision 2 }",
+              "status": "current",
+              "syntax": "SEQUENCE OF MachineVisionCameraEntry\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "147",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "1202",
+                  "guid": "12193ce7-32c0-402d-b7cb-c431032ceb1e",
+                  "access": "not-accessible",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.2.1",
+                  "index": "{ cameraNumber }",
+                  "name": "machineVisionCameraEntry",
+                  "oid": "{ machineVisionCameraTable 1 }",
+                  "status": "current",
+                  "syntax": "MachineVisionCameraEntry\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "148",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1203",
+                  "guid": "73d30795-b062-4cd3-84d2-6d0488924093",
+                  "name": "MachineVisionCameraEntry",
+                  "syntax": "<pre>{\n<br>      cameraNumber                  Integer32,\n<br>      cameraNameLabel               SnmpAdminString,\n<br>      imageReceptionDiagnostic      Integer32,\n<br>      cameraDetectionState          INTEGER,\n<br>      zoneListForCamera             BITMAP256,\n<br>      baselineImage                 INTEGER,\n<br>      snapshotImage                 INTEGER,\n<br>      cameraImageFormat             ITSBitmap,\n<br>      zoneListForCameraV3           ITSBitmap }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "149",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1204",
+                  "guid": "25ff9e05-63b4-46a4-aad0-92942ab56fa5",
+                  "heading": "Camera Number\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.2.1.1",
+                  "name": "cameraNumber",
+                  "oid": "{ machineVisionCameraEntry 1 }",
+                  "status": "current",
+                  "syntax": "Integer32 (1..255)\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "150",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1205",
+                  "guid": "36ac762a-4235-472e-8858-1e0046063c0d",
+                  "heading": "Camera Name Label\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.2.1.2",
+                  "name": "cameraNameLabel",
+                  "oid": "{ machineVisionCameraEntry 2 }",
+                  "status": "current",
+                  "syntax": "SnmpAdminString\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "151",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1206",
+                  "guid": "6710da3e-270e-4627-92ee-5530d642f17c",
+                  "heading": "Image Reception Diagnostic\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.2.1.3",
+                  "name": "imageReceptionDiagnostic",
+                  "oid": "{ machineVisionCameraEntry 3 }",
+                  "status": "current",
+                  "syntax": "Integer32 (0..100)\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "152",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1207",
+                  "guid": "2a050ad9-8b7e-4ee3-8f7e-6b3de0487cae",
+                  "heading": "Camera Detection State\r",
+                  "access": "read-write",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.2.1.4",
+                  "name": "cameraDetectionState",
+                  "oid": "{ machineVisionCameraEntry 4 }",
+                  "status": "current",
+                  "syntax": "<pre>INTEGER {\n<br>                 detectionIsNotDisabled (1),\n<br>                 detectionIsDisabled (2) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "153",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1208",
+                  "guid": "2c1a7285-b11c-4172-acae-1c813aaaefee",
+                  "heading": "Zone List for Camera\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.2.1.5",
+                  "name": "zoneListForCamera",
+                  "oid": "{ machineVisionCameraEntry 5 }",
+                  "status": "deprecated",
+                  "syntax": "BITMAP256\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "154",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1209",
+                  "guid": "0771b8eb-c8dc-4361-862b-6f09bbc08636",
+                  "heading": "Baseline Image\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.2.1.6",
+                  "name": "baselineImage",
+                  "oid": "{ machineVisionCameraEntry 6 }",
+                  "status": "current",
+                  "syntax": "<pre>INTEGER {\n<br>                 notSupported (1),\n<br>                 supportedAndAvailable (2),\n<br>                 supportedButNotAvailable (3) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "155",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1210",
+                  "guid": "58bcf313-6784-4716-b28e-6f1cdb2f8ee4",
+                  "heading": "Snapshot Image\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.2.1.7",
+                  "name": "snapshotImage",
+                  "oid": "{ machineVisionCameraEntry 7 }",
+                  "status": "current",
+                  "syntax": "<pre>INTEGER {\n<br>                 notSupported (1),\n<br>                 supported (2) }</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "156",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1211",
+                  "guid": "d8256414-d8cc-479f-8c27-55cc02d719d2",
+                  "heading": "Camera Image Formats\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.2.1.8",
+                  "name": "cameraImageFormat",
+                  "oid": "{ machineVisionCameraEntry 8 }",
+                  "status": "current",
+                  "syntax": "ITSBitmap (SIZE (4))\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "157",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "1212",
+                  "guid": "53c714b4-ff49-4799-b37c-f65728d4bbda",
+                  "heading": "Zone List for Camera\r",
+                  "access": "read-only",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.2.1.9",
+                  "name": "zoneListForCameraV3",
+                  "oid": "{ machineVisionCameraEntry 9 }",
+                  "status": "current",
+                  "syntax": "ITSBitmap (SIZE(32))\r",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "158",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-19T22:07:36.547Z",
+                      "docId": "NTCIP1209-Tss",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1213",
+              "guid": "36e52b16-3e32-43d3-aacb-e710ca7e6aa6",
+              "heading": "Image Zone Number\r",
+              "access": "read-write",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.3",
+              "name": "imageZoneNumber",
+              "oid": "{ tssMachineVision 3 }",
+              "status": "current",
+              "syntax": "Integer32 (0..255)\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "159",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1214",
+              "guid": "867a61f5-864d-4890-8104-7b25f867ed49",
+              "heading": "Image Type\r",
+              "access": "read-write",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.4",
+              "name": "imageType",
+              "oid": "{ tssMachineVision 4 }",
+              "status": "current",
+              "syntax": "<pre>INTEGER {\n<br>                 snapshot (1),\n<br>                 baseline (2) }</pre>",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "160",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1215",
+              "guid": "91449c25-842e-462e-bafe-5d36a2345149",
+              "heading": "Image Overlay Type\r",
+              "access": "read-write",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.5",
+              "name": "imageOverlayType",
+              "oid": "{ tssMachineVision 5 }",
+              "status": "current",
+              "syntax": "<pre>INTEGER {\n<br>                 none (1),\n<br>                 thisZone (2),\n<br>                 allZones (3),\n<br>                 defaultOverlay (4) }</pre>",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "161",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1216",
+              "guid": "61f943ce-92cb-474e-bfa2-1a9f1fd18941",
+              "heading": "Image Format\r",
+              "access": "read-write",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.6",
+              "name": "imageFormat",
+              "oid": "{ tssMachineVision 6 }",
+              "status": "current",
+              "syntax": "<pre>INTEGER { \n<br>                 bitmap (1),\n<br>                 jpeg (2) }</pre>",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "162",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1217",
+              "guid": "25f7934d-ed23-44fb-978c-85bad7b85e2a",
+              "heading": "Image Quality\r",
+              "access": "read-write",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.7",
+              "name": "imageQuality",
+              "oid": "{ tssMachineVision 7 }",
+              "status": "current",
+              "syntax": "Integer32 (1..100)\r",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "163",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1218",
+              "guid": "f4f5e46a-5a94-426d-b7c1-7fbb9d001998",
+              "heading": "Build Image\r",
+              "access": "read-write",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.8",
+              "name": "buildImageCmd",
+              "oid": "{ tssMachineVision 8 }",
+              "status": "current",
+              "syntax": "<pre>INTEGER {\n<br>                 buildImage (1),\n<br>                 cancelBuildInProgress (2) }</pre>",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "164",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1219",
+              "guid": "d7b18bc8-1bfc-4a5e-a62a-dde56d7de30d",
+              "heading": "Build Image Status\r",
+              "access": "read-only",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.5.9",
+              "name": "buildImageStatus",
+              "oid": "{ tssMachineVision 9 }",
+              "status": "current",
+              "syntax": "<pre>INTEGER {\n<br>                 noImage (1),\n<br>                 buildingImage (2),\n<br>                 imageReady (3),\n<br>                 genericError (4),\n<br>                 invalidParameter (5),\n<br>                 noCameraForZone (6),\n<br>                 multipleCamerasForZone (7),\n<br>                 imageReceiveError (8),\n<br>                 buildPending (9) }</pre>",
+              "type": "ot",
+              "history": [
+                {
+                  "affectedNodeId": "165",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1220",
+          "guid": "a9f3303d-9086-4478-8d7a-a502afd2f62d",
+          "heading": "Object Groups\r",
+          "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.127",
+          "name": "tssConformance",
+          "oid": "{ tss 127 }",
+          "status": "current",
+          "type": "oi",
+          "history": [
+            {
+              "affectedNodeId": "166",
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-02-19T22:07:36.547Z",
+              "docId": "NTCIP1209-Tss",
+              "structureAction": "Copy"
+            }
+          ],
+          "children": [
+            {
+              "id": "1221",
+              "guid": "cb3b17c9-dde3-460a-9271-110a21939b90",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.127.1",
+              "name": "tssCompliances",
+              "oid": "{tssConformance 1}",
+              "status": "current",
+              "type": "oi",
+              "history": [
+                {
+                  "affectedNodeId": "167",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1222",
+              "guid": "41208cbb-afdd-44f3-bc5a-ba7661bbc034",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.4.127.2",
+              "name": "tssGroups",
+              "oid": "{ tssConformance 2 }",
+              "status": "current",
+              "type": "oi",
+              "history": [
+                {
+                  "affectedNodeId": "168",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            },
+            {
+              "id": "1223",
+              "guid": "69a131f7-8ee3-4504-99f7-8e3ea4429168",
+              "heading": "TSS Core Group Version 1\r 5.7.2 TSS Loop Group Version 1\r 5.7.3 TSS Sample Group Version 1\r 5.7.4 TSS Speed Group Version 1\r 5.7.5 TSS And Logic Group Version 1\r 5.7.6 TSS Or Logic Group Version 1\r 5.7.7 TSS Delay Logic Group Version 1\r 5.7.8 TSS Extend Logic Group Version 1\r 5.7.9 TSS Sensor Label Group Version 1\r 5.7.10 TSS Core Group Version 2\r 5.7.11 TSS Configuration Group Version 2\r 5.7.12 TSS Loop Group Version 2\r 5.7.13 TSS Sample Group Version 2\r 5.7.14 TSS Speed Group Version 2\r 5.7.15 TSS Video Group Version 2\r 5.7.16 TSS Delay Logic Group Version 2\r 5.7.17 TSS Extend Logic Group Version 2\r 5.7.18 TSS Arming Inputs Group Version 2\r 5.7.19 TSS Arming Outputs Group Version 2\r 5.7.20 TSS Camera Label Group Version 2\r 5.7.21 TSS Image Group Version 2\r 5.7.22 TSS PTZ Group Version 2\r 5.7.23 TSS Core Group Version 3\r 5.7.24 TSS Arming Inputs Group Version 3\r 5.7.25 TSS Arming Outputs Group Version 3\r 5.7.26 TSS Sample Group Version 3\r 5.7.27 TSS Video Group Version 3\r",
+              "name": "end",
+              "type": "end",
+              "history": [
+                {
+                  "affectedNodeId": "169",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-19T22:07:36.547Z",
+                  "docId": "NTCIP1209-Tss",
+                  "structureAction": "Copy"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -22773,10 +26971,10 @@
           "key": "deprecated"
         },
         {
-          "key": "made obsolete"
+          "key": "madeObsolete"
         },
         {
-          "key": "previsouly deprecated"
+          "key": "previouslyDeprecated"
         }
       ]
     },
@@ -22804,9 +27002,21 @@
       "name": "Default Value",
       "type": "string"
     },
+    "dotted_oid": {
+      "name": "Dotted OID",
+      "type": "string"
+    },
+    "format": {
+      "name": "Format",
+      "type": "xhtml"
+    },
     "index": {
       "name": "Index",
       "type": "string"
+    },
+    "info": {
+      "name": "Informative",
+      "type": "xhtml"
     },
     "name": {
       "name": "Name",
@@ -22819,6 +27029,24 @@
     "org": {
       "name": "Organization",
       "type": "string"
+    },
+    "param_type": {
+      "name": "Param Type",
+      "type": "enum",
+      "values": [
+        {
+          "key": "configuration"
+        },
+        {
+          "key": "control"
+        },
+        {
+          "key": "interrelated"
+        },
+        {
+          "key": "status"
+        }
+      ]
     },
     "part": {
       "name": "Part",
@@ -22840,15 +27068,27 @@
         },
         {
           "key": "obsolete"
-        },
-        {
-          "key": "silent"
         }
       ]
     },
     "syntax": {
       "name": "Syntax",
       "type": "xhtml"
+    },
+    "table_type": {
+      "name": "Table Type",
+      "type": "enum",
+      "values": [
+        {
+          "key": "static"
+        },
+        {
+          "key": "managed"
+        },
+        {
+          "key": "dynamic"
+        }
+      ]
     },
     "type": {
       "name": "Type",
@@ -23048,6 +27288,10 @@
           "label": "Object Identity"
         },
         {
+          "key": "ref",
+          "label": "Reference"
+        },
+        {
           "key": "row",
           "label": "Row"
         },
@@ -23088,6 +27332,25 @@
     "version": {
       "name": "Version",
       "type": "string"
+    },
+    "x_text": {
+      "name": "Deprecated by",
+      "type": "xhtml"
+    },
+    "x_type": {
+      "name": "Deprecated Type",
+      "type": "enum",
+      "values": [
+        {
+          "key": "superseded"
+        },
+        {
+          "key": "supplanted"
+        },
+        {
+          "key": "withdrawn"
+        }
+      ]
     }
   },
   "templateColumns": {

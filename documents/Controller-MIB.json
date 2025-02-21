@@ -9,7 +9,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-02-06T19:43:24.312Z",
+  "lastChangedOn": "2025-02-21T15:03:56.884Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -451,7 +451,8 @@
       "type": "ot",
       "links": {
         "satisfies": [
-          "26048-1-396"
+          "26048-1-396",
+          "NTCIP_1209-423"
         ]
       },
       "history": [
@@ -493,6 +494,20 @@
             ],
             "type": "satisfies"
           }
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1209-423"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:03:56.884Z"
         }
       ]
     },

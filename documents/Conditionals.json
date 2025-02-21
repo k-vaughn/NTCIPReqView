@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-02-21T00:17:33.061Z",
+  "lastChangedOn": "2025-02-21T15:20:59.483Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -25,10 +25,22 @@
           "26048-1-331"
         ],
         "conditional": [
-          "26048-1-162",
-          "26048-1-167",
-          "26048-1-170",
-          "26048-1-172"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-162"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-167"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-170"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-172"
+          }
         ]
       },
       "history": [
@@ -154,6 +166,23 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-162",
+              "26048-1-167",
+              "26048-1-170",
+              "26048-1-172"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -168,7 +197,10 @@
           "26048-1-353"
         ],
         "conditional": [
-          "26048-1-331"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-331"
+          }
         ]
       },
       "history": [
@@ -249,6 +281,20 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-331"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -262,10 +308,22 @@
           "26048-1-417"
         ],
         "conditional": [
-          "26048-1-162",
-          "26048-1-167",
-          "26048-1-170",
-          "26048-1-172"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-162"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-167"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-170"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-172"
+          }
         ]
       },
       "history": [
@@ -380,6 +438,23 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-162",
+              "26048-1-167",
+              "26048-1-170",
+              "26048-1-172"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -394,7 +469,10 @@
           "26048-1-354"
         ],
         "conditional": [
-          "26048-1-331"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-331"
+          }
         ]
       },
       "history": [
@@ -464,6 +542,20 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-331"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -495,7 +587,10 @@
           "26048-1-861"
         ],
         "conditional": [
-          "26048-1-836"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-836"
+          }
         ]
       },
       "history": [
@@ -591,6 +686,20 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-836"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -610,7 +719,10 @@
           "26048-1-355"
         ],
         "conditional": [
-          "26048-1-331"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-331"
+          }
         ]
       },
       "history": [
@@ -691,6 +803,20 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-331"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -705,7 +831,10 @@
           "26048-1-861"
         ],
         "conditional": [
-          "26048-1-836"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-836"
+          }
         ]
       },
       "history": [
@@ -789,6 +918,20 @@
               "26048_1-344"
             ],
             "type": "condRef"
+          }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-836"
+            ],
+            "type": "conditional"
           }
         }
       ]
@@ -920,10 +1063,22 @@
           "26048-1-784"
         ],
         "conditional": [
-          "26048-1-162",
-          "26048-1-167",
-          "26048-1-170",
-          "26048-1-172"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-162"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-167"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-170"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-172"
+          }
         ]
       },
       "history": [
@@ -1038,6 +1193,23 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-162",
+              "26048-1-167",
+              "26048-1-170",
+              "26048-1-172"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -1052,7 +1224,10 @@
           "26048-1-463"
         ],
         "conditional": [
-          "26048-1-439"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-439"
+          }
         ]
       },
       "history": [
@@ -1122,6 +1297,20 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-439"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -1136,7 +1325,10 @@
           "26048-1-285"
         ],
         "conditional": [
-          "26048-1-269"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-269"
+          }
         ]
       },
       "history": [
@@ -1206,6 +1398,20 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-269"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -1219,7 +1425,10 @@
           "26048-1-878"
         ],
         "conditional": [
-          "26048-1-867"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-867"
+          }
         ]
       },
       "history": [
@@ -1356,6 +1565,20 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-867"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -1404,7 +1627,10 @@
           "26048-1-726"
         ],
         "conditional": [
-          "26048-1-634"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-634"
+          }
         ]
       },
       "history": [
@@ -1474,6 +1700,20 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-634"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -1492,7 +1732,10 @@
           "26048-1-496"
         ],
         "conditional": [
-          "26048-1-470"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-470"
+          }
         ]
       },
       "history": [
@@ -1562,6 +1805,20 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-470"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -1575,7 +1832,10 @@
           "26048-1-162"
         ],
         "conditional": [
-          "26048-1-634"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-634"
+          }
         ]
       },
       "history": [
@@ -1645,6 +1905,20 @@
             ],
             "type": "conditional"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-634"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -1658,7 +1932,10 @@
           "26048-1-862"
         ],
         "conditional": [
-          "26048-1-836"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-836"
+          }
         ]
       },
       "history": [
@@ -1728,6 +2005,20 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-836"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -1740,9 +2031,28 @@
           "NTCIP_1203-1220"
         ],
         "conditional": [
-          "NTCIP_1203-52"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-52"
+          }
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-52"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "36",
@@ -1753,9 +2063,28 @@
           "NTCIP_1203-1226"
         ],
         "conditional": [
-          "NTCIP_1203-52"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-52"
+          }
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-52"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "37",
@@ -1766,10 +2095,33 @@
           "NTCIP_1203-53"
         ],
         "conditional": [
-          "NTCIP_1203-52",
-          "NTCIP_1203-66"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-52"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-66"
+          }
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-52",
+              "NTCIP_1203-66"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "38",
@@ -1780,10 +2132,33 @@
           "NTCIP_1203-54"
         ],
         "conditional": [
-          "NTCIP_1203-52",
-          "NTCIP_1203-66"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-52"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-66"
+          }
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-52",
+              "NTCIP_1203-66"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "39",
@@ -1794,11 +2169,38 @@
           "NTCIP_1203-316"
         ],
         "conditional": [
-          "NTCIP_1203-52",
-          "NTCIP_1203-85",
-          "NTCIP_1203-90"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-52"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-85"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-90"
+          }
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-52",
+              "NTCIP_1203-85",
+              "NTCIP_1203-90"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "40",
@@ -1809,12 +2211,43 @@
           "NTCIP_1203-1231"
         ],
         "conditional": [
-          "NTCIP_1203-64",
-          "NTCIP_1203-65",
-          "NTCIP_1203-67",
-          "NTCIP_1203-68"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-64"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-65"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-67"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-68"
+          }
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-64",
+              "NTCIP_1203-65",
+              "NTCIP_1203-67",
+              "NTCIP_1203-68"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "41",
@@ -1825,9 +2258,28 @@
           "NTCIP_1203-1226"
         ],
         "conditional": [
-          "NTCIP_1203-65"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-65"
+          }
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-65"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "42",
@@ -1835,9 +2287,28 @@
       "heading": "LocalTime",
       "links": {
         "conditional": [
-          "NTCIP_1203-66"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-66"
+          }
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-66"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "43",
@@ -1848,9 +2319,28 @@
           "NTCIP_1203-53"
         ],
         "conditional": [
-          "NTCIP_1203-66"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-66"
+          }
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-66"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "44",
@@ -1861,9 +2351,28 @@
           "NTCIP_1203-54"
         ],
         "conditional": [
-          "NTCIP_1203-66"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-66"
+          }
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-66"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "45",
@@ -1884,9 +2393,28 @@
           "NTCIP_1203-55"
         ],
         "conditional": [
-          "NTCIP_1203-72"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-72"
+          }
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-72"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "47",
@@ -1897,9 +2425,28 @@
           "NTCIP_1203-1220"
         ],
         "conditional": [
-          "NTCIP_1203-85"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-85"
+          }
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-85"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "48",
@@ -1907,9 +2454,28 @@
       "heading": "DMS Lamp Testing",
       "links": {
         "conditional": [
-          "NTCIP_1203-85"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-85"
+          }
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-85"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "49",
@@ -1920,10 +2486,33 @@
           "NTCIP_1203-1226"
         ],
         "conditional": [
-          "NTCIP_1203-85",
-          "NTCIP_1203-90"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-85"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-90"
+          }
         ]
-      }
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-85",
+              "NTCIP_1203-90"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     },
     {
       "id": "50",
@@ -1935,7 +2524,10 @@
           "NTCIP_1204-774"
         ],
         "conditional": [
-          "NTCIP_1204-530"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-530"
+          }
         ]
       },
       "history": [
@@ -1949,6 +2541,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T22:47:58.375Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-530"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -1962,7 +2568,10 @@
           "NTCIP_1204-788"
         ],
         "conditional": [
-          "NTCIP_1204-532"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-532"
+          }
         ]
       },
       "history": [
@@ -1976,6 +2585,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:16:48.307Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-532"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -1989,7 +2612,10 @@
           "NTCIP_1204-799"
         ],
         "conditional": [
-          "NTCIP_1204-534"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-534"
+          }
         ]
       },
       "history": [
@@ -2003,6 +2629,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:16:35.242Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-534"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2016,7 +2656,10 @@
           "NTCIP_1204-813"
         ],
         "conditional": [
-          "NTCIP_1204-536"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-536"
+          }
         ]
       },
       "history": [
@@ -2030,6 +2673,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:16:18.810Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-536"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2043,7 +2700,10 @@
           "NTCIP_1204-827"
         ],
         "conditional": [
-          "NTCIP_1204-538"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-538"
+          }
         ]
       },
       "history": [
@@ -2057,6 +2717,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:16:01.049Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-538"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2070,7 +2744,10 @@
           "NTCIP_1204-998"
         ],
         "conditional": [
-          "NTCIP_1204-538"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-538"
+          }
         ]
       },
       "history": [
@@ -2084,6 +2761,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:15:05.687Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-538"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2097,7 +2788,10 @@
           "NTCIP_1204-989"
         ],
         "conditional": [
-          "NTCIP_1204-538"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-538"
+          }
         ]
       },
       "history": [
@@ -2122,6 +2816,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:15:13.248Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-538"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2135,7 +2843,10 @@
           "NTCIP_1204-842"
         ],
         "conditional": [
-          "NTCIP_1204-540"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-540"
+          }
         ]
       },
       "history": [
@@ -2149,6 +2860,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:14:48.341Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-540"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2162,7 +2887,10 @@
           "NTCIP_1204-856"
         ],
         "conditional": [
-          "NTCIP_1204-542"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-542"
+          }
         ]
       },
       "history": [
@@ -2176,6 +2904,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:14:32.040Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-542"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2189,8 +2931,14 @@
           "NTCIP_1204-739"
         ],
         "conditional": [
-          "NTCIP_1204-550",
-          "NTCIP_1204-552"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-550"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-552"
+          }
         ]
       },
       "history": [
@@ -2204,6 +2952,21 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:14:20.073Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-550",
+              "NTCIP_1204-552"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2217,8 +2980,14 @@
           "NTCIP_1204-870"
         ],
         "conditional": [
-          "NTCIP_1204-550",
-          "NTCIP_1204-552"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-550"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-552"
+          }
         ]
       },
       "history": [
@@ -2232,6 +3001,21 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:14:08.945Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-550",
+              "NTCIP_1204-552"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2245,7 +3029,10 @@
           "NTCIP_1204-1397"
         ],
         "conditional": [
-          "NTCIP_1204-552"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-552"
+          }
         ]
       },
       "history": [
@@ -2259,6 +3046,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:13:55.414Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-552"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2272,7 +3073,10 @@
           "NTCIP_1204-1395"
         ],
         "conditional": [
-          "NTCIP_1204-552"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-552"
+          }
         ]
       },
       "history": [
@@ -2286,6 +3090,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:13:43.046Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-552"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2299,7 +3117,10 @@
           "NTCIP_1204-746"
         ],
         "conditional": [
-          "NTCIP_1204-559"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-559"
+          }
         ]
       },
       "history": [
@@ -2313,6 +3134,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:13:30.354Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-559"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2326,7 +3161,10 @@
           "NTCIP_1204-886"
         ],
         "conditional": [
-          "NTCIP_1204-559"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-559"
+          }
         ]
       },
       "history": [
@@ -2340,6 +3178,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:13:14.133Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-559"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2353,7 +3205,10 @@
           "NTCIP_1204-912"
         ],
         "conditional": [
-          "NTCIP_1204-563"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-563"
+          }
         ]
       },
       "history": [
@@ -2367,6 +3222,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:12:57.885Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-563"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2380,7 +3249,10 @@
           "NTCIP_1204-919"
         ],
         "conditional": [
-          "NTCIP_1204-563"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-563"
+          }
         ]
       },
       "history": [
@@ -2405,6 +3277,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:12:44.596Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-563"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2418,7 +3304,10 @@
           "NTCIP_1204-898"
         ],
         "conditional": [
-          "NTCIP_1204-565"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-565"
+          }
         ]
       },
       "history": [
@@ -2432,6 +3321,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:12:18.973Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-565"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2445,7 +3348,10 @@
           "NTCIP_1204-1145"
         ],
         "conditional": [
-          "NTCIP_1204-565"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-565"
+          }
         ]
       },
       "history": [
@@ -2459,6 +3365,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:12:04.372Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-565"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2472,7 +3392,10 @@
           "NTCIP_1204-1166"
         ],
         "conditional": [
-          "NTCIP_1204-565"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-565"
+          }
         ]
       },
       "history": [
@@ -2486,6 +3409,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:11:57.807Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-565"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2499,7 +3436,10 @@
           "NTCIP_1204-1169"
         ],
         "conditional": [
-          "NTCIP_1204-565"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-565"
+          }
         ]
       },
       "history": [
@@ -2513,6 +3453,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:11:52.505Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-565"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2526,7 +3480,10 @@
           "NTCIP_1204-1153"
         ],
         "conditional": [
-          "NTCIP_1204-565"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-565"
+          }
         ]
       },
       "history": [
@@ -2540,6 +3497,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:11:48.381Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-565"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2553,7 +3524,10 @@
           "NTCIP_1204-1155"
         ],
         "conditional": [
-          "NTCIP_1204-565"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-565"
+          }
         ]
       },
       "history": [
@@ -2567,6 +3541,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:11:41.474Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-565"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2580,7 +3568,10 @@
           "NTCIP_1204-1172"
         ],
         "conditional": [
-          "NTCIP_1204-565"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-565"
+          }
         ]
       },
       "history": [
@@ -2594,6 +3585,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:11:36.704Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-565"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2607,7 +3612,10 @@
           "NTCIP_1204-1160"
         ],
         "conditional": [
-          "NTCIP_1204-565"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-565"
+          }
         ]
       },
       "history": [
@@ -2621,6 +3629,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:11:30.440Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-565"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2634,7 +3656,10 @@
           "NTCIP_1204-1164"
         ],
         "conditional": [
-          "NTCIP_1204-565"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-565"
+          }
         ]
       },
       "history": [
@@ -2648,6 +3673,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:11:18.276Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-565"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2661,7 +3700,10 @@
           "NTCIP_1204-2319"
         ],
         "conditional": [
-          "NTCIP_1204-565"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-565"
+          }
         ]
       },
       "history": [
@@ -2736,6 +3778,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:11:23.269Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-565"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2749,8 +3805,14 @@
           "NTCIP_1204-930"
         ],
         "conditional": [
-          "NTCIP_1204-573",
-          "NTCIP_1204-575"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-573"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-575"
+          }
         ]
       },
       "history": [
@@ -2764,6 +3826,21 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-08-21T23:10:57.483Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-573",
+              "NTCIP_1204-575"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2777,8 +3854,14 @@
           "26048-1-162"
         ],
         "conditional": [
-          "NTCIP_1204-3208",
-          "NTCIP_1218-2107"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1204-3208"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1218-2107"
+          }
         ]
       },
       "history": [
@@ -2906,6 +3989,21 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1204-3208",
+              "NTCIP_1218-2107"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -2915,7 +4013,10 @@
       "heading": "Retrieve Startup Retry Period",
       "links": {
         "conditional": [
-          "NTCIP_1218-291"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1218-291"
+          }
         ]
       },
       "history": [
@@ -2965,6 +4066,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-10-30T01:07:22.493Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1218-291"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -3095,7 +4210,10 @@
           "26048-1-374"
         ],
         "conditional": [
-          "26048-1-331"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "26048-1-331"
+          }
         ]
       },
       "history": [
@@ -3205,6 +4323,20 @@
             ],
             "type": "condRef"
           }
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "26048-1-331"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -3218,7 +4350,10 @@
           "NTCIP_1209-237"
         ],
         "conditional": [
-          "NTCIP_1209-234"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-234"
+          }
         ]
       },
       "history": [
@@ -3304,6 +4439,20 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-20T22:08:17.296Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-234"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -3317,7 +4466,10 @@
           "NTCIP_1209-239"
         ],
         "conditional": [
-          "NTCIP_1209-248"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-248"
+          }
         ]
       },
       "history": [
@@ -3403,6 +4555,20 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-20T23:38:25.825Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-248"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -3416,7 +4582,10 @@
           "NTCIP_1209-241"
         ],
         "conditional": [
-          "NTCIP_1209-248"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-248"
+          }
         ]
       },
       "history": [
@@ -3481,6 +4650,20 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-20T22:22:58.806Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-248"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -3494,7 +4677,10 @@
           "NTCIP_1209-237"
         ],
         "conditional": [
-          "NTCIP_1209-248"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-248"
+          }
         ]
       },
       "history": [
@@ -3615,6 +4801,20 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-20T22:20:37.995Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-248"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -3706,7 +4906,10 @@
           "NTCIP_1209-164"
         ],
         "conditional": [
-          "NTCIP_1209-248"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-248"
+          }
         ]
       },
       "history": [
@@ -3760,6 +4963,20 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-20T22:31:45.362Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-248"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -3770,8 +4987,14 @@
       "text": "<p>ArmingOut:</p>",
       "links": {
         "conditional": [
-          "NTCIP_1209-254",
-          "NTCIP_1209-251"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-254"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-251"
+          }
         ]
       },
       "history": [
@@ -3848,6 +5071,21 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-20T23:06:28.074Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-254",
+              "NTCIP_1209-251"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -3861,8 +5099,14 @@
           "NTCIP_1209-239"
         ],
         "conditional": [
-          "NTCIP_1209-251",
-          "NTCIP_1209-248"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-251"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-248"
+          }
         ]
       },
       "history": [
@@ -3951,6 +5195,21 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-20T23:38:00.088Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-251",
+              "NTCIP_1209-248"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -3964,8 +5223,14 @@
           "NTCIP_1209-239"
         ],
         "conditional": [
-          "NTCIP_1209-251",
-          "NTCIP_1209-248"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-251"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-248"
+          }
         ]
       },
       "history": [
@@ -4044,6 +5309,21 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-20T23:38:00.088Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-251",
+              "NTCIP_1209-248"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -4142,7 +5422,10 @@
       "text": "<p>Overlay:</p>",
       "links": {
         "conditional": [
-          "NTCIP_1209-275"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-275"
+          }
         ]
       },
       "history": [
@@ -4182,6 +5465,20 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-20T23:48:25.775Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-275"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -4192,7 +5489,10 @@
       "text": "<p>CameraLabel:</p>",
       "links": {
         "conditional": [
-          "NTCIP_1209-275"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-275"
+          }
         ]
       },
       "history": [
@@ -4232,6 +5532,20 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-20T23:50:17.698Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-275"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -4242,7 +5556,10 @@
       "text": "<p>BuildImage:</p>",
       "links": {
         "conditional": [
-          "NTCIP_1209-275"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-275"
+          }
         ]
       },
       "history": [
@@ -4282,6 +5599,20 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-20T23:55:02.775Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-275"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -4292,7 +5623,10 @@
       "text": "<p>PTZ:</p>",
       "links": {
         "conditional": [
-          "NTCIP_1209-275"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-275"
+          }
         ]
       },
       "history": [
@@ -4332,6 +5666,20 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-20T23:57:36.764Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-275"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -4345,7 +5693,10 @@
           "NTCIP_1209-164"
         ],
         "conditional": [
-          "NTCIP_1209-288"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-288"
+          }
         ]
       },
       "history": [
@@ -4399,6 +5750,20 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-21T00:03:57.112Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-288"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -4412,7 +5777,10 @@
           "NTCIP_1209-166"
         ],
         "conditional": [
-          "NTCIP_1209-288"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-288"
+          }
         ]
       },
       "history": [
@@ -4466,6 +5834,20 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-21T00:07:05.588Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-288"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -4476,7 +5858,10 @@
       "text": "<p>Image:</p>",
       "links": {
         "conditional": [
-          "NTCIP_1209-288"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-288"
+          }
         ]
       },
       "history": [
@@ -4516,6 +5901,20 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-21T00:08:21.956Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-288"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     },
@@ -4529,9 +5928,18 @@
           "NTCIP_1209-241"
         ],
         "conditional": [
-          "NTCIP_1209-301",
-          "NTCIP_1209-304",
-          "NTCIP_1209-306"
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-301"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-304"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1209-306"
+          }
         ]
       },
       "history": [
@@ -4623,6 +6031,22 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-21T00:17:33.061Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1209-301",
+              "NTCIP_1209-304",
+              "NTCIP_1209-306"
+            ],
+            "type": "conditional"
+          }
         }
       ]
     }

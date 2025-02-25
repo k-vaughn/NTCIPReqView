@@ -2,14 +2,14 @@
   "id": "NTCIP_1218",
   "guid": "b408b184-03fb-44d0-8fe2-be731124a4ab",
   "name": "NTCIP 1218",
-  "lastId": 2117,
+  "lastId": 2121,
   "createdOn": "2024-07-18T15:17:24.557Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-02-21T15:20:59.483Z",
+  "lastChangedOn": "2025-02-25T21:21:57.944Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -11314,14 +11314,14 @@
           "discussion": [
             {
               "guid": "33e19e27-8687-4446-88af-8ec523d72e12",
-              "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Added replacement clause; duplicated from NTCIP 1204, but we should discuss conformance for NTCIP 1218</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">2/11/2025: Strategize with Patrick andJohn Thai to figure out how we gain consistency among various 12xx standards</span></p>",
+              "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">2/11/2025: Strategize with Patrick andJohn Thai to figure out how we gain consistency among various 12xx standards</span></p>",
               "date": "2024-10-29T19:22:42.202Z",
               "author": {
                 "name": "Kenneth Vaughn",
                 "email": "kvaughn@trevilon.com",
                 "company": "Trevilon"
               },
-              "updatedOn": "2025-02-11T21:22:57.342Z"
+              "updatedOn": "2025-02-25T16:00:45.244Z"
             }
           ],
           "history": [
@@ -11376,6 +11376,16 @@
               "changedOn": "2025-02-11T21:22:57.342Z",
               "commentGuid": "33e19e27-8687-4446-88af-8ec523d72e12",
               "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Added replacement clause; duplicated from NTCIP 1204, but we should discuss conformance for NTCIP 1218</span></p>"
+            },
+            {
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-02-25T16:00:45.244Z",
+              "commentGuid": "33e19e27-8687-4446-88af-8ec523d72e12",
+              "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Added replacement clause; duplicated from NTCIP 1204, but we should discuss conformance for NTCIP 1218</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">2/11/2025: Strategize with Patrick andJohn Thai to figure out how we gain consistency among various 12xx standards</span></p>"
             }
           ],
           "children": [
@@ -12196,11 +12206,64 @@
                   ]
                 },
                 {
+                  "id": "2118",
+                  "guid": "7a7bbda0-65a9-4558-a20d-834988bf1ad5",
+                  "heading": "Record a series of data snapshots",
+                  "text": "<p>allows a user to define trigger conditions (e.g., an object value exceeding a defined value) and to automatically log a series of snapshots based on the trigger condition occurring. For example, when the cabinet door opens, record the cabinet temperature once a second for 60 seconds.</p>",
+                  "conformance": "O",
+                  "history": [
+                    {
+                      "affectedNodeId": "2059",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-25T15:52:32.980Z",
+                      "docId": "NTCIP_1218",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-25T15:52:45.156Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-25T15:53:29.153Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-25T15:53:40.048Z"
+                    }
+                  ]
+                },
+                {
                   "id": "2098",
                   "guid": "e9d728eb-b229-4cc5-a308-261ffababea7",
                   "heading": "Issue trigger-based commands",
                   "text": "<p>allows a user to define trigger conditions (e.g., an object value exceeding a defined value) and to automatically send another device an SNMP set request when the trigger condition occurs. For example, when ice is detected by a pavement sensor, command an attached gate to close (however, this example is discouraged as a gate closure should include verification mechanisms not offered by this feature to ensure safe operations).</p>",
-                  "conformance": "O",
+                  "conformance": "M",
                   "status": "current",
                   "type": "unr",
                   "history": [
@@ -12214,6 +12277,136 @@
                       "changedOn": "2024-10-29T19:21:31.242Z",
                       "docId": "NTCIP_1204",
                       "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-25T15:49:46.724Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "2119",
+                  "guid": "b7ff6647-da82-49ff-8ad4-13fd491f4ea6",
+                  "heading": "Configure a complex device",
+                  "text": "<p>allows a user to buffer changes to a large number of inter-related configuration parameters so that the proposed changes can be validated as a whole prior to ensure a safe configuration prior to implementation. This feature is prohibited in implementations of NTCIP 1209v03 to promote better interoperability without having devices enter an unexpected state.</p>",
+                  "conformance": "O",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "1304",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-25T15:54:47.943Z",
+                      "docId": "NTCIP_1209",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "X"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-25T15:55:16.356Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "2120",
+                  "guid": "23c961c9-f70d-4193-833b-8fdb8a6b0c8d",
+                  "heading": "Efficient exchange of data",
+                  "text": "<p>allows a management station to define dynamic objects that can be used for frequent requests to reduce communications overhead. For example, rather than monitoring 15 discreet status objects, the 15 objects can be placed into a dynamic object and retrieved as a single entity. This can be useful when a management station frequently exchanges a large number of integer values with the device.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "1305",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-25T15:55:55.042Z",
+                      "docId": "NTCIP_1209",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-25T15:56:22.929Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "logging OR notifications:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-25T15:56:45.669Z"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "2121",
+                      "guid": "d7a797ba-60aa-4707-ae05-114a1bd90fc0",
+                      "text": "<p>Support of this user need allows the reporting of multiple values within a single notification or log entry.</p>",
+                      "type": "n",
+                      "history": [
+                        {
+                          "affectedNodeId": "2120",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-25T15:57:05.917Z",
+                          "docId": "NTCIP_1218",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-25T15:58:42.798Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-25T15:58:51.777Z"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -12588,14 +12781,14 @@
                       "discussion": [
                         {
                           "guid": "9be1451a-66a0-433b-a5cf-bcf24dc849ee",
-                          "comment": "<p>Everything except rsuID is addressed by ISO 26048-1. Component information is handled by the ENTITY-MIB (RFC 6933) ISO 26048-1, 8.8.2.1.6. Supported standards and MIB version are better addressed by sysORID (RFC 3418) required by ISO 26048-1, 8.5.2.7. System name is handled by the same object along with sysContact and sysLocation as a part of RFC 3418, as required by ISO 26048-1, 8.5.2.1, 8.5.2.3.</p><p><span style=\"background-color: rgb(247, 218, 100);\">What is the intended difference between rsuID and sysName? NOTE: This user need alludes to an identifier \"as provided by the manufacturer\" however, both rsuID and sysName are read-write. However, RFC 6933 defines entPhysicalName that should satisfy this need.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Perhaps we delete this user need? Perhaps we need supplemental requirements to clearly define what \"components\" must have entries in the physical entity table?</span></p>",
+                          "comment": "<p>Everything except rsuID is addressed by ISO 26048-1. Component information is handled by the ENTITY-MIB (RFC 6933) ISO 26048-1, 8.8.2.1.6. Supported standards and MIB version are better addressed by sysORID (RFC 3418) required by ISO 26048-1, 8.5.2.7. System name is handled by the same object along with sysContact and sysLocation as a part of RFC 3418, as required by ISO 26048-1, 8.5.2.1, 8.5.2.3.</p><p>What is the intended difference between rsuID and sysName?</p><ul><li>The WG agreed that the rsuID can be deprecated and we can use sysName as the ID. 02/25/2025</li></ul><p>NOTE: This user need alludes to an identifier \"as provided by the manufacturer\" however, both rsuID and sysName are read-write. However, RFC 6933 defines entPhysicalName that should satisfy this need.</p><ul><li>The WG agreed that this user need could be traced to entPhysicalName</li></ul><p>Perhaps we delete this user need? Perhaps we need supplemental requirements to clearly define what \"components\" must have entries in the physical entity table?</p><ul><li>The group decided to leave the UN for clarity</li></ul>",
                           "date": "2024-08-09T20:21:54.143Z",
                           "author": {
                             "name": "Kenneth Vaughn",
                             "email": "kvaughn@trevilon.com",
                             "company": "Trevilon"
                           },
-                          "updatedOn": "2024-10-29T19:43:33.003Z"
+                          "updatedOn": "2025-02-25T20:18:18.345Z"
                         }
                       ],
                       "history": [
@@ -12672,6 +12865,16 @@
                           "commentDate": "2024-08-09T20:21:54.143Z",
                           "commentIndex": 0,
                           "editLastComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Everything except rsuID is addressed by ISO 26048-1; What is the intended difference between rsuID and sysName? Perhaps we delete this user need?</span></p><p>Component information is handled by the ENTITY-MIB (RFC 6433) ISO 26048-1, 8.8.2.1.6</p><p>Supported standards and MIB version is better addressed by sysORID (RFC 3418) required by ISO 26048-1, 8.5.2.7</p><p>System name is handled by the same object along with sysContact and sysLocation as a part of RFC 3418, as required by ISO 26048-1, 8.5.2.1, 8.5.2.3</p><p>Deprecate or modify to be only rsuID</p>"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-25T20:18:18.345Z",
+                          "commentGuid": "9be1451a-66a0-433b-a5cf-bcf24dc849ee",
+                          "updatedComment": "<p>Everything except rsuID is addressed by ISO 26048-1. Component information is handled by the ENTITY-MIB (RFC 6933) ISO 26048-1, 8.8.2.1.6. Supported standards and MIB version are better addressed by sysORID (RFC 3418) required by ISO 26048-1, 8.5.2.7. System name is handled by the same object along with sysContact and sysLocation as a part of RFC 3418, as required by ISO 26048-1, 8.5.2.1, 8.5.2.3.</p><p><span style=\"background-color: rgb(247, 218, 100);\">What is the intended difference between rsuID and sysName? NOTE: This user need alludes to an identifier \"as provided by the manufacturer\" however, both rsuID and sysName are read-write. However, RFC 6933 defines entPhysicalName that should satisfy this need.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Perhaps we delete this user need? Perhaps we need supplemental requirements to clearly define what \"components\" must have entries in the physical entity table?</span></p>"
                         }
                       ],
                       "children": [
@@ -12911,14 +13114,14 @@
                       "discussion": [
                         {
                           "guid": "a6c902a5-ad96-48b0-aaba-dd6041b5be70",
-                          "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Consider ISO 26048-1 location objects and how they relate. (e.g., fdConfiguredLatitude and fdGnssLatitude) and whether we want to submit any comments on this topic</span></p>",
+                          "comment": "<p>Consider ISO 26048-1 location objects and how they relate. (e.g., fdConfiguredLatitude and fdGnssLatitude) and whether we want to submit any comments on this topic</p><ul><li>The WG did not have any sustained objections to deprecating the existnig objects and using the ISO 26048-1 objects for configured lat, long, and elevation (02/25/2025)</li></ul>",
                           "date": "2024-08-09T20:35:01.978Z",
                           "author": {
                             "name": "Kenneth Vaughn",
                             "email": "kvaughn@trevilon.com",
                             "company": "Trevilon"
                           },
-                          "updatedOn": "2024-10-29T19:52:21.655Z"
+                          "updatedOn": "2025-02-25T20:33:28.411Z"
                         },
                         {
                           "guid": "a6eee843-da90-4d5e-80db-7e9d69dd8877",
@@ -13037,6 +13240,16 @@
                           "commentDate": "2024-08-09T20:38:05.376Z",
                           "commentIndex": 1,
                           "editLastComment": "<p><span style=\"background-color: rgb(44, 130, 201);\">If we decide to keep, update the conditional links to conform to the required pattern</span></p>"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-25T20:33:28.411Z",
+                          "commentGuid": "a6c902a5-ad96-48b0-aaba-dd6041b5be70",
+                          "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Consider ISO 26048-1 location objects and how they relate. (e.g., fdConfiguredLatitude and fdGnssLatitude) and whether we want to submit any comments on this topic</span></p>"
                         }
                       ],
                       "children": [
@@ -13069,14 +13282,14 @@
                       "discussion": [
                         {
                           "guid": "9077ad22-e885-42a1-b91f-947f665282ed",
-                          "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Traces to Configure Startup Retries (3.5.1.1.4.4, O) and Retrieve Startup Retry Period (3.5.1.1.4.5, StartupFault:M) have been replaced with links to ISO 26048-1, 8.17.2.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Note added to explain that this is an extension to the base ISO 26048-1 functionality.</span></p>",
+                          "comment": "<p>Traces to Configure Startup Retries (3.5.1.1.4.4, O) and Retrieve Startup Retry Period (3.5.1.1.4.5, StartupFault:M) have been replaced with links to ISO 26048-1, 8.17.2.</p><p>Note added to explain that this is an extension to the base ISO 26048-1 functionality.</p><p><br></p><ul><li>No objectsions to these changes&nbsp; 02/25/2025</li></ul><p><br></p><p><span style=\"background-color: rgb(147, 101, 184); color: rgb(255, 255, 255);\">Add reference to startupFault for the conditional link</span></p>",
                           "date": "2024-08-09T20:45:09.457Z",
                           "author": {
                             "name": "Kenneth Vaughn",
                             "email": "kvaughn@trevilon.com",
                             "company": "Trevilon"
                           },
-                          "updatedOn": "2025-02-10T17:38:18.070Z"
+                          "updatedOn": "2025-02-25T20:41:06.792Z"
                         }
                       ],
                       "history": [
@@ -13131,6 +13344,16 @@
                           "changedOn": "2025-02-10T17:38:18.070Z",
                           "commentGuid": "9077ad22-e885-42a1-b91f-947f665282ed",
                           "updatedComment": "<p>Traces to Configure Startup Retries (3.5.1.1.4.4, O) and Retrieve Startup Retry Period (3.5.1.1.4.5, StartupFault:M) have been replaced with links to ISO 26048-1, 8.17.2.</p><p>Note added to explain that this is an extension to the base ISO 26048-1 functionality.</p>"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-25T20:41:06.792Z",
+                          "commentGuid": "9077ad22-e885-42a1-b91f-947f665282ed",
+                          "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Traces to Configure Startup Retries (3.5.1.1.4.4, O) and Retrieve Startup Retry Period (3.5.1.1.4.5, StartupFault:M) have been replaced with links to ISO 26048-1, 8.17.2.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Note added to explain that this is an extension to the base ISO 26048-1 functionality.</span></p>"
                         }
                       ],
                       "children": [
@@ -13204,14 +13427,14 @@
                       "discussion": [
                         {
                           "guid": "31aedc8a-3961-49fa-9186-0718cfcde005",
-                          "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Replaced trace to Report the RSU Firmware Version with ISO 26048-1, 8.8.2.1.6 with entPhysicalFirmwareVersion.</span></p>",
+                          "comment": "<p>Replaced trace to Report the RSU Firmware Version with ISO 26048-1, 8.8.2.1.6 with entPhysicalFirmwareVersion.</p><p><br></p><ul><li>No objections 02/25/2025</li></ul>",
                           "date": "2024-08-09T20:47:41.547Z",
                           "author": {
                             "name": "Kenneth Vaughn",
                             "email": "kvaughn@trevilon.com",
                             "company": "Trevilon"
                           },
-                          "updatedOn": "2025-02-10T17:38:40.267Z"
+                          "updatedOn": "2025-02-25T20:43:32.418Z"
                         }
                       ],
                       "history": [
@@ -13270,6 +13493,16 @@
                           "changedOn": "2025-02-10T17:38:40.267Z",
                           "commentGuid": "31aedc8a-3961-49fa-9186-0718cfcde005",
                           "updatedComment": "<p>Replaced trace to Report the RSU Firmware Version with ISO 26048-1, 8.8.2.1.6 with entPhysicalFirmwareVersion.</p>"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-25T20:43:32.418Z",
+                          "commentGuid": "31aedc8a-3961-49fa-9186-0718cfcde005",
+                          "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Replaced trace to Report the RSU Firmware Version with ISO 26048-1, 8.8.2.1.6 with entPhysicalFirmwareVersion.</span></p>"
                         }
                       ],
                       "children": [
@@ -13342,14 +13575,14 @@
                       "discussion": [
                         {
                           "guid": "d58dd4f6-9e14-4cbc-994d-45e78a838e9e",
-                          "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Revise to either&nbsp;</span></p><ol><li><span style=\"text-align: left; text-decoration: none; background-color: rgb(247, 218, 100);\">Trace to ISO 26048-1, 6.6: Receive notification of triggers firing and make the NOTIFICATION-TYPEs obsolete (i.e., rely upon conditional triggers to monitor the data objects for onChange events); or&nbsp;</span></li><li><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; background-color: rgb(247, 218, 100);\">Trace to ISO 26048-1, 6.7: Manage device-specific notifications (and keep the independent NOTIFICATION-TYPEs)</span></span></li></ol><p><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\">This will ensure that the notifications are properly managed with other notifications.</span></span></p><p><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\">Delete the traces to 3.5.1.1.7.1,&nbsp;</span><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7.2,&nbsp;</span></span><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7.4,&nbsp;</span></span><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7</span></span></span></span><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">.5, and&nbsp;</span></span><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7.6</span></span></span></span></span></span></span></span></p>",
+                          "comment": "<p>Revise to either&nbsp;</p><ol><li>Trace to ISO 26048-1, 6.6: Receive notification of triggers firing and make the NOTIFICATION-TYPEs obsolete (i.e., rely upon conditional triggers to monitor the data objects for onChange events); or&nbsp;</li><li>Trace to ISO 26048-1, 6.7: Manage device-specific notifications (and keep the independent NOTIFICATION-TYPEs)</li></ol><p><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\">This will ensure that the notifications are properly managed with other notifications.</span></span></p><p><br></p><p><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; background-color: rgb(247, 218, 100);\">WG to consider whether we want to keep the existing \"Independent\" notifications or replace with ISO 26048-1fdCondTriggers and Notifications. Patrick will ask around</span></span></p><p><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\">WG tentatively agrees that they should be managed through the Notification Channels.</span></span></p><p><br></p><p><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\">Delete the traces to 3.5.1.1.7.1,&nbsp;</span><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7.2,&nbsp;</span></span><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7.4,&nbsp;</span></span><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7</span></span></span></span><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">.5, and&nbsp;</span></span><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7.6</span></span></span></span></span></span></span></span></p>",
                           "date": "2024-08-09T20:51:00.510Z",
                           "author": {
                             "name": "Kenneth Vaughn",
                             "email": "kvaughn@trevilon.com",
                             "company": "Trevilon"
                           },
-                          "updatedOn": "2024-10-30T01:23:24.110Z"
+                          "updatedOn": "2025-02-25T20:55:49.475Z"
                         }
                       ],
                       "history": [
@@ -13436,6 +13669,16 @@
                           "changedOn": "2024-10-30T01:23:24.110Z",
                           "commentGuid": "d58dd4f6-9e14-4cbc-994d-45e78a838e9e",
                           "updatedComment": "<p>Revise to either&nbsp;</p><ol><li><span style=\"text-align: left; text-decoration: none;\">Trace to ISO 26048-1, 6.6: Receive notification of triggers firing and make the NOTIFICATION-TYPEs obsolete (i.e., rely upon conditional triggers to monitor the data objects for onChange events); or&nbsp;</span></li><li><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\">Trace to ISO 26048-1, 6.7: Manage device-specific notifications (and keep the independent NOTIFICATION-TYPEs)</span></span></li></ol><p><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\">This will ensure that the notifications are properly managed with other notifications.</span></span></p><p><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\">Delete the traces to 3.5.1.1.7.1, <span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7.2, <span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7.4, <span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7</span></span>.5, and <span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7.6</span></span></span></span></span></span></span></span></p>"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-25T20:55:49.475Z",
+                          "commentGuid": "d58dd4f6-9e14-4cbc-994d-45e78a838e9e",
+                          "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Revise to either&nbsp;</span></p><ol><li><span style=\"text-align: left; text-decoration: none; background-color: rgb(247, 218, 100);\">Trace to ISO 26048-1, 6.6: Receive notification of triggers firing and make the NOTIFICATION-TYPEs obsolete (i.e., rely upon conditional triggers to monitor the data objects for onChange events); or&nbsp;</span></li><li><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; background-color: rgb(247, 218, 100);\">Trace to ISO 26048-1, 6.7: Manage device-specific notifications (and keep the independent NOTIFICATION-TYPEs)</span></span></li></ol><p><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\">This will ensure that the notifications are properly managed with other notifications.</span></span></p><p><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\">Delete the traces to 3.5.1.1.7.1,&nbsp;</span><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7.2,&nbsp;</span></span><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7.4,&nbsp;</span></span><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7</span></span></span></span><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">.5, and&nbsp;</span></span><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none;\"><span style=\"text-align: left; text-decoration: none; color: rgb(255, 255, 255); background-color: rgb(147, 101, 184);\"><span style=\"text-align: left; text-decoration: none;\">3.5.1.1.7.6</span></span></span></span></span></span></span></span></p>"
                         }
                       ],
                       "children": [
@@ -13608,25 +13851,25 @@
                           "discussion": [
                             {
                               "guid": "5ae09f54-7b6c-44f4-bc30-63fefac69277",
-                              "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">The traceability appears to be incorrect. It appears that 3.5.1.2.2.1.2 AND 3.5.1.2.2.1.5 were intended to be deprecated and replaced with 3.5.1.2.2.1.14, which is an IDENTICAL requirement to 3.5.1.2.2.1.2.&nbsp;</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Proposal: Delete 3.5.1.2.2.1.14 and note in 3.5.1.2.2.1.2 (i.e., keep original requirement and delete duplicate)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Move the 3.5.1.2.2.1.14 trace to 3.5.1.2.2.1.2</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">NOTE: the original 3.5.1.2.2.1.2 is already duplicated by 3.5.5.1.1 (i.e., with a clarification that it is per v01 design)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Move 3.5.1.1.2.2.1.5 to 3.5.5.1.6 and trace to backwards compatibility with v01 (mandatory)</span></p>",
+                              "comment": "<p>The traceability appears to be incorrect. It appears that 3.5.1.2.2.1.2 AND 3.5.1.2.2.1.5 were intended to be deprecated and replaced with 3.5.1.2.2.1.14, which is an IDENTICAL requirement to 3.5.1.2.2.1.2.&nbsp;</p><p>Proposal: Delete 3.5.1.2.2.1.14 and note in 3.5.1.2.2.1.2 (i.e., keep original requirement and delete duplicate)</p><p>Move the 3.5.1.2.2.1.14 trace to 3.5.1.2.2.1.2</p><p>NOTE: the original 3.5.1.2.2.1.2 is already duplicated by 3.5.5.1.1 (i.e., with a clarification that it is per v01 design)</p><p>Move 3.5.1.1.2.2.1.5 to 3.5.5.1.6 and trace to backwards compatibility with v01 (mandatory)</p><p><br></p><ul><li>WG does not object to making these changes 02/25/2025</li></ul>",
                               "date": "2024-08-09T21:49:49.488Z",
                               "author": {
                                 "name": "Kenneth Vaughn",
                                 "email": "kvaughn@trevilon.com",
                                 "company": "Trevilon"
                               },
-                              "updatedOn": "2024-10-30T01:25:28.625Z"
+                              "updatedOn": "2025-02-25T20:58:25.814Z"
                             },
                             {
                               "guid": "6871903d-0b67-41cc-bc9b-d60fb8c03e9f",
-                              "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">We address a maximum notReady time but we do not talk about a maximum notInServiceTime. We should either explicitly state that entries are allowed to be 'notInService' indefinitely (and get rid of the corresponding Enabled object) or specify the maximum notInService time</span></p>",
+                              "comment": "<p>We address a maximum notReady time but we do not talk about a maximum notInServiceTime. We should either explicitly state that entries are allowed to be 'notInService' indefinitely (and get rid of the corresponding Enabled object) or specify the maximum notInService time</p><ul><li>WG agreed that we should revise the existing supplemental requirement (3.6.9) to apply to notInService and notReady and leave as a specification item rather than as a configurable object.</li></ul>",
                               "date": "2024-08-09T22:11:18.229Z",
                               "author": {
                                 "name": "Kenneth Vaughn",
                                 "email": "kvaughn@trevilon.com",
                                 "company": "Trevilon"
                               },
-                              "updatedOn": "2024-10-30T01:25:42.818Z"
+                              "updatedOn": "2025-02-25T21:07:30.557Z"
                             }
                           ],
                           "history": [
@@ -13722,6 +13965,26 @@
                               "changedOn": "2024-10-30T01:25:42.818Z",
                               "commentGuid": "6871903d-0b67-41cc-bc9b-d60fb8c03e9f",
                               "updatedComment": "<p>We address a maximum notReady time but we do not talk about a maximum notInServiceTime. We should either explicitly state that entries are allowed to be 'notInService' indefinitely (and get rid of the corresponding Enabled object) or specify the maximum notInService time</p>"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-02-25T20:58:25.814Z",
+                              "commentGuid": "5ae09f54-7b6c-44f4-bc30-63fefac69277",
+                              "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">The traceability appears to be incorrect. It appears that 3.5.1.2.2.1.2 AND 3.5.1.2.2.1.5 were intended to be deprecated and replaced with 3.5.1.2.2.1.14, which is an IDENTICAL requirement to 3.5.1.2.2.1.2.&nbsp;</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Proposal: Delete 3.5.1.2.2.1.14 and note in 3.5.1.2.2.1.2 (i.e., keep original requirement and delete duplicate)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Move the 3.5.1.2.2.1.14 trace to 3.5.1.2.2.1.2</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">NOTE: the original 3.5.1.2.2.1.2 is already duplicated by 3.5.5.1.1 (i.e., with a clarification that it is per v01 design)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Move 3.5.1.1.2.2.1.5 to 3.5.5.1.6 and trace to backwards compatibility with v01 (mandatory)</span></p>"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-02-25T21:07:30.557Z",
+                              "commentGuid": "6871903d-0b67-41cc-bc9b-d60fb8c03e9f",
+                              "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">We address a maximum notReady time but we do not talk about a maximum notInServiceTime. We should either explicitly state that entries are allowed to be 'notInService' indefinitely (and get rid of the corresponding Enabled object) or specify the maximum notInService time</span></p>"
                             }
                           ],
                           "children": [
@@ -15396,14 +15659,14 @@
           "discussion": [
             {
               "guid": "f5b21216-c26f-4546-8094-de307356b64f",
-              "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Do we need to specify a \"consistent\" level of support for NTCIP 1218 as we are doing for SNMPv1 MIB standards? One could argue that this would allow devices that are not conformant with ISO 15784-2 for a while, but I don't know that there is a pressing need for this category of devices and defining it could create confusion (i.e., 1218 would have a unique meaning for consistent)</span></p>",
+              "comment": "<p>Do we need to specify a \"consistent\" level of support for NTCIP 1218 as we are doing for SNMPv1 MIB standards? One could argue that this would allow devices that are not conformant with ISO 15784-2 for a while, but I don't know that there is a pressing need for this category of devices and defining it could create confusion (i.e., 1218 would have a unique meaning for consistent)</p><ul><li>The WG agrees that the document should define a \"consistent\" level of support, which indicates that it supports a protocol that does not meet current security requirements. Conformant devices&nbsp;<strong>only</strong> support protocols that meet current security requirements.</li></ul>",
               "date": "2024-08-08T02:24:35.216Z",
               "author": {
                 "name": "Kenneth Vaughn",
                 "email": "kvaughn@trevilon.com",
                 "company": "Trevilon"
               },
-              "updatedOn": "2024-10-30T01:52:20.747Z"
+              "updatedOn": "2025-02-25T21:14:01.241Z"
             }
           ],
           "history": [
@@ -15483,6 +15746,16 @@
               "changedOn": "2024-10-30T01:52:20.747Z",
               "commentGuid": "f5b21216-c26f-4546-8094-de307356b64f",
               "updatedComment": "<p>Do we need to specify a \"consistent\" level of support for NTCIP 1218 as we are doing for SNMPv1 MIB standards? One could argue that this would allow devices that are not conformant with ISO 15784-2 for a while, but I don't know that there is a pressing need for this category of devices and defining it could create confusion (i.e., 1218 would have a unique meaning for consistent)</p>"
+            },
+            {
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-02-25T21:14:01.241Z",
+              "commentGuid": "f5b21216-c26f-4546-8094-de307356b64f",
+              "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Do we need to specify a \"consistent\" level of support for NTCIP 1218 as we are doing for SNMPv1 MIB standards? One could argue that this would allow devices that are not conformant with ISO 15784-2 for a while, but I don't know that there is a pressing need for this category of devices and defining it could create confusion (i.e., 1218 would have a unique meaning for consistent)</span></p>"
             }
           ],
           "children": [
@@ -15677,14 +15950,14 @@
                   "discussion": [
                     {
                       "guid": "1045aaf7-c2bd-4659-93d8-0d87a097210e",
-                      "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">The traceability from this UN does not really align with the text. i.e., reporting an authentication error on another interface is not authentication for this interface. Authentication for this interface is covered separately in ISO 15784-2, 7.8.6 (i.e., support for (D)TLS), and the SNMPv2-MIB for reporting issues (i.e., RFC 3418)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Proposal: Create separate use need for 1) reporting the identified notifications and 2) reporting the valid coverage areas when requested.</span></p>",
+                      "comment": "<p><span style=\"background-color: rgb(44, 130, 201); color: rgb(255, 255, 255);\">Revise the text of this user need to reflect the security certificate management.</span></p>",
                       "date": "2024-07-22T22:34:13.891Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
                       },
-                      "updatedOn": "2024-10-30T02:03:21.945Z"
+                      "updatedOn": "2025-02-25T21:21:57.944Z"
                     }
                   ],
                   "history": [
@@ -15749,6 +16022,16 @@
                       "changedOn": "2024-10-30T02:03:21.945Z",
                       "commentGuid": "1045aaf7-c2bd-4659-93d8-0d87a097210e",
                       "updatedComment": "<p>The traceability from this UN does not really align with the text. i.e., reporting an authentication error on another interface is not authentication for this interface. Authentication for this interface is covered separately in ISO 15784-2, 7.8.6 (i.e., support for (D)TLS), and the SNMPv2-MIB for reporting issues (i.e., RFC 3418)</p><p>Proposal: Create separate use need for 1) reporting the identified notifications and 2) reporting the valid coverage areas when requested.</p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-25T21:21:57.944Z",
+                      "commentGuid": "1045aaf7-c2bd-4659-93d8-0d87a097210e",
+                      "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">The traceability from this UN does not really align with the text. i.e., reporting an authentication error on another interface is not authentication for this interface. Authentication for this interface is covered separately in ISO 15784-2, 7.8.6 (i.e., support for (D)TLS), and the SNMPv2-MIB for reporting issues (i.e., RFC 3418)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Proposal: Create separate use need for 1) reporting the identified notifications and 2) reporting the valid coverage areas when requested.</span></p>"
                     }
                   ]
                 }

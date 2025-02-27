@@ -40,7 +40,7 @@
             "heading": "Priority Request Message",
             "name": "prgPriorityRequest",
             "oid": "{ priorityRequestMessages 1 }",
-            "status": "mandatory",
+            "status": "current",
             "syntax": "<pre>OCTET STRING {SIZE(25)}</pre>",
             "type": "ot"
         },
@@ -50,7 +50,7 @@
             "heading": "Priority Update Message",
             "name": "prgPriorityUpdate",
             "oid": "{ priorityRequestMessages 2 }",
-            "status": "mandatory",
+            "status": "current",
             "syntax": "<pre>OCTET STRING {SIZE(25)}</pre>",
             "type": "ot"
         },
@@ -60,7 +60,7 @@
             "heading": "Priority Status Control Message",
             "name": "prgPriorityStatusControl",
             "oid": "{ priorityRequestMessages 3 }",
-            "status": "mandatory",
+            "status": "current",
             "syntax": "<pre>OCTET STRING {SIZE(21)}</pre>",
             "type": "ot"
         },
@@ -70,7 +70,7 @@
             "heading": "Priority Status Buffer Message",
             "name": "prgPriorityStatusBuffer",
             "oid": "{ priorityRequestMessages 4 }",
-            "status": "mandatory",
+            "status": "current",
             "syntax": "<pre>OCTET STRING {SIZE(23)}</pre>",
             "type": "ot"
         },
@@ -80,7 +80,7 @@
             "heading": "Priority Cancel Message",
             "name": "prgPriorityCancel",
             "oid": "{ priorityRequestMessages 5 }",
-            "status": "mandatory",
+            "status": "current",
             "syntax": "<pre>OCTET STRING {SIZE(21)}</pre>",
             "type": "ot"
         },
@@ -90,7 +90,7 @@
             "heading": "Priority Clear Message",
             "name": "prgPriorityClear",
             "oid": "{ priorityRequestMessages 6 }",
-            "status": "mandatory",
+            "status": "current",
             "syntax": "<pre>OCTET STRING {SIZE(21)}</pre>",
             "type": "ot"
         },
@@ -100,7 +100,7 @@
             "heading": "Program Data",
             "name": "prsProgramData",
             "oid": "{ priorityRequestMessages 7 }",
-            "status": "mandatory",
+            "status": "current",
             "syntax": "<pre>OCTET STRING {SIZE(23)}</pre>",
             "type": "ot"
         },
@@ -110,7 +110,7 @@
             "heading": "Priority Request (Absolute Time Reference) Message",
             "name": "prgPriorityRequestAbsolute",
             "oid": "{ priorityRequestMessages 8 }",
-            "status": "mandatory",
+            "status": "current",
             "syntax": "<pre>OCTET STRING {SIZE(29)}</pre>",
             "type": "ot"
         },
@@ -120,7 +120,7 @@
             "heading": "Priority Update (Absolute Time Reference) Message",
             "name": "prgPriorityUpdateAbsolute",
             "oid": "{ priorityRequestMessages 9 }",
-            "status": "mandatory",
+            "status": "current",
             "syntax": "<pre>OCTET STRING {SIZE(29)}</pre>",
             "type": "ot",
             "children": [

@@ -32,7 +32,7 @@
                     "text": "A static table containing the parameters associated with each signal control priority request. The number of rows in this table is equal to 10.",
                     "name": "priorityRequestTable",
                     "oid": "{ priorityRequestServer 1 }",
-                    "status": "mandatory",
+                    "status": "current",
                     "syntax": "SEQUENCE OF PriorityRequestEntry",
                     "type": "ot",
                     "children": [
@@ -43,7 +43,7 @@
                             "index": "{ priorityRequestEntryNumber }",
                             "name": "priorityRequestTableEntry",
                             "oid": "{ priorityRequestTable 1 }",
-                            "status": "mandatory",
+                            "status": "current",
                             "syntax": "PriorityRequestTableEntry",
                             "type": "ot"
                         },
@@ -61,7 +61,7 @@
                             "text": "This object represents the row number in the priority request table. It is used by a management application for identification purposes.",
                             "name": "priorityRequestEntryNumber",
                             "oid": "{ priorityRequestTableEntry 1 }",
-                            "status": "mandatory",
+                            "status": "current",
                             "syntax": "INTEGER (1..10)",
                             "type": "ot"
                         },
@@ -73,7 +73,7 @@
                             "defval": "{ 1 }",
                             "name": "priorityRequestID",
                             "oid": "{ priorityRequestTableEntry 2 }",
-                            "status": "mandatory",
+                            "status": "current",
                             "syntax": "INTEGER (1..255)",
                             "type": "ot"
                         },
@@ -85,7 +85,7 @@
                             "defval": "{ \"INVALID-VEH-ID-##\" }",
                             "name": "priorityRequestVehicleID",
                             "oid": "{ priorityRequestTableEntry 3 }",
-                            "status": "mandatory",
+                            "status": "current",
                             "syntax": "OCTET STRING (SIZE 17)",
                             "type": "ot"
                         },
@@ -97,7 +97,7 @@
                             "defval": "{ 10 }",
                             "name": "priorityRequestVehicleClassType",
                             "oid": "{ priorityRequestTableEntry 4 }",
-                            "status": "mandatory",
+                            "status": "current",
                             "syntax": "INTEGER (1..10)",
                             "type": "ot"
                         },
@@ -109,7 +109,7 @@
                             "defval": "{ 10 }",
                             "name": "priorityRequestVehicleClassLevel",
                             "oid": "{ priorityRequestTableEntry 5 }",
-                            "status": "mandatory",
+                            "status": "current",
                             "syntax": "INTEGER (1..10)",
                             "type": "ot"
                         },
@@ -121,7 +121,7 @@
                             "defval": "{ 0 }",
                             "name": "priorityRequestServiceStrategyNumber",
                             "oid": "{ priorityRequestTableEntry 6 }",
-                            "status": "mandatory",
+                            "status": "current",
                             "syntax": "INTEGER (0..255)",
                             "type": "ot"
                         },
@@ -133,7 +133,7 @@
                             "defval": "{ 1 }",
                             "name": "priorityRequestTimeOfServiceDesired",
                             "oid": "{ priorityRequestTableEntry 7 }",
-                            "status": "mandatory",
+                            "status": "current",
                             "syntax": "INTEGER (1..65535)",
                             "type": "ot"
                         },
@@ -145,7 +145,7 @@
                             "defval": "{ 1 }",
                             "name": "priorityRequestTimeOfEstimatedDeparture",
                             "oid": "{ priorityRequestTableEntry 8 }",
-                            "status": "mandatory",
+                            "status": "current",
                             "syntax": "INTEGER (1..65535)",
                             "type": "ot"
                         },
@@ -157,7 +157,7 @@
                             "defval": "{ idleNotValid }",
                             "name": "priorityRequestStatusInPRS",
                             "oid": "{ priorityRequestTableEntry 9 }",
-                            "status": "mandatory",
+                            "status": "current",
                             "syntax": "<pre>INTEGER { idleNotValid (1),<br /> readyQueued (2),<br /> readyOverridden (3),<br /> activeProcessing (4),<br /> activeCancel (5),<br /> activeOverride (6),<br /> activeNotOverridden (7),<br /> closedCanceled (8),<br /> ReserviceError (9),<br /> closedTimeToLiveError (10),<br /> closedTimerError (11),<br /> closedStrategyError (12),<br /> closedCompleted (13),<br /> activeAdjustNotNeeded (14),<br /> closedFlash (15) }</pre>",
                             "type": "ot"
                         },
@@ -169,7 +169,7 @@
                             "defval": "{ 0 }",
                             "name": "priorityRequestTimeOfMessage",
                             "oid": "{ priorityRequestTableEntry 10 }",
-                            "status": "mandatory",
+                            "status": "current",
                             "syntax": "INTEGER --(0..4294967295)",
                             "type": "ot"
                         },
@@ -180,7 +180,7 @@
                             "text": "This object represents the initial time of receipt of the priority request priorityRequestTimeOfMessage plus priorityRequestTimeToLiveValue. When GLO.globalTime is equivalent to this value, a priority request that has a priorityRequestStatusInPRS of 'readyX' or 'closedX' shall have the priorityRequestStatusInPRS set to 'idleNotValid'.",
                             "name": "priorityRequestTimeToLive",
                             "oid": "{ priorityRequestTableEntry 11 }",
-                            "status": "mandatory",
+                            "status": "current",
                             "syntax": "INTEGER -- (0..4294967295)",
                             "type": "ot"
                         },
@@ -191,7 +191,7 @@
                             "text": "This object is the 'PRS requested' desired time (GLO.globalTime) to arrive at the intersection's stopping point. It is derived by adding priorityRequestTimeOfServiceDesired to priorityRequestTimeOfMessage.",
                             "name": "priorityRequestTimeOfServiceDesiredInPRS",
                             "oid": "{ priorityRequestTableEntry 12 }",
-                            "status": "mandatory",
+                            "status": "current",
                             "syntax": "INTEGER -- (0..4294967295)",
                             "type": "ot"
                         },
@@ -202,7 +202,7 @@
                             "text": "This object is the 'PRS requested' time (GLO.globalTime) of departure from the intersection's stopping point. It is derived by adding priorityRequestTimeOfEstimatedDeparture to priorityRequestTimeOfMessage.",
                             "name": "priorityRequestTimeOfEstimatedDepartureInPRS",
                             "oid": "{ priorityRequestTableEntry 13 }",
-                            "status": "mandatory",
+                            "status": "current",
                             "syntax": "INTEGER -- (0..4294967295)",
                             "type": "ot"
                         },
@@ -227,7 +227,7 @@
                     "text": "This object is used to indicate to a CO that the PRS is initializing or otherwise processing and, when TRUE, the information included with it in a prsServiceRequest response is not valid. It is used to synchronize exchanges between a PRS and CO.<br /><br />When the CO is acting as manager and the PRS is acting as an agent, prsBusy is set TRUE when the CO performs a SetRequest prsServiceRequest.<br /><br />When the PRS is acting as a manager and the CO is acting as the agent, prsBusy is set TRUE when the CO responds to a GetRequest prsServiceRequest from the PRS with coBusy set to FALSE.",
                     "name": "prsBusy",
                     "oid": "{ priorityRequestServer 2 }",
-                    "status": "mandatory",
+                    "status": "current",
                     "syntax": "TrueFalse",
                     "type": "ot"
                 },
@@ -239,7 +239,7 @@
                     "defval": "{ 0 }",
                     "name": "priorityRequestTimeToLiveValue",
                     "oid": "{ priorityRequestServer 3 }",
-                    "status": "mandatory",
+                    "status": "current",
                     "syntax": "INTEGER (0..65535)",
                     "type": "ot"
                 },
@@ -250,7 +250,7 @@
                     "text": "This object represents a timer that is reset to zero at the completion of any strategy (priorityRequestStatusInPRS is initially set equal to 'closedCompleted'). It is incremented every second up to its maximum value of 65535 where it latches.<br /><br />This timer is compared to Priority Request Reservice Class X Times to determine whether an priority request that comes right after a previous will be honored.",
                     "name": "priorityRequestReserviceTimer",
                     "oid": "{ priorityRequestServer 4 }",
-                    "status": "mandatory",
+                    "status": "current",
                     "syntax": "Gauge (0..65535)",
                     "type": "ot"
                 },
@@ -262,7 +262,7 @@
                     "defval": "{ 0 }",
                     "name": "priorityRequestReserviceClass1Time",
                     "oid": "{ priorityRequestServer 5 }",
-                    "status": "mandatory",
+                    "status": "current",
                     "syntax": "INTEGER (0..65535)",
                     "type": "ot"
                 },
@@ -274,7 +274,7 @@
                     "defval": "{ 0 }",
                     "name": "priorityRequestReserviceClass2Time",
                     "oid": "{ priorityRequestServer 6 }",
-                    "status": "mandatory",
+                    "status": "current",
                     "syntax": "INTEGER (0..65535)",
                     "type": "ot"
                 },
@@ -286,7 +286,7 @@
                     "defval": "{ 0 }",
                     "name": "priorityRequestReserviceClass3Time",
                     "oid": "{ priorityRequestServer 7 }",
-                    "status": "mandatory",
+                    "status": "current",
                     "syntax": "INTEGER (0..65535)",
                     "type": "ot"
                 },
@@ -298,7 +298,7 @@
                     "defval": "{ 0 }",
                     "name": "priorityRequestReserviceClass4Time",
                     "oid": "{ priorityRequestServer 8 }",
-                    "status": "mandatory",
+                    "status": "current",
                     "syntax": "INTEGER (0..65535)",
                     "type": "ot"
                 },
@@ -310,7 +310,7 @@
                     "defval": "{ 0 }",
                     "name": "priorityRequestReserviceClass5Time",
                     "oid": "{ priorityRequestServer 9 }",
-                    "status": "mandatory",
+                    "status": "current",
                     "syntax": "INTEGER (0..65535)",
                     "type": "ot"
                 },
@@ -322,7 +322,7 @@
                     "defval": "{ 0 }",
                     "name": "priorityRequestReserviceClass6Time",
                     "oid": "{ priorityRequestServer 10 }",
-                    "status": "mandatory",
+                    "status": "current",
                     "syntax": "INTEGER (0..65535)",
                     "type": "ot"
                 },
@@ -334,7 +334,7 @@
                     "defval": "{ 0 }",
                     "name": "priorityRequestReserviceClass7Time",
                     "oid": "{ priorityRequestServer 11 }",
-                    "status": "mandatory",
+                    "status": "current",
                     "syntax": "INTEGER (0..65535)",
                     "type": "ot"
                 },
@@ -346,7 +346,7 @@
                     "defval": "{ 0 }",
                     "name": "priorityRequestReserviceClass8Time",
                     "oid": "{ priorityRequestServer 12 }",
-                    "status": "mandatory",
+                    "status": "current",
                     "syntax": "INTEGER (0..65535)",
                     "type": "ot"
                 },
@@ -358,7 +358,7 @@
                     "defval": "{ 0 }",
                     "name": "priorityRequestReserviceClass9Time",
                     "oid": "{ priorityRequestServer 13 }",
-                    "status": "mandatory",
+                    "status": "current",
                     "syntax": "INTEGER (0..65535)",
                     "type": "ot"
                 },
@@ -370,7 +370,7 @@
                     "defval": "{ 0 }",
                     "name": "priorityRequestReserviceClass10Time",
                     "oid": "{ priorityRequestServer 14 }",
-                    "status": "mandatory",
+                    "status": "current",
                     "syntax": "INTEGER (0..65535)",
                     "type": "ot",
                     "children": [

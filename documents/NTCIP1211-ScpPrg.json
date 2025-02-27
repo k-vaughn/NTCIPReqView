@@ -1,0 +1,385 @@
+{
+    "id": "NTCIP1211-ScpPrg",
+    "guid": "516A202B-1409-410A-BA0B-6E1C747097EE",
+    "name": "PRS-MIB1",
+    "lastId": "14",
+    "createdOn": "2025-02-27T11:45:31",
+    "createdBy": {
+        "name": "Kenneth Vaughn",
+        "email": "kvaughn@trevilon.com",
+        "company": "Trevilon"
+    },
+    "data": [
+        {
+            "id": "1",
+            "guid": "F3748691-0611-4762-85B2-F46A1B11982F",
+            "text": "<p>5.1 Priority Request Server MIB</p>",
+            "name": "comment",
+            "type": "comment"
+        },
+        {
+            "id": "2",
+            "guid": "B86E19E3-2B5F-47E8-9487-F31E9B651573",
+            "heading": "Object Definitions - PRS",
+            "text": "<pre><br />EntryStatus, OwnerString, OerString,<br />Byte, UByte, Short, Ushort, Long, Ulong<br />FROM NEMA-SMI<br /><br />BITMAP16, scp<br />FROM NEMA-SMI2<br /><br />OBJECT-TYPE<br />FROM RFC-1212;</pre>",
+            "name": "PRS-MIB1",
+            "type": "mib",
+            "children": [
+                {
+                    "id": "3",
+                    "guid": "3BC69F39-793F-47CE-AA0E-36BD28A3F1DD",
+                    "text": "<p>5.1.2 Block Definitions - PRS</p>",
+                    "name": "comment",
+                    "type": "comment"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "guid": "557EFEB5-D4BC-4ACB-859A-9C065673448A",
+            "heading": "Priority Request Message",
+            "name": "prgPriorityRequest",
+            "oid": "{ priorityRequestMessages 1 }",
+            "status": "mandatory",
+            "syntax": "<pre>OCTET STRING {SIZE(25)}</pre>",
+            "type": "ot"
+        },
+        {
+            "id": "5",
+            "guid": "141CE753-6DBF-4193-8B5F-568707126CF8",
+            "heading": "Priority Update Message",
+            "name": "prgPriorityUpdate",
+            "oid": "{ priorityRequestMessages 2 }",
+            "status": "mandatory",
+            "syntax": "<pre>OCTET STRING {SIZE(25)}</pre>",
+            "type": "ot"
+        },
+        {
+            "id": "6",
+            "guid": "059C815D-2E51-4BBB-98A7-0BEBF9C2B193",
+            "heading": "Priority Status Control Message",
+            "name": "prgPriorityStatusControl",
+            "oid": "{ priorityRequestMessages 3 }",
+            "status": "mandatory",
+            "syntax": "<pre>OCTET STRING {SIZE(21)}</pre>",
+            "type": "ot"
+        },
+        {
+            "id": "7",
+            "guid": "A5F96A93-9A34-4327-9FA2-7B5F0A701670",
+            "heading": "Priority Status Buffer Message",
+            "name": "prgPriorityStatusBuffer",
+            "oid": "{ priorityRequestMessages 4 }",
+            "status": "mandatory",
+            "syntax": "<pre>OCTET STRING {SIZE(23)}</pre>",
+            "type": "ot"
+        },
+        {
+            "id": "8",
+            "guid": "5E334495-A2C7-43AA-9EDC-B5E4560039FF",
+            "heading": "Priority Cancel Message",
+            "name": "prgPriorityCancel",
+            "oid": "{ priorityRequestMessages 5 }",
+            "status": "mandatory",
+            "syntax": "<pre>OCTET STRING {SIZE(21)}</pre>",
+            "type": "ot"
+        },
+        {
+            "id": "9",
+            "guid": "A525B556-5C38-4C39-BBD9-4901AEA00D91",
+            "heading": "Priority Clear Message",
+            "name": "prgPriorityClear",
+            "oid": "{ priorityRequestMessages 6 }",
+            "status": "mandatory",
+            "syntax": "<pre>OCTET STRING {SIZE(21)}</pre>",
+            "type": "ot"
+        },
+        {
+            "id": "10",
+            "guid": "92ADBA61-87D1-4A47-AA41-83960A57519E",
+            "heading": "Program Data",
+            "name": "prsProgramData",
+            "oid": "{ priorityRequestMessages 7 }",
+            "status": "mandatory",
+            "syntax": "<pre>OCTET STRING {SIZE(23)}</pre>",
+            "type": "ot"
+        },
+        {
+            "id": "11",
+            "guid": "32FDA926-948C-4749-A7A8-6C843FE3D03C",
+            "heading": "Priority Request (Absolute Time Reference) Message",
+            "name": "prgPriorityRequestAbsolute",
+            "oid": "{ priorityRequestMessages 8 }",
+            "status": "mandatory",
+            "syntax": "<pre>OCTET STRING {SIZE(29)}</pre>",
+            "type": "ot"
+        },
+        {
+            "id": "12",
+            "guid": "C3DFD748-0C01-4449-9C5A-A9DEF01F49FA",
+            "heading": "Priority Update (Absolute Time Reference) Message",
+            "name": "prgPriorityUpdateAbsolute",
+            "oid": "{ priorityRequestMessages 9 }",
+            "status": "mandatory",
+            "syntax": "<pre>OCTET STRING {SIZE(29)}</pre>",
+            "type": "ot",
+            "children": [
+                {
+                    "id": "13",
+                    "guid": "1A8CCBC7-3275-499C-A9C0-C136B58138A1",
+                    "name": "end",
+                    "type": "end"
+                },
+                {
+                    "id": "13",
+                    "guid": "1A8CCBC7-3275-499C-A9C0-C136B58138A1",
+                    "type": "end"
+                }
+            ]
+        }
+    ],
+    "attributes": {
+        "access": {
+            "name": "Access",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "read-only"
+                },
+                {
+                    "key": "read-write"
+                },
+                {
+                    "key": "read-create"
+                },
+                {
+                    "key": "not-accessible"
+                },
+                {
+                    "key": "accessible-for-notify"
+                }
+            ]
+        },
+        "action": {
+            "name": "Action",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "added"
+                },
+                {
+                    "key": "remainCurrent"
+                },
+                {
+                    "key": "deprecated"
+                },
+                {
+                    "key": "madeObsolete"
+                },
+                {
+                    "key": "previouslyDeprecated"
+                }
+            ]
+        },
+        "additional": {
+            "name": "Additional",
+            "type": "xhtml"
+        },
+        "augments": {
+            "name": "Augments",
+            "type": "string"
+        },
+        "comment": {
+            "name": "Comment",
+            "type": "xhtml"
+        },
+        "conformance": {
+            "name": "Conformance",
+            "type": "string"
+        },
+        "contact": {
+            "name": "Contact",
+            "type": "xhtml"
+        },
+        "defval": {
+            "name": "Default Value",
+            "type": "string"
+        },
+        "dotted_oid": {
+            "name": "Dotted OID",
+            "type": "string"
+        },
+        "format": {
+            "name": "Format",
+            "type": "xhtml"
+        },
+        "index": {
+            "name": "Index",
+            "type": "string"
+        },
+        "info": {
+            "name": "Informative",
+            "type": "xhtml"
+        },
+        "name": {
+            "name": "Name",
+            "type": "string"
+        },
+        "oid": {
+            "name": "OID",
+            "type": "string"
+        },
+        "org": {
+            "name": "Organization",
+            "type": "string"
+        },
+        "param_type": {
+            "name": "Status",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "configuration"
+                },
+                {
+                    "key": "control"
+                },
+                {
+                    "key": "interrelated"
+                },
+                {
+                    "key": "status"
+                }
+            ]
+        },
+        "part": {
+            "name": "Part",
+            "type": "string"
+        },
+        "reference": {
+            "name": "Reference",
+            "type": "xhtml"
+        },
+        "status": {
+            "name": "Status",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "current"
+                },
+                {
+                    "key": "deprecated"
+                },
+                {
+                    "key": "obsolete"
+                }
+            ]
+        },
+        "syntax": {
+            "name": "Syntax",
+            "type": "xhtml"
+        },
+        "table_type": {
+            "name": "Table Type",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "static"
+                },
+                {
+                    "key": "managed"
+                },
+                {
+                    "key": "dynamic"
+                }
+            ]
+        },
+        "type": {
+            "name": "Type",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "comment"
+                },
+                {
+                    "key": "end"
+                },
+                {
+                    "key": "mc",
+                    "label": "module-compliance"
+                },
+                {
+                    "key": "mi",
+                    "label": "module-identity"
+                },
+                {
+                    "key": "mib"
+                },
+                {
+                    "key": "ng",
+                    "label": "notification-group"
+                },
+                {
+                    "key": "nt",
+                    "label": "notification-type"
+                },
+                {
+                    "key": "og",
+                    "label": "object-group"
+                },
+                {
+                    "key": "oi",
+                    "label": "object-identity"
+                },
+                {
+                    "key": "ot",
+                    "label": "object-type"
+                },
+                {
+                    "key": "ref",
+                    "label": "reference"
+                },
+                {
+                    "key": "rev",
+                    "label": "revision"
+                },
+                {
+                    "key": "row"
+                },
+                {
+                    "key": "text_conv"
+                }
+            ]
+        },
+        "units": {
+            "name": "Units",
+            "type": "string"
+        },
+        "updated": {
+            "name": "Updated",
+            "type": "string"
+        },
+        "version": {
+            "name": "Version",
+            "type": "string"
+        },
+        "x_text": {
+            "name": "Deprecated by",
+            "type": "xhtml"
+        },
+        "x_type": {
+            "name": "Deprecated Type",
+            "type": "enum",
+            "values": [
+                {
+                    "key": "superseded"
+                },
+                {
+                    "key": "supplanted"
+                },
+                {
+                    "key": "withdrawn"
+                }
+            ]
+        }
+    }
+}

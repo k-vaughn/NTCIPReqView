@@ -2,14 +2,14 @@
   "id": "NTCIP_1211",
   "guid": "98517503-D6D8-4528-A342-11CF04043F16",
   "name": "NTCIP1211-SCP",
-  "lastId": 9599,
+  "lastId": 9663,
   "createdOn": "2025-02-28T14:34:59.440Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-02-28T18:26:17.171Z",
+  "lastChangedOn": "2025-02-28T19:45:39.777Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -11286,26 +11286,1995 @@
                       "docId": "NTCIP1211-ScpPrs",
                       "structureAction": "Copy"
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9600",
+              "guid": "d6ba5c9b-6d89-43aa-b45e-882b4de9b027",
+              "heading": "Block Definitions - PRS",
+              "name": "comment",
+              "type": "comment",
+              "history": [
+                {
+                  "affectedNodeId": "3",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-28T18:51:57.370Z",
+                  "docId": "NTCIP1211-ScpPrg",
+                  "structureAction": "Copy"
+                }
+              ],
+              "children": [
+                {
+                  "id": "9601",
+                  "guid": "8fbcd04b-113f-42e5-b375-44176d95d744",
+                  "heading": "Priority Request Message",
+                  "text": "<pre>An OER encoded string of reference parameters to initiate a new priority request.<br><br>The parameter values in this string when sent from a PRG to a PRS are:<br>priorityRequestID INTEGER (1..255)<br>priorityRequestVehicleID OCTET STRING (SIZE 17)<br>priorityRequestVehicleClassType INTEGER (1..10)<br>priorityRequestVehicleClassLevel INTEGER (1..10)<br>priorityRequestServiceStrategyNumber INTEGER (1..255)<br>priorityRequestTimeOfServiceDesired INTEGER (1..65535)<br>priorityRequestTimeOfEstimatedDeparture INTEGER (1..65535)</pre>",
+                  "access": "read-write",
+                  "name": "prgPriorityRequest",
+                  "oid": "{ priorityRequestMessages 1 }",
+                  "status": "current",
+                  "syntax": "<pre>OCTET STRING {SIZE(25)}</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "4",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:51:57.370Z",
+                      "docId": "NTCIP1211-ScpPrg",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "9602",
+                  "guid": "47cde7f7-80fa-43f3-810a-16654af487b3",
+                  "heading": "Priority Update Message",
+                  "text": "<pre>An OER encoded string of reference parameters to update a priority request.<br><br>The parameter values in this string when sent from a PRG to a PRS are:<br>priorityRequestID INTEGER (1..255)<br>priorityRequestVehicleID OCTET STRING (SIZE 17)<br>priorityRequestVehicleClassType INTEGER (1..10)<br>priorityRequestVehicleClassLevel INTEGER (1..10)<br>priorityRequestServiceStrategyNumber INTEGER (1..255)<br>priorityRequestTimeOfServiceDesired INTEGER (1..65535)<br>priorityRequestTimeOfEstimatedDeparture INTEGER (1..65535)</pre>",
+                  "access": "read-write",
+                  "name": "prgPriorityUpdate",
+                  "oid": "{ priorityRequestMessages 2 }",
+                  "status": "current",
+                  "syntax": "<pre>OCTET STRING {SIZE(25)}</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "5",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:51:57.370Z",
+                      "docId": "NTCIP1211-ScpPrg",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "9603",
+                  "guid": "ff1f9cd6-c899-4243-ba2c-ad2b5c6135c6",
+                  "heading": "Priority Status Control Message",
+                  "text": "<pre>An OER encoded string of reference parameters used to retrieve the status of a priority request.<br><br>The parameter values in this string when sent from a PRG to a PRS are:<br>priorityRequestID INTEGER (1..255)<br>priorityRequestVehicleID OCTET STRING (SIZE 17)<br>priorityRequestVehicleClassType INTEGER (1..10)<br>priorityRequestVehicleClassLevel INTEGER (1..10)<br>priorityRequestServiceStrategyNumber INTEGER (1..255)</pre>",
+                  "access": "read-write",
+                  "name": "prgPriorityStatusControl",
+                  "oid": "{ priorityRequestMessages 3 }",
+                  "status": "current",
+                  "syntax": "<pre>OCTET STRING {SIZE(21)}</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "6",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:51:57.370Z",
+                      "docId": "NTCIP1211-ScpPrg",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "9604",
+                  "guid": "8f7b2e2a-1ab6-49e1-9a1d-f346f799955c",
+                  "heading": "Priority Status Buffer Message",
+                  "text": "<pre>An OER encoded string defining the status of a<br> priority request.<br><br>The parameter values in this string when retrieved from a PRG are:<br>priorityRequestID INTEGER (1..255)<br>priorityRequestVehicleID OCTET STRING (SIZE 17)<br>priorityRequestVehicleClassType INTEGER (1..10)<br>priorityRequestVehicleClassLevel INTEGER (1..10)<br>priorityRequestServiceStrategyNumber INTEGER (1..255)<br>priorityRequestStatusInPRS INTEGER (1..255)</pre>",
+                  "access": "read-only",
+                  "name": "prgPriorityStatusBuffer",
+                  "oid": "{ priorityRequestMessages 4 }",
+                  "status": "current",
+                  "syntax": "<pre>OCTET STRING {SIZE(23)}</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "7",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:51:57.370Z",
+                      "docId": "NTCIP1211-ScpPrg",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "9605",
+                  "guid": "8d5c875c-fbc3-43fe-ad26-ebf5884c774f",
+                  "heading": "Priority Cancel Message",
+                  "text": "<pre>An OER encoded string of reference parameters to cancel a priority request.<br><br>The parameter values in this string when sent from a PRG to a PRS are:<br>priorityRequestID INTEGER (1..255)<br>priorityRequestVehicleID OCTET STRING (SIZE 17)<br>priorityRequestVehicleClassType INTEGER (1..10)<br>priorityRequestVehicleClassLevel INTEGER (1..10)<br>priorityRequestServiceStrategyNumber INTEGER (1..255)</pre>",
+                  "access": "read-write",
+                  "name": "prgPriorityCancel",
+                  "oid": "{ priorityRequestMessages 5 }",
+                  "status": "current",
+                  "syntax": "<pre>OCTET STRING {SIZE(21)}</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "8",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:51:57.370Z",
+                      "docId": "NTCIP1211-ScpPrg",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "9606",
+                  "guid": "d184c8d3-3985-4500-90ab-407be5f35788",
+                  "heading": "Priority Clear Message",
+                  "text": "<pre>An OER encoded string of reference parameters to clear a priority request.<br><br>The parameter values in this string when sent from a PRG to a PRS are:<br>priorityRequestID INTEGER (1..255)<br>priorityRequestVehicleID OCTET STRING (SIZE 17)<br>priorityRequestVehicleClassType INTEGER (1..10)<br>priorityRequestVehicleClassLevel INTEGER (1..10)<br>priorityRequestServiceStrategyNumber INTEGER (1..255)</pre>",
+                  "access": "read-write",
+                  "name": "prgPriorityClear",
+                  "oid": "{ priorityRequestMessages 6 }",
+                  "status": "current",
+                  "syntax": "<pre>OCTET STRING {SIZE(21)}</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "9",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:51:57.370Z",
+                      "docId": "NTCIP1211-ScpPrg",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "9607",
+                  "guid": "a27b7e22-823e-42eb-8ca0-bfcf2fb4b633",
+                  "heading": "Program Data",
+                  "text": "<pre>An OER encoded string of reference parameters for exchanges between a management station and a PRS.<br><br>The parameter values in this string are:<br>priorityRequestTimeToLiveValue INTEGER (0..65535)<br>priorityRequestReserviceClass1Time INTEGER (0..65535)<br>priorityRequestReserviceClass2Time INTEGER (0..65535)<br>priorityRequestReserviceClass3Time INTEGER (0..65535)<br>priorityRequestReserviceClass4Time INTEGER (0..65535)<br>priorityRequestReserviceClass5Time INTEGER (0..65535)<br>priorityRequestReserviceClass6Time INTEGER (0..65535)<br>priorityRequestReserviceClass7Time INTEGER (0..65535)<br>priorityRequestReserviceClass8Time INTEGER (0..65535)<br>priorityRequestReserviceClass9Time INTEGER (0..65535)<br>priorityRequestReserviceClass10Time INTEGER (0..65535)</pre>",
+                  "access": "read-write",
+                  "name": "prsProgramData",
+                  "oid": "{ priorityRequestMessages 7 }",
+                  "status": "current",
+                  "syntax": "<pre>OCTET STRING {SIZE(23)}</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "10",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:51:57.370Z",
+                      "docId": "NTCIP1211-ScpPrg",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "9608",
+                  "guid": "370f1b60-dfd8-423c-8cba-083a5b3749a8",
+                  "heading": "Priority Request (Absolute Time Reference) Message",
+                  "text": "<pre>An OER encoded string of reference parameters to initiate a new priority request based on an absolute time reference used by the PRG.<br><br>The parameter values in this string when sent from a PRG to a PRS are:<br>priorityRequestID INTEGER (1..255)<br>priorityRequestVehicleID OCTET STRING (SIZE 17)<br>priorityRequestVehicleClassType INTEGER (1..10)<br>priorityRequestVehicleClassLevel INTEGER (1..10)<br>priorityRequestServiceStrategyNumber INTEGER (1..255)<br>priorityRequestTimeOfServiceDesired INTEGER (1..65535)<br>priorityRequestTimeOfEstimatedDeparture INTEGER (1..65535)<br>priorityRequestTimeOfRequest            INTEGER (0.. 4294967295)</pre>",
+                  "access": "read-write",
+                  "name": "prgPriorityRequestAbsolute",
+                  "oid": "{ priorityRequestMessages 8 }",
+                  "status": "current",
+                  "syntax": "<pre>OCTET STRING {SIZE(29)}</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "11",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:51:57.370Z",
+                      "docId": "NTCIP1211-ScpPrg",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "9609",
+                  "guid": "88912056-daf5-4113-9c30-4a2b488fd49c",
+                  "heading": "Priority Update (Absolute Time Reference) Message",
+                  "text": "<pre>An OER encoded string of reference parameters to update a priority request based on an absolute time reference used by the PRG.<br><br>The parameter values in this string when sent from a PRG to a PRS are:<br>priorityRequestID INTEGER (1..255)<br>priorityRequestVehicleID OCTET STRING (SIZE 17)<br>priorityRequestVehicleClassType INTEGER (1..10)<br>priorityRequestVehicleClassLevel INTEGER (1..10)<br>priorityRequestServiceStrategyNumber INTEGER (1..255)<br>priorityRequestTimeOfServiceDesired INTEGER (1..65535)<br>priorityRequestTimeOfEstimatedDeparture INTEGER (1..65535)<br>priorityRequestTimeOfRequest            INTEGER (0.. 4294967295)</pre>",
+                  "access": "read-write",
+                  "name": "prgPriorityUpdateAbsolute",
+                  "oid": "{ priorityRequestMessages 9 }",
+                  "status": "current",
+                  "syntax": "<pre>OCTET STRING {SIZE(29)}</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "12",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:51:57.370Z",
+                      "docId": "NTCIP1211-ScpPrg",
+                      "structureAction": "Copy"
+                    }
                   ],
                   "children": [
                     {
-                      "id": "9599",
-                      "guid": "c51a486e-35ff-4a52-b34f-18a6cd61f812",
+                      "id": "9610",
+                      "guid": "858a61f5-23b2-4178-936d-da44dea53ad3",
                       "name": "end",
                       "type": "end",
                       "history": [
                         {
-                          "affectedNodeId": "33",
+                          "affectedNodeId": "13",
                           "changedBy": {
                             "company": "Trevilon",
                             "email": "kvaughn@trevilon.com",
                             "name": "Ken Vaughn"
                           },
-                          "changedOn": "2025-02-28T18:25:27.829Z",
-                          "docId": "NTCIP1211-ScpPrs",
+                          "changedOn": "2025-02-28T18:51:57.370Z",
+                          "docId": "NTCIP1211-ScpPrg",
                           "structureAction": "Copy"
                         }
                       ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9612",
+          "guid": "d5f79a24-5bab-47ee-8988-98ef87bd8dc5",
+          "heading": "Coordinator MIB",
+          "history": [
+            {
+              "affectedNodeId": "9561",
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-02-28T18:53:16.410Z",
+              "docId": "NTCIP_1211",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "heading": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-02-28T18:53:24.430Z"
+            }
+          ],
+          "children": [
+            {
+              "id": "9613",
+              "guid": "e2c6b65b-c84c-4efa-9c63-136f5b24c8bb",
+              "heading": "Object Definitions—CO",
+              "text": "<pre>EntryStatus, OwnerString, OerString,\nByte, UByte, Short, Ushort, Long, Ulong\nFROM NEMA-SMI\n\nscp\nFROM NEMA-SMI2\n\nOBJECT-TYPE\nFROM RFC-1212\n\nsplitNumber, splitPhase\nFROM SCP-MIB1;</pre>",
+              "name": "CO-MIB1",
+              "type": "mib",
+              "history": [
+                {
+                  "affectedNodeId": "1",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-28T18:53:42.526Z",
+                  "docId": "NTCIP1211-ScpCo",
+                  "structureAction": "Copy"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": "Coordinator MIB 5.2.1 Object Definitions—CO",
+                    "text": "<pre><br>EntryStatus, OwnerString, OerString,<br>Byte, UByte, Short, Ushort, Long, Ulong<br>FROM NEMA-SMI<br><br>scp<br>FROM NEMA-SMI2<br><br>OBJECT-TYPE<br>FROM RFC-1212<br><br>splitNumber, splitPhase<br>FROM SCP-MIB1;</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-28T18:53:57.504Z"
+                }
+              ],
+              "children": [
+                {
+                  "id": "9614",
+                  "guid": "26f1b047-fbfd-4501-84ad-7f84225df414",
+                  "text": "<p>This group of object represents the output from the prioritization</p><p>process and the parameters that Coordinator acts upon.</p>",
+                  "name": "comment",
+                  "type": "comment",
+                  "history": [
+                    {
+                      "affectedNodeId": "2",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "9615",
+                  "guid": "1a47a41d-bf43-49e9-a7d5-2407ac8d6138",
+                  "heading": "Maximum Service Requests to Consider",
+                  "text": " This object represents the number of rows in the priorityStrategyRequestedTable that the CO shall consider when it tries to determine which strategies to execute. The number of rows in the table is fixed at 10 but an implementation is only required to act upon the first row.",
+                  "name": "maxStrategyRequestsToConsider",
+                  "oid": "{ priorityStrategyServer 1 }",
+                  "status": "current",
+                  "syntax": "INTEGER (1..10)",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "3",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "9616",
+                  "guid": "53c8f616-e8c4-4a5a-8f1d-c4c45b1d2633",
+                  "heading": "Priority Strategy Requested Table",
+                  "text": "A static table containing the parameters associated with executing a priority strategy. The number of rows in this table is equal to 10.",
+                  "name": "priorityStrategyRequestedTable",
+                  "oid": "{ priorityStrategyServer 2 }",
+                  "status": "current",
+                  "syntax": "SEQUENCE OF priorityStrategyRequestedEntry",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "4",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "9617",
+                      "guid": "bda9ec28-6a37-49ae-b08c-009e647b0582",
+                      "text": "This object defines the parameters that are associated with a service request.",
+                      "index": "{ priorityStrategyRequestedNumber }",
+                      "name": "priorityStrategyRequestedEntry",
+                      "oid": "{ priorityStrategyRequestedTable 1 }",
+                      "status": "current",
+                      "syntax": "PriorityStrategyRequestedEntry",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "5",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9618",
+                      "guid": "4f421134-82e5-4477-a77b-8cd0b6e1757c",
+                      "name": "priorityStrategyRequestedEntry",
+                      "syntax": "<pre>{<br>priorityStrategyRequestNumber INTEGER,<br>priorityStrategyRequested INTEGER,<br>priorityStrategyRequestedTimeOfServiceDesired INTEGER,<br>priorityStrategyRequestedTimeOfEstimatedDeparture INTEGER,<br>priorityStrategyRequestStatusInCO INTEGER}</pre>",
+                      "type": "row",
+                      "history": [
+                        {
+                          "affectedNodeId": "6",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9619",
+                      "guid": "881d6168-a7b9-47e9-ad8b-8a9c5bd5c5db",
+                      "heading": "Priority Strategy Request Number",
+                      "text": "This object represents the index used to reference rows in the priorityStrategyRequestedTable.",
+                      "name": "priorityStrategyRequestNumber",
+                      "oid": "{ priorityStrategyRequestedEntry 1 }",
+                      "status": "current",
+                      "syntax": "INTEGER (1..10)",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "7",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9620",
+                      "guid": "284b84d3-b060-4450-88fd-d207c6947234",
+                      "heading": "Priority Strategy Requested",
+                      "text": "This object represents a strategy being requested by the PRS. A value of zero (0) shall indicate that none is request.",
+                      "name": "priorityStrategyRequested",
+                      "oid": "{ priorityStrategyRequestedEntry 2 }",
+                      "status": "current",
+                      "syntax": "INTEGER (0..255)",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "8",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9621",
+                      "guid": "e7138ac7-50c5-495b-a795-3d481e173d9c",
+                      "heading": "Priority Strategy Requested Time of Service Desired",
+                      "text": "This object represents the estimated time of service desired expressed as global time. This value is received from the PRS via the prsServiceRequest message's priorityRequestTimeOfServiceDesiredInPRS.",
+                      "name": "priorityStrategyRequestedTimeOfServiceDesired",
+                      "oid": "{ priorityStrategyRequestedEntry 3 }",
+                      "status": "current",
+                      "syntax": "INTEGER -- (0..4294967295)",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "9",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9622",
+                      "guid": "5ead5f7b-22cc-45f6-9c79-ad231ddffa5b",
+                      "heading": "Priority Strategy Requested Time of Estimated Departure",
+                      "text": "This object represents the estimated time of departure expressed as global time. This value is received from the PRS via the prsServiceRequest message's priorityRequestTimeOfServiceDesiredInPRS.",
+                      "name": "priorityStrategyRequestedTimeOfEstimatedDeparture",
+                      "oid": "{ priorityStrategyRequestedEntry 4 }",
+                      "status": "current",
+                      "syntax": "INTEGER -- (0..4294967295)",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "10",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9623",
+                      "guid": "8e80613f-a5f3-43b6-b22e-c5d0a8522e32",
+                      "heading": "Priority Strategy Request Status (CO)",
+                      "text": "This object provides an image of priorityRequestStatusInPRS that was sent by the PRS or a response to readyQueued, activeCancel, or activeOverride.<br>idleNotValid PRS determined that the request does not contain valid data<br>readyQueued PRS has validated the request but is waiting for the CO to activate<br>readyOverridden CO has overridden the request<br>activeProcessing CO is processing the requested strategy<br>activeCancel PRS has asked that request be canceled<br>activeOverride PRS has asked that request be overridden<br>activeNotOverridden CO did not process the requested override<br>closedCanceled CO has canceled the request<br>reserviceError PRs determined that the request came too soon after a previous request<br>closedTimeToLiveError PRS determined that TSD exceeds the time to live<br>closedTimerError CO determined that the requested times could not be met<br>closedStrategyError CO determined that the requested strategy was not valid.<br>ClosedCompleted CO has completed the requested strategy request<br>ActiveAdjustNotNeeded CO determined that the request could be met with current timing and adjustment was not needed<br>ClosedFlash CO determined that the controller was operating in flash.<br><br>Upon receipt of a readyQueued, the CO may change the status to:<br>activeProcessing<br>closedTimerError<br>closedStrategyError<br>activeAdjustNotNeeded<br>closedFlash<br><br>Upon receipt of a activeCancel, the CO may change the status to:<br>closedCanceled<br>closedCompleted<br><br>Upon receipt of a activeOverride, the CO may change the status to:<br>activeNotOverridden<br>readyOverridden<br>closedCompleted<br><br>The CO does NOT take any action when one of the following status is received from the PRS:<br>idleNotValid<br>readyOverridden<br>activeProcessing<br>activeNotOverridden<br>closedCanceled<br>reserviceError<br>closedTimeToLiveError<br>closedTimerError<br>closedStrategyError<br>closedCompleted<br>activeAdjustNotNeeded<br>closedFlash<br><br>Note: A change of status is predicated on the ",
+                      "defval": "{ idleNotValid }",
+                      "name": "priorityStrategyRequestStatusInCO",
+                      "oid": "{ priorityStrategyRequestedEntry 5}",
+                      "status": "current",
+                      "syntax": "<pre>INTEGER { idleNotValid (1),<br> readyQueued (2),<br> readyOverridden (3),<br> activeProcessing (4),<br> activeCancel (5),<br> activeOverride (6),<br> activeNotOverridden (7),<br> closedCanceled (8),<br> reserviceError (9),<br> closedTimeToLiveError (10),<br> closedTimerError (11),<br> closedStrategyError (12),<br> closedCompleted (13),<br> activeAdjustNotNeeded (14),<br> closedFlash (15) }</pre>",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "11",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9624",
+                  "guid": "3dfab2fd-0d82-44c8-872c-2371ca440ddc",
+                  "heading": "Coordinator Busy",
+                  "text": "This object is used to indicate to a PRS that the CO is initializing or otherwise processing and when TRUE, the information included with it in a prsServiceRequest response is not valid. It is used to synchronize exchanges between a PRS and CO.<br><br>When the PRS is acting as manager and the CO is acting as an agent, coBusy is set TRUE when the PRS performs a SetRequest prsServiceRequest.<br><br>When the CO is acting as a manager and the PRS is acting as the agent, coBusy is set TRUE when the PRS responds to a GetRequest prsServiceRequest from the CO with prsBusy set to FALSE. ",
+                  "name": "coBusy",
+                  "oid": "{ priorityStrategyServer 3 }",
+                  "status": "current",
+                  "syntax": "TrueFalse",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "12",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "9625",
+                      "guid": "3016e3b5-9712-4b22-92e3-be7e4b9fe7fa",
+                      "text": "<p>The following set of objects defines a table of priority strategy</p><p>parameters and a list of per unit parameters. In the table, each row</p><p>in the table represents data associated with a particular strategy.</p>",
+                      "name": "comment",
+                      "type": "comment",
+                      "history": [
+                        {
+                          "affectedNodeId": "13",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9626",
+                  "guid": "aa0226d1-b7f8-4077-90e5-6b4ef2ea9a40",
+                  "heading": "Priority Strategies Max",
+                  "text": "The maximum number of priority strategies supported by this entity.",
+                  "name": "priorityStrategiesMax",
+                  "oid": "{ priorityStrategyServer 4}",
+                  "status": "current",
+                  "syntax": "INTEGER (1..255)",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "14",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                },
+                {
+                  "id": "9627",
+                  "guid": "13605107-4987-48e2-9dec-97ea7bd126b6",
+                  "heading": "Priority Strategies Table",
+                  "text": "A static table containing the parameters associated with each priority strategy. The number of rows in this table is equal to the priorityStrategiesMax object.",
+                  "name": "priorityStrategyTable",
+                  "oid": "{ priorityStrategyServer 5 }",
+                  "status": "current",
+                  "syntax": "SEQUENCE OF PriorityStrategyEntry",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "15",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "9628",
+                      "guid": "4c4b33fa-61b2-4c7d-b797-fd1c33280a78",
+                      "text": "Parameters associated with a specific priority strategy.",
+                      "index": "{ priorityStrategyNumber }",
+                      "name": "priorityStrategyEntry",
+                      "oid": "{ priorityStrategyTable 1 }",
+                      "status": "current",
+                      "syntax": "PriorityStrategyEntry",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "16",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9629",
+                      "guid": "0b000c61-853c-4d5b-a4ad-b9a820c52463",
+                      "name": "priorityStrategyEntry",
+                      "syntax": "<pre>{<br>priorityStrategyNumber INTEGER,<br>priorityStrategyServicePhases OCTET STRING,<br>priorityStrategyPhaseOmits OCTET STRING,<br>priorityStrategyPedOmits OCTET STRING,<br>priorityStrategyDescription OCTET STRING}</pre>",
+                      "type": "row",
+                      "history": [
+                        {
+                          "affectedNodeId": "17",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9630",
+                      "guid": "3b40fcd5-e067-4346-9070-debbd0562f95",
+                      "heading": "Priority Strategy Number",
+                      "text": "This object serves as the index in the priorityStrategyTable.",
+                      "name": "priorityStrategyNumber",
+                      "oid": "{ priorityStrategyEntry 1}",
+                      "status": "current",
+                      "syntax": "INTEGER (1..255)",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "18",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9631",
+                      "guid": "d8cd83c2-0d71-4fd0-965d-b89924c1f7db",
+                      "heading": "Priority Strategy Service Phases",
+                      "text": "This object defines the phase or phases that represent the movement on which priority service is desired. Each octet (binary value) within the octet string contains an SCP.phaseNumber.<br><br>There can only be one phase per ring. All defined Service Phases shall be able to time concurrently. It is assumed that any possible concurrent phase are allowed to be serviced in order with no backing up unless otherwise permitted.",
+                      "defval": "{ \"\" }",
+                      "name": "priorityStrategyServicePhases",
+                      "oid": "{ priorityStrategyEntry 2}",
+                      "status": "current",
+                      "syntax": "OCTET STRING",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "19",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9632",
+                      "guid": "87ecfd01-fb0c-47a4-86a7-7a26c256c9e3",
+                      "heading": "Priority Strategy Phase Omits",
+                      "text": "This object represents the phase(s) that are to be omitted during the priority service. Each octet (binary value) within the octet string contains an SCP.phaseNumber. The CO shall ignore any omit applied to the coordinated phase(s). These phase omits are logically 'OR'ed with any other phase omits that may be active.",
+                      "defval": "{ \"\" }",
+                      "name": "priorityStrategyPhaseOmits",
+                      "oid": "{ priorityStrategyEntry 3}",
+                      "status": "current",
+                      "syntax": "OCTET STRING",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "20",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9633",
+                      "guid": "0e99f142-038a-4da0-8ac6-9c875222170e",
+                      "heading": "Priority Strategy Ped Omits",
+                      "text": "This object represents the pedestrian movement(s) that are to be omitted during the priority service. Each octet (binary value) within the octet string contains an SCP.phaseNumber. These ped omits are logically 'OR'ed with any other ped omits that may be active. These ped omits do not apply to non-actuated phases.",
+                      "defval": "{ \"\" }",
+                      "name": "priorityStrategyPedOmits",
+                      "oid": "{ priorityStrategyEntry 4}",
+                      "status": "current",
+                      "syntax": "OCTET STRING",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "21",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9634",
+                      "guid": "10cae481-7ac7-4e32-b8fa-a88f5e165692",
+                      "heading": "Priority Strategy Description",
+                      "text": "This object represents a text description of the strategy. It is intended to convey to priority service requesters what signals or movements are given priority. It should be defined in language that is domain neutral.",
+                      "name": "priorityStrategyDescription",
+                      "oid": "{ priorityStrategyEntry 5}",
+                      "status": "current",
+                      "syntax": "OCTET STRING (SIZE (0..40))",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "22",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ],
+                      "children": [
+                        {
+                          "id": "9635",
+                          "guid": "50c4cf35-d75d-4c34-b56f-d8b1498f3520",
+                          "text": "<p>The following set of objects represent per unit parameters that</p><p>apply to all strategies. It includes a set of database variables</p><p>that relate to an extension of the splitTable as defined in NTCIP</p><p>1202:2005.</p>",
+                          "name": "comment",
+                          "type": "comment",
+                          "history": [
+                            {
+                              "affectedNodeId": "23",
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-02-28T18:53:42.526Z",
+                              "docId": "NTCIP1211-ScpCo",
+                              "structureAction": "Copy"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9636",
+                  "guid": "8c8c23d7-ae8c-41a0-b52e-152d6814f7b9",
+                  "heading": "Priority Strategy Extension to Split Table",
+                  "text": "A table containing priority strategy parameters that are associated with each split and each phase of that split.<br><br>This is an extension to the splitTable as defined in the NTCIP 1202:2005.",
+                  "name": "priorityStrategyExtensionToSplitTable",
+                  "oid": "{ priorityStrategyServer 6 }",
+                  "status": "current",
+                  "syntax": "SEQUENCE OF PriorityStrategyExtensionToSplitEntry",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "24",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "9637",
+                      "guid": "69572920-c4cb-4d7b-b1b3-bb820647987a",
+                      "text": "A table containing priority strategy parameters that are associated with each split and each phase of that split.",
+                      "index": "{splitNumber, splitPhase}",
+                      "name": "priorityStrategyExtensionToSplitEntry",
+                      "oid": "{ priorityStrategyExtensionToSplitTable 1}",
+                      "status": "current",
+                      "syntax": "PriorityStrategyExtensionToSplitEntry",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "25",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9638",
+                      "guid": "c22fa119-b20f-44ba-b9a8-c6fe09803b40",
+                      "name": "priorityStrategyExtensionToSplitEntry",
+                      "syntax": "<pre>{<br>priorityStrategyMaximumReductionTime INTEGER,<br>priorityStrategyMaximumExtensionTime INTEGER}</pre>",
+                      "type": "row",
+                      "history": [
+                        {
+                          "affectedNodeId": "26",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9639",
+                      "guid": "d32cfad4-48df-4e30-b3d6-11fe8dfd0f08",
+                      "heading": "Priority Strategy Maximum Reduction Time",
+                      "text": "This object represents the maximum number of seconds that the split of a phase can be reduced by during a priority strategy.<br><br>This effective value may be reduced by the CO based on the operating phase minimum service requirements.<br><br>Note - The definition of a phases minimum service is dependent on whether it is actuated or non-actuated, whether the ped clear terminates before the yellow or not, whether variable initial is active or not, whether it is a coord phase or not, and whether it is in a single or multi-ring configuration.",
+                      "defval": "{ 0 }",
+                      "name": "priorityStrategyMaximumReductionTime",
+                      "oid": "{ priorityStrategyExtensionToSplitEntry 1 }",
+                      "status": "current",
+                      "syntax": "INTEGER (0..255)",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "27",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9640",
+                      "guid": "290636e3-064b-4b68-b48c-34b1ec9fbb2f",
+                      "heading": "Priority Strategy Maximum Extension Time",
+                      "text": "This object represents the maximum number of seconds that the split of a phase can be extended during a priority strategy.<br><br>The effective value may be modified by the CO based on time gained from one cycle of reductions to the respective non-priority phases.",
+                      "defval": "{ 0 }",
+                      "name": "priorityStrategyMaximumExtensionTime",
+                      "oid": "{ priorityStrategyExtensionToSplitEntry 2 }",
+                      "status": "current",
+                      "syntax": "INTEGER (0..255)",
+                      "type": "ot",
+                      "history": [
+                        {
+                          "affectedNodeId": "28",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9641",
+                  "guid": "8eea0cd9-d992-489b-882f-e186ad0f44ca",
+                  "heading": "Priority Strategy Default Coordination Pattern",
+                  "text": "This object represents the coordination pattern timing parameters to use if the controller is not operating in a coordinated mode.",
+                  "name": "priorityStrategyDefaultCoordPattern",
+                  "oid": "{ priorityStrategyServer 7 }",
+                  "status": "current",
+                  "syntax": "INTEGER (1..253)",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "29",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9659",
+              "guid": "80266e30-2cac-464e-9207-e9976dcdb96e",
+              "heading": "Priority Service Request and Response Block Objects",
+              "history": [
+                {
+                  "affectedNodeId": "9612",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-28T18:55:56.923Z",
+                  "docId": "NTCIP_1211",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-28T18:56:53.665Z"
+                }
+              ],
+              "children": [
+                {
+                  "id": "9642",
+                  "guid": "c35c1e2d-61bf-4a57-aab7-cecf7b668fa5",
+                  "text": "<p>The following block object definition is defined for exchanges between a PRS and a CO.</p>",
+                  "name": "comment",
+                  "type": "comment",
+                  "history": [
+                    {
+                      "affectedNodeId": "30",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9641",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:56:13.887Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>5.2.2 Priority Service Request and Response Block Objects</p><p>The following block object definition is defined for exchanges</p><p>between a PRS and a CO.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:56:47.510Z"
+                    },
+                    {
+                      "affectedNodeId": "9613",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:57:23.187Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>5.2.2&nbsp;</p><p>The following block object definition is defined for exchanges</p><p>between a PRS and a CO.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:57:44.653Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9660",
+                  "guid": "2df40cee-8de7-4146-b5ca-f1d27f40bdd4",
+                  "text": "<p>Objects used to define the block objects for exchanges between a PRS and a CO.</p>",
+                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.11.4",
+                  "name": "priorityStrategyMessages",
+                  "oid": "{ scp 4 }",
+                  "status": "current",
+                  "type": "oi",
+                  "history": [
+                    {
+                      "affectedNodeId": "9659",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:57:57.467Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:58:06.411Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "Support Column Entries"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:58:16.564Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:58:23.473Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "status": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:03:33.893Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:03:47.559Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "oid": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:06:08.753Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "dotted_oid": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:08:42.106Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9643",
+                  "guid": "0d05b7ec-59d0-4f65-aba5-a51c20eac969",
+                  "heading": "Service Request",
+                  "text": "<pre>An OER encoded string of reference parameters for exchanges between a CO and a PRS.\n&nbsp;\nThe parameter values of this OID when transferring information from a PRS to a CO are:\npriorityRequestServiceStrategyNumber.1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestTimeOfServiceDesiredInPRS.1&nbsp; &nbsp; &nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestTimeOfEstimatedDepartureInPRS.1&nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestStatusInPRS.1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestServiceStrategyNumber.2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestTimeOfServiceDesiredInPRS.2&nbsp; &nbsp; &nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestTimeOfEstimatedDepartureInPRS.2&nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestStatusInPRS.2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestServiceStrategyNumber.3&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestTimeOfServiceDesiredInPRS.3&nbsp; &nbsp; &nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestTimeOfEstimatedDepartureInPRS.3&nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestStatusInPRS.3&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestServiceStrategyNumber.4&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestTimeOfServiceDesiredInPRS.4&nbsp; &nbsp; &nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestTimeOfEstimatedDepartureInPRS.4&nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestStatusInPRS.4&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestServiceStrategyNumber.5&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestTimeOfServiceDesiredInPRS.5&nbsp; &nbsp; &nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestTimeOfEstimatedDepartureInPRS.5&nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestStatusInPRS.5&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestServiceStrategyNumber.6&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestTimeOfServiceDesiredInPRS.6&nbsp; &nbsp; &nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestTimeOfEstimatedDepartureInPRS.6&nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestStatusInPRS.6&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestServiceStrategyNumber.7&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestTimeOfServiceDesiredInPRS.7&nbsp; &nbsp; &nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestTimeOfEstimatedDepartureInPRS.7&nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestStatusInPRS.7&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestServiceStrategyNumber.8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestTimeOfServiceDesiredInPRS.8&nbsp; &nbsp; &nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestTimeOfEstimatedDepartureInPRS.8&nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestStatusInPRS.8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestServiceStrategyNumber.9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestTimeOfServiceDesiredInPRS.9&nbsp; &nbsp; &nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestTimeOfEstimatedDepartureInPRS.9&nbsp;&nbsp;INTEGER (0..4294967295)\npriorityRequestStatusInPRS.9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityRequestServiceStrategyNumber.10&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;INTEGER (1..255)\npriorityRequestTimeOfServiceDesiredInPRS.10&nbsp; &nbsp; &nbsp;INTEGER (0..4294967295)\npriorityRequestTimeOfEstimatedDepartureInPRS.10&nbsp;INTEGER (0..4294967295)\npriorityRequestStatusInPRS.10&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;INTEGER (1..255)\nprsBusy&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;INTEGER (0..1) }\n&nbsp;\nThe parameter values for this OID when transferring information from a CO to a PRS are:\npriorityRequestServiceStrategyNumber.1&nbsp; &nbsp;&nbsp;INTEGER (1..255)\npriorityStrategyRequestedTimeOfServiceDesired.1&nbsp; &nbsp; &nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestedTimeOfEstimatedDeparture.1&nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestStatusInCO.1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER(1..255)\npriorityRequestServiceStrategyNumber.2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;INTEGER (1..255)\npriorityStrategyRequestedTimeOfServiceDesired.2&nbsp; &nbsp; &nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestedTimeOfEstimatedDeparture.2&nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestStatusInCO.2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER(1..255)\npriorityRequestServiceStrategyNumber.3&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;INTEGER (1..255)\npriorityStrategyRequestedTimeOfServiceDesired.3&nbsp; &nbsp; &nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestedTimeOfEstimatedDeparture.3&nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestStatusInCO.3&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER(1..255)\npriorityRequestServiceStrategyNumber.4&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;INTEGER (1..255)\npriorityStrategyRequestedTimeOfServiceDesired.4&nbsp; &nbsp; &nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestedTimeOfEstimatedDeparture.4&nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestStatusInCO.4&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER(1..255)\npriorityRequestServiceStrategyNumber.5&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;INTEGER (1..255)\npriorityStrategyRequestedTimeOfServiceDesired.5&nbsp; &nbsp; &nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestedTimeOfEstimatedDeparture.5&nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestStatusInCO.5&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER(1..255)\npriorityRequestServiceStrategyNumber.6&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;INTEGER (1..255)\npriorityStrategyRequestedTimeOfServiceDesired.6&nbsp; &nbsp; &nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestedTimeOfEstimatedDeparture.6&nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestStatusInCO.6&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER(1..255)\npriorityRequestServiceStrategyNumber.7&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;INTEGER (1..255)\npriorityStrategyRequestedTimeOfServiceDesired.7&nbsp; &nbsp; &nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestedTimeOfEstimatedDeparture.7&nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestStatusInCO.7&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER(1..255)\npriorityRequestServiceStrategyNumber.8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;INTEGER (1..255)\npriorityStrategyRequestedTimeOfServiceDesired.8&nbsp; &nbsp; &nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestedTimeOfEstimatedDeparture.8&nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestStatusInCO.8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER(1..255)\npriorityRequestServiceStrategyNumber.9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;INTEGER (1..255)\npriorityStrategyRequestedTimeOfServiceDesired.9&nbsp; &nbsp; &nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestedTimeOfEstimatedDeparture.9&nbsp; &nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestStatusInCO.9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;INTEGER(1..255)\npriorityRequestServiceStrategyNumber.10&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;INTEGER (1..255)\npriorityStrategyRequestedTimeOfServiceDesired.10&nbsp; &nbsp; &nbsp;&nbsp;INTEGER (0..4294967295)\npriorityStrategyRequestedTimeOfEstimatedDeparture.10&nbsp;INTEGER (0..4294967295)priorityStrategyRequestStatusInCO.10&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;INTEGER(1..255) }</pre><p><br></p>",
+                  "name": "prsServiceRequest",
+                  "oid": "{ priorityStrategyMessages 1 }",
+                  "status": "current",
+                  "syntax": "<pre>OCTET STRING (SIZE(110))</pre>",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "31",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9613",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:57:23.187Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
+                    },
+                    {
+                      "attributesChanged": {
+                        "syntax": "<pre>OCTET STRING {SIZE(110)}</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:09:36.017Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:10:53.231Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9661",
+              "guid": "c0129331-91e0-4898-af9b-4d5ec1b28da6",
+              "heading": "SCP Block Objects",
+              "type": "text",
+              "history": [
+                {
+                  "affectedNodeId": "9612",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-28T19:16:00.507Z",
+                  "docId": "NTCIP_1211",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-28T19:16:04.996Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-28T19:17:49.625Z"
+                }
+              ],
+              "children": [
+                {
+                  "id": "9645",
+                  "guid": "5b35de52-cfaf-4a62-8352-2e115ec3e8dc",
+                  "text": "<p>This object is an identifier used to group all objects for support of SCP Block Upload and Download activities.</p>",
+                  "name": "scpBlock",
+                  "oid": "{ scp 5 }",
+                  "status": "current",
+                  "type": "oi",
+                  "history": [
+                    {
+                      "affectedNodeId": "33",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9643",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:16:36.095Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
+                    },
+                    {
+                      "affectedNodeId": "9644",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:17:00.690Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "SwapUp"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:17:33.936Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9647",
+                  "guid": "32da97a1-fd4c-4c30-bcfc-c8cf62ea6cce",
+                  "heading": "SCP Block Get Control",
+                  "text": "<pre>An OER encoded string of reference parameters for SCP Block Uploads. The parameter values in this string are:<br>scpBlockDataType INTEGER (0..255)<br>scpBlockDataID INTEGER (0..255)<br>scpBlockIndex1 INTEGER (0..255) if needed<br>scpBlockQuantity1 INTEGER (0..255) if needed<br>scpBlockIndex2 INTEGER (0..255) if needed<br>scpBlockQuantity2 INTEGER (0..255) if needed<br>scpBlockIndex3 INTEGER (0..255) if needed<br>scpBlockQuantity3 INTEGER (0..255) if needed<br>scpBlockIndex4 INTEGER (0..255) if needed<br>scpBlockQuantity4 INTEGER (0..255) if needed<br>scpBlockIndex5 INTEGER (0..255) if needed<br>scpBlockQuantity5 INTEGER (0..255) if needed<br><br>A GET of scpBlockData shall utilize values currently in this object to define the data to be returned.<br><br>A SET of this object shall be evaluated for validity and Error Status of badValue(3) be returned for the following conditions:<br>1) scpBlockDataType is not supported<br>2) scpBlockDataID is not supported<br>3) scpBlockIndex1 is zero or not supported<br>4) scpBlockQuantity1 is zero or scpBlockIndex1 + scpBlockQuantity1 - 1 is not supported<br>5) scpBlockIndex2 is zero or not supported<br>6) scpBlockQuantity2 is zero or scpBlockIndex2 + scpBlockQuantity2) - 1 is not supported<br>7) scpBlockIndex3 is zero or not supported<br>8) scpBlockQuantity3 is zero or scpBlockIndex3 + scpBlockQuantity3) - 1 is not supported<br>9) scpBlockIndex4 is zero or not supported<br>10) scpBlockQuantity4 is zero or scpBlockIndex4 + scpBlockQuantity4) - 1 is not supported<br>11) scpBlockIndex5 is zero or not supported<br>12) scpBlockQuantity5 is zero or scpBlockIndex5 + scpBlockQuantity5) - 1 is not supported<br>13) if the SET length is zero or incorrect for scpBlockDataType &amp; scpBlockDataID<br>14) if the GetResponse length for a GET on scpBlockData using maximum data field sizes would exceed a local limitation<br><br>When this validity check fails, scpBlockErrorStatus shall be set equal to the Bullet Value above that generated the error.</pre>",
+                  "name": "scpBlockGetControl",
+                  "oid": "{ scpBlock 1 }",
+                  "status": "current",
+                  "syntax": "OCTET STRING (SIZE(2..12))",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "35",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9613",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:57:23.187Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
+                    },
+                    {
+                      "affectedNodeId": "9659",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:16:36.095Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
+                    }
+                  ]
+                },
+                {
+                  "id": "9648",
+                  "guid": "aa8363d4-741a-4e20-a937-a8001a26b72d",
+                  "heading": "SCP Block Data",
+                  "text": "<pre>An OER encoded string used for uploading and downloading SCP parameters. See SECTION 5 for encoding and decoding the block.<br><br>A SET on this object shall require the use of 'dbCreateTransaction' defined in NTCIP 1201 v03 Section 2.3.1.<br><br>A SET of this object shall be evaluated for validity and Error Status of badValue(3) be returned for the following conditions:<br>1) scpBlockDataType is not supported<br>2) scpBlockDataID is not supported<br>3) scpBlockIndex1 is zero or not supported<br>4) scpBlockQuantity1 is zero or scpBlockIndex1 + scpBlockQuantity1 - 1 is not supported<br>5) scpBlockIndex2 is zero or not supported<br>6) scpBlockQuantity2 is zero or scpBlockIndex2 + scpBlockQuantity2) - 1 is not supported<br>7) scpBlockIndex3 is zero or not supported<br>8) scpBlockQuantity3 is zero or scpBlockIndex3 + scpBlockQuantity3) - 1 is not supported<br>9) scpBlockIndex4 is zero or not supported<br>10) scpBlockQuantity4 is zero or scpBlockIndex4 + scpBlockQuantity4) - 1 is not supported<br>11) scpBlockIndex5 is zero or not supported<br>12) scpBlockQuantity5 is zero or scpBlockIndex5 + scpBlockQuantity5) - 1 is not supported<br>13) if the SET length is zero or incorrect for scpBlockDataType &amp; scpBlockDataID<br>14) if the SET (SEQUENCE OF) value is incorrect.<br><br>When this validity check fails, scpBlockErrorStatus shall be set equal to the Bullet Value above that generated the error.<br><br>A SET that includes an unsupported value for a supported data element shall return an Error Status of badValue(3) and scpBlockErrorStatus shall be set equal to: (data Sequence # * 100) + data Element #<br><br>A SET that includes a non-zero or non-null value in the position of an unsupported data element shall return an Error Status of badValue(3) and scpBlockErrorStatus shall be set equal to: (data Sequence # * 100) + data Element #<br><br>A GET on this object shall utilize values currently in scpBlockGetControl to define the data to be returned. When scpBlockGetControl has invalid data, an Error Status of badValue(3) shall be returned.<br><br>A GET shall return a zero or null value in the position of an unsupported object.</pre>",
+                  "name": "scpBlockData",
+                  "oid": "{ scpBlock 2 }",
+                  "status": "current",
+                  "syntax": "OCTET STRING (SIZE(2..484))",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "36",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9613",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:57:23.187Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
+                    },
+                    {
+                      "affectedNodeId": "9659",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:16:36.095Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
+                    }
+                  ]
+                },
+                {
+                  "id": "9649",
+                  "guid": "b8b1f6f1-4d6d-447b-b4de-3690cfb3820c",
+                  "heading": "SCP Block Error Status",
+                  "text": "<pre>This object defines the data element within scpBlockGetControl or scpBlockData that caused a badValue(3) ErrorStatus.<br><br>This object should equal zero after any successful SET to scpBlockGetControl or scpBlockData.</pre>",
+                  "name": "scpBlockErrorStatus",
+                  "oid": "{ scpBlock 3 }",
+                  "status": "current",
+                  "syntax": "INTEGER (0..65535)",
+                  "type": "ot",
+                  "history": [
+                    {
+                      "affectedNodeId": "37",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9613",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:57:23.187Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
+                    },
+                    {
+                      "affectedNodeId": "9659",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:16:36.095Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "9650",
+                      "guid": "80efc55c-626e-4061-9ad8-b350d1cf5dd8",
+                      "name": "end",
+                      "type": "end",
+                      "history": [
+                        {
+                          "affectedNodeId": "38",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T18:53:42.526Z",
+                          "docId": "NTCIP1211-ScpCo",
+                          "structureAction": "Copy"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9651",
+              "guid": "d31ef2e2-008a-48cb-84cd-b6b49b461a32",
+              "heading": "Coordination Processor Block Object Definitions",
+              "type": "text",
+              "history": [
+                {
+                  "affectedNodeId": "39",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-28T18:53:42.526Z",
+                  "docId": "NTCIP1211-ScpCo",
+                  "structureAction": "Copy"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": "<p>5.2.4 Coordination Processor Block Object Definitions</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-28T19:38:50.606Z"
+                },
+                {
+                  "affectedNodeId": "9649",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-28T19:39:13.889Z",
+                  "docId": "NTCIP_1211",
+                  "structureAction": "Promote"
+                },
+                {
+                  "affectedNodeId": "9661",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-28T19:39:17.143Z",
+                  "docId": "NTCIP_1211",
+                  "structureAction": "Promote"
+                },
+                {
+                  "attributesChanged": {
+                    "type": "comment"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-28T19:40:27.730Z"
+                },
+                {
+                  "attributesChanged": {
+                    "name": "comment"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-02-28T19:40:33.507Z"
+                }
+              ],
+              "children": [
+                {
+                  "id": "9652",
+                  "guid": "b49e33dc-ab37-4e38-8817-ad609c47fc96",
+                  "heading": "Coordinator Strategy Plan Block Definition",
+                  "type": "text",
+                  "history": [
+                    {
+                      "affectedNodeId": "40",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9649",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:39:02.455Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Demote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null,
+                        "text": "<p>5.2.4.1 Coordinator Strategy Plan Block Definition</p><p>scpBlockData values for standard Block</p><p>coStrategyPlanBlock Data shall be as follows:</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:39:37.498Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>scpBlockData values for standard Block</p><p>coStrategyPlanBlock Data shall be as follows:</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:40:16.207Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": "comment"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:40:27.730Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "comment"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:40:33.507Z"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "9662",
+                      "guid": "0cad627e-7acc-4a68-9d19-75ffe4ad2c65",
+                      "text": "<p>scpBlockData values for standard Block coStrategyPlanBlock Data shall be as follows:</p>",
+                      "name": "comment",
+                      "type": "comment",
+                      "history": [
+                        {
+                          "affectedNodeId": "9652",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T19:40:10.708Z",
+                          "docId": "NTCIP_1211",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T19:40:20.346Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T19:41:00.827Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>scpBlockData values for standard Block</p><p>coStrategyPlanBlock Data shall be as follows:</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T19:41:12.298Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "name": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T19:42:44.366Z"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9653",
+                  "guid": "36c22bed-55bc-4951-abad-574a2eaf928c",
+                  "name": "coStrategyPlanBlock",
+                  "syntax": "<pre>{<br>scpBlockDataType INTEGER (0..255), -- 0x00 standard block<br>scpBlockDataID INTEGER (0..255), -- 0x00 coStrategyPlanBlock<br>scpBlockIndex1 INTEGER (0..255), -- priorityStrategyNumber<br>scpBlockQuantity1 INTEGER (0..255), -- ## of strategies<br><br>-- for (<br>-- x = scpBlockIndex1;<br>-- x &lt; (scpBlockIndex1 + scpBlockQuantity1);<br>-- x++)<br><br>data SEQUENCE OF CoStrategyPlanBlockData}</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "41",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9649",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:39:02.455Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Demote"
+                    }
+                  ]
+                },
+                {
+                  "id": "9654",
+                  "guid": "7eaa2ff9-0e5e-4772-a6ca-d2b853fd4f63",
+                  "name": "coStrategyPlanBlockData",
+                  "syntax": "<pre>{<br>priorityStrategyServicePhases.x OCTET STRING,<br>priorityStrategyPhaseOmits.x OCTET STRING,<br>priorityStrategyPedOmits.x OCTET STRING,<br>priorityStrategyDescription.x OCTET STRING (SIZE 0..40)}</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "42",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9649",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:39:02.455Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Demote"
+                    }
+                  ]
+                },
+                {
+                  "id": "9655",
+                  "guid": "076a67d8-82e6-4bfa-9a4e-4b6ff80cbfe9",
+                  "heading": "Coordinator Strategy Splits Block Object Definition",
+                  "type": "text",
+                  "history": [
+                    {
+                      "affectedNodeId": "43",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9649",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:39:02.455Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Demote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null,
+                        "text": "<p>5.2.4.2 Coordinator Strategy Splits Block Object Definition</p><p>scpBlockData values for standard Block</p><p>coStrategySplitsBlock Data shall be as follows:</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:41:49.753Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>5.2.4.2&nbsp;</p><p>scpBlockData values for standard Block</p><p>coStrategySplitsBlock Data shall be as follows:</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:41:59.591Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>scpBlockData values for standard Block coStrategySplitsBlock Data shall be as follows:</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:42:16.216Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": "comment"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:42:33.062Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": "comment"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:42:38.441Z"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "9663",
+                      "guid": "77be1ba6-d13a-45ab-8bf3-16a88d7b20c5",
+                      "text": "<p>scpBlockData values for standard Block coStrategySplitsBlock Data shall be as follows:</p>",
+                      "name": "comment",
+                      "type": "comment",
+                      "history": [
+                        {
+                          "affectedNodeId": "9655",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T19:42:10.338Z",
+                          "docId": "NTCIP_1211",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T19:42:22.178Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T19:42:27.330Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "name": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-02-28T19:42:42.784Z"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9656",
+                  "guid": "07555305-2a5d-4f79-8d34-0a7b4d984925",
+                  "name": "coStrategySplitsBlock",
+                  "syntax": "<pre>{<br>scpBlockDataType INTEGER (0..255), -- 0x00 standard block<br>scpBlockDataID INTEGER (0..255), -- 0x01 coStrategySplitsBlock<br>scpBlockIndex1 INTEGER (0..255), -- splitPhase<br>scpBlockQuantity1 INTEGER (0..255), -- ## of phases<br>scpBlockIndex2 INTEGER (0..255), -- splitNumber<br>scpBlockQuantity2 INTEGER (0..255), -- ## of splits<br><br>-- for (<br>-- y = scpBlockIndex2;<br>-- y &lt; (scpBlockIndex2 + scpBlockQuantity2);<br>-- y++)<br>-- for (<br>-- x = scpBlockIndex1;<br>-- x &lt; (scpBlockIndex1 + scpBlockQuantity1);<br>-- x++)<br><br>data SEQUENCE OF CoStrategySplitsBlockData }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "44",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9649",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:39:02.455Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Demote"
+                    }
+                  ]
+                },
+                {
+                  "id": "9657",
+                  "guid": "2d588348-b253-4bb4-ab5e-d4ea735797e4",
+                  "name": "coStrategySplitsBlockData",
+                  "syntax": "<pre>{<br>priorityStrategyMaximumReductionTime.y.x INTEGER,<br>priorityStrategyMaximumExtensionTime.y.x INTEGER }</pre>",
+                  "type": "row",
+                  "history": [
+                    {
+                      "affectedNodeId": "45",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9649",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T19:39:02.455Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Demote"
                     }
                   ]
                 }
@@ -11537,7 +13506,7 @@
       "id": "857",
       "guid": "2E8B5036-703C-4F56-8FE5-CCC6FEB614E6",
       "heading": "Object Tree [Informative]",
-      "type": "text",
+      "type": "annex",
       "history": [
         {
           "attributesChanged": {
@@ -11550,6 +13519,17 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-28T17:17:50.982Z"
+        },
+        {
+          "attributesChanged": {
+            "type": "text"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-28T19:44:55.947Z"
         }
       ],
       "children": [
@@ -11565,7 +13545,7 @@
       "id": "859",
       "guid": "08E9AA86-1522-4B27-BA5A-51478A0B6983",
       "heading": "Test Procedures [Normative]",
-      "type": "text",
+      "type": "annex",
       "history": [
         {
           "attributesChanged": {
@@ -11578,6 +13558,17 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-28T17:17:57.650Z"
+        },
+        {
+          "attributesChanged": {
+            "type": "text"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-28T19:45:19.538Z"
         }
       ],
       "children": [
@@ -11594,7 +13585,7 @@
       "guid": "B016DC7D-0219-4B9F-9CAB-1F906B36351F",
       "heading": "Documentation of Revisions [Informative]",
       "text": "<p>This annex identifies significant changes that have been made to the NTCIP 1211 standard. NTCIP makes reasonable efforts to ensure that the standards are as backward compatible as possible, but the primary purpose of the standard is to provide interoperability by developing standards in a consensus environment. When changes are required to meet these objectives, the problematic objects are refined (if the issue is primarily editorial) or deprecated and, in most cases, replaced with new objects. This annex identifies why each of these changes have been made. New implementations should support the new/replacement objects; they may also support deprecated objects.</p>",
-      "type": "text",
+      "type": "annex",
       "history": [
         {
           "attributesChanged": {
@@ -11617,6 +13608,17 @@
           "changedOn": "2025-02-28T17:18:34.694Z",
           "docId": "NTCIP_1211",
           "structureAction": "Promote"
+        },
+        {
+          "attributesChanged": {
+            "type": "text"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-28T19:45:19.538Z"
         }
       ],
       "children": [
@@ -11797,7 +13799,7 @@
       "guid": "C2CF593F-FFFF-4EEA-A2B0-51B9391FD60F",
       "heading": "User Requests [Informative]",
       "text": "<p>This annex identifies features that were suggested for this standard but either are supported by mechanisms that may not be readily obvious or are not supported by this version of the standard.</p>",
-      "type": "text",
+      "type": "annex",
       "history": [
         {
           "attributesChanged": {
@@ -11820,6 +13822,17 @@
           "changedOn": "2025-02-28T17:20:36.360Z",
           "docId": "NTCIP_1211",
           "structureAction": "Promote"
+        },
+        {
+          "attributesChanged": {
+            "type": "text"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-28T19:45:19.538Z"
         }
       ],
       "children": [
@@ -11937,7 +13950,7 @@
       "guid": "CF03F99C-9AEC-47B5-93CC-BB1C5D179097",
       "heading": "SCP Tutorial [Informative]",
       "text": "<p>Annex F describes how a typical SCP system works.</p>",
-      "type": "text",
+      "type": "annex",
       "history": [
         {
           "attributesChanged": {
@@ -11960,6 +13973,17 @@
           "changedOn": "2025-02-28T17:22:00.605Z",
           "docId": "NTCIP_1211",
           "structureAction": "Promote"
+        },
+        {
+          "attributesChanged": {
+            "type": "text"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-28T19:45:19.538Z"
         }
       ],
       "children": [
@@ -12097,7 +14121,7 @@
       "guid": "5F9140D4-5FB9-490A-B834-9EDE4C3537E0",
       "heading": "SNMP Interface [Normative]",
       "text": "<p>The SCP system shall conform to the requirements for the Simple Network Management Protocol (SNMP) as defined in NTCIP 1103 v02. Annexes G.1 through G.4 provide a description of the key services offered by SNMP assuming no errors. Precise rules and procedures are defined in NTCIP 1103 v02. Annex G.5 extends the requirements of NTCIP 1103 v02 by providing additional requirements that supplement, but do not replace any requirements of NTCIP 1103 v02.</p>",
-      "type": "text",
+      "type": "annex",
       "history": [
         {
           "attributesChanged": {
@@ -12120,6 +14144,17 @@
           "changedOn": "2025-02-28T17:23:56.160Z",
           "docId": "NTCIP_1211",
           "structureAction": "Promote"
+        },
+        {
+          "attributesChanged": {
+            "type": "text"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-28T19:45:19.538Z"
         }
       ],
       "children": [
@@ -12352,7 +14387,7 @@
       "id": "926",
       "guid": "FD8A0BDC-F3D8-407E-AFAC-CBA26AC4AEE5",
       "heading": "NTCIP 1201 v03 Derived User Needs, Functional Requirements, and Dialogs",
-      "type": "text",
+      "type": "annex",
       "history": [
         {
           "attributesChanged": {
@@ -12365,6 +14400,17 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-28T17:24:24.307Z"
+        },
+        {
+          "attributesChanged": {
+            "type": "text"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-28T19:45:39.777Z"
         }
       ],
       "children": [
@@ -13243,6 +15289,10 @@
     },
     "defval": {
       "name": "Default Value",
+      "type": "string"
+    },
+    "dotted_oid": {
+      "name": "Dotted OID",
       "type": "string"
     },
     "index": {

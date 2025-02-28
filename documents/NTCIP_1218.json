@@ -9,7 +9,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-02-25T21:21:57.944Z",
+  "lastChangedOn": "2025-02-28T19:07:50.812Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -80945,6 +80945,10 @@
     },
     "defval": {
       "name": "Default Value",
+      "type": "string"
+    },
+    "dotted_oid": {
+      "name": "Dotted OID",
       "type": "string"
     },
     "index": {

@@ -9,7 +9,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-02-28T19:07:50.812Z",
+  "lastChangedOn": "2025-03-01T13:38:07.008Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -81244,6 +81244,102 @@
     }
   },
   "views": {
+    "Full View": {
+      "columns": [
+        {
+          "columnId": "id",
+          "width": 65
+        },
+        {
+          "columnId": "description",
+          "width": 500
+        },
+        {
+          "columnId": "dotted_oid",
+          "width": 150
+        },
+        {
+          "columnId": "type",
+          "width": 150
+        },
+        {
+          "columnId": "discussion",
+          "width": 300
+        },
+        {
+          "columnId": "links",
+          "width": 300
+        },
+        {
+          "columnId": "access",
+          "width": 150
+        },
+        {
+          "columnId": "additional",
+          "width": 150
+        },
+        {
+          "columnId": "comment",
+          "width": 150
+        },
+        {
+          "columnId": "conformance",
+          "width": 150
+        },
+        {
+          "columnId": "contact",
+          "width": 150
+        },
+        {
+          "columnId": "defval",
+          "width": 150
+        },
+        {
+          "columnId": "index",
+          "width": 150
+        },
+        {
+          "columnId": "name",
+          "width": 150
+        },
+        {
+          "columnId": "oid",
+          "width": 150
+        },
+        {
+          "columnId": "org",
+          "width": 150
+        },
+        {
+          "columnId": "reference",
+          "width": 150
+        },
+        {
+          "columnId": "status",
+          "width": 150
+        },
+        {
+          "columnId": "syntax",
+          "width": 150
+        },
+        {
+          "columnId": "units",
+          "width": 150
+        },
+        {
+          "columnId": "updated",
+          "width": 150
+        },
+        {
+          "templateColumnId": "94673312-1480-45b3-be1c-bebe1b9faa83",
+          "width": 150
+        }
+      ],
+      "sort": {
+        "columnId": "dotted_oid",
+        "descending": false
+      }
+    },
     "Primary": {
       "columns": [
         {

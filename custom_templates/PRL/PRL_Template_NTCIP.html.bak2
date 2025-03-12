@@ -1,0 +1,306 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=unicode">
+
+<style>
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:24.0pt;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:12.0pt;
+	font-family:"Arial Bold",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";}
+
+table {
+  border: 1px solid #333;
+  border-collapse: collapse;
+}
+tr {
+  page-break-inside:avoid;
+}
+th {
+  padding: 1.5px;
+  font-family:"Arial",sans-serif;
+  font-size:10.0pt;
+  font-weight: bold;
+  text-align: center;
+    } 
+td {
+  padding: 1.5px;
+  font-family:"Arial",sans-serif;
+  font-size:10.0pt;
+  font-weight: normal;
+  text-align: left;
+  }
+table.prlTable, table.rtmTable {
+	width:100%;
+	border: double;
+}
+th.unsh {
+  width:13%;
+  border-bottom: 1.5pt solid #333;
+  border-right: 1.0pt solid #333;
+}
+th.unh {
+  width:7%;
+  border-left: 1.0pt solid #333;
+  border-bottom: 1.5pt solid #333;
+  border-right: 1.0pt solid #333;
+}
+th.frsh {
+  width:9%;
+  border-left: 1.0pt solid #333;
+  border-bottom: 1.5pt solid #333;
+  border-right: 1.0pt solid #333;
+}
+th.frh {
+  width:15%;
+  border-left: 1.0pt solid #333;
+  border-bottom: 1.5pt solid #333;
+  border-right: 1.0pt solid #333;
+}
+th.confh {
+  width:14%;
+  border-left: 1.0pt solid #333;
+  border-bottom: 1.5pt solid #333;
+  border-right: 1.0pt solid #333;
+}
+th.sprh {
+  width:13%;
+  border-left: 1.0pt solid #333;
+  border-bottom: 1.5pt solid #333;
+  border-right: 1.0pt solid #333;
+}
+th.addlh {
+  width:27%;
+  border-left: 1.0pt solid #333;
+  border-bottom: 1.5pt solid #333;
+}
+th.objh {
+  width:30%;
+  border-left: 1.0pt solid #333;
+  border-bottom: 1.5pt solid #333;
+  border-right: 1.0pt solid #333;
+}
+th.nameh {
+  width:46%;
+  border-left: 1.0pt solid #333;
+  border-bottom: 1.5pt solid #333;
+}
+td.sum-left {
+  border-top: 1.5pt solid #333;
+  border-right: 0.75pt solid #333;
+}
+td.sum-middle {
+  border-left: 0.75pt solid #333;
+  border-top: 1.5pt solid #333;
+  border-right: 0.75pt solid #333;
+}
+td.sum-right {
+  border-left: 0.75pt solid #333;
+  border-top: 1.5pt solid #333;
+}
+td.left {
+  border-top: 0.75pt solid #333;
+  border-right: 0.75pt solid #333;
+}
+td.middle {
+  border-left: 0.75pt solid #333;
+  border-top: 0.75pt solid #333;
+  border-right: 0.75pt solid #333;
+}
+td.right {
+  border-left: 0.75pt solid #333;
+  border-top: 0.75pt solid #333;
+}
+td.left-empty {
+  border-right: 0.75pt solid #333;
+}
+td.empty {
+  border-left: 0.75pt solid #333;
+  border-right: 0.75pt solid #333;
+}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+</style>
+
+</head>
+
+<body>
+{{var "source" docId}}
+{{var "a" docId}}
+{{var "count" 2}}
+{{var "opt_constraint" ""}}
+{{var "cond_constraint" ""}}
+{{var "code" ""}}
+
+{{#*inline "row"}}
+        <tr class="PRLRow">
+			<td class="left">&nbsp;</td>
+			<td class="middle">&nbsp;</td>
+		{{#if (searchString docId "NTCIP")}}
+			<td class="middle">&sect;{{{sectionNumber}}}</td>
+		{{else}} 
+			{{#if (searchString docId "RFC")}}
+			<td class="middle">{{{replaceString docId "_" " "}}}</td>
+			{{else}}
+			<td class="middle">{{{docName}}}, &sect;{{{sectionNumber}}}</td>
+			{{/if}}
+		{{/if}}
+			<td class="middle">{{heading}}</td>
+			<td class="middle">{{get "cond_constraint"}}{{get "code"}}{{get "opt_constraint"}}</td>
+			<td class="middle">Yes</td>
+			<td class="right">{{formatXHTML addl paragraphClass="MsoNoSpace"}}</td>
+		</tr>
+{{/inline}}
+
+{{#*inline "directPRL"}}
+  	{{#eachInlinkWith type="fulfil"}}
+  		{{set "code" "M"}}
+  		{{> row}}
+	{{/eachInlinkWith}}
+	{{#eachInlinkWith type="fulfil_opt"}}
+  		{{set "code" "O"}}
+  		{{> row}}
+	{{/eachInlinkWith}}
+{{/inline}}
+
+{{#*inline "indirectPRL"}}
+  	{{#eachInlinkWith type="opt_group"}}
+  		{{set "opt_constraint" (eval "." "+" (get "count"))}}
+  		{{set "opt_constraint" (eval (get "opt_constraint") "+" (formatString text))}}
+  		{{> directPRL}}
+  		{{> indirectPRL}}
+  		{{incr "count"}}
+	{{/eachInlinkWith}}
+	{{#eachInlinkWith type="conditional"}}
+		{{set "opt_constraint" ""}}
+  		{{set "cond_constraint" (formatString text)}}
+  		{{> directPRL}}
+  		{{> indirectPRL}}
+	{{/eachInlinkWith}}
+{{/inline}}
+
+{{#*inline "directRTM"}}
+	{{#ifHasInlinks "satisfies"}}{{#eachInlinkWith type="satisfies"}}
+		{{#if (eval (formatString name) "==" "")}}
+			<tr>
+				<td class="left-empty">&nbsp;</td>
+				<td class="empty">&nbsp;</td>
+				<td class="middle">{{{replaceString docId "_" " "}}}</td>
+				<td class="right">{{heading}}</td>
+			</tr>
+		{{else}}
+			{{#if (eval docId "==" "NTCIP_1201")}}
+			<tr>
+				<td class="left-empty">&nbsp;</td>
+				<td class="empty">&nbsp;</td>
+				<td class="middle">{{{sectionNumber}}}</td>
+				<td class="right">{{name}}</td>
+			</tr>
+			{{else}}
+			<tr>
+				<td class="left-empty">&nbsp;</td>
+				<td class="empty">&nbsp;</td>
+				<td class="middle">{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}</td>
+				<td class="right">{{name}}</td>
+			</tr>
+			{{/if}}
+		{{/if}}
+    {{/eachInlinkWith}}{{/ifHasInlinks}}
+{{/inline}}
+
+
+
+    <table class="prlTable">
+      <thead>
+        <tr class="PRLRow" style="background:#FFFF99;">
+          <th class="unsh">User Need<br />Section<br />Number</th>
+		  <th class="unh">User Need</th>
+		  <th class="frsh">FR Section<br />Number</th>
+          <th class="frh">Functional<br />Requirement</th>
+          <th class="confh">Conformance</th>
+		  <th class="sprh">Support /<br />Project<br />Requirement</th>
+          <th class="addlh">Additional Project Requirements</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#eachDocumentObject}}{{#if (eval type "==" "un")}}
+        	<tr class="PRLRow" style="background:silver;">
+				<td class="sum-left">{{{sectionNumber}}}</td>
+				<td class="sum-middle" colspan="3">{{{heading}}}</td>
+				<td class="sum-middle">&nbsp;</td>
+				<td class="sum-middle">&nbsp;</td>
+				<td class="sum-right">{{addl}}</td>
+			</tr>
+			{{set "opt_constraint" ""}}
+			{{set "cond_constraint" ""}}
+			{{> directPRL}}
+			{{> indirectPRL}}
+        {{/if}}{{/eachDocumentObject}}
+      </tbody>
+    </table>
+	<p>&nbsp;</p>
+	<table class="rtmTable">
+      <thead>
+        <tr  style="background:#FFFF99;">
+		  <th class="frsh">FR ID</th>
+          <th class="frh">Functional<br />Requirement</th>
+          <th class="objh">Object ID</th>
+          <th class="nameh">Object Name / Dialog</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#eachDocumentObject}}{{#ifHasInlinks "implement"}}
+        	<tr style="background:silver;">
+				
+			{{#if (eval docId "==" "NTCIP_1201")}}
+				<td class="sum-left">{{{sectionNumber}}}</td>
+			{{else}}
+				<td class="sum-left">{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}</td>
+			{{/if}}
+				<td class="sum-middle" colspan="2">{{{heading}}}</td>
+				<td class="sum-right">{{#eachInlinkWith type="implement"}}{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}: {{{heading}}}{{/eachInlinkWith}}</td>
+				</td>
+			</tr>
+			{{set "opt_constraint" ""}}
+			{{set "cond_constraint" ""}}
+			{{> directRTM}}
+        {{/ifHasInlinks}}{{/eachDocumentObject}}
+      </tbody>
+    </table>
+
+</body>

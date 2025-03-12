@@ -162,28 +162,41 @@ div.WordSection1
 <body>
 {{var "source" docId}}
 {{var "a" docId}}
-{{var "count" 2}}
+{{var "count" 7}}
 {{var "opt_constraint" ""}}
 {{var "cond_constraint" ""}}
 {{var "code" ""}}
+{{var "clause" ""}}
+{{var "name" ""}}
+
+{{#*inline "ref"}}
+	{{#eachInlinkWith type="condRef"}}({{formatString text}}){{/eachInlinkWith}}
+{{/inline}}
 
 {{#*inline "row"}}
         <tr class="PRLRow">
 			<td class="left">&nbsp;</td>
 			<td class="middle">&nbsp;</td>
 		{{#if (searchString docId "NTCIP")}}
-			<td class="middle">&sect;{{{sectionNumber}}}</td>
+			<td class="middle"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">&sect;{{{sectionNumber}}}{{> ref}}</a></td>
 		{{else}} 
 			{{#if (searchString docId "RFC")}}
 			<td class="middle">{{{replaceString docId "_" " "}}}</td>
 			{{else}}
-			<td class="middle">{{{docName}}}, &sect;{{{sectionNumber}}}</td>
+			<td class="middle"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">{{{docName}}}, &sect;{{{sectionNumber}}}</a></td>
 			{{/if}}
 		{{/if}}
 			<td class="middle">{{heading}}</td>
 			<td class="middle">{{get "cond_constraint"}}{{get "code"}}{{get "opt_constraint"}}</td>
-			<td class="middle">Yes</td>
-			<td class="right">{{formatXHTML addl paragraphClass="MsoNoSpace"}}</td>
+			<td class="middle"> Yes
+				{{#if (eval (get "code") "==" "O")}}
+					/ No
+				{{/if}}
+				{{#if (eval (get "cond_constraint") "!=" "")}}
+					/ NA
+				{{/if}}
+			</td>
+			<td class="right">{{formatXHTML additional}}</td>
 		</tr>
 {{/inline}}
 
@@ -208,7 +221,7 @@ div.WordSection1
 	{{/eachInlinkWith}}
 	{{#eachInlinkWith type="conditional"}}
 		{{set "opt_constraint" ""}}
-  		{{set "cond_constraint" (formatString text)}}
+  		{{set "cond_constraint" (eval (formatString text) "+" ":")}}
   		{{> directPRL}}
   		{{> indirectPRL}}
 	{{/eachInlinkWith}}
@@ -224,18 +237,18 @@ div.WordSection1
 				<td class="right">{{heading}}</td>
 			</tr>
 		{{else}}
-			{{#if (eval docId "==" "NTCIP_1201")}}
+			{{#if (eval docId "==" (get "source"))}}
 			<tr>
 				<td class="left-empty">&nbsp;</td>
 				<td class="empty">&nbsp;</td>
-				<td class="middle">{{{sectionNumber}}}</td>
+				<td class="middle"><a href="{{get "source"}}-{{id}}">{{{sectionNumber}}}</a></td>
 				<td class="right">{{name}}</td>
 			</tr>
 			{{else}}
 			<tr>
 				<td class="left-empty">&nbsp;</td>
 				<td class="empty">&nbsp;</td>
-				<td class="middle">{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}</td>
+				<td class="middle"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}</a></td>
 				<td class="right">{{name}}</td>
 			</tr>
 			{{/if}}
@@ -243,6 +256,36 @@ div.WordSection1
     {{/eachInlinkWith}}{{/ifHasInlinks}}
 {{/inline}}
 
+
+{{#*inline "support"}}
+	{{#if (eval (get "code") "==" "X")}}
+		No
+	{{else}}
+		Yes
+		{{#if (or (or (eval (get "code") "==" "O") (searchString (get "code") "O.")) (searchString (get "code") ":O"))}}
+			/ No
+		{{/if}}
+		{{#if (searchString (get "code") ":")}}
+			/ NA
+		{{/if}}
+	{{/if}}
+{{/inline}}
+
+
+{{#*inline "ISOref"}}
+       	<tr class="PRLRow" style="background:darkgray;">
+			<td class="sum-left">ISO 26048-1, &sect;{{get "clause"}}</td>
+			<td class="sum-middle" colspan="3">{{get "name"}}</td>
+			<td class="sum-middle">{{get "code"}}</td>
+			<td class="sum-middle">{{> support}}</td>
+			<td class="sum-right">{{formatXHTML additional}}</td>
+		</tr>
+        <tr class="PRLRow">
+			<td class="left">&nbsp;</td>
+			<td class="middle">&nbsp;</td>
+			<td class="middle" colspan="5">See ISO 26048-1 NTFT and FTRT tables (available at <a href="https://standards.iso.org/iso/ts/26048/-1/ed-1/en/">https://standards.iso.org/iso/ts/26048/-1/ed-1/en/</a>)</td>
+		</tr>
+{{/inline}}
 
 
     <table class="prlTable">
@@ -258,19 +301,55 @@ div.WordSection1
         </tr>
       </thead>
       <tbody>
-        {{#eachDocumentObject}}{{#if (eval type "==" "un")}}
-        	<tr class="PRLRow" style="background:silver;">
+        {{#eachDocumentObject}}
+		  {{#if (eval type "==" "unp")}}
+        	<tr class="PRLRow" style="background:darkgray;">
 				<td class="sum-left">{{{sectionNumber}}}</td>
 				<td class="sum-middle" colspan="3">{{{heading}}}</td>
-				<td class="sum-middle">&nbsp;</td>
-				<td class="sum-middle">&nbsp;</td>
-				<td class="sum-right">{{addl}}</td>
+				<td class="sum-middle">{{conformance}}</td>
+				<td class="sum-middle">{{#if conformance}}{{set "code" conformance}}{{/if}}{{> support}}</td>
+				<td class="sum-right">{{formatXHTML additional}}</td>
+			</tr>
+		  {{/if}}
+		  {{#if (eval type "==" "unc")}}
+        	<tr class="PRLRow" style="background:lightgray;">
+				<td class="sum-left">
+				{{#withParent}}{{#if (eval type "==" "unp")}}{{{sectionNumber}}}{{else}}{{#withParent}}{{{sectionNumber}}}{{/withParent}}.{{name}}{{/if}}{{/withParent}}.{{name}}
+				</td>
+				<td class="sum-middle" colspan="3">{{{text}}}</td>
+				<td class="sum-middle">{{conformance}}</td>
+				<td class="sum-middle">{{#if conformance}}{{set "code" conformance}}{{/if}}{{> support}}</td>
+				<td class="sum-right">{{formatXHTML additional}}</td>
+			</tr>
+		  {{/if}}
+		  {{#if (and (eval type "==" "unr") (eval status "==" "current"))}}
+        	<tr class="PRLRow" style="background:darkgray;"> 
+				<td class="sum-left">{{#eachInlinkWith type="fulfil"}}{{docName}}, &sect;{{{sectionNumber}}}{{/eachInlinkWith}}</td>
+				<td class="sum-middle" colspan="3">{{#eachInlinkWith type="fulfil"}}{{{heading}}}{{/eachInlinkWith}}</td>
+				<td class="sum-middle">{{conformance}}</td>
+				<td class="sum-middle">{{#if conformance}}{{set "code" conformance}}{{/if}}{{> support}}</td>
+				<td class="sum-right">{{formatXHTML additional}}</td> 
+			</tr>
+			<tr class="PRLRow">
+				<td class="left">&nbsp;</td>
+				<td class="middle">&nbsp;</td>
+				<td class="middle" colspan="5">See ISO 26048-1 NTFT and FTRT tables (available at <a href="https://standards.iso.org/iso/ts/26048/-1/ed-1/en/">https://standards.iso.org/iso/ts/26048/-1/ed-1/en/</a>)</td>
+			</tr>
+		  {{/if}}
+		  {{#if (and (eval type "==" "un") (eval status "==" "current"))}}
+        	<tr class="PRLRow" style="background:lightgray;">
+				<td class="sum-left">{{{sectionNumber}}}</td>
+				<td class="sum-middle" colspan="3">{{{heading}}}</td>
+				<td class="sum-middle">{{conformance}}</td>
+				<td class="sum-middle">{{#if conformance}}{{set "code" conformance}}{{/if}}{{> support}}</td>
+				<td class="sum-right">{{formatXHTML additional}}</td>
 			</tr>
 			{{set "opt_constraint" ""}}
 			{{set "cond_constraint" ""}}
 			{{> directPRL}}
 			{{> indirectPRL}}
-        {{/if}}{{/eachDocumentObject}}
+          {{/if}}
+		{{/eachDocumentObject}}
       </tbody>
     </table>
 	<p>&nbsp;</p>
@@ -287,10 +366,10 @@ div.WordSection1
         {{#eachDocumentObject}}{{#ifHasInlinks "implement"}}
         	<tr style="background:silver;">
 				
-			{{#if (eval docId "==" "NTCIP_1201")}}
-				<td class="sum-left">{{{sectionNumber}}}</td>
+			{{#if (eval docId "==" (get "source"))}}
+				<td class="sum-left"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">{{{sectionNumber}}}</a></td>
 			{{else}}
-				<td class="sum-left">{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}</td>
+				<td class="sum-left"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}</a></td>
 			{{/if}}
 				<td class="sum-middle" colspan="2">{{{heading}}}</td>
 				<td class="sum-right">{{#eachInlinkWith type="implement"}}{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}: {{{heading}}}{{/eachInlinkWith}}</td>

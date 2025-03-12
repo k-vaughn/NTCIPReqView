@@ -9,7 +9,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-03-01T13:38:07.008Z",
+  "lastChangedOn": "2025-03-11T20:40:56.897Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -22951,13 +22951,14 @@
                                   "discussion": [
                                     {
                                       "guid": "172cd645-2408-41c3-b334-48bf7f8934bc",
-                                      "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">How is the GNSS data formatted?</span></p>",
+                                      "comment": "<p>How is the GNSS data formatted?</p><p>GPS NMEA 0183 as referenced in rsuGnssOutputString (5.7.5)</p>",
                                       "date": "2024-11-12T15:45:32.103Z",
                                       "author": {
                                         "name": "Kenneth Vaughn",
                                         "email": "kvaughn@trevilon.com",
                                         "company": "Trevilon"
-                                      }
+                                      },
+                                      "updatedOn": "2025-03-11T20:40:56.897Z"
                                     }
                                   ],
                                   "history": [
@@ -22981,6 +22982,26 @@
                                       "changedOn": "2024-11-12T15:45:32.103Z",
                                       "commentGuid": "172cd645-2408-41c3-b334-48bf7f8934bc",
                                       "updatedComment": null
+                                    },
+                                    {
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Ken Vaughn"
+                                      },
+                                      "changedOn": "2025-03-11T19:10:31.671Z",
+                                      "commentGuid": "172cd645-2408-41c3-b334-48bf7f8934bc",
+                                      "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">How is the GNSS data formatted?</span></p>"
+                                    },
+                                    {
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Ken Vaughn"
+                                      },
+                                      "changedOn": "2025-03-11T20:40:56.897Z",
+                                      "commentGuid": "172cd645-2408-41c3-b334-48bf7f8934bc",
+                                      "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">How is the GNSS data formatted?</span></p><p><br></p><p><span style=\"background-color: rgb(247, 218, 100);\">3/11 - Assigned to Patrick</span></p>"
                                     }
                                   ]
                                 }
@@ -25207,14 +25228,14 @@
                                   "discussion": [
                                     {
                                       "guid": "2f5e71c9-4224-40a3-86ec-1249c834798e",
-                                      "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">\"The network interface\" is ambiguous. It may be better to say \"any electronic interface (e.g., local port, central port, V2X, etc.)\"</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">This overlaps with the RFC 3418 authenticationFailure notification. The requirement to report requests with insufficient access rights is new, but is ambiguous (i.e., does one request containing two objects with insufficient access and one object with sufficient access result in 0, 1, or 2 notifications).</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Propose replacing this with:</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">1. authenticationFailures notification (along with snmpEnableAuthenTraps)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">2. A new ISO 26048-1 notification that reports noSuchObject and noSuchInstance errors along with the objects requested and the securityName used (i.e., this is for get operations)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">3. A new ISO 26048-1 notification that reports noAccess errors along with the objects requested and the security name used (i.e., this is for set operations)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Or should we make these counters and leave the possibility that an implementation logs the issue rather than sending notifications (i.e., should all implementations be required to support notifications?)</span></p>",
+                                      "comment": "<p>\"The network interface\" is ambiguous. replace to say \"via any serial, IP interface, or V2X interface\"</p><p>This overlaps with the RFC 3418 authenticationFailure notification. The requirement to report requests with insufficient access rights is new, but is ambiguous (i.e., does one request containing two objects with insufficient access and one object with sufficient access result in 0, 1, or 2 notifications).</p><p>Use IETF objects as much as possible, but ensure that we distinguish between authentication and authorization</p><pre>Investigate RFCs but the folloowing is one possible approach if we don't fins something more standardized.\n\nPropose replacing this with:\n1. authenticationFailures notification (along with snmpEnableAuthenTraps)\n2. A new ISO 26048-1 notification that reports noSuchObject and noSuchInstance errors along with the objects requested and the securityName used (i.e., this is for get operations)\n3. A new ISO 26048-1 notification that reports noAccess errors along with the objects requested and the security name used (i.e., this is for set operations)\nOr should we make these counters and leave the possibility that an implementation logs the issue rather than sending notifications (i.e., should all implementations be required to support notifications?)</pre><p><br></p>",
                                       "date": "2024-07-22T22:23:51.828Z",
                                       "author": {
                                         "name": "Kenneth Vaughn",
                                         "email": "kvaughn@trevilon.com",
                                         "company": "Trevilon"
                                       },
-                                      "updatedOn": "2024-11-13T14:29:09.220Z"
+                                      "updatedOn": "2025-03-11T19:25:51.131Z"
                                     }
                                   ],
                                   "history": [
@@ -25283,6 +25304,26 @@
                                       "changedOn": "2024-11-13T14:29:09.220Z",
                                       "commentGuid": "2f5e71c9-4224-40a3-86ec-1249c834798e",
                                       "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">\"The network interface\" is ambiguous. It may be better to say \"any electronic interface (e.g., local port, central port, V2X, etc.)\"</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">This overlaps with the RFC 3418 authenticationFailure notification. The requirement to report requests with insufficient access rights is new, but is ambiguous (i.e., does one request containing two objects with insufficient access and one object with sufficient access result in 0, 1, or 2 notifications).</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Propose replacing this with:</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">1. authenticationFailures notification (along with snmpEnableAuthenTraps)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">2. A new ISO 26048-1 notification that reports the type of request, the objects requested that failed, and the securityName used</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Or should we make these counters and leave the possibility that an implementation logs the issue rather than sending notifications (i.e., should all implementations be required to support notifications?)</span></p>"
+                                    },
+                                    {
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Ken Vaughn"
+                                      },
+                                      "changedOn": "2025-03-11T19:20:14.768Z",
+                                      "commentGuid": "2f5e71c9-4224-40a3-86ec-1249c834798e",
+                                      "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">\"The network interface\" is ambiguous. It may be better to say \"any electronic interface (e.g., local port, central port, V2X, etc.)\"</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">This overlaps with the RFC 3418 authenticationFailure notification. The requirement to report requests with insufficient access rights is new, but is ambiguous (i.e., does one request containing two objects with insufficient access and one object with sufficient access result in 0, 1, or 2 notifications).</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Propose replacing this with:</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">1. authenticationFailures notification (along with snmpEnableAuthenTraps)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">2. A new ISO 26048-1 notification that reports noSuchObject and noSuchInstance errors along with the objects requested and the securityName used (i.e., this is for get operations)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">3. A new ISO 26048-1 notification that reports noAccess errors along with the objects requested and the security name used (i.e., this is for set operations)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Or should we make these counters and leave the possibility that an implementation logs the issue rather than sending notifications (i.e., should all implementations be required to support notifications?)</span></p>"
+                                    },
+                                    {
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Ken Vaughn"
+                                      },
+                                      "changedOn": "2025-03-11T19:25:51.131Z",
+                                      "commentGuid": "2f5e71c9-4224-40a3-86ec-1249c834798e",
+                                      "updatedComment": "<p>\"The network interface\" is ambiguous. replace to say \"via any serial, IP interface, or V2X interface\"</p><p><span style=\"background-color: rgb(247, 218, 100);\">This overlaps with the RFC 3418 authenticationFailure notification. The requirement to report requests with insufficient access rights is new, but is ambiguous (i.e., does one request containing two objects with insufficient access and one object with sufficient access result in 0, 1, or 2 notifications).</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Propose replacing this with:</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">1. authenticationFailures notification (along with snmpEnableAuthenTraps)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">2. A new ISO 26048-1 notification that reports noSuchObject and noSuchInstance errors along with the objects requested and the securityName used (i.e., this is for get operations)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">3. A new ISO 26048-1 notification that reports noAccess errors along with the objects requested and the security name used (i.e., this is for set operations)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Or should we make these counters and leave the possibility that an implementation logs the issue rather than sending notifications (i.e., should all implementations be required to support notifications?)</span></p>"
                                     }
                                   ]
                                 }
@@ -25336,14 +25377,14 @@
                                   "discussion": [
                                     {
                                       "guid": "67f1a574-5672-4cd1-8c27-ed0346b20cf1",
-                                      "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Signature or verification error; i.e., the text suggests a \"signature error\", which implies an encoding error or similar whereas the title indicates a signature verification error, which could mean the same thing or perhaps implies any issue that results in signature verification failing (e.g., expired credentials). I assume the intent is the latter and the text should be updated.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">We should probably clarify and update, that it is any message received (e.g., including broadcast messages) from V2X interface(s). In other words, as an international concept, these are not necessarily WAVE messages, there could be multiple radios at different frequencies, and the messages are frequently broadcasted rather than being directed at the RSU.</span></p>",
+                                      "comment": "<p>Signature or verification error; i.e., the text suggests a \"signature error\", which implies an encoding error or similar whereas the title indicates a signature verification error, which could mean the same thing or perhaps implies any issue that results in signature verification failing (e.g., expired credentials). I assume the intent is the latter and the text should be updated. &nbsp;-- correct</p><p>Delete the reference to WAVE, Just \"...the messages received...\"</p><p><br></p><p>Revise to \"the messages received by the RSU from the V2X interface or received from a management station for broadcast on the V2X interface.\"</p>",
                                       "date": "2024-07-22T22:29:12.024Z",
                                       "author": {
                                         "name": "Kenneth Vaughn",
                                         "email": "kvaughn@trevilon.com",
                                         "company": "Trevilon"
                                       },
-                                      "updatedOn": "2024-11-12T20:09:58.375Z"
+                                      "updatedOn": "2025-03-11T19:37:48.362Z"
                                     }
                                   ],
                                   "history": [
@@ -25429,6 +25470,26 @@
                                       "changedOn": "2024-11-12T20:09:58.375Z",
                                       "commentGuid": "67f1a574-5672-4cd1-8c27-ed0346b20cf1",
                                       "updatedComment": "<p>Signature or verification error; i.e., the text suggests a \"signature error\", which implies an encoding error or similar whereas the title indicates a signature verification error, which could mean the same thing or perhaps implies any issue that results in signature verification failing (e.g., expired credentials)?</p>"
+                                    },
+                                    {
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Ken Vaughn"
+                                      },
+                                      "changedOn": "2025-03-11T19:31:28.325Z",
+                                      "commentGuid": "67f1a574-5672-4cd1-8c27-ed0346b20cf1",
+                                      "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Signature or verification error; i.e., the text suggests a \"signature error\", which implies an encoding error or similar whereas the title indicates a signature verification error, which could mean the same thing or perhaps implies any issue that results in signature verification failing (e.g., expired credentials). I assume the intent is the latter and the text should be updated.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">We should probably clarify and update, that it is any message received (e.g., including broadcast messages) from V2X interface(s). In other words, as an international concept, these are not necessarily WAVE messages, there could be multiple radios at different frequencies, and the messages are frequently broadcasted rather than being directed at the RSU.</span></p>"
+                                    },
+                                    {
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Ken Vaughn"
+                                      },
+                                      "changedOn": "2025-03-11T19:37:48.362Z",
+                                      "commentGuid": "67f1a574-5672-4cd1-8c27-ed0346b20cf1",
+                                      "updatedComment": "<p>Signature or verification error; i.e., the text suggests a \"signature error\", which implies an encoding error or similar whereas the title indicates a signature verification error, which could mean the same thing or perhaps implies any issue that results in signature verification failing (e.g., expired credentials). I assume the intent is the latter and the text should be updated. &nbsp;-- correct</p><p>Delete the reference to WAVE, Just \"...the messages received...\"</p>"
                                     }
                                   ]
                                 }
@@ -25445,19 +25506,6 @@
                                   "NTCIP_1218-392"
                                 ]
                               },
-                              "discussion": [
-                                {
-                                  "guid": "46d3b451-4c48-4386-96a7-e81c9bda1823",
-                                  "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Suggest tracing to authentication rather than availability</span></p>",
-                                  "date": "2024-08-08T02:14:40.042Z",
-                                  "author": {
-                                    "name": "Kenneth Vaughn",
-                                    "email": "kvaughn@trevilon.com",
-                                    "company": "Trevilon"
-                                  },
-                                  "updatedOn": "2024-11-12T20:29:59.890Z"
-                                }
-                              ],
                               "history": [
                                 {
                                   "attributesChanged": {
@@ -25525,6 +25573,42 @@
                                   "changedOn": "2024-11-12T20:29:59.890Z",
                                   "commentGuid": "46d3b451-4c48-4386-96a7-e81c9bda1823",
                                   "updatedComment": "<p>Suggest tracing to authentication rather than availability</p>"
+                                },
+                                {
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Ken Vaughn"
+                                  },
+                                  "changedOn": "2025-03-11T19:32:32.158Z",
+                                  "commentGuid": "46d3b451-4c48-4386-96a7-e81c9bda1823",
+                                  "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Suggest tracing to authentication rather than availability</span></p>"
+                                },
+                                {
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Ken Vaughn"
+                                  },
+                                  "changedOn": "2025-03-11T19:32:43.457Z",
+                                  "commentGuid": "46d3b451-4c48-4386-96a7-e81c9bda1823",
+                                  "updatedComment": "<p>Trace to authentication rather than availability</p>"
+                                },
+                                {
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Ken Vaughn"
+                                  },
+                                  "changedOn": "2025-03-11T19:35:16.251Z",
+                                  "commentAuthor": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Kenneth Vaughn"
+                                  },
+                                  "commentDate": "2024-08-08T02:14:40.042Z",
+                                  "commentGuid": "46d3b451-4c48-4386-96a7-e81c9bda1823",
+                                  "removedComment": "<p>Trace to authentication rather than availability</p><p>3/11</p>"
                                 }
                               ],
                               "children": [
@@ -25536,14 +25620,14 @@
                                   "discussion": [
                                     {
                                       "guid": "a497e069-9650-4c01-8b78-894d7267ddf5",
-                                      "comment": "<p><span style=\"color: rgb(0, 0, 0); background-color: rgb(247, 218, 100);\">Should be replaced with a conditional trigger based on fdFirewallRejectedPackets with a report of the fdFirewallRejectedAddress, fdFirewallRejectedPort, and fdFirewallRejectedRuleID</span></p><p><br></p><p><span style=\"background-color: rgb(44, 130, 201); color: rgb(255, 255, 255);\">Should revise to read \"attempt of network access to the RSU\", (i.e., \"remote network\" could imply the exclusion of local ports)</span></p>",
+                                      "comment": "<p><span style=\"color: rgb(0, 0, 0); background-color: rgb(247, 218, 100);\">Should be replaced with a conditional trigger based on fdFirewallRejectedPackets with a report of the fdFirewallRejectedAddress, fdFirewallRejectedPort, and fdFirewallRejectedRuleID</span></p><p>Wait on feedback from Patrick</p><p><span style=\"background-color: rgb(44, 130, 201); color: rgb(255, 255, 255);\">Should revise to read \"attempt of network access to the RSU\", (i.e., \"remote network\" could imply the exclusion of local ports)</span></p>",
                                       "date": "2024-07-22T22:31:19.552Z",
                                       "author": {
                                         "name": "Kenneth Vaughn",
                                         "email": "kvaughn@trevilon.com",
                                         "company": "Trevilon"
                                       },
-                                      "updatedOn": "2024-11-12T20:33:34.646Z"
+                                      "updatedOn": "2025-03-11T19:38:21.522Z"
                                     }
                                   ],
                                   "history": [
@@ -25598,6 +25682,16 @@
                                       "changedOn": "2024-11-12T20:33:34.646Z",
                                       "commentGuid": "a497e069-9650-4c01-8b78-894d7267ddf5",
                                       "updatedComment": "<p>Should revise to read \"attempt of network access to the RSU\", (i.e., \"remote network\" could imply the exclusion of local ports)</p>"
+                                    },
+                                    {
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Ken Vaughn"
+                                      },
+                                      "changedOn": "2025-03-11T19:38:21.522Z",
+                                      "commentGuid": "a497e069-9650-4c01-8b78-894d7267ddf5",
+                                      "updatedComment": "<p><span style=\"color: rgb(0, 0, 0); background-color: rgb(247, 218, 100);\">Should be replaced with a conditional trigger based on fdFirewallRejectedPackets with a report of the fdFirewallRejectedAddress, fdFirewallRejectedPort, and fdFirewallRejectedRuleID</span></p><p><br></p><p><span style=\"background-color: rgb(44, 130, 201); color: rgb(255, 255, 255);\">Should revise to read \"attempt of network access to the RSU\", (i.e., \"remote network\" could imply the exclusion of local ports)</span></p>"
                                     }
                                   ]
                                 }
@@ -25968,14 +26062,14 @@
                                   "discussion": [
                                     {
                                       "guid": "fa06d9c5-f79b-4dcb-9b85-33e0c5bbf9c8",
-                                      "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">How is this meaningful if I do not know the ratio being used? How do I control this if I get swampped by these messages?</span></p>",
+                                      "comment": "<p>The WG agreed that we should either add a new object or reference the existing one in the text to avoid ambiguity.</p>",
                                       "date": "2024-07-22T22:35:48.687Z",
                                       "author": {
                                         "name": "Kenneth Vaughn",
                                         "email": "kvaughn@trevilon.com",
                                         "company": "Trevilon"
                                       },
-                                      "updatedOn": "2024-11-12T20:36:07.639Z"
+                                      "updatedOn": "2025-03-11T19:42:21.534Z"
                                     }
                                   ],
                                   "history": [
@@ -26024,6 +26118,16 @@
                                       "changedOn": "2024-11-12T20:36:07.639Z",
                                       "commentGuid": "fa06d9c5-f79b-4dcb-9b85-33e0c5bbf9c8",
                                       "updatedComment": "<p>How is this meaningful if I do not know the ratio being used? How do I control this if I get swampped by these messages?</p>"
+                                    },
+                                    {
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Ken Vaughn"
+                                      },
+                                      "changedOn": "2025-03-11T19:42:21.534Z",
+                                      "commentGuid": "fa06d9c5-f79b-4dcb-9b85-33e0c5bbf9c8",
+                                      "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">How is this meaningful if I do not know the ratio being used? How do I control this if I get swampped by these messages?</span></p>"
                                     }
                                   ]
                                 }
@@ -26075,14 +26179,14 @@
                                   "discussion": [
                                     {
                                       "guid": "ac613cfe-693b-4d83-a133-86ec42e7b4ce",
-                                      "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Duplicates functionality of ISO 26048-1 (i.e., watchdog failure counter) coupled with notification feature</span></p>",
+                                      "comment": "<p>Duplicates functionality of ISO 26048-1 (i.e., watchdog failure counter) coupled with notification feature</p><p>Waiting on Patrick's investigation if we want notifications or monitor values</p>",
                                       "date": "2024-07-22T22:39:11.795Z",
                                       "author": {
                                         "name": "Kenneth Vaughn",
                                         "email": "kvaughn@trevilon.com",
                                         "company": "Trevilon"
                                       },
-                                      "updatedOn": "2024-11-12T20:36:18.593Z"
+                                      "updatedOn": "2025-03-11T19:43:16.134Z"
                                     }
                                   ],
                                   "history": [
@@ -26121,6 +26225,16 @@
                                       "changedOn": "2024-11-12T20:36:18.593Z",
                                       "commentGuid": "ac613cfe-693b-4d83-a133-86ec42e7b4ce",
                                       "updatedComment": "<p>Duplicates functionality of ISO 26048-1 (i.e., watchdog failure counter) coupled with notification feature</p>"
+                                    },
+                                    {
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Ken Vaughn"
+                                      },
+                                      "changedOn": "2025-03-11T19:43:16.134Z",
+                                      "commentGuid": "ac613cfe-693b-4d83-a133-86ec42e7b4ce",
+                                      "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Duplicates functionality of ISO 26048-1 (i.e., watchdog failure counter) coupled with notification feature</span></p>"
                                     }
                                   ]
                                 }
@@ -26352,14 +26466,14 @@
                                   "discussion": [
                                     {
                                       "guid": "fc04745c-7b41-492f-82b6-da32a90d93c8",
-                                      "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">This seems awfully broad and untestable. It is likely redundant with SRSA (e.g., processor temp, etc).</span></p>",
+                                      "comment": "<p>Replace with SRSA (e.g., processor temp, etc).</p>",
                                       "date": "2024-07-22T22:40:34.525Z",
                                       "author": {
                                         "name": "Kenneth Vaughn",
                                         "email": "kvaughn@trevilon.com",
                                         "company": "Trevilon"
                                       },
-                                      "updatedOn": "2024-11-12T20:37:17.523Z"
+                                      "updatedOn": "2025-03-11T19:45:20.483Z"
                                     }
                                   ],
                                   "history": [
@@ -26398,6 +26512,16 @@
                                       "changedOn": "2024-11-12T20:37:17.523Z",
                                       "commentGuid": "fc04745c-7b41-492f-82b6-da32a90d93c8",
                                       "updatedComment": "<p>Potentially redundant with SRSA (e.g., processor temp, etc)</p>"
+                                    },
+                                    {
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Ken Vaughn"
+                                      },
+                                      "changedOn": "2025-03-11T19:45:20.483Z",
+                                      "commentGuid": "fc04745c-7b41-492f-82b6-da32a90d93c8",
+                                      "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">This seems awfully broad and untestable. It is likely redundant with SRSA (e.g., processor temp, etc).</span></p>"
                                     }
                                   ]
                                 }
@@ -27042,14 +27166,14 @@
                           "discussion": [
                             {
                               "guid": "fb4fb73a-6428-46cc-a4b2-dd84f59f0db3",
-                              "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">This name of this requirement talks about configuring an Ethernet port (Data Link layer) but in fact focuses on network layer aspects, which is confusing. Further, the text refers to configuring \"an Ethernet port\" but the referenced objects are scalar, which limits all Ethernet ports to the same configuration or only allows configuration of a single Ethernet port.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Clarify the requirement and title and revise the MIB structure into a table if needed.</span></p>",
+                              "comment": "<p>Revise the MIB structure into support multiple Ethernet ports. Loof to see if this is covered by an RFC</p>",
                               "date": "2024-08-09T21:20:27.955Z",
                               "author": {
                                 "name": "Kenneth Vaughn",
                                 "email": "kvaughn@trevilon.com",
                                 "company": "Trevilon"
                               },
-                              "updatedOn": "2024-11-12T20:41:50.988Z"
+                              "updatedOn": "2025-03-11T19:48:08.420Z"
                             }
                           ],
                           "history": [
@@ -27102,6 +27226,26 @@
                               "changedOn": "2024-11-12T20:41:50.988Z",
                               "commentGuid": "fb4fb73a-6428-46cc-a4b2-dd84f59f0db3",
                               "updatedComment": "<p>This name of this requirement talks about configuring an Ethernet port (Data Link layer) but in fact focuses on network layer aspects, which is confusing. Further, the text refers to configuring \"an Ethernet port\" but the referenced objects are scalar, which limits all Ethernet ports to the same configuration or only allows configuration of a single Ethernet port.</p><p>Clarify the requirement and title and revise the MIB structure into a table if needed.</p>"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T19:47:30.586Z",
+                              "commentGuid": "fb4fb73a-6428-46cc-a4b2-dd84f59f0db3",
+                              "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">This name of this requirement talks about configuring an Ethernet port (Data Link layer) but in fact focuses on network layer aspects, which is confusing. Further, the text refers to configuring \"an Ethernet port\" but the referenced objects are scalar, which limits all Ethernet ports to the same configuration or only allows configuration of a single Ethernet port.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Clarify the requirement and title and revise the MIB structure into a table if needed.</span></p>"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T19:48:08.420Z",
+                              "commentGuid": "fb4fb73a-6428-46cc-a4b2-dd84f59f0db3",
+                              "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Revise the MIB structure into support multiple Ethernet ports.</span></p>"
                             }
                           ],
                           "children": [
@@ -27330,14 +27474,14 @@
                               "discussion": [
                                 {
                                   "guid": "eebf53c0-9467-4cb9-aafb-35acd2b08e7c",
-                                  "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">This requirement does not trace to anything now and the replacement requirement is literally the same text as this requirement.&nbsp;</span></p>",
+                                  "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">This requirement does not trace to anything now and the replacement requirement is literally the same text as this requirement.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">For further discussion to Patrick to explain why this was treated this way&nbsp;</span></p>",
                                   "date": "2024-08-09T22:04:39.621Z",
                                   "author": {
                                     "name": "Kenneth Vaughn",
                                     "email": "kvaughn@trevilon.com",
                                     "company": "Trevilon"
                                   },
-                                  "updatedOn": "2024-11-12T20:43:19.918Z"
+                                  "updatedOn": "2025-03-11T19:56:18.099Z"
                                 }
                               ],
                               "history": [
@@ -27392,6 +27536,16 @@
                                   "changedOn": "2024-11-12T20:43:19.918Z",
                                   "commentGuid": "eebf53c0-9467-4cb9-aafb-35acd2b08e7c",
                                   "updatedComment": "<p>This requirement does not trace to anything now and the replacement requirement is literally the same text as this requirement.&nbsp;</p>"
+                                },
+                                {
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Ken Vaughn"
+                                  },
+                                  "changedOn": "2025-03-11T19:56:18.099Z",
+                                  "commentGuid": "eebf53c0-9467-4cb9-aafb-35acd2b08e7c",
+                                  "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">This requirement does not trace to anything now and the replacement requirement is literally the same text as this requirement.&nbsp;</span></p>"
                                 }
                               ],
                               "children": [
@@ -28568,14 +28722,14 @@
                                   "discussion": [
                                     {
                                       "guid": "4f8628b5-6f37-4b48-8879-8539f57cb70b",
-                                      "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">The title and traced user need suggests a need for a true forwarding service (i.e., an incoming packet is forwarded to a different network interface at the network layer based on a configuration), which is not fulfilled by this requirement. The requirement suggests that the message is stored (e.g., as a standard SNMP operation rather than coming into a separate port) and immediately forwarded (i.e., still a single operation). The purpose of the storage is unclear.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">The design also fails to satisfy the requirement or the user need. The design stores the message (one operation) and then allows a second operation to enable the forwarding of the message.&nbsp;</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">separate action to send the message (i.e., by the ITS application entity; a higher-layer function). Either the need or the design need to be revised.</span></p>",
+                                      "comment": "<p>Change the term \"forward\" in this context to \"store and broadcast\"</p>",
                                       "date": "2024-07-22T21:34:19.252Z",
                                       "author": {
                                         "name": "Kenneth Vaughn",
                                         "email": "kvaughn@trevilon.com",
                                         "company": "Trevilon"
                                       },
-                                      "updatedOn": "2024-11-13T14:16:56.882Z"
+                                      "updatedOn": "2025-03-11T19:59:40.545Z"
                                     }
                                   ],
                                   "history": [
@@ -28650,6 +28804,16 @@
                                       "changedOn": "2024-11-13T14:16:56.882Z",
                                       "commentGuid": "4f8628b5-6f37-4b48-8879-8539f57cb70b",
                                       "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">The title and traced user need suggests a need for a true forwarding service (i.e., an incoming packet is forwarded to a different network interface at the network layer), which is not fulfilled by this design. This design stores the message and then performs a separate action to send the message (i.e., by the ITS application entity; a higher-layer function). Either the need or the design need to be revised.</span></p>"
+                                    },
+                                    {
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Ken Vaughn"
+                                      },
+                                      "changedOn": "2025-03-11T19:59:40.545Z",
+                                      "commentGuid": "4f8628b5-6f37-4b48-8879-8539f57cb70b",
+                                      "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">The title and traced user need suggests a need for a true forwarding service (i.e., an incoming packet is forwarded to a different network interface at the network layer based on a configuration), which is not fulfilled by this requirement. The requirement suggests that the message is stored (e.g., as a standard SNMP operation rather than coming into a separate port) and immediately forwarded (i.e., still a single operation). The purpose of the storage is unclear.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">The design also fails to satisfy the requirement or the user need. The design stores the message (one operation) and then allows a second operation to enable the forwarding of the message.&nbsp;</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">separate action to send the message (i.e., by the ITS application entity; a higher-layer function). Either the need or the design need to be revised.</span></p>"
                                     }
                                   ]
                                 }
@@ -38763,14 +38927,14 @@
                           "discussion": [
                             {
                               "guid": "e73aa73b-a3d8-4065-84b0-f71c88e46a3d",
-                              "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">To distinguish from 3.5.4.1.1.2, add \" - Country Code\" to the end of the heading</span></p>",
+                              "comment": "<p>To distinguish from 3.5.4.1.1.2, add \" - Country Code\" to the end of the heading</p>",
                               "date": "2024-07-22T22:14:04.178Z",
                               "author": {
                                 "name": "Kenneth Vaughn",
                                 "email": "kvaughn@trevilon.com",
                                 "company": "Trevilon"
                               },
-                              "updatedOn": "2024-11-12T20:55:39.552Z"
+                              "updatedOn": "2025-03-11T20:01:06.495Z"
                             }
                           ],
                           "history": [
@@ -38823,6 +38987,16 @@
                               "changedOn": "2024-11-12T20:55:39.552Z",
                               "commentGuid": "e73aa73b-a3d8-4065-84b0-f71c88e46a3d",
                               "updatedComment": "<p>To distinguish from 3.5.4.1.1.2, add \" - Country Code\" to the end of the heading</p>"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T20:01:06.495Z",
+                              "commentGuid": "e73aa73b-a3d8-4065-84b0-f71c88e46a3d",
+                              "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">To distinguish from 3.5.4.1.1.2, add \" - Country Code\" to the end of the heading</span></p>"
                             }
                           ],
                           "children": [
@@ -38834,14 +39008,14 @@
                               "discussion": [
                                 {
                                   "guid": "9c263b6f-2394-4d43-b5f6-6616d2f2357d",
-                                  "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">\"enrollment certificates\" is too vague. Replace with \"IEEE 1609.2 enrollment certificates\" or similar.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Also, the first sentence should be updated to be consistent with the remainder of the requirement. Modify the ending of the first sentence by adding \"by country code\".</span></p>",
+                                  "comment": "<p>\"enrollment certificates\" is too vague. Replace with \"IEEE 1609.2 enrollment certificates\" or similar.</p><p>Also, the first sentence should be updated to be consistent with the remainder of the requirement. Modify the ending of the first sentence by adding \"by country code\".</p>",
                                   "date": "2024-07-22T22:09:06.736Z",
                                   "author": {
                                     "name": "Kenneth Vaughn",
                                     "email": "kvaughn@trevilon.com",
                                     "company": "Trevilon"
                                   },
-                                  "updatedOn": "2024-11-12T20:56:09.143Z"
+                                  "updatedOn": "2025-03-11T20:02:18.436Z"
                                 }
                               ],
                               "history": [
@@ -38896,6 +39070,16 @@
                                   "changedOn": "2024-11-12T20:56:09.143Z",
                                   "commentGuid": "9c263b6f-2394-4d43-b5f6-6616d2f2357d",
                                   "updatedComment": "<p>\"enrollment certificates\" is too vague. Replace with \"IEEE 1609.2 enrollment certificates\" or similar.</p><p>Also, the first sentence should be updated to be consistent with the remainder of the requirement. Modify the ending of the first sentence by adding \"by country code\".</p>"
+                                },
+                                {
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Ken Vaughn"
+                                  },
+                                  "changedOn": "2025-03-11T20:02:18.436Z",
+                                  "commentGuid": "9c263b6f-2394-4d43-b5f6-6616d2f2357d",
+                                  "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">\"enrollment certificates\" is too vague. Replace with \"IEEE 1609.2 enrollment certificates\" or similar.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Also, the first sentence should be updated to be consistent with the remainder of the requirement. Modify the ending of the first sentence by adding \"by country code\".</span></p>"
                                 }
                               ]
                             },
@@ -38966,14 +39150,14 @@
                               "discussion": [
                                 {
                                   "guid": "8bbc022f-d0f9-4cba-8f4b-1a12be51d577",
-                                  "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">\"enrollment certificates\" is too vague. Replace with \"IEEE 1609.2 enrollment certificates\" or similar.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">The first sentence needs to be updated to be consistent with the remainder of the requirement. Replace the ending of the first sentence with \"by defining a circular region\".</span></p>",
+                                  "comment": "<p>\"enrollment certificates\" is too vague. Replace with \"IEEE 1609.2 enrollment certificates\" or similar.</p><p>The first sentence needs to be updated to be consistent with the remainder of the requirement. Replace the ending of the first sentence with \"by defining a circular region\".</p>",
                                   "date": "2024-07-22T22:13:04.815Z",
                                   "author": {
                                     "name": "Kenneth Vaughn",
                                     "email": "kvaughn@trevilon.com",
                                     "company": "Trevilon"
                                   },
-                                  "updatedOn": "2024-11-12T20:56:28.148Z"
+                                  "updatedOn": "2025-03-11T20:02:34.894Z"
                                 }
                               ],
                               "history": [
@@ -39012,6 +39196,16 @@
                                   "changedOn": "2024-11-12T20:56:28.148Z",
                                   "commentGuid": "8bbc022f-d0f9-4cba-8f4b-1a12be51d577",
                                   "updatedComment": "<p>\"enrollment certificates\" is too vague. Replace with \"IEEE 1609.2 enrollment certificates\" or similar.</p><p>The first sentence needs to be updated to be consistent with the remainder of the requirement. Replace the ending of the first sentence with \"by defining a circular region\".</p>"
+                                },
+                                {
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Ken Vaughn"
+                                  },
+                                  "changedOn": "2025-03-11T20:02:34.894Z",
+                                  "commentGuid": "8bbc022f-d0f9-4cba-8f4b-1a12be51d577",
+                                  "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">\"enrollment certificates\" is too vague. Replace with \"IEEE 1609.2 enrollment certificates\" or similar.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">The first sentence needs to be updated to be consistent with the remainder of the requirement. Replace the ending of the first sentence with \"by defining a circular region\".</span></p>"
                                 }
                               ]
                             }
@@ -43228,14 +43422,14 @@
                       "discussion": [
                         {
                           "guid": "66469fd0-03cd-4454-9931-ca4873e6de25",
-                          "comment": "<p>Revised text to make the reference normative. <span style=\"background-color: rgb(247, 218, 100);\">NOTE: Do we want to reference 1.9.0 or 1.1.1 (v01A1 referenced 1.9.0 in the norm ref but 1.1.1 in the text)</span></p>",
+                          "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">We need to reach consensus on whether to use 1.9.0 or 1.1.1 (v01A1 referenced 1.9.0 in the norm ref but 1.1.1 in the text)</span></p>",
                           "date": "2024-10-18T10:06:55.036Z",
                           "author": {
                             "name": "Kenneth Vaughn",
                             "email": "kvaughn@trevilon.com",
                             "company": "Trevilon"
                           },
-                          "updatedOn": "2024-11-12T21:15:32.204Z"
+                          "updatedOn": "2025-03-11T20:06:19.130Z"
                         }
                       ],
                       "history": [
@@ -43312,6 +43506,16 @@
                           "changedOn": "2024-11-12T21:15:32.204Z",
                           "commentGuid": "66469fd0-03cd-4454-9931-ca4873e6de25",
                           "updatedComment": "<p>Added normative reference to libpcap. NOTE: Do we want to reference 1.9.0 or 1.1.1 (v01A1 referenced 1.9.0 in the norm ref but 1.1.1 in the text)</p>"
+                        },
+                        {
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-11T20:06:19.130Z",
+                          "commentGuid": "66469fd0-03cd-4454-9931-ca4873e6de25",
+                          "updatedComment": "<p>Revised text to make the reference normative. <span style=\"background-color: rgb(247, 218, 100);\">NOTE: Do we want to reference 1.9.0 or 1.1.1 (v01A1 referenced 1.9.0 in the norm ref but 1.1.1 in the text)</span></p>"
                         }
                       ]
                     },
@@ -44048,14 +44252,14 @@
                     },
                     {
                       "guid": "d8c9d168-a62b-43e4-b165-1255dcca0ddf",
-                      "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">This should not be an option in the PRL; rather it should be part of an option group where the user either selects:</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Log Interface Data Regardless of Operational Mode or</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Log Interface Data Only When Operational Mode is Active</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">(i.e., currently, there is a note, which is informative, that attempts to impose a normative requirement)</span></p>",
+                      "comment": "<p>This should not be an option in the PRL; rather it should be part of an option group where the user either selects:</p><p>Log Interface Data Regardless of Operational Mode or</p><p>Log Interface Data Only When Operational Mode is Active</p><p>(i.e., currently, there is a note, which is informative, that attempts to impose a normative requirement)</p><p><br></p><p><span style=\"background-color: rgb(247, 218, 100);\">The default is that it should only log in the operational state. If the other requirement isselected, there should be an object that allows non-operational logging to be activated or not. &nbsp;Investigate what is actually meant by \"operational state\" and then bring back to group.</span></p>",
                       "date": "2024-10-18T11:57:57.312Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
                       },
-                      "updatedOn": "2024-11-12T21:17:03.912Z"
+                      "updatedOn": "2025-03-11T20:15:09.078Z"
                     }
                   ],
                   "history": [
@@ -44123,6 +44327,16 @@
                       "changedOn": "2024-11-12T21:17:03.912Z",
                       "commentGuid": "d8c9d168-a62b-43e4-b165-1255dcca0ddf",
                       "updatedComment": "<p>This should not be an option in the PRL; rather it should be part of an option group where the user either selects:</p><p>Log Interface Data Regardless of Operational Mode or</p><p>Log Interface Data Only When Operational Mode is Active</p><p>(i.e., currently, there is a note, which is informative, that attempts to impose a normative requirement)</p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-11T20:15:09.078Z",
+                      "commentGuid": "d8c9d168-a62b-43e4-b165-1255dcca0ddf",
+                      "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">This should not be an option in the PRL; rather it should be part of an option group where the user either selects:</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Log Interface Data Regardless of Operational Mode or</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Log Interface Data Only When Operational Mode is Active</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">(i.e., currently, there is a note, which is informative, that attempts to impose a normative requirement)</span></p>"
                     }
                   ],
                   "children": [
@@ -44268,19 +44482,6 @@
                   "NTCIP_1218-337"
                 ]
               },
-              "discussion": [
-                {
-                  "guid": "037ad14e-c771-4972-8b5f-a5fa058ae18b",
-                  "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Should be SFTP as is being used by ESS and others and provide more than just copy functionality. SFTP is also an open spec rather than a specific implementation of software, which is no longer supported and the developers recommend SFTP</span></p>",
-                  "date": "2024-10-18T13:21:22.083Z",
-                  "author": {
-                    "name": "Kenneth Vaughn",
-                    "email": "kvaughn@trevilon.com",
-                    "company": "Trevilon"
-                  },
-                  "updatedOn": "2024-11-12T21:17:28.036Z"
-                }
-              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -44367,6 +44568,22 @@
                   "changedOn": "2024-11-12T21:17:28.036Z",
                   "commentGuid": "037ad14e-c771-4972-8b5f-a5fa058ae18b",
                   "updatedComment": "<p>Should be SFTP as is being used by ESS and others and provide more than just copy functionality. SFTP is also an open spec rather than a specific implementation of software, which is no longer supported and the developers recommend SFTP</p>"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-11T20:17:12.473Z",
+                  "commentAuthor": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Kenneth Vaughn"
+                  },
+                  "commentDate": "2024-10-18T13:21:22.083Z",
+                  "commentGuid": "037ad14e-c771-4972-8b5f-a5fa058ae18b",
+                  "removedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Should be SFTP as is being used by ESS and others and provide more than just copy functionality. SFTP is also an open spec rather than a specific implementation of software, which is no longer supported and the developers recommend SFTP</span></p>"
                 }
               ],
               "children": [
@@ -44731,14 +44948,14 @@
                     },
                     {
                       "guid": "121c6424-452d-4d2a-b93c-0d13012d30d6",
-                      "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">This wording allows an implementation to immediately delete the row upon the row becoming 'not Ready'. Is that the intent? It seems as if the requirement should be that the row is retained for this period and deleted after this period (perhaps within some defined window).</span></p>",
+                      "comment": "<p>This wording allows an implementation to immediately delete the row upon the row becoming 'not Ready'. Is that the intent? It seems as if the requirement should be that the row is retained for this period and deleted after this period (perhaps within some defined window).</p><p><br></p><p>Change \"can\" to \"shall\"</p>",
                       "date": "2024-11-13T17:06:21.406Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
                       },
-                      "updatedOn": "2024-11-13T17:27:25.840Z"
+                      "updatedOn": "2025-03-11T20:19:13.770Z"
                     },
                     {
                       "guid": "af8a1e26-8445-4f32-991d-89d959e22cc6",
@@ -44824,6 +45041,16 @@
                       "changedOn": "2024-11-13T17:27:25.840Z",
                       "commentGuid": "121c6424-452d-4d2a-b93c-0d13012d30d6",
                       "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">This wording allows an implementation to immediately delete the row upon the row becoming 'not Ready'. Is that the intent?</span></p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-11T20:19:13.770Z",
+                      "commentGuid": "121c6424-452d-4d2a-b93c-0d13012d30d6",
+                      "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">This wording allows an implementation to immediately delete the row upon the row becoming 'not Ready'. Is that the intent? It seems as if the requirement should be that the row is retained for this period and deleted after this period (perhaps within some defined window).</span></p>"
                     }
                   ]
                 },
@@ -44879,14 +45106,14 @@
               "discussion": [
                 {
                   "guid": "2613d86b-e675-4098-8abf-3d7641f56b4e",
-                  "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">As a note, the original text failed to negate any existing requirement. Thus, the requirement of RFC 2579 still technically applied:</span></p><blockquote><p><span style=\"background-color: rgb(247, 218, 100);\">The agent must detect conceptual rows that have been in [the 'notInService'] state for an abnormally long period of time and remove them.... it is suggested that this period be approximately 5 minutes in length. &nbsp;</span></p></blockquote><p><span style=\"background-color: rgb(247, 218, 100);\">In short, the note contradicted an actual requirement and therefore was wrong. I changed the note to become a proper requirement to override the RFC 2579 requirement. However, we should review the intent...</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Do we wish to prohibit an implementation from ever automatically deleting the row or do we just want to define a really long minimum (e.g., shall not be deleted for at least one year).</span></p><p><br></p><p><br></p>",
+                  "comment": "<p>As a note, the original text failed to negate any existing requirement. Thus, the requirement of RFC 2579 still technically applied:</p><blockquote><p>The agent must detect conceptual rows that have been in [the 'notInService'] state for an abnormally long period of time and remove them.... it is suggested that this period be approximately 5 minutes in length. &nbsp;</p></blockquote><p>In short, the note contradicted an actual requirement and therefore was wrong. I changed the note to become a proper requirement to override the RFC 2579 requirement. However, we should review the intent...</p><p>Do we wish to prohibit an implementation from ever automatically deleting the row or do we just want to define a really long minimum (e.g., shall not be deleted for at least one year).</p><p><br></p><p><span style=\"background-color: rgb(247, 218, 100);\">Investigate with vendors. Do we want a separate \"enabled\" object or do we want to allow noInService forprolonged periods.</span></p><p><br></p><p><br></p>",
                   "date": "2024-11-13T17:19:15.542Z",
                   "author": {
                     "name": "Kenneth Vaughn",
                     "email": "kvaughn@trevilon.com",
                     "company": "Trevilon"
                   },
-                  "updatedOn": "2024-11-13T17:34:52.270Z"
+                  "updatedOn": "2025-03-11T20:25:00.131Z"
                 }
               ],
               "history": [
@@ -45007,6 +45234,16 @@
                   "changedOn": "2024-11-13T17:35:09.778Z",
                   "docId": "NTCIP_1218",
                   "structureAction": "Promote"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-11T20:25:00.131Z",
+                  "commentGuid": "2613d86b-e675-4098-8abf-3d7641f56b4e",
+                  "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">As a note, the original text failed to negate any existing requirement. Thus, the requirement of RFC 2579 still technically applied:</span></p><blockquote><p><span style=\"background-color: rgb(247, 218, 100);\">The agent must detect conceptual rows that have been in [the 'notInService'] state for an abnormally long period of time and remove them.... it is suggested that this period be approximately 5 minutes in length. &nbsp;</span></p></blockquote><p><span style=\"background-color: rgb(247, 218, 100);\">In short, the note contradicted an actual requirement and therefore was wrong. I changed the note to become a proper requirement to override the RFC 2579 requirement. However, we should review the intent...</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Do we wish to prohibit an implementation from ever automatically deleting the row or do we just want to define a really long minimum (e.g., shall not be deleted for at least one year).</span></p><p><br></p><p><br></p>"
                 }
               ]
             }
@@ -50055,14 +50292,14 @@
       "discussion": [
         {
           "guid": "29765568-70dc-482a-a50e-be50019c637a",
-          "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">The MIB is 100 pages long and does not yet define any object groups. Consider defining sub-MIBs</span></p>",
+          "comment": "<p>The MIB is 100 pages long and does not yet define any object groups. Consider defining sub-MIBs</p><p><br></p><p><span style=\"background-color: rgb(247, 218, 100);\">Invetigate and provide a proposal</span></p>",
           "date": "2024-08-08T02:28:23.571Z",
           "author": {
             "name": "Kenneth Vaughn",
             "email": "kvaughn@trevilon.com",
             "company": "Trevilon"
           },
-          "updatedOn": "2024-11-12T21:18:01.202Z"
+          "updatedOn": "2025-03-11T20:27:18.253Z"
         },
         {
           "guid": "9a57aae7-fafd-4f60-879e-16c45df7bc0a",
@@ -50220,6 +50457,16 @@
           "commentDate": "2024-08-09T19:15:50.199Z",
           "commentGuid": "83a8b48a-d6fe-4214-8caf-14585659b7e7",
           "removedComment": "<p>Do we want to submit a comment to ISO 26048-1 to change positive integers to use Integer32 (rather than Unsigned32) so that they map to existing objects easier?</p>"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-11T20:27:18.253Z",
+          "commentGuid": "29765568-70dc-482a-a50e-be50019c637a",
+          "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">The MIB is 100 pages long and does not yet define any object groups. Consider defining sub-MIBs</span></p>"
         }
       ],
       "children": [

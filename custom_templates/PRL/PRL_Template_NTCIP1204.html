@@ -178,12 +178,12 @@ div.WordSection1
 			<td class="left">&nbsp;</td>
 			<td class="middle">&nbsp;</td>
 		{{#if (searchString docId "NTCIP")}}
-			<td class="middle">&sect;{{{sectionNumber}}}{{> ref}}</td>
+			<td class="middle"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">&sect;{{{sectionNumber}}}{{> ref}}</a></td>
 		{{else}} 
 			{{#if (searchString docId "RFC")}}
 			<td class="middle">{{{replaceString docId "_" " "}}}</td>
 			{{else}}
-			<td class="middle">{{{docName}}}, &sect;{{{sectionNumber}}}</td>
+			<td class="middle"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">{{{docName}}}, &sect;{{{sectionNumber}}}</a></td>
 			{{/if}}
 		{{/if}}
 			<td class="middle">{{heading}}</td>
@@ -237,18 +237,18 @@ div.WordSection1
 				<td class="right">{{heading}}</td>
 			</tr>
 		{{else}}
-			{{#if (eval docId "==" "NTCIP_1201")}}
+			{{#if (eval docId "==" (get "source"))}}
 			<tr>
 				<td class="left-empty">&nbsp;</td>
 				<td class="empty">&nbsp;</td>
-				<td class="middle">{{{sectionNumber}}}</td>
+				<td class="middle"><a href="{{get "source"}}-{{id}}">{{{sectionNumber}}}</a></td>
 				<td class="right">{{name}}</td>
 			</tr>
 			{{else}}
 			<tr>
 				<td class="left-empty">&nbsp;</td>
 				<td class="empty">&nbsp;</td>
-				<td class="middle">{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}</td>
+				<td class="middle"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}</a></td>
 				<td class="right">{{name}}</td>
 			</tr>
 			{{/if}}
@@ -366,10 +366,10 @@ div.WordSection1
         {{#eachDocumentObject}}{{#ifHasInlinks "implement"}}
         	<tr style="background:silver;">
 				
-			{{#if (eval docId "==" "NTCIP_1201")}}
-				<td class="sum-left">{{{sectionNumber}}}</td>
+			{{#if (eval docId "==" (get "source"))}}
+				<td class="sum-left"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">{{{sectionNumber}}}</a></td>
 			{{else}}
-				<td class="sum-left">{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}</td>
+				<td class="sum-left"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}</a></td>
 			{{/if}}
 				<td class="sum-middle" colspan="2">{{{heading}}}</td>
 				<td class="sum-right">{{#eachInlinkWith type="implement"}}{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}: {{{heading}}}{{/eachInlinkWith}}</td>

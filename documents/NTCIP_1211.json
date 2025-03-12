@@ -2,14 +2,14 @@
   "id": "NTCIP_1211",
   "guid": "98517503-D6D8-4528-A342-11CF04043F16",
   "name": "NTCIP1211-SCP",
-  "lastId": 9872,
+  "lastId": 9874,
   "createdOn": "2025-02-28T14:34:59.440Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-03-11T03:48:44.356Z",
+  "lastChangedOn": "2025-03-12T03:30:37.682Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -6741,7 +6741,7 @@
                       "id": "262",
                       "guid": "BF733EF8-106D-474B-8F1B-E5BE5A89DF0F",
                       "name": "Example Architecture 6",
-                      "type": "text",
+                      "type": "f",
                       "attachments": [
                         "NTCIP_1211-262_1_Picture6.png"
                       ],
@@ -6776,6 +6776,17 @@
                             "name": "Ken Vaughn"
                           },
                           "changedOn": "2025-03-08T16:45:42.247Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": "text"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-11T16:57:17.322Z"
                         }
                       ]
                     }
@@ -7101,6 +7112,28 @@
                       "changedOn": "2025-03-08T23:31:35.507Z",
                       "docId": "NTCIP_1204",
                       "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": "text"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-11T16:58:31.257Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": "unp"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-11T16:59:07.551Z"
                     }
                   ],
                   "children": [
@@ -7982,7 +8015,7 @@
               "id": "9831",
               "guid": "26d4eb92-9a21-48cb-bd4f-09a7bacdbcb1",
               "heading": "ISO 26048-1 Needs not Envisioned for SCP",
-              "type": "unp",
+              "type": "text",
               "history": [
                 {
                   "affectedNodeId": "279",
@@ -8016,6 +8049,17 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-03-11T02:03:38.796Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": "unp"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T03:11:16.060Z"
                 }
               ],
               "children": [
@@ -8025,7 +8069,7 @@
                   "heading": "Issue trigger-based commands",
                   "text": "<p>allows a user to define trigger conditions (e.g., an object value exceeding a defined value) and to automatically send another device an SNMP set request when the trigger condition occurs. For example, when ice is detected by a pavement sensor, command an attached gate to close (however, this example is discouraged as a gate closure should include verification mechanisms not offered by this feature to ensure safe operations).</p>",
                   "status": "current",
-                  "type": "unr",
+                  "type": "text",
                   "history": [
                     {
                       "affectedNodeId": "2104",
@@ -8059,6 +8103,17 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-03-08T23:59:51.428Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": "unr"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T03:11:19.932Z"
                     }
                   ]
                 }
@@ -11474,6 +11529,47 @@
                       "changedOn": "2025-03-08T17:18:08.158Z"
                     }
                   ]
+                },
+                {
+                  "id": "9874",
+                  "guid": "0d507e77-114b-43ab-86c1-7e7f5b0fc87a",
+                  "name": "Protocol Requirements List (PRL)",
+                  "type": "table",
+                  "history": [
+                    {
+                      "affectedNodeId": "449",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T02:25:55.221Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T02:26:19.951Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T02:26:34.099Z"
+                    }
+                  ]
                 }
               ]
             }
@@ -14221,7 +14317,7 @@
                 {
                   "id": "9858",
                   "guid": "deee5571-00b8-4306-b18c-784f9e5ded86",
-                  "text": "<p>NOTE—Consistent devices are defined to allow agencies to start procuring and deploying SNMPv3-ready devices immediately, before their management station has been updated to support SNMPv3.</p>",
+                  "text": "<p>Consistent devices are defined to allow agencies to start procuring and deploying SNMPv3-ready devices immediately, before their management station has been updated to support SNMPv3.</p>",
                   "type": "n",
                   "history": [
                     {
@@ -14234,6 +14330,17 @@
                       "changedOn": "2025-03-11T02:07:12.689Z",
                       "docId": "NTCIP_1204",
                       "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>NOTE—Consistent devices are defined to allow agencies to start procuring and deploying SNMPv3-ready devices immediately, before their management station has been updated to support SNMPv3.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-11T17:20:42.651Z"
                     }
                   ]
                 }
@@ -15272,7 +15379,7 @@
                         {
                           "id": "551",
                           "guid": "A3BDB8C2-EAEB-492C-AD76-D3B0F7ABB77B",
-                          "text": "<p>The management station shall SET scpBlockData.0 using the coStrategyPlanBlock structure.</p>",
+                          "text": "<p>The management station shall SET coStrategyPlanBlock.x.</p>",
                           "type": "l1",
                           "history": [
                             {
@@ -15285,13 +15392,24 @@
                                 "name": "Ken Vaughn"
                               },
                               "changedOn": "2025-03-10T21:52:12.726Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<p>The management station shall SET scpBlockData.0 using the coStrategyPlanBlock structure.</p>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T22:03:49.517Z"
                             }
                           ]
                         },
                         {
                           "id": "552",
                           "guid": "C785616E-401D-46B9-9EB7-402CA6FD33FB",
-                          "text": "<p>The management station shall SET scpBlockData.0 using the coStrategySplitsBlock structure.</p>",
+                          "text": "<p>The management station shall SET coStrategySplitsBlock.x structure.</p>",
                           "type": "l1",
                           "history": [
                             {
@@ -15304,6 +15422,17 @@
                                 "name": "Ken Vaughn"
                               },
                               "changedOn": "2025-03-10T21:52:41.822Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<p>The management station shall SET scpBlockData.0 using the coStrategySplitsBlock structure.</p>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T22:04:06.551Z"
                             }
                           ]
                         },
@@ -15389,7 +15518,7 @@
                         {
                           "id": "9739",
                           "guid": "c25b8115-49ed-45af-a480-5ec8aac63032",
-                          "text": "<p>The management stationam shall GET fdTransactionStatus until it is not in the ‘verifying’ state.</p>",
+                          "text": "<p>The management station shall GET fdTransactionStatus until it is not in the ‘verifying’ state.</p>",
                           "type": "l1",
                           "history": [
                             {
@@ -15424,13 +15553,24 @@
                                 "name": "Ken Vaughn"
                               },
                               "changedOn": "2025-03-08T17:50:33.573Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<p>The management stationam shall GET fdTransactionStatus until it is not in the ‘verifying’ state.</p>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T22:34:58.035Z"
                             }
                           ]
                         },
                         {
                           "id": "9740",
                           "guid": "038d887b-d40a-4523-9f39-eac83c4c7282",
-                          "text": "<p>The management station shall SET fdTransactionMode to ‘done’.</p>",
+                          "text": "<p>The CO shall automatically transition the fdTransactionMode to ‘done’ once the consistency checks are complete.</p>",
                           "type": "l1",
                           "history": [
                             {
@@ -15476,13 +15616,35 @@
                                 "name": "Ken Vaughn"
                               },
                               "changedOn": "2025-03-08T17:50:33.573Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<p>The management station shall SET fdTransactionMode to ‘done’.</p>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T22:26:28.204Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<p>The CO shall transition the fdTransactionMode to ‘done’ once the consistency checks are complete.</p>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T22:34:38.459Z"
                             }
                           ]
                         },
                         {
                           "id": "9741",
                           "guid": "f3dc156c-9061-4226-9bc5-ba8747c2f085",
-                          "text": "<p>If the CO reported no error, the CO shall implement the new values.</p>",
+                          "text": "<p>If fdTransactionStatus equals 'doneWithNoError' the Management Station shall set fdTransactionMode to 'normal' and the CO shall implement the new values.</p>",
                           "type": "l1",
                           "history": [
                             {
@@ -15517,13 +15679,35 @@
                                 "name": "Ken Vaughn"
                               },
                               "changedOn": "2025-03-08T17:50:33.573Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<p>If the CO reported no error, the CO shall implement the new values.</p>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T22:36:28.782Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<p>If fdTransactionStatus equals 'doneWithNoError' the Management Station shall set fdTransactionMode to 'normal'.</p>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T22:37:34.917Z"
                             }
                           ]
                         },
                         {
                           "id": "555",
                           "guid": "F3B86A6A-7BF3-4624-9FA3-C8F647A3AC74",
-                          "text": "<p>The CO shall return fdTransactionMode to the ‘normal’ state.</p>",
+                          "text": "<p>Otherwise, the Management Station should investigate the errors.</p>",
                           "type": "l1",
                           "history": [
                             {
@@ -15536,14 +15720,26 @@
                                 "name": "Ken Vaughn"
                               },
                               "changedOn": "2025-03-08T17:50:50.289Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<p>The CO shall return fdTransactionMode to the ‘normal’ state.</p>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T22:38:00.260Z"
                             }
                           ]
                         },
                         {
                           "id": "556",
                           "guid": "9520781F-9B48-4268-9240-D18C2EB85F0A",
-                          "text": "<p>Figure 12 Priority Strategy Settings</p>",
-                          "type": "text",
+                          "text": "<pre>&nbsp; sequenceDiagram\n&nbsp; &nbsp; participant Management Station\n&nbsp; &nbsp; participant CO\n\n&nbsp; &nbsp; loop until fdTransactionMode == ('normal')\n&nbsp; &nbsp; &nbsp; Management Station-&gt;&gt;CO: get(fdTransactionMode)\n&nbsp; &nbsp; end\n&nbsp; &nbsp; CO-&gt;&gt;CO: Start Buffering\n&nbsp; &nbsp; loop for each strategy to change\n&nbsp; &nbsp; &nbsp; Management Station-&gt;&gt;CO: set(coStrategyPlanBlock.x)\n&nbsp; &nbsp; end\n&nbsp; &nbsp; loop for each split to change\n&nbsp; &nbsp; &nbsp; Management Station-&gt;&gt;CO: set(coStrategySplitsBlock.x)\n&nbsp; &nbsp; end\n&nbsp; &nbsp; Management Station-&gt;&gt;CO: set(priorityStrategyDefaultCoordPattern.0)\n&nbsp; &nbsp; Management Station-&gt;&gt;CO: set(fdTransactionMode.0 = 'verify')\n&nbsp; &nbsp; CO-&gt;&gt;CO: Perform consistency checks\n&nbsp; &nbsp; loop until fdTransactionStatus != verifying\n&nbsp; &nbsp; &nbsp; Management Station-&gt;&gt;CO: get(fdTransactionStatus)\n&nbsp; &nbsp; end\n&nbsp; &nbsp; alt fdTransactionStatus.0 == 'doneWithNoError'\n&nbsp; &nbsp; &nbsp; Management Station-&gt;&gt;CO: set(fdTransactionMode = 'normal')\n&nbsp; &nbsp; else fdTransactionStatus.0 != 'doneWithNoError'\n&nbsp; &nbsp; &nbsp; Management Station-&gt;&gt;Management Station: investigate errors\n&nbsp; &nbsp; end\n\n</pre>",
+                          "name": "Priority Strategy Settings",
+                          "type": "mermaid",
                           "history": [
                             {
                               "affectedNodeId": "555",
@@ -15555,6 +15751,127 @@
                               "changedOn": "2025-02-28T16:36:54.944Z",
                               "docId": "NTCIP_1211",
                               "structureAction": "Promote"
+                            },
+                            {
+                              "attributesChanged": {
+                                "type": "text"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T18:47:24.060Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<p>Figure 12 Priority Strategy Settings</p>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T18:47:31.869Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "name": null
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T18:47:40.243Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<p>Figure 12&nbsp;</p>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T18:48:40.283Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<pre>&nbsp; &nbsp; &nbsp; &nbsp; sequenceDiagram\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; participant Management Station\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; participant CO\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Management Station-&gt;&gt;CO: get(fdTransactionMode)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CO--&gt;&gt;Management Station: Response\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Management Station-&gt;&gt;CO: set(fdTransactionMode = transaction)</pre><p><br></p>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T18:49:13.432Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<pre>sequenceDiagram\n  participant Management Station\n  participant CO\n  Management Station-&gt;&gt;CO: get(fdTransactionMode)\n  CO--&gt;&gt;Management Station: Response\n  Management Station-&gt;&gt;CO: set(fdTransactionMode = transaction)</pre>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T21:39:15.764Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<pre>sequenceDiagram\n  participant Management Station\n  participant CO\n  Management Station-&gt;&gt;CO: get(fdTransactionMode)\n  CO--&gt;&gt;Management Station: Response\n  Management Station-&gt;&gt;CO: set(fdTransactionMode = transaction)\n&nbsp; CO--&gt;&gt;Management Station: Response\n\n</pre>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T21:47:57.889Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<pre>  sequenceDiagram\n    participant Management Station\n    participant CO\n    loop until fdTransactionMode != verify\n&nbsp;   &nbsp; Management Station-&gt;&gt;CO: get(fdTransactionMode)\n&nbsp; &nbsp;   CO--&gt;&gt;Management Station: Response\n    end\n    Management Station-&gt;&gt;CO: get(fdTransactionMode)\n    CO--&gt;&gt;Management Station: Response\n    Management Station-&gt;&gt;CO: set(fdTransactionMode = transaction)\n    CO--&gt;&gt;Management Station: Response\n\n</pre>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T21:51:37.762Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<pre>  sequenceDiagram\n    participant Management Station\n    participant CO\n\n    loop until fdTransactionMode != verify\n&nbsp;   &nbsp; Management Station-&gt;&gt;CO: get(fdTransactionMode)\n&nbsp; &nbsp;   CO--&gt;&gt;Management Station: Response\n    end\n&nbsp; &nbsp;&nbsp;alt Condition is True&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;CO--&gt;&gt;\"Management Station\": Response (Condition True)&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;\"Management Station\"-&gt;&gt;CO: set(fdTransactionMode = transaction)&nbsp; &nbsp;&nbsp;else Condition is False&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;CO--&gt;&gt;\"Management Station\": Response (Condition False)&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;\"Management Station\"-&gt;&gt;CO: set(fdTransactionMode = default)\n    Management Station-&gt;&gt;CO: get(fdTransactionMode)\n    CO--&gt;&gt;Management Station: Response\n    Management Station-&gt;&gt;CO: set(fdTransactionMode = transaction)\n    CO--&gt;&gt;Management Station: Response\n\n</pre>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T21:55:28.727Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<pre>  sequenceDiagram\n    participant Management Station\n    participant CO\n\n    loop until fdTransactionMode != verify\n&nbsp;   &nbsp; Management Station-&gt;&gt;CO: get(fdTransactionMode)\n&nbsp; &nbsp;   CO--&gt;&gt;Management Station: Response\n    end\n&nbsp; &nbsp;&nbsp;alt fdTransactionMode == 'normal' OR 'done' is True&nbsp; \n&nbsp; &nbsp; &nbsp; Management Station-&gt;&gt;CO: set(CoStrategyPlanBlock = 1)\n&nbsp; &nbsp;   CO--&gt;&gt;Management Station: Response\n&nbsp; &nbsp;&nbsp;else &nbsp;\n      CO--&gt;&gt;Management Station: Response (Condition False)&nbsp; &nbsp; \n&nbsp;     Management Station-&gt;&gt;CO: set(fdTransactionMode = default)\n\n    Management Station-&gt;&gt;CO: get(fdTransactionMode)\n    CO--&gt;&gt;Management Station: Response\n    Management Station-&gt;&gt;CO: set(fdTransactionMode = transaction)\n    CO--&gt;&gt;Management Station: Response\n\n</pre>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T21:55:45.827Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "text": "<pre>  sequenceDiagram\n    participant Management Station\n    participant CO\n\n    loop until fdTransactionMode != verify\n&nbsp;   &nbsp; Management Station-&gt;&gt;CO: get(fdTransactionMode)\n&nbsp; &nbsp;   CO--&gt;&gt;Management Station: Response\n    end\n&nbsp; &nbsp;&nbsp;alt fdTransactionMode == 'normal' OR 'done' is True&nbsp; \n&nbsp; &nbsp; &nbsp; Management Station-&gt;&gt;CO: set(CoStrategyPlanBlock = 1)\n&nbsp; &nbsp;   CO--&gt;&gt;Management Station: Response\n&nbsp; &nbsp;&nbsp;else &nbsp;\n      CO--&gt;&gt;Management Station: Response (Condition False)&nbsp; &nbsp; \n&nbsp;     Management Station-&gt;&gt;CO: set(fdTransactionMode = default)\n    end\n    Management Station-&gt;&gt;CO: get(fdTransactionMode)\n    CO--&gt;&gt;Management Station: Response\n    Management Station-&gt;&gt;CO: set(fdTransactionMode = transaction)\n    CO--&gt;&gt;Management Station: Response\n\n</pre>"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T22:39:42.263Z"
                             }
                           ]
                         }
@@ -17014,8 +17331,8 @@
                       "id": "601",
                       "guid": "F98D6C67-12E4-4ACC-BB0C-725B84C36188",
                       "heading": "Check Definition",
-                      "text": "<p>NOTE—Prior versions of this document included a list of explicit checks to be performed and error codes to be returned in response to set operations on the message to update priority requests. These checks were redundant with standard SNMP operations for all objects and the error codes conflict with those specified for SNMPv3. The following list of checks identify the checks listed in prior versions of this document and identify the equivalent rules and error codes as defined in &nbsp;RFC 3416 Clause 4.2.5. &nbsp;</p>",
-                      "type": "text",
+                      "text": "<p>Prior versions of this document included a list of explicit checks to be performed and error codes to be returned in response to set operations on the message to update priority requests. These checks were redundant with standard SNMP operations for all objects and the error codes conflict with those specified for SNMPv3. The following list of checks identify the checks listed in prior versions of this document and identify the equivalent rules and error codes as defined in &nbsp;RFC 3416 Clause 4.2.5. &nbsp;</p>",
+                      "type": "n",
                       "history": [
                         {
                           "attributesChanged": {
@@ -17027,6 +17344,28 @@
                             "name": "Ken Vaughn"
                           },
                           "changedOn": "2025-03-08T20:10:46.378Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": "text"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-11T22:53:28.653Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>NOTE—Prior versions of this document included a list of explicit checks to be performed and error codes to be returned in response to set operations on the message to update priority requests. These checks were redundant with standard SNMP operations for all objects and the error codes conflict with those specified for SNMPv3. The following list of checks identify the checks listed in prior versions of this document and identify the equivalent rules and error codes as defined in &nbsp;RFC 3416 Clause 4.2.5. &nbsp;</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-11T22:53:35.158Z"
                         }
                       ],
                       "children": [
@@ -19007,8 +19346,8 @@
                             {
                               "id": "714",
                               "guid": "426DB7E1-DEF3-4C93-AB2D-3D8F4EA854A4",
-                              "text": "Note: All ten rows are always transferred and the transfer includes prsBusy.",
-                              "type": "n",
+                              "text": "<p>All ten rows are always transferred and the transfer includes prsBusy.</p>",
+                              "type": "listnote",
                               "history": [
                                 {
                                   "attributesChanged": {
@@ -19031,6 +19370,28 @@
                                     "name": "Ken Vaughn"
                                   },
                                   "changedOn": "2025-03-11T01:43:30.762Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "text": "Note: All ten rows are always transferred and the transfer includes prsBusy."
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Ken Vaughn"
+                                  },
+                                  "changedOn": "2025-03-11T22:59:11.355Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "type": "n"
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Ken Vaughn"
+                                  },
+                                  "changedOn": "2025-03-11T23:06:41.332Z"
                                 }
                               ]
                             },
@@ -19179,7 +19540,8 @@
                             {
                               "id": "724",
                               "guid": "9FA1CFE8-6AAE-42D7-B0F8-32C793706B70",
-                              "text": "Note: All ten rows are always transferred and the transfer includes coBusy.",
+                              "deleted": true,
+                              "text": "<p>All ten rows are always transferred and the transfer includes coBusy.</p>",
                               "type": "n",
                               "history": [
                                 {
@@ -19203,6 +19565,28 @@
                                     "name": "Ken Vaughn"
                                   },
                                   "changedOn": "2025-03-11T01:43:30.762Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "text": "Note: All ten rows are always transferred and the transfer includes coBusy."
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Ken Vaughn"
+                                  },
+                                  "changedOn": "2025-03-11T22:59:00.573Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "deleted": null
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Ken Vaughn"
+                                  },
+                                  "changedOn": "2025-03-11T23:21:00.102Z"
                                 }
                               ]
                             },
@@ -19210,7 +19594,7 @@
                               "id": "725",
                               "guid": "07387171-67F6-48F0-9383-226364D5F4E9",
                               "text": "<p>The CO may send the SetRequest-PDU containing the priorityStrategyStatus.0 before the CO completes the above checks because the communications channel might impose timing constraints on how often a message is sent rather than when a message is ready to be sent. In this event, the coBusy is set to 'false'.</p>",
-                              "type": "n",
+                              "type": "listnote",
                               "history": [
                                 {
                                   "attributesChanged": {
@@ -19266,6 +19650,17 @@
                                     "name": "Ken Vaughn"
                                   },
                                   "changedOn": "2025-03-11T01:43:30.762Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "type": "n"
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Ken Vaughn"
+                                  },
+                                  "changedOn": "2025-03-11T23:21:08.035Z"
                                 }
                               ]
                             },
@@ -20738,7 +21133,7 @@
                           "id": "759",
                           "guid": "581E22C6-C7BC-4834-8642-CD03848387F4",
                           "text": "<p>All ten rows of priority request information and prsBusy are always transferred within the ITSOerString of prsServiceRequest.</p>",
-                          "type": "n",
+                          "type": "listnote",
                           "history": [
                             {
                               "attributesChanged": {
@@ -20750,6 +21145,17 @@
                                 "name": "Ken Vaughn"
                               },
                               "changedOn": "2025-03-08T20:46:51.252Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "type": "n"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-03-11T23:23:06.069Z"
                             }
                           ]
                         },
@@ -25309,7 +25715,6 @@
                   "type": "ot",
                   "links": {
                     "group": [
-                      "NTCIP_1211-9864",
                       "NTCIP_1211-9870"
                     ],
                     "satisfies": [
@@ -25542,6 +25947,20 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-03-11T03:44:21.257Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T00:17:54.774Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1211-9864"
+                        ],
+                        "type": "group"
+                      }
                     }
                   ]
                 },
@@ -26014,7 +26433,6 @@
                   "type": "ot",
                   "links": {
                     "group": [
-                      "NTCIP_1211-9864",
                       "NTCIP_1211-9870"
                     ],
                     "satisfies": [
@@ -26233,6 +26651,20 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-03-11T03:44:21.257Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T00:17:54.774Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1211-9864"
+                        ],
+                        "type": "group"
+                      }
                     }
                   ]
                 },
@@ -28959,7 +29391,6 @@
               "type": "ot",
               "links": {
                 "group": [
-                  "NTCIP_1211-9864",
                   "NTCIP_1211-9870"
                 ],
                 "satisfies": [
@@ -29153,6 +29584,20 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-03-11T03:44:21.257Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T00:17:54.774Z",
+                  "removedLink": {
+                    "target": [
+                      "NTCIP_1211-9864"
+                    ],
+                    "type": "group"
+                  }
                 }
               ]
             },
@@ -34027,7 +34472,7 @@
             {
               "id": "9679",
               "guid": "2984164b-199e-4660-ae22-b07c46816cbf",
-              "heading": "PRS Header",
+              "heading": "CO Header",
               "text": "<pre>MODULE-IDENTITY, OBJECT-IDENTITY, OBJECT-TYPE, Integer32, Unsigned32, Gauge32\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-SMI\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2578&nbsp;&nbsp;\nTEXTUAL-CONVENTION\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-TC\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2579\nOBJECT-GROUP\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-CONF\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;-- RFC 2580\nSnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMP-FRAMEWORK-MIB\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 3411\nITSOerString\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM ISO26048-1-Global-TC\nscp, TrueFalse\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM NTCIP1211-Scp\nsplitNumber, splitPhase\n                                               FROM NTCIP1202-Asc;</pre>",
               "name": "NTCIP1211-ScpCo",
               "type": "mib",
@@ -34075,6 +34520,17 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-03-11T03:12:26.476Z"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": "PRS Header"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T00:12:21.716Z"
                 }
               ]
             },
@@ -34562,7 +35018,7 @@
                   "id": "9618",
                   "guid": "4f421134-82e5-4477-a77b-8cd0b6e1757c",
                   "name": "priorityStrategyRequestedEntry",
-                  "syntax": "<pre>{\npriorityStrategyRequestNumber Integer32,\npriorityStrategyRequested Integer32,\npriorityStrategyRequestedTimeOfServiceDesired Unsigned32,\npriorityStrategyRequestedTimeOfEstimatedDeparture Unsigned32,\npriorityStrategyRequestStatusInCO INTEGER,\npriorityStrategyTimeOfServiceRequested  ITSTimeStamp,\npriorityStrategyTimeOfServiceEstimated  ITSTimeStamp}</pre>",
+                  "syntax": "<pre>{\n  priorityStrategyRequestNumber Integer32,\n  priorityStrategyRequested Integer32,\n  priorityStrategyRequestedTimeOfServiceDesired Unsigned32,\n  priorityStrategyRequestedTimeOfEstimatedDeparture Unsigned32,\n  priorityStrategyRequestStatusInCO INTEGER,\n  priorityStrategyTimeOfServiceRequested  ITSTimeStamp,\n  priorityStrategyTimeOfServiceEstimated  ITSTimeStamp}</pre>",
                   "type": "row",
                   "history": [
                     {
@@ -34608,6 +35064,28 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-03-01T03:08:00.920Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "syntax": "<pre>{\npriorityStrategyRequestNumber Integer32,\npriorityStrategyRequested Integer32,\npriorityStrategyRequestedTimeOfServiceDesired Unsigned32,\npriorityStrategyRequestedTimeOfEstimatedDeparture Unsigned32,\npriorityStrategyRequestStatusInCO INTEGER,\npriorityStrategyTimeOfServiceRequested  ITSTimeStamp,\npriorityStrategyTimeOfServiceEstimated  ITSTimeStamp}</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T00:13:31.029Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "syntax": "<pre>{\n  priorityStrategyRequestNumber Integer32,\npriorityStrategyRequested Integer32,\npriorityStrategyRequestedTimeOfServiceDesired Unsigned32,\npriorityStrategyRequestedTimeOfEstimatedDeparture Unsigned32,\npriorityStrategyRequestStatusInCO INTEGER,\npriorityStrategyTimeOfServiceRequested  ITSTimeStamp,\npriorityStrategyTimeOfServiceEstimated  ITSTimeStamp}</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T00:14:01.994Z"
                     }
                   ]
                 },
@@ -39910,49 +40388,6 @@
                       },
                       "changedOn": "2025-03-11T03:05:30.287Z"
                     }
-                  ],
-                  "children": [
-                    {
-                      "id": "9650",
-                      "guid": "80efc55c-626e-4061-9ad8-b350d1cf5dd8",
-                      "name": "end",
-                      "type": "end",
-                      "history": [
-                        {
-                          "affectedNodeId": "38",
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Ken Vaughn"
-                          },
-                          "changedOn": "2025-02-28T18:53:42.526Z",
-                          "docId": "NTCIP1211-ScpCo",
-                          "structureAction": "Copy"
-                        },
-                        {
-                          "attributesChanged": {
-                            "deleted": null
-                          },
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Ken Vaughn"
-                          },
-                          "changedOn": "2025-03-11T02:55:53.816Z"
-                        },
-                        {
-                          "attributesChanged": {
-                            "deleted": true
-                          },
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Ken Vaughn"
-                          },
-                          "changedOn": "2025-03-11T02:56:05.814Z"
-                        }
-                      ]
-                    }
                   ]
                 }
               ]
@@ -40415,117 +40850,6 @@
                   ]
                 },
                 {
-                  "id": "9864",
-                  "guid": "43425df8-c28e-46e4-bf66-a69cf6827f03",
-                  "text": "<p>The objects required to claim support for SCP PRS Status Monitoring in v03.</p>",
-                  "dotted_oid": "1.3.6.1.4.1.1206.4.2.11.2.127.1.2",
-                  "name": "scpPrsStatusGroupV3",
-                  "oid": "{scpScpGroups 2}",
-                  "status": "current",
-                  "type": "og",
-                  "history": [
-                    {
-                      "affectedNodeId": "9863",
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-11T03:36:08.730Z",
-                      "docId": "NTCIP_1211",
-                      "structureAction": "Copy"
-                    },
-                    {
-                      "attributesChanged": {
-                        "text": "<p>The objects required to claim support for SCP in v03.</p>"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-11T03:36:23.119Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "name": "scpCoCoreGroupV3"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-11T03:36:45.966Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "dotted_oid": "1.3.6.1.4.1.1206.4.2.11.2.127.2.1"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-11T03:36:52.452Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "oid": "{scpCoGroups 1}"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-11T03:37:01.479Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "text": "<p>The objects required to claim support for SCP CO Status Monitoring in v03.</p>"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-11T03:38:49.782Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "name": "scpCoStatusGroupV3"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-11T03:39:01.201Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "dotted_oid": "1.3.6.1.4.1.1206.4.2.11.2.127.2.2"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-11T03:39:08.101Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "oid": "{scpCoGroups 2}"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-11T03:39:14.994Z"
-                    }
-                  ]
-                },
-                {
                   "id": "9865",
                   "guid": "05eefe9c-1de8-4690-8a1a-06092e91440e",
                   "text": "<p>The objects required to claim support for SCP CO Capabilities in v03.</p>",
@@ -40600,6 +40924,58 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-03-11T03:42:09.273Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9650",
+                  "guid": "80efc55c-626e-4061-9ad8-b350d1cf5dd8",
+                  "name": "end",
+                  "type": "end",
+                  "history": [
+                    {
+                      "affectedNodeId": "38",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-02-28T18:53:42.526Z",
+                      "docId": "NTCIP1211-ScpCo",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-11T02:55:53.816Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": true
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-11T02:56:05.814Z"
+                    },
+                    {
+                      "affectedNodeId": "9649",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T00:16:30.039Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
                     }
                   ]
                 }
@@ -42135,8 +42511,43 @@
           "id": "856",
           "guid": "7577D5BE-C8E9-4AE3-8A8E-956339E81050",
           "heading": "Requirements Traceability Matrix (RTM) Table",
-          "text": "<p>Table 7 Requirements Traceability Matrix (RTM)</p>",
-          "type": "text"
+          "name": "Requirements Traceability Matrix (RTM)",
+          "type": "table",
+          "history": [
+            {
+              "attributesChanged": {
+                "text": "<p>Table 7 Requirements Traceability Matrix (RTM)</p>"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-03-12T03:30:28.733Z"
+            },
+            {
+              "attributesChanged": {
+                "type": "text"
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-03-12T03:30:33.539Z"
+            },
+            {
+              "attributesChanged": {
+                "name": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-03-12T03:30:37.682Z"
+            }
+          ]
         }
       ]
     },
@@ -42839,6 +43250,11 @@
         },
         {
           "default": false,
+          "key": "mermaid",
+          "label": "Mermaid"
+        },
+        {
+          "default": false,
           "key": "table",
           "label": "Table"
         },
@@ -42861,6 +43277,11 @@
           "default": false,
           "key": "l2",
           "label": "List Level 2"
+        },
+        {
+          "default": false,
+          "key": "listnote",
+          "label": "List Note"
         },
         {
           "default": false,

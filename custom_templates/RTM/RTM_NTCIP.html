@@ -79,7 +79,7 @@
 			<tr>
 				<td class="mib-col">&nbsp;</td>
 				<td class="mib-col">{{>reference}}</td>
-				<td class="obj-col" colspan="2">{{#if (eval (formatString name) "==" "")}}{{heading}}{{else}}{{name}}{{/if}}</td>
+				<td class="obj-col" colspan="2"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">{{#if (eval (formatString name) "==" "")}}{{heading}}{{else}}{{name}}{{/if}}</a></td>
 				<td class="obj-col">&nbsp;</td>
 			</tr>
     {{/eachInlinkWith}}
@@ -92,7 +92,7 @@
 			<tr>
 				<td class="mib-col">&nbsp;</td>
 				<td class="mib-col">{{>reference}}</td>
-				<td class="obj-col" colspan="2">{{#if (eval (formatString name) "==" "")}}{{heading}}{{else}}{{name}}{{/if}}</td>
+				<td class="obj-col" colspan="2"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">{{#if (eval (formatString name) "==" "")}}{{heading}}{{else}}{{name}}{{/if}}</a></td>
 				<td class="obj-col"> {{formatString (get "note")}}</td>
 			</tr>
 		{{/eachInlinkWith}}
@@ -114,7 +114,7 @@
         {{#eachDocumentObject}}{{#ifHasInlinks "implement"}}
         	<tr{{#if deleted}} class="deleted"{{/if}}>
 				<td class="newrow req-col" colspan="3">
-					{{>reference}}: {{{heading}}}
+					<a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">{{>reference}}: {{{heading}}}</a>
 				</td>
 				<td class="newrow dia-col" colspan="2">
 					{{#eachInlinkWith type="implement"}}

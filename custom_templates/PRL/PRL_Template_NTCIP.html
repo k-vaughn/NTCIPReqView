@@ -352,34 +352,4 @@ div.WordSection1
 		{{/eachDocumentObject}}
       </tbody>
     </table>
-	<p>&nbsp;</p>
-	<table class="rtmTable">
-      <thead>
-        <tr  style="background:#FFFF99;">
-		  <th class="frsh">FR ID</th>
-          <th class="frh">Functional<br />Requirement</th>
-          <th class="objh">Object ID</th>
-          <th class="nameh">Object Name / Dialog</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#eachDocumentObject}}{{#ifHasInlinks "implement"}}
-        	<tr style="background:silver;">
-				
-			{{#if (eval docId "==" (get "source"))}}
-				<td class="sum-left"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">{{{sectionNumber}}}</a></td>
-			{{else}}
-				<td class="sum-left"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}</a></td>
-			{{/if}}
-				<td class="sum-middle" colspan="2">{{{heading}}}</td>
-				<td class="sum-right">{{#eachInlinkWith type="implement"}}{{{replaceString docId "_" "-"}}}&sect;{{{sectionNumber}}}: {{{heading}}}{{/eachInlinkWith}}</td>
-				</td>
-			</tr>
-			{{set "opt_constraint" ""}}
-			{{set "cond_constraint" ""}}
-			{{> directRTM}}
-        {{/ifHasInlinks}}{{/eachDocumentObject}}
-      </tbody>
-    </table>
-
 </body>

@@ -2,14 +2,14 @@
   "id": "NTCIP_1211",
   "guid": "98517503-D6D8-4528-A342-11CF04043F16",
   "name": "NTCIP1211-SCP",
-  "lastId": 9874,
+  "lastId": 9875,
   "createdOn": "2025-02-28T14:34:59.440Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-03-12T03:30:37.682Z",
+  "lastChangedOn": "2025-03-12T20:13:52.157Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -6830,9 +6830,9 @@
             {
               "id": "9784",
               "guid": "d64438db-c471-4866-a7a9-91290984934b",
-              "heading": "ISO 26048-1 Needs Included",
+              "heading": "Core Needs from ISO 26048-1",
               "text": "<p>All the architectural needs are defined within the user needs of ISO 26048-1. Commonly used architectural needs within the scope of a ESS are listed in the PRL with references to the relevant ISO 26048-1 clauses and include the following:</p>",
-              "type": "text",
+              "type": "unp",
               "history": [
                 {
                   "affectedNodeId": "2059",
@@ -6844,6 +6844,28 @@
                   "changedOn": "2025-03-08T23:31:35.507Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Copy"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": "ISO 26048-1 Needs Included"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T19:40:18.903Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": "text"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T19:41:44.613Z"
                 }
               ],
               "children": [
@@ -6961,300 +6983,46 @@
                       "docId": "NTCIP_1204",
                       "structureAction": "Copy"
                     }
-                  ]
-                },
-                {
-                  "id": "9789",
-                  "guid": "006486d6-90e3-4783-b423-e48f54e2a626",
-                  "text": "<p>Identity,</p>",
-                  "type": "l2",
-                  "history": [
-                    {
-                      "affectedNodeId": "2678",
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-08T23:31:35.507Z",
-                      "docId": "NTCIP_1204",
-                      "structureAction": "Copy"
-                    }
-                  ]
-                },
-                {
-                  "id": "9790",
-                  "guid": "cd31bd4f-4300-4048-9377-06adc6901986",
-                  "text": "<p>Location,</p>",
-                  "type": "l2",
-                  "history": [
-                    {
-                      "affectedNodeId": "2679",
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-08T23:31:35.507Z",
-                      "docId": "NTCIP_1204",
-                      "structureAction": "Copy"
-                    }
-                  ]
-                },
-                {
-                  "id": "9791",
-                  "guid": "051f01a8-d6ba-4f45-90e8-5ba5736fa90a",
-                  "text": "<p>Power source,</p>",
-                  "type": "l2",
-                  "history": [
-                    {
-                      "affectedNodeId": "2680",
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-08T23:31:35.507Z",
-                      "docId": "NTCIP_1204",
-                      "structureAction": "Copy"
-                    }
-                  ]
-                },
-                {
-                  "id": "9792",
-                  "guid": "25de5223-cf3b-44c1-8627-9801f49bc53a",
-                  "text": "<p>Default language,</p>",
-                  "type": "l2",
-                  "history": [
-                    {
-                      "affectedNodeId": "2681",
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-08T23:31:35.507Z",
-                      "docId": "NTCIP_1204",
-                      "structureAction": "Copy"
-                    }
-                  ]
-                },
-                {
-                  "id": "9793",
-                  "guid": "b8226067-a116-410d-88e5-b6cecd250625",
-                  "text": "<p>Capabilities (e.g., which objects are supported, maximum message size),</p>",
-                  "type": "l2",
-                  "history": [
-                    {
-                      "affectedNodeId": "2682",
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-08T23:31:35.507Z",
-                      "docId": "NTCIP_1204",
-                      "structureAction": "Copy"
-                    }
-                  ]
-                },
-                {
-                  "id": "9794",
-                  "guid": "37f75370-1520-415e-82f3-c9cf73c4b2ab",
-                  "text": "<p>Status, and</p>",
-                  "type": "l2",
-                  "history": [
-                    {
-                      "affectedNodeId": "2683",
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-08T23:31:35.507Z",
-                      "docId": "NTCIP_1204",
-                      "structureAction": "Copy"
-                    }
-                  ]
-                },
-                {
-                  "id": "9795",
-                  "guid": "afd993b3-7910-4c24-9409-6b7d3c0e6747",
-                  "text": "<p>Configuration identifier.</p>",
-                  "type": "l2",
-                  "history": [
-                    {
-                      "affectedNodeId": "2684",
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-08T23:31:35.507Z",
-                      "docId": "NTCIP_1204",
-                      "structureAction": "Copy"
-                    }
-                  ]
-                },
-                {
-                  "id": "9796",
-                  "guid": "c82a50e6-340a-4d65-a02a-50f38d7270d0",
-                  "heading": "Monitor field device components",
-                  "type": "text",
-                  "history": [
-                    {
-                      "affectedNodeId": "2069",
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-08T23:31:35.507Z",
-                      "docId": "NTCIP_1204",
-                      "structureAction": "Copy"
-                    },
-                    {
-                      "attributesChanged": {
-                        "type": "text"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-11T16:58:31.257Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "type": "unp"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-11T16:59:07.551Z"
-                    }
                   ],
                   "children": [
                     {
-                      "id": "9824",
-                      "guid": "4db4001d-e605-40a9-94f1-677ecd1859b0",
-                      "heading": "Monitor ambient environment",
-                      "type": "text",
+                      "id": "9789",
+                      "guid": "006486d6-90e3-4783-b423-e48f54e2a626",
+                      "text": "<p>Identity,</p>",
+                      "type": "l2",
                       "history": [
                         {
-                          "affectedNodeId": "9796",
+                          "affectedNodeId": "2678",
                           "changedBy": {
                             "company": "Trevilon",
                             "email": "kvaughn@trevilon.com",
                             "name": "Ken Vaughn"
                           },
-                          "changedOn": "2025-03-08T23:37:50.668Z",
+                          "changedOn": "2025-03-08T23:31:35.507Z",
+                          "docId": "NTCIP_1204",
+                          "structureAction": "Copy"
+                        },
+                        {
+                          "affectedNodeId": "9784",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-12T20:04:14.098Z",
                           "docId": "NTCIP_1211",
-                          "structureAction": "Create"
-                        },
-                        {
-                          "attributesChanged": {
-                            "heading": null
-                          },
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Ken Vaughn"
-                          },
-                          "changedOn": "2025-03-08T23:38:09.824Z"
-                        },
-                        {
-                          "attributesChanged": {
-                            "type": null
-                          },
-                          "changedBy": {
-                            "company": "Trevilon",
-                            "email": "kvaughn@trevilon.com",
-                            "name": "Ken Vaughn"
-                          },
-                          "changedOn": "2025-03-08T23:38:52.672Z"
-                        }
-                      ],
-                      "children": [
-                        {
-                          "id": "9825",
-                          "guid": "0eaa52c9-8ba5-4fbf-8deb-7cd179a70ed3",
-                          "heading": "Monitor ambient air temperature",
-                          "text": "<p>The body of this document provides a more robust way to monitor ambient air temperature (2.5.2.1.3) that predates the design contained in ISO 26048-1.</p>",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "1299",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:38:42.108Z",
-                              "docId": "NTCIP_1209",
-                              "structureAction": "Copy"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "9826",
-                          "guid": "f956b97e-2919-4539-aca6-f51198590be4",
-                          "heading": "Monitor ambient relative humidity",
-                          "text": "<p>The body of this document provides a more robust way to monitor ambient relative humidity (2.5.2.1.4) that predates the design contained in ISO 26048-1.</p>",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "1300",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:38:42.108Z",
-                              "docId": "NTCIP_1209",
-                              "structureAction": "Copy"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "9827",
-                          "guid": "c52a0797-08cd-4df7-8e21-918772b1cdc9",
-                          "heading": "Monitor ambient light",
-                          "text": "<p>allows the device to measure ambient light levels (e.g., from the sun).</p>",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "1302",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:38:42.108Z",
-                              "docId": "NTCIP_1209",
-                              "structureAction": "Copy"
-                            }
-                          ]
+                          "structureAction": "Demote"
                         }
                       ]
                     },
                     {
-                      "id": "9797",
-                      "guid": "65271490-f679-44bb-bf29-ecb43f7a7410",
-                      "heading": "Monitor field device enclosure",
-                      "text": "<p>allows a user to monitor the device environment and enclosure(s), including:</p>",
-                      "type": "text",
+                      "id": "9790",
+                      "guid": "cd31bd4f-4300-4048-9377-06adc6901986",
+                      "text": "<p>Location,</p>",
+                      "type": "l2",
                       "history": [
                         {
-                          "affectedNodeId": "2074",
+                          "affectedNodeId": "2679",
                           "changedBy": {
                             "company": "Trevilon",
                             "email": "kvaughn@trevilon.com",
@@ -7263,137 +7031,28 @@
                           "changedOn": "2025-03-08T23:31:35.507Z",
                           "docId": "NTCIP_1204",
                           "structureAction": "Copy"
-                        }
-                      ],
-                      "children": [
-                        {
-                          "id": "9798",
-                          "guid": "1ed3e32b-c049-4cdb-ae65-9c470bef5919",
-                          "heading": "Monitor field device doors",
-                          "conformance": "CabinetCtrl:M",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2075",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            },
-                            {
-                              "attributesChanged": {
-                                "conformance": "M"
-                              },
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:54:24.166Z"
-                            }
-                          ]
                         },
                         {
-                          "id": "9799",
-                          "guid": "91526916-faeb-49f2-8d19-ee233c69e14f",
-                          "heading": "Monitor field device enclosure air temperature",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2076",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            },
-                            {
-                              "attributesChanged": {
-                                "conformance": "O"
-                              },
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:54:06.643Z"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "9800",
-                          "guid": "08e3c1e8-1054-4daf-ab71-37f17d4980e1",
-                          "heading": "Monitor field device processor temperature",
-                          "conformance": "O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2077",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "9801",
-                          "guid": "9a0315dd-54a2-4416-a159-473be2b711dc",
-                          "heading": "Monitor field device enclosure humidity",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2078",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            },
-                            {
-                              "attributesChanged": {
-                                "conformance": "O"
-                              },
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:54:06.643Z"
-                            }
-                          ]
+                          "affectedNodeId": "9784",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-12T20:04:14.098Z",
+                          "docId": "NTCIP_1211",
+                          "structureAction": "Demote"
                         }
                       ]
                     },
                     {
-                      "id": "9802",
-                      "guid": "a88b0a33-ade4-4db8-ae41-185c35581fff",
-                      "heading": "Manage enclosure climate control components",
-                      "text": "<p>allows a user to monitor and control climate control components, including:</p>",
-                      "type": "text",
+                      "id": "9791",
+                      "guid": "051f01a8-d6ba-4f45-90e8-5ba5736fa90a",
+                      "text": "<p>Power source,</p>",
+                      "type": "l2",
                       "history": [
                         {
-                          "affectedNodeId": "2079",
+                          "affectedNodeId": "2680",
                           "changedBy": {
                             "company": "Trevilon",
                             "email": "kvaughn@trevilon.com",
@@ -7402,180 +7061,28 @@
                           "changedOn": "2025-03-08T23:31:35.507Z",
                           "docId": "NTCIP_1204",
                           "structureAction": "Copy"
-                        }
-                      ],
-                      "children": [
-                        {
-                          "id": "9803",
-                          "guid": "1dce08ac-6e0d-4fe4-8776-070b270cdffb",
-                          "heading": "Manage field device fans",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2080",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            },
-                            {
-                              "attributesChanged": {
-                                "conformance": "O"
-                              },
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:54:06.643Z"
-                            }
-                          ]
                         },
                         {
-                          "id": "9804",
-                          "guid": "a48dae22-d0fc-42b1-b45a-e789900f67f0",
-                          "heading": "Manage field device heaters",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2081",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            },
-                            {
-                              "attributesChanged": {
-                                "conformance": "O"
-                              },
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:54:06.643Z"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "9805",
-                          "guid": "5a491fd4-0a18-4b21-b896-8a89f71b9954",
-                          "heading": "Manage field device dehumidifiers",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2082",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            },
-                            {
-                              "attributesChanged": {
-                                "conformance": "O"
-                              },
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:54:06.643Z"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "9806",
-                          "guid": "d7dbc836-df51-4092-931b-4f2d6d8e0f88",
-                          "heading": "Manage field device air conditioners",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2083",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            },
-                            {
-                              "attributesChanged": {
-                                "conformance": "O"
-                              },
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:54:06.643Z"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "9807",
-                          "guid": "9b116b6b-a597-4431-a7cc-6a0914170ab2",
-                          "heading": "Manage field device thermostat",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2084",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            },
-                            {
-                              "attributesChanged": {
-                                "conformance": "O"
-                              },
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:54:06.643Z"
-                            }
-                          ]
+                          "affectedNodeId": "9784",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-12T20:04:14.098Z",
+                          "docId": "NTCIP_1211",
+                          "structureAction": "Demote"
                         }
                       ]
                     },
                     {
-                      "id": "9808",
-                      "guid": "ca38bbde-787c-4a50-82b6-b5efa3ba58ed",
-                      "heading": "Monitor field device power",
-                      "text": "<p>allows a user to monitor and control power equipment, including:</p>",
-                      "type": "text",
+                      "id": "9792",
+                      "guid": "25de5223-cf3b-44c1-8627-9801f49bc53a",
+                      "text": "<p>Default language,</p>",
+                      "type": "l2",
                       "history": [
                         {
-                          "affectedNodeId": "2085",
+                          "affectedNodeId": "2681",
                           "changedBy": {
                             "company": "Trevilon",
                             "email": "kvaughn@trevilon.com",
@@ -7584,212 +7091,28 @@
                           "changedOn": "2025-03-08T23:31:35.507Z",
                           "docId": "NTCIP_1204",
                           "structureAction": "Copy"
-                        }
-                      ],
-                      "children": [
-                        {
-                          "id": "9809",
-                          "guid": "3c0ad51c-e857-4205-8b90-fe5c1d5924d6",
-                          "heading": "Monitor field device power supplies",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2086",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            },
-                            {
-                              "attributesChanged": {
-                                "conformance": "O"
-                              },
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:54:06.643Z"
-                            }
-                          ]
                         },
                         {
-                          "id": "9810",
-                          "guid": "8307d448-b9d4-4bc2-9d3a-31a4b8606417",
-                          "heading": "Monitor field device mains power",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2087",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            },
-                            {
-                              "attributesChanged": {
-                                "conformance": "O"
-                              },
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:54:06.643Z"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "9811",
-                          "guid": "01fd82b4-4eb7-4e04-a6c9-6543ab1f4392",
-                          "heading": "Monitor field device battery power",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2088",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            },
-                            {
-                              "attributesChanged": {
-                                "conformance": "O"
-                              },
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:54:06.643Z"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "9812",
-                          "guid": "d67aa9ba-40d1-4688-80fa-e412c7c2b6fe",
-                          "heading": "Monitor field device generator power",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2089",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            },
-                            {
-                              "attributesChanged": {
-                                "conformance": "O"
-                              },
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:54:06.643Z"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "9813",
-                          "guid": "759da456-22c7-4139-8aac-920aac261465",
-                          "heading": "Monitor field device solar power",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2090",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            },
-                            {
-                              "attributesChanged": {
-                                "conformance": "O"
-                              },
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:54:06.643Z"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "9814",
-                          "guid": "f8831093-65b8-4dc4-9feb-1eb864569b4e",
-                          "heading": "Monitor field device wind power",
-                          "conformance": "CabinetCtrl:O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2091",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            },
-                            {
-                              "attributesChanged": {
-                                "conformance": "O"
-                              },
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:54:06.643Z"
-                            }
-                          ]
+                          "affectedNodeId": "9784",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-12T20:04:14.098Z",
+                          "docId": "NTCIP_1211",
+                          "structureAction": "Demote"
                         }
                       ]
                     },
                     {
-                      "id": "9815",
-                      "guid": "b7d65aad-29c6-4bf6-a6b2-fc28610814ef",
-                      "heading": "Manage auxiliary ports",
-                      "text": "<p>allows a user to monitor and control support equipment, including:</p>",
-                      "type": "text",
+                      "id": "9793",
+                      "guid": "b8226067-a116-410d-88e5-b6cecd250625",
+                      "text": "<p>Capabilities (e.g., which objects are supported, maximum message size),</p>",
+                      "type": "l2",
                       "history": [
                         {
-                          "affectedNodeId": "2092",
+                          "affectedNodeId": "2682",
                           "changedBy": {
                             "company": "Trevilon",
                             "email": "kvaughn@trevilon.com",
@@ -7798,73 +7121,354 @@
                           "changedOn": "2025-03-08T23:31:35.507Z",
                           "docId": "NTCIP_1204",
                           "structureAction": "Copy"
-                        }
-                      ],
-                      "children": [
-                        {
-                          "id": "9816",
-                          "guid": "bb56269a-652b-41c6-9145-8a94a33fe980",
-                          "heading": "Manage field device auxiliary bi-directional ports",
-                          "conformance": "O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2093",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            }
-                          ]
                         },
                         {
-                          "id": "9817",
-                          "guid": "8af02951-c497-4933-aa96-b717199aff28",
-                          "heading": "Monitor field device auxiliary inputs",
-                          "conformance": "O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2094",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            }
-                          ]
-                        },
-                        {
-                          "id": "9818",
-                          "guid": "acbeeb69-021e-4b40-98e3-f9e54f18368d",
-                          "heading": "Manage field device auxiliary outputs",
-                          "conformance": "O",
-                          "status": "current",
-                          "type": "unr",
-                          "history": [
-                            {
-                              "affectedNodeId": "2095",
-                              "changedBy": {
-                                "company": "Trevilon",
-                                "email": "kvaughn@trevilon.com",
-                                "name": "Ken Vaughn"
-                              },
-                              "changedOn": "2025-03-08T23:31:35.507Z",
-                              "docId": "NTCIP_1204",
-                              "structureAction": "Copy"
-                            }
-                          ]
+                          "affectedNodeId": "9784",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-12T20:04:14.098Z",
+                          "docId": "NTCIP_1211",
+                          "structureAction": "Demote"
                         }
                       ]
+                    },
+                    {
+                      "id": "9794",
+                      "guid": "37f75370-1520-415e-82f3-c9cf73c4b2ab",
+                      "text": "<p>Status, and</p>",
+                      "type": "l2",
+                      "history": [
+                        {
+                          "affectedNodeId": "2683",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-08T23:31:35.507Z",
+                          "docId": "NTCIP_1204",
+                          "structureAction": "Copy"
+                        },
+                        {
+                          "affectedNodeId": "9784",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-12T20:04:14.098Z",
+                          "docId": "NTCIP_1211",
+                          "structureAction": "Demote"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9795",
+                      "guid": "afd993b3-7910-4c24-9409-6b7d3c0e6747",
+                      "text": "<p>Configuration identifier.</p>",
+                      "type": "l2",
+                      "history": [
+                        {
+                          "affectedNodeId": "2684",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-08T23:31:35.507Z",
+                          "docId": "NTCIP_1204",
+                          "structureAction": "Copy"
+                        },
+                        {
+                          "affectedNodeId": "9784",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-12T20:04:14.098Z",
+                          "docId": "NTCIP_1211",
+                          "structureAction": "Demote"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9800",
+                  "guid": "08e3c1e8-1054-4daf-ab71-37f17d4980e1",
+                  "heading": "Monitor field device processor temperature",
+                  "text": "<p>allows the device to monitor the air temperature of processors within the controller.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2077",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9797",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:06.858Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:51:08.801Z"
+                    },
+                    {
+                      "affectedNodeId": "9796",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:02:56.490Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
+                    },
+                    {
+                      "affectedNodeId": "9784",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:04:02.132Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
+                    }
+                  ]
+                },
+                {
+                  "id": "9816",
+                  "guid": "bb56269a-652b-41c6-9145-8a94a33fe980",
+                  "heading": "Manage field device auxiliary bi-directional ports",
+                  "text": "<p>allows the device to monitor and control the bi-directional ports on the controller.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2093",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9815",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:29.374Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:55:55.912Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>allows the device to monitor and control the bi-directional ports associated with the cabinet.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:38.543Z"
+                    },
+                    {
+                      "affectedNodeId": "9796",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:06:27.435Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
+                    }
+                  ]
+                },
+                {
+                  "id": "9817",
+                  "guid": "8af02951-c497-4933-aa96-b717199aff28",
+                  "heading": "Monitor field device auxiliary inputs",
+                  "text": "<p>allows the device to monitor the input ports on the controller.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2094",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9815",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:29.374Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:56:20.238Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>allows the device to monitor the input ports associated with the cabinet.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:50.317Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>allows the device to monitor the input ports associated on the controller.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:06:09.035Z"
+                    },
+                    {
+                      "affectedNodeId": "9796",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:06:27.435Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
+                    }
+                  ]
+                },
+                {
+                  "id": "9818",
+                  "guid": "acbeeb69-021e-4b40-98e3-f9e54f18368d",
+                  "heading": "Manage field device auxiliary outputs",
+                  "text": "<p>allows the device to monitor and control the output ports on the controller.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2095",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9815",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:29.374Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:56:38.299Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>allows the device to monitor and control the output ports associated with the cabinet.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:06:02.987Z"
+                    },
+                    {
+                      "affectedNodeId": "9796",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:06:27.435Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
                     }
                   ]
                 },
@@ -8012,43 +7616,34 @@
               ]
             },
             {
-              "id": "9831",
-              "guid": "26d4eb92-9a21-48cb-bd4f-09a7bacdbcb1",
-              "heading": "ISO 26048-1 Needs not Envisioned for SCP",
-              "type": "text",
+              "id": "9796",
+              "guid": "c82a50e6-340a-4d65-a02a-50f38d7270d0",
+              "heading": "Cabinet Management Needs from ISO 26048-1",
+              "text": "<p>Controllers are typically deployed within a cabinet, but a single cabinet can house multiple controllers. Deployments often wish to monitor information about the cabinet, which is done through a controller, but not every controller within a cabinet needs to be able to report this information. Within each cabinet, one controller should be specified as the cabinet controller. The following user needs relate to the information that this cabinet controller needs to be able to manage.</p>",
+              "conformance": "O",
+              "type": "unp",
               "history": [
                 {
-                  "affectedNodeId": "279",
+                  "affectedNodeId": "2069",
                   "changedBy": {
                     "company": "Trevilon",
                     "email": "kvaughn@trevilon.com",
                     "name": "Ken Vaughn"
                   },
-                  "changedOn": "2025-03-08T23:57:13.270Z",
-                  "docId": "NTCIP_1211",
-                  "structureAction": "Create"
+                  "changedOn": "2025-03-08T23:31:35.507Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Copy"
                 },
                 {
                   "attributesChanged": {
-                    "heading": null
+                    "type": "text"
                   },
                   "changedBy": {
                     "company": "Trevilon",
                     "email": "kvaughn@trevilon.com",
                     "name": "Ken Vaughn"
                   },
-                  "changedOn": "2025-03-08T23:57:20.688Z"
-                },
-                {
-                  "attributesChanged": {
-                    "type": null
-                  },
-                  "changedBy": {
-                    "company": "Trevilon",
-                    "email": "kvaughn@trevilon.com",
-                    "name": "Ken Vaughn"
-                  },
-                  "changedOn": "2025-03-11T02:03:38.796Z"
+                  "changedOn": "2025-03-11T16:58:31.257Z"
                 },
                 {
                   "attributesChanged": {
@@ -8059,20 +7654,319 @@
                     "email": "kvaughn@trevilon.com",
                     "name": "Ken Vaughn"
                   },
-                  "changedOn": "2025-03-12T03:11:16.060Z"
+                  "changedOn": "2025-03-11T16:59:07.551Z"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": "Monitor field device components",
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T18:43:15.378Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": "text"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T18:43:33.272Z"
+                },
+                {
+                  "attributesChanged": {
+                    "conformance": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T18:43:43.213Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": "unp"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T18:48:02.458Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>Controllers are typically deployed within a cabinet, but a single cabinet can house multiple controllers. Deployments often wish to monitor information about the cabinet, which is done through a controller, but not every controller within a cabinet needs to be able to report this information. Within each cabinet, one controller should be specified as the cabinet controller. The following user needs relate to the information that this cabinet controller needs to be able to manage.</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T18:48:19.985Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T19:29:37.224Z"
+                },
+                {
+                  "affectedNodeId": "9784",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T19:39:35.530Z",
+                  "docId": "NTCIP_1211",
+                  "structureAction": "Promote"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": "Manage the field device cabinet (CabinetCrtl) "
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T19:40:56.045Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": "text"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T19:41:53.501Z"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": "Managing the Field Device Cabinet (CabinetCrtl)"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T19:46:37.703Z"
                 }
               ],
               "children": [
                 {
-                  "id": "9823",
-                  "guid": "b19168e5-c0da-4357-b305-a14b0297fb9d",
-                  "heading": "Issue trigger-based commands",
-                  "text": "<p>allows a user to define trigger conditions (e.g., an object value exceeding a defined value) and to automatically send another device an SNMP set request when the trigger condition occurs. For example, when ice is detected by a pavement sensor, command an attached gate to close (however, this example is discouraged as a gate closure should include verification mechanisms not offered by this feature to ensure safe operations).</p>",
+                  "id": "9825",
+                  "guid": "0eaa52c9-8ba5-4fbf-8deb-7cd179a70ed3",
+                  "heading": "Monitor ambient air temperature",
+                  "text": "<p>allows the device to monitor the ambient temperature of the air outside of the cabinet.</p>",
+                  "conformance": "O",
                   "status": "current",
-                  "type": "text",
+                  "type": "unr",
                   "history": [
                     {
-                      "affectedNodeId": "2104",
+                      "affectedNodeId": "1299",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:38:42.108Z",
+                      "docId": "NTCIP_1209",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9824",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:43:55.940Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The body of this document provides a more robust way to monitor ambient air temperature (2.5.2.1.3) that predates the design contained in ISO 26048-1.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:48:13.916Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>allows the device to measure ambient temperature.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:48:24.044Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:49:34.656Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:04:53.835Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9826",
+                  "guid": "f956b97e-2919-4539-aca6-f51198590be4",
+                  "heading": "Monitor ambient relative humidity",
+                  "text": "<p>allows the device to monitor the ambient humidity of the air outside of the cabinet.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "1300",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:38:42.108Z",
+                      "docId": "NTCIP_1209",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9824",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:43:55.940Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The body of this document provides a more robust way to monitor ambient relative humidity (2.5.2.1.4) that predates the design contained in ISO 26048-1.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:48:29.563Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:49:52.036Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:04:53.835Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9827",
+                  "guid": "c52a0797-08cd-4df7-8e21-918772b1cdc9",
+                  "heading": "Monitor ambient light",
+                  "text": "<p>allows the device to measure ambient light levels (e.g., from the sun).</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "1302",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:38:42.108Z",
+                      "docId": "NTCIP_1209",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9824",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:43:55.940Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:04:53.835Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9798",
+                  "guid": "1ed3e32b-c049-4cdb-ae65-9c470bef5919",
+                  "heading": "Monitor field device doors",
+                  "text": "<p>allows the device to monitor the open/closed status of cabinet doors.</p>",
+                  "conformance": "M",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2075",
                       "changedBy": {
                         "company": "Trevilon",
                         "email": "kvaughn@trevilon.com",
@@ -8083,15 +7977,70 @@
                       "structureAction": "Copy"
                     },
                     {
-                      "affectedNodeId": "9784",
+                      "attributesChanged": {
+                        "conformance": "M"
+                      },
                       "changedBy": {
                         "company": "Trevilon",
                         "email": "kvaughn@trevilon.com",
                         "name": "Ken Vaughn"
                       },
-                      "changedOn": "2025-03-08T23:57:41.583Z",
+                      "changedOn": "2025-03-08T23:54:24.166Z"
+                    },
+                    {
+                      "affectedNodeId": "9797",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:06.858Z",
                       "docId": "NTCIP_1211",
-                      "structureAction": "Cut"
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:50:31.204Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:M"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:04:46.237Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9799",
+                  "guid": "91526916-faeb-49f2-8d19-ee233c69e14f",
+                  "heading": "Monitor field device enclosure air temperature",
+                  "text": "<p>allows the device to monitor the temperature of the air inside of the cabinet.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2076",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
                     },
                     {
                       "attributesChanged": {
@@ -8102,18 +8051,843 @@
                         "email": "kvaughn@trevilon.com",
                         "name": "Ken Vaughn"
                       },
-                      "changedOn": "2025-03-08T23:59:51.428Z"
+                      "changedOn": "2025-03-08T23:54:06.643Z"
+                    },
+                    {
+                      "affectedNodeId": "9797",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:06.858Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
                     },
                     {
                       "attributesChanged": {
-                        "type": "unr"
+                        "text": null
                       },
                       "changedBy": {
                         "company": "Trevilon",
                         "email": "kvaughn@trevilon.com",
                         "name": "Ken Vaughn"
                       },
-                      "changedOn": "2025-03-12T03:11:19.932Z"
+                      "changedOn": "2025-03-12T19:50:48.298Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:04.116Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9801",
+                  "guid": "9a0315dd-54a2-4416-a159-473be2b711dc",
+                  "heading": "Monitor field device enclosure humidity",
+                  "text": "<p>allows the device to monitor the humidity inside of the cabinet.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2078",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:54:06.643Z"
+                    },
+                    {
+                      "affectedNodeId": "9797",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:06.858Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:51:26.136Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:04.116Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9803",
+                  "guid": "1dce08ac-6e0d-4fe4-8776-070b270cdffb",
+                  "heading": "Manage field device fans",
+                  "text": "<p>allows the device to monitor and control the fans associated with the cabinet.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2080",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:54:06.643Z"
+                    },
+                    {
+                      "affectedNodeId": "9802",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:13.075Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:52:01.889Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>allows the device to monitor and control the fans for the cabinet.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:52:24.364Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:04.116Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9804",
+                  "guid": "a48dae22-d0fc-42b1-b45a-e789900f67f0",
+                  "heading": "Manage field device heaters",
+                  "text": "<p>allows the device to monitor and control the heaters associated with the cabinet.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2081",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:54:06.643Z"
+                    },
+                    {
+                      "affectedNodeId": "9802",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:13.075Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:52:16.151Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:04.116Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9805",
+                  "guid": "5a491fd4-0a18-4b21-b896-8a89f71b9954",
+                  "heading": "Manage field device dehumidifiers",
+                  "text": "<p>allows the device to monitor and control the dehumidifiers associated with the cabinet.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2082",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:54:06.643Z"
+                    },
+                    {
+                      "affectedNodeId": "9802",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:13.075Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:52:40.369Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:04.116Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9806",
+                  "guid": "d7dbc836-df51-4092-931b-4f2d6d8e0f88",
+                  "heading": "Manage field device air conditioners",
+                  "text": "<p>allows the device to monitor and control the air conditioners associated with the cabinet.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2083",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:54:06.643Z"
+                    },
+                    {
+                      "affectedNodeId": "9802",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:13.075Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:52:55.939Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:04.116Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9807",
+                  "guid": "9b116b6b-a597-4431-a7cc-6a0914170ab2",
+                  "heading": "Manage field device thermostat",
+                  "text": "<p>allows the device to monitor and control the thermostat associated with the cabinet.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2084",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:54:06.643Z"
+                    },
+                    {
+                      "affectedNodeId": "9802",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:13.075Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:53:16.493Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:04.116Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9809",
+                  "guid": "3c0ad51c-e857-4205-8b90-fe5c1d5924d6",
+                  "heading": "Monitor field device power supplies",
+                  "text": "<p>allows the device to monitor the power supplies associated with the cabinet.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2086",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:54:06.643Z"
+                    },
+                    {
+                      "affectedNodeId": "9808",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:22.072Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:53:52.954Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:04.116Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9810",
+                  "guid": "8307d448-b9d4-4bc2-9d3a-31a4b8606417",
+                  "heading": "Monitor field device mains power",
+                  "text": "<p>allows the device to monitor the mains power associated with the cabinet.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2087",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:54:06.643Z"
+                    },
+                    {
+                      "affectedNodeId": "9808",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:22.072Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:54:08.494Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:04.116Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9811",
+                  "guid": "01fd82b4-4eb7-4e04-a6c9-6543ab1f4392",
+                  "heading": "Monitor field device battery power",
+                  "text": "<p>allows the device to monitor the batteries associated with the cabinet.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2088",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:54:06.643Z"
+                    },
+                    {
+                      "affectedNodeId": "9808",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:22.072Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:54:26.989Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:04.116Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9812",
+                  "guid": "d67aa9ba-40d1-4688-80fa-e412c7c2b6fe",
+                  "heading": "Monitor field device generator power",
+                  "text": "<p>allows the device to monitor the generators associated with the cabinet.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2089",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:54:06.643Z"
+                    },
+                    {
+                      "affectedNodeId": "9808",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:22.072Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:54:44.119Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:04.116Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9813",
+                  "guid": "759da456-22c7-4139-8aac-920aac261465",
+                  "heading": "Monitor field device solar power",
+                  "text": "<p>allows the device to monitor the solar power system associated with the cabinet.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2090",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:54:06.643Z"
+                    },
+                    {
+                      "affectedNodeId": "9808",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:22.072Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:55:02.665Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:04.116Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "9814",
+                  "guid": "f8831093-65b8-4dc4-9feb-1eb864569b4e",
+                  "heading": "Monitor field device wind power",
+                  "text": "<p>allows the device to monitor the wind power system associated with the cabinet.</p>",
+                  "conformance": "O",
+                  "status": "current",
+                  "type": "unr",
+                  "history": [
+                    {
+                      "affectedNodeId": "2091",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:54:06.643Z"
+                    },
+                    {
+                      "affectedNodeId": "9808",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:44:22.072Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Promote"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T19:55:15.809Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "CabinetCtrl:O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:05:04.116Z"
                     }
                   ]
                 }
@@ -8164,7 +8938,7 @@
                   "id": "9830",
                   "guid": "3fc28b38-8155-4581-b5c7-182300d431a2",
                   "heading": "Efficient exchange of data",
-                  "text": "<p>allows a management station to define dynamic objects that can be used for frequent requests to reduce communications overhead. For example, rather than monitoring 15 discreet status objects, the 15 objects can be placed into a dynamic object and retrieved as a single entity. This can be useful when a management station frequently exchanges a large number of integer values with the device.</p>",
+                  "text": "<p>This iused need is intended to allow a management station to define dynamic objects that can be used for frequent requests to reduce communications overhead. For example, rather than monitoring 15 discreet status objects, the 15 objects can be placed into a dynamic object and retrieved as a single entity. This can be useful when a management station frequently exchanges a large number of integer values with the device. However, this user need is not foreseen to be applicable to signal control and priority data and its inclusion potentially decreases interoperability; therefore it is prohibited in this version of the document for the data defined in this document.</p>",
                   "additional": "<p>Prohibited for SCP objects</p>",
                   "conformance": "X",
                   "status": "current",
@@ -8213,6 +8987,201 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-03-09T00:01:27.587Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>allows a management station to define dynamic objects that can be used for frequent requests to reduce communications overhead. For example, rather than monitoring 15 discreet status objects, the 15 objects can be placed into a dynamic object and retrieved as a single entity. This can be useful when a management station frequently exchanges a large number of integer values with the device.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:11:50.010Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>This iused need is intended to allow a management station to define dynamic objects that can be used for frequent requests to reduce communications overhead. For example, rather than monitoring 15 discreet status objects, the 15 objects can be placed into a dynamic object and retrieved as a single entity. This can be useful when a management station frequently exchanges a large number of integer values with the device. However, this user need is not foreseen to be applicable to signal control and priority data and its inclusion potentially decreases interoperability; therefore it is prohibited in this version of the document.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:12:14.556Z"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "9875",
+                      "guid": "580bc65b-e6ab-4bd3-8747-b70b40597e78",
+                      "text": "<p>If the controller also acts as another device that supports this feature (e.g., a signal controller), the device can support the feature as long as it does not allow the data defined by this document to be included within the dynamic objects.</p>",
+                      "type": "n",
+                      "history": [
+                        {
+                          "affectedNodeId": "9830",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-12T20:12:18.279Z",
+                          "docId": "NTCIP_1211",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-12T20:13:28.418Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-12T20:13:33.297Z"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9831",
+              "guid": "26d4eb92-9a21-48cb-bd4f-09a7bacdbcb1",
+              "heading": "ISO 26048-1 Needs not Envisioned for SCP",
+              "type": "text",
+              "history": [
+                {
+                  "affectedNodeId": "279",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-08T23:57:13.270Z",
+                  "docId": "NTCIP_1211",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-08T23:57:20.688Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-11T02:03:38.796Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": "unp"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T03:11:16.060Z"
+                },
+                {
+                  "affectedNodeId": "9832",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-12T20:13:52.157Z",
+                  "docId": "NTCIP_1211",
+                  "structureAction": "SwapDown"
+                }
+              ],
+              "children": [
+                {
+                  "id": "9823",
+                  "guid": "b19168e5-c0da-4357-b305-a14b0297fb9d",
+                  "heading": "Issue trigger-based commands",
+                  "text": "<p>This user need is intended to allow a user to define trigger conditions (e.g., an object value exceeding a defined value) and to automatically send another device an SNMP set request when the trigger condition occurs. For example, when ice is detected by a pavement sensor, command an attached gate to close (however, this example is discouraged as a gate closure should include verification mechanisms not offered by this feature to ensure safe operations). This feature is not foreseen as being applicable to signal control and priority devices, but it is not prohibited.</p>",
+                  "status": "current",
+                  "type": "text",
+                  "history": [
+                    {
+                      "affectedNodeId": "2104",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:31:35.507Z",
+                      "docId": "NTCIP_1204",
+                      "structureAction": "Copy"
+                    },
+                    {
+                      "affectedNodeId": "9784",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:57:41.583Z",
+                      "docId": "NTCIP_1211",
+                      "structureAction": "Cut"
+                    },
+                    {
+                      "attributesChanged": {
+                        "conformance": "O"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-08T23:59:51.428Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": "unr"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T03:11:19.932Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>allows a user to define trigger conditions (e.g., an object value exceeding a defined value) and to automatically send another device an SNMP set request when the trigger condition occurs. For example, when ice is detected by a pavement sensor, command an attached gate to close (however, this example is discouraged as a gate closure should include verification mechanisms not offered by this feature to ensure safe operations).</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-12T20:10:01.942Z"
                     }
                   ]
                 }
@@ -43114,6 +44083,9 @@
         },
         {
           "key": "previsouly deprecated"
+        },
+        {
+          "key": "reinstated"
         }
       ]
     },

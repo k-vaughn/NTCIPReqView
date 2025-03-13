@@ -1,14 +1,14 @@
 {
   "id": "NTCIP_1204",
   "guid": "0759092F-8D8C-4322-AAA5-017F0A4F46A1",
-  "lastId": 3332,
+  "lastId": 3345,
   "createdOn": "2023-08-03T09:58:29",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-03-13T00:13:40.937Z",
+  "lastChangedOn": "2025-03-13T03:11:11.268Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -10247,6 +10247,7 @@
           "guid": "e71e6ee3-3f7c-4a2d-a685-c11d80eb7cf0",
           "heading": "Class Diagrams",
           "text": "<p>The relationships between data elements are described through the use of UML class diagrams. The class diagrams shown in this document are produced by PlantUML and only show current objects defined in this document. Figure 9 provides a sample class diagram.</p>",
+          "type": "text",
           "history": [
             {
               "affectedNodeId": "1438",
@@ -10280,12 +10281,26 @@
                 "name": "Ken Vaughn"
               },
               "changedOn": "2025-03-12T21:46:32.108Z"
+            },
+            {
+              "attributesChanged": {
+                "type": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-03-13T03:10:48.392Z"
             }
           ],
           "children": [
             {
               "id": "3332",
               "guid": "a33eb2bf-5ba2-4b62-9c7e-56f39c62e7df",
+              "heading": "ESS Characteristics",
+              "text": "<pre>classDiagram\n&nbsp; &nbsp; class Ess {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essTypeofStation : INTEGER\n&nbsp; &nbsp; }\n\n\n&nbsp; &nbsp; class MobilePlatform {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essMobileObservationGroundStateV4 : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essMobileObservationPavementV4 : INTEGER\n&nbsp; &nbsp; }\n\n\n&nbsp; &nbsp; Ess --&gt; MobilePlatform : Contains</pre>",
+              "type": "mermaid",
               "history": [
                 {
                   "affectedNodeId": "3331",
@@ -10297,6 +10312,649 @@
                   "changedOn": "2025-03-12T21:46:37.208Z",
                   "docId": "NTCIP_1204",
                   "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:48:47.392Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:11:11.268Z"
+                }
+              ]
+            },
+            {
+              "id": "3333",
+              "guid": "495fb473-d29c-4968-9d9a-8915fb68ef00",
+              "heading": "Pressure Sensor",
+              "text": "<pre>classDiagram\n&nbsp; &nbsp; class Ess {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essNumPressureSensors : Integer32\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; class essPressureSensorEntry {\n&nbsp; &nbsp; &nbsp; &nbsp; **◆ essPressureSensorIndex** : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPressureSensorLocation : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essPressureSensorAtmosphericPressure : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPressureSensorXOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPressureSensorYOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPressureSensorZOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essPressureSensorEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; Ess --&gt; essPressureSensorEntry : Contains</pre>",
+              "type": "mermaid",
+              "history": [
+                {
+                  "affectedNodeId": "3331",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:48:57.804Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:49:18.004Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:50:10.650Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:11:11.268Z"
+                }
+              ]
+            },
+            {
+              "id": "3334",
+              "guid": "86c44d56-9d9d-4f98-97a4-4ba246cb4a99",
+              "heading": "Wind Data",
+              "text": "<pre>classDiagram\n&nbsp; &nbsp; class Ess {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essWindSituation : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorTableNumSensors : Integer32\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; class windSensorSensorEntry {\n&nbsp; &nbsp; &nbsp; &nbsp; **◆ windSensorIndex** : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ windSensorLocation : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorAvgSpeed : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorAvgDirection : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorSpotSpeed : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorSpotDirection : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorGustSpeed : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorGustDirection : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorSituation : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ windSensorXOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ windSensorYOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ windSensorZOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp;&nbsp;Ess --&gt; windSensorSensorEntry : Contains</pre>",
+              "type": "mermaid",
+              "history": [
+                {
+                  "affectedNodeId": "3331",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:50:16.878Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:51:14.142Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<pre>classDiagram\n&nbsp; &nbsp; class Ess {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essWindSituation : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorTableNumSensors : Integer32\n&nbsp; &nbsp; }\n\n\n&nbsp; &nbsp; class windSensorSensorEntry {\n&nbsp; &nbsp; &nbsp; &nbsp; **◆ windSensorIndex** : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ windSensorLocation : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorAvgSpeed : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorAvgDirection : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorSpotSpeed : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorSpotDirection : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorGustSpeed : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorGustDirection : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorSituation : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ windSensorXOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ windSensorYOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ windSensorZOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ windSensorEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; }</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:52:10.650Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:11:11.268Z"
+                }
+              ]
+            },
+            {
+              "id": "3335",
+              "guid": "a3501169-35f1-416b-9d44-9c6c8ecd0ac0",
+              "heading": "Temperature",
+              "text": "<pre>classDiagram\n&nbsp; &nbsp; class Ess {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essNumTemperatureSensors : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essMaxTemp : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essMinTemp : Integer32\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; class essTemperatureSensorEntry {\n&nbsp; &nbsp; &nbsp; &nbsp; **◆ essTemperatureSensorIndex** : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essAirTemperature : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essTemperatureSensorLocation : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essTemperatureSensorXOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essTemperatureSensorYOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essTemperatureSensorZOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essTemperatureSensorEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; Ess --&gt; essTemperatureSensorEntry : Contains</pre>",
+              "type": "mermaid",
+              "history": [
+                {
+                  "affectedNodeId": "3331",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:51:23.328Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:53:12.763Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:11:11.268Z"
+                }
+              ]
+            },
+            {
+              "id": "3336",
+              "guid": "2253eb3d-1aa9-4c70-8135-84ccc433b15e",
+              "heading": "Precipitation",
+              "text": "<pre>classDiagram\nclass Ess {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essRoadwaySnowDepth : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essPrecipSituation : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorTableNumSensors : Integer32\n}\n\n&nbsp; &nbsp; class precipitationSensorEntry {\n&nbsp; &nbsp; &nbsp; &nbsp; **◆ precipitationSensorIndex** : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ precipitationSensorLocation : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ precipitationSensorPeriod : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorAdjacentSnowDepth : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorRoadwaySnowDepth : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorRoadwaySnowPackDepth : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorPrecipYesNo : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorPrecipRate : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorSnowfallAccumRate : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorPrecipSituation : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorPrecipitationOneHour : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorPrecipitationThreeHours : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorPrecipitationSixHours : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorPrecipitationTwelveHours : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorPrecipitation24Hours : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorPrecipitationUserDefined : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorPrecipStartTimeV5 : ITSTimeStamp\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorPrecipEndTimeV5 : ITSTimeStamp\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ precipitationSensorXOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ precipitationSensorYOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ precipitationSensorZOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ precipitationSensorEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; Ess --&gt; precipitationSensorEntry : Contains</pre>",
+              "type": "mermaid",
+              "history": [
+                {
+                  "affectedNodeId": "3331",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:53:16.801Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:54:54.407Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:11:11.268Z"
+                }
+              ]
+            },
+            {
+              "id": "3337",
+              "guid": "22432c03-05e1-42de-94da-36d7767ab832",
+              "heading": "Water Level",
+              "text": "<pre>classDiagram\nclass Ess {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ waterLevelSensorTableNumSensors : Integer32\n}\n\n&nbsp; &nbsp; class waterLevelSensorEntry {\n&nbsp; &nbsp; &nbsp; &nbsp; **◆ waterLevelSensorIndex** : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ waterLevelSensorReading : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ waterLevelSensorWarningLevel : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ waterLevelSensorLocation : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ waterLevelSensorReferencePoint : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ waterLevelSensorXOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ waterLevelSensorYOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ waterLevelSensorZOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ waterLevelSensorEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; Ess --&gt; waterLevelSensorEntry : Contains</pre>",
+              "type": "mermaid",
+              "history": [
+                {
+                  "affectedNodeId": "3331",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:55:02.153Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:56:06.822Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:11:11.268Z"
+                }
+              ]
+            },
+            {
+              "id": "3338",
+              "guid": "e7396a9b-0462-4a9c-a7fd-91f30603f0ec",
+              "heading": "Humidity",
+              "text": "<pre>classDiagram\nclass Ess {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ humiditySensorTableNumSensors : Integer32\n}\n\n&nbsp; &nbsp; class humiditySensorEntry {\n&nbsp; &nbsp; &nbsp; &nbsp; **◆ humiditySensorIndex** : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ humiditySensorLocation : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ humiditySensorRelativeHumidity : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ humiditySensorTemperatureInformation : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ humiditySensorWetBulbTemp : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ humiditySensorDewpointTemp : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ humiditySensorXOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ humiditySensorYOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ humiditySensorZOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ humiditySensorEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; Ess --&gt; humiditySensorEntry : Contains</pre>",
+              "type": "mermaid",
+              "history": [
+                {
+                  "affectedNodeId": "3331",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:56:34.683Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:57:22.788Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:11:11.268Z"
+                }
+              ]
+            },
+            {
+              "id": "3339",
+              "guid": "b1269447-35cd-4f31-b966-962a6e6798ac",
+              "heading": "Radiation",
+              "text": "<pre>classDiagram\nclass Ess {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essTotalRadiationPeriod : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ radiationSensorTableNumSensors : Integer32\n}\n\n&nbsp; &nbsp; class radiationSensorEntry {\n&nbsp; &nbsp; &nbsp; &nbsp; **◆ radiationSensorIndex** : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ radiationSensorLocation : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essTotalSunV4 : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essInstantaneousTerrestrialRadiationV4 : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essInstantaneousSolarRadiationV4 : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essTotalRadiationV4 : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ radiationSensorXOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ radiationSensorYOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ radiationSensorZOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ radiationSensorEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; Ess --&gt; radiationSensorEntry : Contains</pre>",
+              "type": "mermaid",
+              "history": [
+                {
+                  "affectedNodeId": "3331",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:57:47.163Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:57:55.261Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:58:29.020Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:11:11.268Z"
+                }
+              ]
+            },
+            {
+              "id": "3340",
+              "guid": "c847aa62-f8a2-49b2-a6c6-4ae3093746d4",
+              "heading": "Visibility",
+              "text": "<pre>classDiagram\nclass Ess {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essCloudSituationV4 : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essNumVisibilitySensors : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essVisibilitySituation : INTEGER\n}\n\n&nbsp; &nbsp; class essVisibilitySensorEntry {\n&nbsp; &nbsp; &nbsp; &nbsp; **◆ essVisibilitySensorIndex** : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essVisibilitySensorLocation : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essVisibilitySensorXOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essVisibilitySensorYOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essVisibilitySensorZOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essVisibilitySensorDirection : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essVisibilitySensorEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essVisibilitySensorCurrentReading : Integer32\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; Ess --&gt; essVisibilitySensorEntry : Contains</pre>",
+              "type": "mermaid",
+              "history": [
+                {
+                  "affectedNodeId": "3331",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:58:41.526Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:59:52.025Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:11:11.268Z"
+                }
+              ]
+            },
+            {
+              "id": "3341",
+              "guid": "b62bbbec-d961-42d4-ba39-63e5ac91eae7",
+              "heading": "Pavement Sensor",
+              "text": "<pre>classDiagram\nclass Ess {\n◆ numEssPavementSensors : Integer32\n}\n\n&nbsp; &nbsp; class essPavementSensorEntry {\n&nbsp; &nbsp; &nbsp; &nbsp; **◆ essPavementSensorIndex** : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPavementSensorLocation : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPavementType : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPavementExposure : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPavementSensorType : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSurfaceTemperature : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essPavementTemperature : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSurfaceSalinity : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSurfaceFreezePoint : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSurfaceBlackIceSignal : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essPavementSensorError : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSurfaceIceOrWaterDepth : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSurfaceConductivityV2 : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ pavementSensorTemperatureDepth : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ pavementSensorSurfaceCondition : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ pavementSensorForecastCondition : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ pavementSensorFrictionCoefficient : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ pavementIcePercentage : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPavementMonitorXOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPavementMonitorYOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPavementMonitorZOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPavementMonitorArea : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPavementSensorXOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPavementSensorYOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essPavementSensorEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; Ess --&gt; essPavementSensorEntry : Contains</pre>",
+              "type": "mermaid",
+              "history": [
+                {
+                  "affectedNodeId": "3331",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T02:59:55.377Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:00:52.883Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:11:11.268Z"
+                }
+              ]
+            },
+            {
+              "id": "3342",
+              "guid": "465f36a1-39aa-485b-9169-5012ae04ef1e",
+              "heading": "Subsurface Data",
+              "text": "<pre>classDiagram\nclass Ess {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ numEssSubSurfaceSensors : Integer32\n}\n\n&nbsp; &nbsp; class essSubSurfaceSensorEntry {\n&nbsp; &nbsp; &nbsp; &nbsp; **◆ essSubSurfaceSensorIndex** : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essSubSurfaceSensorLocation : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essSubSurfaceType : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essSubSurfaceSensorDepth : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSubSurfaceSensorTemperature : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSubSurfaceSensorEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSubSurfaceMoisture : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSubSurfaceSensorError : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essSubSurfaceSensorXOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essSubSurfaceSensorYOffset : ITSInteger16\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; Ess --&gt; essSubSurfaceSensorEntry : Contains</pre>",
+              "type": "mermaid",
+              "history": [
+                {
+                  "affectedNodeId": "3331",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:01:00.937Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:02:41.762Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:11:11.268Z"
+                }
+              ]
+            },
+            {
+              "id": "3343",
+              "guid": "15806506-a2cf-49c9-94b9-8e45b2801bd5",
+              "heading": "Air Quality Data",
+              "text": "<pre>classDiagram\n&nbsp; &nbsp;&nbsp;class Ess {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ airQualitySensorTableNumSensors : Integer32\n&nbsp; &nbsp;&nbsp;}\n\n&nbsp; &nbsp; class airQualitySensorEntry {\n&nbsp; &nbsp; &nbsp; &nbsp; **◆ airQualitySensorIndex** : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ airQualitySensorXOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ airQualitySensorYOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ airQualitySensorZOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ airQualitySensorEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; class AirQualityData {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essCO : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essNO2 : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSO2 : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essPM10 : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essPM25 : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essCO2V4 : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essNOV4 : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essO3V4 : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essPM1 : Integer32\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; Ess --&gt; airQualitySensorEntry : Contains\n&nbsp; &nbsp; Ess --&gt; AirQualityData : Contains</pre>",
+              "type": "mermaid",
+              "history": [
+                {
+                  "affectedNodeId": "3331",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:02:44.966Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:03:05.875Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:04:26.779Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:11:11.268Z"
+                }
+              ]
+            },
+            {
+              "id": "3344",
+              "guid": "fe963eef-8157-4ffb-a482-06461f6c64ad",
+              "heading": "Snapshot Data",
+              "text": "<pre>classDiagram\n&nbsp; &nbsp; class Ess {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSnapshotNumberOfCameras : Integer32\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; class essSnapshotCameraEntry {\n&nbsp; &nbsp; &nbsp; &nbsp; **◆ essSnapshotCameraIndex** : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essSnapshotCameraDescription : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSnapshotCameraStoragePath : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essSnapshotCameraCommand : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSnapshotCameraError : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSnapshotCameraSupportedFormats : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essSnapshotCameraFileFormat : DisplayString\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essSnapshotCameraFilenameV5 : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essSnapshotCameraEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; Ess --&gt; essSnapshotCameraEntry : Contains</pre>",
+              "type": "mermaid",
+              "history": [
+                {
+                  "affectedNodeId": "3331",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:04:47.058Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:04:58.581Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:05:41.705Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:11:11.268Z"
+                }
+              ]
+            },
+            {
+              "id": "3345",
+              "guid": "5eff0144-9d6c-4da6-8213-33230acf1900",
+              "heading": "Pavement Treatment System",
+              "text": "<pre>classDiagram\nclass Ess {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ numEssTreatments : Integer32\n}\n\n&nbsp; &nbsp; class essPavementTreatmentEntry {\n&nbsp; &nbsp; &nbsp; &nbsp; **◆ essPavementTreatmentIndex** : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPaveTreatProductTye : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPaveTreatProductForm : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPercentProductMix : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPaveTreatmentAmount : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPaveTreatmentWidth : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ essPavementTreatmentEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; }\n\n&nbsp; &nbsp; class PavementTreatmentData {\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ ptsSprayerState : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ ptsSignalDuration : Integer32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ ptsSignalEventCount : Counter32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ ptsActiveEventCount : Counter32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ ptsInactiveEventCount : Counter32\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ ptsError : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ ptsMonitoringDetectors : OCTET STRING\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ ptsOperationalModeV3 : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ ptsCommandStateV3 : INTEGER\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ essPavementTreatmentLocation : SnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ ptsLastSignalEventTime : ITSTimeStamp\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ ptsLastActiveEventTime : ITSTimeStamp\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ ptsLastInactiveEventTime : ITSTimeStamp\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ ptsXOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◼ ptsYOffset : ITSInteger16\n&nbsp; &nbsp; &nbsp; &nbsp; ◆ ptsEntityID : PhysicalIndexOrZero\n&nbsp; &nbsp; }\n&nbsp; &nbsp;&nbsp;\n&nbsp; &nbsp; Ess --&gt; essPavementTreatmentEntry : Contains\n&nbsp; &nbsp; Ess --&gt; PavementTreatmentData : Contains</pre>",
+              "type": "mermaid",
+              "history": [
+                {
+                  "affectedNodeId": "3331",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:06:19.420Z",
+                  "docId": "NTCIP_1204",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:06:28.300Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:07:59.174Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T03:11:11.268Z"
                 }
               ]
             }
@@ -54223,9 +54881,9 @@
               "text": "<p>The number of milliseconds after 00:00:00.000 UTC on ptsLastActiveEventDate that the last active event occurred.</p>",
               "access": "read-only",
               "action": "added",
-              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.27",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.25",
               "name": "ptsLastActiveEventTime",
-              "oid": "{ essNtcipTreatment 27 }",
+              "oid": "{ essNtcipTreatment 25 }",
               "param_type": "status",
               "status": "current",
               "syntax": "<p>ITSTimeStamp</p>",
@@ -54318,6 +54976,28 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-03-13T00:10:21.556Z"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.27"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T00:19:59.045Z"
+                },
+                {
+                  "attributesChanged": {
+                    "oid": "{ essNtcipTreatment 27 }"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T00:20:02.609Z"
                 }
               ]
             },
@@ -54328,9 +55008,9 @@
               "text": "<p>The number of milliseconds after 00:00:00.000 UTC on ptsLastActiveEventDate that the last inactive event occurred.</p>",
               "access": "read-only",
               "action": "added",
-              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.29",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.26",
               "name": "ptsLastInactiveEventTime",
-              "oid": "{ essNtcipTreatment 29 }",
+              "oid": "{ essNtcipTreatment 26 }",
               "param_type": "status",
               "status": "current",
               "syntax": "<p>ITSTimeStamp</p>",
@@ -54423,6 +55103,28 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-03-13T00:10:32.430Z"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.29"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T00:20:09.686Z"
+                },
+                {
+                  "attributesChanged": {
+                    "oid": "{ essNtcipTreatment 29 }"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T00:20:14.330Z"
                 }
               ]
             },
@@ -54433,10 +55135,10 @@
               "text": "<p>The lateral offset of the pavement treatment system from the field device's reference location as defined by fdConfiguredLatitude and fdConfiguredLongitude. </p>",
               "access": "read-write",
               "action": "added",
-              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.30",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.27",
               "format": "<p>For stationary devices, the X offset shall indicate the eastward (positive) or westward (negative) distance from the reference location. For transportable and mobile devices, the X offset shall indicate distances to the starboard side (positive) or port side (negative) of the reference location on the vehicle.</p>",
               "name": "ptsXOffset",
-              "oid": "{ essNtcipTreatment 30 }",
+              "oid": "{ essNtcipTreatment 27 }",
               "param_type": "configuration",
               "status": "current",
               "syntax": "<p>ITSInteger16</p>",
@@ -54504,6 +55206,28 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-13T14:30:30.799Z"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.30"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T00:20:20.931Z"
+                },
+                {
+                  "attributesChanged": {
+                    "oid": "{ essNtcipTreatment 30 }"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T00:20:26.029Z"
                 }
               ]
             },
@@ -54514,10 +55238,10 @@
               "text": "<p>The Y offset of the pavement treatment system from the field device's reference location as defined by fdConfiguredLatitude and fdConfiguredLongitude. </p>",
               "access": "read-write",
               "action": "added",
-              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.31",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.28",
               "format": "<p>For stationary devices, the Y offset shall indicate the northward (positive) or southward (negative) distance from the reference location. For transportable and mobile devices, the Y offset shall indicate distances to the fore (positive) or aft (negative) of the reference location on the vehicle.</p>",
               "name": "ptsYOffset",
-              "oid": "{ essNtcipTreatment 31 }",
+              "oid": "{ essNtcipTreatment 28 }",
               "param_type": "configuration",
               "status": "current",
               "syntax": "<p>ITSInteger16</p>",
@@ -54585,6 +55309,28 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-08-13T14:30:30.799Z"
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.31"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T00:20:31.948Z"
+                },
+                {
+                  "attributesChanged": {
+                    "oid": "{ essNtcipTreatment 31 }"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T00:20:37.729Z"
                 }
               ]
             },
@@ -54595,11 +55341,11 @@
               "text": "<p>Indicates the row in the entPhysicalTable (See RFC 4133) that contains information about the pavement treatment system, such as the manufacturer, model, and hardware and software revision identifiers. </p>",
               "access": "read-only",
               "action": "added",
-              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.32",
+              "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.29",
               "format": "<pre>The value of zero indicates that this information is not available.</pre>",
               "info": "<p>The mechanism used to configure this value when adding or modifying a sensor is not defined by this document and is considered manufacturer-specific.</p>",
               "name": "ptsEntityID",
-              "oid": "{ essNtcipTreatment 32 }",
+              "oid": "{ essNtcipTreatment 29 }",
               "param_type": "status",
               "status": "current",
               "syntax": "<p>PhysicalIndexOrZero</p>",
@@ -54739,6 +55485,28 @@
                     ],
                     "type": "satisfies"
                   }
+                },
+                {
+                  "attributesChanged": {
+                    "dotted_oid": "1.3.6.1.4.1.1206.4.2.5.2.11.32"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T00:20:44.128Z"
+                },
+                {
+                  "attributesChanged": {
+                    "oid": "{ essNtcipTreatment 32 }"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-13T00:20:51.130Z"
                 }
               ]
             }

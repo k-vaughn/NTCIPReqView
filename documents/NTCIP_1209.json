@@ -2,14 +2,14 @@
   "id": "NTCIP_1209",
   "guid": "b6c50740-139f-40c4-a637-3737252e97e1",
   "name": "NTCIP 1209",
-  "lastId": 1306,
+  "lastId": 1307,
   "createdOn": "2025-02-18T22:29:51.369Z",
   "createdBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-02-22T00:13:03.147Z",
+  "lastChangedOn": "2025-03-20T20:23:47.828Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -27776,6 +27776,70 @@
                   ]
                 },
                 {
+                  "id": "1307",
+                  "guid": "4f3d60d7-d74b-4801-b0e8-148e98c05bc3",
+                  "text": "<pre style=\"text-align: start; text-decoration: none;\">sequenceDiagram\n&nbsp; &nbsp; %%{ init: { \"sequence\": { \"noteAlign\": \"left\" } } }%%\n&nbsp; &nbsp; participant Management Station\n&nbsp; &nbsp; participant TSS\n\n\n&nbsp; Note over Management Station, TSS: (Precondition) The management&lt;br/&gt; station shall determine the number&lt;br/&gt;of outputs and the number&lt;br/&gt;of sensor zones supported by&lt;br/&gt;the TSS.\n&nbsp; &nbsp; Management Station-&gt;&gt;TSS: set(outputConfig.a)\n&nbsp; &nbsp; Note over Management Station, TSS: outputConfig.a is a structure with:&lt;br/&gt;a) Sensor zone number&lt;br/&gt;b) Failsafe mode&lt;br/&gt;c) Mode status, and&lt;br/&gt;d) Label&lt;br/&gt;Where a = output to configure\n&nbsp; &nbsp; TSS--&gt;&gt;Management Station: Response &nbsp; &nbsp;\n\n\n</pre><p><br></p>",
+                  "name": "Sample Sequence Diagram for Output Configuration",
+                  "type": "mermaid",
+                  "history": [
+                    {
+                      "affectedNodeId": "726",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-20T19:10:53.747Z",
+                      "docId": "NTCIP_1209",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-20T19:11:15.466Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-20T19:12:51.766Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "name": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-20T19:13:06.383Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<pre style=\"text-align: start; text-decoration: none;\">&nbsp; sequenceDiagram\n&nbsp; &nbsp; %%{config: { 'noteAlign': 'left' } }%%\n&nbsp; &nbsp;&nbsp;participant&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;TSS\n&nbsp; &nbsp;&nbsp;Note&nbsp;over&nbsp;Management&nbsp;Station,&nbsp;TSS:(Precondition) The management station&lt;br&gt;shall determine the number of outputs and&lt;br&gt;the number of sensor zones supported by&lt;br&gt;the TSS.\n&nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;TSS:&nbsp;set(outputConfig.a)\n&nbsp; &nbsp; Note over Management Station, TSS: outputConfig.a is a structure with:&lt;br&gt;a) Sensor zone number&lt;br&gt;b) Failsafe mode&lt;br&gt;c) Mode status, and &lt;br&gt;d) Label&lt;br&gt;Where a = output to configure\n&nbsp; &nbsp; TSS--&gt;&gt;Management Station: Response</pre><p><br></p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-20T20:23:47.828Z"
+                    }
+                  ]
+                },
+                {
                   "id": "731",
                   "guid": "71225a04-e0c5-490a-ab38-f01b3db75863",
                   "type": "text",
@@ -46286,6 +46350,11 @@
           "default": false,
           "key": "f",
           "label": "Figure"
+        },
+        {
+          "default": false,
+          "key": "mermaid",
+          "label": "Mermaid"
         },
         {
           "default": false,

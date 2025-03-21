@@ -9,7 +9,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-03-18T22:23:24.753Z",
+  "lastChangedOn": "2025-03-21T15:50:56.029Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -26367,6 +26367,7 @@
           "id": "9878",
           "guid": "34aa8a4a-929b-43b6-b594-fec7b9359cac",
           "heading": "Signal Control and Priority MIB",
+          "type": "text",
           "history": [
             {
               "affectedNodeId": "9561",
@@ -26389,6 +26390,17 @@
                 "name": "Ken Vaughn"
               },
               "changedOn": "2025-03-18T19:30:59.029Z"
+            },
+            {
+              "attributesChanged": {
+                "type": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-03-21T15:30:03.183Z"
             }
           ],
           "children": [
@@ -26617,7 +26629,7 @@
             {
               "id": "9884",
               "guid": "302d28a9-637a-4f41-94c7-862242fd88c2",
-              "text": "<p>&lt;Definition&gt; An indication of a true or false value.</p>",
+              "text": "<p>An indication of a true or false value.</p>",
               "name": "ScpTrueFalse",
               "status": "current",
               "syntax": "<pre>INTEGER { false (0),\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;true (255) }</pre>",
@@ -26644,6 +26656,17 @@
                   "changedOn": "2025-03-18T19:32:55.550Z",
                   "docId": "NTCIP_1211",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>&lt;Definition&gt; An indication of a true or false value.</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-21T15:36:56.946Z"
                 }
               ]
             },
@@ -26725,7 +26748,7 @@
               "id": "9568",
               "guid": "60fb56b1-d683-4a25-b688-e5af94ab6340",
               "heading": "PRS Header",
-              "text": "<pre>MODULE-IDENTITY, OBJECT-IDENTITY, OBJECT-TYPE, Integer32, Unsigned32, Gauge32\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-SMI\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2578&nbsp;&nbsp;\nTEXTUAL-CONVENTION, AutonomousType\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-TC\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2579\nOBJECT-GROUP\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-CONF\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;-- RFC 2580\nSnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMP-FRAMEWORK-MIB\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 3411\nITSOerString, ITSTimeStamp, ITSDailyTimeMs\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM ISO26048-1-Global-TC\nscp, ScpTrueFalse\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM NTCIP1211-Scp;</pre>",
+              "text": "<pre>MODULE-IDENTITY, OBJECT-IDENTITY, OBJECT-TYPE, Integer32, Unsigned32, Gauge32\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-SMI\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2578&nbsp;&nbsp;\nAutonomousType\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-TC\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2579\nOBJECT-GROUP\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-CONF\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;-- RFC 2580\nSnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMP-FRAMEWORK-MIB\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 3411\nITSOerString, ITSTimeStamp, ITSDailyTimeMs\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM ISO26048-1-Global-TC\nscp, ScpTrueFalse\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM NTCIP1211-Scp;</pre>",
               "name": "NTCIP1211-Prs",
               "type": "mib",
               "history": [
@@ -26886,6 +26909,17 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-03-18T20:29:39.961Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<pre>MODULE-IDENTITY, OBJECT-IDENTITY, OBJECT-TYPE, Integer32, Unsigned32, Gauge32\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-SMI\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2578&nbsp;&nbsp;\nTEXTUAL-CONVENTION, AutonomousType\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-TC\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2579\nOBJECT-GROUP\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-CONF\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;-- RFC 2580\nSnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMP-FRAMEWORK-MIB\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 3411\nITSOerString, ITSTimeStamp, ITSDailyTimeMs\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM ISO26048-1-Global-TC\nscp, ScpTrueFalse\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM NTCIP1211-Scp;</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-21T15:45:16.848Z"
                 }
               ]
             },
@@ -39913,7 +39947,7 @@
               "id": "9679",
               "guid": "2984164b-199e-4660-ae22-b07c46816cbf",
               "heading": "CO Header",
-              "text": "<pre>MODULE-IDENTITY, OBJECT-IDENTITY, OBJECT-TYPE, Integer32, Unsigned32, Gauge32\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-SMI\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2578&nbsp;&nbsp;\nTEXTUAL-CONVENTION\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-TC\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2579\nOBJECT-GROUP\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-CONF\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;-- RFC 2580\nSnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMP-FRAMEWORK-MIB\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 3411\nITSOerString, ITSTimeStamp\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM ISO26048-1-Global-TC\nscp, ScpTrueFalse\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM NTCIP1211-Scp\nsplitNumber, splitPhase\n                                               FROM NTCIP1202-Asc;</pre>",
+              "text": "<pre>MODULE-IDENTITY, OBJECT-IDENTITY, OBJECT-TYPE, Integer32, Unsigned32\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-SMI\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2578&nbsp;&nbsp;\nOBJECT-GROUP\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-CONF\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;-- RFC 2580\nSnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMP-FRAMEWORK-MIB\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 3411\nITSOerString, ITSTimeStamp\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM ISO26048-1-Global-TC\nscp, ScpTrueFalse\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM NTCIP1211-Scp\nsplitNumber, splitPhase\n                                               FROM NTCIP1202-Asc;</pre>",
               "name": "NTCIP1211-ScpCo",
               "type": "mib",
               "history": [
@@ -39993,6 +40027,17 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-03-18T21:01:27.134Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<pre>MODULE-IDENTITY, OBJECT-IDENTITY, OBJECT-TYPE, Integer32, Unsigned32, Gauge32\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-SMI\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2578&nbsp;&nbsp;\nTEXTUAL-CONVENTION\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-TC\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 2579\nOBJECT-GROUP\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMPv2-CONF\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;-- RFC 2580\nSnmpAdminString\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM SNMP-FRAMEWORK-MIB\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-- RFC 3411\nITSOerString, ITSTimeStamp\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM ISO26048-1-Global-TC\nscp, ScpTrueFalse\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM NTCIP1211-Scp\nsplitNumber, splitPhase\n                                               FROM NTCIP1202-Asc;</pre>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-21T15:45:33.712Z"
                 }
               ]
             },
@@ -40249,7 +40294,7 @@
               "oid": "{ priorityStrategyServer 1 }",
               "param_type": "status",
               "status": "current",
-              "syntax": "INTEGER (1..10)",
+              "syntax": "<p>Integer32 (1..10)</p>",
               "type": "ot",
               "links": {
                 "group": [
@@ -40400,6 +40445,17 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-03-18T21:39:17.701Z"
+                },
+                {
+                  "attributesChanged": {
+                    "syntax": "INTEGER (1..10)"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-21T15:46:19.541Z"
                 }
               ]
             },
@@ -42152,7 +42208,7 @@
               "oid": "{ priorityStrategyServer 4}",
               "param_type": "status",
               "status": "current",
-              "syntax": "INTEGER (1..255)",
+              "syntax": "<p>Integer32 (1..255)</p>",
               "type": "ot",
               "links": {
                 "group": [
@@ -42325,6 +42381,17 @@
                   "changedOn": "2025-03-18T21:45:33.855Z",
                   "docId": "NTCIP_1211",
                   "structureAction": "Cut"
+                },
+                {
+                  "attributesChanged": {
+                    "syntax": "INTEGER (1..255)"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-21T15:47:19.310Z"
                 }
               ]
             },
@@ -43570,7 +43637,7 @@
                   "id": "9638",
                   "guid": "c22fa119-b20f-44ba-b9a8-c6fe09803b40",
                   "name": "PriorityStrategyExtensionToSplitEntry",
-                  "syntax": "<pre>{<br>priorityStrategyMaximumReductionTime INTEGER,<br>priorityStrategyMaximumExtensionTime INTEGER}</pre>",
+                  "syntax": "<pre>{\npriorityStrategyMaximumReductionTime Integer32,\npriorityStrategyMaximumExtensionTime Integer32}</pre>",
                   "type": "row",
                   "history": [
                     {
@@ -43594,6 +43661,17 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-03-18T21:08:21.805Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "syntax": "<pre>{<br>priorityStrategyMaximumReductionTime INTEGER,<br>priorityStrategyMaximumExtensionTime INTEGER}</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-21T15:48:46.870Z"
                     }
                   ]
                 },
@@ -43608,7 +43686,7 @@
                   "oid": "{ priorityStrategyExtensionToSplitEntry 1 }",
                   "param_type": "status",
                   "status": "current",
-                  "syntax": "INTEGER (0..255)",
+                  "syntax": "<p>Integer32 (0..255)</p>",
                   "type": "ot",
                   "links": {
                     "group": [
@@ -43722,6 +43800,17 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-03-18T21:39:17.701Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "syntax": "INTEGER (0..255)"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-21T15:49:04.475Z"
                     }
                   ]
                 },
@@ -43736,7 +43825,7 @@
                   "oid": "{ priorityStrategyExtensionToSplitEntry 2 }",
                   "param_type": "status",
                   "status": "current",
-                  "syntax": "INTEGER (0..255)",
+                  "syntax": "<p>Integer32 (0..255)</p>",
                   "type": "ot",
                   "links": {
                     "group": [
@@ -43850,6 +43939,17 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-03-18T21:39:17.701Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "syntax": "INTEGER (0..255)"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-21T15:49:13.450Z"
                     }
                   ]
                 }
@@ -44626,7 +44726,7 @@
               "oid": "{ priorityStrategyServer 7 }",
               "param_type": "configuration",
               "status": "current",
-              "syntax": "INTEGER (1..253)",
+              "syntax": "<p>Integer32 (1..253)</p>",
               "type": "ot",
               "links": {
                 "group": [
@@ -44794,6 +44894,17 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-03-18T21:39:17.701Z"
+                },
+                {
+                  "attributesChanged": {
+                    "syntax": "INTEGER (1..253)"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-21T15:50:18.475Z"
                 }
               ]
             },
@@ -46520,7 +46631,7 @@
                   "oid": "{ scpBlock 3 }",
                   "param_type": "status",
                   "status": "deprecated",
-                  "syntax": "INTEGER (0..65535)",
+                  "syntax": "<p>Integer32 (0..65535)</p>",
                   "type": "ot",
                   "x_text": "<p>No longer needed</p>",
                   "x_type": "withdrawn",
@@ -46692,6 +46803,17 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-03-18T22:21:18.814Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "syntax": "INTEGER (0..65535)"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-21T15:50:56.029Z"
                     }
                   ]
                 }

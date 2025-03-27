@@ -1,16 +1,16 @@
 {
   "id": "NTCIP_1203",
   "guid": "B03E0221-4480-4150-81CB-A4607BB1CEE8",
-  "lastId": 1288,
+  "lastId": 1296,
   "createdOn": "2023-08-16T22:18:03",
   "createdBy": {
-    "email": "kvaughn@trevilon.com",
-    "company": "Trevilon",
-    "name": "Kenneth Vaughn"
-  },
-  "lastChangedOn": "2024-09-14T14:42:12.834Z",
-  "lastChangedBy": {
     "name": "Kenneth Vaughn",
+    "email": "kvaughn@trevilon.com",
+    "company": "Trevilon"
+  },
+  "lastChangedOn": "2025-03-27T22:02:28.469Z",
+  "lastChangedBy": {
+    "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
@@ -3359,7 +3359,74 @@
                     "implement": [
                       "NTCIP_1203-138"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-27T19:08:10.449Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<pre style=\"text-align: start; text-decoration: none;\">&nbsp;&nbsp;sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;Management&nbsp;Station,DMS:&nbsp;Preconditions:&nbsp;The&nbsp;management&nbsp;station&nbsp;shall&nbsp;be&nbsp;aware&nbsp;of&nbsp;the&nbsp;number&nbsp;of&lt;br/&gt;fonts&nbsp;supported&nbsp;by&nbsp;the&nbsp;DMS,&nbsp;the&nbsp;characters&nbsp;supported&nbsp;by&nbsp;the&nbsp;DMS,&lt;br/&gt;the&nbsp;font&nbsp;to&nbsp;be&nbsp;configured,&nbsp;and&nbsp;the&nbsp;characters&nbsp;within&nbsp;the&nbsp;font&nbsp;to&nbsp;be&nbsp;configured.\n&nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(fontStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;fontStatus.x&nbsp;!=&nbsp;('inUse' OR 'permanent' OR 'unmanaged')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(fontStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(fontStatus.x)\n&nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;fontStatus.x&nbsp;==&nbsp;('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(fontHeight.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(fontNumber.x,&nbsp;fontName.x,&nbsp;fontCharSpacing.x,&nbsp;fontLineSpacing.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;for&nbsp;each&nbsp;character&nbsp;to&nbsp;be&nbsp;defined\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(characterWidth.x.y,&nbsp;characterBitmap.x.y)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(fontStatus.x = 'readyForUse')\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; note over Management Station,DMS: Where&lt;br/&gt;x=font index&lt;br/&gt;y=character number</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-27T19:11:18.124Z"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "1289",
+                      "guid": "336e72ad-401b-4ac3-80ec-350eb2c6c194",
+                      "text": "<pre style=\"text-align: start; text-decoration: none;\">&nbsp;&nbsp;sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;Management&nbsp;Station,DMS:&nbsp;Preconditions:&nbsp;The&nbsp;management&nbsp;station&nbsp;shall&nbsp;be&nbsp;aware&nbsp;of&nbsp;the&nbsp;number&nbsp;of&lt;br/&gt;fonts&nbsp;supported&nbsp;by&nbsp;the&nbsp;DMS,&nbsp;the&nbsp;characters&nbsp;supported&nbsp;by&nbsp;the&nbsp;DMS,&lt;br/&gt;the&nbsp;font&nbsp;to&nbsp;be&nbsp;configured,&nbsp;and&nbsp;the&nbsp;characters&nbsp;within&nbsp;the&nbsp;font&nbsp;to&nbsp;be&nbsp;configured.\n&nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(fontStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;fontStatus.x&nbsp;!=&nbsp;('inUse' OR 'permanent' OR 'unmanaged')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(fontStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(fontStatus.x)\n&nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;fontStatus.x&nbsp;==&nbsp;('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(fontHeight.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(fontNumber.x,&nbsp;fontName.x,&nbsp;fontCharSpacing.x,&nbsp;fontLineSpacing.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;for&nbsp;each&nbsp;character&nbsp;to&nbsp;be&nbsp;defined\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(characterWidth.x.y,&nbsp;characterBitmap.x.y)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(fontStatus.x = 'readyForUse')\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; note over Management Station,DMS: Where&lt;br/&gt;x=font index&lt;br/&gt;y=character number</pre>",
+                      "type": "mermaid",
+                      "history": [
+                        {
+                          "affectedNodeId": "451",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T19:11:04.435Z",
+                          "docId": "NTCIP_1203",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T19:11:23.484Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T19:11:27.967Z"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "id": "452",
@@ -3403,7 +3470,61 @@
                     "implement": [
                       "NTCIP_1203-146"
                     ]
-                  }
+                  },
+                  "children": [
+                    {
+                      "id": "1290",
+                      "guid": "f46dc160-6476-4fc6-9060-538eb4c54a92",
+                      "text": "<pre style=\"text-align: start; text-decoration: none;\">&nbsp;&nbsp;sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;Management&nbsp;Station,DMS:&nbsp;Preconditions:&nbsp;The&nbsp;management&nbsp;station&nbsp;shall&nbsp;be&nbsp;aware&nbsp;of&nbsp;the&nbsp;number&nbsp;of&lt;br/&gt;graphics&nbsp;supported&nbsp;by&nbsp;the&nbsp;DMS.\n&nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;!=&nbsp;('inUse' OR 'permanent')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;==&nbsp;('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicHeight.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicNumber.x,&nbsp;dmsGraphicName.x,&nbsp;dmsGraphicHeight.x,&nbsp;dmsGraphicWidth.x,&lt;br/&gt;dmsGraphicType.x,&nbsp;dmsGraphicTransparentEnabled.x,&nbsp;dmsGraphicTransparentColor.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;for&nbsp;each&nbsp;graphic&nbsp;block&nbsp;to&nbsp;be&nbsp;defined\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicBlockBitmap.x.y)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'readyForUse')\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n    note over Management Station,DMS: Where&lt;br/&gt;x=dmsGraphicIndex or dmsGraphicBitmapIndex&lt;br/&gt;y=dmsGraphicBlockNumber</pre>",
+                      "type": "mermaid",
+                      "history": [
+                        {
+                          "affectedNodeId": "455",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T19:11:43.691Z",
+                          "docId": "NTCIP_1203",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T19:11:48.060Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T19:15:44.791Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<pre style=\"text-align: start; text-decoration: none;\">&nbsp;&nbsp;sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;Management&nbsp;Station,DMS:&nbsp;Preconditions:&nbsp;The&nbsp;management&nbsp;station&nbsp;shall&nbsp;be&nbsp;aware&nbsp;of&nbsp;the&nbsp;number&nbsp;of&lt;br/&gt;fonts&nbsp;supported&nbsp;by&nbsp;the&nbsp;DMS,&nbsp;the&nbsp;characters&nbsp;supported&nbsp;by&nbsp;the&nbsp;DMS,&lt;br/&gt;the&nbsp;font&nbsp;to&nbsp;be&nbsp;configured,&nbsp;and&nbsp;the&nbsp;characters&nbsp;within&nbsp;the&nbsp;font&nbsp;to&nbsp;be&nbsp;configured.\n&nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(fontStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;fontStatus.x&nbsp;!=&nbsp;('inUse' OR 'permanent' OR 'unmanaged')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(fontStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(fontStatus.x)\n&nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;fontStatus.x&nbsp;==&nbsp;('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(fontHeight.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(fontNumber.x,&nbsp;fontName.x,&nbsp;fontCharSpacing.x,&nbsp;fontLineSpacing.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;for&nbsp;each&nbsp;character&nbsp;to&nbsp;be&nbsp;defined\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(characterWidth.x.y,&nbsp;characterBitmap.x.y)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(fontStatus.x = 'readyForUse')\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; note over Management Station,DMS: Where&lt;br/&gt;x=font index&lt;br/&gt;y=character number</pre>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T19:31:19.679Z"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "id": "456",
@@ -3436,7 +3557,50 @@
                     "implement": [
                       "NTCIP_1203-151"
                     ]
-                  }
+                  },
+                  "children": [
+                    {
+                      "id": "1291",
+                      "guid": "34df8886-3a38-4309-88fb-474be61c5831",
+                      "text": "<pre style=\"text-align: start; text-decoration: none;\">&nbsp; sequenceDiagram\n&nbsp; &nbsp; participant Management Station\n&nbsp; &nbsp; participant DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp; &nbsp; Management Station-&gt;&gt;DMS: set(dmsIllumBrightnessValues.0)\n&nbsp; &nbsp; note over DMS: If there is an error with the&lt;br/&gt;dmsIllumBrightnessValues&lt;br/&gt;then the DMS will set an&lt;br/&gt;appropriate error for&lt;br/&gt;dmsBrightnessValuesError.0.&lt;br/&gt;Otherwise&lt;br/&gt;dmsBrightnessValuesError.0&lt;br/&gt;is set to 'noError'.\n&nbsp; &nbsp; alt dmsIllumBrightnessValues.0 == 'genErr'\n&nbsp; &nbsp; &nbsp; Management Station-&gt;&gt;DMS: get(dmsIllumBrightnessValuesError.0)\n&nbsp; &nbsp; end</pre><p><br></p>",
+                      "type": "mermaid",
+                      "history": [
+                        {
+                          "affectedNodeId": "458",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T19:40:51.344Z",
+                          "docId": "NTCIP_1203",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T19:41:21.052Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T19:41:56.755Z"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -3455,7 +3619,50 @@
                     "implement": [
                       "NTCIP_1203-166"
                     ]
-                  }
+                  },
+                  "children": [
+                    {
+                      "id": "1292",
+                      "guid": "d2a7bb93-5b45-410f-bbe9-44211f44bb21",
+                      "text": "<pre style=\"text-align: start; text-decoration: none;\">&nbsp;&nbsp;sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;Management&nbsp;Station,DMS:&nbsp;Precondition:&nbsp;The&nbsp;desired&nbsp;message&nbsp;shall&nbsp;be&nbsp;stored&nbsp;in&nbsp;the&nbsp;DMS&nbsp;message&nbsp;table.\n&nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsActivateMessageV4.0)\n&nbsp; &nbsp;&nbsp;note&nbsp;right&nbsp;of&nbsp;DMS:&nbsp;See&nbsp;Clause&nbsp;4.3.5\n&nbsp; &nbsp;&nbsp;DMS-&gt;&gt;DMS:&nbsp;Perform&nbsp;consistency&nbsp;check\n&nbsp; &nbsp;&nbsp;DMS--&gt;&gt;Management&nbsp;Station:&nbsp;response()\n&nbsp; &nbsp;&nbsp;alt&nbsp;noError\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(shortErrorStatus.0)\n&nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;shortErrorStatus.0 == 'other'\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsOtherShortErrorDescription.0)\n&nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;else\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsActivateMsgError.0,&nbsp;dmsActivateErrorMsgCodeV4.0)\n&nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsActivateMsgError.0 == 'syntaxMulti'\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsMultiiSyntaxError.0,&nbsp;dmsMultiSyntaxErrorPosition.0)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsMultiSyntaxError.0 == 'other'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsMultiOtherErrorDescription.0)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp;&nbsp;end\n    end</pre><p><br></p>",
+                      "type": "mermaid",
+                      "history": [
+                        {
+                          "affectedNodeId": "460",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T19:41:48.534Z",
+                          "docId": "NTCIP_1203",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T19:41:52.063Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T19:59:52.942Z"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "id": "461",
@@ -3466,7 +3673,50 @@
                     "implement": [
                       "NTCIP_1203-179"
                     ]
-                  }
+                  },
+                  "children": [
+                    {
+                      "id": "1293",
+                      "guid": "c5bbfee3-8750-4886-8364-5c64d91e118f",
+                      "text": "<pre style=\"text-align: start; text-decoration: none;\">&nbsp;&nbsp;sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;Management&nbsp;Station,DMS:&nbsp;Preconditions:&lt;br/&gt;1.&nbsp;The&nbsp;DMS&nbsp;supports&nbsp;the&nbsp;desired&nbsp;volatile&nbsp;or&nbsp;changeable&nbsp;message&nbsp;number&nbsp;and&nbsp;MULTI&nbsp;tags.&lt;br/&gt;2.&nbsp;The&nbsp;DMS&nbsp;has&nbsp;sufficient&nbsp;memory&nbsp;remaining.\n&nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsMessageStatus.x.y = 'modifyReq')\n&nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsMessageStatus.x.y)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsMessageStatus.x.y&nbsp;== 'modifying'\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsMessageMultiString.x.y,&nbsp;dmsMessageOwner.x.y,&lt;br/&gt;dmsMessageBeacon.x.y,&nbsp;dmsMessagePixelService.x.y,&lt;br/&gt;dmsMessageRunTimePriority.x.y)\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsMessageStatus.x.y = 'validateReq')\n&nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsMessageStatus.x.y != 'validating')&nbsp;OR&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsMessageStatus.x.y)\n&nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsMessageStatus.x.y&nbsp;!= 'valid'\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsValidateMessageError.0)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsValidateMessageError.0 == 'syntaxMulti'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsMultiiSyntaxError.0,&nbsp;dmsMultiSyntaxErrorPosition.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsMultiSyntaxError.0 == 'other'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsMultiOtherErrorDescription.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; end</pre>",
+                      "type": "mermaid",
+                      "history": [
+                        {
+                          "affectedNodeId": "461",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T20:00:04.112Z",
+                          "docId": "NTCIP_1203",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T20:00:12.025Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-03-27T20:11:42.459Z"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "id": "462",
@@ -3667,6 +3917,47 @@
               "type": "t",
               "children": [
                 {
+                  "id": "1294",
+                  "guid": "54ddd641-3bc9-4f53-871a-3431ce946d05",
+                  "text": "<pre>@startuml\nstate notUsed\nnotUsed : event set(any data for graphic)/ genErr\nnotUsed : event set(status = notUsedReq)/\nnotUsed : event set(status = any other value)/badValue\nnotUsed : event activate message using graphic/ activateMessageError = syntaxMULTI\nnotUsed : event activate message using graphic/ dmsMultiSyntaxError = graphicNotDefined\nnotUsed --&gt; modifying : set(status=modifyReq)\n\nmodifying : event set(any data for graphic)/ process\nmodifying : event set(status = modifyReq)/\nmodifying : event set(status = any other value)/badValue\nmodifying : event activate message using graphic/ activateMessageError = syntaxMULTI\nmodifying : event activate message using graphic/ dmsMultiSyntaxError = graphicNotDefined\nmodifying : event set(dmsGraphicHeight = different value) / dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicWidth = different value) / dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicType = different value) / dmsGraphicBlockBitmap =&gt; zero length\nmodifying --&gt; notUsed : set(status = notUsedReq)\nmodifying --&gt; calculatingID : set(status = readyForUseReq)&nbsp;\n\ncalculatingID : do/ udpate dmsGraphicID\ncalculatingID : event set(any data for graphic)/ genErr\ncalculatingID : event set(status = any other value)/badValue\ncalculatingID : event activate message using graphic/ activateMessageError = syntaxMULTI\ncalculatingID : event activate message using graphic/ dmsMultiSyntaxError = graphicNotDefined\ncalculatingID --&gt; notUsed : set(status = notUsedReq)\ncalculatingID --&gt; readyForUse\n\nreadyForUse : event set(any data for graphic)/ genErr\nreadyForUse : event set(status = readyForUseReq)/\nreadyForUse : event set(status = any other value)/badValue\nreadyForUse --&gt; notUsed : set(status = notUsedReq)\nreadyForUse --&gt; modifying : set(status=modifyReq)\nreadyForUse --&gt; inUse : activate message using graphic\nnote &nbsp;on link\n&nbsp; Consistency check rules for message&nbsp;\n&nbsp; activation are defined in Clause 4.3.5\nend note\n\ninUse : event set(any data for graphic)/ genErr\ninUse : event set(status)/badValue\ninUse --&gt; readyForUse : activate message not using graphic\n\npermanent : event set(any data for graphic)/ genErr\npermanent : event set(status)/badValue\n@enduml</pre>",
+                  "type": "mermaid",
+                  "history": [
+                    {
+                      "affectedNodeId": "496",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-27T21:23:25.163Z",
+                      "docId": "NTCIP_1203",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-27T21:24:00.178Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-27T21:24:07.714Z"
+                    }
+                  ]
+                },
+                {
                   "id": "497",
                   "guid": "8c0971bc-7f0d-4c0e-90ee-a5dad9790838",
                   "heading": "Not Used State",
@@ -3717,6 +4008,47 @@
               "type": "t",
               "children": [
                 {
+                  "id": "1295",
+                  "guid": "f63e2f4f-96b6-4c01-90fc-d1461828f74b",
+                  "text": "<pre>@startuml\nstate switchLocal {\n&nbsp; state local\n&nbsp; state centralOverride\n\n&nbsp; local : event set from local(any data)/ process\n&nbsp; local : event set from central(any data other than dmsControlMode)/ notWritable\n&nbsp; local : event read from local OR central(any data)/ process\n&nbsp; local : event set(dmsControlMode = any other value)/ inconsistentValue\n&nbsp; local --&gt; centralOverride : set(dmsControlMode='centralOverride')\n&nbsp; local --&gt; central : switchMove(central)\n\n&nbsp; centralOverride : event set from central(any data)/ process\n&nbsp; centralOverride : event set from local(any data)/ notWritable\n&nbsp; centralOverride : event read from local OR central(any data)/ process\n&nbsp; centralOverride : event set(dmsControlMode = 'centralOverride')/&nbsp;\n&nbsp; centralOverride : event set(dmsControlMode = any other value)/ inconsistentValue\n&nbsp; centralOverride --&gt; central : switchMove(central)\n\n}\nstate switchCentral {\n&nbsp; state central\n&nbsp; central : event set from central(any data)/ process\n&nbsp; central : event set from local(any data)/ notWritable\n&nbsp; central : event read from local OR central(any data)/ process\n&nbsp; central : event set(dmsControlMode = any value)/ inconsistentValue\n&nbsp; central --&gt; local : switchMove(local)\n}\n\n@enduml</pre><p><br></p>",
+                  "type": "mermaid",
+                  "history": [
+                    {
+                      "affectedNodeId": "504",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-27T21:48:33.459Z",
+                      "docId": "NTCIP_1203",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-27T21:49:13.489Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-27T21:49:18.154Z"
+                    }
+                  ]
+                },
+                {
                   "id": "505",
                   "guid": "91c1456a-27c4-44ab-8a49-542446385f6b",
                   "heading": "Central Mode",
@@ -3748,6 +4080,47 @@
               "heading": "Message Table State Machine Definition",
               "type": "t",
               "children": [
+                {
+                  "id": "1296",
+                  "guid": "814762cc-2ca8-4591-b7ed-05e1e432ad33",
+                  "text": "<pre>@startuml\nstate notUsed\nnotUsed : entry/ may discard row data\nnotUsed : event set(any data for row)/ genErr\nnotUsed : event set(status = notUsedReq)/\nnotUsed : event set(status = modifyReq)[insufficientMemory]/genErr\nnotUsed : event set(status = any other value)/badValue\nnotUsed --&gt; modifying : set(status=modifyReq)[enough memory]\n\nmodifying : event set(any data for row)/ process\nmodifying : event set(status = modifyReq)/\nmodifying : event set(status = any other value)/badValue\nmodifying --&gt; notUsed : set(status = notUsedReq)\nmodifying --&gt; validating : set(status = validateReq)&nbsp;\n\nvalidating : do/ Consistency check\nvalidating : event set(any data for row)/ genErr\nvalidating : event set(status = any other value)/badValue\nvalidating --&gt; notUsed : set(status = notUsedReq)\nvalidating --&gt; valid : [data valid] dmsValidateMessageError == none\nvalidating --&gt; error : [data invalid] dmsValidateMessageError != none\n\nvalid : event set(any data for row)/ genErr\nvalid : event set(status = any other value)/badValue\nvalid --&gt; notUsed : set(status = notUsedReq)\nvalid --&gt; modifying : set(status=modifyReq)\n\nerror : event set(any data for row)/ genErr\nerror : event set(status = any other value)/badValue\nerror --&gt; notUsed : set(status = notUsedReq)\nerror --&gt; modifying : set(status=modifyReq)\n\nnote as N1\n&nbsp; Diagram is only valid for volatile, 'changeable', and 'schedule' messages.&nbsp;\n&nbsp; All other message types shall always be in the 'va;id' state and return a&nbsp;\n&nbsp; 'badValue' error for any set command to the dmsMessageStatus object.\n&nbsp; activation are defined in Clause 4.3.5\nend note\n\n@enduml</pre><p><br></p>",
+                  "type": "mermaid",
+                  "history": [
+                    {
+                      "affectedNodeId": "509",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-27T22:01:55.381Z",
+                      "docId": "NTCIP_1203",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-27T22:02:22.954Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-03-27T22:02:28.469Z"
+                    }
+                  ]
+                },
                 {
                   "id": "510",
                   "guid": "1f59050c-d18b-46d5-8dfb-745fb0732c52",
@@ -8004,7 +8377,7 @@
   ],
   "attributes": {
     "access": {
-      "heading": "Access",
+      "name": "Access",
       "type": "enum",
       "values": [
         {
@@ -8025,23 +8398,23 @@
       ]
     },
     "additional": {
-      "heading": "Additional",
+      "name": "Additional",
       "type": "xhtml"
     },
     "conformance": {
-      "heading": "Conformance",
+      "name": "Conformance",
       "type": "string"
     },
     "name": {
-      "heading": "Name",
+      "name": "Name",
       "type": "string"
     },
     "number": {
-      "heading": "Number",
+      "name": "Number",
       "type": "int"
     },
     "status": {
-      "heading": "Status",
+      "name": "Status",
       "type": "enum",
       "values": [
         {
@@ -8059,7 +8432,7 @@
       ]
     },
     "type": {
-      "heading": "Type",
+      "name": "Type",
       "type": "enum",
       "values": [
         {
@@ -8096,6 +8469,11 @@
           "default": false,
           "key": "f",
           "label": "Figure"
+        },
+        {
+          "default": false,
+          "key": "mermaid",
+          "label": "Mermaid"
         },
         {
           "default": false,
@@ -8219,6 +8597,6 @@
     }
   },
   "metadata": {
-    "format": "2.17"
+    "format": "2.20"
   }
 }

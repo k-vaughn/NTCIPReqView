@@ -1,14 +1,14 @@
 {
   "id": "Conditionals",
   "guid": "f7d13c73-e6c9-45a0-b6d2-d4c8dba55085",
-  "lastId": 111,
+  "lastId": 112,
   "createdOn": "2023-04-25T18:11:32.430Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-02-22T03:25:55.257Z",
+  "lastChangedOn": "2025-03-28T21:34:36.386Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -2023,17 +2023,18 @@
       ]
     },
     {
-      "id": "35",
-      "guid": "5096e2c1-422a-4751-8b2f-5535aefd32b3",
-      "heading": "Matrix",
+      "id": "46",
+      "guid": "a58979c6-8642-4218-9efc-262112b3be6c",
+      "heading": "DMS AutoBright",
+      "text": "<p>AutoBright</p>",
       "links": {
         "condRef": [
-          "NTCIP_1203-1220"
+          "NTCIP_1203-55"
         ],
         "conditional": [
           {
             "suspectClearedOn": "2025-02-21T15:20:59.483Z",
-            "target": "NTCIP_1203-52"
+            "target": "NTCIP_1203-72"
           }
         ]
       },
@@ -2046,159 +2047,125 @@
           },
           "changedOn": "2025-02-21T15:20:59.483Z",
           "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-72"
+            ],
+            "type": "conditional"
+          }
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:29:33.738Z"
+        },
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:34:06.628Z",
+          "docId": "Conditionals",
+          "structureAction": "Cut"
+        }
+      ]
+    },
+    {
+      "id": "112",
+      "guid": "f6c5c97e-a79f-4733-a01b-21dd9dd07da1",
+      "heading": "DMS Beacon",
+      "text": "<p>Beacons</p>",
+      "links": {
+        "condRef": [
+          "NTCIP_1203-47"
+        ],
+        "conditional": [
+          {
+            "suspectClearedOn": "2025-03-28T21:07:00.198Z",
+            "target": "NTCIP_1203-52"
+          }
+        ]
+      },
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:05:04.684Z",
+          "docId": "Conditionals",
+          "structureAction": "Create"
+        },
+        {
+          "attributesChanged": {
+            "heading": null,
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:05:16.345Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1203-47"
+            ],
+            "type": "condRef"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:05:57.092Z"
+        },
+        {
+          "addedLink": {
             "target": [
               "NTCIP_1203-52"
             ],
             "type": "conditional"
-          }
-        }
-      ]
-    },
-    {
-      "id": "36",
-      "guid": "d47cd6dd-32c9-4ce3-9827-32d2ac57b3e7",
-      "heading": "VMS",
-      "links": {
-        "condRef": [
-          "NTCIP_1203-1226"
-        ],
-        "conditional": [
-          {
-            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
-            "target": "NTCIP_1203-52"
-          }
-        ]
-      },
-      "history": [
-        {
+          },
           "changedBy": {
             "company": "Trevilon",
             "email": "kvaughn@trevilon.com",
             "name": "Ken Vaughn"
           },
-          "changedOn": "2025-02-21T15:20:59.483Z",
-          "clearedLinkSuspect": {
-            "target": [
-              "NTCIP_1203-52"
-            ],
-            "type": "conditional"
-          }
-        }
-      ]
-    },
-    {
-      "id": "37",
-      "guid": "994fdef8-7175-48a7-b8c4-3f6395885d8e",
-      "heading": "Fonts",
-      "links": {
-        "condRef": [
-          "NTCIP_1203-53"
-        ],
-        "conditional": [
-          {
-            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
-            "target": "NTCIP_1203-52"
-          },
-          {
-            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
-            "target": "NTCIP_1203-66"
-          }
-        ]
-      },
-      "history": [
+          "changedOn": "2025-03-28T21:07:00.198Z"
+        },
         {
+          "attributesChanged": {
+            "text": "<p>Beacon</p>"
+          },
           "changedBy": {
             "company": "Trevilon",
             "email": "kvaughn@trevilon.com",
             "name": "Ken Vaughn"
           },
-          "changedOn": "2025-02-21T15:20:59.483Z",
-          "clearedLinkSuspect": {
-            "target": [
-              "NTCIP_1203-52",
-              "NTCIP_1203-66"
-            ],
-            "type": "conditional"
-          }
-        }
-      ]
-    },
-    {
-      "id": "38",
-      "guid": "40de12cd-1ac3-4ace-9039-2ccbe3f07f74",
-      "heading": "Graphics",
-      "links": {
-        "condRef": [
-          "NTCIP_1203-54"
-        ],
-        "conditional": [
-          {
-            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
-            "target": "NTCIP_1203-52"
-          },
-          {
-            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
-            "target": "NTCIP_1203-66"
-          }
-        ]
-      },
-      "history": [
+          "changedOn": "2025-03-28T21:07:49.211Z"
+        },
         {
+          "affectedNodeId": "#",
           "changedBy": {
             "company": "Trevilon",
             "email": "kvaughn@trevilon.com",
             "name": "Ken Vaughn"
           },
-          "changedOn": "2025-02-21T15:20:59.483Z",
-          "clearedLinkSuspect": {
-            "target": [
-              "NTCIP_1203-52",
-              "NTCIP_1203-66"
-            ],
-            "type": "conditional"
-          }
-        }
-      ]
-    },
-    {
-      "id": "39",
-      "guid": "e37433cd-2ff8-45a1-b7f4-9c3702cca297",
-      "heading": "Fields",
-      "links": {
-        "condRef": [
-          "NTCIP_1203-316"
-        ],
-        "conditional": [
-          {
-            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
-            "target": "NTCIP_1203-52"
-          },
-          {
-            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
-            "target": "NTCIP_1203-85"
-          },
-          {
-            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
-            "target": "NTCIP_1203-90"
-          }
-        ]
-      },
-      "history": [
-        {
-          "changedBy": {
-            "company": "Trevilon",
-            "email": "kvaughn@trevilon.com",
-            "name": "Ken Vaughn"
-          },
-          "changedOn": "2025-02-21T15:20:59.483Z",
-          "clearedLinkSuspect": {
-            "target": [
-              "NTCIP_1203-52",
-              "NTCIP_1203-85",
-              "NTCIP_1203-90"
-            ],
-            "type": "conditional"
-          }
+          "changedOn": "2025-03-28T21:32:02.282Z",
+          "docId": "Conditionals",
+          "structureAction": "Cut"
         }
       ]
     },
@@ -2206,6 +2173,7 @@
       "id": "40",
       "guid": "64572e12-4a0e-46a0-936d-e53b1110d092",
       "heading": "Drum",
+      "text": "<p>Drum</p>",
       "links": {
         "condRef": [
           "NTCIP_1203-1231"
@@ -2246,21 +2214,52 @@
             ],
             "type": "conditional"
           }
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:26:54.801Z"
+        },
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:32:53.950Z",
+          "docId": "Conditionals",
+          "structureAction": "Cut"
         }
       ]
     },
     {
-      "id": "41",
-      "guid": "ff17e656-3b9f-4959-812f-39ae129850fe",
-      "heading": "Prioritize VMS",
+      "id": "39",
+      "guid": "e37433cd-2ff8-45a1-b7f4-9c3702cca297",
+      "heading": "Fields",
+      "text": "<p>Fields</p>",
       "links": {
         "condRef": [
-          "NTCIP_1203-1226"
+          "NTCIP_1203-316"
         ],
         "conditional": [
           {
             "suspectClearedOn": "2025-02-21T15:20:59.483Z",
-            "target": "NTCIP_1203-65"
+            "target": "NTCIP_1203-52"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-85"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-90"
           }
         ]
       },
@@ -2274,19 +2273,86 @@
           "changedOn": "2025-02-21T15:20:59.483Z",
           "clearedLinkSuspect": {
             "target": [
-              "NTCIP_1203-65"
+              "NTCIP_1203-52",
+              "NTCIP_1203-85",
+              "NTCIP_1203-90"
             ],
             "type": "conditional"
           }
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:26:48.146Z"
+        },
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:32:39.408Z",
+          "docId": "Conditionals",
+          "structureAction": "Cut"
         }
       ]
     },
     {
-      "id": "42",
-      "guid": "6a69e7e5-88d2-495f-83e6-e7981e8096c8",
-      "heading": "LocalTime",
+      "id": "45",
+      "guid": "36366c6c-efbc-4e98-957f-f13ee3a6ead4",
+      "heading": "DMS Flip or Drum",
+      "text": "<p>Flip or Drum</p>",
       "links": {
+        "fulfil_opt": [
+          "OptionGroups-23"
+        ]
+      },
+      "history": [
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:29:26.450Z"
+        },
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:33:53.330Z",
+          "docId": "Conditionals",
+          "structureAction": "Cut"
+        }
+      ]
+    },
+    {
+      "id": "37",
+      "guid": "994fdef8-7175-48a7-b8c4-3f6395885d8e",
+      "heading": "Fonts",
+      "text": "<p>Fonts</p>",
+      "links": {
+        "condRef": [
+          "NTCIP_1203-53"
+        ],
         "conditional": [
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-52"
+          },
           {
             "suspectClearedOn": "2025-02-21T15:20:59.483Z",
             "target": "NTCIP_1203-66"
@@ -2303,10 +2369,33 @@
           "changedOn": "2025-02-21T15:20:59.483Z",
           "clearedLinkSuspect": {
             "target": [
+              "NTCIP_1203-52",
               "NTCIP_1203-66"
             ],
             "type": "conditional"
           }
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:26:37.023Z"
+        },
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:32:14.423Z",
+          "docId": "Conditionals",
+          "structureAction": "Cut"
         }
       ]
     },
@@ -2314,6 +2403,7 @@
       "id": "43",
       "guid": "8f9dbd97-09cd-48da-87dd-68ee7310ce0d",
       "heading": "Supplemental Fonts",
+      "text": "<p>Fonts</p>",
       "links": {
         "condRef": [
           "NTCIP_1203-53"
@@ -2339,6 +2429,28 @@
             ],
             "type": "conditional"
           }
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:29:07.401Z"
+        },
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:33:40.345Z",
+          "docId": "Conditionals",
+          "structureAction": "Cut"
         }
       ]
     },
@@ -2346,6 +2458,7 @@
       "id": "44",
       "guid": "c2763582-fd44-4af0-a771-ea86e2d42007",
       "heading": "Supplemental Graphics",
+      "text": "<p>Graphics</p>",
       "links": {
         "condRef": [
           "NTCIP_1203-54"
@@ -2371,31 +2484,48 @@
             ],
             "type": "conditional"
           }
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:29:15.854Z"
+        },
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:33:40.345Z",
+          "docId": "Conditionals",
+          "structureAction": "Cut"
         }
       ]
     },
     {
-      "id": "45",
-      "guid": "36366c6c-efbc-4e98-957f-f13ee3a6ead4",
-      "heading": "DMS Flip or Drum",
-      "links": {
-        "fulfil_opt": [
-          "OptionGroups-23"
-        ]
-      }
-    },
-    {
-      "id": "46",
-      "guid": "a58979c6-8642-4218-9efc-262112b3be6c",
-      "heading": "DMS AutoBright",
+      "id": "38",
+      "guid": "40de12cd-1ac3-4ace-9039-2ccbe3f07f74",
+      "heading": "Graphics",
+      "text": "<p>Graphics</p>",
       "links": {
         "condRef": [
-          "NTCIP_1203-55"
+          "NTCIP_1203-54"
         ],
         "conditional": [
           {
             "suspectClearedOn": "2025-02-21T15:20:59.483Z",
-            "target": "NTCIP_1203-72"
+            "target": "NTCIP_1203-52"
+          },
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-66"
           }
         ]
       },
@@ -2409,10 +2539,214 @@
           "changedOn": "2025-02-21T15:20:59.483Z",
           "clearedLinkSuspect": {
             "target": [
-              "NTCIP_1203-72"
+              "NTCIP_1203-52",
+              "NTCIP_1203-66"
             ],
             "type": "conditional"
           }
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:26:43.682Z"
+        },
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:32:27.670Z",
+          "docId": "Conditionals",
+          "structureAction": "Cut"
+        }
+      ]
+    },
+    {
+      "id": "48",
+      "guid": "efa5af93-83ba-4f8c-90a3-93d7ff23655b",
+      "heading": "DMS Lamp Testing",
+      "text": "<p>Lamp</p>",
+      "links": {
+        "conditional": [
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-85"
+          }
+        ]
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-85"
+            ],
+            "type": "conditional"
+          }
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:30:05.827Z"
+        },
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:34:36.386Z",
+          "docId": "Conditionals",
+          "structureAction": "Cut"
+        }
+      ]
+    },
+    {
+      "id": "42",
+      "guid": "6a69e7e5-88d2-495f-83e6-e7981e8096c8",
+      "heading": "LocalTime",
+      "text": "<p>LocalTime</p>",
+      "links": {
+        "conditional": [
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-66"
+          }
+        ]
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-66"
+            ],
+            "type": "conditional"
+          }
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:28:41.547Z"
+        },
+        {
+          "affectedNodeId": "41",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:33:22.995Z",
+          "docId": "Conditionals",
+          "structureAction": "SwapUp"
+        },
+        {
+          "affectedNodeId": "36",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:33:24.341Z",
+          "docId": "Conditionals",
+          "structureAction": "SwapUp"
+        },
+        {
+          "affectedNodeId": "35",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:33:25.386Z",
+          "docId": "Conditionals",
+          "structureAction": "SwapUp"
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "guid": "5096e2c1-422a-4751-8b2f-5535aefd32b3",
+      "heading": "Matrix",
+      "text": "<p>Matrix</p>",
+      "links": {
+        "condRef": [
+          "NTCIP_1203-1220"
+        ],
+        "conditional": [
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-52"
+          }
+        ]
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-52"
+            ],
+            "type": "conditional"
+          }
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:26:18.435Z"
+        },
+        {
+          "attributesChanged": {
+            "text": "<p>Matrix:</p>"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:26:25.163Z"
         }
       ]
     },
@@ -2420,6 +2754,7 @@
       "id": "47",
       "guid": "5c8d64b9-0b50-4f79-b313-39393b8a475d",
       "heading": "DMS Matrix Testing",
+      "text": "<p>Matrix</p>",
       "links": {
         "condRef": [
           "NTCIP_1203-1220"
@@ -2445,18 +2780,44 @@
             ],
             "type": "conditional"
           }
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:29:42.603Z"
+        },
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T21:34:21.810Z",
+          "docId": "Conditionals",
+          "structureAction": "Cut"
         }
       ]
     },
     {
-      "id": "48",
-      "guid": "efa5af93-83ba-4f8c-90a3-93d7ff23655b",
-      "heading": "DMS Lamp Testing",
+      "id": "36",
+      "guid": "d47cd6dd-32c9-4ce3-9827-32d2ac57b3e7",
+      "heading": "VMS",
+      "text": "<p>VMS</p>",
       "links": {
+        "condRef": [
+          "NTCIP_1203-1226"
+        ],
         "conditional": [
           {
             "suspectClearedOn": "2025-02-21T15:20:59.483Z",
-            "target": "NTCIP_1203-85"
+            "target": "NTCIP_1203-52"
           }
         ]
       },
@@ -2470,10 +2831,65 @@
           "changedOn": "2025-02-21T15:20:59.483Z",
           "clearedLinkSuspect": {
             "target": [
-              "NTCIP_1203-85"
+              "NTCIP_1203-52"
             ],
             "type": "conditional"
           }
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:26:29.709Z"
+        }
+      ]
+    },
+    {
+      "id": "41",
+      "guid": "ff17e656-3b9f-4959-812f-39ae129850fe",
+      "heading": "Prioritize VMS",
+      "text": "<p>VMS</p>",
+      "links": {
+        "condRef": [
+          "NTCIP_1203-1226"
+        ],
+        "conditional": [
+          {
+            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "target": "NTCIP_1203-65"
+          }
+        ]
+      },
+      "history": [
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1203-65"
+            ],
+            "type": "conditional"
+          }
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:28:34.348Z"
         }
       ]
     },
@@ -2481,6 +2897,7 @@
       "id": "49",
       "guid": "9039c344-09c9-479a-b060-a841e3b333c3",
       "heading": "VMS Definition",
+      "text": "<p>VMS</p>",
       "links": {
         "condRef": [
           "NTCIP_1203-1226"
@@ -2511,6 +2928,17 @@
             ],
             "type": "conditional"
           }
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-28T20:30:11.612Z"
         }
       ]
     },

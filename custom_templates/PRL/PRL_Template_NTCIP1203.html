@@ -168,18 +168,23 @@ div.WordSection1
 {{var "code" ""}}
 {{var "clause" ""}}
 {{var "name" ""}}
+{{var "cond_ref" ""}}
 
 {{#*inline "row"}}
-        <tr class="PRLRow">
+	{{set "cond_ref" ""}}
+	{{#eachInlinkWith type="condRef"}}
+  		{{set "cond_ref" (eval " (" "+" (eval (formatString text) "+" ")"))}}
+	{{/eachInlinkWith}}
+      <tr class="PRLRow">
 			<td class="left">&nbsp;</td>
 			<td class="middle">&nbsp;</td>
 		{{#if (searchString docId "NTCIP")}}
-			<td class="middle">&sect;{{{sectionNumber}}}</td>
+			<td class="middle">&sect;{{{sectionNumber}}}{{get "cond_ref"}}</td>
 		{{else}} 
 			{{#if (searchString docId "RFC")}}
 			<td class="middle">{{{replaceString docId "_" " "}}}</td>
 			{{else}}
-			<td class="middle">{{{docName}}}, &sect;{{{sectionNumber}}}</td>
+			<td class="middle">{{{docName}}}, &sect;{{{sectionNumber}}}{{get "cond_ref"}}</td>
 			{{/if}}
 		{{/if}}
 			<td class="middle">{{heading}}</td>
@@ -217,7 +222,7 @@ div.WordSection1
 	{{/eachInlinkWith}}
 	{{#eachInlinkWith type="conditional"}}
 		{{set "opt_constraint" ""}}
-  		{{set "cond_constraint" (formatString text)}}
+  		{{set "cond_constraint" (eval (formatString text) "+" ":")}}
   		{{> directPRL}}
   		{{> indirectPRL}}
 	{{/eachInlinkWith}}
@@ -335,34 +340,40 @@ div.WordSection1
 	  	{{set "clause" "6.9"}}{{set "name" "Log user-defined data snapshots"}}{{set "code" "O.1 (1..*)"}}{{> ISOref}}
 	  	{{set "clause" "6.12"}}{{set "name" "Configure a complex device"}}{{set "code" "X"}}{{> ISOref}}
         {{#eachDocumentObject}}
+ 				{{set "cond_ref" ""}}
+				{{#eachInlinkWith type="condRef"}}
+		  		{{set "cond_ref" (eval " (" "+" (eval (formatString text) "+" ")"))}}
+				{{/eachInlinkWith}}
+
 		  {{#if (eval type "==" "unp")}}
         	<tr class="PRLRow" style="background:darkgray;">
-				<td class="sum-left">{{{sectionNumber}}}</td>
-				<td class="sum-middle" colspan="3">{{{heading}}}</td>
-				<td class="sum-middle">{{conformance}}</td>
-				<td class="sum-middle">{{> conf}}{{> support}}</td>
-				<td class="sum-right">{{formatXHTML additional}}</td>
-			</tr>
+    				<td class="sum-left">{{{sectionNumber}}}{{get "cond_ref"}}</td>
+		    		<td class="sum-middle" colspan="3">{{{heading}}}</td>
+				    <td class="sum-middle">{{conformance}}</td>
+    				<td class="sum-middle">{{> conf}}{{> support}}</td>
+		    		<td class="sum-right">{{formatXHTML additional}}</td>
+			    </tr>
 		  {{/if}}
 		  {{#if (eval type "==" "unc")}}
         	<tr class="PRLRow" style="background:lightgray;">
-				<td class="sum-left">
+						<td class="sum-left">
 				{{#withParent}}{{#if (eval type "==" "unp")}}{{{sectionNumber}}}{{else}}{{#withParent}}{{{sectionNumber}}}{{/withParent}}.{{name}}{{/if}}{{/withParent}}.{{name}}
-				</td>
-				<td class="sum-middle" colspan="3">{{{text}}}</td>
-				<td class="sum-middle">{{conformance}}</td>
-				<td class="sum-middle">{{> conf}}{{> support}}</td>
-				<td class="sum-right">{{formatXHTML additional}}</td>
-			</tr>
+				{{get "cond_ref"}}
+						</td>
+						<td class="sum-middle" colspan="3">{{{text}}}</td>
+						<td class="sum-middle">{{conformance}}</td>
+						<td class="sum-middle">{{> conf}}{{> support}}</td>
+						<td class="sum-right">{{formatXHTML additional}}</td>
+					</tr>
 		  {{/if}}
 		  {{#if (eval type "==" "un")}}
         	<tr class="PRLRow" style="background:lightgray;">
-				<td class="sum-left">{{{sectionNumber}}}</td>
-				<td class="sum-middle" colspan="3">{{{heading}}}</td>
-				<td class="sum-middle">{{conformance}}</td>
-				<td class="sum-middle">{{> conf}}{{> support}}</td>
-				<td class="sum-right">{{formatXHTML additional}}</td>
-			</tr>
+						<td class="sum-left">{{{sectionNumber}}}{{get "cond_ref"}}</td>
+						<td class="sum-middle" colspan="3">{{{heading}}}</td>
+						<td class="sum-middle">{{conformance}}</td>
+						<td class="sum-middle">{{> conf}}{{> support}}</td>
+						<td class="sum-right">{{formatXHTML additional}}</td>
+					</tr>
 			{{set "opt_constraint" ""}}
 			{{set "cond_constraint" ""}}
 			{{> directPRL}}

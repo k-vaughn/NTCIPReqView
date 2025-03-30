@@ -87,7 +87,9 @@
 
 {{#*inline "indirect"}}
 	{{#eachInlinkWith type="satisfiesWithNote"}}
-		{{set "note" text}}
+	  {{#if note}}
+		  {{set "note" text}}
+		{{/if}}
 		{{#eachInlinkWith type="satisfies"}}
 			<tr>
 				<td class="mib-col">&nbsp;</td>

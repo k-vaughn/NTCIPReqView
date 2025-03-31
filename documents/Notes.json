@@ -8,7 +8,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-02-06T19:43:24.312Z",
+  "lastChangedOn": "2025-03-31T02:03:04.028Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -19,41 +19,108 @@
       "id": "1",
       "guid": "c1bab9e9-afae-4a14-b92d-5961d5528c1f",
       "heading": "Manually Direct-Control Brightness",
+      "text": "<p>Set to 'manualDirect'</p>",
       "links": {
         "satisfiesWithNote": [
           "NTCIP_1203-208"
         ]
-      }
+      },
+      "history": [
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-31T01:55:38.699Z"
+        },
+        {
+          "attributesChanged": {
+            "text": "<p>Set to 'manual-direct'</p>"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-31T01:55:48.302Z"
+        }
+      ]
     },
     {
       "id": "2",
       "guid": "eb065f0b-6486-4626-8900-6e09356b1ab5",
       "heading": "Manually Index-Control Brightness ",
+      "text": "<p>Set to 'manualIndexed'</p>",
       "links": {
         "satisfiesWithNote": [
           "NTCIP_1203-209"
         ]
-      }
+      },
+      "history": [
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-31T01:56:15.364Z"
+        }
+      ]
     },
     {
       "id": "3",
       "guid": "283d3963-d12f-4a9e-84db-563ffb4e67df",
       "heading": "Determine Current Composite Photocell Value",
+      "text": "<p>type = FAL</p>",
       "links": {
         "satisfiesWithNote": [
           "NTCIP_1203-207"
         ]
-      }
+      },
+      "history": [
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-31T02:03:04.028Z"
+        }
+      ]
     },
     {
       "id": "4",
       "guid": "37640606-06c3-4726-9ec0-940fab0784ff",
       "heading": "Determine Maximum Number of Light Sensor Levels",
+      "text": "<p>type = FAL</p>",
       "links": {
         "satisfiesWithNote": [
           "NTCIP_1203-150"
         ]
-      }
+      },
+      "history": [
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-03-31T01:51:50.447Z"
+        }
+      ]
     },
     {
       "id": "5",

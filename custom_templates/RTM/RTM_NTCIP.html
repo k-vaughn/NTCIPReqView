@@ -88,7 +88,8 @@
 
 {{#*inline "indirect"}}
 	{{#eachInlinkWith type="satisfiesWithNote"}}
-	  {{#if note}}
+	  {{set "note" ""}}
+	  {{#if text}}
 		  {{set "note" text}}
 		{{/if}}
 		{{#eachInlinkWith type="satisfies"}}
@@ -97,7 +98,7 @@
 				<td class="mib-col">{{>reference}}</td>
 				<td class="obj-col" colspan="2">{{#if (eval (formatString name) "==" "")}}{{heading}}{{else}}{{name}}{{/if}}</td>
 <!--				<td class="obj-col" colspan="2"><a href="{{docId}}.html#{{docId}}-{{id}}" target="_blank">{{#if (eval (formatString name) "==" "")}}{{heading}}{{else}}{{name}}{{/if}}</a></td> -->
-				<td class="obj-col"> {{formatString (get "note")}}</td>
+				<td class="obj-col">{{formatString (get "note")}}</td>
 			</tr>
 		{{/eachInlinkWith}}
     {{/eachInlinkWith}}

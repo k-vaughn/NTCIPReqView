@@ -1,14 +1,14 @@
 {
   "id": "NTCIP_1203",
   "guid": "B03E0221-4480-4150-81CB-A4607BB1CEE8",
-  "lastId": 1313,
+  "lastId": 1317,
   "createdOn": "2023-08-16T22:18:03",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-03-31T15:43:00.835Z",
+  "lastChangedOn": "2025-04-02T15:40:28.447Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -2126,6 +2126,68 @@
                           "NTCIP_1203-54"
                         ]
                       }
+                    },
+                    {
+                      "id": "1314",
+                      "guid": "29e1fb39-430b-441d-87c4-74271f3eb935",
+                      "heading": "Store a Graphic Definition with a File",
+                      "text": "<p>The DMS shall allow a management station to store a graphic by uploading a graphic file to the sign controller.</p>",
+                      "type": "d_req",
+                      "links": {
+                        "fulfil_opt": [
+                          "NTCIP_1203-54"
+                        ]
+                      },
+                      "history": [
+                        {
+                          "affectedNodeId": "141",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-01T22:59:57.318Z",
+                          "docId": "NTCIP_1203",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": null,
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-01T23:00:14.879Z"
+                        },
+                        {
+                          "addedLink": {
+                            "target": [
+                              "NTCIP_1203-54"
+                            ],
+                            "type": "fulfil_opt"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-01T23:00:45.070Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-02T15:40:28.447Z"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -4681,7 +4743,7 @@
                     {
                       "id": "1290",
                       "guid": "f46dc160-6476-4fc6-9060-538eb4c54a92",
-                      "text": "<pre style=\"text-align: start; text-decoration: none;\">&nbsp;&nbsp;sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp;&nbsp;note&nbsp;over&nbsp;Management&nbsp;Station,DMS:&nbsp;Preconditions:&nbsp;The&nbsp;management&nbsp;station&nbsp;shall&nbsp;be&nbsp;aware&nbsp;of&nbsp;the&nbsp;number&nbsp;of&lt;br/&gt;graphics&nbsp;supported&nbsp;by&nbsp;the&nbsp;DMS.\n&nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;!=&nbsp;('inUse' OR 'permanent')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;==&nbsp;('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicHeight.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicNumber.x,&nbsp;dmsGraphicName.x,&nbsp;dmsGraphicHeight.x,&nbsp;dmsGraphicWidth.x,&lt;br/&gt;dmsGraphicType.x,&nbsp;dmsGraphicTransparentEnabled.x,&nbsp;dmsGraphicTransparentColor.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;for&nbsp;each&nbsp;graphic&nbsp;block&nbsp;to&nbsp;be&nbsp;defined\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicBlockBitmap.x.y)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'readyForUse')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x != 'calculatingID')&nbsp;or&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; note over Management Station,DMS: Where&lt;br/&gt;x=dmsGraphicIndex or dmsGraphicBitmapIndex&lt;br/&gt;y=dmsGraphicBlockNumber</pre>",
+                      "text": "<pre style=\"text-align: start; text-decoration: none;\">&nbsp;&nbsp;sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp;&nbsp;note&nbsp;over&nbsp;Management&nbsp;Station,DMS:&nbsp;Preconditions:&nbsp;The&nbsp;management&nbsp;station&nbsp;shall&nbsp;be&nbsp;aware&nbsp;of&nbsp;the&nbsp;number&nbsp;of&lt;br/&gt;graphics&nbsp;supported&nbsp;by&nbsp;the&nbsp;DMS.\n&nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;!=&nbsp;('inUse' OR 'permanent')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;==&nbsp;('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicHeight.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicNumber.x,&nbsp;dmsGraphicName.x,&nbsp;dmsGraphicHeight.x,&nbsp;dmsGraphicWidth.x,&lt;br/&gt;dmsGraphicType.x,&nbsp;dmsGraphicTransparentEnabled.x,&nbsp;dmsGraphicTransparentColor.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;for&nbsp;each&nbsp;graphic&nbsp;block&nbsp;to&nbsp;be&nbsp;defined\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicBlockBitmap.x.y)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'readyForUseReq')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x != 'calculatingID')&nbsp;or&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alt dmsGraphicStaus == 'graphicError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Management&nbsp;Station-&gt;&gt;DMS: get(dmsGraphicErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end\n&nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; note over Management Station,DMS: Where&lt;br/&gt;x=dmsGraphicIndex or dmsGraphicBitmapIndex&lt;br/&gt;y=dmsGraphicBlockNumber</pre>",
                       "type": "mermaid",
                       "history": [
                         {
@@ -4749,6 +4811,39 @@
                             "name": "Ken Vaughn"
                           },
                           "changedOn": "2025-03-28T15:50:11.370Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<pre style=\"text-align: start; text-decoration: none;\">&nbsp;&nbsp;sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp;&nbsp;note&nbsp;over&nbsp;Management&nbsp;Station,DMS:&nbsp;Preconditions:&nbsp;The&nbsp;management&nbsp;station&nbsp;shall&nbsp;be&nbsp;aware&nbsp;of&nbsp;the&nbsp;number&nbsp;of&lt;br/&gt;graphics&nbsp;supported&nbsp;by&nbsp;the&nbsp;DMS.\n&nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;!=&nbsp;('inUse' OR 'permanent')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;==&nbsp;('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicHeight.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicNumber.x,&nbsp;dmsGraphicName.x,&nbsp;dmsGraphicHeight.x,&nbsp;dmsGraphicWidth.x,&lt;br/&gt;dmsGraphicType.x,&nbsp;dmsGraphicTransparentEnabled.x,&nbsp;dmsGraphicTransparentColor.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;for&nbsp;each&nbsp;graphic&nbsp;block&nbsp;to&nbsp;be&nbsp;defined\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicBlockBitmap.x.y)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'readyForUse')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x != 'calculatingID')&nbsp;or&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; note over Management Station,DMS: Where&lt;br/&gt;x=dmsGraphicIndex or dmsGraphicBitmapIndex&lt;br/&gt;y=dmsGraphicBlockNumber</pre>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-02T14:12:12.207Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<pre style=\"text-align: start; text-decoration: none;\">&nbsp;&nbsp;sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp;&nbsp;note&nbsp;over&nbsp;Management&nbsp;Station,DMS:&nbsp;Preconditions:&nbsp;The&nbsp;management&nbsp;station&nbsp;shall&nbsp;be&nbsp;aware&nbsp;of&nbsp;the&nbsp;number&nbsp;of&lt;br/&gt;graphics&nbsp;supported&nbsp;by&nbsp;the&nbsp;DMS.\n&nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;!=&nbsp;('inUse' OR 'permanent')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;==&nbsp;('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicHeight.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicNumber.x,&nbsp;dmsGraphicName.x,&nbsp;dmsGraphicHeight.x,&nbsp;dmsGraphicWidth.x,&lt;br/&gt;dmsGraphicType.x,&nbsp;dmsGraphicTransparentEnabled.x,&nbsp;dmsGraphicTransparentColor.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;for&nbsp;each&nbsp;graphic&nbsp;block&nbsp;to&nbsp;be&nbsp;defined\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicBlockBitmap.x.y)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'readyForUse')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x != 'calculatingID')&nbsp;or&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alt dmsGraphicStaus == 'graphicError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MS-&gt;&gt;DMS: get(dmsGraphicErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end\n&nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; note over Management Station,DMS: Where&lt;br/&gt;x=dmsGraphicIndex or dmsGraphicBitmapIndex&lt;br/&gt;y=dmsGraphicBlockNumber</pre>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-02T14:15:41.808Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<pre style=\"text-align: start; text-decoration: none;\">&nbsp;&nbsp;sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp;&nbsp;note&nbsp;over&nbsp;Management&nbsp;Station,DMS:&nbsp;Preconditions:&nbsp;The&nbsp;management&nbsp;station&nbsp;shall&nbsp;be&nbsp;aware&nbsp;of&nbsp;the&nbsp;number&nbsp;of&lt;br/&gt;graphics&nbsp;supported&nbsp;by&nbsp;the&nbsp;DMS.\n&nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;!=&nbsp;('inUse' OR 'permanent')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;==&nbsp;('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicHeight.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicNumber.x,&nbsp;dmsGraphicName.x,&nbsp;dmsGraphicHeight.x,&nbsp;dmsGraphicWidth.x,&lt;br/&gt;dmsGraphicType.x,&nbsp;dmsGraphicTransparentEnabled.x,&nbsp;dmsGraphicTransparentColor.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;for&nbsp;each&nbsp;graphic&nbsp;block&nbsp;to&nbsp;be&nbsp;defined\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicBlockBitmap.x.y)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'readyForUse')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x != 'calculatingID')&nbsp;or&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alt dmsGraphicStaus == 'graphicError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Management&nbsp;Station-&gt;&gt;DMS: get(dmsGraphicErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end\n&nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; note over Management Station,DMS: Where&lt;br/&gt;x=dmsGraphicIndex or dmsGraphicBitmapIndex&lt;br/&gt;y=dmsGraphicBlockNumber</pre>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-02T14:37:37.926Z"
                         }
                       ]
                     }
@@ -4825,6 +4920,164 @@
                             "name": "Ken Vaughn"
                           },
                           "changedOn": "2025-03-27T19:41:56.755Z"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "1315",
+                  "guid": "0b182c17-8765-4be6-854e-8ff2fa79c1e9",
+                  "heading": "Storing a Graphic Definition with a File",
+                  "type": "dia",
+                  "links": {
+                    "implement": [
+                      "NTCIP_1203-1314"
+                    ]
+                  },
+                  "history": [
+                    {
+                      "affectedNodeId": "449",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-01T23:01:50.954Z",
+                      "docId": "NTCIP_1203",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-01T23:02:11.452Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1203-1314"
+                        ],
+                        "type": "implement"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-01T23:02:31.234Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-02T01:54:33.722Z"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "1317",
+                      "guid": "40bb9d84-a9b4-4d72-830d-d5343be393d8",
+                      "text": "<pre style=\"text-align: start; text-decoration: none;\">sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;MS&nbsp;as&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;MS,DMS:&nbsp;Preconditions:&nbsp;The management station shall be aware of the number of&lt;br/&gt;graphics supported by the DMS.\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_OPEN(filename, write mode)\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_WRITE(handle, offset 0, pngFileContents)\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_CLOSE(handle)\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;DMS:&nbsp;File created\n\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;!= ('inUse', 'calculatingID', 'permanent',&nbsp;OR&nbsp;'processingGraphicFile')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== ('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicFilename.x = filename)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x&nbsp;!= 'processingGraphicFile')&nbsp;or&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;DMS-&gt;&gt;DMS:&nbsp;Processing graphic file\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;DMS:&nbsp;File processed\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== 'graphicFileError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicFileErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = modifyReq)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;fix errors\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== 'modifying'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicNumber.x, dmsGraphicName.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'readyForUseReq')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x&nbsp;!= 'calculatingID')&nbsp;or&nbsp;timeout\n    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DMS-&gt;&gt;DMS: validate data and calculate ID\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStaus&nbsp;== 'graphicError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;MS,&nbsp;DMS&nbsp;:&nbsp;Where x = dmsGraphicIndex</pre>",
+                      "type": "mermaid",
+                      "history": [
+                        {
+                          "affectedNodeId": "1315",
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-02T01:54:07.557Z",
+                          "docId": "NTCIP_1203",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "type": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-02T01:54:27.554Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-02T01:54:43.222Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<pre style=\"text-align: start; text-decoration: none;\">&nbsp;&nbsp;sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp;&nbsp;note&nbsp;over&nbsp;Management&nbsp;Station,DMS:&nbsp;Preconditions:&nbsp;The&nbsp;management&nbsp;station&nbsp;shall&nbsp;be&nbsp;aware&nbsp;of&nbsp;the&nbsp;number&nbsp;of&lt;br/&gt;graphics&nbsp;supported&nbsp;by&nbsp;the&nbsp;DMS.\n&nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;!=&nbsp;('inUse' OR 'permanent')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;==&nbsp;('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicHeight.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicNumber.x,&nbsp;dmsGraphicName.x,&nbsp;dmsGraphicHeight.x,&nbsp;dmsGraphicWidth.x,&lt;br/&gt;dmsGraphicType.x,&nbsp;dmsGraphicTransparentEnabled.x,&nbsp;dmsGraphicTransparentColor.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;for&nbsp;each&nbsp;graphic&nbsp;block&nbsp;to&nbsp;be&nbsp;defined\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicBlockBitmap.x.y)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'readyForUse')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x != 'calculatingID')&nbsp;or&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Management&nbsp;Station-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; note over Management Station,DMS: Where&lt;br/&gt;x=dmsGraphicIndex or dmsGraphicBitmapIndex&lt;br/&gt;y=dmsGraphicBlockNumber</pre>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-02T02:29:03.350Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<pre style=\"text-align: start; text-decoration: none;\">sequenceDiagram\n&nbsp; &nbsp; participant MS as Management Station\n&nbsp; &nbsp; participant DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp; &nbsp; note over MS,DMS: Preconditions: The management station shall be aware of the number of&lt;br/&gt;graphics supported by the DMS.\n&nbsp; &nbsp; MS-&gt;&gt;DMS: SSH_FXP_OPEN(\"filename.png\", write mode)\n&nbsp; &nbsp; DMS--&gt;&gt;MS: SSH_FXP_HANDLE(\"xyz789\")\n&nbsp; &nbsp; note over DMS: Handle assigned for file\n\n&nbsp; &nbsp; MS-&gt;&gt;DMS: SSH_FXP_WRITE(\"xyz789\", offset 0, pngFileContents)\n&nbsp; &nbsp; DMS--&gt;&gt;MS: SSH_FXP_STATUS(OK)\n&nbsp; &nbsp; note over DMS: Data written to file\n\n&nbsp; &nbsp; MS-&gt;&gt;DMS: SSH_FXP_CLOSE(\"xyz789\")\n&nbsp; &nbsp; DMS--&gt;&gt;MS: SSH_FXP_STATUS(OK)\n&nbsp; &nbsp; note over DMS: File closed\n\n&nbsp; &nbsp; MS-&gt;&gt;DMS: get(dmsGraphicStatus.x)\n&nbsp; &nbsp; alt dmsGraphicStatus.x != ('inUse' OR 'permanent')\n&nbsp; &nbsp; &nbsp; &nbsp; MS-&gt;&gt;DMS: set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp; &nbsp; MS-&gt;&gt;DMS: get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; alt dmsGraphicStatus.x == ('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MS-&gt;&gt;DMS: set(dmsGraphicFilename.x = \"filename.png\")\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; loop until (dmsGraphicStatus.x != 'processingGraphicFile') or timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MS-&gt;&gt;DMS: get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alt dmsGraphicStatus.x == 'graphicFileError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MS-&gt;&gt;DMS: get(dmsGraphicErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MS-&gt;&gt;DMS: set(dmsGraphicStatus.x = modifyReq)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MS-&gt;&gt;DMS: fix errors\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alt dmsGraphicStatus.x == 'modifying'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MS-&gt;&gt;DMS: set(dmsGraphicNumber.x, dmsGraphicName.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MS-&gt;&gt;DMS: set(dmsGraphicStatus.x = 'readyForUse')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; loop until (dmsGraphicStatus.x != 'calculatingID') or timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MS-&gt;&gt;DMS: get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end\n&nbsp; &nbsp; &nbsp; &nbsp; end\n&nbsp; &nbsp; end\n&nbsp; &nbsp; note over MS, DMS : Where x = dmsGraphicIndex.x</pre>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-02T14:11:15.511Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<pre style=\"text-align: start; text-decoration: none;\">sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;MS&nbsp;as&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;MS,DMS:&nbsp;Preconditions:&nbsp;The management station shall be aware of the number of&lt;br/&gt;graphics supported by the DMS.\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_OPEN(filename, write mode)\n&nbsp; &nbsp;&nbsp;DMS--&gt;&gt;MS:&nbsp;SSH_FXP_HANDLE(handle)\n\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_WRITE(handle, offset 0, pngFileContents)\n&nbsp; &nbsp;&nbsp;DMS--&gt;&gt;MS:&nbsp;SSH_FXP_STATUS(OK)\n\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_CLOSE(handle)\n&nbsp; &nbsp;&nbsp;DMS--&gt;&gt;MS:&nbsp;SSH_FXP_STATUS(OK)\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;DMS:&nbsp;File created\n\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;!= ('inUse', 'calculatingID', 'permanent',&nbsp;OR&nbsp;'processingGraphicFile')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== ('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicFilename.x = filename)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x&nbsp;!= 'processingGraphicFile')&nbsp;or&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;DMS-&gt;&gt;DMS:&nbsp;Processing graphic file\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;DMS:&nbsp;File processed\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== 'graphicFileError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicFileErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = modifyReq)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;fix errors\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== 'modifying'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicNumber.x, dmsGraphicName.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'readyForUse')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;DMS-&gt;&gt;DMS:&nbsp;validate data\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x&nbsp;!= 'calculatingID')&nbsp;or&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;data&nbsp;is&nbsp;valid\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;DMS-&gt;&gt;DMS:&nbsp;calculateID\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStaus&nbsp;== 'graphicError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;MS,&nbsp;DMS&nbsp;:&nbsp;Where x = dmsGraphicIndex</pre>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-02T14:19:41.608Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<pre style=\"text-align: start; text-decoration: none;\">sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;MS&nbsp;as&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;MS,DMS:&nbsp;Preconditions:&nbsp;The management station shall be aware of the number of&lt;br/&gt;graphics supported by the DMS.\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_OPEN(filename, write mode)\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_WRITE(handle, offset 0, pngFileContents)\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_CLOSE(handle)\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;DMS:&nbsp;File created\n\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;!= ('inUse', 'calculatingID', 'permanent',&nbsp;OR&nbsp;'processingGraphicFile')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== ('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicFilename.x = filename)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x&nbsp;!= 'processingGraphicFile')&nbsp;or&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;DMS-&gt;&gt;DMS:&nbsp;Processing graphic file\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;DMS:&nbsp;File processed\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== 'graphicFileError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicFileErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = modifyReq)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;fix errors\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== 'modifying'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicNumber.x, dmsGraphicName.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'readyForUse')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x&nbsp;!= 'calculatingID')&nbsp;or&nbsp;timeout\n    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DMS-&gt;&gt;DMS: validate data\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;DMS-&gt;&gt;DMS:&nbsp;calculateID\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStaus&nbsp;== 'graphicError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;MS,&nbsp;DMS&nbsp;:&nbsp;Where x = dmsGraphicIndex</pre>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-02T14:21:11.494Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<pre style=\"text-align: start; text-decoration: none;\">sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;MS&nbsp;as&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;MS,DMS:&nbsp;Preconditions:&nbsp;The management station shall be aware of the number of&lt;br/&gt;graphics supported by the DMS.\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_OPEN(filename, write mode)\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_WRITE(handle, offset 0, pngFileContents)\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_CLOSE(handle)\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;DMS:&nbsp;File created\n\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;!= ('inUse', 'calculatingID', 'permanent',&nbsp;OR&nbsp;'processingGraphicFile')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== ('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicFilename.x = filename)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x&nbsp;!= 'processingGraphicFile')&nbsp;or&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;DMS-&gt;&gt;DMS:&nbsp;Processing graphic file\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;DMS:&nbsp;File processed\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== 'graphicFileError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicFileErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = modifyReq)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;fix errors\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== 'modifying'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicNumber.x, dmsGraphicName.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'readyForUse')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x&nbsp;!= 'calculatingID')&nbsp;or&nbsp;timeout\n    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DMS-&gt;&gt;DMS: validate data and calculate ID\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStaus&nbsp;== 'graphicError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;MS,&nbsp;DMS&nbsp;:&nbsp;Where x = dmsGraphicIndex</pre>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-02T14:37:16.771Z"
                         }
                       ]
                     }
@@ -5147,7 +5400,7 @@
                 {
                   "id": "1294",
                   "guid": "54ddd641-3bc9-4f53-871a-3431ce946d05",
-                  "text": "<pre>@startuml\nnote as N1&nbsp;\nrejectMessageActivation {\n&nbsp; &nbsp;activateMessageError = syntaxMULTI\n&nbsp; &nbsp;dmsMultiSyntaxError = graphicNotDefined\n&nbsp; &nbsp;return inconsistentValue }\nend note\n\nstate notUsed\nnotUsed : event set(dmsGraphicStatus = notUsedReq)/\nnotUsed --&gt; modifying : set(dmsGraphicStatus = modifyReq)\nnotUsed : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nnotUsed : event set(any data for graphic)/ notWritable&nbsp;\nnotUsed : event activate message using graphic/ See note: rejectMessageActivation()\n\nmodifying --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nmodifying : event set(dmsGraphicStatus = modifyReq)/\nmodifying --&gt; calculatingID : set(dmsGraphicStatus = readyForUseReq)&nbsp;\nmodifying : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nmodifying : event set(any data for graphic)/ process\nmodifying : event activate message using graphic/ See note: rejectMessageActivation()\nmodifying : event set(dmsGraphicHeight = different value)/ dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicWidth = different value)/ dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicType = different value)/ dmsGraphicBlockBitmap =&gt; zero length\n\ncalculatingID : do/ udpate dmsGraphicID\ncalculatingID --&gt; readyForUse\ncalculatingID --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\ncalculatingID : event set(dmsGraphicStatus = any other value)/ inconsistentValue\ncalculatingID : event set(any data for graphic)/ notWritable\ncalculatingID : event activate message using graphic/ See note: rejectMessageActivation()\n\nreadyForUse --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nreadyForUse --&gt; modifying : set(dmsGraphicStatus =modifyReq)\nreadyForUse : event set(dmsGraphicStatus = readyForUseReq)/\nreadyForUse : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nreadyForUse : event set(any data for graphic)/ notWritable\nreadyForUse --&gt; inUse : activate message using graphic\nnote &nbsp;on link\n&nbsp; Consistency check rules for message&nbsp;\n&nbsp; activation are defined in Clause 4.3.5\nend note\n\ninUse : event set(dmsGraphicStatus)/ inconsistentValue\ninUse : event set(any data for graphic)/ notWritable\ninUse : event activate another message using graphic/\ninUse --&gt; readyForUse : activate message not using graphic\n\npermanent : event set(dmsGraphicStatus)/ inconsistentValue\npermanent : event set(any data for graphic)/ notWritable\npermanent : event activate a message using graphic/\n@enduml</pre>",
+                  "text": "<pre>@startuml\nnote as N1&nbsp;\nrejectMessageActivation {\n&nbsp; &nbsp;activateMessageError = syntaxMULTI\n&nbsp; &nbsp;dmsMultiSyntaxError = graphicNotDefined\n&nbsp; &nbsp;return inconsistentValue }\nend note\n\nstate notUsed\nnotUsed : set(dmsGraphicStatus = notUsedReq)/\nnotUsed --&gt; modifying : set(dmsGraphicStatus = modifyReq)\nnotUsed : set(dmsGraphicStatus = any other value)/ inconsistentValue\nnotUsed : set(any data for graphic)/ notWritable&nbsp;\nnotUsed : activate message using graphic/ rejectMessageActivation()\n\nmodifying --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nmodifying : set(dmsGraphicStatus = modifyReq)/\nmodifying --&gt; processingGraphicFile : set(dmsGraphicFilename)\nmodifying --&gt; calculatingID : set(dmsGraphicStatus = readyForUseReq)&nbsp;\nmodifying : set(dmsGraphicStatus = any other value)/ inconsistentValue\nmodifying : set(any data for graphic)/ process\nmodifying : activate message using graphic/ rejectMessageActivation()\nmodifying : set(dmsGraphicHeight = different value)/ bitmap =&gt; zero length\nmodifying : set(dmsGraphicWidth = different value)/ bitmap =&gt; zero length\nmodifying : set(dmsGraphicType = different value)/ bitmap =&gt; zero length\n\nprocessingGraphicFile : entry/ process file\nprocessingGraphicFile --&gt; modifying : [no error]\nprocessingGraphicFile --&gt; graphicFileError : [error]\nprocessingGraphicFile : set(dmsGraphicStatus)/ inconsistentValue\nprocessingGraphicFile : set(any data for graphic)/ notWritable\nprocessingGraphicFile : activate message using graphic/ rejectMessageActivation()\n\ngraphicFileError --&gt; modifying : set (dmsGraphicStatus = modifyReq)\ngraphicFileError : set(dmsGraphicStatus = any other value)/ inconsistentValue\ngraphicFileError : set(any data for graphic)/ notWritable\ngraphicFileError : activate message using graphic/ rejectMessageActivation()\n\ncalculatingID : do/ udpate dmsGraphicID\ncalculatingID --&gt; readyForUse : [no error]\ncalculatingID --&gt; graphicError : [error]\ncalculatingID --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\ncalculatingID : set(dmsGraphicStatus = any other value)/ inconsistentValue\ncalculatingID : set(any data for graphic)/ notWritable\ncalculatingID : activate message using graphic/ See note: rejectMessageActivation()\n\ngraphicError --&gt; modifying : set (dmsGraphicStatus = modifyReq)\ngraphicError --&gt; notUsed : set (dmsGraphicStatus = notUsedReq)\ngraphicError : set(dmsGraphicStatus = any other value)/ inconsistentValue\ngraphicError : set(any data for graphic)/ notWritable\ngraphicError : activate message using graphic/ rejectMessageActivation()\n\nreadyForUse --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nreadyForUse --&gt; modifying : set(dmsGraphicStatus =modifyReq)\nreadyForUse : set(dmsGraphicStatus = readyForUseReq)/\nreadyForUse : set(dmsGraphicStatus = any other value)/ inconsistentValue\nreadyForUse : set(any data for graphic)/ notWritable\nreadyForUse --&gt; inUse : activate message using graphic\nnote &nbsp;on link\n&nbsp; Consistency check rules for message&nbsp;\n&nbsp; activation are defined in Clause 4.3.5\nend note\n\ninUse : set(dmsGraphicStatus)/ inconsistentValue\ninUse : set(any data for graphic)/ notWritable\ninUse : activate another message using graphic/\ninUse --&gt; readyForUse : activate message not using graphic\n\npermanent : set(dmsGraphicStatus)/ inconsistentValue\npermanent : set(any data for graphic)/ notWritable\npermanent : activate a message using graphic/\n@enduml</pre>",
                   "type": "mermaid",
                   "history": [
                     {
@@ -5215,6 +5468,72 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-03-28T14:32:36.411Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<pre>@startuml\nnote as N1&nbsp;\nrejectMessageActivation {\n&nbsp; &nbsp;activateMessageError = syntaxMULTI\n&nbsp; &nbsp;dmsMultiSyntaxError = graphicNotDefined\n&nbsp; &nbsp;return inconsistentValue }\nend note\n\nstate notUsed\nnotUsed : event set(dmsGraphicStatus = notUsedReq)/\nnotUsed --&gt; modifying : set(dmsGraphicStatus = modifyReq)\nnotUsed : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nnotUsed : event set(any data for graphic)/ notWritable&nbsp;\nnotUsed : event activate message using graphic/ See note: rejectMessageActivation()\n\nmodifying --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nmodifying : event set(dmsGraphicStatus = modifyReq)/\nmodifying --&gt; calculatingID : set(dmsGraphicStatus = readyForUseReq)&nbsp;\nmodifying : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nmodifying : event set(any data for graphic)/ process\nmodifying : event activate message using graphic/ See note: rejectMessageActivation()\nmodifying : event set(dmsGraphicHeight = different value)/ dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicWidth = different value)/ dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicType = different value)/ dmsGraphicBlockBitmap =&gt; zero length\n\ncalculatingID : do/ udpate dmsGraphicID\ncalculatingID --&gt; readyForUse\ncalculatingID --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\ncalculatingID : event set(dmsGraphicStatus = any other value)/ inconsistentValue\ncalculatingID : event set(any data for graphic)/ notWritable\ncalculatingID : event activate message using graphic/ See note: rejectMessageActivation()\n\nreadyForUse --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nreadyForUse --&gt; modifying : set(dmsGraphicStatus =modifyReq)\nreadyForUse : event set(dmsGraphicStatus = readyForUseReq)/\nreadyForUse : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nreadyForUse : event set(any data for graphic)/ notWritable\nreadyForUse --&gt; inUse : activate message using graphic\nnote &nbsp;on link\n&nbsp; Consistency check rules for message&nbsp;\n&nbsp; activation are defined in Clause 4.3.5\nend note\n\ninUse : event set(dmsGraphicStatus)/ inconsistentValue\ninUse : event set(any data for graphic)/ notWritable\ninUse : event activate another message using graphic/\ninUse --&gt; readyForUse : activate message not using graphic\n\npermanent : event set(dmsGraphicStatus)/ inconsistentValue\npermanent : event set(any data for graphic)/ notWritable\npermanent : event activate a message using graphic/\n@enduml</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-01T20:26:20.918Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<pre>@startuml\nnote as N1&nbsp;\nrejectMessageActivation {\n&nbsp; &nbsp;activateMessageError = syntaxMULTI\n&nbsp; &nbsp;dmsMultiSyntaxError = graphicNotDefined\n&nbsp; &nbsp;return inconsistentValue }\nend note\n\nstate notUsed\nnotUsed : event set(dmsGraphicStatus = notUsedReq)/\nnotUsed --&gt; modifying : set(dmsGraphicStatus = modifyReq)\nnotUsed : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nnotUsed : event set(any data for graphic)/ notWritable&nbsp;\nnotUsed : event activate message using graphic/ See note: rejectMessageActivation()\n\nmodifying --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nmodifying : event set(dmsGraphicStatus = modifyReq)/\nmodifying --&gt; processingGraphicFile : set(dmsGraphicFilename)\nmodifying --&gt; calculatingID : set(dmsGraphicStatus = readyForUseReq)&nbsp;\nmodifying : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nmodifying : event set(any data for graphic)/ process\nmodifying : event activate message using graphic/ See note: rejectMessageActivation()\nmodifying : event set(dmsGraphicHeight = different value)/ dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicWidth = different value)/ dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicType = different value)/ dmsGraphicBlockBitmap =&gt; zero length\n\nprocessingGraphicFile : entry/ process file\nprocessingGraphicFile --&gt; modifying : [no error] processing complete\nprocessingGraphicFile --&gt; graphicFileError : [error] processing complete\nprocessingGraphicFile : event set(dmsGraphicStatus)/ inconsistentValue\n\ngraphicFileError --&gt; modifying : set (dmsGraphicStatus = modifyReq)\n\ncalculatingID : do/ udpate dmsGraphicID\ncalculatingID --&gt; readyForUse\ncalculatingID --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\ncalculatingID : event set(dmsGraphicStatus = any other value)/ inconsistentValue\ncalculatingID : event set(any data for graphic)/ notWritable\ncalculatingID : event activate message using graphic/ See note: rejectMessageActivation()\n\nreadyForUse --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nreadyForUse --&gt; modifying : set(dmsGraphicStatus =modifyReq)\nreadyForUse : event set(dmsGraphicStatus = readyForUseReq)/\nreadyForUse : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nreadyForUse : event set(any data for graphic)/ notWritable\nreadyForUse --&gt; inUse : activate message using graphic\nnote &nbsp;on link\n&nbsp; Consistency check rules for message&nbsp;\n&nbsp; activation are defined in Clause 4.3.5\nend note\n\ninUse : event set(dmsGraphicStatus)/ inconsistentValue\ninUse : event set(any data for graphic)/ notWritable\ninUse : event activate another message using graphic/\ninUse --&gt; readyForUse : activate message not using graphic\n\npermanent : event set(dmsGraphicStatus)/ inconsistentValue\npermanent : event set(any data for graphic)/ notWritable\npermanent : event activate a message using graphic/\n@enduml</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-01T20:49:08.060Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<pre>@startuml\nnote as N1&nbsp;\nrejectMessageActivation {\n&nbsp; &nbsp;activateMessageError = syntaxMULTI\n&nbsp; &nbsp;dmsMultiSyntaxError = graphicNotDefined\n&nbsp; &nbsp;return inconsistentValue }\nend note\n\n\nstate notUsed\nnotUsed : event set(dmsGraphicStatus = notUsedReq)/\nnotUsed --&gt; modifying : set(dmsGraphicStatus = modifyReq)\nnotUsed : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nnotUsed : event set(any data for graphic)/ notWritable&nbsp;\nnotUsed : event activate message using graphic/ rejectMessageActivation()\n\n\nmodifying --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nmodifying : event set(dmsGraphicStatus = modifyReq)/\nmodifying --&gt; processingGraphicFile : set(dmsGraphicFilename)\nmodifying --&gt; calculatingID : set(dmsGraphicStatus = readyForUseReq)&nbsp;\nmodifying : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nmodifying : event set(any data for graphic)/ process\nmodifying : event activate message using graphic/ rejectMessageActivation()\nmodifying : event set(dmsGraphicHeight = different value)/ dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicWidth = different value)/ dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicType = different value)/ dmsGraphicBlockBitmap =&gt; zero length\n\n\nprocessingGraphicFile : entry/ process file\nprocessingGraphicFile --&gt; modifying : [no error]\nprocessingGraphicFile --&gt; graphicFileError : [error]\nprocessingGraphicFile : event set(dmsGraphicStatus)/ inconsistentValue\nprocessingGraphicFile : event set(any data for graphic)/ notWritable\nprocessingGraphicFile : event activate message using graphic/ rejectMessageActivation()\n\n\ngraphicFileError --&gt; modifying : set (dmsGraphicStatus = modifyReq)\nprocessingGraphicFile : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nprocessingGraphicFile : event set(any data for graphic)/ notWritable\nprocessingGraphicFile : event activate message using graphic/ rejectMessageActivation()\n\n\ncalculatingID : do/ udpate dmsGraphicID\ncalculatingID --&gt; readyForUse\ncalculatingID --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\ncalculatingID : event set(dmsGraphicStatus = any other value)/ inconsistentValue\ncalculatingID : event set(any data for graphic)/ notWritable\ncalculatingID : event activate message using graphic/ See note: rejectMessageActivation()\n\n\nreadyForUse --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nreadyForUse --&gt; modifying : set(dmsGraphicStatus =modifyReq)\nreadyForUse : event set(dmsGraphicStatus = readyForUseReq)/\nreadyForUse : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nreadyForUse : event set(any data for graphic)/ notWritable\nreadyForUse --&gt; inUse : activate message using graphic\nnote &nbsp;on link\n&nbsp; Consistency check rules for message&nbsp;\n&nbsp; activation are defined in Clause 4.3.5\nend note\n\n\ninUse : event set(dmsGraphicStatus)/ inconsistentValue\ninUse : event set(any data for graphic)/ notWritable\ninUse : event activate another message using graphic/\ninUse --&gt; readyForUse : activate message not using graphic\n\n\npermanent : event set(dmsGraphicStatus)/ inconsistentValue\npermanent : event set(any data for graphic)/ notWritable\npermanent : event activate a message using graphic/\n@enduml</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-02T01:11:53.229Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<pre>@startuml\nnote as N1&nbsp;\nrejectMessageActivation {\n&nbsp; &nbsp;activateMessageError = syntaxMULTI\n&nbsp; &nbsp;dmsMultiSyntaxError = graphicNotDefined\n&nbsp; &nbsp;return inconsistentValue }\nend note\n\n\nstate notUsed\nnotUsed : event set(dmsGraphicStatus = notUsedReq)/\nnotUsed --&gt; modifying : set(dmsGraphicStatus = modifyReq)\nnotUsed : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nnotUsed : event set(any data for graphic)/ notWritable&nbsp;\nnotUsed : event activate message using graphic/ rejectMessageActivation()\n\n\nmodifying --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nmodifying : event set(dmsGraphicStatus = modifyReq)/\nmodifying --&gt; processingGraphicFile : set(dmsGraphicFilename)\nmodifying --&gt; calculatingID : set(dmsGraphicStatus = readyForUseReq)&nbsp;\nmodifying : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nmodifying : event set(any data for graphic)/ process\nmodifying : event activate message using graphic/ rejectMessageActivation()\nmodifying : event set(dmsGraphicHeight = different value)/ dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicWidth = different value)/ dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicType = different value)/ dmsGraphicBlockBitmap =&gt; zero length\n\n\nprocessingGraphicFile : entry/ process file\nprocessingGraphicFile --&gt; modifying : [no error]\nprocessingGraphicFile --&gt; graphicFileError : [error]\nprocessingGraphicFile : event set(dmsGraphicStatus)/ inconsistentValue\nprocessingGraphicFile : event set(any data for graphic)/ notWritable\nprocessingGraphicFile : event activate message using graphic/ rejectMessageActivation()\n\n\ngraphicFileError --&gt; modifying : set (dmsGraphicStatus = modifyReq)\ngraphicFileError : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nprocessingGraphicFile : event set(any data for graphic)/ notWritable\nprocessingGraphicFile : event activate message using graphic/ rejectMessageActivation()\n\n\ncalculatingID : do/ udpate dmsGraphicID\ncalculatingID --&gt; readyForUse\ncalculatingID --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\ncalculatingID : event set(dmsGraphicStatus = any other value)/ inconsistentValue\ncalculatingID : event set(any data for graphic)/ notWritable\ncalculatingID : event activate message using graphic/ See note: rejectMessageActivation()\n\n\nreadyForUse --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nreadyForUse --&gt; modifying : set(dmsGraphicStatus =modifyReq)\nreadyForUse : event set(dmsGraphicStatus = readyForUseReq)/\nreadyForUse : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nreadyForUse : event set(any data for graphic)/ notWritable\nreadyForUse --&gt; inUse : activate message using graphic\nnote &nbsp;on link\n&nbsp; Consistency check rules for message&nbsp;\n&nbsp; activation are defined in Clause 4.3.5\nend note\n\n\ninUse : event set(dmsGraphicStatus)/ inconsistentValue\ninUse : event set(any data for graphic)/ notWritable\ninUse : event activate another message using graphic/\ninUse --&gt; readyForUse : activate message not using graphic\n\n\npermanent : event set(dmsGraphicStatus)/ inconsistentValue\npermanent : event set(any data for graphic)/ notWritable\npermanent : event activate a message using graphic/\n@enduml</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-02T01:12:30.901Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<pre>@startuml\nnote as N1&nbsp;\nrejectMessageActivation {\n&nbsp; &nbsp;activateMessageError = syntaxMULTI\n&nbsp; &nbsp;dmsMultiSyntaxError = graphicNotDefined\n&nbsp; &nbsp;return inconsistentValue }\nend note\n\n\nstate notUsed\nnotUsed : event set(dmsGraphicStatus = notUsedReq)/\nnotUsed --&gt; modifying : set(dmsGraphicStatus = modifyReq)\nnotUsed : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nnotUsed : event set(any data for graphic)/ notWritable&nbsp;\nnotUsed : event activate message using graphic/ rejectMessageActivation()\n\n\nmodifying --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nmodifying : event set(dmsGraphicStatus = modifyReq)/\nmodifying --&gt; processingGraphicFile : set(dmsGraphicFilename)\nmodifying --&gt; calculatingID : set(dmsGraphicStatus = readyForUseReq)&nbsp;\nmodifying : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nmodifying : event set(any data for graphic)/ process\nmodifying : event activate message using graphic/ rejectMessageActivation()\nmodifying : event set(dmsGraphicHeight = different value)/ dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicWidth = different value)/ dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicType = different value)/ dmsGraphicBlockBitmap =&gt; zero length\n\n\nprocessingGraphicFile : entry/ process file\nprocessingGraphicFile --&gt; modifying : [no error]\nprocessingGraphicFile --&gt; graphicFileError : [error]\nprocessingGraphicFile : event set(dmsGraphicStatus)/ inconsistentValue\nprocessingGraphicFile : event set(any data for graphic)/ notWritable\nprocessingGraphicFile : event activate message using graphic/ rejectMessageActivation()\n\n\ngraphicFileError --&gt; modifying : set (dmsGraphicStatus = modifyReq)\ngraphicFileError : event set(dmsGraphicStatus = any other value)/ inconsistentValue\ngraphicFileError : event set(any data for graphic)/ notWritable\ngraphicFileError : event activate message using graphic/ rejectMessageActivation()\n\n\ncalculatingID : do/ udpate dmsGraphicID\ncalculatingID --&gt; readyForUse\ncalculatingID --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\ncalculatingID : event set(dmsGraphicStatus = any other value)/ inconsistentValue\ncalculatingID : event set(any data for graphic)/ notWritable\ncalculatingID : event activate message using graphic/ See note: rejectMessageActivation()\n\n\nreadyForUse --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nreadyForUse --&gt; modifying : set(dmsGraphicStatus =modifyReq)\nreadyForUse : event set(dmsGraphicStatus = readyForUseReq)/\nreadyForUse : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nreadyForUse : event set(any data for graphic)/ notWritable\nreadyForUse --&gt; inUse : activate message using graphic\nnote &nbsp;on link\n&nbsp; Consistency check rules for message&nbsp;\n&nbsp; activation are defined in Clause 4.3.5\nend note\n\n\ninUse : event set(dmsGraphicStatus)/ inconsistentValue\ninUse : event set(any data for graphic)/ notWritable\ninUse : event activate another message using graphic/\ninUse --&gt; readyForUse : activate message not using graphic\n\n\npermanent : event set(dmsGraphicStatus)/ inconsistentValue\npermanent : event set(any data for graphic)/ notWritable\npermanent : event activate a message using graphic/\n@enduml</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-02T14:45:56.266Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<pre>@startuml\nnote as N1&nbsp;\nrejectMessageActivation {\n&nbsp; &nbsp;activateMessageError = syntaxMULTI\n&nbsp; &nbsp;dmsMultiSyntaxError = graphicNotDefined\n&nbsp; &nbsp;return inconsistentValue }\nend note\n\n\nstate notUsed\nnotUsed : event set(dmsGraphicStatus = notUsedReq)/\nnotUsed --&gt; modifying : set(dmsGraphicStatus = modifyReq)\nnotUsed : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nnotUsed : event set(any data for graphic)/ notWritable&nbsp;\nnotUsed : event activate message using graphic/ rejectMessageActivation()\n\n\nmodifying --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nmodifying : event set(dmsGraphicStatus = modifyReq)/\nmodifying --&gt; processingGraphicFile : set(dmsGraphicFilename)\nmodifying --&gt; calculatingID : set(dmsGraphicStatus = readyForUseReq)&nbsp;\nmodifying : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nmodifying : event set(any data for graphic)/ process\nmodifying : event activate message using graphic/ rejectMessageActivation()\nmodifying : event set(dmsGraphicHeight = different value)/ dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicWidth = different value)/ dmsGraphicBlockBitmap =&gt; zero length\nmodifying : event set(dmsGraphicType = different value)/ dmsGraphicBlockBitmap =&gt; zero length\n\n\nprocessingGraphicFile : entry/ process file\nprocessingGraphicFile --&gt; modifying : [no error]\nprocessingGraphicFile --&gt; graphicFileError : [error]\nprocessingGraphicFile : event set(dmsGraphicStatus)/ inconsistentValue\nprocessingGraphicFile : event set(any data for graphic)/ notWritable\nprocessingGraphicFile : event activate message using graphic/ rejectMessageActivation()\n\n\ngraphicFileError --&gt; modifying : set (dmsGraphicStatus = modifyReq)\ngraphicFileError : event set(dmsGraphicStatus = any other value)/ inconsistentValue\ngraphicFileError : event set(any data for graphic)/ notWritable\ngraphicFileError : event activate message using graphic/ rejectMessageActivation()\n\n\ncalculatingID : do/ udpate dmsGraphicID\ncalculatingID --&gt; readyForUse : [no error]\ncalculatingID --&gt; graphicError : [error]\ncalculatingID --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\ncalculatingID : event set(dmsGraphicStatus = any other value)/ inconsistentValue\ncalculatingID : event set(any data for graphic)/ notWritable\ncalculatingID : event activate message using graphic/ See note: rejectMessageActivation()\n\n\ngraphicError --&gt; modifying : set (dmsGraphicStatus = modifyReq)\ngraphicError --&gt; notUsed : set (dmsGraphicStatus = notUsedReq)\ngraphicError : event set(dmsGraphicStatus = any other value)/ inconsistentValue\ngraphicError : event set(any data for graphic)/ notWritable\ngraphicError : event activate message using graphic/ rejectMessageActivation()\n\n\nreadyForUse --&gt; notUsed : set(dmsGraphicStatus = notUsedReq)\nreadyForUse --&gt; modifying : set(dmsGraphicStatus =modifyReq)\nreadyForUse : event set(dmsGraphicStatus = readyForUseReq)/\nreadyForUse : event set(dmsGraphicStatus = any other value)/ inconsistentValue\nreadyForUse : event set(any data for graphic)/ notWritable\nreadyForUse --&gt; inUse : activate message using graphic\nnote &nbsp;on link\n&nbsp; Consistency check rules for message&nbsp;\n&nbsp; activation are defined in Clause 4.3.5\nend note\n\n\ninUse : event set(dmsGraphicStatus)/ inconsistentValue\ninUse : event set(any data for graphic)/ notWritable\ninUse : event activate another message using graphic/\ninUse --&gt; readyForUse : activate message not using graphic\n\n\npermanent : event set(dmsGraphicStatus)/ inconsistentValue\npermanent : event set(any data for graphic)/ notWritable\npermanent : event activate a message using graphic/\n@enduml</pre>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-02T15:12:15.109Z"
                     }
                   ]
                 },
@@ -11878,13 +12197,8 @@
               "guid": "e251f8b9-aef1-418e-a01e-b807c8bda56d",
               "heading": "dmsGraphicMaxSize",
               "access": "read-only",
-              "status": "current",
+              "status": "deprecated",
               "type": "ot",
-              "links": {
-                "satisfies": [
-                  "NTCIP_1203-143"
-                ]
-              },
               "history": [
                 {
                   "affectedNodeId": "1154",
@@ -11896,6 +12210,31 @@
                   "changedOn": "2025-03-30T22:00:22.080Z",
                   "docId": "NTCIP_1203",
                   "structureAction": "Demote"
+                },
+                {
+                  "attributesChanged": {
+                    "status": "current"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-02T15:29:54.390Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-02T15:36:31.027Z",
+                  "removedLink": {
+                    "target": [
+                      "NTCIP_1203-143"
+                    ],
+                    "type": "satisfies"
+                  }
                 }
               ]
             },
@@ -12047,9 +12386,26 @@
                   "links": {
                     "satisfies": [
                       "NTCIP_1203-145",
-                      "NTCIP_1203-146"
+                      "NTCIP_1203-146",
+                      "NTCIP_1203-1314"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1203-1314"
+                        ],
+                        "type": "satisfies"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-02T15:38:37.896Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1166",
@@ -12061,23 +12417,75 @@
                   "links": {
                     "satisfies": [
                       "NTCIP_1203-145",
-                      "NTCIP_1203-146"
+                      "NTCIP_1203-146",
+                      "NTCIP_1203-1314"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1203-1314"
+                        ],
+                        "type": "satisfies"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-02T15:38:37.896Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1167",
                   "guid": "1aafb440-6653-4e02-9d72-dd6d2d6dc2f8",
                   "heading": "dmsGraphicHeight",
                   "access": "read-write",
-                  "status": "current",
+                  "status": "deprecated",
                   "type": "ot",
-                  "links": {
-                    "satisfies": [
-                      "NTCIP_1203-145",
-                      "NTCIP_1203-146"
-                    ]
-                  }
+                  "history": [
+                    {
+                      "attributesChanged": {
+                        "status": "current"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-02T15:32:16.160Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-02T15:37:11.263Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1203-145"
+                        ],
+                        "type": "satisfies"
+                      }
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-02T15:37:16.258Z",
+                      "removedLink": {
+                        "target": [
+                          "NTCIP_1203-146"
+                        ],
+                        "type": "satisfies"
+                      }
+                    }
+                  ]
                 },
                 {
                   "id": "1168",
@@ -12160,18 +12568,40 @@
                       "NTCIP_1203-145",
                       "NTCIP_1203-146",
                       "NTCIP_1203-147",
-                      "NTCIP_1203-148"
+                      "NTCIP_1203-148",
+                      "NTCIP_1203-1314"
                     ]
-                  }
+                  },
+                  "history": [
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1203-1314"
+                        ],
+                        "type": "satisfies"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-02T15:38:57.938Z"
+                    }
+                  ]
                 },
                 {
                   "id": "1302",
                   "guid": "d9bce6de-a462-4e71-a56f-411dea3eaa19",
-                  "deleted": true,
                   "heading": "dmsGraphicHeightV4",
                   "access": "read-write",
                   "status": "current",
                   "type": "ot",
+                  "links": {
+                    "satisfies": [
+                      "NTCIP_1203-145",
+                      "NTCIP_1203-146"
+                    ]
+                  },
                   "history": [
                     {
                       "affectedNodeId": "1161",
@@ -12282,17 +12712,47 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-03-31T00:07:36.385Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": true
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-01T23:03:03.332Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1203-145",
+                          "NTCIP_1203-146"
+                        ],
+                        "type": "satisfies"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-02T15:36:59.041Z"
                     }
                   ]
                 },
                 {
-                  "id": "1303",
-                  "guid": "8f485c43-b04f-4282-8bd9-f427fb4278db",
-                  "deleted": true,
-                  "heading": "dmsGraphicWidthV4",
+                  "id": "1316",
+                  "guid": "561e0930-b285-4400-af5f-29874764cfa3",
+                  "heading": "dmsGraphicFilename",
                   "access": "read-write",
                   "status": "current",
                   "type": "ot",
+                  "links": {
+                    "satisfies": [
+                      "NTCIP_1203-1314"
+                    ]
+                  },
                   "history": [
                     {
                       "affectedNodeId": "1161",
@@ -12301,7 +12761,7 @@
                         "email": "kvaughn@trevilon.com",
                         "name": "Ken Vaughn"
                       },
-                      "changedOn": "2025-03-30T23:25:47.882Z",
+                      "changedOn": "2025-04-01T23:03:17.199Z",
                       "docId": "NTCIP_1203",
                       "structureAction": "Create"
                     },
@@ -12314,51 +12774,7 @@
                         "email": "kvaughn@trevilon.com",
                         "name": "Ken Vaughn"
                       },
-                      "changedOn": "2025-03-30T23:25:51.263Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "status": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-30T23:26:40.249Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "type": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-30T23:26:55.344Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "deleted": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-30T23:27:01.942Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "deleted": true
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:06:59.151Z"
+                      "changedOn": "2025-04-01T23:03:25.775Z"
                     },
                     {
                       "attributesChanged": {
@@ -12369,29 +12785,43 @@
                         "email": "kvaughn@trevilon.com",
                         "name": "Ken Vaughn"
                       },
-                      "changedOn": "2025-03-31T00:07:16.438Z"
+                      "changedOn": "2025-04-02T15:33:15.081Z"
                     },
                     {
                       "attributesChanged": {
-                        "status": "deprecated"
+                        "status": null
                       },
                       "changedBy": {
                         "company": "Trevilon",
                         "email": "kvaughn@trevilon.com",
                         "name": "Ken Vaughn"
                       },
-                      "changedOn": "2025-03-31T00:07:28.599Z"
+                      "changedOn": "2025-04-02T15:33:17.446Z"
                     },
                     {
                       "attributesChanged": {
-                        "deleted": null
+                        "type": null
                       },
                       "changedBy": {
                         "company": "Trevilon",
                         "email": "kvaughn@trevilon.com",
                         "name": "Ken Vaughn"
                       },
-                      "changedOn": "2025-03-31T00:07:36.385Z"
+                      "changedOn": "2025-04-02T15:33:26.731Z"
+                    },
+                    {
+                      "addedLink": {
+                        "target": [
+                          "NTCIP_1203-1314"
+                        ],
+                        "type": "satisfies"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-02T15:38:37.896Z"
                     }
                   ]
                 }
@@ -12558,10 +12988,15 @@
             {
               "id": "1313",
               "guid": "00b5c096-6684-40f6-b3c0-b959c75b6b4b",
-              "heading": "dmsGraphicSizeV4",
+              "heading": "dmsGraphicMaxSizeV4",
               "access": "read-only",
               "status": "current",
               "type": "ot",
+              "links": {
+                "satisfies": [
+                  "NTCIP_1203-143"
+                ]
+              },
               "history": [
                 {
                   "affectedNodeId": "1155",
@@ -12628,16 +13063,46 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-03-31T15:43:00.835Z"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": "dmsGraphicSizeV4"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-02T15:34:33.751Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "NTCIP_1203-143"
+                    ],
+                    "type": "satisfies"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-02T15:36:20.340Z"
                 }
               ]
             },
             {
               "id": "1304",
               "guid": "27c5b868-5ceb-481d-bee6-094ae361cda5",
-              "heading": "dmsGraphicBitmapV4Table",
-              "access": "not-accessible",
+              "heading": "dmsGraphicFileErrorDesr",
+              "access": "read-only",
               "status": "current",
               "type": "ot",
+              "links": {
+                "satisfies": [
+                  "NTCIP_1203-1314"
+                ]
+              },
               "history": [
                 {
                   "affectedNodeId": "1155",
@@ -12759,303 +13224,262 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-03-31T15:39:21.974Z"
-                }
-              ],
-              "children": [
-                {
-                  "id": "1306",
-                  "guid": "bca8468f-c8c9-466c-82b6-19e2f4a97074",
-                  "heading": "dmsGraphicBitmapV4Index  ",
-                  "access": "not-accessible",
-                  "status": "current",
-                  "type": "ot",
-                  "history": [
-                    {
-                      "affectedNodeId": "1304",
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-30T23:40:57.330Z",
-                      "docId": "NTCIP_1203",
-                      "structureAction": "Create"
-                    },
-                    {
-                      "attributesChanged": {
-                        "heading": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-30T23:40:59.776Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "deleted": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-30T23:42:45.869Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "deleted": true
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:03:37.997Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "type": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:03:42.167Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "deleted": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:03:44.199Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "deleted": true
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:08:57.944Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "status": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:09:11.869Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "access": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:11:25.824Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "deleted": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:12:10.129Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "deleted": true
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T15:39:21.974Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "heading": "dmsGraphicV4BlockNumber"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T15:39:41.858Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "access": "read-only"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T15:40:18.561Z"
-                    }
-                  ]
                 },
                 {
-                  "id": "1307",
-                  "guid": "d141537f-32a6-4d1a-80cb-db77c64ec60e",
-                  "heading": "dmsGraphicBitmapV4Block",
-                  "access": "read-write",
-                  "status": "current",
-                  "type": "ot",
-                  "history": [
-                    {
-                      "affectedNodeId": "1304",
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-30T23:41:08.131Z",
-                      "docId": "NTCIP_1203",
-                      "structureAction": "Create"
-                    },
-                    {
-                      "attributesChanged": {
-                        "heading": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-30T23:41:11.356Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "deleted": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-30T23:42:45.869Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "deleted": true
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:03:37.997Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "type": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:03:42.167Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "deleted": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:03:44.199Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "deleted": true
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:08:57.944Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "status": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:09:11.869Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "access": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:11:28.039Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "deleted": null
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T00:12:10.129Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "deleted": true
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T15:39:21.974Z"
-                    },
-                    {
-                      "attributesChanged": {
-                        "heading": "dmsGraphicV4BlockBitmap"
-                      },
-                      "changedBy": {
-                        "company": "Trevilon",
-                        "email": "kvaughn@trevilon.com",
-                        "name": "Ken Vaughn"
-                      },
-                      "changedOn": "2025-03-31T15:39:52.608Z"
-                    }
-                  ]
+                  "attributesChanged": {
+                    "heading": "dmsGraphicBitmapV4Table"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-02T15:35:07.754Z"
+                },
+                {
+                  "attributesChanged": {
+                    "access": "not-accessible"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-02T15:35:33.252Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "NTCIP_1203-1314"
+                    ],
+                    "type": "satisfies"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-02T15:38:37.896Z"
+                }
+              ]
+            },
+            {
+              "id": "1306",
+              "guid": "bca8468f-c8c9-466c-82b6-19e2f4a97074",
+              "heading": "dmsGraphicErrorDescr",
+              "access": "read-only",
+              "status": "current",
+              "type": "ot",
+              "links": {
+                "satisfies": [
+                  "NTCIP_1203-1314",
+                  "NTCIP_1203-146"
+                ]
+              },
+              "history": [
+                {
+                  "affectedNodeId": "1304",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-30T23:40:57.330Z",
+                  "docId": "NTCIP_1203",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-30T23:40:59.776Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-30T23:42:45.869Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": true
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-31T00:03:37.997Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-31T00:03:42.167Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-31T00:03:44.199Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": true
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-31T00:08:57.944Z"
+                },
+                {
+                  "attributesChanged": {
+                    "status": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-31T00:09:11.869Z"
+                },
+                {
+                  "attributesChanged": {
+                    "access": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-31T00:11:25.824Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-31T00:12:10.129Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": true
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-31T15:39:21.974Z"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": "dmsGraphicV4BlockNumber"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-31T15:39:41.858Z"
+                },
+                {
+                  "attributesChanged": {
+                    "access": "read-only"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-03-31T15:40:18.561Z"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": "dmsGraphicBitmapV4Index  "
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-02T15:35:17.997Z"
+                },
+                {
+                  "affectedNodeId": "1304",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-02T15:35:27.569Z",
+                  "docId": "NTCIP_1203",
+                  "structureAction": "Promote"
+                },
+                {
+                  "attributesChanged": {
+                    "access": "not-accessible"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-02T15:35:35.554Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "NTCIP_1203-1314"
+                    ],
+                    "type": "satisfies"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-02T15:38:37.896Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "NTCIP_1203-146"
+                    ],
+                    "type": "satisfies"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-02T15:40:08.864Z"
                 }
               ]
             }

@@ -2,14 +2,14 @@
   "id": "NTCIP_1218",
   "guid": "b408b184-03fb-44d0-8fe2-be731124a4ab",
   "name": "NTCIP 1218",
-  "lastId": 2121,
+  "lastId": 2127,
   "createdOn": "2024-07-18T15:17:24.557Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-03-11T20:40:56.897Z",
+  "lastChangedOn": "2025-04-07T20:14:35.613Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -116,6 +116,19 @@
               "guid": "799feea1-df09-4c64-8469-5f678159f5c2",
               "text": "<p>\"…a DSRC transceiver that is mounted along a road or pedestrian passageway. An RSU may also be mounted on a vehicle or is hand carried, but it may only operate when the vehicle or handcarried unit is stationary. Furthermore, an RSU operating under this part is restricted to the location where it is licensed to operate. However, portable or hand-held RSUs are permitted to operate where they do not interfere with a site licensed operation. An RSU broadcasts data to OBUs [On-Board Units] or exchanges data with OBUs in its communications zone. An RSU also provides channel assignments and operating instructions to OBUs in its communications zone, when required.\"</p>",
               "type": "it",
+              "discussion": [
+                {
+                  "guid": "52dbe1d8-bb87-4d0b-9248-abfa0a9ef7f4",
+                  "comment": "<p><span style=\"background-color: rgb(250, 197, 28);\">MM - Should there be a clarification that DSRC is no longer in use?</span></p>",
+                  "date": "2025-04-07T15:44:00.296Z",
+                  "author": {
+                    "name": "Ken Vaughn",
+                    "email": "kvaughn@trevilon.com",
+                    "company": "Trevilon"
+                  },
+                  "updatedOn": "2025-04-07T15:44:34.956Z"
+                }
+              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -138,6 +151,26 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-18T15:34:34.819Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T15:44:00.296Z",
+                  "commentGuid": "52dbe1d8-bb87-4d0b-9248-abfa0a9ef7f4",
+                  "updatedComment": null
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T15:44:34.956Z",
+                  "commentGuid": "52dbe1d8-bb87-4d0b-9248-abfa0a9ef7f4",
+                  "updatedComment": "<p>MM - Should there be a clarification that DSRC is no longer in use?</p>"
                 }
               ]
             },
@@ -10648,14 +10681,14 @@
           "discussion": [
             {
               "guid": "84b07163-e7f8-4f8d-90d9-e906949acec1",
-              "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Replace with reference to ISO 26048-1 features as with other standards; determine which are appropriate for NTCIP 1218</span></p>",
+              "comment": "<p>Replace with reference to ISO 26048-1 features as with other standards;&nbsp;</p><p>Doors are CtrlCabinet:M</p><p>Other cabinet items are CtrlCabinet:O</p><p>Control access to data = M</p><p>Manage the field device = M</p><p>Log system events (syslog) = M</p><p>Notifications = O.1 (1..*)</p><p>Log snapshots = O.1 (1..*)</p><p>Record series of snapshots = O</p><p>Trigger-based commands = M</p><p>Configure complex device = O</p><p>Efficient exchange of data = O&nbsp;</p>",
               "date": "2024-08-08T02:26:00.813Z",
               "author": {
                 "name": "Kenneth Vaughn",
                 "email": "kvaughn@trevilon.com",
                 "company": "Trevilon"
               },
-              "updatedOn": "2025-02-10T17:33:09.392Z"
+              "updatedOn": "2025-04-07T16:14:31.197Z"
             }
           ],
           "history": [
@@ -10738,6 +10771,38 @@
                 "name": "Ken Vaughn"
               },
               "changedOn": "2025-02-10T17:33:13.732Z"
+            },
+            {
+              "attributesChanged": {
+                "deleted": true
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-04-07T16:08:39.733Z"
+            },
+            {
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-04-07T16:14:31.197Z",
+              "commentGuid": "84b07163-e7f8-4f8d-90d9-e906949acec1",
+              "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Replace with reference to ISO 26048-1 features as with other standards; determine which are appropriate for NTCIP 1218</span></p>"
+            },
+            {
+              "attributesChanged": {
+                "deleted": null
+              },
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-04-07T16:14:33.870Z"
             }
           ],
           "children": [
@@ -10791,6 +10856,28 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-02-10T17:33:13.732Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": true
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:08:39.733Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:14:33.870Z"
                 }
               ]
             },
@@ -10844,6 +10931,28 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-02-10T17:33:13.732Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": true
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:08:39.733Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:14:33.870Z"
                 }
               ]
             },
@@ -10897,6 +11006,28 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-02-10T17:33:13.732Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": true
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:08:39.733Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:14:33.870Z"
                 }
               ]
             },
@@ -10950,6 +11081,28 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-02-10T17:33:13.732Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": true
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:08:39.733Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:14:33.870Z"
                 }
               ]
             },
@@ -11003,6 +11156,28 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-02-10T17:33:13.732Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": true
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:08:39.733Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:14:33.870Z"
                 }
               ],
               "children": [
@@ -11056,6 +11231,28 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-02-10T17:33:13.732Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": true
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:08:39.733Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:14:33.870Z"
                     }
                   ]
                 }
@@ -11111,6 +11308,28 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-02-10T17:33:13.732Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": true
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:08:39.733Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:14:33.870Z"
                 }
               ],
               "children": [
@@ -11164,6 +11383,28 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-02-10T17:33:13.732Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": true
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:08:39.733Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:14:33.870Z"
                     }
                   ]
                 }
@@ -11246,6 +11487,28 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-02-10T17:33:13.732Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": true
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:08:39.733Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:14:33.870Z"
                 }
               ],
               "children": [
@@ -11299,6 +11562,28 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-02-10T17:33:13.732Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": true
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:08:39.733Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:14:33.870Z"
                     }
                   ]
                 }
@@ -11314,14 +11599,14 @@
           "discussion": [
             {
               "guid": "33e19e27-8687-4446-88af-8ec523d72e12",
-              "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">2/11/2025: Strategize with Patrick andJohn Thai to figure out how we gain consistency among various 12xx standards</span></p>",
+              "comment": "<p>2/11/2025: Strategize with Patrick andJohn Thai to figure out how we gain consistency among various 12xx standards</p>",
               "date": "2024-10-29T19:22:42.202Z",
               "author": {
                 "name": "Kenneth Vaughn",
                 "email": "kvaughn@trevilon.com",
                 "company": "Trevilon"
               },
-              "updatedOn": "2025-02-25T16:00:45.244Z"
+              "updatedOn": "2025-04-07T16:14:53.706Z"
             }
           ],
           "history": [
@@ -11386,6 +11671,16 @@
               "changedOn": "2025-02-25T16:00:45.244Z",
               "commentGuid": "33e19e27-8687-4446-88af-8ec523d72e12",
               "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Added replacement clause; duplicated from NTCIP 1204, but we should discuss conformance for NTCIP 1218</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">2/11/2025: Strategize with Patrick andJohn Thai to figure out how we gain consistency among various 12xx standards</span></p>"
+            },
+            {
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-04-07T16:14:53.706Z",
+              "commentGuid": "33e19e27-8687-4446-88af-8ec523d72e12",
+              "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">2/11/2025: Strategize with Patrick andJohn Thai to figure out how we gain consistency among various 12xx standards</span></p>"
             }
           ],
           "children": [
@@ -15945,7 +16240,7 @@
                 {
                   "id": "389",
                   "guid": "7584b4af-96d1-418f-967c-af6b1a39a469",
-                  "text": "<p>A transportation manager needs to manage the RSU to authenticate the management station that the RSU is exchanging data (transmitting to or receiving from). This feature allows a transportation manager to configure whether the management station that is monitoring or configuring the RSU is “trusted” and, therefore, unlikely to provide data that can adversely affect the cooperative-ITS system.</p>",
+                  "text": "<p>A transportation manager needs to be aware of the area in which the RSU is authorized to operate, when the RSU receives messages with invalid credentials from its V2X interface and when the RSU is unable to obtain valid credentials for the transmission of messages on the V2X interface.</p>",
                   "type": "text",
                   "discussion": [
                     {
@@ -16032,6 +16327,61 @@
                       "changedOn": "2025-02-25T21:21:57.944Z",
                       "commentGuid": "1045aaf7-c2bd-4659-93d8-0d87a097210e",
                       "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">The traceability from this UN does not really align with the text. i.e., reporting an authentication error on another interface is not authentication for this interface. Authentication for this interface is covered separately in ISO 15784-2, 7.8.6 (i.e., support for (D)TLS), and the SNMPv2-MIB for reporting issues (i.e., RFC 3418)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Proposal: Create separate use need for 1) reporting the identified notifications and 2) reporting the valid coverage areas when requested.</span></p>"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>A transportation manager needs to manage the RSU to authenticate the management station that the RSU is exchanging data (transmitting to or receiving from). This feature allows a transportation manager to configure whether the management station that is monitoring or configuring the RSU is “trusted” and, therefore, unlikely to provide data that can adversely affect the cooperative-ITS system.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:22:17.295Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>A transportation manager needs to configure the RSU to authenticate the management station that the RSU is exchanging data (transmitting to or receiving from). This feature allows a transportation manager to configure whether the management station that is monitoring or configuring the RSU is “trusted” and, therefore, unlikely to provide data that can adversely affect the cooperative-ITS system.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:22:56.232Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>A transportation manager needs to configure the RSU to authenticate the management station that the RSU is exchanging data with (transmitting to or receiving from). This feature allows a transportation manager to configure whether the management station that is monitoring or configuring the RSU is “trusted” and, therefore, unlikely to provide data that can adversely affect the cooperative-ITS system.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:25:48.262Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>A transportation manager needs to&nbsp;</p><p><br></p><p>A transportation manager needs to configure the RSU to authenticate the management station that the RSU is exchanging data with (transmitting to or receiving from). This feature allows a transportation manager to configure whether the management station that is monitoring or configuring the RSU is “trusted” and, therefore, unlikely to provide data that can adversely affect the cooperative-ITS system.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:29:13.602Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>A transportation manager needs to be aware when the RSU receives messages with invalid credentials from its V2X interface and when the RSU is unable to obtain valid credentials for the transmission of messages on the V2X interface.</p><p><br></p><p>A transportation manager needs to configure the RSU to authenticate the management station that the RSU is exchanging data with (transmitting to or receiving from). This feature allows a transportation manager to configure whether the management station that is monitoring or configuring the RSU is “trusted” and, therefore, unlikely to provide data that can adversely affect the cooperative-ITS system.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:32:43.633Z"
                     }
                   ]
                 }
@@ -16081,7 +16431,7 @@
                 {
                   "id": "391",
                   "guid": "a9b47bc1-b75f-444d-a093-997caa549764",
-                  "text": "<p>A transportation manager needs to configure the RSU to protect the integrity of the data exchanged and stored on it and to verify that the content of data is unchanged when received or stored. For data exchanges, that the data contents when transmitted are the same as when received; and are not corrupted and used for misbehavior.</p>",
+                  "text": "<p>A transportation manager needs to be aware of any integrity or consistency check errors detected by the RSU, including checks on the data being transmitted and parameters stored on the device.</p>",
                   "type": "text",
                   "history": [
                     {
@@ -16094,6 +16444,28 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T16:50:27.066Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>A transportation manager needs to configure the RSU to protect the integrity of the data exchanged and stored on it and to verify that the content of data is unchanged when received or stored. For data exchanges, that the data contents when transmitted are the same as when received; and are not corrupted and used for misbehavior.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:36:25.769Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>A transportation manager needs to be aware of any consistency check errors detected by the RSU, including consistency checks on the data being transmitted and parameters stored on the device.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:37:22.734Z"
                     }
                   ]
                 }
@@ -16143,7 +16515,7 @@
                 {
                   "id": "393",
                   "guid": "968d4c7f-77aa-4c1f-ba12-2e7d7a705d5f",
-                  "text": "<p>A transportation manager needs to configure the RSU so that the RSU and its data are available to authorized users and processes. This feature allows a transportation manager to configure the RSU to permit appropriate processes and users timely and reliable access to the RSU.</p>",
+                  "text": "<p>A transportation manager needs to be aware of service requests from unauthorized actors and the duration remaining on the RSU enrollment and application certificates.&nbsp;</p>",
                   "type": "text",
                   "history": [
                     {
@@ -16156,6 +16528,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T16:50:27.066Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>A transportation manager needs to configure the RSU so that the RSU and its data are available to authorized users and processes. This feature allows a transportation manager to configure the RSU to permit appropriate processes and users timely and reliable access to the RSU.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:43:15.811Z"
                     }
                   ]
                 }
@@ -20561,14 +20944,14 @@
               "discussion": [
                 {
                   "guid": "24257e1b-cdba-4130-af1c-ce5365d21d67",
-                  "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Replaced with fdSysLog</span></p>",
+                  "comment": "<p>Replaced with fdSysLog</p>",
                   "date": "2024-08-09T19:25:28.701Z",
                   "author": {
                     "name": "Kenneth Vaughn",
                     "email": "kvaughn@trevilon.com",
                     "company": "Trevilon"
                   },
-                  "updatedOn": "2025-02-10T17:40:45.470Z"
+                  "updatedOn": "2025-04-07T16:46:14.052Z"
                 }
               ],
               "history": [
@@ -20656,6 +21039,38 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-02-10T17:40:48.939Z"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": true
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:45:57.498Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:46:14.052Z",
+                  "commentGuid": "24257e1b-cdba-4130-af1c-ce5365d21d67",
+                  "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Replaced with fdSysLog</span></p>"
+                },
+                {
+                  "attributesChanged": {
+                    "deleted": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:46:19.329Z"
                 }
               ],
               "children": [
@@ -20709,6 +21124,28 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-02-10T17:40:48.939Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": true
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:45:57.498Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:46:19.329Z"
                     }
                   ]
                 },
@@ -20781,6 +21218,28 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-02-10T17:40:48.939Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": true
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:45:57.498Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:46:19.329Z"
                     }
                   ],
                   "children": [
@@ -20834,6 +21293,28 @@
                             "name": "Ken Vaughn"
                           },
                           "changedOn": "2025-02-10T17:40:48.939Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": true
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:45:57.498Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:46:19.329Z"
                         }
                       ]
                     }
@@ -20925,6 +21406,28 @@
                         ],
                         "type": "conditional"
                       }
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": true
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:45:57.498Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:46:19.329Z"
                     }
                   ],
                   "children": [
@@ -20978,6 +21481,28 @@
                             "name": "Ken Vaughn"
                           },
                           "changedOn": "2025-02-10T17:40:48.939Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": true
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:45:57.498Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:46:19.329Z"
                         }
                       ]
                     },
@@ -21031,6 +21556,28 @@
                             "name": "Ken Vaughn"
                           },
                           "changedOn": "2025-02-10T17:40:48.939Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": true
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:45:57.498Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:46:19.329Z"
                         }
                       ]
                     }
@@ -21136,6 +21683,28 @@
                         "name": "Ken Vaughn"
                       },
                       "changedOn": "2025-02-10T17:40:48.939Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": true
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:45:57.498Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:46:19.329Z"
                     }
                   ],
                   "children": [
@@ -21189,6 +21758,28 @@
                             "name": "Ken Vaughn"
                           },
                           "changedOn": "2025-02-10T17:40:48.939Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": true
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:45:57.498Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:46:19.329Z"
                         }
                       ]
                     }
@@ -21517,14 +22108,14 @@
                           "discussion": [
                             {
                               "guid": "1a3ea067-ebd7-4390-9cc8-15f955df4fc2",
-                              "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">How is this different than sysName?</span></p>",
+                              "comment": "<p>WG agreed to deprecate on 2/25/25</p>",
                               "date": "2024-08-09T20:28:19.634Z",
                               "author": {
                                 "name": "Kenneth Vaughn",
                                 "email": "kvaughn@trevilon.com",
                                 "company": "Trevilon"
                               },
-                              "updatedOn": "2024-11-12T15:34:36.130Z"
+                              "updatedOn": "2025-04-07T16:48:08.868Z"
                             }
                           ],
                           "history": [
@@ -21577,6 +22168,26 @@
                               "changedOn": "2024-11-12T15:34:36.130Z",
                               "commentGuid": "1a3ea067-ebd7-4390-9cc8-15f955df4fc2",
                               "updatedComment": "<p>Consider moving to ISO 26048-1</p>"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-04-07T16:47:11.957Z",
+                              "commentGuid": "1a3ea067-ebd7-4390-9cc8-15f955df4fc2",
+                              "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">How is this different than sysName?</span></p>"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-04-07T16:48:08.868Z",
+                              "commentGuid": "1a3ea067-ebd7-4390-9cc8-15f955df4fc2",
+                              "updatedComment": "<p>WG agreed to deprecate</p>"
                             }
                           ],
                           "children": [
@@ -22559,14 +23170,14 @@
                           "discussion": [
                             {
                               "guid": "3565d2b4-57b7-4ab1-af21-b8ddf0cb7c94",
-                              "comment": "<p><span style=\"color: rgb(0, 0, 0); background-color: rgb(247, 218, 100);\">Should this be replaced with the ISO 26048-1 location objects?</span></p>",
+                              "comment": "<p>WG agreed to replace with ISO 26048-1 objects on 2/25/25</p>",
                               "date": "2024-11-12T15:40:00.018Z",
                               "author": {
                                 "name": "Kenneth Vaughn",
                                 "email": "kvaughn@trevilon.com",
                                 "company": "Trevilon"
                               },
-                              "updatedOn": "2024-11-12T15:40:19.589Z"
+                              "updatedOn": "2025-04-07T16:49:59.778Z"
                             }
                           ],
                           "history": [
@@ -22614,6 +23225,16 @@
                               "changedOn": "2024-11-12T15:40:19.589Z",
                               "commentGuid": "3565d2b4-57b7-4ab1-af21-b8ddf0cb7c94",
                               "updatedComment": "<p><span style=\"color: rgb(247, 218, 100);\">Should this be replaced with the ISO 26048-1 location objects?</span></p>"
+                            },
+                            {
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-04-07T16:49:59.778Z",
+                              "commentGuid": "3565d2b4-57b7-4ab1-af21-b8ddf0cb7c94",
+                              "updatedComment": "<p><span style=\"color: rgb(0, 0, 0); background-color: rgb(247, 218, 100);\">Should this be replaced with the ISO 26048-1 location objects?</span></p>"
                             }
                           ],
                           "children": [
@@ -23894,6 +24515,18 @@
                               "guid": "81e1fe78-d2e2-4c2a-b703-878ee7f6b3d0",
                               "text": "<p>Upon request from a management station, the RSU shall support firmware updates from an authorized source. The update process allows the transmission of the secure installation files and associated support files for the purpose of the installment of the installation files, and confirmation of a successful update of the RSU firmware.</p>",
                               "type": "text",
+                              "discussion": [
+                                {
+                                  "guid": "15a4f304-f72d-440b-8709-39cbe7c76e33",
+                                  "comment": "<p><span style=\"background-color: rgb(250, 197, 28);\">MM - What is an authorized source?</span></p>",
+                                  "date": "2025-04-07T15:45:48.390Z",
+                                  "author": {
+                                    "name": "Ken Vaughn",
+                                    "email": "kvaughn@trevilon.com",
+                                    "company": "Trevilon"
+                                  }
+                                }
+                              ],
                               "history": [
                                 {
                                   "attributesChanged": {
@@ -23927,6 +24560,16 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:37:49.196Z"
+                                },
+                                {
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Ken Vaughn"
+                                  },
+                                  "changedOn": "2025-04-07T15:45:48.390Z",
+                                  "commentGuid": "15a4f304-f72d-440b-8709-39cbe7c76e33",
+                                  "updatedComment": null
                                 }
                               ]
                             }
@@ -25740,6 +26383,18 @@
                                   "guid": "1536d21e-639a-4377-9da7-018673aee6cb",
                                   "text": "<p>The RSU shall transmit a notification to the destination network address and port number upon detection of the loss of valid data from the primary time source greater than a defined threshold. The threshold is defined in Sections 3.5.2.3.3 and 3.5.2.3.4.</p>",
                                   "type": "text",
+                                  "discussion": [
+                                    {
+                                      "guid": "9dfc8bb6-56a2-43ae-b9d6-3d44f3909593",
+                                      "comment": "<p><span style=\"background-color: rgb(250, 197, 28);\">MM - How is valid defined?</span></p>",
+                                      "date": "2025-04-07T15:46:33.448Z",
+                                      "author": {
+                                        "name": "Ken Vaughn",
+                                        "email": "kvaughn@trevilon.com",
+                                        "company": "Trevilon"
+                                      }
+                                    }
+                                  ],
                                   "history": [
                                     {
                                       "attributesChanged": {
@@ -25751,6 +26406,16 @@
                                         "name": "Kenneth Vaughn"
                                       },
                                       "changedOn": "2024-07-18T17:51:21.785Z"
+                                    },
+                                    {
+                                      "changedBy": {
+                                        "company": "Trevilon",
+                                        "email": "kvaughn@trevilon.com",
+                                        "name": "Ken Vaughn"
+                                      },
+                                      "changedOn": "2025-04-07T15:46:33.448Z",
+                                      "commentGuid": "9dfc8bb6-56a2-43ae-b9d6-3d44f3909593",
+                                      "updatedComment": null
                                     }
                                   ]
                                 }
@@ -41303,14 +41968,14 @@
                   "discussion": [
                     {
                       "guid": "35edb129-b590-49c9-9d04-388e45cf2ce4",
-                      "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Replaced with sysLog of ISO 26048-1</span></p>",
+                      "comment": "<p>Replaced with sysLog of ISO 26048-1</p>",
                       "date": "2024-10-18T11:38:40.100Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
                       },
-                      "updatedOn": "2024-11-12T20:58:17.183Z"
+                      "updatedOn": "2025-04-07T16:57:06.011Z"
                     }
                   ],
                   "history": [
@@ -41428,6 +42093,38 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-11-12T21:03:21.556Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": true
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:56:55.540Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:57:06.011Z",
+                      "commentGuid": "35edb129-b590-49c9-9d04-388e45cf2ce4",
+                      "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Replaced with sysLog of ISO 26048-1</span></p>"
+                    },
+                    {
+                      "attributesChanged": {
+                        "deleted": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:57:08.408Z"
                     }
                   ],
                   "children": [
@@ -41514,6 +42211,28 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-11-12T21:03:21.556Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": true
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:56:55.540Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:57:08.408Z"
                         }
                       ]
                     },
@@ -41589,6 +42308,28 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-11-12T21:03:21.556Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": true
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:56:55.540Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:57:08.408Z"
                         }
                       ]
                     },
@@ -41653,6 +42394,28 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-11-12T21:03:21.556Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": true
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:56:55.540Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:57:08.408Z"
                         }
                       ]
                     },
@@ -41706,6 +42469,28 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-11-12T21:03:21.556Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": true
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:56:55.540Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "deleted": null
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-07T16:57:08.408Z"
                         }
                       ]
                     }
@@ -44252,14 +45037,14 @@
                     },
                     {
                       "guid": "d8c9d168-a62b-43e4-b165-1255dcca0ddf",
-                      "comment": "<p>This should not be an option in the PRL; rather it should be part of an option group where the user either selects:</p><p>Log Interface Data Regardless of Operational Mode or</p><p>Log Interface Data Only When Operational Mode is Active</p><p>(i.e., currently, there is a note, which is informative, that attempts to impose a normative requirement)</p><p><br></p><p><span style=\"background-color: rgb(247, 218, 100);\">The default is that it should only log in the operational state. If the other requirement isselected, there should be an object that allows non-operational logging to be activated or not. &nbsp;Investigate what is actually meant by \"operational state\" and then bring back to group.</span></p>",
+                      "comment": "<p>This should not be an option in the PRL; rather it should be part of an option group where the user either selects:</p><p>Log Interface Data Regardless of Operational Mode or</p><p>Log Interface Data Only When Operational Mode is Active</p><p>(i.e., currently, there is a note, which is informative, that attempts to impose a normative requirement)</p><p><br></p><p><span style=\"background-color: rgb(44, 130, 201); color: rgb(255, 255, 255);\">The default is that it should only log in the operational state. If the other requirement isselected, there should be an object that allows non-operational logging to be activated or not. &nbsp;</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Investigate what is actually meant by \"operational state\" and then bring back to group.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">This would appear to relate to the state machine described in 4.3.1 and rsuMode (and rsuModeStatus)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Suggest making explicit reference to this clause within 4.3.1 by indicating when logging is performed based on the state and the value of the new object (if present)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">NOTE: Once we add the option group above and a requirement to be able to configure whether the logging of data occurs when not operational, this requirement can be deleted as it will be redundant and confusing if not deleted.&nbsp;</span></p><p><br></p>",
                       "date": "2024-10-18T11:57:57.312Z",
                       "author": {
                         "name": "Kenneth Vaughn",
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
                       },
-                      "updatedOn": "2025-03-11T20:15:09.078Z"
+                      "updatedOn": "2025-04-07T20:14:35.613Z"
                     }
                   ],
                   "history": [
@@ -44337,6 +45122,46 @@
                       "changedOn": "2025-03-11T20:15:09.078Z",
                       "commentGuid": "d8c9d168-a62b-43e4-b165-1255dcca0ddf",
                       "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">This should not be an option in the PRL; rather it should be part of an option group where the user either selects:</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Log Interface Data Regardless of Operational Mode or</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Log Interface Data Only When Operational Mode is Active</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">(i.e., currently, there is a note, which is informative, that attempts to impose a normative requirement)</span></p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T17:01:03.470Z",
+                      "commentGuid": "d8c9d168-a62b-43e4-b165-1255dcca0ddf",
+                      "updatedComment": "<p>This should not be an option in the PRL; rather it should be part of an option group where the user either selects:</p><p>Log Interface Data Regardless of Operational Mode or</p><p>Log Interface Data Only When Operational Mode is Active</p><p>(i.e., currently, there is a note, which is informative, that attempts to impose a normative requirement)</p><p><br></p><p><span style=\"background-color: rgb(247, 218, 100);\">The default is that it should only log in the operational state. If the other requirement isselected, there should be an object that allows non-operational logging to be activated or not. &nbsp;Investigate what is actually meant by \"operational state\" and then bring back to group.</span></p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T20:09:01.095Z",
+                      "commentGuid": "d8c9d168-a62b-43e4-b165-1255dcca0ddf",
+                      "updatedComment": "<p>This should not be an option in the PRL; rather it should be part of an option group where the user either selects:</p><p>Log Interface Data Regardless of Operational Mode or</p><p>Log Interface Data Only When Operational Mode is Active</p><p>(i.e., currently, there is a note, which is informative, that attempts to impose a normative requirement)</p><p><br></p><p><span style=\"background-color: rgb(44, 130, 201); color: rgb(255, 255, 255);\">The default is that it should only log in the operational state. If the other requirement isselected, there should be an object that allows non-operational logging to be activated or not. &nbsp;</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Investigate what is actually meant by \"operational state\" and then bring back to group.</span></p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T20:11:02.806Z",
+                      "commentGuid": "d8c9d168-a62b-43e4-b165-1255dcca0ddf",
+                      "updatedComment": "<p>This should not be an option in the PRL; rather it should be part of an option group where the user either selects:</p><p>Log Interface Data Regardless of Operational Mode or</p><p>Log Interface Data Only When Operational Mode is Active</p><p>(i.e., currently, there is a note, which is informative, that attempts to impose a normative requirement)</p><p><br></p><p><span style=\"background-color: rgb(44, 130, 201); color: rgb(255, 255, 255);\">The default is that it should only log in the operational state. If the other requirement isselected, there should be an object that allows non-operational logging to be activated or not. &nbsp;</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Investigate what is actually meant by \"operational state\" and then bring back to group.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">This would appear to relate to the state machine described in 4.3.1 and rsuMode (and rsuModeStatus)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Suggest making explicit reference to this clause within 4.3.1</span></p>"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T20:14:35.613Z",
+                      "commentGuid": "d8c9d168-a62b-43e4-b165-1255dcca0ddf",
+                      "updatedComment": "<p>This should not be an option in the PRL; rather it should be part of an option group where the user either selects:</p><p>Log Interface Data Regardless of Operational Mode or</p><p>Log Interface Data Only When Operational Mode is Active</p><p>(i.e., currently, there is a note, which is informative, that attempts to impose a normative requirement)</p><p><br></p><p><span style=\"background-color: rgb(44, 130, 201); color: rgb(255, 255, 255);\">The default is that it should only log in the operational state. If the other requirement isselected, there should be an object that allows non-operational logging to be activated or not. &nbsp;</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Investigate what is actually meant by \"operational state\" and then bring back to group.</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">This would appear to relate to the state machine described in 4.3.1 and rsuMode (and rsuModeStatus)</span></p><p><span style=\"background-color: rgb(247, 218, 100);\">Suggest making explicit reference to this clause within 4.3.1 by indicating when logging is performed based on the state and the value of the new object (if present)</span></p>"
                     }
                   ],
                   "children": [
@@ -45259,6 +46084,18 @@
               "NTCIP_1218-2112"
             ]
           },
+          "discussion": [
+            {
+              "guid": "cbaac190-36e2-42ba-84ca-fc4892f232bb",
+              "comment": "<p><span style=\"background-color: rgb(44, 130, 201);\">Add support for consistent devices that are not fully conformant with 15784-2</span></p>",
+              "date": "2025-04-07T16:45:04.504Z",
+              "author": {
+                "name": "Ken Vaughn",
+                "email": "kvaughn@trevilon.com",
+                "company": "Trevilon"
+              }
+            }
+          ],
           "history": [
             {
               "affectedNodeId": "410",
@@ -45306,6 +46143,16 @@
                 "name": "Kenneth Vaughn"
               },
               "changedOn": "2024-10-30T01:48:43.886Z"
+            },
+            {
+              "changedBy": {
+                "company": "Trevilon",
+                "email": "kvaughn@trevilon.com",
+                "name": "Ken Vaughn"
+              },
+              "changedOn": "2025-04-07T16:45:04.504Z",
+              "commentGuid": "cbaac190-36e2-42ba-84ca-fc4892f232bb",
+              "updatedComment": null
             }
           ]
         }
@@ -46271,8 +47118,20 @@
             {
               "id": "1178",
               "guid": "72c400a3-78e6-49ba-b773-b2a568e99bab",
-              "text": "<p>This section provides the standardized data exchange sequences that can be used by management stations to ensure interoperable implementations for the various data exchange requirements identified in Section 3. Diagrams and graphical representations are included to supplement the text (i.e., not used as a replacement for the text). This section only includes dialogs that have special semantics or impose special restrictions on the operations that are allowed.</p>",
+              "text": "<p>This section provides the standardized data exchange sequences for the various data exchange requirements identified in Section 3. These dialogs can be used by management stations to ensure interoperable implementations. Diagrams and graphical representations are included to supplement the text (i.e., not used as a replacement for the text). This section only includes dialogs that have special semantics or impose special restrictions on the operations that are allowed.</p>",
               "type": "text",
+              "discussion": [
+                {
+                  "guid": "1724ccdb-aaf0-431d-80da-f786f9a3b466",
+                  "comment": "<p>Divided first sentence into two based on input from MM.</p>",
+                  "date": "2025-04-07T15:49:44.373Z",
+                  "author": {
+                    "name": "Ken Vaughn",
+                    "email": "kvaughn@trevilon.com",
+                    "company": "Trevilon"
+                  }
+                }
+              ],
               "history": [
                 {
                   "attributesChanged": {
@@ -46284,6 +47143,27 @@
                     "name": "Kenneth Vaughn"
                   },
                   "changedOn": "2024-07-18T18:46:54.221Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>This section provides the standardized data exchange sequences that can be used by management stations to ensure interoperable implementations for the various data exchange requirements identified in Section 3. Diagrams and graphical representations are included to supplement the text (i.e., not used as a replacement for the text). This section only includes dialogs that have special semantics or impose special restrictions on the operations that are allowed.</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T15:49:10.073Z"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T15:49:44.373Z",
+                  "commentGuid": "1724ccdb-aaf0-431d-80da-f786f9a3b466",
+                  "updatedComment": null
                 }
               ]
             },
@@ -48139,7 +49019,7 @@
                 {
                   "id": "1538",
                   "guid": "3b791b8c-60c7-4a5d-b60f-490a9b154a99",
-                  "text": "<p>The management station copy the source file to the target directory and filename using 4.2.5 Secure Copy Protocol Dialog.</p>",
+                  "text": "<p>The management station shall copy the source file to the target directory and filename using 4.2.5 Secure Copy Protocol Dialog.</p>",
                   "type": "l1",
                   "history": [
                     {
@@ -48174,6 +49054,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T18:57:30.473Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>The management station copy the source file to the target directory and filename using 4.2.5 Secure Copy Protocol Dialog.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T15:50:22.638Z"
                     }
                   ]
                 },
@@ -48303,7 +49194,7 @@
                 {
                   "id": "1542",
                   "guid": "52f11160-1e50-414d-9e74-b122a9316bba",
-                  "text": "<p>If the response is 'rejected' or 'rollback,' the RSU has encountered an error and the management station shall exit this process and determine the source of the error.</p>",
+                  "text": "<p>If the response is 'rejected' or 'rollback,' the RSU has encountered an error and the management station shall:</p>",
                   "type": "l1",
                   "history": [
                     {
@@ -48338,13 +49229,106 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T18:57:30.473Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>If the response is 'rejected' or 'rollback,' the RSU has encountered an error and the management station shall exit this process and determine the source of the error.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T15:51:38.697Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "2122",
+                  "guid": "d1644289-92e9-4d26-86b4-35cc2debc37d",
+                  "text": "<p>Exit this process and&nbsp;</p>",
+                  "type": "l2",
+                  "history": [
+                    {
+                      "affectedNodeId": "1209",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T15:51:09.786Z",
+                      "docId": "NTCIP_1218",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T15:51:16.945Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T15:51:54.834Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "2123",
+                  "guid": "49941495-8b83-4c2e-aa4b-e12eb4c4ac5a",
+                  "text": "<p>Determine the source of the error.</p>",
+                  "type": "l2",
+                  "history": [
+                    {
+                      "affectedNodeId": "1209",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T15:51:10.822Z",
+                      "docId": "NTCIP_1218",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T15:51:16.945Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T15:52:01.475Z"
                     }
                   ]
                 },
                 {
                   "id": "1543",
                   "guid": "aaf3954d-fb24-498a-811e-49c7e5d47a3e",
-                  "text": "<p>No guidance is provided if the response is 'other' or'unknown.' A response of 'other' generally indicates a vendor-specific error.</p>",
+                  "text": "<p>No guidance is provided if the response is 'other' or 'unknown.' A response of 'other' generally indicates a vendor-specific error.</p>",
                   "type": "l1",
                   "history": [
                     {
@@ -48379,14 +49363,37 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T18:57:30.473Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>No guidance is provided if the response is 'other' or'unknown.' A response of 'other' generally indicates a vendor-specific error.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T15:52:27.594Z"
                     }
                   ]
                 },
                 {
                   "id": "1544",
                   "guid": "b95237a4-a759-4c49-8cf6-68cbaa419257",
-                  "text": "<p>If the response is 'successful,' the installation process is complete and the management station shall either GET the rsuFirmwareVersion or GET the contents of the globalModuleTable to confirm the module and firmware version information has been properly updated. The RSU shall then exit this process.</p>",
+                  "text": "<p>If the response is 'successful,' the installation process is complete and the management station shall&nbsp;GET <span style=\"text-align: left;\">entPhysicalFirmwareRev</span> and entPhysicalSoftwareRev to confirm the version information has been properly updated</p>",
                   "type": "l1",
+                  "discussion": [
+                    {
+                      "guid": "d1789807-ac3f-4df5-8d3c-05f51db6050e",
+                      "comment": "<p>Revised to use RFC objects rather than old global objects. Also deleted the RSU shall exit process statement since this is the end of the process anyway.</p>",
+                      "date": "2025-04-07T16:00:52.424Z",
+                      "author": {
+                        "name": "Ken Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
                   "history": [
                     {
                       "affectedNodeId": "1209",
@@ -48420,6 +49427,49 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T18:57:30.473Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>If the response is 'successful,' the installation process is complete and the management station shall either GET the rsuFirmwareVersion or GET the contents of the globalModuleTable to confirm the module and firmware version information has been properly updated. The RSU shall then exit this process.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T15:53:28.975Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>If the response is 'successful,' the installation process is complete and the management station shall:</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T15:57:09.894Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>If the response is 'successful,' the installation process is complete and the management station shall either:</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:00:06.674Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:00:52.424Z",
+                      "commentGuid": "d1789807-ac3f-4df5-8d3c-05f51db6050e",
+                      "updatedComment": null
                     }
                   ]
                 }
@@ -48731,7 +49781,7 @@
                 {
                   "id": "1550",
                   "guid": "63ddf523-fac5-4d35-b394-7d4c61986e49",
-                  "text": "<p>If the response is 'outOfRange' or 'badFilename,' the RSU has encountered an error and the management station shall exit this process and determine the source of the error.</p>",
+                  "text": "<p>If the response is 'outOfRange' or 'badFilename,' the RSU has encountered an error and the management station shall:</p>",
                   "type": "l1",
                   "history": [
                     {
@@ -48766,6 +49816,99 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T18:59:17.106Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>If the response is 'outOfRange' or 'badFilename,' the RSU has encountered an error and the management station shall exit this process and determine the source of the error.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:02:17.709Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "2126",
+                  "guid": "e052b58b-5f5d-4b2a-823e-40a0e1611b7b",
+                  "text": "<p>Exit this process and&nbsp;</p>",
+                  "type": "l2",
+                  "history": [
+                    {
+                      "affectedNodeId": "1212",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:01:45.444Z",
+                      "docId": "NTCIP_1218",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:01:52.680Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:02:30.010Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "2127",
+                  "guid": "34ac85c1-f696-45c1-a574-1572a374ace2",
+                  "text": "<p>Determine the source of the error.</p>",
+                  "type": "l2",
+                  "history": [
+                    {
+                      "affectedNodeId": "1212",
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:01:46.337Z",
+                      "docId": "NTCIP_1218",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "type": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:01:52.680Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:02:36.173Z"
                     }
                   ]
                 },
@@ -48813,8 +49956,20 @@
                 {
                   "id": "1552",
                   "guid": "7e9d812e-6581-48b0-9ba9-677343685ae1",
-                  "text": "<p>If the response is 'successful,' the installation process is complete and the management station shall download the copy of the syslog file from the RSU using the Secure Copy Protocol Dialog (See Section 4.2.5). The value of the rsuSysLogName contains the directory and filename of the copy of the syslog file, relative to the base directory, which is provided by rsuSysDir. The management station shall then exit this process.</p>",
+                  "text": "<p>If the response is 'successful,' the installation process is complete and the management station shall download the copy of the syslog file from the RSU using the Secure Copy Protocol Dialog (See Section 4.2.5). The value of the rsuSysLogName contains the directory and filename of the copy of the syslog file, relative to the base directory, which is provided by rsuSysDir.</p>",
                   "type": "l1",
+                  "discussion": [
+                    {
+                      "guid": "530f4139-a27d-490a-8f2b-a8fbbe9fd389",
+                      "comment": "<p>Deleted requirement to end the process as this is the last step.</p>",
+                      "date": "2025-04-07T16:03:38.517Z",
+                      "author": {
+                        "name": "Ken Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
                   "history": [
                     {
                       "affectedNodeId": "1212",
@@ -48848,6 +50003,27 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T18:59:17.106Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>If the response is 'successful,' the installation process is complete and the management station shall download the copy of the syslog file from the RSU using the Secure Copy Protocol Dialog (See Section 4.2.5). The value of the rsuSysLogName contains the directory and filename of the copy of the syslog file, relative to the base directory, which is provided by rsuSysDir. The management station shall then exit this process.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:03:15.640Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:03:38.517Z",
+                      "commentGuid": "530f4139-a27d-490a-8f2b-a8fbbe9fd389",
+                      "updatedComment": null
                     }
                   ]
                 }
@@ -51463,7 +52639,7 @@
             {
               "id": "1590",
               "guid": "ec2aacb7-fe4b-49fd-9c4c-0164db190977",
-              "text": "<p>From RFC 2579.</p><p>DateAndTime ::= TEXTUAL-CONVENTION</p><p>   DISPLAY-HINT \"2d-1d-1d,1d:1d:1d.1d\"</p><p>   STATUS       current</p><p>   DESCRIPTION  \"A date-time specification.\"</p><p>   SYNTAX       OCTET STRING (SIZE(8))</p>",
+              "text": "<p>From RFC 2579.</p><p>DateAndTime ::= TEXTUAL-CONVENTION</p><p>DISPLAY-HINT \"2d-1d-1d,1d:1d:1d.1d\"</p><p>STATUS current</p><p>DESCRIPTION \"A date-time specification.\"</p><p>SYNTAX OCTET STRING (SIZE(8))</p>",
               "name": "comment",
               "type": "comment",
               "discussion": [
@@ -51535,6 +52711,17 @@
                   "changedOn": "2024-11-12T22:32:36.171Z",
                   "commentGuid": "46fad9db-7944-42dc-a640-cc14c25b9129",
                   "updatedComment": "<p>Consider replacing with ITSTimeStamp to provide ms resolution rather than deci-second resolution</p>"
+                },
+                {
+                  "attributesChanged": {
+                    "text": "<p>From RFC 2579.</p><p>DateAndTime ::= TEXTUAL-CONVENTION</p><p>   DISPLAY-HINT \"2d-1d-1d,1d:1d:1d.1d\"</p><p>   STATUS       current</p><p>   DESCRIPTION  \"A date-time specification.\"</p><p>   SYNTAX       OCTET STRING (SIZE(8))</p>"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T17:28:48.084Z"
                 }
               ]
             }
@@ -52132,6 +53319,16 @@
                         "email": "kvaughn@trevilon.com",
                         "company": "Trevilon"
                       }
+                    },
+                    {
+                      "guid": "fd7f10a5-1435-4da6-89f9-46c7a084bf31",
+                      "comment": "<p><span style=\"background-color: rgb(250, 197, 28);\">MM - Is DSRC still needed here?</span></p>",
+                      "date": "2025-04-07T16:04:30.995Z",
+                      "author": {
+                        "name": "Ken Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
                     }
                   ],
                   "history": [
@@ -52185,6 +53382,16 @@
                         "name": "Kenneth Vaughn"
                       },
                       "commentDate": "2024-10-16T16:07:48.250Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T16:04:30.995Z",
+                      "commentGuid": "fd7f10a5-1435-4da6-89f9-46c7a084bf31",
+                      "updatedComment": null
                     }
                   ]
                 },
@@ -53275,6 +54482,18 @@
                       "NTCIP_1218-684"
                     ]
                   },
+                  "discussion": [
+                    {
+                      "guid": "314ce9ea-f98c-4c2d-97a1-404c2b0f39f7",
+                      "comment": "<p>The year value in the encodings need to be corrected throughout (07 D6 = 2006 not 2023)</p>",
+                      "date": "2025-04-07T17:36:41.885Z",
+                      "author": {
+                        "name": "Ken Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      }
+                    }
+                  ],
                   "history": [
                     {
                       "affectedNodeId": "36",
@@ -53300,6 +54519,16 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T20:31:28.611Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T17:36:41.885Z",
+                      "commentGuid": "314ce9ea-f98c-4c2d-97a1-404c2b0f39f7",
+                      "updatedComment": null
                     }
                   ]
                 },
@@ -55206,6 +56435,19 @@
                       "NTCIP_1218-902"
                     ]
                   },
+                  "discussion": [
+                    {
+                      "guid": "a76c5fef-6dec-442e-af21-67165d121316",
+                      "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Is this really needed (i.e., need was to send message to the port and Transnet takes care of it)</span></p>",
+                      "date": "2025-04-07T18:02:59.359Z",
+                      "author": {
+                        "name": "Ken Vaughn",
+                        "email": "kvaughn@trevilon.com",
+                        "company": "Trevilon"
+                      },
+                      "updatedOn": "2025-04-07T18:03:15.731Z"
+                    }
+                  ],
                   "history": [
                     {
                       "affectedNodeId": "57",
@@ -55234,6 +56476,26 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-24T20:31:28.611Z"
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T18:02:59.359Z",
+                      "commentGuid": "a76c5fef-6dec-442e-af21-67165d121316",
+                      "updatedComment": null
+                    },
+                    {
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-07T18:03:15.731Z",
+                      "commentGuid": "a76c5fef-6dec-442e-af21-67165d121316",
+                      "updatedComment": "<p>Is this really needed (i.e., need was to send message to the port and Transnet takes care of it)</p>"
                     }
                   ]
                 }
@@ -65824,14 +67086,14 @@
               "discussion": [
                 {
                   "guid": "1cfe6cbc-9b74-41a8-a243-c0c557d324c1",
-                  "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Is this really different than sysName: DisplayString (SIZE(0..255));&nbsp;</span></p><blockquote><p style=\"text-align: start; text-decoration: none;\"><span style=\"background-color: rgb(247, 218, 100);\">An administratively-assigned name for this managed<br>node. By convention, this is the node's fully-qualified<br>domain name. If the name is unknown, the value is<br>the zero-length string.</span></p></blockquote>",
+                  "comment": "<p>Is this really different than sysName: DisplayString (SIZE(0..255));&nbsp;</p><blockquote><p>An administratively-assigned name for this managed<br>node. By convention, this is the node's fully-qualified<br>domain name. If the name is unknown, the value is<br>the zero-length string.</p></blockquote><p>WG agreed to deprecated on 2/25/25</p>",
                   "date": "2024-08-09T17:24:44.728Z",
                   "author": {
                     "name": "Kenneth Vaughn",
                     "email": "kvaughn@trevilon.com",
                     "company": "Trevilon"
                   },
-                  "updatedOn": "2024-11-13T22:45:43.874Z"
+                  "updatedOn": "2025-04-07T16:48:39.786Z"
                 }
               ],
               "history": [
@@ -65910,6 +67172,16 @@
                   "changedOn": "2024-11-13T22:45:43.874Z",
                   "commentGuid": "1cfe6cbc-9b74-41a8-a243-c0c557d324c1",
                   "updatedComment": "<p>Is this really different than sysName: DisplayString (SIZE(0..255));&nbsp;</p><blockquote><p style=\"text-align: start; text-decoration: none;\">An administratively-assigned name for this managed<br>node. By convention, this is the node's fully-qualified<br>domain name. If the name is unknown, the value is<br>the zero-length string.</p></blockquote>"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:48:39.786Z",
+                  "commentGuid": "1cfe6cbc-9b74-41a8-a243-c0c557d324c1",
+                  "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Is this really different than sysName: DisplayString (SIZE(0..255));&nbsp;</span></p><blockquote><p style=\"text-align: start; text-decoration: none;\"><span style=\"background-color: rgb(247, 218, 100);\">An administratively-assigned name for this managed<br>node. By convention, this is the node's fully-qualified<br>domain name. If the name is unknown, the value is<br>the zero-length string.</span></p></blockquote>"
                 }
               ]
             },
@@ -65934,14 +67206,14 @@
               "discussion": [
                 {
                   "guid": "7ff71cbb-b035-48a2-ac88-316f05dac53b",
-                  "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Consider replacing with fdCabinetLatitude</span></p>",
+                  "comment": "<p>Deprecate and replace with fdCabinetLatitude per 2/25/25</p>",
                   "date": "2024-08-09T17:13:57.589Z",
                   "author": {
                     "name": "Kenneth Vaughn",
                     "email": "kvaughn@trevilon.com",
                     "company": "Trevilon"
                   },
-                  "updatedOn": "2024-11-13T22:45:59.495Z"
+                  "updatedOn": "2025-04-07T16:51:02.323Z"
                 }
               ],
               "history": [
@@ -65994,6 +67266,16 @@
                   "changedOn": "2024-11-13T22:45:59.495Z",
                   "commentGuid": "7ff71cbb-b035-48a2-ac88-316f05dac53b",
                   "updatedComment": "<p>Consider replacing with fdCabinetLatitude</p>"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:51:02.323Z",
+                  "commentGuid": "7ff71cbb-b035-48a2-ac88-316f05dac53b",
+                  "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Consider replacing with fdCabinetLatitude</span></p>"
                 }
               ]
             },
@@ -66018,14 +67300,14 @@
               "discussion": [
                 {
                   "guid": "d36750e1-f82a-47a6-a2e9-33d6005a7c70",
-                  "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Consider replacing with fdCabinetLongitude</span></p>",
+                  "comment": "<p>Deprecate and replace with fdCabinetLongitude per 2/25/25</p>",
                   "date": "2024-08-09T17:14:08.877Z",
                   "author": {
                     "name": "Kenneth Vaughn",
                     "email": "kvaughn@trevilon.com",
                     "company": "Trevilon"
                   },
-                  "updatedOn": "2024-11-13T22:46:15.574Z"
+                  "updatedOn": "2025-04-07T16:51:21.125Z"
                 }
               ],
               "history": [
@@ -66078,6 +67360,16 @@
                   "changedOn": "2024-11-13T22:46:15.574Z",
                   "commentGuid": "d36750e1-f82a-47a6-a2e9-33d6005a7c70",
                   "updatedComment": "<p>Consider replacing with fdCabinetLongitude</p>"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:51:21.125Z",
+                  "commentGuid": "d36750e1-f82a-47a6-a2e9-33d6005a7c70",
+                  "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Consider replacing with fdCabinetLongitude</span></p>"
                 }
               ]
             },
@@ -66102,14 +67394,14 @@
               "discussion": [
                 {
                   "guid": "4c8b7000-2360-4861-a79f-f6d569e3a600",
-                  "comment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Consider replacing with fdCabinetElevation</span></p><p><br></p>",
+                  "comment": "<p>Deprecate and replace with fdCabinetElevation per 2/25/25</p><p><br></p>",
                   "date": "2024-08-09T17:14:20.897Z",
                   "author": {
                     "name": "Kenneth Vaughn",
                     "email": "kvaughn@trevilon.com",
                     "company": "Trevilon"
                   },
-                  "updatedOn": "2024-11-13T22:46:29.496Z"
+                  "updatedOn": "2025-04-07T16:51:37.924Z"
                 }
               ],
               "history": [
@@ -66162,6 +67454,16 @@
                   "changedOn": "2024-11-13T22:46:29.496Z",
                   "commentGuid": "4c8b7000-2360-4861-a79f-f6d569e3a600",
                   "updatedComment": "<p>Consider replacing with fdCabinetElevation</p><p><br></p>"
+                },
+                {
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-07T16:51:37.924Z",
+                  "commentGuid": "4c8b7000-2360-4861-a79f-f6d569e3a600",
+                  "updatedComment": "<p><span style=\"background-color: rgb(247, 218, 100);\">Consider replacing with fdCabinetElevation</span></p><p><br></p>"
                 }
               ]
             },
@@ -81591,11 +82893,26 @@
       "columns": [
         {
           "columnId": "id",
-          "width": 65
+          "width": 131
+        },
+        {
+          "columnId": "type",
+          "width": 91
         },
         {
           "columnId": "description",
-          "width": 500
+          "width": 731
+        },
+        {
+          "columnId": "discussion",
+          "width": 300
+        },
+        {
+          "columnId": "links",
+          "width": 300
+        },
+        {
+          "templateColumnId": "94673312-1480-45b3-be1c-bebe1b9faa83"
         }
       ],
       "default": true

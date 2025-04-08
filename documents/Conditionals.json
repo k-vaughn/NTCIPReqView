@@ -1,14 +1,14 @@
 {
   "id": "Conditionals",
   "guid": "f7d13c73-e6c9-45a0-b6d2-d4c8dba55085",
-  "lastId": 112,
+  "lastId": 113,
   "createdOn": "2023-04-25T18:11:32.430Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-03-28T21:34:36.386Z",
+  "lastChangedOn": "2025-04-08T18:10:43.135Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -4468,9 +4468,12 @@
       "guid": "c660a829-96f1-44ff-b86a-0bea812aa955",
       "heading": "Retrieve Startup Retry Period",
       "links": {
+        "condRef": [
+          "26048-1-834"
+        ],
         "conditional": [
           {
-            "suspectClearedOn": "2025-02-21T15:20:59.483Z",
+            "suspectClearedOn": "2025-04-08T18:10:43.135Z",
             "target": "NTCIP_1218-291"
           }
         ]
@@ -4530,6 +4533,34 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-02-21T15:20:59.483Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1218-291"
+            ],
+            "type": "conditional"
+          }
+        },
+        {
+          "addedLink": {
+            "target": [
+              "26048-1-834"
+            ],
+            "type": "condRef"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-08T17:11:20.778Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-08T18:10:43.135Z",
           "clearedLinkSuspect": {
             "target": [
               "NTCIP_1218-291"
@@ -6659,6 +6690,90 @@
           }
         }
       ]
+    },
+    {
+      "id": "113",
+      "guid": "3c771775-7072-4c82-86cc-fbb45d404818",
+      "heading": "RSU GNSSOut",
+      "text": "<p>GNSSOut</p>",
+      "links": {
+        "condRef": [
+          "NTCIP_1218-547"
+        ],
+        "conditional": [
+          {
+            "suspectClearedOn": "2025-04-08T18:10:12.038Z",
+            "target": "NTCIP_1218-289"
+          }
+        ]
+      },
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-08T16:57:07.789Z",
+          "docId": "Conditionals",
+          "structureAction": "Create"
+        },
+        {
+          "attributesChanged": {
+            "heading": null,
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-08T16:57:35.176Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-289"
+            ],
+            "type": "conditional"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-08T16:58:20.935Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-547"
+            ],
+            "type": "condRef"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-08T16:59:21.625Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-08T18:10:12.038Z",
+          "clearedLinkSuspect": {
+            "target": [
+              "NTCIP_1218-289"
+            ],
+            "type": "conditional"
+          }
+        }
+      ]
     }
   ],
   "attributes": {
@@ -6698,6 +6813,10 @@
         {
           "columnId": "description",
           "width": 500
+        },
+        {
+          "columnId": "links",
+          "width": 300
         }
       ],
       "default": true

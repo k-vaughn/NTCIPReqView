@@ -9,7 +9,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-02-21T15:03:56.884Z",
+  "lastChangedOn": "2025-04-08T22:54:23.126Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -1044,6 +1044,7 @@
       "guid": "f7f33b5b-bd80-4097-97ce-ee87db59e7fe",
       "heading": "fdCtrlRowStatusError",
       "access": "read-only",
+      "status": "current",
       "type": "ot",
       "links": {
         "satisfies": [
@@ -1070,7 +1071,8 @@
           "26048-1-815",
           "26048-1-896",
           "26048-1-897",
-          "26048-1-898"
+          "26048-1-898",
+          "NTCIP_1218-557"
         ]
       },
       "history": [
@@ -1765,6 +1767,46 @@
             ],
             "type": "satisfies"
           }
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-557"
+            ],
+            "type": "implement"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-08T22:52:58.057Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedLink": {
+            "newType": "satisfies",
+            "oldTargets": [
+              "NTCIP_1218-557"
+            ],
+            "oldType": "implement"
+          },
+          "changedOn": "2025-04-08T22:53:58.491Z"
+        },
+        {
+          "attributesChanged": {
+            "status": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-08T22:54:23.126Z"
         }
       ]
     },

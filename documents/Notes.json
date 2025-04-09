@@ -1,14 +1,14 @@
 {
   "id": "Notes",
   "guid": "2dccb7ed-0091-4344-9677-9a2297f736aa",
-  "lastId": 37,
+  "lastId": 38,
   "createdOn": "2024-06-27T14:58:19.930Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-03-31T02:03:04.028Z",
+  "lastChangedOn": "2025-04-09T01:35:38.758Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -2274,6 +2274,56 @@
             ],
             "type": "satisfiesWithNote"
           }
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "guid": "45610b98-841b-4f2b-a89c-2ca73fe55013",
+      "heading": "System Configuration Filename",
+      "text": "<p>The system configuration is vendor-specific, but the vendor shall provide the distinct identifiers that comprise the system configuration files. The vendor also shall document how to map those identifiers to the configuration identifier specified by this object.</p>",
+      "links": {
+        "satisfiesWithNote": [
+          "NTCIP_1218-559"
+        ]
+      },
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T01:34:36.648Z",
+          "docId": "Notes",
+          "structureAction": "Create"
+        },
+        {
+          "attributesChanged": {
+            "heading": null,
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T01:35:09.914Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-559"
+            ],
+            "type": "satisfiesWithNote"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T01:35:38.758Z"
         }
       ]
     }

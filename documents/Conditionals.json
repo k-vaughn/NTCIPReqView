@@ -1,14 +1,14 @@
 {
   "id": "Conditionals",
   "guid": "f7d13c73-e6c9-45a0-b6d2-d4c8dba55085",
-  "lastId": 113,
+  "lastId": 115,
   "createdOn": "2023-04-25T18:11:32.430Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-04-08T18:17:24.903Z",
+  "lastChangedOn": "2025-04-09T02:25:52.996Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -6463,6 +6463,250 @@
             ],
             "type": "conditional"
           }
+        }
+      ]
+    },
+    {
+      "id": "114",
+      "guid": "e6ecbf24-70cb-45d4-bace-a7ed77522702",
+      "heading": "RSU ShortCommLoss",
+      "text": "<p>ShortLoss</p>",
+      "links": {
+        "condRef": [
+          "NTCIP_1218-575"
+        ],
+        "conditional": [
+          "NTCIP_1218-295"
+        ]
+      },
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:16:22.487Z",
+          "docId": "Conditionals",
+          "structureAction": "Create"
+        },
+        {
+          "attributesChanged": {
+            "heading": null,
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:16:45.314Z"
+        },
+        {
+          "attributesChanged": {
+            "text": "<p>ShortCommLoss</p>"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:17:14.894Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-583"
+            ],
+            "type": "conditional"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:19:49.750Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedLink": {
+            "newType": "fulfil",
+            "oldTargets": [
+              "NTCIP_1218-583"
+            ],
+            "oldType": "conditional"
+          },
+          "changedOn": "2025-04-09T02:21:03.699Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedLink": {
+            "newType": "conditional",
+            "oldTargets": [
+              "NTCIP_1218-583"
+            ],
+            "oldType": "fulfil"
+          },
+          "changedOn": "2025-04-09T02:21:28.535Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedLink": {
+            "newType": "fulfil_opt",
+            "oldTargets": [
+              "NTCIP_1218-583"
+            ],
+            "oldType": "conditional"
+          },
+          "changedOn": "2025-04-09T02:22:31.064Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedLink": {
+            "newType": "fulfil",
+            "oldTargets": [
+              "NTCIP_1218-583"
+            ],
+            "oldType": "fulfil_opt"
+          },
+          "changedOn": "2025-04-09T02:22:38.962Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:22:48.805Z",
+          "removedLink": {
+            "target": [
+              "NTCIP_1218-583"
+            ],
+            "type": "fulfil"
+          }
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-295"
+            ],
+            "type": "conditional"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:23:24.910Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-575"
+            ],
+            "type": "condRef"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:24:46.404Z"
+        }
+      ]
+    },
+    {
+      "id": "115",
+      "guid": "a37877be-ee77-404b-8a0a-78f0da1c1ad6",
+      "heading": "RSU LongCommLoss",
+      "text": "<p>LongLoss</p>",
+      "links": {
+        "condRef": [
+          "NTCIP_1218-577"
+        ],
+        "conditional": [
+          "NTCIP_1218-295"
+        ]
+      },
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:16:47.370Z",
+          "docId": "Conditionals",
+          "structureAction": "Create"
+        },
+        {
+          "attributesChanged": {
+            "heading": null,
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:17:01.597Z"
+        },
+        {
+          "attributesChanged": {
+            "text": "<p>LongCommLoss</p>"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:17:20.107Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-577"
+            ],
+            "type": "condRef"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:25:15.711Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-295"
+            ],
+            "type": "conditional"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:25:52.996Z"
         }
       ]
     }

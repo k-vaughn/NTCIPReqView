@@ -1,14 +1,14 @@
 {
   "id": "OptionGroups",
   "guid": "2394869a-08ca-4a91-9ecd-9a843af88608",
-  "lastId": 29,
+  "lastId": 30,
   "createdOn": "2023-04-25T18:11:51.363Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-02-20T23:33:22.086Z",
+  "lastChangedOn": "2025-04-09T02:14:08.766Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -112,6 +112,77 @@
             ],
             "type": "opt_group"
           }
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "guid": "1c8268ce-72dd-4c1f-b39f-cb281cd13bb9",
+      "heading": "RSU Communications Loss (1..*)",
+      "text": "<p>(1..*)</p>",
+      "links": {
+        "opt_group": [
+          "NTCIP_1218-295"
+        ]
+      },
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:12:48.314Z",
+          "docId": "OptionGroups",
+          "structureAction": "Create"
+        },
+        {
+          "attributesChanged": {
+            "heading": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:12:54.287Z"
+        },
+        {
+          "attributesChanged": {
+            "heading": "RSU "
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:13:17.608Z"
+        },
+        {
+          "attributesChanged": {
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:13:36.560Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-295"
+            ],
+            "type": "opt_group"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-09T02:14:08.766Z"
         }
       ]
     },

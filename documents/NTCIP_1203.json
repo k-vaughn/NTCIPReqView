@@ -1,14 +1,14 @@
 {
   "id": "NTCIP_1203",
   "guid": "B03E0221-4480-4150-81CB-A4607BB1CEE8",
-  "lastId": 1317,
+  "lastId": 1318,
   "createdOn": "2023-08-16T22:18:03",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-04-02T15:40:28.447Z",
+  "lastChangedOn": "2025-04-18T15:49:38.661Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -4988,7 +4988,7 @@
                     {
                       "id": "1317",
                       "guid": "40bb9d84-a9b4-4d72-830d-d5343be393d8",
-                      "text": "<pre style=\"text-align: start; text-decoration: none;\">sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;MS&nbsp;as&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;MS,DMS:&nbsp;Preconditions:&nbsp;The management station shall be aware of the number of&lt;br/&gt;graphics supported by the DMS.\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_OPEN(filename, write mode)\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_WRITE(handle, offset 0, pngFileContents)\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_CLOSE(handle)\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;DMS:&nbsp;File created\n\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;!= ('inUse', 'calculatingID', 'permanent',&nbsp;OR&nbsp;'processingGraphicFile')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== ('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicFilename.x = filename)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x&nbsp;!= 'processingGraphicFile')&nbsp;or&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;DMS-&gt;&gt;DMS:&nbsp;Processing graphic file\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;DMS:&nbsp;File processed\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== 'graphicFileError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicFileErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = modifyReq)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;fix errors\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== 'modifying'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicNumber.x, dmsGraphicName.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'readyForUseReq')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x&nbsp;!= 'calculatingID')&nbsp;or&nbsp;timeout\n    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DMS-&gt;&gt;DMS: validate data and calculate ID\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStaus&nbsp;== 'graphicError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;MS,&nbsp;DMS&nbsp;:&nbsp;Where x = dmsGraphicIndex</pre>",
+                      "text": "<pre style=\"text-align: start; text-decoration: none;\">sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;MS&nbsp;as&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;MS,DMS:&nbsp;Preconditions:&nbsp;The management station shall be aware of the number of&lt;br/&gt;graphics supported by the DMS.\n&nbsp; &nbsp; MS-&gt;&gt;DMS: get(dmsGraphicPath.0)\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_OPEN(filename, write mode)\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_WRITE(handle, offset 0, pngFileContents)\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_CLOSE(handle)\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;DMS:&nbsp;File created\n\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;!= ('inUse', 'calculatingID', 'permanent',&nbsp;OR&nbsp;'processingGraphicFile')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== ('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicFilename.x = filename)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x&nbsp;!= 'processingGraphicFile')&nbsp;or&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;DMS-&gt;&gt;DMS:&nbsp;Processing graphic file\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;DMS:&nbsp;File processed\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== 'graphicFileError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicFileErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = modifyReq)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;fix errors\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== 'modifying'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicNumber.x, dmsGraphicName.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'readyForUseReq')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x&nbsp;!= 'calculatingID')&nbsp;or&nbsp;timeout\n    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DMS-&gt;&gt;DMS: validate data and calculate ID\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStaus&nbsp;== 'graphicError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;MS,&nbsp;DMS&nbsp;:&nbsp;Where x = dmsGraphicIndex</pre>",
                       "type": "mermaid",
                       "history": [
                         {
@@ -5078,6 +5078,17 @@
                             "name": "Ken Vaughn"
                           },
                           "changedOn": "2025-04-02T14:37:16.771Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<pre style=\"text-align: start; text-decoration: none;\">sequenceDiagram\n&nbsp; &nbsp;&nbsp;participant&nbsp;MS&nbsp;as&nbsp;Management&nbsp;Station\n&nbsp; &nbsp;&nbsp;participant&nbsp;DMS\n&nbsp; &nbsp;&nbsp;\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;MS,DMS:&nbsp;Preconditions:&nbsp;The management station shall be aware of the number of&lt;br/&gt;graphics supported by the DMS.\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_OPEN(filename, write mode)\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_WRITE(handle, offset 0, pngFileContents)\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;SSH_FXP_CLOSE(handle)\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;DMS:&nbsp;File created\n\n&nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;!= ('inUse', 'calculatingID', 'permanent',&nbsp;OR&nbsp;'processingGraphicFile')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'modifyReq')\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== ('modifying')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicFilename.x = filename)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x&nbsp;!= 'processingGraphicFile')&nbsp;or&nbsp;timeout\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;DMS-&gt;&gt;DMS:&nbsp;Processing graphic file\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;DMS:&nbsp;File processed\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== 'graphicFileError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicFileErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = modifyReq)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;fix errors\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStatus.x&nbsp;== 'modifying'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicNumber.x, dmsGraphicName.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;set(dmsGraphicStatus.x = 'readyForUseReq')\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;loop&nbsp;until&nbsp;(dmsGraphicStatus.x&nbsp;!= 'calculatingID')&nbsp;or&nbsp;timeout\n    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DMS-&gt;&gt;DMS: validate data and calculate ID\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicStatus.x)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;alt&nbsp;dmsGraphicStaus&nbsp;== 'graphicError'\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;MS-&gt;&gt;DMS:&nbsp;get(dmsGraphicErrorDescr.0)\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;end\n&nbsp; &nbsp;&nbsp;note&nbsp;over&nbsp;MS,&nbsp;DMS&nbsp;:&nbsp;Where x = dmsGraphicIndex</pre>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-18T15:49:38.661Z"
                         }
                       ]
                     }
@@ -13480,6 +13491,90 @@
                     "name": "Ken Vaughn"
                   },
                   "changedOn": "2025-04-02T15:40:08.864Z"
+                }
+              ]
+            },
+            {
+              "id": "1318",
+              "guid": "65f31bc8-9680-4940-9b40-1ca636b48afd",
+              "heading": "dmsGraphicPath",
+              "access": "read-only",
+              "status": "current",
+              "type": "ot",
+              "links": {
+                "satisfies": [
+                  "NTCIP_1203-1314"
+                ]
+              },
+              "history": [
+                {
+                  "affectedNodeId": "1155",
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-18T15:45:15.114Z",
+                  "docId": "NTCIP_1203",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-18T15:45:25.195Z"
+                },
+                {
+                  "attributesChanged": {
+                    "type": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-18T15:45:58.633Z"
+                },
+                {
+                  "attributesChanged": {
+                    "access": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-18T15:46:09.717Z"
+                },
+                {
+                  "attributesChanged": {
+                    "status": null
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-18T15:46:12.191Z"
+                },
+                {
+                  "addedLink": {
+                    "target": [
+                      "NTCIP_1203-1314"
+                    ],
+                    "type": "satisfies"
+                  },
+                  "changedBy": {
+                    "company": "Trevilon",
+                    "email": "kvaughn@trevilon.com",
+                    "name": "Ken Vaughn"
+                  },
+                  "changedOn": "2025-04-18T15:47:01.897Z"
                 }
               ]
             }

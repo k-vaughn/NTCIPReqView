@@ -2,14 +2,14 @@
   "id": "NTCIP_1218",
   "guid": "b408b184-03fb-44d0-8fe2-be731124a4ab",
   "name": "NTCIP 1218",
-  "lastId": 2141,
+  "lastId": 2142,
   "createdOn": "2024-07-18T15:17:24.557Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-04-09T03:32:57.428Z",
+  "lastChangedOn": "2025-04-21T18:35:16.343Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -3895,7 +3895,7 @@
                     {
                       "id": "108",
                       "guid": "5bc11dba-c0ad-4602-ab86-b1aeb3d5ff75",
-                      "text": "<p><span style=\"color:black;\">Techstreet</span><br><span style=\"color:black;\"><span style=\"color:black;\">6300 Interfirst Dr.</span></span><br><span style=\"color:black;\"><span style=\"color:black;\"><span style=\"color:black;\">Ann Arbor, MI 48108</span></span></span><br><span style=\"color:black;\"><span style=\"color:black;\"><span style=\"color:black;\"><span style=\"color:black;\">(800) 699-9277</span></span></span></span><br><span style=\"color:black;\"><span style=\"color:black;\"><span style=\"color:black;\"><span style=\"color:black;\"><a href=\"http://www.techstreet.com/ieee\">www.techstreet.com/ieee</a></span></span></span></span></p>",
+                      "text": "<p>Techstreet<br>6300 Interfirst Dr.<br>Ann Arbor, MI 48108<br>(800) 699-9277<br><a href=\"http://www.techstreet.com/ieee\">www.techstreet.com/ieee</a></p>",
                       "type": "c",
                       "history": [
                         {
@@ -3952,6 +3952,17 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T16:06:19.609Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p><span style=\"color:black;\">Techstreet</span><br><span style=\"color:black;\"><span style=\"color:black;\">6300 Interfirst Dr.</span></span><br><span style=\"color:black;\"><span style=\"color:black;\"><span style=\"color:black;\">Ann Arbor, MI 48108</span></span></span><br><span style=\"color:black;\"><span style=\"color:black;\"><span style=\"color:black;\"><span style=\"color:black;\">(800) 699-9277</span></span></span></span><br><span style=\"color:black;\"><span style=\"color:black;\"><span style=\"color:black;\"><span style=\"color:black;\"><a href=\"http://www.techstreet.com/ieee\">www.techstreet.com/ieee</a></span></span></span></span></p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-20T23:28:15.254Z"
                         }
                       ]
                     }
@@ -12567,7 +12578,7 @@
                           "id": "286",
                           "guid": "b3be32d7-5ea4-46bd-86f7-6489275ef527",
                           "text": "<p><span style=\"text-align: start;\"><span style=\"text-align: start;\">A transportation manager needs to request and obtain basic information about the RSU. This information consists of the make, model, and version of the device components. The device components can be a hardware, software, or firmware component, and could be a physical or logical entity in nature. This feature allows the manager to verify the identity of the RSU in the field and what software or firmware version is installed. This feature also allows the manager to retrieve a unique identifier of the RSU as provided by the RSU manufacturer, and the version of standards supported by the RSU.</span></span></p>",
-                          "type": "n",
+                          "type": "text",
                           "history": [
                             {
                               "attributesChanged": {
@@ -12667,6 +12678,17 @@
                                 "name": "Ken Vaughn"
                               },
                               "changedOn": "2025-04-08T16:06:59.338Z"
+                            },
+                            {
+                              "attributesChanged": {
+                                "type": "n"
+                              },
+                              "changedBy": {
+                                "company": "Trevilon",
+                                "email": "kvaughn@trevilon.com",
+                                "name": "Ken Vaughn"
+                              },
+                              "changedOn": "2025-04-21T13:01:36.072Z"
                             }
                           ]
                         }
@@ -20705,7 +20727,7 @@
                 {
                   "id": "471",
                   "guid": "d73e1bee-dec8-4b9c-826a-cf3314031025",
-                  "text": "<p>Note: A specification can allow for flexibility in a deliverable by leaving the selection in the Support column blank for a given row.</p>",
+                  "text": "<p>A specification can allow for flexibility in a deliverable by leaving the selection in the Support column blank for a given row.</p>",
                   "type": "n",
                   "history": [
                     {
@@ -20718,6 +20740,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T17:17:59.551Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>Note: A specification can allow for flexibility in a deliverable by leaving the selection in the Support column blank for a given row.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-21T17:02:33.424Z"
                     }
                   ]
                 },
@@ -20762,7 +20795,7 @@
                     {
                       "id": "474",
                       "guid": "eed93fbb-12c2-4bec-938d-01fd37ecfc0a",
-                      "text": "<p>Note: The reader and user of NTCIP 1218 v01A is advised that 'conformance' to NTCIP 1218 v01A should not be confused with 'compliance' to a specification. NTCIP 1218 v01A is as broad as possible to allow a very simple RSU implementation to be 'conformant' to NTCIP 1218 v01A. An agency specification needs to identify the requirements of a particular project and needs to require the support of those requirements. A specification writer is advised to match the requirements of a project with the corresponding standardized requirements defined in NTCIP 1218 v01A to achieve interoperability. This means that functions and requirements defined as 'optional' in NTCIP 1218 v01A might need to be selected in a specification (in effect made 'mandatory' for the project-specific specification).</p>",
+                      "text": "<p>The reader and user of NTCIP 1218 v01A is advised that 'conformance' to NTCIP 1218 v01A should not be confused with 'compliance' to a specification. NTCIP 1218 v01A is as broad as possible to allow a very simple RSU implementation to be 'conformant' to NTCIP 1218 v01A. An agency specification needs to identify the requirements of a particular project and needs to require the support of those requirements. A specification writer is advised to match the requirements of a project with the corresponding standardized requirements defined in NTCIP 1218 v01A to achieve interoperability. This means that functions and requirements defined as 'optional' in NTCIP 1218 v01A might need to be selected in a specification (in effect made 'mandatory' for the project-specific specification).</p>",
                       "type": "n",
                       "history": [
                         {
@@ -20775,6 +20808,17 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T17:18:08.237Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Note: The reader and user of NTCIP 1218 v01A is advised that 'conformance' to NTCIP 1218 v01A should not be confused with 'compliance' to a specification. NTCIP 1218 v01A is as broad as possible to allow a very simple RSU implementation to be 'conformant' to NTCIP 1218 v01A. An agency specification needs to identify the requirements of a particular project and needs to require the support of those requirements. A specification writer is advised to match the requirements of a project with the corresponding standardized requirements defined in NTCIP 1218 v01A to achieve interoperability. This means that functions and requirements defined as 'optional' in NTCIP 1218 v01A might need to be selected in a specification (in effect made 'mandatory' for the project-specific specification).</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-21T17:02:41.158Z"
                         }
                       ]
                     },
@@ -20819,7 +20863,7 @@
                     {
                       "id": "477",
                       "guid": "5158d164-1515-4507-8d8e-2145931dc48b",
-                      "text": "<p>Note: Off-the-shelf interoperability and interchangeability can only be obtained through well documented features broadly supported by the industry as a whole. Designing a system that uses features not defined in a standard or not typically deployed in combination with one another inhibits the goals of interoperability and interchangeability, especially if the documentation of these features is not available for distribution to system integrators. Standards allow the use of additional features to support innovation, which is constantly needed within the industry; but users should be aware of the risks involved with using such features.</p>",
+                      "text": "<p>Off-the-shelf interoperability and interchangeability can only be obtained through well documented features broadly supported by the industry as a whole. Designing a system that uses features not defined in a standard or not typically deployed in combination with one another inhibits the goals of interoperability and interchangeability, especially if the documentation of these features is not available for distribution to system integrators. Standards allow the use of additional features to support innovation, which is constantly needed within the industry; but users should be aware of the risks involved with using such features.</p>",
                       "type": "n",
                       "history": [
                         {
@@ -20843,6 +20887,17 @@
                             "name": "Kenneth Vaughn"
                           },
                           "changedOn": "2024-07-18T17:18:37.338Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": "<p>Note: Off-the-shelf interoperability and interchangeability can only be obtained through well documented features broadly supported by the industry as a whole. Designing a system that uses features not defined in a standard or not typically deployed in combination with one another inhibits the goals of interoperability and interchangeability, especially if the documentation of these features is not available for distribution to system integrators. Standards allow the use of additional features to support innovation, which is constantly needed within the industry; but users should be aware of the risks involved with using such features.</p>"
+                          },
+                          "changedBy": {
+                            "company": "Trevilon",
+                            "email": "kvaughn@trevilon.com",
+                            "name": "Ken Vaughn"
+                          },
+                          "changedOn": "2025-04-21T17:02:49.180Z"
                         }
                       ]
                     },
@@ -22192,7 +22247,7 @@
                             {
                               "id": "538",
                               "guid": "808308b9-4089-4b7a-8ac6-9fc6f568c5c7",
-                              "text": "<p>Note: FR 3.5.2.4.1 provides the location of the RSU as reported by a GNSS or similar geopositioning device.</p>",
+                              "text": "<p>FR 3.5.2.4.1 provides the location of the RSU as reported by a GNSS or similar geopositioning device.</p>",
                               "type": "n",
                               "history": [
                                 {
@@ -22205,6 +22260,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T17:33:31.068Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "text": "<p>Note: FR 3.5.2.4.1 provides the location of the RSU as reported by a GNSS or similar geopositioning device.</p>"
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Ken Vaughn"
+                                  },
+                                  "changedOn": "2025-04-21T17:18:12.020Z"
                                 }
                               ]
                             }
@@ -30285,7 +30351,7 @@
                             {
                               "id": "762",
                               "guid": "3e66856e-22f9-4e44-8948-932e39f51bf7",
-                              "text": "<p>Upon request from a management station, the RSU shall store the maximum file size supported by the RSU for an interface data log, in megabytes, from 1 to 40 megabytes. <a>The RSU is to open a new interface data log file when an active interface data log reaches this maximum interface data log file size.&nbsp;</a>This requirement allows the transportation manager to determine if there is sufficient space to continue storing interface data logs without crashing the RSU.</p>",
+                              "text": "<p>Upon request from a management station, the RSU shall store the maximum file size supported by the RSU for an interface data log, in megabytes, from 1 to 40 megabytes. The RSU is to open a new interface data log file when an active interface data log reaches this maximum interface data log file size. This requirement allows the transportation manager to determine if there is sufficient space to continue storing interface data logs without crashing the RSU.</p>",
                               "type": "text",
                               "history": [
                                 {
@@ -30298,6 +30364,17 @@
                                     "name": "Kenneth Vaughn"
                                   },
                                   "changedOn": "2024-07-18T18:04:04.188Z"
+                                },
+                                {
+                                  "attributesChanged": {
+                                    "text": "<p>Upon request from a management station, the RSU shall store the maximum file size supported by the RSU for an interface data log, in megabytes, from 1 to 40 megabytes. <a>The RSU is to open a new interface data log file when an active interface data log reaches this maximum interface data log file size.&nbsp;</a>This requirement allows the transportation manager to determine if there is sufficient space to continue storing interface data logs without crashing the RSU.</p>"
+                                  },
+                                  "changedBy": {
+                                    "company": "Trevilon",
+                                    "email": "kvaughn@trevilon.com",
+                                    "name": "Ken Vaughn"
+                                  },
+                                  "changedOn": "2025-04-21T18:00:06.246Z"
                                 }
                               ]
                             }
@@ -47599,7 +47676,7 @@
                 {
                   "id": "1198",
                   "guid": "a2a881f1-0b5b-48ee-98ae-7c13525b9654",
-                  "text": "<p>a)<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The object(s) that serve as the index field of the table row, and</p>",
+                  "text": "<p>The object(s) that serve as the index field of the table row, and</p>",
                   "type": "l1",
                   "history": [
                     {
@@ -47612,13 +47689,24 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T18:51:54.715Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>a)<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The object(s) that serve as the index field of the table row, and</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-21T18:35:10.424Z"
                     }
                   ]
                 },
                 {
                   "id": "1199",
                   "guid": "e8358eb3-e52e-4095-acde-fa70288e46f1",
-                  "text": "<p>b)<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The list of columnar objects to be configured and their desired values.</p>",
+                  "text": "<p>The list of columnar objects to be configured and their desired values.</p>",
                   "type": "l1",
                   "history": [
                     {
@@ -47631,6 +47719,17 @@
                         "name": "Kenneth Vaughn"
                       },
                       "changedOn": "2024-07-18T18:51:54.715Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": "<p>b)<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The list of columnar objects to be configured and their desired values.</p>"
+                      },
+                      "changedBy": {
+                        "company": "Trevilon",
+                        "email": "kvaughn@trevilon.com",
+                        "name": "Ken Vaughn"
+                      },
+                      "changedOn": "2025-04-21T18:35:16.343Z"
                     }
                   ]
                 },
@@ -58393,7 +58492,6 @@
               "text": "<p>&lt;Definition&gt; The Internet address type of the destination that is to receive the GNSS output.</p><p>&lt;Object Identifier&gt; 1.3.6.1.4.1.1206.4.2.18.6.12</p>",
               "access": "read-write",
               "action": "added",
-              "defval": "",
               "name": "rsuGnssOutputInetAddressType",
               "oid": "{ rsuGnssOutput 12 }",
               "status": "current",
@@ -79096,7 +79194,7 @@
       "id": "1239",
       "guid": "d49d02d1-88f5-41fa-8114-8e0b2b78fce7",
       "heading": "Requirements Traceability Matrix (RTM) [Normative]",
-      "type": "text",
+      "type": "annex",
       "discussion": [
         {
           "guid": "7e64e842-0378-43de-b643-ce67645dd30b",
@@ -79192,6 +79290,28 @@
           "changedOn": "2025-02-10T18:03:01.125Z",
           "commentGuid": "7e64e842-0378-43de-b643-ce67645dd30b",
           "updatedComment": "<p><span style=\"background-color: rgb(147, 101, 184);\">Define object groups at the end of Section 5</span></p>"
+        },
+        {
+          "attributesChanged": {
+            "type": "text"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-21T14:01:44.579Z"
+        },
+        {
+          "attributesChanged": {
+            "type": "unr"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-21T14:02:05.380Z"
         }
       ],
       "children": [
@@ -79637,7 +79757,7 @@
       "id": "1259",
       "guid": "24bb00be-9959-408c-8779-05d1b3822104",
       "heading": "Object Tree [Informative]",
-      "type": "text",
+      "type": "annex",
       "history": [
         {
           "attributesChanged": {
@@ -79671,6 +79791,17 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-07-18T19:07:18.750Z"
+        },
+        {
+          "attributesChanged": {
+            "type": "text"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-21T14:02:18.464Z"
         }
       ],
       "children": [
@@ -79765,7 +79896,7 @@
       "id": "1265",
       "guid": "239d66c2-cef4-492c-92e9-7c279afa0d46",
       "heading": "Test Procedures [Normative]",
-      "type": "text",
+      "type": "annex",
       "history": [
         {
           "attributesChanged": {
@@ -79777,6 +79908,17 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-07-18T19:08:29.752Z"
+        },
+        {
+          "attributesChanged": {
+            "type": "text"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-21T14:02:26.885Z"
         }
       ],
       "children": [
@@ -79805,7 +79947,7 @@
       "id": "1267",
       "guid": "e3924069-b0a6-4c86-b34a-0ab519390cbe",
       "heading": "Documentation of Revisions [Informative]",
-      "type": "text",
+      "type": "annex",
       "history": [
         {
           "attributesChanged": {
@@ -79817,6 +79959,17 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-07-18T19:08:29.752Z"
+        },
+        {
+          "attributesChanged": {
+            "type": "text"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-21T14:02:30.777Z"
         }
       ],
       "children": [
@@ -79845,7 +79998,7 @@
       "id": "1269",
       "guid": "d6e8799c-9428-4686-8704-3c194196b2be",
       "heading": "User Requests [Informative]",
-      "type": "text",
+      "type": "annex",
       "history": [
         {
           "attributesChanged": {
@@ -79857,6 +80010,17 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-07-18T19:08:29.752Z"
+        },
+        {
+          "attributesChanged": {
+            "type": "text"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-21T14:02:38.067Z"
         }
       ],
       "children": [

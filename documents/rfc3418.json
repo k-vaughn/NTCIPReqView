@@ -9,7 +9,7 @@
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-04-08T16:12:30.164Z",
+  "lastChangedOn": "2025-04-28T18:55:44.733Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -237,6 +237,12 @@
       "status": "current",
       "syntax": "DisplayString (SIZE (0..255))",
       "type": "ot",
+      "links": {
+        "satisfies": [
+          "NTCIP_1218-518",
+          "NTCIP_1218-524"
+        ]
+      },
       "history": [
         {
           "changedBy": {
@@ -280,6 +286,34 @@
             ],
             "type": "satisfies"
           }
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-518"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-28T18:44:04.700Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-524"
+            ],
+            "type": "satisfies"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-28T18:44:09.824Z"
         }
       ]
     },
@@ -737,11 +771,6 @@
       "oid": "snmpTraps 5",
       "status": "current",
       "type": "nt",
-      "links": {
-        "satisfies": [
-          "NTCIP_1218-627"
-        ]
-      },
       "history": [
         {
           "addedLink": {
@@ -756,6 +785,20 @@
             "name": "Kenneth Vaughn"
           },
           "changedOn": "2024-07-24T20:41:01.565Z"
+        },
+        {
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-04-28T18:55:44.733Z",
+          "removedLink": {
+            "target": [
+              "NTCIP_1218-627"
+            ],
+            "type": "satisfies"
+          }
         }
       ]
     },

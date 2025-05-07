@@ -1,14 +1,14 @@
 {
   "id": "Conditionals",
   "guid": "f7d13c73-e6c9-45a0-b6d2-d4c8dba55085",
-  "lastId": 115,
+  "lastId": 116,
   "createdOn": "2023-04-25T18:11:32.430Z",
   "createdBy": {
     "name": "Kenneth Vaughn",
     "email": "kvaughn@trevilon.com",
     "company": "Trevilon"
   },
-  "lastChangedOn": "2025-04-09T02:25:52.996Z",
+  "lastChangedOn": "2025-05-07T17:55:30.347Z",
   "lastChangedBy": {
     "name": "Ken Vaughn",
     "email": "kvaughn@trevilon.com",
@@ -6707,6 +6707,73 @@
             "name": "Ken Vaughn"
           },
           "changedOn": "2025-04-09T02:25:52.996Z"
+        }
+      ]
+    },
+    {
+      "id": "116",
+      "guid": "8603d1db-0429-44ac-8472-6f55e855280d",
+      "heading": "RSU Channel Busy Ratio",
+      "text": "<p>CBR</p>",
+      "links": {
+        "condRef": [
+          "NTCIP_1218-617"
+        ],
+        "conditional": [
+          "NTCIP_1218-297"
+        ]
+      },
+      "history": [
+        {
+          "affectedNodeId": "#",
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-05-07T17:54:04.338Z",
+          "docId": "Conditionals",
+          "structureAction": "Create"
+        },
+        {
+          "attributesChanged": {
+            "heading": null,
+            "text": null
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-05-07T17:54:26.828Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-297"
+            ],
+            "type": "conditional"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-05-07T17:55:06.270Z"
+        },
+        {
+          "addedLink": {
+            "target": [
+              "NTCIP_1218-617"
+            ],
+            "type": "condRef"
+          },
+          "changedBy": {
+            "company": "Trevilon",
+            "email": "kvaughn@trevilon.com",
+            "name": "Ken Vaughn"
+          },
+          "changedOn": "2025-05-07T17:55:30.347Z"
         }
       ]
     }
